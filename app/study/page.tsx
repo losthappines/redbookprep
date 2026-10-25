@@ -8,6 +8,7 @@ import {useStudyDialog} from '@/components/study/use-study-dialog';
 import {PanelLeft, Search, Play, Download, UserRound, ArrowUpRight, Sun, Moon, Eye, Menu, SlidersHorizontal} from 'lucide-react';
 import {parseBbplus, type PracticeQuestion} from '@/components/study/bbplus';
 import {StudyDashboard} from '@/components/study/study-dashboard';
+import {getFirebaseAuth,onAuthStateChanged,pullCloudProgress,pushCloudProgress,signOut,GoogleAuthProvider,signInWithPopup,isFirebaseConfigured} from '@/lib/firebase';
 import {StudyBubbleBackground} from '@/components/study/study-bubble-background';
 import {Vocabulary} from '@/components/study/vocabulary';
 import {QuestionBank} from '@/components/study/question-bank';
@@ -139,7 +140,7 @@ type UserProfile = {
   email: string;
   targetScore: number;
   testDate?: string;
-  avatar?: string;
+  avatar?: string; uid?: string; isCloud?: boolean;
 };
 
 export default function Page() {
@@ -254,7 +255,7 @@ export default function Page() {
 
   useEffect(() => {
     if (!prefsReady) return;
-    try{localStorage.setItem('redbookprep-settings', JSON.stringify({ collapsed, theme, readingSize, reduced,solidGlass,highContrast,accent,focusPractice,readingSplit }));}catch{setStorageError('Your settings could not be saved.');}
+    try{localStorage.setItem('redbookprep-settings', JSON.stringify({ collapsed, theme, readingSize, reduced,solidGlass,highContrast,accent,focusPractice,readingSplit }));void pushCloudProgress();}catch{setStorageError('Your settings could not be saved.');}
     const mq = window.matchMedia('(prefers-color-scheme: dark)');
     const apply = () => {
       document.documentElement.dataset.theme =
@@ -384,7 +385,7 @@ export default function Page() {
     } catch {
       setStorageError('Saved practice could not be loaded.');
     }
-    setReady(true);
+    setReady(true); const auth = getFirebaseAuth(); if (auth) { const unsubscribe = onAuthStateChanged(auth, async (fbUser) => { if (!fbUser) return; await pullCloudProgress(fbUser); try { const u = JSON.parse(localStorage.getItem('redbookprep-user') || 'null'); if (u) setUser({ ...u, uid: fbUser.uid, isCloud: true }); else { const profile = { uid: fbUser.uid, name: fbUser.displayName || fbUser.email?.split('@')[0] || 'Student', email: fbUser.email || '', targetScore: 1400, avatar: fbUser.photoURL || undefined, isCloud: true }; localStorage.setItem('redbookprep-user', JSON.stringify(profile)); setUser(profile); } const syncedAttempts = JSON.parse(localStorage.getItem('redbookprep-demo') || '[]'); if (Array.isArray(syncedAttempts)) setAttempts(syncedAttempts); const p = JSON.parse(localStorage.getItem('redbookprep-settings') || '{}'); if (p && typeof p === 'object') { if (['light', 'dark', 'system'].includes(p.theme)) setTheme(p.theme); if (p.readingSize === 'large' || p.readingSize === 'standard') setReadingSize(p.readingSize); if (typeof p.reduced === 'boolean') setReduced(p.reduced); if (typeof p.solidGlass === 'boolean') setSolidGlass(p.solidGlass); if (typeof p.highContrast === 'boolean') setHighContrast(p.highContrast); if (['purple', 'ocean', 'rose', 'green'].includes(p.accent)) setAccent(p.accent); } } catch {} void pushCloudProgress(); }); return () => unsubscribe(); }
   }, []);
 
   // Save attempts
@@ -392,6 +393,7 @@ export default function Page() {
     if (ready) {
       try {
         localStorage.setItem('redbookprep-demo', JSON.stringify(attempts));
+        void pushCloudProgress({ attempts });
       } catch {
         setStorageError('Your browser could not save progress.');
       }
@@ -562,14 +564,14 @@ export default function Page() {
       <header className="topbar">
         <span aria-hidden="true" style={{position:'absolute',inset:'0 0 -48px',zIndex:0,pointerEvents:'none',background:'transparent',backdropFilter:'blur(24px)',WebkitBackdropFilter:'blur(24px)',maskImage:'linear-gradient(to bottom,black 0%,black 15%,#000c 40%,#0006 65%,#0002 85%,transparent 100%)',WebkitMaskImage:'linear-gradient(to bottom,black 0%,black 15%,#000c 40%,#0006 65%,#0002 85%,transparent 100%)'}} />
         <div className="rb-toolbar-start"><button ref={openSidebarRef} className="rb-icon-button rb-sidebar-open" aria-label="Open sidebar" aria-expanded={mobileSidebarOpen||!collapsed} onClick={toggleSidebar}><PanelLeft size={19}/></button><h2>{view==='Home'?'Dashboard':view==='Practice'?'Your Library':view}</h2></div>
-        <div className="rb-toolbar-actions"><button className="rb-icon-button" aria-label="Switch appearance" title="Switch light / dark" onClick={()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark')}><Sun size={18}/></button>{view==='Settings'?<span className="rb-saved"><span className="status-dot"/>Saved on this device</span>:<button className="primary" onClick={()=>{setSearch('');setSection('All sections');switchView('Practice')}}><BookOpen size={17}/> {view==='Practice'?'Browse all skills':'Start practice'}</button>}</div>
+        <div className="rb-toolbar-actions"><button className="rb-icon-button" aria-label="Switch appearance" title="Switch light / dark" onClick={()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark')}><Sun size={18}/></button>{view==='Settings'?<span className="rb-saved"><span className="status-dot"/>{user?.isCloud||user?.uid?'Synced to Google Cloud':'Saved on this device'}</span>:<button className="primary" onClick={()=>{setSearch('');setSection('All sections');switchView('Practice')}}><BookOpen size={17}/> {view==='Practice'?'Browse all skills':'Start practice'}</button>}</div>
       </header>
       {mobileSidebarOpen&&<button className="rb-mobile-scrim" aria-label="Close navigation" onClick={()=>setMobileSidebarOpen(false)}/>}
       <aside className="sidebar" inert={smallViewport?!mobileSidebarOpen:collapsed} role={smallViewport&&mobileSidebarOpen?"dialog":undefined} aria-modal={smallViewport&&mobileSidebarOpen?true:undefined} aria-label="Study navigation">
         <div className="rb-side-brand"><a className="brand" href="/" aria-label="RedBookPrep home"><span className="brand-mark"><BookOpen size={22}/></span><div><b>RedBookPrep</b><small>A little practice.<br/>More possibility.</small></div></a><button ref={closeSidebarRef} className="sidebar-toggle rb-icon-button" aria-label="Close sidebar" onClick={toggleSidebar}><PanelLeft size={19}/></button></div>
         <nav aria-label="Main navigation">{navItems.map(({key,label,icon:Icon})=><button key={key} aria-current={view===key?'page':undefined} className={view===key?'primary':''} onClick={()=>switchView(key)}><Icon size={20} strokeWidth={1.8}/><span className="nav-label">{label}</span>{key==='Mistakes'&&reviewQueue.length>0&&<span className="rb-count">{reviewQueue.length}</span>}</button>)}</nav>
         <label className="rb-side-search"><Search size={17}/><input aria-label="Search your practice library" placeholder="Search your library" value={search} onChange={e=>{setSearch(e.target.value);setView('Practice');setOpened(false)}}/></label>
-        <div className="rb-side-bottom"><div className="side-foot"><span className="status-dot"/> Saved on this device<small>Your practice, notes, and review dates.</small></div><button className="rb-profile" onClick={()=>switchView('Settings')}><span className="rb-avatar">{user?.name?.[0]?.toUpperCase()||'S'}</span><span><strong>{user?.name||'Student'}</strong><small>Local study profile</small></span></button><div className="rb-side-links"><a href="/about">About</a><a href="/privacy">Privacy</a></div></div>
+        <div className="rb-side-bottom"><div className="side-foot"><span className="status-dot"/> {user?.isCloud||user?.uid?'Synced to cloud':'Saved on this device'}<small>{user?.email?`Signed in as ${user.email}`:'Sign in with Google in Settings to sync across devices.'}</small></div><button className="rb-profile" onClick={()=>switchView('Settings')}><span className="rb-avatar">{user?.name?.[0]?.toUpperCase()||'S'}</span><span><strong>{user?.name||'Student'}</strong><small>{user?.isCloud||user?.uid?'Google Cloud synced':'Local study profile'}</small></span></button><div className="rb-side-links"><a href="/about">About</a><a href="/privacy">Privacy</a></div></div>
       </aside>
       <div className="rb-page-content">
       {storageError && <p role="alert">{storageError}</p>}
@@ -1281,7 +1283,7 @@ export default function Page() {
           {view === 'Settings' && <><h1>Settings</h1><p>Make this space yours.</p><div className="rb-settings-grid">
             <section className="card settings-panel"><h2>Appearance</h2><label><span>Appearance<small>Use a light, dark, or device-matched theme.</small></span><select value={theme} onChange={e=>setTheme(e.target.value)}><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label><label><span>Accent color</span><select value={accent} onChange={e=>setAccent(e.target.value)}><option value="purple">Purple</option><option value="ocean">Ocean</option><option value="rose">Rose</option><option value="green">Forest</option></select></label><label><span>Hide sidebar<small>Open it again from the toolbar.</small></span><input type="checkbox" checked={collapsed} onChange={e=>setCollapsed(e.target.checked)}/></label><label><span>Reduce motion</span><input type="checkbox" checked={reduced} onChange={e=>setReduced(e.target.checked)}/></label><label><span>Increase contrast</span><input type="checkbox" checked={highContrast} onChange={e=>setHighContrast(e.target.checked)}/></label><label><span>Reduce transparency<small>Use solid surfaces in place of glass.</small></span><input type="checkbox" checked={solidGlass} onChange={e=>setSolidGlass(e.target.checked)}/></label></section>
             <section className="card settings-panel"><h2>Practice</h2><label><span>Reading size</span><select value={readingSize} onChange={e=>setReadingSize(e.target.value)}><option value="standard">Standard</option><option value="large">Large</option></select></label><label><span>Focused practice<small>Hide secondary tools during a session.</small></span><input type="checkbox" checked={focusPractice} onChange={e=>setFocusPractice(e.target.checked)}/></label><label><span>Reading pane width<small>Drag the divider during practice, or use its arrow keys.</small></span><div className="rb-range"><input aria-label="Reading pane width" type="range" min="30" max="70" value={readingSplit} onChange={e=>setReadingSplit(Number(e.target.value))}/><small>{readingSplit.toFixed(0)}%</small></div></label><div className="rb-group-body"><Info size={18}/><p>Your answers save in this browser. A saved explanation and ordinary grading never use AI credits.</p></div></section>
-            <section className="card settings-panel"><h2>Your profile</h2><div className="rb-group-body"><div className="rb-profile"><span className="rb-avatar">{user?.name?.[0]?.toUpperCase()||'S'}</span><span><strong>{user?.name||'Student'}</strong><small>Local study profile</small></span></div><p>{user?.targetScore?`Target score: ${user.targetScore}`:'Try the sample without an account.'}</p><div className="rb-actions"><a className="rb-link-button" href="/login"><UserRound size={17}/>Profile options</a>{user&&<button onClick={()=>{localStorage.removeItem('redbookprep-user');setUser(null)}}>Use guest profile</button>}</div></div></section>
+            <section className="card settings-panel"><h2>Your profile &amp; Cloud Sync</h2><div className="rb-group-body"><div className="rb-profile"><span className="rb-avatar">{user?.name?.[0]?.toUpperCase()||'S'}</span><span><strong>{user?.name||'Student'}</strong><small>{user?.isCloud||user?.uid?`Cloud synced (${user.email})`:'Local study profile'}</small></span></div><p>{user?.isCloud||user?.uid?'Your progress, notes, and study plan automatically sync to your cloud account across devices.':'Sign in with Google so your practice history and study plan are backed up and restored on any device.'}</p><div className="rb-actions">{!(user?.isCloud||user?.uid)&&isFirebaseConfigured&&<button className="primary" onClick={async()=>{const auth=getFirebaseAuth();if(!auth)return;try{const provider=new GoogleAuthProvider();provider.setCustomParameters({prompt:'select_account'});await signInWithPopup(auth,provider);}catch{window.location.href='/login';}}}>Sign in with Google</button>}<a className="rb-link-button" href="/login"><UserRound size={17}/>{user?.isCloud||user?.uid?'Switch account':'Sign in / Sign up'}</a>{user&&<button onClick={async()=>{const auth=getFirebaseAuth();if(auth)try{await signOut(auth)}catch{};localStorage.removeItem('redbookprep-user');setUser(null)}}>Sign out</button>}</div></div></section>
             <section className="card settings-panel"><h2>Your study data</h2><div className="rb-group-body"><p>{attempts.length} saved attempts, along with your notes and review dates. Stored on this device.</p><button className="primary" onClick={exportStudy}><Download size={17}/>Export study backup</button><a href="/privacy">How your data is stored</a></div></section>
           </div></>}
 
