@@ -88,10 +88,10 @@ function MathView({
     );
   }
 
-  // Clean fallback while KaTeX is initializing
+  // Clean fallback while KaTeX is initializing (no dollar signs)
   return (
     <span className={display ? "redcoach-block-math-fallback" : "redcoach-inline-math-fallback"}>
-      {display ? `$$ ${math} $$` : `$${math}$`}
+      {math}
     </span>
   );
 }
@@ -329,7 +329,7 @@ function parseBlocks(markdown: string): BlockToken[] {
       paraLines.push(lines[i]);
       i++;
     }
-    blocks.push({ type: "paragraph", text: paraLines.join(" ") });
+    blocks.push({ type: "paragraph", text: paraLines.join("\n") });
   }
 
   return blocks;
@@ -404,12 +404,19 @@ export function RedCoachFormattedContent({ content }: { content: string }) {
             );
 
           case "paragraph":
-          default:
+          default: {
+            const paraLines = block.text.split("\n");
             return (
               <p key={idx} className="redcoach-paragraph">
-                <InlineRenderer text={block.text} katexReady={katexReady} />
+                {paraLines.map((lineText, lineIdx) => (
+                  <React.Fragment key={lineIdx}>
+                    <InlineRenderer text={lineText} katexReady={katexReady} />
+                    {lineIdx < paraLines.length - 1 && <br />}
+                  </React.Fragment>
+                ))}
               </p>
             );
+          }
         }
       })}
     </div>

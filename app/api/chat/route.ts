@@ -72,8 +72,19 @@ export async function POST(req: NextRequest) {
     // RedCoach SAT Tutor system instructions
     const systemInstruction = `You are "redCoach", the AI SAT test preparation coach for RedBookPrep (https://www.redbookprep.site).
 Your job is to help students excel on the Digital SAT (Math: Algebra, Advanced Math, Problem-Solving and Data Analysis, Geometry & Trigonometry; and Reading & Writing: Craft & Structure, Information & Ideas, Expression of Ideas, Standard English Conventions).
-Tone: Encouraging, rigorous, clear, concise, and pedagogical. Break down difficult problems step-by-step using first principles. Use formatting, bullet points, and LaTeX-style math formulas (e.g. $y = mx + b$) when helpful.
-Keep advice practical for SAT timing and test-taking strategies.`;
+Tone: Encouraging, clear, concise, and pedagogical. Break down problems step-by-step using first principles and keep advice practical for SAT timing and test-taking strategies.
+
+CRITICAL FORMATTING RULES:
+Write math in readable plain text. Do not use LaTeX delimiters such as $, $$, \\(, or \\[, or commands such as \\frac or \\sqrt.
+Use Unicode symbols when helpful: ², ³, √, ×, ÷, −, ≠, ≤, ≥, π, and ±.
+Write fractions as (numerator)/(denominator).
+Put longer equations on their own line.
+Use short explanations and avoid excessive formatting.
+
+Example math output:
+(x − 3)² + (y + 2)² = 25
+Center: (3, −2)
+Radius: √25 = 5`;
 
     if (!apiKey) {
       return NextResponse.json({
@@ -152,8 +163,32 @@ I'm ready to walk you through math problems, grammar rules, transition questions
     }
 
     const candidate = data.candidates?.[0];
-    const replyText =
+    const rawReply =
       candidate?.content?.parts?.[0]?.text || "I was unable to generate an answer. Please try again.";
+
+    // Clean any stray LaTeX delimiters/commands into readable Unicode plain text
+    const replyText = rawReply
+      .replace(/\$\$/g, "")
+      .replace(/\\\[|\\\]|\\\(|\\\)/g, "")
+      .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, "($1)/($2)")
+      .replace(/\\sqrt\{([^{}]+)\}/g, "√($1)")
+      .replace(/\\neq\b/g, "≠")
+      .replace(/\\leq?\b/g, "≤")
+      .replace(/\\geq?\b/g, "≥")
+      .replace(/\\times\b/g, "×")
+      .replace(/\\div\b/g, "÷")
+      .replace(/\\pm\b/g, "±")
+      .replace(/\\pi\b/g, "π")
+      .replace(/\^2\b/g, "²")
+      .replace(/\^3\b/g, "³")
+      .replace(/\\begin\{cases\}([\s\S]*?)\\end\{cases\}/g, (_, body) =>
+        body
+          .split("\\\\")
+          .map((s: string) => s.trim())
+          .filter(Boolean)
+          .join("\n")
+      )
+      .replace(/\$([^$\n]+)\$/g, "$1");
 
     return NextResponse.json({ reply: replyText, model: successfulModel });
   } catch (error: any) {
