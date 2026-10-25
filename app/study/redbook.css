@@ -421,6 +421,202 @@ main.redbook-app.portrait-dock-mode.sidebar-folded {
   word-break: break-word;
 }
 
+/* RedCoach Rich Markdown & LaTeX Math Typography */
+.redcoach-formatted-body {
+  color: inherit;
+  font-size: 0.93rem;
+  line-height: 1.65;
+  word-break: break-word;
+}
+
+.redcoach-formatted-body .redcoach-paragraph {
+  margin: 0 0 10px;
+}
+
+.redcoach-formatted-body .redcoach-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.redcoach-formatted-body .redcoach-heading {
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--rb-ink);
+  letter-spacing: -0.01em;
+}
+
+.redcoach-formatted-body .redcoach-h1,
+.redcoach-formatted-body .redcoach-h2 {
+  font-size: 1.15rem;
+  margin: 16px 0 8px;
+}
+
+.redcoach-formatted-body .redcoach-h3 {
+  font-size: 1.02rem;
+  margin: 14px 0 6px;
+  color: var(--rb-ink);
+}
+
+.redcoach-formatted-body .redcoach-h4 {
+  font-size: 0.94rem;
+  font-weight: 600;
+  margin: 10px 0 4px;
+  color: var(--rb-ink);
+  opacity: 0.95;
+}
+
+.redcoach-formatted-body .redcoach-heading-protip {
+  color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.08);
+  padding: 6px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 14px;
+}
+
+[data-theme='dark'] .redcoach-formatted-body .redcoach-heading-protip {
+  color: #a78bfa;
+  background: rgba(167, 139, 250, 0.15);
+}
+
+.redcoach-formatted-body .redcoach-divider {
+  border: none;
+  border-top: 1px solid var(--rb-line);
+  margin: 14px 0;
+  opacity: 0.7;
+}
+
+.redcoach-formatted-body .redcoach-list {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 12px;
+}
+
+.redcoach-formatted-body .redcoach-list-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 6px;
+  line-height: 1.55;
+}
+
+.redcoach-formatted-body .redcoach-list-item.is-bullet::before {
+  content: '•';
+  position: absolute;
+  left: 6px;
+  top: 0;
+  color: var(--rb-accent);
+  font-weight: bold;
+}
+
+.redcoach-formatted-body .redcoach-list-item.is-ordered {
+  padding-left: 24px;
+}
+
+.redcoach-formatted-body .redcoach-list-num {
+  position: absolute;
+  left: 4px;
+  top: 0;
+  font-weight: 600;
+  color: var(--rb-muted);
+  font-size: 0.88rem;
+}
+
+.redcoach-formatted-body .redcoach-list-item.indent-1 {
+  padding-left: 36px;
+}
+
+.redcoach-formatted-body .redcoach-list-item.indent-1.is-bullet::before {
+  left: 22px;
+  content: '◦';
+}
+
+.redcoach-formatted-body .redcoach-list-item.indent-2 {
+  padding-left: 50px;
+}
+
+.redcoach-formatted-body .redcoach-list-item.indent-2.is-bullet::before {
+  left: 36px;
+  content: '▪';
+}
+
+.redcoach-formatted-body .redcoach-math-block-container {
+  margin: 12px 0;
+  padding: 10px 14px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  overflow-x: auto;
+  text-align: center;
+}
+
+[data-theme='dark'] .redcoach-formatted-body .redcoach-math-block-container {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.redcoach-formatted-body .redcoach-block-math {
+  display: block;
+  font-size: 1.05rem;
+}
+
+.redcoach-formatted-body .redcoach-inline-math {
+  display: inline-block;
+  padding: 0 2px;
+  vertical-align: baseline;
+}
+
+.redcoach-formatted-body .redcoach-block-math-fallback {
+  display: block;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: var(--rb-ink);
+}
+
+.redcoach-formatted-body .redcoach-inline-math-fallback {
+  font-family: monospace;
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.04);
+  padding: 1px 4px;
+  border-radius: 4px;
+}
+
+.redcoach-formatted-body .redcoach-inline-code {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace, Consolas;
+  font-size: 0.85em;
+  color: var(--rb-accent);
+}
+
+[data-theme='dark'] .redcoach-formatted-body .redcoach-inline-code {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fca5a5;
+}
+
+.redcoach-formatted-body .redcoach-code-block {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 12px 14px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'JetBrains Mono', monospace, Consolas;
+  font-size: 0.85rem;
+  margin: 10px 0;
+}
+
+.redcoach-formatted-body .redcoach-blockquote {
+  border-left: 3px solid var(--rb-accent);
+  padding: 8px 14px;
+  margin: 10px 0;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 0 8px 8px 0;
+}
+
+.redcoach-formatted-body .redcoach-link {
+  color: var(--rb-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .redcoach-bubble-meta {
   margin-top: 6px;
   font-size: 0.7rem;
