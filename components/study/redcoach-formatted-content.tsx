@@ -335,9 +335,34 @@ function parseBlocks(markdown: string): BlockToken[] {
   return blocks;
 }
 
+function cleanLatexToPlainText(input: string): string {
+  return input
+    .replace(/\$\$/g, "")
+    .replace(/\\\[|\\\]|\\\(|\\\)/g, "")
+    .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, "($1)/($2)")
+    .replace(/\\sqrt\{([^{}]+)\}/g, "√($1)")
+    .replace(/\\neq\b/g, "≠")
+    .replace(/\\leq?\b/g, "≤")
+    .replace(/\\geq?\b/g, "≥")
+    .replace(/\\times\b/g, "×")
+    .replace(/\\div\b/g, "÷")
+    .replace(/\\pm\b/g, "±")
+    .replace(/\\pi\b/g, "π")
+    .replace(/\^2\b/g, "²")
+    .replace(/\^3\b/g, "³")
+    .replace(/\\begin\{cases\}([\s\S]*?)\\end\{cases\}/g, (_, body: string) =>
+      body
+        .split("\\\\")
+        .map((s: string) => s.trim())
+        .filter(Boolean)
+        .join("\n")
+    )
+    .replace(/\$([^$\n]+)\$/g, "$1");
+}
+
 export function RedCoachFormattedContent({ content }: { content: string }) {
   const katexReady = useKaTeX();
-  const blocks = useMemo(() => parseBlocks(content), [content]);
+  const blocks = useMemo(() => parseBlocks(cleanLatexToPlainText(content)), [content]);
 
   return (
     <div className="redcoach-formatted-body">
@@ -345,16 +370,27 @@ export function RedCoachFormattedContent({ content }: { content: string }) {
         switch (block.type) {
           case "heading": {
             const isProTip = block.text.toLowerCase().includes("pro-tip");
-            const HeadingTag = `h${Math.min(block.level, 4)}` as keyof JSX.IntrinsicElements;
+            const cls = `redcoach-heading redcoach-h${block.level} ${
+              isProTip ? "redcoach-heading-protip" : ""
+            }`;
+            if (block.level <= 2) {
+              return (
+                <h2 key={idx} className={cls}>
+                  <InlineRenderer text={block.text} katexReady={katexReady} />
+                </h2>
+              );
+            }
+            if (block.level === 3) {
+              return (
+                <h3 key={idx} className={cls}>
+                  <InlineRenderer text={block.text} katexReady={katexReady} />
+                </h3>
+              );
+            }
             return (
-              <HeadingTag
-                key={idx}
-                className={`redcoach-heading redcoach-h${block.level} ${
-                  isProTip ? "redcoach-heading-protip" : ""
-                }`}
-              >
+              <h4 key={idx} className={cls}>
                 <InlineRenderer text={block.text} katexReady={katexReady} />
-              </HeadingTag>
+              </h4>
             );
           }
 
