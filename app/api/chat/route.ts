@@ -28,7 +28,7 @@ export async function GET(req: NextRequest) {
         body: JSON.stringify({
           contents: [{ role: "user", parts: [{ text: "Hello, reply 'OK' in one word." }] }],
         }),
-        signal: AbortSignal.timeout(10000),
+        signal: AbortSignal.timeout(6000),
       });
       const durationMs = Date.now() - t0;
       const text = await res.text();
@@ -41,7 +41,7 @@ export async function GET(req: NextRequest) {
     } catch (err: any) {
       return NextResponse.json({
         model: testModel,
-        error: err.name === "TimeoutError" ? "Timeout after 10s" : err.message,
+        error: err.name === "TimeoutError" ? "Timeout after 6s" : err.message,
         durationMs: Date.now() - t0,
       });
     }
@@ -86,13 +86,15 @@ I'm ready to walk you through math problems, grammar rules, transition questions
       });
     }
 
-    // Google's active generation models in priority order
+    // Google's active generation models in tested performance & availability order:
+    // 1. gemini-3.5-flash: ~1.6s latency, 200 OK
+    // 2. gemini-3.5-flash-lite: ~1.4s latency, 200 OK
+    // 3. gemini-flash-latest / 3.8-flash: Fallbacks when available
     const priorityModels = [
+      "gemini-3.5-flash",
+      "gemini-3.5-flash-lite",
       "gemini-flash-latest",
       "gemini-3.8-flash",
-      "gemini-3.5-flash",
-      "gemini-2.5-flash-lite",
-      "gemini-pro-latest",
     ];
 
     const formattedContents = [
@@ -126,7 +128,7 @@ I'm ready to walk you through math problems, grammar rules, transition questions
               maxOutputTokens: effort === "Low" ? 600 : 1800,
             },
           }),
-          signal: AbortSignal.timeout(4500),
+          signal: AbortSignal.timeout(5000),
         });
 
         if (response.ok) {
