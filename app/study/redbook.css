@@ -108,3 +108,135 @@ html[data-theme=dark] .rb-bubble-background{--bubble-cyan:#15bbd336;--bubble-blu
 @media(prefers-reduced-motion:reduce){.rb-bubble{animation:none}.rb-bubble-pointer{display:none}}
 @media(prefers-contrast:more){.rb-bubble-background{background:var(--rb-bg)}.rb-bubble-background>div{display:none}}
 @media(hover:none),(pointer:coarse){.rb-bubble-pointer{display:none}}
+
+/* Portrait & Narrow Window Floating Dock Mode (Aceternity UI FloatingDock) */
+main.redbook-app.portrait-dock-mode,
+main.redbook-app.portrait-dock-mode.dashboard-view,
+main.redbook-app.portrait-dock-mode.sidebar-folded {
+  --sidebar-space: 0px !important;
+  padding-left: 0 !important;
+  padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+}
+.redbook-app.portrait-dock-mode:not(.mobile-sidebar-open) .sidebar {
+  transform: translateX(-110%) scale(0.92) !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.36s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.25s ease;
+}
+.redbook-app.portrait-dock-mode.mobile-sidebar-open .sidebar {
+  width: 280px;
+  max-width: 85vw;
+  top: 0;
+  bottom: 0;
+  height: 100dvh;
+  transform: translateX(0) scale(1) !important;
+  opacity: 1;
+  z-index: 65;
+  transition: transform 0.36s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.25s ease;
+}
+.redbook-app.portrait-dock-mode .topbar {
+  left: 0 !important;
+  padding: 14px 20px;
+}
+.redbook-app.portrait-dock-mode .rb-page-content {
+  padding: 24px 20px 36px;
+}
+.redbook-app.portrait-dock-mode .rb-sidebar-open {
+  display: none !important;
+}
+.redbook-app.portrait-dock-mode .dashboard-hero {
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.redbook-app.portrait-dock-mode .dashboard-metrics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (max-width: 520px) {
+  .redbook-app.portrait-dock-mode .dashboard-metrics {
+    grid-template-columns: 1fr;
+  }
+  .redbook-app.portrait-dock-mode .covers {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rb-floating-dock-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: max(14px, env(safe-area-inset-bottom, 14px));
+  z-index: 60;
+  display: flex;
+  justify-content: center;
+  padding: 0 12px;
+  pointer-events: none;
+}
+.rb-floating-dock {
+  pointer-events: auto;
+  max-width: calc(100vw - 20px);
+  overflow-x: auto;
+  scrollbar-width: none;
+  background: linear-gradient(135deg, #ffffff22, transparent 60%), var(--rb-heavy);
+  border: 1px solid var(--rb-line);
+  box-shadow: inset 0 1px 1px var(--rb-edge), 0 16px 40px var(--rb-shadow), 0 4px 12px #00000018;
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+}
+.rb-floating-dock::-webkit-scrollbar {
+  display: none;
+}
+.rb-dock-trigger {
+  all: unset !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: flex-end !important;
+  justify-content: center !important;
+  border-radius: 999px !important;
+  -webkit-tap-highlight-color: transparent;
+}
+.rb-dock-item {
+  background: color-mix(in srgb, var(--rb-panel) 82%, transparent);
+  color: var(--rb-ink);
+  border: 1px solid var(--rb-line);
+  box-shadow: inset 0 1px 0 var(--rb-edge), 0 2px 6px var(--rb-shadow);
+}
+.rb-dock-item-active {
+  background: color-mix(in srgb, var(--rb-accent) 18%, var(--rb-panel));
+  color: var(--rb-accent);
+  border-color: color-mix(in srgb, var(--rb-accent) 55%, var(--rb-line));
+  box-shadow: inset 0 1px 0 var(--rb-edge), 0 4px 12px color-mix(in srgb, var(--rb-accent) 24%, transparent);
+}
+.rb-dock-active-dot {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--rb-accent);
+}
+.rb-dock-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: var(--rb-accent);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  box-shadow: 0 2px 6px #0003;
+}
+.rb-dock-tooltip {
+  background: var(--rb-panel);
+  color: var(--rb-ink);
+  border: 1px solid var(--rb-line);
+  z-index: 70;
+}

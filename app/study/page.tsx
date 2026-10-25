@@ -10,6 +10,8 @@ import {parseBbplus, type PracticeQuestion} from '@/components/study/bbplus';
 import {StudyDashboard} from '@/components/study/study-dashboard';
 import {getFirebaseAuth,onAuthStateChanged,pullCloudProgress,pushCloudProgress,signOut,GoogleAuthProvider,signInWithPopup,isFirebaseConfigured} from '@/lib/firebase';
 import {StudyBubbleBackground} from '@/components/study/study-bubble-background';
+import {FloatingDock} from '@/components/ui/floating-dock';
+import {AnimatePresence} from 'motion/react';
 import {Vocabulary} from '@/components/study/vocabulary';
 import {QuestionBank} from '@/components/study/question-bank';
 import {PracticeFolders} from '@/components/study/practice-folders';
@@ -169,7 +171,7 @@ export default function Page() {
   const openSidebarRef=useRef<HTMLButtonElement>(null);
   const closeSidebarRef=useRef<HTMLButtonElement>(null);
   const [mobileSidebarOpen,setMobileSidebarOpen]=useState(false);
-  const [smallViewport,setSmallViewport]=useState(false);
+  const [smallViewport,setSmallViewport]=useState(false); const [portraitDock,setPortraitDock]=useState(false); useEffect(()=>{const mqPortrait=matchMedia('(orientation: portrait), (max-aspect-ratio: 1/1), (max-width: 900px)');const sync=()=>setPortraitDock(mqPortrait.matches);sync();mqPortrait.addEventListener('change',sync);window.addEventListener('resize',sync);return()=>{mqPortrait.removeEventListener('change',sync);window.removeEventListener('resize',sync)}},[]);
   useEffect(()=>{const media=matchMedia('(max-width:720px)');const sync=()=>setSmallViewport(media.matches);sync();media.addEventListener('change',sync);return()=>media.removeEventListener('change',sync)},[]);
   const [solidGlass,setSolidGlass]=useState(false);
   const [highContrast,setHighContrast]=useState(false);
@@ -268,11 +270,11 @@ export default function Page() {
     return () => mq.removeEventListener('change', apply);
   }, [collapsed, theme, readingSize, reduced,solidGlass,highContrast,accent,focusPractice,readingSplit,prefsReady]);
 
-  useRedbookSidebar(shellRef,smallViewport?!mobileSidebarOpen:collapsed,reduced,prefsReady);
+  useRedbookSidebar(shellRef,portraitDock||smallViewport?!mobileSidebarOpen:collapsed,reduced,prefsReady);
   const closeStudyDialog=useCallback(()=>{setShowNavigator(false);setShowRefSheetModal(false);setMobileSidebarOpen(false);setModuleStage('');if(moduleFinished.current)setOpened(false)},[]);
   useStudyDialog(showNavigator||showRefSheetModal||mobileSidebarOpen||Boolean(moduleStage),closeStudyDialog);
   const switchView=(next:string)=>{setView(next);setMobileSidebarOpen(false);if(next==='Practice')setOpened(false);window.scrollTo({top:0,behavior:'instant'})};
-  const toggleSidebar=()=>{if(matchMedia('(max-width:720px)').matches){setMobileSidebarOpen(v=>!v)}else{setCollapsed(v=>!v);requestAnimationFrame(()=>collapsed?closeSidebarRef.current?.focus():openSidebarRef.current?.focus())}};
+  const toggleSidebar=()=>{if(portraitDock||matchMedia('(max-width:720px)').matches){setMobileSidebarOpen(v=>!v)}else{setCollapsed(v=>!v);requestAnimationFrame(()=>collapsed?closeSidebarRef.current?.focus():openSidebarRef.current?.focus())}};
   const exportStudy=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify({version:1,attempts},null,2)],{type:'application/json'}));const link=document.createElement('a');link.href=url;link.download='redbookprep-study-backup.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
   useEffect(()=>{if(ready){const params=new URLSearchParams({tab:view==='Home'?'dashboard':view.toLowerCase().replaceAll(' ','-')});if(view==='Practice'&&opened)params.set('solve','true');window.history.replaceState(null,'','/study?'+params.toString())}},[view,opened,ready]);
 
@@ -555,7 +557,7 @@ export default function Page() {
       data-focus={focusPractice}
       style={{"--reading-split":`${readingSplit}%`} as React.CSSProperties}
       className={
-        "redbook-app "+(mobileSidebarOpen?"mobile-sidebar-open ":"")+
+        "redbook-app "+(mobileSidebarOpen?"mobile-sidebar-open ":"")+(portraitDock?"portrait-dock-mode ":"")+
         (collapsed ? 'sidebar-folded ' : '') +
         (opened && view === 'Practice' ? 'player-view' : 'dashboard-view')
       }
@@ -567,7 +569,8 @@ export default function Page() {
         <div className="rb-toolbar-actions"><button className="rb-icon-button" aria-label="Switch appearance" title="Switch light / dark" onClick={()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark')}><Sun size={18}/></button>{view==='Settings'?<span className="rb-saved"><span className="status-dot"/>{user?.isCloud||user?.uid?'Synced to Google Cloud':'Saved on this device'}</span>:<button className="primary" onClick={()=>{setSearch('');setSection('All sections');switchView('Practice')}}><BookOpen size={17}/> {view==='Practice'?'Browse all skills':'Start practice'}</button>}</div>
       </header>
       {mobileSidebarOpen&&<button className="rb-mobile-scrim" aria-label="Close navigation" onClick={()=>setMobileSidebarOpen(false)}/>}
-      <aside className="sidebar" inert={smallViewport?!mobileSidebarOpen:collapsed} role={smallViewport&&mobileSidebarOpen?"dialog":undefined} aria-modal={smallViewport&&mobileSidebarOpen?true:undefined} aria-label="Study navigation">
+      <AnimatePresence>{portraitDock && !(opened && view === 'Practice') && (<div className="rb-floating-dock-wrapper"><FloatingDock items={navItems.map(({ key, label, icon: Icon }) => ({ title: label, icon: <Icon className="h-full w-full" strokeWidth={1.9} />, active: view === key, badge: key === 'Mistakes' && reviewQueue.length > 0 ? reviewQueue.length : undefined, onClick: () => switchView(key) }))} /></div>)}</AnimatePresence>
+      <aside className="sidebar" inert={portraitDock||smallViewport?!mobileSidebarOpen:collapsed} role={(portraitDock||smallViewport)&&mobileSidebarOpen?"dialog":undefined} aria-modal={(portraitDock||smallViewport)&&mobileSidebarOpen?true:undefined} aria-label="Study navigation">
         <div className="rb-side-brand"><a className="brand" href="/" aria-label="RedBookPrep home"><span className="brand-mark"><BookOpen size={22}/></span><div><b>RedBookPrep</b><small>A little practice.<br/>More possibility.</small></div></a><button ref={closeSidebarRef} className="sidebar-toggle rb-icon-button" aria-label="Close sidebar" onClick={toggleSidebar}><PanelLeft size={19}/></button></div>
         <nav aria-label="Main navigation">{navItems.map(({key,label,icon:Icon})=><button key={key} aria-current={view===key?'page':undefined} className={view===key?'primary':''} onClick={()=>switchView(key)}><Icon size={20} strokeWidth={1.8}/><span className="nav-label">{label}</span>{key==='Mistakes'&&reviewQueue.length>0&&<span className="rb-count">{reviewQueue.length}</span>}</button>)}</nav>
         <label className="rb-side-search"><Search size={17}/><input aria-label="Search your practice library" placeholder="Search your library" value={search} onChange={e=>{setSearch(e.target.value);setView('Practice');setOpened(false)}}/></label>
