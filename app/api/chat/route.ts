@@ -2,6 +2,11 @@ import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "edge";
 
+interface ChatMessage {
+  role: "user" | "assistant" | "system";
+  content: string;
+}
+
 export async function GET() {
   const apiKey =
     process.env.GEMINI_API_KEY ||
@@ -49,28 +54,18 @@ I'm ready to walk you through math problems, grammar rules, transition questions
       });
     }
 
-    // Try gemini-1.5-pro, gemini-1.5-flash-latest, or query the list
-    let targetModel = "gemini-1.5-flash-latest";
-    try {
-      const listRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
-      if (listRes.ok) {
-        const listData = await listRes.json();
-        const available = (listData.models || [])
-          .filter((m: any) => m.supportedGenerationMethods?.includes("generateContent"))
-          .map((m: any) => m.name.replace(/^models\//, ""));
-
-        if (available.length > 0) {
-          // Prefer flash models, then any available content-generation model
-          const flash = available.find((m: string) => m.includes("flash") && !m.includes("8b"));
-          targetModel = flash || available[0];
-        }
-      }
-    } catch {}
-
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${targetModel}:generateContent?key=${apiKey}`;
+    // Google's active generation models in priority order
+    const priorityModels = [
+      "gemini-3.8-flash",
+      "gemini-3.7-flash",
+      "gemini-3.6-flash",
+      "gemini-3.5-flash",
+      "gemini-flash-latest",
+      "gemini-pro-latest",
+    ];
 
     const formattedContents = [
-      ...history.map((h: any) => ({
+      ...history.map((h: ChatMessage) => ({
         role: h.role === "assistant" ? "model" : "user",
         parts: [{ text: h.content }],
       })),
@@ -80,36 +75,53 @@ I'm ready to walk you through math problems, grammar rules, transition questions
       },
     ];
 
-    const response = await fetch(endpoint, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        systemInstruction: {
-          parts: [{ text: systemInstruction }],
-        },
-        contents: formattedContents,
-        generationConfig: {
-          temperature: effort === "Max Effort" ? 0.3 : 0.7,
-          maxOutputTokens: effort === "Low" ? 600 : 1800,
-        },
-      }),
-    });
+    let lastError = "";
+    let data: any = null;
+    let successfulModel = "";
 
-    if (!response.ok) {
-      const errData = await response.text();
-      console.error("Gemini API error:", errData);
+    for (const m of priorityModels) {
+      try {
+        const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${apiKey}`;
+        const response = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            systemInstruction: {
+              parts: [{ text: systemInstruction }],
+            },
+            contents: formattedContents,
+            generationConfig: {
+              temperature: effort === "Max Effort" ? 0.3 : 0.7,
+              maxOutputTokens: effort === "Low" ? 600 : 1800,
+            },
+          }),
+        });
+
+        if (response.ok) {
+          data = await response.json();
+          successfulModel = m;
+          break;
+        } else {
+          lastError = await response.text();
+        }
+      } catch (err: any) {
+        lastError = err.message;
+      }
+    }
+
+    if (!data) {
+      console.error("Gemini API error across priority models:", lastError);
       return NextResponse.json(
-        { error: "Could not generate response from Gemini.", details: errData, attemptedModel: targetModel },
+        { error: "Could not generate response from Gemini.", details: lastError },
         { status: 502 }
       );
     }
 
-    const data = await response.json();
     const candidate = data.candidates?.[0];
     const replyText =
       candidate?.content?.parts?.[0]?.text || "I was unable to generate an answer. Please try again.";
 
-    return NextResponse.json({ reply: replyText, model: targetModel });
+    return NextResponse.json({ reply: replyText, model: successfulModel });
   } catch (error: any) {
     console.error("Error in /api/chat:", error);
     return NextResponse.json({ error: error?.message || "Internal server error" }, { status: 500 });
