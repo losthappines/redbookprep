@@ -2,7 +2,7 @@
 import {useEffect,useState,useCallback,useRef} from 'react';
 import GlassFolder from '@/components/ui/glass-folder-cards';
 import {useStudyDialog} from './use-study-dialog';
-type Test = {id:string;skill:string;section:string;domain:string;focus:string};
+type Test = {id:string;skill:string;section:string;domain:string;focus:string;moduleId?:string;materialTitle?:string;moduleTitle?:string};
 type Folder = {id:string;name:string;section:string;tests:string[];art:number};
 export function PracticeFolders({questions,search,section,theme,onStart,onSearch,onSection,onImport}:{questions:Test[];search:string;section:string;theme:string;onStart:(i:number)=>void;onSearch:(value:string)=>void;onSection:(value:string)=>void;onImport:(file:File)=>Promise<Test[]>}) {
  const importInput=useRef<HTMLInputElement>(null);
@@ -22,7 +22,7 @@ export function PracticeFolders({questions,search,section,theme,onStart,onSearch
   }catch(error){setError(error instanceof Error?error.message:'The material could not be imported.');}
   finally{setImporting(false);if(importInput.current)importInput.current.value='';}
  }
- const defaults=()=>questions.map((q,i)=>({id:'folder-'+q.id,name:q.skill==='Linear equations in one variable'?'Linear equations':q.skill,section:q.section,tests:[q.id],art:i}));
+ const defaults=useCallback(()=>{const map=new Map<string,Folder>();questions.forEach((q,i)=>{if(q.materialTitle){const fid='folder-material-'+q.materialTitle.toLowerCase().replace(/[^a-z0-9]+/g,'-');const existing=map.get(fid);if(existing){if(!existing.tests.includes(q.id))existing.tests.push(q.id);}else map.set(fid,{id:fid,name:q.materialTitle,section:q.section,tests:[q.id],art:map.size%3});}else{const fid='folder-'+q.id;map.set(fid,{id:fid,name:q.skill==='Linear equations in one variable'?'Linear equations':q.skill,section:q.section,tests:[q.id],art:i});}});return Array.from(map.values());},[questions]);
  const [folders,setFolders]=useState<Folder[]>(defaults);
  const [ready,setReady]=useState(false),[error,setError]=useState('');
  const [expanded,setExpanded]=useState<string[]>([]);
@@ -30,7 +30,7 @@ export function PracticeFolders({questions,search,section,theme,onStart,onSearch
  const [undo,setUndo]=useState<{folder:Folder;index:number}|null>(null);
  const close=useCallback(()=>{setEditor(null);setManage(false)},[]);
  useStudyDialog(Boolean(editor)||manage,close);
- useEffect(()=>{try{const raw=localStorage.getItem('redbookprep-folders');if(raw){const data=JSON.parse(raw);if(!Array.isArray(data)||!data.every(f=>f&&typeof f.id==='string'&&typeof f.name==='string'&&['Math','Reading and Writing','Mixed'].includes(f.section)&&Array.isArray(f.tests)&&f.tests.every((id:unknown)=>typeof id==='string')&&Number.isInteger(f.art)))throw Error();setFolders(data.map(f=>({...f,tests:f.tests.filter((id:string)=>questions.some(q=>q.id===id))})));}}catch{setError('Saved folders could not be loaded. Your practice history is still available.')}setReady(true)},[]);
+ useEffect(()=>{const built=defaults();try{const raw=localStorage.getItem('redbookprep-folders');if(raw){const data=JSON.parse(raw);if(!Array.isArray(data)||!data.every(f=>f&&typeof f.id==='string'&&typeof f.name==='string'&&['Math','Reading and Writing','Mixed'].includes(f.section)&&Array.isArray(f.tests)&&f.tests.every((id:unknown)=>typeof id==='string')&&Number.isInteger(f.art)))throw Error();const cleaned=data.map(f=>({...f,tests:f.tests.filter((id:string)=>questions.some(q=>q.id===id))})).filter(f=>f.tests.length>0||!f.id.startsWith('folder-'));const missingBuiltIn=built.filter(b=>b.id.startsWith('folder-material-')&&!cleaned.some(f=>f.id===b.id));setFolders([...cleaned,...missingBuiltIn]);}else{setFolders(built);}}catch{setFolders(built);setError('Saved folders could not be loaded. Your practice history is still available.')}setReady(true)},[questions,defaults]);
  function save(next:Folder[]){try{localStorage.setItem('redbookprep-folders',JSON.stringify(next));setFolders(next);setError('');return true}catch{setError('Folders could not be saved. Please free browser storage and try again.');return false}}
  function remove(id:string){const index=folders.findIndex(f=>f.id===id);if(index<0)return;setUndo({folder:folders[index],index});save(folders.filter(f=>f.id!==id))}
  function create(){setManage(false);setEditor({id:crypto.randomUUID(),name:'',section:section==='All sections'?'Mixed':section,tests:[],art:folders.length%3})}
@@ -46,7 +46,7 @@ export function PracticeFolders({questions,search,section,theme,onStart,onSearch
  {undo&&<div className="folder-notice" role="status">Removed “{undo.folder.name}”. Practice history is preserved. <button onClick={()=>{const next=[...folders];next.splice(undo.index,0,undo.folder);save(next);setUndo(null)}}>Undo</button></div>}
  <div className="rb-section-heading"><h2>Practice folders</h2><span>{folders.length} folders · Saved on this device</span></div>
  <div className="covers">{filtered.map(folder=>{const tests=folder.tests.map(id=>questions.find(q=>q.id===id)!).filter(Boolean);const open=expanded.includes(folder.id);const art=((folder.art%3)+3)%3;return <article className="material" key={folder.id}>
- <div className="cover-folder"><GlassFolder key={folder.id+folder.tests.join(',')} label={folder.name} meta={`${tests.length} practice ${tests.length===1?'test':'tests'}`} tone={theme==='dark'||art===2?'dark':'light'} art={(['aurora','dusk','ember'] as const)[art]} seed={[3,7,11][art]} action="more" labelPlacement={(['bottom-left','top-left','top-right'] as const)[art]} appearDelay={0} width={268} open={open} onOpenChange={value=>toggle(folder.id,value)} files={tests.map((q,i)=>({name:q.skill,meta:q.section,art:(['ember','verdant','aurora'] as const)[i%3]}))} menu={[{label:'Import .bbplus into folder',onSelect:()=>chooseImport(folder.id)},{label:'Add / remove practice tests',onSelect:()=>edit(folder)},{label:'Remove folder',danger:true,onSelect:()=>remove(folder.id)}]} onFileSelect={(_,i)=>onStart(questions.findIndex(q=>q.id===tests[i]?.id))}/></div>
+ <div className="cover-folder"><GlassFolder key={folder.id+folder.tests.join(',')} label={folder.name} meta={`${tests.length} practice ${tests.length===1?'test':'tests'}`} tone={theme==='dark'||art===2?'dark':'light'} art={(['aurora','dusk','ember'] as const)[art]} seed={[3,7,11][art]} action="more" labelPlacement={(['bottom-left','top-left','top-right'] as const)[art]} appearDelay={0} width={268} open={open} onOpenChange={value=>toggle(folder.id,value)} files={tests.map((q,i)=>({name:q.moduleTitle||q.skill,meta:q.section,art:(['ember','verdant','aurora'] as const)[i%3]}))} menu={[{label:'Import .bbplus into folder',onSelect:()=>chooseImport(folder.id)},{label:'Add / remove practice tests',onSelect:()=>edit(folder)},{label:'Remove folder',danger:true,onSelect:()=>remove(folder.id)}]} onFileSelect={(_,i)=>onStart(questions.findIndex(q=>q.id===tests[i]?.id))}/></div>
  <div className="material-info"><h3>{folder.name}</h3><p>{folder.section} · {tests.length} practice {tests.length===1?'test':'tests'}</p>
 
  </div></article>})}</div>
