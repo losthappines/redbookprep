@@ -2,9 +2,21 @@ import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "edge";
 
-interface ChatMessage {
-  role: "user" | "assistant" | "system";
-  content: string;
+export async function GET() {
+  const apiKey =
+    process.env.GEMINI_API_KEY ||
+    process.env.NEXT_PUBLIC_GEMINI_API_KEY ||
+    process.env.GOOGLE_AI_API_KEY;
+
+  if (!apiKey) return NextResponse.json({ error: "No API key configured." });
+
+  try {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
+    const data = await res.json();
+    return NextResponse.json(data);
+  } catch (err: any) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
+  }
 }
 
 export async function POST(req: NextRequest) {
@@ -37,31 +49,28 @@ I'm ready to walk you through math problems, grammar rules, transition questions
       });
     }
 
-    // Dynamic model discovery: Query Google's available models for this specific API key
-    let targetModel = "gemini-2.0-flash";
+    // Try gemini-1.5-pro, gemini-1.5-flash-latest, or query the list
+    let targetModel = "gemini-1.5-flash-latest";
     try {
-      const listRes = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`
-      );
+      const listRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
       if (listRes.ok) {
         const listData = await listRes.json();
-        const models = (listData.models || []).map((m: any) => m.name.replace(/^models\//, ""));
-        const preferred = models.find(
-          (m: string) =>
-            m.includes("flash") &&
-            !m.includes("embed") &&
-            !m.includes("search") &&
-            !m.includes("thinking")
-        );
-        if (preferred) targetModel = preferred;
-        else if (models.length > 0) targetModel = models[0];
+        const available = (listData.models || [])
+          .filter((m: any) => m.supportedGenerationMethods?.includes("generateContent"))
+          .map((m: any) => m.name.replace(/^models\//, ""));
+
+        if (available.length > 0) {
+          // Prefer flash models, then any available content-generation model
+          const flash = available.find((m: string) => m.includes("flash") && !m.includes("8b"));
+          targetModel = flash || available[0];
+        }
       }
     } catch {}
 
     const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${targetModel}:generateContent?key=${apiKey}`;
 
     const formattedContents = [
-      ...history.map((h: ChatMessage) => ({
+      ...history.map((h: any) => ({
         role: h.role === "assistant" ? "model" : "user",
         parts: [{ text: h.content }],
       })),
@@ -90,7 +99,7 @@ I'm ready to walk you through math problems, grammar rules, transition questions
       const errData = await response.text();
       console.error("Gemini API error:", errData);
       return NextResponse.json(
-        { error: "Could not generate response from Gemini.", details: errData },
+        { error: "Could not generate response from Gemini.", details: errData, attemptedModel: targetModel },
         { status: 502 }
       );
     }
