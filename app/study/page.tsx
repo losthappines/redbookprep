@@ -612,7 +612,7 @@ export default function Page() {
                     </button>
                   </section>
 
-                  <PracticeFolders questions={libraryQuestions.map(q=>({...q,skill:q.moduleId?`${q.materialTitle} · ${q.moduleTitle}`:q.skill}))} search={search} section={section} theme={theme} onStart={i=>start(questions.findIndex(q=>q.id===libraryQuestions[i]?.id))} onImport={importMaterial} onSearch={setSearch} onSection={setSection} />
+                  <PracticeFolders questions={libraryQuestions} search={search} section={section} theme={theme} onStart={i=>start(questions.findIndex(q=>q.id===libraryQuestions[i]?.id))} onImport={importMaterial} onSearch={setSearch} onSection={setSection} />
 
                 </>
               ) : (
