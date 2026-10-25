@@ -1,4 +1,4 @@
-/* RedBook+ frontend-rebuilt design system. Practice covers are a protected exception. */
+﻿/* RedBook+ frontend-rebuilt design system. Practice covers are a protected exception. */
 .redbook-app{--rb-bg:#f5f5f7;--rb-panel:#fff;--rb-ink:#1d1d1f;--rb-muted:#6e6e73;--rb-line:#00000010;--rb-accent:#7b52cb;--rb-soft:color-mix(in srgb,var(--rb-accent) 8%,transparent);--rb-fill:#ffffff28;--rb-heavy:#ffffff50;--rb-edge:#ffffffc0;--rb-shadow:#18172a20;--bg:var(--rb-bg);--surface:var(--rb-panel);--text:var(--rb-ink);--muted:var(--rb-muted);--line:var(--rb-line);--purple:var(--rb-accent);--soft:var(--rb-soft);--sidebar-width:248px;--sidebar-space:248px;--rb-header:84px;font-family:"Segoe UI Variable",system-ui,sans-serif;font-optical-sizing:auto;font-size:16px;line-height:1.45;color:var(--rb-ink)}
 .redbook-app[data-accent=ocean]{--rb-accent:#007aff}.redbook-app[data-accent=rose]{--rb-accent:#bb354e}.redbook-app[data-accent=green]{--rb-accent:#278267}html[data-theme=dark] .redbook-app{--rb-bg:#161618;--rb-panel:#212124;--rb-ink:#f5f5f7;--rb-muted:#a1a1a8;--rb-line:#ffffff16;--rb-fill:#c9d6ff09;--rb-heavy:#10131f46;--rb-edge:#ffffff40;--rb-shadow:#00000048;--rb-soft:color-mix(in srgb,var(--rb-accent) 10%,#ffffff05)}
 main.redbook-app,main.redbook-app.dashboard-view,html[data-theme=dark] main.redbook-app.dashboard-view{max-width:none;margin:0;border:0;border-radius:0;box-shadow:none;min-height:100dvh;height:auto;overflow:visible;padding:var(--rb-header) 0 0 var(--sidebar-space);background:radial-gradient(ellipse at 12% 8%,color-mix(in srgb,var(--rb-accent) 20%,transparent),transparent 36%),radial-gradient(ellipse at 92% 48%,#bb354e15,transparent 36%),radial-gradient(ellipse at 45% 90%,#6593c916,transparent 40%),var(--rb-bg);background-attachment:fixed}.redbook-app.dashboard-view:before{display:none}.redbook-app .rb-page-content{max-width:1440px;margin:0 auto;padding:48px 48px 30px;min-width:0}.redbook-app h1{font-size:clamp(1.8rem,3.3vw,2.7rem);line-height:1.12;letter-spacing:-.045em;font-weight:650;margin:0 0 14px}.redbook-app h2{font-size:1.3rem;line-height:1.35;letter-spacing:-.025em;font-weight:650;margin:0}.redbook-app h3:not(.covers h3){font-size:1.02rem;font-weight:650;letter-spacing:-.02em}.redbook-app p:not(.covers p){font-size:1rem;line-height:1.55;color:var(--rb-muted);margin:10px 0 24px}.redbook-app small:not(.covers small){font-size:.8rem;color:var(--rb-muted);letter-spacing:.01em}.redbook-app .eyebrow{font-size:.7rem;font-weight:650;letter-spacing:.12em;text-transform:uppercase;color:var(--rb-muted);margin-bottom:16px}.redbook-app a:not(.covers a){color:var(--rb-accent)}
@@ -242,122 +242,466 @@ main.redbook-app.portrait-dock-mode.sidebar-folded {
 }
 
 
+
 /* ========================================================================= */
-/* ASK REDCOACH DEDICATED COMPANION VIEW & PROMPTINPUT ACCORDION STYLES      */
+/* ASK REDCOACH REDESIGNED COMPANION VIEW (CENTERED INITIAL -> EXPANDED ACTIVE) */
 /* ========================================================================= */
 
 .redcoach-page-wrapper {
   position: relative;
-  max-width: 1060px;
+  width: 100%;
   margin: 0 auto;
-  min-height: calc(100dvh - 120px);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.redcoach-page-wrapper.is-initial {
+  max-width: 760px;
+  min-height: calc(100dvh - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redcoach-page-wrapper.is-active {
+  max-width: 1100px;
+  height: calc(100dvh - 120px);
+  min-height: 520px;
   display: flex;
   flex-direction: column;
 }
 
+/* Ambient Radial Glow */
 .redcoach-ambient-bg {
   position: absolute;
-  inset: -20px -20px 0 -20px;
+  inset: -30px -30px 0 -30px;
   background: radial-gradient(125% 125% at 50% 101%, rgba(245,87,2,0.18) 10.5%, rgba(245,120,2,0.14) 16%, rgba(245,140,2,0.12) 17.5%, rgba(245,170,100,0.10) 25%, rgba(238,174,202,0.08) 40%, rgba(202,179,214,0.06) 65%, rgba(148,201,233,0.05) 100%);
-  border-radius: 28px;
+  border-radius: 32px;
   pointer-events: none;
   z-index: 0;
 }
 
-.redcoach-inner-card {
+/* ========================================================================= */
+/* 1. INITIAL STATE: CENTERED HERO & AI CHATBOX CARD                         */
+/* ========================================================================= */
+
+.redcoach-initial-container {
   position: relative;
   z-index: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  flex: 1;
-  background: var(--rb-panel);
-  border: 1px solid var(--rb-line);
-  border-radius: 24px;
-  padding: 24px 28px 20px;
-  box-shadow: 0 12px 40px var(--rb-shadow);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-}
-
-.redcoach-header {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid var(--rb-line);
-  margin-bottom: 16px;
+  padding: 10px 16px 24px;
 }
 
-.redcoach-header-left {
+.redcoach-initial-hero {
+  text-align: center;
+  margin-bottom: 26px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 14px;
 }
 
-.redcoach-avatar-mark {
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
+.redcoach-initial-avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
   background: linear-gradient(135deg, #8a5ce4, #7042cb);
-  color: white;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 14px #794cce30;
+  box-shadow: 0 8px 24px rgba(138, 92, 228, 0.35);
+  margin-bottom: 14px;
+}
+
+.redcoach-initial-title {
+  font-size: 2.1rem;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  color: var(--rb-ink);
+  margin: 0 0 6px;
+  line-height: 1.15;
+}
+
+.redcoach-initial-subtitle {
+  font-size: 0.92rem;
+  color: var(--rb-muted);
+  max-width: 500px;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ========================================================================= */
+/* THE AI CHATBOX CARD (USED IN BOTH INITIAL & DOCKED ACTIVE STATES)         */
+/* ========================================================================= */
+
+.redcoach-chatbox-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background: var(--rb-panel);
+  border: 1px solid var(--rb-line);
+  border-radius: 22px;
+  padding: 16px 18px 14px;
+  box-shadow: 0 16px 48px var(--rb-shadow), 0 0 0 1px var(--rb-line);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.redcoach-chatbox-card:focus-within {
+  border-color: color-mix(in srgb, var(--rb-accent) 65%, var(--rb-line));
+  box-shadow: 0 20px 54px var(--rb-shadow), 0 0 0 1.5px color-mix(in srgb, var(--rb-accent) 55%, transparent);
+}
+
+/* Attachment preview strip */
+.redcoach-attachments-strip {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 10px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--rb-line);
+  overflow-x: auto;
+}
+
+.redcoach-attachment-thumb {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--rb-line);
   flex-shrink: 0;
 }
 
-.redcoach-title-row {
+.redcoach-attachment-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.redcoach-attachment-remove {
+  position: absolute !important;
+  top: 2px !important;
+  right: 2px !important;
+  width: 18px !important;
+  height: 18px !important;
+  min-height: 18px !important;
+  max-height: 18px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+}
+
+/* Textarea input */
+.redcoach-textarea {
+  width: 100% !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  outline: none !important;
+  resize: none !important;
+  font-family: inherit !important;
+  font-size: 0.96rem !important;
+  line-height: 1.55 !important;
+  color: var(--rb-ink) !important;
+  padding: 4px 4px 10px !important;
+  min-height: 48px !important;
+  max-height: 180px !important;
+  overflow-y: auto !important;
+}
+
+.redcoach-textarea::placeholder {
+  color: var(--rb-muted);
+  opacity: 0.7;
+}
+
+/* Bottom Actions Bar */
+.redcoach-actions-bar {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.redcoach-actions-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 3 Left Circular Action Buttons */
+.redcoach-circle-btn {
+  width: 36px !important;
+  height: 36px !important;
+  min-height: 36px !important;
+  max-height: 36px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  border: 1px solid var(--rb-line) !important;
+  color: var(--rb-muted) !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.redcoach-circle-btn:hover {
+  border-color: color-mix(in srgb, var(--rb-accent) 60%, var(--rb-line)) !important;
+  color: var(--rb-ink) !important;
+  background: var(--rb-soft) !important;
+  transform: translateY(-1px);
+}
+
+.redcoach-circle-btn.is-recording {
+  border-color: #ef4444 !important;
+  color: #ef4444 !important;
+  background: rgba(239, 68, 68, 0.12) !important;
+  animation: redcoach-pulse 1.4s ease-in-out infinite;
+}
+
+/* AI Model selection popover */
+.redcoach-model-popover {
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+  background: var(--rb-panel);
+  border: 1px solid var(--rb-line);
+  border-radius: 14px;
+  padding: 6px;
+  box-shadow: 0 12px 36px var(--rb-shadow);
+  z-index: 50;
+  min-width: 230px;
+}
+
+.redcoach-model-opt {
+  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px 10px !important;
+  border-radius: 8px !important;
+  font-size: 0.8rem !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: var(--rb-ink) !important;
+  text-align: left !important;
+  min-height: 32px !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+}
+
+.redcoach-model-opt:hover,
+.redcoach-model-opt.active {
+  background: var(--rb-soft) !important;
+  color: var(--rb-accent) !important;
+}
+
+/* Right Pill Send Button */
+.redcoach-send-pill {
+  height: 36px !important;
+  min-height: 36px !important;
+  max-height: 36px !important;
+  padding: 0 16px !important;
+  border-radius: 9999px !important;
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35) !important;
+  cursor: pointer !important;
+  transition: all 0.18s ease !important;
+}
+
+.redcoach-send-pill:hover:not(:disabled) {
+  background: #1d4ed8 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45) !important;
+}
+
+.redcoach-send-pill:disabled {
+  opacity: 0.45 !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* ========================================================================= */
+/* INITIAL STATE: STARTER QUESTIONS CHIPS                                    */
+/* ========================================================================= */
+
+.redcoach-initial-starters {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
-.redcoach-title-row h2 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin: 0;
-  letter-spacing: -0.02em;
+.redcoach-starters-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--rb-muted);
+}
+
+.redcoach-chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.redcoach-chip-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 7px 14px !important;
+  min-height: 34px !important;
+  border-radius: 9999px !important;
+  background: var(--rb-panel) !important;
+  border: 1px solid var(--rb-line) !important;
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  color: var(--rb-ink) !important;
+  transition: all 0.18s ease !important;
+  cursor: pointer !important;
+  box-shadow: 0 2px 8px var(--rb-shadow) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+
+.redcoach-chip-btn:hover {
+  background: var(--rb-soft) !important;
+  border-color: color-mix(in srgb, var(--rb-accent) 60%, var(--rb-line)) !important;
+  color: var(--rb-accent) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* ========================================================================= */
+/* 2. ACTIVE STATE: EXPANDED FULL-WIDTH WORKSPACE & CONVERSATION STREAM      */
+/* ========================================================================= */
+
+.redcoach-active-workspace {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  width: 100%;
+}
+
+/* Top bar with back/new chat controls */
+.redcoach-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  background: var(--rb-panel);
+  border: 1px solid var(--rb-line);
+  border-radius: 18px;
+  box-shadow: 0 4px 16px var(--rb-shadow);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  flex-shrink: 0;
+}
+
+.redcoach-top-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.redcoach-top-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #8a5ce4, #7042cb);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 3px 10px rgba(138, 92, 228, 0.3);
 }
 
 .redcoach-badge {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 650;
-  padding: 2px 9px;
+  padding: 2px 8px;
   border-radius: 999px;
   background: var(--rb-soft);
   color: var(--rb-accent);
 }
 
-.redcoach-header p {
-  font-size: 0.82rem;
-  color: var(--rb-muted);
-  margin: 3px 0 0;
-}
-
-.redcoach-clear-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 12px !important;
+.redcoach-new-chat-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 6px 14px !important;
   min-height: 32px !important;
-  font-size: 0.8rem !important;
-  border-radius: 999px !important;
+  border-radius: 9999px !important;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
   background: var(--rb-fill) !important;
-  color: var(--rb-muted) !important;
   border: 1px solid var(--rb-line) !important;
+  color: var(--rb-muted) !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+  transition: all 0.15s ease !important;
 }
 
-.redcoach-messages-stream {
+.redcoach-new-chat-btn:hover {
+  color: var(--rb-ink) !important;
+  border-color: var(--rb-line) !important;
+  background: var(--rb-soft) !important;
+}
+
+/* Scrollable message stream */
+.redcoach-stream-scroll {
   flex: 1;
-  min-height: 280px;
-  max-height: 520px;
+  min-height: 0;
   overflow-y: auto;
-  padding: 8px 6px 16px 0;
+  padding: 8px 4px 18px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  scroll-behavior: smooth;
+}
+
+.redcoach-stream-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.redcoach-stream-scroll::-webkit-scrollbar-thumb {
+  background: var(--rb-line);
+  border-radius: 999px;
 }
 
 .redcoach-msg-row {
@@ -365,6 +709,7 @@ main.redbook-app.portrait-dock-mode.sidebar-folded {
   gap: 12px;
   align-items: flex-start;
   width: 100%;
+  animation: redcoach-fade-in 0.22s ease-out;
 }
 
 .redcoach-msg-row.is-user {
@@ -384,9 +729,9 @@ main.redbook-app.portrait-dock-mode.sidebar-folded {
 }
 
 .redcoach-msg-row.is-bot .redcoach-msg-avatar {
-  background: var(--rb-accent);
-  color: white;
-  box-shadow: 0 2px 8px color-mix(in srgb, var(--rb-accent) 30%, transparent);
+  background: linear-gradient(135deg, #8a5ce4, #7042cb);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(138, 92, 228, 0.3);
 }
 
 .redcoach-msg-row.is-user .redcoach-msg-avatar {
@@ -398,22 +743,39 @@ main.redbook-app.portrait-dock-mode.sidebar-folded {
 .redcoach-bubble {
   max-width: 82%;
   padding: 14px 18px;
-  border-radius: 18px;
+  border-radius: 20px;
   font-size: 0.92rem;
   line-height: 1.65;
-  box-shadow: 0 2px 8px var(--rb-shadow);
+  box-shadow: 0 2px 10px var(--rb-shadow);
+  position: relative;
 }
 
 .redcoach-msg-row.is-bot .redcoach-bubble {
   background: var(--rb-panel);
   border: 1px solid var(--rb-line);
   color: var(--rb-ink);
+  border-top-left-radius: 4px;
 }
 
 .redcoach-msg-row.is-user .redcoach-bubble {
-  background: var(--rb-accent);
-  color: #fff;
-  border-bottom-right-radius: 4px;
+  background: #2563eb;
+  color: #ffffff;
+  border-top-right-radius: 4px;
+}
+
+.redcoach-msg-attachments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.redcoach-msg-img {
+  max-width: 220px;
+  max-height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .redcoach-bubble-text {
@@ -432,18 +794,24 @@ main.redbook-app.portrait-dock-mode.sidebar-folded {
 
 .redcoach-msg-row.is-user .redcoach-bubble-meta {
   justify-content: flex-end;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .redcoach-msg-row.is-bot .redcoach-bubble-meta {
   color: var(--rb-muted);
 }
 
-.redcoach-thinking {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--rb-muted);
+/* Thinking State: "redCoach is thinking..." */
+.redcoach-thinking-bubble {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background: var(--rb-panel) !important;
+  border: 1px solid var(--rb-line) !important;
+  color: var(--rb-muted) !important;
+  padding: 12px 18px !important;
+  border-radius: 20px !important;
+  border-top-left-radius: 4px !important;
 }
 
 .redcoach-pulse-dot {
@@ -451,72 +819,63 @@ main.redbook-app.portrait-dock-mode.sidebar-folded {
   height: 8px;
   border-radius: 50%;
   background: var(--rb-accent);
-  animation: ping 1.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  animation: redcoach-pulse 1.3s ease-in-out infinite;
 }
 
-.redcoach-starters-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  margin: 12px 0 16px;
-}
-
-.redcoach-starter-card {
-  text-align: left !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  gap: 12px;
-  padding: 12px 16px !important;
-  border-radius: 16px !important;
-  background: var(--rb-fill) !important;
-  border: 1px solid var(--rb-line) !important;
-  transition: all 0.18s ease !important;
-  min-height: 52px !important;
-}
-
-.redcoach-starter-card:hover {
-  background: var(--rb-soft) !important;
-  border-color: var(--rb-accent) !important;
-  transform: translateY(-1px) !important;
-}
-
-.redcoach-starter-card small {
-  display: block;
-  font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--rb-accent);
-  margin-bottom: 2px;
-}
-
-.redcoach-starter-card strong {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--rb-ink);
-  line-height: 1.35;
-}
-
-.redcoach-input-dock {
-  padding-top: 14px;
-  border-top: 1px solid var(--rb-line);
+/* Bottom Docked Input Card in Active Workspace */
+.redcoach-bottom-dock {
+  padding: 12px 0 6px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  width: 100%;
+  flex-shrink: 0;
+  background: linear-gradient(to top, var(--rb-bg) 70%, transparent);
 }
 
+.redcoach-bottom-dock .redcoach-chatbox-card {
+  max-width: 840px;
+}
+
+/* Animations */
+@keyframes redcoach-pulse {
+  0%, 100% {
+    transform: scale(0.85);
+    opacity: 0.45;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes redcoach-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
 @media (max-width: 720px) {
-  .redcoach-starters-grid {
-    grid-template-columns: 1fr;
+  .redcoach-initial-title {
+    font-size: 1.65rem;
+  }
+  .redcoach-initial-subtitle {
+    font-size: 0.85rem;
   }
   .redcoach-bubble {
     max-width: 90%;
-    font-size: 0.85rem;
+    font-size: 0.86rem;
     padding: 12px 14px;
   }
-  .redcoach-inner-card {
-    padding: 18px 14px 16px;
+  .redcoach-chatbox-card {
+    padding: 12px 14px 10px;
+  }
+  .redcoach-page-wrapper.is-active {
+    height: calc(100dvh - 90px);
   }
 }
