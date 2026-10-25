@@ -181,14 +181,15 @@ I'm ready to walk you through math problems, grammar rules, transition questions
       .replace(/\\pi\b/g, "π")
       .replace(/\^2\b/g, "²")
       .replace(/\^3\b/g, "³")
-      .replace(/\\begin\{cases\}([\s\S]*?)\\end\{cases\}/g, (_, body) =>
+      .replace(/\\begin\{cases\}([\s\S]*?)\\end\{cases\}/g, (_: string, body: string) =>
         body
           .split("\\\\")
           .map((s: string) => s.trim())
           .filter(Boolean)
           .join("\n")
       )
-      .replace(/\$([^$\n]+)\$/g, "$1");
+      .replace(/\$([^$\n]+)\$/g, "$1")
+      .replace(/\$/g, "");
 
     return NextResponse.json({ reply: replyText, model: successfulModel });
   } catch (error: any) {
