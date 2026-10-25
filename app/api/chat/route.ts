@@ -7,13 +7,45 @@ interface ChatMessage {
   content: string;
 }
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   const apiKey =
     process.env.GEMINI_API_KEY ||
     process.env.NEXT_PUBLIC_GEMINI_API_KEY ||
     process.env.GOOGLE_AI_API_KEY;
 
   if (!apiKey) return NextResponse.json({ error: "No API key configured." });
+
+  const url = new URL(req.url);
+  const testModel = url.searchParams.get("testModel");
+
+  if (testModel) {
+    const t0 = Date.now();
+    try {
+      const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${testModel}:generateContent?key=${apiKey}`;
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ role: "user", parts: [{ text: "Hello, reply 'OK' in one word." }] }],
+        }),
+        signal: AbortSignal.timeout(10000),
+      });
+      const durationMs = Date.now() - t0;
+      const text = await res.text();
+      return NextResponse.json({
+        model: testModel,
+        status: res.status,
+        durationMs,
+        response: text.slice(0, 500),
+      });
+    } catch (err: any) {
+      return NextResponse.json({
+        model: testModel,
+        error: err.name === "TimeoutError" ? "Timeout after 10s" : err.message,
+        durationMs: Date.now() - t0,
+      });
+    }
+  }
 
   try {
     const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
@@ -56,11 +88,10 @@ I'm ready to walk you through math problems, grammar rules, transition questions
 
     // Google's active generation models in priority order
     const priorityModels = [
-      "gemini-3.8-flash",
-      "gemini-3.7-flash",
-      "gemini-3.6-flash",
-      "gemini-3.5-flash",
       "gemini-flash-latest",
+      "gemini-3.8-flash",
+      "gemini-3.5-flash",
+      "gemini-2.5-flash-lite",
       "gemini-pro-latest",
     ];
 
@@ -95,6 +126,7 @@ I'm ready to walk you through math problems, grammar rules, transition questions
               maxOutputTokens: effort === "Low" ? 600 : 1800,
             },
           }),
+          signal: AbortSignal.timeout(4500),
         });
 
         if (response.ok) {
