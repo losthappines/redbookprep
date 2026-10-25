@@ -282,7 +282,7 @@ export default function Page() {
       const records=JSON.parse(localStorage.getItem('redbookprep-imports')||'[]');
       if(!Array.isArray(records))throw Error();
       questions=[...sampleQuestions,...records.flatMap((r:{pack:unknown;key:string})=>parseBbplus(r.pack,r.key))];
-      setQuestions(questions); void (async () => { const builtInPacks = [{ url: '/packs/mathbook-3/algebra.bbplus', key: 'mathbook3-algebra' }, { url: '/packs/mathbook-3/advanced-math.bbplus', key: 'mathbook3-advanced-math' }, { url: '/packs/mathbook-3/problem-solving.bbplus', key: 'mathbook3-problem-solving' }, { url: '/packs/mathbook-3/geometry-trigonometry.bbplus', key: 'mathbook3-geometry-trigonometry' }]; try { const fetched = await Promise.all(builtInPacks.map(async ({ url, key }) => { const res = await fetch(url); if (!res.ok) return []; const raw = await res.json(); return parseBbplus(raw, key); })); const builtInQuestions = fetched.flat(); if (builtInQuestions.length) { setQuestions((old) => [...old, ...builtInQuestions.filter((q) => !old.some((item) => item.id === q.id))]); } } catch {} })();
+      setQuestions(questions);
     } catch {setStorageError('Saved imported materials could not be loaded.');}
 
     try {
