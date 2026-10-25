@@ -3,7 +3,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { PromptInput } from "@/components/ui/ai-chat-input";
 import { Sparkles, Bot, User, Trash2, ArrowRight } from "lucide-react";
-import { RedCoachFormattedContent } from "@/components/study/redcoach-formatted-content";
 
 interface Message {
   id: string;
@@ -158,11 +157,7 @@ Ask me any math problem, grammar rule, reading question, or test-taking strategy
                 </div>
 
                 <div className="redcoach-bubble">
-                  {isBot ? (
-                    <RedCoachFormattedContent content={m.content} />
-                  ) : (
-                    <div className="redcoach-bubble-text">{m.content}</div>
-                  )}
+                  <div className="redcoach-bubble-text">{m.content}</div>
                   <div className="redcoach-bubble-meta">
                     {m.model && <span>{m.model}</span>}
                     {m.effort && <span>· {m.effort} effort</span>}
