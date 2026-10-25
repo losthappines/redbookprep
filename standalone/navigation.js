@@ -1,0 +1,1 @@
+export function useRouter(){return {push:(path)=>{location.hash=path},replace:(path)=>{history.replaceState(null,'',location.href.split('#')[0]+'#'+path);window.dispatchEvent(new HashChangeEvent('hashchange'))},back:()=>history.back(),refresh:()=>location.reload()}}

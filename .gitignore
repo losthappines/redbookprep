@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+build/
+
+# TypeScript & build caches
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment variables & secrets
+.env*
+!.env.example
+
+# Local standalone builds & design scratchpads
+releases/
+design/
+Look and feel/
+*.py
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

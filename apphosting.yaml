@@ -1,0 +1,12 @@
+# Firebase App Hosting configuration for PrepDeck (Next.js)
+# https://firebase.google.com/docs/app-hosting/configure
+
+runConfig:
+  # Scale down to 0 instances when idle to stay within free tier limits
+  minInstances: 0
+  # Cap maximum instances to prevent unexpected billing spikes
+  maxInstances: 2
+  # Standard resource allocation for Next.js SSR/App Router
+  cpu: 1
+  memoryMiB: 512
+  concurrency: 80

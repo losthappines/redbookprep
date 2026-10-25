@@ -1,0 +1,6 @@
+const fs=require('node:fs'),path=require('node:path'),ts=require('typescript');
+module.exports=function(source,resourcePath){
+ if(resourcePath.endsWith(path.join('app','study','page.tsx'))){const search="(window.location.hash.includes('?') ? '?'+window.location.hash.split('?').slice(1).join('?') : '')";source=source.replaceAll('window.location.search',search).replaceAll('new URLSearchParams(location.search)',`new URLSearchParams(${search})`)}
+ if(resourcePath.endsWith(path.join('components','study','graph-calculator.tsx'))){let calc=fs.readFileSync(path.resolve('public/calculator/index.html'),'utf8');const js=fs.readFileSync(path.resolve('public/calculator/calculator.js'),'utf8').replaceAll('},location.origin)','},"*")');calc=calc.replace('<script src="calculator.js"></script>',`<script>${js.replaceAll('</script','<\\/script')}</script>`);source=source.replace("!frame.current.getAttribute('src')","!frame.current.getAttribute('srcdoc')").replace("frame.current.src = '/calculator/index.html'",'frame.current.srcdoc = '+JSON.stringify(calc)).replace('}, location.origin);','}, "*");')}
+ return ts.transpileModule(source,{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2020,esModuleInterop:true}}).outputText;
+};
