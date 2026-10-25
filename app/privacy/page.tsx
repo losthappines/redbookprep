@@ -13,7 +13,11 @@ export default function Privacy() {
       <span className="eyebrow">PRIVACY POLICY</span>
       <h1>Your study data,<br />explained plainly.</h1>
       <p>
-        Updated October 25, 2026. This policy explains what information RedBookPrep collects, how your SAT study progress is stored on your device and in the cloud, and the controls you have over your data.
+        Updated October 25, 2026. This policy explains what information RedBookPrep collects, how your SAT® study progress is stored on your device and in the cloud, and the controls you have over your data.
+      </p>
+      <h2>Age requirement (13+ &amp; COPPA compliance)</h2>
+      <p>
+        RedBookPrep is designed for high school students preparing for college admissions exams. Online account creation and Google Cloud synchronization are intended exclusively for students aged 13 and older (or with verifiable parent, guardian, or educator consent). Students under 13 may use the local guest study workspace without creating an account or submitting personal information. We do not knowingly collect personal information from children under 13.
       </p>
       <h2>Local browser storage</h2>
       <p>
@@ -27,9 +31,9 @@ export default function Privacy() {
       <p>
         RedBookPrep is hosted on Vercel and uses Google Firebase for optional authentication and cloud progress synchronization. We do not sell student data or display third-party behavioral advertising.
       </p>
-      <h2>Your controls and data deletion</h2>
+      <h2>Your controls, data deletion, and trademark notice</h2>
       <p>
-        You can export a complete JSON backup of your attempts, notes, and review dates at any time from Settings. You can clear local browser storage using your browser’s site-data controls, or request complete deletion of your cloud-synced account data by emailing <a href="mailto:support@redbookprep.site">support@redbookprep.site</a>.
+        You can export a complete JSON backup of your attempts, notes, and review dates at any time from Settings. You can clear local browser storage using your browser’s site-data controls, or request complete deletion of your cloud-synced account data by emailing <a href="mailto:support@redbookprep.site">support@redbookprep.site</a>. SAT® is a registered trademark of the College Board, which is not affiliated with and does not endorse RedBookPrep.
       </p>
       <p>
         <Link className="public-button" href="/study">Return to Study Workspace →</Link>

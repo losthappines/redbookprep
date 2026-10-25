@@ -233,14 +233,17 @@ export default function AuthPage({mode}:{mode:'login'|'signup'}){
               )}
               {' · '}
               <Link href="/privacy">Privacy</Link>
+              <br />
+              <small style={{opacity:0.8}}>Online accounts and cloud sync are intended for students aged 13 and older.</small>
             </p>
           </form>
         </section>
       </main>
       <footer className="rb-public-footer">
-        <span>RedBookPrep · Your study space.</span>
+        <span>RedBookPrep · Independent study space. SAT® is a registered trademark of the College Board, which is not affiliated with and does not endorse RedBookPrep.</span>
         <div>
           <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
           <Link href="/privacy">Privacy</Link>
         </div>
       </footer>

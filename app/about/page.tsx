@@ -13,7 +13,7 @@ export default function About() {
       <span className="eyebrow">ABOUT US</span>
       <h1>A little practice.<br />More possibility.</h1>
       <p>
-        RedBookPrep is an independent Digital SAT test preparation platform inspired by RedBook+. Our aim is to make the next useful study step easy to find: choose a skill, practise in a realistic split-screen environment, understand mistakes, schedule a review, and track real progress over time.
+        RedBookPrep is an independent Digital SAT® test preparation platform inspired by RedBook+. Our aim is to make the next useful study step easy to find: choose a skill, practise in a realistic split-screen environment, understand mistakes, schedule a review, and track real progress over time.
       </p>
       <h2>What you can use today</h2>
       <p>
@@ -21,11 +21,11 @@ export default function About() {
       </p>
       <h2>Local-first speed with Google Cloud sync</h2>
       <p>
-        You can start practising immediately in your browser without creating an account. When you want to back up your progress or switch between your laptop and tablet, you can sign in with Google or an email account to automatically synchronize your attempts, mistake notes, score goals, and weekly study schedule across devices.
+        You can start practising immediately in your browser without creating an account. When you want to back up your progress or switch between your laptop and tablet, students aged 13 and older can sign in with Google or an email account to automatically synchronize attempts, mistake notes, score goals, and weekly study schedules across devices.
       </p>
-      <h2>Learning comes first</h2>
+      <h2>Learning comes first &amp; Trademark Disclaimer</h2>
       <p>
-        Grading uses verified answer keys and detailed explanations. Accuracy and pacing reflect your practice attempts; they are not official SAT score predictions. RedBookPrep is an independent educational project and is not affiliated with or endorsed by College Board.
+        Grading uses verified answer keys and detailed explanations. Accuracy and pacing reflect your practice attempts; they are not official SAT® score predictions. SAT® is a registered trademark of the College Board, which is not affiliated with, and does not endorse, RedBookPrep or this website.
       </p>
       <p>
         <Link className="public-button" href="/study">Explore the Study Workspace →</Link>
