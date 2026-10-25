@@ -1300,7 +1300,7 @@ export default function Page() {
                     : 'These figures describe this sample practice, not a predicted SAT score.'}
                 </p>
               </section>
-              {questions.map((q) => {
+              {Array.from(questions.reduce((map, q) => { const key = q.skill || 'Unclassified'; const group = map.get(key) || { skill: key, domain: q.domain, section: q.section, items: [] as PracticeQuestion[] }; group.items.push(q); map.set(key, group); return map; }, new Map<string, { skill: string; domain: string; section: string; items: PracticeQuestion[] }>()).values()).map((group) => { const answerById = new Map(group.items.map((item) => [item.id, item.answer])); const rows = attempts.filter((a) => answerById.has(a.id)); const correctCount = rows.filter((a) => a.choice === answerById.get(a.id)).length; const solvedUnique = new Set(rows.map((a) => a.id)).size; return (<section className="card" key={group.skill}><span className="eyebrow">{group.section} · {group.domain}</span><h2>{group.skill}</h2><progress aria-label={group.skill + ' accuracy'} max={rows.length || 1} value={correctCount} /><p>{solvedUnique} of {group.items.length} questions practiced · {rows.length} attempts · {correctCount} correct · {rows.length ? Math.round(rows.reduce((n, a) => n + a.seconds, 0) / rows.length) : 0}s average</p></section>); })}{false && questions.map((q) => {
                 const rows = attempts.filter((a) => a.id === q.id);
                 return (
                   <section className="card" key={q.id}>
