@@ -232,6 +232,8 @@ export default function AuthPage({mode}:{mode:'login'|'signup'}){
                 <>New to RedBookPrep? <Link href="/signup">Create account</Link>{isFirebaseConfigured&&<> · <button type="button" onClick={handleResetPassword} style={{background:'none',border:0,padding:0,color:'var(--p-accent)',font:'inherit',cursor:'pointer'}}>Forgot password?</button></>}</>
               )}
               {' · '}
+              <Link href="/terms">Terms</Link>
+              {' · '}
               <Link href="/privacy">Privacy</Link>
               <br />
               <small style={{opacity:0.8}}>Online accounts and cloud sync are intended for students aged 13 and older.</small>
@@ -244,6 +246,7 @@ export default function AuthPage({mode}:{mode:'login'|'signup'}){
         <div>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
+          <Link href="/terms">Terms</Link>
           <Link href="/privacy">Privacy</Link>
         </div>
       </footer>

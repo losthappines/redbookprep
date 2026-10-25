@@ -70,6 +70,19 @@ Updated October 25, 2026.
 Links: [Home](https://www.redbookprep.site/) | [About](https://www.redbookprep.site/about) | [Contact](https://www.redbookprep.site/contact)
 `,
   },
+  '/terms': {
+    title: 'Terms of Service — RedBookPrep',
+    markdown: `# Terms of Service — RedBookPrep
+
+Updated October 25, 2026.
+
+- **Single-User Educational Workspace**: RedBookPrep is a single-user Digital SAT test preparation workspace with no user-to-user messaging, chatrooms, or public file sharing.
+- **Eligibility**: Online accounts and Google Cloud sync are for students aged 13 and older.
+- **Disclaimer & Limitation of Liability**: Provided "AS IS" without warranties; total aggregate liability is limited to $0.00 to the maximum extent permitted by law. SAT® is a registered trademark of the College Board, which is not affiliated with and does not endorse RedBookPrep.
+
+Links: [Home](https://www.redbookprep.site/) | [Privacy](https://www.redbookprep.site/privacy) | [Contact](https://www.redbookprep.site/contact)
+`,
+  },
   '/study': {
     title: 'Study Workspace — RedBookPrep',
     markdown: `# RedBookPrep Study Workspace
