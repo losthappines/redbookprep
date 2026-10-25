@@ -122,7 +122,7 @@ export const SignInPage: React.FC<SignInPageProps> = ({
             </button>
 
             <p className="animate-element animate-delay-900 text-center text-sm text-muted-foreground">
-              {mode === 'signup' ? 'Already have an account?' : 'New to PrepDeck?'} <a href="#" onClick={(e) => { e.preventDefault(); onCreateAccount?.(); }} className="text-violet-400 hover:underline transition-colors">{mode === 'signup' ? 'Sign in' : 'Create account'}</a>
+              {mode === 'signup' ? 'Already have an account?' : 'New to RedBookPrep?'} <a href="#" onClick={(e) => { e.preventDefault(); onCreateAccount?.(); }} className="text-violet-400 hover:underline transition-colors">{mode === 'signup' ? 'Sign in' : 'Create account'}</a>
             </p>
           </div>
         </div>

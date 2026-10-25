@@ -3,7 +3,7 @@ import {useState,useEffect,useRef} from 'react';
 import {BookOpen,Upload,ArrowLeft,RotateCcw,Check,RefreshCw} from 'lucide-react';
 import {parseFlashDeck,starterDeck,newWordSession,rateWord,type FlashDeck,type WordSession} from './flashcards';
 type SavedDeck=FlashDeck&{id:string;session?:WordSession};
-const storageKey='prepdeck-vocabulary';
+const storageKey='redbookprep-vocabulary';
 export function Vocabulary(){
  const [decks,setDecks]=useState<SavedDeck[]>([{...starterDeck,id:'starter-v1'}]),[selected,setSelected]=useState<string|null>(null),[search,setSearch]=useState(''),[error,setError]=useState(''),[notice,setNotice]=useState(''),[ready,setReady]=useState(false),[importing,setImporting]=useState(false);
  const input=useRef<HTMLInputElement>(null),store=useRef(decks);

@@ -33,13 +33,13 @@ main.redbook-app.player-view{padding:0;margin:0;min-height:100dvh;height:100dvh;
 main.redbook-app.player-view{background:radial-gradient(ellipse at 12% 8%,color-mix(in srgb,var(--rb-accent) 20%,transparent),transparent 36%),radial-gradient(ellipse at 92% 48%,#bb354e15,transparent 36%),var(--rb-bg)}
 
 /* The original offline RedBook Graph workspace, isolated from solver styles. */
-.redbook-app .prepdeck-graph-calculator{position:fixed;inset:auto;margin:0;left:max(16px,calc((100vw - 1100px)/2));top:32px;width:min(1100px,calc(100vw - 32px));height:min(780px,calc(100dvh - 64px));min-width:min(600px,calc(100vw - 32px));min-height:min(420px,calc(100dvh - 32px));max-width:calc(100vw - 16px);max-height:calc(100dvh - 16px);padding:0;border:1px solid var(--rb-line);border-radius:16px;background:var(--rb-bg);color:var(--rb-ink);box-shadow:0 24px 90px #0005;resize:both;overflow:hidden;z-index:100}
-.redbook-app .prepdeck-graph-calculator[open]{display:flex;flex-direction:column}
-.redbook-app .prepdeck-graph-calculator:not([open]){display:none}
-.redbook-app .prepdeck-graph-bar{flex:none;display:flex;align-items:center;justify-content:space-between;padding:8px 14px;gap:12px;cursor:move;border-bottom:1px solid var(--rb-line);user-select:none;touch-action:none}
-.redbook-app .prepdeck-graph-bar strong{font-size:13px}
-.redbook-app .prepdeck-graph-bar button{cursor:pointer;padding:7px 14px}
-.redbook-app .prepdeck-graph-calculator iframe{width:100%;flex:1;min-height:0;border:0;display:block;background:var(--rb-bg)}
+.redbook-app .redbookprep-graph-calculator{position:fixed;inset:auto;margin:0;left:max(16px,calc((100vw - 1100px)/2));top:32px;width:min(1100px,calc(100vw - 32px));height:min(780px,calc(100dvh - 64px));min-width:min(600px,calc(100vw - 32px));min-height:min(420px,calc(100dvh - 32px));max-width:calc(100vw - 16px);max-height:calc(100dvh - 16px);padding:0;border:1px solid var(--rb-line);border-radius:16px;background:var(--rb-bg);color:var(--rb-ink);box-shadow:0 24px 90px #0005;resize:both;overflow:hidden;z-index:100}
+.redbook-app .redbookprep-graph-calculator[open]{display:flex;flex-direction:column}
+.redbook-app .redbookprep-graph-calculator:not([open]){display:none}
+.redbook-app .redbookprep-graph-bar{flex:none;display:flex;align-items:center;justify-content:space-between;padding:8px 14px;gap:12px;cursor:move;border-bottom:1px solid var(--rb-line);user-select:none;touch-action:none}
+.redbook-app .redbookprep-graph-bar strong{font-size:13px}
+.redbook-app .redbookprep-graph-bar button{cursor:pointer;padding:7px 14px}
+.redbook-app .redbookprep-graph-calculator iframe{width:100%;flex:1;min-height:0;border:0;display:block;background:var(--rb-bg)}
 
 .redbook-app .module-review{max-height:calc(100dvh - 48px);overflow:auto;width:min(660px,100%)}
 .redbook-app .module-review>p{font-size:.9rem;color:var(--rb-muted);line-height:1.6;margin:0 0 20px}

@@ -155,10 +155,10 @@ export default function Page() {
     try{raw=JSON.parse(content.replace(/^\uFEFF/,''));}catch{throw Error('This .bbplus file does not contain valid JSON.');}
     const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(content)))).map(n=>n.toString(16).padStart(2,'0')).join('');
     const imported=parseBbplus(raw,hash);
-    const records=JSON.parse(localStorage.getItem('prepdeck-imports')||'[]');
+    const records=JSON.parse(localStorage.getItem('redbookprep-imports')||'[]');
     if (!Array.isArray(records)) throw Error('Saved imports could not be read.');
     if (!records.some((r:{key:string})=>r.key===hash)) {
-      try{localStorage.setItem('prepdeck-imports',JSON.stringify([...records,{key:hash,pack:raw}]))}catch{throw Error('Not enough browser storage to save this material.');}
+      try{localStorage.setItem('redbookprep-imports',JSON.stringify([...records,{key:hash,pack:raw}]))}catch{throw Error('Not enough browser storage to save this material.');}
     }
     setQuestions(old=>[...old,...imported.filter(q=>!old.some(item=>item.id===q.id))]);
     return imported.filter((q,i)=>imported.findIndex(item=>item.moduleId===q.moduleId)===i).map(q=>({...q,skill:`${q.materialTitle} · ${q.moduleTitle}`}));
@@ -242,7 +242,7 @@ export default function Page() {
   // Settings
   useEffect(() => {
     try {
-      const p = JSON.parse(localStorage.getItem('prepdeck-settings') || '{}');
+      const p = JSON.parse(localStorage.getItem('redbookprep-settings') || '{}');
       setCollapsed(Boolean(p.collapsed));
       setTheme(['light', 'dark', 'system'].includes(p.theme) ? p.theme : 'light');
       setReadingSize(p.readingSize === 'large' ? 'large' : 'standard');
@@ -254,7 +254,7 @@ export default function Page() {
 
   useEffect(() => {
     if (!prefsReady) return;
-    try{localStorage.setItem('prepdeck-settings', JSON.stringify({ collapsed, theme, readingSize, reduced,solidGlass,highContrast,accent,focusPractice,readingSplit }));}catch{setStorageError('Your settings could not be saved.');}
+    try{localStorage.setItem('redbookprep-settings', JSON.stringify({ collapsed, theme, readingSize, reduced,solidGlass,highContrast,accent,focusPractice,readingSplit }));}catch{setStorageError('Your settings could not be saved.');}
     const mq = window.matchMedia('(prefers-color-scheme: dark)');
     const apply = () => {
       document.documentElement.dataset.theme =
@@ -272,26 +272,26 @@ export default function Page() {
   useStudyDialog(showNavigator||showRefSheetModal||mobileSidebarOpen||Boolean(moduleStage),closeStudyDialog);
   const switchView=(next:string)=>{setView(next);setMobileSidebarOpen(false);if(next==='Practice')setOpened(false);window.scrollTo({top:0,behavior:'instant'})};
   const toggleSidebar=()=>{if(matchMedia('(max-width:720px)').matches){setMobileSidebarOpen(v=>!v)}else{setCollapsed(v=>!v);requestAnimationFrame(()=>collapsed?closeSidebarRef.current?.focus():openSidebarRef.current?.focus())}};
-  const exportStudy=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify({version:1,attempts},null,2)],{type:'application/json'}));const link=document.createElement('a');link.href=url;link.download='prepdeck-study-backup.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+  const exportStudy=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify({version:1,attempts},null,2)],{type:'application/json'}));const link=document.createElement('a');link.href=url;link.download='redbookprep-study-backup.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
   useEffect(()=>{if(ready){const params=new URLSearchParams({tab:view==='Home'?'dashboard':view.toLowerCase().replaceAll(' ','-')});if(view==='Practice'&&opened)params.set('solve','true');window.history.replaceState(null,'','/study?'+params.toString())}},[view,opened,ready]);
 
   // Initial load
   useEffect(() => {
     let questions=sampleQuestions;
     try {
-      const records=JSON.parse(localStorage.getItem('prepdeck-imports')||'[]');
+      const records=JSON.parse(localStorage.getItem('redbookprep-imports')||'[]');
       if(!Array.isArray(records))throw Error();
       questions=[...sampleQuestions,...records.flatMap((r:{pack:unknown;key:string})=>parseBbplus(r.pack,r.key))];
       setQuestions(questions);
     } catch {setStorageError('Saved imported materials could not be loaded.');}
 
     try {
-      const u = JSON.parse(localStorage.getItem('prepdeck-user') || 'null');
+      const u = JSON.parse(localStorage.getItem('redbookprep-user') || 'null');
       if (u) setUser(u);
     } catch {}
 
     try {
-      const data = JSON.parse(localStorage.getItem('prepdeck-demo') || '[]');
+      const data = JSON.parse(localStorage.getItem('redbookprep-demo') || '[]');
       if (Array.isArray(data)) {
         setAttempts(
           data
@@ -314,7 +314,7 @@ export default function Page() {
         );
       }
 
-      const draft = JSON.parse(localStorage.getItem('prepdeck-draft') || 'null');
+      const draft = JSON.parse(localStorage.getItem('redbookprep-draft') || 'null');
       if (
         draft &&
         Number.isInteger(draft.index) &&
@@ -391,7 +391,7 @@ export default function Page() {
   useEffect(() => {
     if (ready) {
       try {
-        localStorage.setItem('prepdeck-demo', JSON.stringify(attempts));
+        localStorage.setItem('redbookprep-demo', JSON.stringify(attempts));
       } catch {
         setStorageError('Your browser could not save progress.');
       }
@@ -404,7 +404,7 @@ export default function Page() {
       try {
         questionDrafts.current[index] = {choice, submitted, started, note: sessionNote};
         localStorage.setItem(
-          'prepdeck-draft',
+          'redbookprep-draft',
           JSON.stringify({ index, choice, started, submitted, note: sessionNote, questions: questionDrafts.current, flagged, finished: moduleFinished.current })
         );
       } catch {
@@ -566,7 +566,7 @@ export default function Page() {
       </header>
       {mobileSidebarOpen&&<button className="rb-mobile-scrim" aria-label="Close navigation" onClick={()=>setMobileSidebarOpen(false)}/>}
       <aside className="sidebar" inert={smallViewport?!mobileSidebarOpen:collapsed} role={smallViewport&&mobileSidebarOpen?"dialog":undefined} aria-modal={smallViewport&&mobileSidebarOpen?true:undefined} aria-label="Study navigation">
-        <div className="rb-side-brand"><a className="brand" href="/" aria-label="PrepDeck home"><span className="brand-mark"><BookOpen size={22}/></span><div><b>PrepDeck</b><small>A little practice.<br/>More possibility.</small></div></a><button ref={closeSidebarRef} className="sidebar-toggle rb-icon-button" aria-label="Close sidebar" onClick={toggleSidebar}><PanelLeft size={19}/></button></div>
+        <div className="rb-side-brand"><a className="brand" href="/" aria-label="RedBookPrep home"><span className="brand-mark"><BookOpen size={22}/></span><div><b>RedBookPrep</b><small>A little practice.<br/>More possibility.</small></div></a><button ref={closeSidebarRef} className="sidebar-toggle rb-icon-button" aria-label="Close sidebar" onClick={toggleSidebar}><PanelLeft size={19}/></button></div>
         <nav aria-label="Main navigation">{navItems.map(({key,label,icon:Icon})=><button key={key} aria-current={view===key?'page':undefined} className={view===key?'primary':''} onClick={()=>switchView(key)}><Icon size={20} strokeWidth={1.8}/><span className="nav-label">{label}</span>{key==='Mistakes'&&reviewQueue.length>0&&<span className="rb-count">{reviewQueue.length}</span>}</button>)}</nav>
         <label className="rb-side-search"><Search size={17}/><input aria-label="Search your practice library" placeholder="Search your library" value={search} onChange={e=>{setSearch(e.target.value);setView('Practice');setOpened(false)}}/></label>
         <div className="rb-side-bottom"><div className="side-foot"><span className="status-dot"/> Saved on this device<small>Your practice, notes, and review dates.</small></div><button className="rb-profile" onClick={()=>switchView('Settings')}><span className="rb-avatar">{user?.name?.[0]?.toUpperCase()||'S'}</span><span><strong>{user?.name||'Student'}</strong><small>Local study profile</small></span></button><div className="rb-side-links"><a href="/about">About</a><a href="/privacy">Privacy</a></div></div>
@@ -1280,7 +1280,7 @@ export default function Page() {
           {view === 'Settings' && <><h1>Settings</h1><p>Make this space yours.</p><div className="rb-settings-grid">
             <section className="card settings-panel"><h2>Appearance</h2><label><span>Appearance<small>Use a light, dark, or device-matched theme.</small></span><select value={theme} onChange={e=>setTheme(e.target.value)}><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></label><label><span>Accent color</span><select value={accent} onChange={e=>setAccent(e.target.value)}><option value="purple">Purple</option><option value="ocean">Ocean</option><option value="rose">Rose</option><option value="green">Forest</option></select></label><label><span>Hide sidebar<small>Open it again from the toolbar.</small></span><input type="checkbox" checked={collapsed} onChange={e=>setCollapsed(e.target.checked)}/></label><label><span>Reduce motion</span><input type="checkbox" checked={reduced} onChange={e=>setReduced(e.target.checked)}/></label><label><span>Increase contrast</span><input type="checkbox" checked={highContrast} onChange={e=>setHighContrast(e.target.checked)}/></label><label><span>Reduce transparency<small>Use solid surfaces in place of glass.</small></span><input type="checkbox" checked={solidGlass} onChange={e=>setSolidGlass(e.target.checked)}/></label></section>
             <section className="card settings-panel"><h2>Practice</h2><label><span>Reading size</span><select value={readingSize} onChange={e=>setReadingSize(e.target.value)}><option value="standard">Standard</option><option value="large">Large</option></select></label><label><span>Focused practice<small>Hide secondary tools during a session.</small></span><input type="checkbox" checked={focusPractice} onChange={e=>setFocusPractice(e.target.checked)}/></label><label><span>Reading pane width<small>Drag the divider during practice, or use its arrow keys.</small></span><div className="rb-range"><input aria-label="Reading pane width" type="range" min="30" max="70" value={readingSplit} onChange={e=>setReadingSplit(Number(e.target.value))}/><small>{readingSplit.toFixed(0)}%</small></div></label><div className="rb-group-body"><Info size={18}/><p>Your answers save in this browser. A saved explanation and ordinary grading never use AI credits.</p></div></section>
-            <section className="card settings-panel"><h2>Your profile</h2><div className="rb-group-body"><div className="rb-profile"><span className="rb-avatar">{user?.name?.[0]?.toUpperCase()||'S'}</span><span><strong>{user?.name||'Student'}</strong><small>Local study profile</small></span></div><p>{user?.targetScore?`Target score: ${user.targetScore}`:'Try the sample without an account.'}</p><div className="rb-actions"><a className="rb-link-button" href="/login"><UserRound size={17}/>Profile options</a>{user&&<button onClick={()=>{localStorage.removeItem('prepdeck-user');setUser(null)}}>Use guest profile</button>}</div></div></section>
+            <section className="card settings-panel"><h2>Your profile</h2><div className="rb-group-body"><div className="rb-profile"><span className="rb-avatar">{user?.name?.[0]?.toUpperCase()||'S'}</span><span><strong>{user?.name||'Student'}</strong><small>Local study profile</small></span></div><p>{user?.targetScore?`Target score: ${user.targetScore}`:'Try the sample without an account.'}</p><div className="rb-actions"><a className="rb-link-button" href="/login"><UserRound size={17}/>Profile options</a>{user&&<button onClick={()=>{localStorage.removeItem('redbookprep-user');setUser(null)}}>Use guest profile</button>}</div></div></section>
             <section className="card settings-panel"><h2>Your study data</h2><div className="rb-group-body"><p>{attempts.length} saved attempts, along with your notes and review dates. Stored on this device.</p><button className="primary" onClick={exportStudy}><Download size={17}/>Export study backup</button><a href="/privacy">How your data is stored</a></div></section>
           </div></>}
 
@@ -1424,7 +1424,7 @@ export default function Page() {
       <GraphCalculator open={showCalculator && opened && view === 'Practice' && q.section === 'Math'} onClose={() => setShowCalculator(false)} />
 
       <footer className="rb-app-footer">
-        <p>PrepDeck · Independent SAT preparation. Sample content is not official test material.</p>
+        <p>RedBookPrep · Independent SAT preparation. Sample content is not official test material.</p>
       </footer>
     </main>
   );

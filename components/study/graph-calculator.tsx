@@ -42,10 +42,10 @@ export function GraphCalculator({open, onClose}: {open: boolean; onClose: () => 
     return () => { observer.disconnect(); window.removeEventListener('message', receive); };
   }, []);
 
-  return <dialog ref={panel} id="practice-graph-calculator" className="prepdeck-graph-calculator" aria-label="Graphing calculator"
+  return <dialog ref={panel} id="practice-graph-calculator" className="redbookprep-graph-calculator" aria-label="Graphing calculator"
     onCancel={event => {event.preventDefault(); close.current();}}
     onKeyDown={event => {if (event.key === 'Escape') {event.preventDefault(); close.current();} event.stopPropagation();}}>
-    <div className="prepdeck-graph-bar" onPointerDown={event => {
+    <div className="redbookprep-graph-bar" onPointerDown={event => {
       if (event.button !== 0 || (event.target as HTMLElement).closest('button')) return;
       const dialog = panel.current!;
       const bounds = dialog.getBoundingClientRect();

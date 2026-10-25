@@ -1,4 +1,4 @@
-# PrepDeck foundation
+# RedBookPrep foundation
 
 Next.js, TypeScript and Tailwind application with a browser-local sample practice loop: choose a skill, answer, read explanations, record mistakes and notes, schedule review, and view basic accuracy/pacing.
 
