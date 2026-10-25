@@ -45,6 +45,7 @@ import {
 
 const navItems = [
   { key: 'Home', label: 'Dashboard', icon: LayoutDashboard },
+  { key: 'Ask redCoach', label: 'Ask redCoach', icon: Sparkles },
   { key: 'Practice', label: 'Practice', icon: BookOpen },
   { key: 'Question bank', label: 'Question bank', icon: FileText },
   { key: 'Vocabulary', label: 'Vocabulary', icon: BookOpen },
