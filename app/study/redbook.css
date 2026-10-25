@@ -272,6 +272,10 @@ main.redbook-app.portrait-dock-mode.sidebar-folded {
 }
 
 /* Ambient Radial Glow */
+.redcoach-page-wrapper.is-active .redcoach-ambient-bg {
+  display: none;
+}
+
 .redcoach-ambient-bg {
   position: absolute;
   inset: -30px -30px 0 -30px;
@@ -829,7 +833,7 @@ main.redbook-app.portrait-dock-mode.sidebar-folded {
   display: flex;
   justify-content: center;
   flex-shrink: 0;
-  background: linear-gradient(to top, var(--rb-bg) 70%, transparent);
+  background: transparent;
 }
 
 .redcoach-bottom-dock .redcoach-chatbox-card {
