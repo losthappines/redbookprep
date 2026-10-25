@@ -55,9 +55,8 @@ function MorphingText({ text }: { text: string }) {
 
 function ModelIcon({ model, className }: { model: string; className?: string }) {
   const icons: Record<string, string> = {
-    "Gemini 2.5 Flash": "https://cdn.21st.dev/assets/mirror/cd/cda2df6631d5fa227de3fa04ed78cf354f910ba92a9f086e7455655c10ad9d09.svg",
-    "Gemini 3.5 Flash": "https://cdn.21st.dev/assets/mirror/cd/cda2df6631d5fa227de3fa04ed78cf354f910ba92a9f086e7455655c10ad9d09.svg",
     "Composer 2.5": "https://cdn.21st.dev/assets/mirror/7d/7dc00bc09f225fcda46cbc9c6b669c69c025a231877d6c17baa6a003f04f02b2.svg",
+    "Gemini 3.5 Flash": "https://cdn.21st.dev/assets/mirror/cd/cda2df6631d5fa227de3fa04ed78cf354f910ba92a9f086e7455655c10ad9d09.svg",
     "GPT 5.5": "https://cdn.21st.dev/assets/mirror/b9/b93fa7942be639a1dae60194ff12141145d7d9fd59581582d6ff23335755f19c.svg",
     "Opus 4.8": "https://cdn.21st.dev/assets/mirror/5d/5de1221c77cc91e748066fd642ad0eee1c1fa65328814f5178166f901e599709.svg",
     "GLM 5.2": "https://cdn.21st.dev/assets/mirror/b2/b2a6c0ff63efd8a555edf8a174ea6fcfeca120ac1595a2d461ca11d3ae89276c.svg"
@@ -69,7 +68,7 @@ function ModelIcon({ model, className }: { model: string; className?: string }) 
 
   return (
     <img 
-      src={icons[model] || icons["Gemini 2.5 Flash"] || icons["GPT 5.5"]} 
+      src={icons[model] || icons["GPT 5.5"]} 
       alt={model} 
       className={cn("object-contain", filters[model], className)} 
     />
@@ -313,7 +312,7 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
       onSubmit,
       placeholder = "Ask anything",
       className,
-      models = ["Gemini 2.5 Flash", "Composer 2.5", "GPT 5.5", "Opus 4.8", "GLM 5.2"],
+      models = ["GPT 5.5", "Opus 4.8", "Gemini 3.5 Flash", "Composer 2.5", "GLM 5.2"],
       efforts = ["Low", "Medium", "Max Effort"],
       defaultValue = "",
       value: controlledValue,
@@ -436,8 +435,9 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
 
       setIsRecording(true);
 
+      // Simulation function for tight sandbox environments
       function simulateText() {
-        const fakeText = "How do I solve systems of linear equations with no solutions on the digital SAT?";
+        const fakeText = "Can you build a high fidelity Framer Motion layout animation for a dark mode dashboard?";
         const words = fakeText.split(" ");
         let i = 0;
         let currentBase = valueRef.current;
@@ -455,6 +455,7 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
       if (stream) {
         streamRef.current = stream;
         
+        // Setup Web Audio API for visualizer
         const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
         const audioCtx = new AudioCtx();
         audioContextRef.current = audioCtx;
@@ -475,13 +476,14 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
             for (let j = 0; j < step; j++) {
               sum += dataArray[i * step + j];
             }
-            bands[i] = sum / step / 255;
+            bands[i] = sum / step / 255; // normalize to 0-1
           }
           setAudioData(bands);
           rafRef.current = requestAnimationFrame(updateVisualizer);
         };
         updateVisualizer();
 
+        // Setup Speech Recognition
         const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
         if (SpeechRecognition) {
           const recognition = new SpeechRecognition();
@@ -521,9 +523,11 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
           recognitionRef.current = recognition;
           recognition.start();
         } else {
+          console.warn("Speech Recognition API not supported in this browser. Using simulated text.");
           simulateText();
         }
       } else {
+        // Fallback simulated visualizer
         demoIntervalRef.current = window.setInterval(() => {
           setAudioData(Array.from({ length: 5 }, () => Math.random() * 0.8 + 0.1));
         }, 100);
@@ -531,18 +535,21 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
       }
     }, [handleValueChange, stopRecording]);
 
+    // Keep textarea auto-scrolled to bottom while recording
     useEffect(() => {
       if (isRecording && textareaRef.current) {
         textareaRef.current.scrollTop = textareaRef.current.scrollHeight;
       }
     }, [value, isRecording]);
 
+    // Ensure cleanup of mic/streams on unmount
     useEffect(() => {
       return () => {
         stopRecording();
         attachments.forEach((a) => URL.revokeObjectURL(a.url)); 
       };
     }, [stopRecording, attachments]);
+
 
     useEffect(() => {
       if ((value.trim() !== "" || hasAttachments) && !expanded) {
@@ -565,6 +572,7 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
       }
     }, [expanded, isRecording]);
 
+    // ONLY updates height on value/text change. Adding attachments leaves this completely isolated.
     useEffect(() => {
       if (!textareaRef.current) return;
       const el = textareaRef.current;
@@ -668,6 +676,7 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
       thumbRefs.current.delete(id);
     };
 
+    // Calculate action button states
     const showArrow = hasValue && !isRecording;
     const showStop = isRecording;
     const showMic = !hasValue && !isRecording;
@@ -685,6 +694,7 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
 
     return (
       <>
+        {/* Outer Wrapper for positioning and max-width scaling */}
         <div
           ref={(node) => {
             if (typeof ref === "function") ref(node);
@@ -695,7 +705,7 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
           onBlur={handleBlur}
           className={cn("relative flex flex-col w-full", className)}
           style={{
-            maxWidth: expanded ? 580 : 380,
+            maxWidth: expanded ? 480 : 320,
             transition: isSmoothResize ? "max-width 0.15s ease-out" : "max-width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)",
           }}
         >
@@ -710,6 +720,7 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
             aria-hidden="true"
           />
 
+          {/* Independent Attachment Tab (Slides up from behind the prompt input) */}
           <div
             aria-hidden={!hasAttachments}
             style={{
@@ -748,6 +759,7 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
             </div>
           </div>
 
+          {/* Main Input Card */}
           <div
             onMouseDown={(e) => {
               const isTextarea = e.target === textareaRef.current;
@@ -833,6 +845,7 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
               {placeholder}
             </button>
 
+            {/* Bottom Actions Wrapper - Hides when recording to make space for visualizer */}
             <div
               className={cn(
                 "absolute bottom-2 left-3 right-12 z-[10] flex items-center gap-0 transition-all duration-300 ease-[cubic-bezier(0.175,0.885,0.32,1.275)]",
@@ -915,6 +928,7 @@ export const PromptInput = React.forwardRef<HTMLDivElement, PromptInputProps>(
               </button>
             </div>
 
+            {/* Audio Wave Visualizer Overlay positioned precisely to the left of the mic button */}
             <div
               className={cn(
                 "absolute right-12 bottom-2 z-[10] flex h-8 items-center justify-end gap-[3px] transition-all duration-400 ease-[cubic-bezier(0.175,0.885,0.32,1.275)]",

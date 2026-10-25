@@ -240,3 +240,283 @@ main.redbook-app.portrait-dock-mode.sidebar-folded {
   border: 1px solid var(--rb-line);
   z-index: 70;
 }
+
+
+/* ========================================================================= */
+/* ASK REDCOACH DEDICATED COMPANION VIEW & PROMPTINPUT ACCORDION STYLES      */
+/* ========================================================================= */
+
+.redcoach-page-wrapper {
+  position: relative;
+  max-width: 1060px;
+  margin: 0 auto;
+  min-height: calc(100dvh - 120px);
+  display: flex;
+  flex-direction: column;
+}
+
+.redcoach-ambient-bg {
+  position: absolute;
+  inset: -20px -20px 0 -20px;
+  background: radial-gradient(125% 125% at 50% 101%, rgba(245,87,2,0.18) 10.5%, rgba(245,120,2,0.14) 16%, rgba(245,140,2,0.12) 17.5%, rgba(245,170,100,0.10) 25%, rgba(238,174,202,0.08) 40%, rgba(202,179,214,0.06) 65%, rgba(148,201,233,0.05) 100%);
+  border-radius: 28px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.redcoach-inner-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: var(--rb-panel);
+  border: 1px solid var(--rb-line);
+  border-radius: 24px;
+  padding: 24px 28px 20px;
+  box-shadow: 0 12px 40px var(--rb-shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.redcoach-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--rb-line);
+  margin-bottom: 16px;
+}
+
+.redcoach-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.redcoach-avatar-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #8a5ce4, #7042cb);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px #794cce30;
+  flex-shrink: 0;
+}
+
+.redcoach-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.redcoach-title-row h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.redcoach-badge {
+  font-size: 0.72rem;
+  font-weight: 650;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--rb-soft);
+  color: var(--rb-accent);
+}
+
+.redcoach-header p {
+  font-size: 0.82rem;
+  color: var(--rb-muted);
+  margin: 3px 0 0;
+}
+
+.redcoach-clear-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px !important;
+  min-height: 32px !important;
+  font-size: 0.8rem !important;
+  border-radius: 999px !important;
+  background: var(--rb-fill) !important;
+  color: var(--rb-muted) !important;
+  border: 1px solid var(--rb-line) !important;
+}
+
+.redcoach-messages-stream {
+  flex: 1;
+  min-height: 280px;
+  max-height: 520px;
+  overflow-y: auto;
+  padding: 8px 6px 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.redcoach-msg-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.redcoach-msg-row.is-user {
+  flex-direction: row-reverse;
+}
+
+.redcoach-msg-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.redcoach-msg-row.is-bot .redcoach-msg-avatar {
+  background: var(--rb-accent);
+  color: white;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--rb-accent) 30%, transparent);
+}
+
+.redcoach-msg-row.is-user .redcoach-msg-avatar {
+  background: var(--rb-soft);
+  color: var(--rb-ink);
+  border: 1px solid var(--rb-line);
+}
+
+.redcoach-bubble {
+  max-width: 82%;
+  padding: 14px 18px;
+  border-radius: 18px;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  box-shadow: 0 2px 8px var(--rb-shadow);
+}
+
+.redcoach-msg-row.is-bot .redcoach-bubble {
+  background: var(--rb-panel);
+  border: 1px solid var(--rb-line);
+  color: var(--rb-ink);
+}
+
+.redcoach-msg-row.is-user .redcoach-bubble {
+  background: var(--rb-accent);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+.redcoach-bubble-text {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.redcoach-bubble-meta {
+  margin-top: 6px;
+  font-size: 0.7rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  opacity: 0.75;
+}
+
+.redcoach-msg-row.is-user .redcoach-bubble-meta {
+  justify-content: flex-end;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.redcoach-msg-row.is-bot .redcoach-bubble-meta {
+  color: var(--rb-muted);
+}
+
+.redcoach-thinking {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--rb-muted);
+}
+
+.redcoach-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--rb-accent);
+  animation: ping 1.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.redcoach-starters-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 12px 0 16px;
+}
+
+.redcoach-starter-card {
+  text-align: left !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px;
+  padding: 12px 16px !important;
+  border-radius: 16px !important;
+  background: var(--rb-fill) !important;
+  border: 1px solid var(--rb-line) !important;
+  transition: all 0.18s ease !important;
+  min-height: 52px !important;
+}
+
+.redcoach-starter-card:hover {
+  background: var(--rb-soft) !important;
+  border-color: var(--rb-accent) !important;
+  transform: translateY(-1px) !important;
+}
+
+.redcoach-starter-card small {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--rb-accent);
+  margin-bottom: 2px;
+}
+
+.redcoach-starter-card strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--rb-ink);
+  line-height: 1.35;
+}
+
+.redcoach-input-dock {
+  padding-top: 14px;
+  border-top: 1px solid var(--rb-line);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .redcoach-starters-grid {
+    grid-template-columns: 1fr;
+  }
+  .redcoach-bubble {
+    max-width: 90%;
+    font-size: 0.85rem;
+    padding: 12px 14px;
+  }
+  .redcoach-inner-card {
+    padding: 18px 14px 16px;
+  }
+}
