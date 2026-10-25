@@ -15,6 +15,7 @@ import {AnimatePresence} from 'motion/react';
 import {Vocabulary} from '@/components/study/vocabulary';
 import {QuestionBank} from '@/components/study/question-bank';
 import {PracticeFolders} from '@/components/study/practice-folders';
+import {RedCoachChat} from '@/components/study/redcoach-chat';
 import {
   LayoutDashboard,
   BookOpen,
@@ -586,6 +587,8 @@ export default function Page() {
           {/* ============================================================== */}
           {/* HOME / DASHBOARD VIEW */}
           {/* ============================================================== */}
+          {view === 'Ask redCoach' && <RedCoachChat />}
+
           {view === 'Vocabulary' && <Vocabulary />}
 
           {view === 'Question bank' && <QuestionBank questions={questions} attempts={attempts} onOpen={start} />}
