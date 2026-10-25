@@ -9,7 +9,7 @@ interface ChatMessage {
 
 export async function POST(req: NextRequest) {
   try {
-    const { message, model = "gemini-2.5-flash", effort = "Medium", history = [] } = await req.json();
+    const { message, model = "gemini-3.8-flash", effort = "Medium", history = [] } = await req.json();
 
     if (!message || typeof message !== "string") {
       return NextResponse.json({ error: "Message is required." }, { status: 400 });
@@ -27,66 +27,77 @@ Tone: Encouraging, rigorous, clear, concise, and pedagogical. Break down difficu
 Keep advice practical for SAT timing and test-taking strategies.`;
 
     if (!apiKey) {
-      // Friendly fallback mode when GEMINI_API_KEY is not yet added in Vercel
       return NextResponse.json({
         reply: `Hello! I'm **redCoach**, your Digital SAT AI companion on RedBookPrep.
 
 I'm ready to walk you through math problems, grammar rules, transition questions, and pacing strategies!
 
-> **Note for the developer:** To enable live responses from Google's free Gemini API, please add your free **\`GEMINI_API_KEY\`** in **Vercel → Settings → Environment Variables** (get a free key at [aistudio.google.com](https://aistudio.google.com)).
-
-Here is a quick breakdown of your question:
-- **Topic:** SAT Test Preparation & Strategy
-- **Core Tip:** Always identify the given constraints first, eliminate obviously incorrect choices, and plug in values or use Desmos graphing whenever algebra gets complicated!`,
+> **Note for the developer:** To enable live responses from Google's free Gemini API, please add your free **\`GEMINI_API_KEY\`** in **Vercel → Settings → Environment Variables** (get a free key at [aistudio.google.com](https://aistudio.google.com)).`,
         model: "redCoach (Demo / API Key needed)",
       });
     }
 
-    // Call Google Gemini API (gemini-2.5-flash is free on Google AI Studio)
-    const geminiModel = model.toLowerCase().includes("gemini") ? "gemini-2.5-flash" : "gemini-2.5-flash";
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${geminiModel}:generateContent?key=${apiKey}`;
+    // Call Google Gemini API (gemini-3.8-flash / gemini-2.0-flash / gemini-1.5-flash fallback)
+    const supportedModels = [
+      "gemini-3.8-flash",
+      "gemini-2.0-flash",
+      "gemini-1.5-flash",
+    ];
 
     const formattedContents = [
-      {
-        role: "user",
-        parts: [{ text: `[System Instruction: ${systemInstruction}]` }],
-      },
       ...history.map((h: ChatMessage) => ({
         role: h.role === "assistant" ? "model" : "user",
         parts: [{ text: h.content }],
       })),
       {
         role: "user",
-        parts: [{ text: `(Effort level: ${effort}) ${message}` }],
+        parts: [{ text: `(Effort level: ${effort})\n${message}` }],
       },
     ];
 
-    const response = await fetch(endpoint, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: formattedContents,
-        generationConfig: {
-          temperature: effort === "Max Effort" ? 0.3 : 0.7,
-          maxOutputTokens: effort === "Low" ? 500 : 1500,
-        },
-      }),
-    });
+    let lastError = "";
+    let data: any = null;
+    let chosenModel = "gemini-3.8-flash";
 
-    if (!response.ok) {
-      const errData = await response.text();
-      console.error("Gemini API error:", errData);
+    for (const m of supportedModels) {
+      const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${apiKey}`;
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          systemInstruction: {
+            parts: [{ text: systemInstruction }],
+          },
+          contents: formattedContents,
+          generationConfig: {
+            temperature: effort === "Max Effort" ? 0.3 : 0.7,
+            maxOutputTokens: effort === "Low" ? 600 : 1800,
+          },
+        }),
+      });
+
+      if (response.ok) {
+        data = await response.json();
+        chosenModel = m;
+        break;
+      } else {
+        lastError = await response.text();
+      }
+    }
+
+    if (!data) {
+      console.error("Gemini API error across all models:", lastError);
       return NextResponse.json(
-        { error: "Could not generate response from Gemini.", details: errData },
+        { error: "Could not generate response from Gemini.", details: lastError },
         { status: 502 }
       );
     }
 
-    const data = await response.json();
     const candidate = data.candidates?.[0];
-    const replyText = candidate?.content?.parts?.[0]?.text || "I was unable to generate an answer. Please try again.";
+    const replyText =
+      candidate?.content?.parts?.[0]?.text || "I was unable to generate an answer. Please try again.";
 
-    return NextResponse.json({ reply: replyText, model: geminiModel });
+    return NextResponse.json({ reply: replyText, model: chosenModel });
   } catch (error: any) {
     console.error("Error in /api/chat:", error);
     return NextResponse.json({ error: error?.message || "Internal server error" }, { status: 500 });
