@@ -787,7 +787,8 @@ export default function Page() {
                                   style={{ top: `${lineReaderPos}px` }}
                                 />
                               )}
-                              {q.passage.split('\n\n').map((paragraph, pIdx) => (
+                              {!q.passage && <div className="question-prompt-card"><p>{q.prompt}</p>{q.imageDataUrl && <img className="imported-question-image" src={q.imageDataUrl} alt={q.imageAlt || 'Question diagram'} />}</div>}
+                              {q.passage && q.passage.split('\n\n').map((paragraph, pIdx) => (
                                 <p key={pIdx}>{paragraph}</p>
                               ))}
                             </div>
@@ -906,8 +907,8 @@ export default function Page() {
 
                         {/* Question Prompt */}
                         <div className="question-prompt-card">
-                          <h2>{q.prompt}</h2>
-                          {q.imageDataUrl && <img className="imported-question-image" src={q.imageDataUrl} alt={q.imageAlt || 'Question diagram'} />}
+                          <h2>{q.passage ? q.prompt : 'Select the correct answer choice:'}</h2>
+                          {Boolean(q.passage) && q.imageDataUrl && <img className="imported-question-image" src={q.imageDataUrl} alt={q.imageAlt || 'Question diagram'} />}
                         </div>
 
                         {/* Options List with Elimination Tool */}
