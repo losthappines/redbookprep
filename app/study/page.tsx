@@ -16,6 +16,7 @@ import {Vocabulary} from '@/components/study/vocabulary';
 import {QuestionBank} from '@/components/study/question-bank';
 import {PracticeFolders} from '@/components/study/practice-folders';
 import {RedCoachChat} from '@/components/study/redcoach-chat';
+import {formatSkillTitle} from '@/lib/format-skill';
 import {
   LayoutDashboard,
   BookOpen,
@@ -89,7 +90,7 @@ const sampleQuestions: PracticeQuestion[] = [
   },
   {
     id: 'linear',
-    skill: 'Linear equations in one variable',
+    skill: 'Linear Equations in One Variable',
     section: 'Math',
     domain: 'Algebra',
     focus: 'Solve a linear equation in one variable',
@@ -109,7 +110,7 @@ const sampleQuestions: PracticeQuestion[] = [
   },
   {
     id: 'evidence',
-    skill: 'Reading evidence',
+    skill: 'Reading Evidence',
     section: 'Reading and Writing',
     domain: 'Information and Ideas',
     focus: 'Identify evidence supporting an inference',
@@ -604,22 +605,33 @@ export default function Page() {
               {!opened ? (
                 /* --- PRACTICE LIBRARY (COVERS) --- */
                 <>
-                  <div className="rb-page-heading"><div><span className="eyebrow">PRACTICE, AT YOUR PACE</span><h1>Your Library</h1><p>Pick up where you left off, or discover something new.</p></div><small>{libraryQuestions.length} practice modules</small></div><section className="resume-card">
-                    <div>
-                      <span className="eyebrow">CONTINUE YOUR PRACTICE</span>
-                      <h2>{q.skill}</h2>
-                      <p>{attempts.filter((a) => a.id === q.id).length} questions completed · Untimed sample</p>
-                    </div>
-                    <button
-                      className="primary"
-                      onClick={() => {
-                        setOpened(true);
-                        if (moduleFinished.current) setModuleStage('finished');
-                      }}
-                    >
-                      Resume
-                    </button>
-                  </section>
+                  <div className="rb-page-heading"><div><span className="eyebrow">PRACTICE, AT YOUR PACE</span><h1>Your Library</h1><p>Pick up where you left off, or discover something new.</p></div><small>{libraryQuestions.length} practice modules</small></div>
+                  {(() => {
+                    const qCompleted = attempts.filter((a) => a.id === q.id).length;
+                    const hasStarted = qCompleted > 0;
+                    return (
+                      <section className="resume-card">
+                        <div>
+                          <span className="eyebrow">{hasStarted ? 'CONTINUE YOUR PRACTICE' : 'GET STARTED'}</span>
+                          <h2>{formatSkillTitle(q.skill)}</h2>
+                          <p>
+                            {hasStarted
+                              ? `${qCompleted} ${qCompleted === 1 ? 'question' : 'questions'} completed · Untimed sample`
+                              : 'Untimed sample practice · Begin when you are ready'}
+                          </p>
+                        </div>
+                        <button
+                          className="primary"
+                          onClick={() => {
+                            setOpened(true);
+                            if (moduleFinished.current) setModuleStage('finished');
+                          }}
+                        >
+                          {hasStarted ? 'Resume' : 'Start'}
+                        </button>
+                      </section>
+                    );
+                  })()}
 
                   <PracticeFolders questions={libraryQuestions} search={search} section={section} theme={theme} onStart={i=>start(questions.findIndex(q=>q.id===libraryQuestions[i]?.id))} onImport={importMaterial} onSearch={setSearch} onSection={setSection} />
 
@@ -1302,36 +1314,133 @@ export default function Page() {
               <span className="eyebrow">YOUR NEXT STEP</span><h1>Progress</h1>
               <section className="card">
                 <h2>
-                  {attempts.length} questions attempted · {accuracy}% accuracy
+                  {attempts.length === 0
+                    ? 'No questions attempted yet · 0% accuracy'
+                    : `${attempts.length} ${attempts.length === 1 ? 'question' : 'questions'} attempted · ${accuracy}% accuracy`}
                 </h2>
                 <p>
-                  {attempts.length < 10
+                  {attempts.length === 0
+                    ? 'Complete your first practice module to see accuracy and topic mastery insights.'
+                    : attempts.length < 10
                     ? 'Not enough practice yet for reliable trends. Keep practising across skills.'
                     : 'These figures describe this sample practice, not a predicted SAT score.'}
                 </p>
               </section>
-              {Array.from(questions.reduce((map, q) => { const key = q.skill || 'Unclassified'; const group = map.get(key) || { skill: key, domain: q.domain, section: q.section, items: [] as PracticeQuestion[] }; group.items.push(q); map.set(key, group); return map; }, new Map<string, { skill: string; domain: string; section: string; items: PracticeQuestion[] }>()).values()).map((group) => { const answerById = new Map(group.items.map((item) => [item.id, item.answer])); const rows = attempts.filter((a) => answerById.has(a.id)); const correctCount = rows.filter((a) => a.choice === answerById.get(a.id)).length; const solvedUnique = new Set(rows.map((a) => a.id)).size; return (<section className="card" key={group.skill}><span className="eyebrow">{group.section} · {group.domain}</span><h2>{group.skill}</h2><progress aria-label={group.skill + ' accuracy'} max={rows.length || 1} value={correctCount} /><p>{solvedUnique} of {group.items.length} questions practiced · {rows.length} attempts · {correctCount} correct · {rows.length ? Math.round(rows.reduce((n, a) => n + a.seconds, 0) / rows.length) : 0}s average</p></section>); })}{false && questions.map((q) => {
-                const rows = attempts.filter((a) => a.id === q.id);
+              {(() => {
+                const skillMap = questions.reduce((map, q) => {
+                  const key = formatSkillTitle(q.skill) || 'Unclassified Skill';
+                  const group = map.get(key) || {
+                    skill: key,
+                    domain: q.domain,
+                    section: q.section,
+                    items: [] as PracticeQuestion[],
+                  };
+                  group.items.push(q);
+                  map.set(key, group);
+                  return map;
+                }, new Map<string, { skill: string; domain: string; section: string; items: PracticeQuestion[] }>());
+
+                const groupsWithStats = Array.from(skillMap.values()).map((group) => {
+                  const answerById = new Map(group.items.map((item) => [item.id, item.answer]));
+                  const rows = attempts.filter((a) => answerById.has(a.id));
+                  const correctCount = rows.filter((a) => a.choice === answerById.get(a.id)).length;
+                  const solvedUnique = new Set(rows.map((a) => a.id)).size;
+                  const avgSeconds = rows.length ? Math.round(rows.reduce((n, a) => n + a.seconds, 0) / rows.length) : 0;
+                  const skillAccuracy = rows.length ? Math.round((correctCount / rows.length) * 100) : 0;
+                  const firstQuestionIndex = questions.findIndex((q) => answerById.has(q.id));
+                  const lastAttemptTime = rows.length ? Math.max(...rows.map((a) => new Date(a.date).getTime() || 0)) : 0;
+
+                  return {
+                    ...group,
+                    rows,
+                    correctCount,
+                    solvedUnique,
+                    avgSeconds,
+                    skillAccuracy,
+                    firstQuestionIndex,
+                    lastAttemptTime,
+                    hasStarted: rows.length > 0,
+                  };
+                });
+
+                const practiced = groupsWithStats
+                  .filter((g) => g.hasStarted)
+                  .sort((a, b) => b.lastAttemptTime - a.lastAttemptTime || b.rows.length - a.rows.length);
+
+                const unstarted = groupsWithStats.filter((g) => !g.hasStarted);
+
                 return (
-                  <section className="card" key={q.id}>
-                    <h2>{q.skill}</h2>
-                    <progress
-                      aria-label={q.skill + ' accuracy'}
-                      max={rows.length || 1}
-                      value={rows.filter((a) => a.choice === q.answer).length}
-                    />
-                    <p>
-                      {rows.length} attempts ·{' '}
-                      {rows.filter((a) => a.choice === q.answer).length} correct ·{' '}
-                      {rows.length
-                        ? Math.round(rows.reduce((n, a) => n + a.seconds, 0) / rows.length)
-                        : 0}
-                      s average
-                    </p>
-                  </section>
+                  <>
+                    {practiced.length > 0 && (
+                      <div className="progress-section-group">
+                        <div className="progress-section-divider">
+                          <h2>Practiced skills ({practiced.length})</h2>
+                          <span>Prioritized by recent activity</span>
+                        </div>
+                        {practiced.map((group) => (
+                          <section className="card progress-skill-card is-practiced" key={group.skill}>
+                            <div className="progress-skill-header">
+                              <div>
+                                <span className="eyebrow">{group.section} · {group.domain}</span>
+                                <h2>{group.skill}</h2>
+                              </div>
+                              <span className="progress-accuracy-badge">{group.skillAccuracy}% accuracy</span>
+                            </div>
+                            <progress aria-label={group.skill + ' progress'} max={group.items.length} value={group.solvedUnique} />
+                            <div className="progress-skill-stats">
+                              <p>
+                                {group.solvedUnique} of {group.items.length} {group.items.length === 1 ? 'question' : 'questions'} solved ·{' '}
+                                {group.rows.length} {group.rows.length === 1 ? 'attempt' : 'attempts'} · {group.correctCount} correct · {group.avgSeconds}s average
+                              </p>
+                              {group.firstQuestionIndex >= 0 && (
+                                <button
+                                  className="progress-quick-practice-btn"
+                                  onClick={() => start(group.firstQuestionIndex)}
+                                >
+                                  Practise again <ArrowUpRight size={14} />
+                                </button>
+                              )}
+                            </div>
+                          </section>
+                        ))}
+                      </div>
+                    )}
+
+                    {unstarted.length > 0 && (
+                      <div className="progress-section-group">
+                        <div className="progress-section-divider">
+                          <h2>Not started ({unstarted.length})</h2>
+                          <span>Ready when you want to explore</span>
+                        </div>
+                        {unstarted.map((group) => (
+                          <section className="card progress-skill-card is-unstarted" key={group.skill}>
+                            <div className="progress-skill-header">
+                              <div>
+                                <span className="eyebrow">{group.section} · {group.domain}</span>
+                                <h2>{group.skill}</h2>
+                              </div>
+                              <span className="progress-status-pill not-started">Not started</span>
+                            </div>
+                            <div className="progress-skill-stats">
+                              <p>
+                                {group.items.length} {group.items.length === 1 ? 'question' : 'questions'} available · Untimed practice
+                              </p>
+                              {group.firstQuestionIndex >= 0 && (
+                                <button
+                                  className="progress-quick-practice-btn primary"
+                                  onClick={() => start(group.firstQuestionIndex)}
+                                >
+                                  Start <ArrowUpRight size={14} />
+                                </button>
+                              )}
+                            </div>
+                          </section>
+                        ))}
+                      </div>
+                    )}
+                  </>
                 );
-              })}
-            </>
+              })()}
           )}
         </>
       )}

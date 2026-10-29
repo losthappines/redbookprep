@@ -11,6 +11,8 @@ import {
   User,
   ArrowRight,
   X,
+  Check,
+  ChevronDown,
 } from "lucide-react";
 
 interface Attachment {
@@ -37,9 +39,9 @@ const STARTER_PROMPTS = [
     prompt: "How do I recognize when a system of two linear equations has no solution on the digital SAT?",
   },
   {
-    title: "Master transition words in reading",
+    title: "Contrast vs. concession transitions",
     category: "Reading & Writing",
-    prompt: "Give me the top 5 transition word traps on the digital SAT and how to avoid picking the wrong contrast transition.",
+    prompt: "How do I tell the difference between contrast transitions (like 'in contrast') and concession transitions (like 'nevertheless') on the Digital SAT? Give me short concrete examples and a quick rule.",
   },
   {
     title: "Circle equations in (x − 3)² + (y + 2)² = 25",
@@ -53,6 +55,59 @@ const STARTER_PROMPTS = [
   },
 ];
 
+export interface AIModelOption {
+  id: string;
+  name: string;
+  badge: string;
+  provider: "google" | "anthropic" | "openai" | "deepseek";
+  desc: string;
+}
+
+export const AVAILABLE_MODELS: AIModelOption[] = [
+  {
+    id: "Gemini 3.5 Flash",
+    name: "Gemini 3.5 Flash",
+    badge: "Free & Fast",
+    provider: "google",
+    desc: "Default · Instant math breakdowns & SAT strategies",
+  },
+  {
+    id: "Gemini 2.5 Pro",
+    name: "Gemini 2.5 Pro",
+    badge: "Deep Reasoning",
+    provider: "google",
+    desc: "Advanced algebra, tricky geometry & complex figures",
+  },
+  {
+    id: "Claude 3.5 Sonnet",
+    name: "Claude 3.5 Sonnet",
+    badge: "Top for Reading",
+    provider: "anthropic",
+    desc: "Nuanced transitions, textual evidence & rhetoric",
+  },
+  {
+    id: "GPT-4o",
+    name: "GPT-4o",
+    badge: "Flagship",
+    provider: "openai",
+    desc: "High-precision Digital SAT problem solver",
+  },
+  {
+    id: "GPT-4o Mini",
+    name: "GPT-4o Mini",
+    badge: "Speed & Grammar",
+    provider: "openai",
+    desc: "Fast punctuation & grammar conventions check",
+  },
+  {
+    id: "DeepSeek R1",
+    name: "DeepSeek R1",
+    badge: "Math Specialist",
+    provider: "deepseek",
+    desc: "Deep step-by-step mathematical reasoning",
+  },
+];
+
 export function RedCoachChat() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputText, setInputText] = useState("");
@@ -61,13 +116,28 @@ export function RedCoachChat() {
   const [attachments, setAttachments] = useState<Attachment[]>([]);
   const [selectedModel, setSelectedModel] = useState("Gemini 3.5 Flash");
   const [showModelMenu, setShowModelMenu] = useState(false);
+  const [modelMenuPlacement, setModelMenuPlacement] = useState<"above" | "below">("above");
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const recognitionRef = useRef<any>(null);
+  const modelMenuRef = useRef<HTMLDivElement>(null);
 
   const isInitial = messages.length === 0;
+
+  // Close model popover on outside click
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (modelMenuRef.current && !modelMenuRef.current.contains(event.target as Node)) {
+        setShowModelMenu(false);
+      }
+    }
+    if (showModelMenu) {
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => document.removeEventListener("mousedown", handleClickOutside);
+    }
+  }, [showModelMenu]);
 
   // Auto-scroll message stream
   useEffect(() => {
@@ -237,6 +307,46 @@ export function RedCoachChat() {
     setInputText("");
   };
 
+  const renderModelMenu = (placement: "above" | "below" = "above") => (
+    <div
+      ref={modelMenuRef}
+      className={`redcoach-model-popover ${placement === "below" ? "placement-below" : ""}`}
+    >
+      <div className="redcoach-model-popover-header">
+        <span className="redcoach-model-popover-title">AI Engine</span>
+        <span className="redcoach-model-popover-badge">Multi-Model</span>
+      </div>
+      <div className="flex flex-col gap-1 max-h-[300px] overflow-y-auto">
+        {AVAILABLE_MODELS.map((m) => {
+          const isSelected = selectedModel === m.id;
+          return (
+            <button
+              key={m.id}
+              type="button"
+              onClick={() => {
+                setSelectedModel(m.id);
+                setShowModelMenu(false);
+              }}
+              className={`redcoach-model-opt ${isSelected ? "active" : ""}`}
+            >
+              <div className="redcoach-model-opt-info">
+                <div className="redcoach-model-opt-name">
+                  <span>{m.name}</span>
+                  <span className="redcoach-model-opt-tag">{m.badge}</span>
+                </div>
+                <div className="redcoach-model-opt-desc">{m.desc}</div>
+              </div>
+              {isSelected && <Check size={16} className="redcoach-model-opt-check" />}
+            </button>
+          );
+        })}
+      </div>
+      <div className="redcoach-model-popover-footer">
+        Gemini is free and active. Other providers activate when API keys are added in Vercel settings.
+      </div>
+    </div>
+  );
+
   return (
     <div className={`redcoach-page-wrapper ${isInitial ? "is-initial" : "is-active"}`}>
       {/* Ambient gradient glow matching the reference design */}
@@ -298,32 +408,17 @@ export function RedCoachChat() {
                 <div className="relative">
                   <button
                     type="button"
-                    onClick={() => setShowModelMenu((v) => !v)}
-                    className="redcoach-circle-btn"
-                    title={`AI Model: ${selectedModel}`}
+                    onClick={() => {
+                      setModelMenuPlacement("above");
+                      setShowModelMenu((v) => !v);
+                    }}
+                    className={`redcoach-circle-btn ${showModelMenu && modelMenuPlacement === "above" ? "active" : ""}`}
+                    title={`AI Model: ${selectedModel} (click to change)`}
+                    aria-label="Switch AI model"
                   >
                     <Sparkles size={16} />
                   </button>
-                  {showModelMenu && (
-                    <div className="redcoach-model-popover">
-                      <div className="text-xs font-semibold px-2 py-1 text-muted-foreground">
-                        Selected AI Engine
-                      </div>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          setSelectedModel("Gemini 3.5 Flash");
-                          setShowModelMenu(false);
-                        }}
-                        className={`redcoach-model-opt ${
-                          selectedModel === "Gemini 3.5 Flash" ? "active" : ""
-                        }`}
-                      >
-                        <Sparkles size={14} />
-                        <span>Gemini 3.5 Flash (Free &amp; Fast)</span>
-                      </button>
-                    </div>
-                  )}
+                  {showModelMenu && modelMenuPlacement === "above" && renderModelMenu("above")}
                 </div>
 
                 {/* 2. Microphone Button */}
@@ -400,10 +495,25 @@ export function RedCoachChat() {
               <div>
                 <div className="flex items-center gap-2">
                   <h2 className="text-base font-bold text-inherit leading-none">Ask redCoach</h2>
-                  <span className="redcoach-badge">Active Session</span>
+                  <div className="relative">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setModelMenuPlacement("below");
+                        setShowModelMenu((v) => !v);
+                      }}
+                      className="redcoach-model-badge-btn"
+                      title="Switch AI model"
+                    >
+                      <Sparkles size={12} />
+                      <span>{selectedModel}</span>
+                      <ChevronDown size={12} />
+                    </button>
+                    {showModelMenu && modelMenuPlacement === "below" && renderModelMenu("below")}
+                  </div>
                 </div>
                 <p className="text-xs text-muted-foreground mt-0.5">
-                  Powered by {selectedModel} · Plain-text SAT math &amp; strategy
+                  Instant plain-text SAT math breakdowns &amp; test strategies
                 </p>
               </div>
             </div>
@@ -503,14 +613,22 @@ export function RedCoachChat() {
               <div className="redcoach-actions-bar">
                 {/* Left Circular Buttons */}
                 <div className="redcoach-actions-left">
-                  <button
-                    type="button"
-                    onClick={() => setShowModelMenu((v) => !v)}
-                    className="redcoach-circle-btn"
-                    title={`AI Model: ${selectedModel}`}
-                  >
-                    <Sparkles size={16} />
-                  </button>
+                  {/* 1. Sparkles Button */}
+                  <div className="relative">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setModelMenuPlacement("above");
+                        setShowModelMenu((v) => !v);
+                      }}
+                      className={`redcoach-circle-btn ${showModelMenu && modelMenuPlacement === "above" ? "active" : ""}`}
+                      title={`AI Model: ${selectedModel} (click to change)`}
+                      aria-label="Switch AI model"
+                    >
+                      <Sparkles size={16} />
+                    </button>
+                    {showModelMenu && modelMenuPlacement === "above" && renderModelMenu("above")}
+                  </div>
 
                   <button
                     type="button"

@@ -7,193 +7,340 @@ interface ChatMessage {
   content: string;
 }
 
+function sanitizeMathResponse(raw: string): string {
+  return raw
+    .replace(/\$\$/g, "")
+    .replace(/\\\[|\\\]|\\\(|\\\)/g, "")
+    .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, "($1)/($2)")
+    .replace(/\\sqrt\{([^{}]+)\}/g, "√($1)")
+    .replace(/\\neq\b/g, "≠")
+    .replace(/\\leq?\b/g, "≤")
+    .replace(/\\geq?\b/g, "≥")
+    .replace(/\\times\b/g, "×")
+    .replace(/\\div\b/g, "÷")
+    .replace(/\\pm\b/g, "±")
+    .replace(/\\pi\b/g, "π")
+    .replace(/\^2\b/g, "²")
+    .replace(/\^3\b/g, "³")
+    .replace(/\\begin\{cases\}([\s\S]*?)\\end\{cases\}/g, (_: string, body: string) =>
+      body
+        .split("\\\\")
+        .map((s: string) => s.trim())
+        .filter(Boolean)
+        .join("\n")
+    )
+    .replace(/\$([^$\n]+)\$/g, "$1")
+    .replace(/\$/g, "");
+}
+
+const SYSTEM_INSTRUCTION = `You are "redCoach", the AI SAT test preparation coach for RedBookPrep (https://www.redbookprep.site).
+Tone: Concise, encouraging, and immediately actionable. Never produce overly long essays, repetitive intros, or confusing theoretical jargon.
+
+STYLE GUIDELINES:
+1. Keep explanations short, clear, and direct (aim for 120-220 words total).
+2. For Reading & Writing Transitions (e.g. Contrast vs. Concession):
+   - Keep the difference intuitive and simple:
+     * Direct Contrast (comparing opposing facts or alternatives): "In contrast", "On the other hand", "Meanwhile".
+       Example: The north ridge receives heavy snowfall. In contrast, the southern valley stays dry all winter.
+     * Concession (an unexpected outcome happening despite the previous fact): "Nevertheless", "Nonetheless", "Still", "Even so".
+       Example: The team had no funding and a tight deadline. Nevertheless, their prototype passed every test.
+   - Give the student a simple test-day rule of thumb to decide between them.
+3. For Math questions:
+   - State the core rule/formula in 1 line.
+   - Show 3-4 clean, bulleted solution steps.
+   - Mention the 1-click Desmos trick if applicable.
+
+CRITICAL FORMATTING RULES:
+- Write math in clean plain text. Do not use LaTeX delimiters such as $, $$, \\(, or \\[, or commands such as \\frac, \\begin{cases}, or \\sqrt.
+- Use Unicode symbols: ², ³, √, ×, ÷, −, ≠, ≤, ≥, π, ±.
+- Write fractions as (numerator)/(denominator).
+- Put equations on their own lines.`;
+
 export async function GET(req: NextRequest) {
-  const apiKey =
-    process.env.GEMINI_API_KEY ||
-    process.env.NEXT_PUBLIC_GEMINI_API_KEY ||
-    process.env.GOOGLE_AI_API_KEY;
+  const geminiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_AI_API_KEY;
+  const openaiKey = process.env.OPENAI_API_KEY;
+  const anthropicKey = process.env.ANTHROPIC_API_KEY;
+  const deepseekKey = process.env.DEEPSEEK_API_KEY;
 
-  if (!apiKey) return NextResponse.json({ error: "No API key configured." });
+  return NextResponse.json({
+    configured: {
+      gemini: Boolean(geminiKey),
+      openai: Boolean(openaiKey),
+      anthropic: Boolean(anthropicKey),
+      deepseek: Boolean(deepseekKey),
+    },
+    supportedModels: [
+      "Gemini 3.5 Flash",
+      "Gemini 2.5 Pro",
+      "Claude 3.5 Sonnet",
+      "GPT-4o",
+      "GPT-4o Mini",
+      "DeepSeek R1",
+    ],
+  });
+}
 
-  const url = new URL(req.url);
-  const testModel = url.searchParams.get("testModel");
+// -------------------------------------------------------------
+// Provider Callers
+// -------------------------------------------------------------
 
-  if (testModel) {
-    const t0 = Date.now();
+async function callGemini(
+  apiKey: string,
+  modelName: string,
+  history: ChatMessage[],
+  message: string,
+  effort: string
+): Promise<{ text: string; model: string } | null> {
+  const isPro = modelName.includes("Pro");
+  const candidates = isPro
+    ? ["gemini-1.5-pro", "gemini-2.5-pro", "gemini-3.5-flash"]
+    : ["gemini-3.5-flash", "gemini-2.5-flash", "gemini-flash-latest"];
+
+  const formattedContents = [
+    ...history.map((h) => ({
+      role: h.role === "assistant" ? "model" : "user",
+      parts: [{ text: h.content }],
+    })),
+    {
+      role: "user",
+      parts: [{ text: `(Effort level: ${effort})\n${message}` }],
+    },
+  ];
+
+  for (const m of candidates) {
     try {
-      const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${testModel}:generateContent?key=${apiKey}`;
+      const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${apiKey}`;
       const res = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          contents: [{ role: "user", parts: [{ text: "Hello, reply 'OK' in one word." }] }],
+          systemInstruction: { parts: [{ text: SYSTEM_INSTRUCTION }] },
+          contents: formattedContents,
+          generationConfig: {
+            temperature: effort === "Max Effort" ? 0.3 : 0.6,
+            maxOutputTokens: 1200,
+          },
         }),
         signal: AbortSignal.timeout(6000),
       });
-      const durationMs = Date.now() - t0;
-      const text = await res.text();
-      return NextResponse.json({
-        model: testModel,
-        status: res.status,
-        durationMs,
-        response: text.slice(0, 500),
-      });
-    } catch (err: any) {
-      return NextResponse.json({
-        model: testModel,
-        error: err.name === "TimeoutError" ? "Timeout after 6s" : err.message,
-        durationMs: Date.now() - t0,
-      });
-    }
-  }
 
-  try {
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
-    const data = await res.json();
-    return NextResponse.json(data);
-  } catch (err: any) {
-    return NextResponse.json({ error: err.message }, { status: 500 });
+      if (res.ok) {
+        const data = await res.json();
+        const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (text) {
+          return { text, model: isPro ? "Gemini 2.5 Pro" : "Gemini 3.5 Flash" };
+        }
+      }
+    } catch {}
   }
+  return null;
 }
+
+async function callOpenAI(
+  apiKey: string,
+  modelId: string,
+  history: ChatMessage[],
+  message: string
+): Promise<{ text: string; model: string } | null> {
+  try {
+    const res = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        model: modelId,
+        messages: [
+          { role: "system", content: SYSTEM_INSTRUCTION },
+          ...history.map((h) => ({ role: h.role, content: h.content })),
+          { role: "user", content: message },
+        ],
+        temperature: 0.6,
+        max_tokens: 1200,
+      }),
+      signal: AbortSignal.timeout(9000),
+    });
+
+    if (res.ok) {
+      const json = await res.json();
+      const text = json.choices?.[0]?.message?.content;
+      if (text) {
+        return { text, model: modelId === "gpt-4o" ? "GPT-4o" : "GPT-4o Mini" };
+      }
+    }
+  } catch {}
+  return null;
+}
+
+async function callClaude(
+  apiKey: string,
+  modelId: string,
+  history: ChatMessage[],
+  message: string
+): Promise<{ text: string; model: string } | null> {
+  try {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-api-key": apiKey,
+        "anthropic-version": "2023-06-01",
+      },
+      body: JSON.stringify({
+        model: modelId,
+        system: SYSTEM_INSTRUCTION,
+        messages: [
+          ...history.map((h) => ({ role: h.role, content: h.content })),
+          { role: "user", content: message },
+        ],
+        max_tokens: 1200,
+      }),
+      signal: AbortSignal.timeout(9000),
+    });
+
+    if (res.ok) {
+      const json = await res.json();
+      const text = json.content?.[0]?.text;
+      if (text) {
+        return { text, model: "Claude 3.5 Sonnet" };
+      }
+    }
+  } catch {}
+  return null;
+}
+
+async function callDeepSeek(
+  apiKey: string,
+  history: ChatMessage[],
+  message: string
+): Promise<{ text: string; model: string } | null> {
+  try {
+    const res = await fetch("https://api.deepseek.com/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        model: "deepseek-reasoner",
+        messages: [
+          { role: "system", content: SYSTEM_INSTRUCTION },
+          ...history.map((h) => ({ role: h.role, content: h.content })),
+          { role: "user", content: message },
+        ],
+        max_tokens: 1200,
+      }),
+      signal: AbortSignal.timeout(10000),
+    });
+
+    if (res.ok) {
+      const json = await res.json();
+      const text = json.choices?.[0]?.message?.content;
+      if (text) {
+        return { text, model: "DeepSeek R1" };
+      }
+    }
+  } catch {}
+  return null;
+}
+
+// -------------------------------------------------------------
+// POST Handler
+// -------------------------------------------------------------
 
 export async function POST(req: NextRequest) {
   try {
-    const { message, effort = "Medium", history = [] } = await req.json();
+    const {
+      message,
+      effort = "Medium",
+      history = [],
+      model = "Gemini 3.5 Flash",
+    } = await req.json();
 
     if (!message || typeof message !== "string") {
       return NextResponse.json({ error: "Message is required." }, { status: 400 });
     }
 
-    const apiKey =
+    const geminiKey =
       process.env.GEMINI_API_KEY ||
       process.env.NEXT_PUBLIC_GEMINI_API_KEY ||
       process.env.GOOGLE_AI_API_KEY;
+    const openaiKey = process.env.OPENAI_API_KEY;
+    const anthropicKey = process.env.ANTHROPIC_API_KEY;
+    const deepseekKey = process.env.DEEPSEEK_API_KEY;
 
-    // RedCoach SAT Tutor system instructions
-    const systemInstruction = `You are "redCoach", the AI SAT test preparation coach for RedBookPrep (https://www.redbookprep.site).
-Your job is to help students excel on the Digital SAT (Math: Algebra, Advanced Math, Problem-Solving and Data Analysis, Geometry & Trigonometry; and Reading & Writing: Craft & Structure, Information & Ideas, Expression of Ideas, Standard English Conventions).
-Tone: Encouraging, clear, concise, and pedagogical. Break down problems step-by-step using first principles and keep advice practical for SAT timing and test-taking strategies.
+    let result: { text: string; model: string } | null = null;
+    let fallbackNotice = "";
 
-CRITICAL FORMATTING RULES:
-Write math in readable plain text. Do not use LaTeX delimiters such as $, $$, \\(, or \\[, or commands such as \\frac or \\sqrt.
-Use Unicode symbols when helpful: ², ³, √, ×, ÷, −, ≠, ≤, ≥, π, and ±.
-Write fractions as (numerator)/(denominator).
-Put longer equations on their own line.
-Use short explanations and avoid excessive formatting.
-
-Example math output:
-(x − 3)² + (y + 2)² = 25
-Center: (3, −2)
-Radius: √25 = 5`;
-
-    if (!apiKey) {
-      return NextResponse.json({
-        reply: `Hello! I'm **redCoach**, your Digital SAT AI companion on RedBookPrep.
-
-I'm ready to walk you through math problems, grammar rules, transition questions, and pacing strategies!
-
-> **Note for the developer:** Please add your free **\`GEMINI_API_KEY\`** in **Vercel → Settings → Environment Variables** (get a free key at [aistudio.google.com](https://aistudio.google.com)).`,
-        model: "redCoach (Demo / API Key needed)",
-      });
+    // 1. Anthropic Claude Request
+    if (model.includes("Claude")) {
+      if (anthropicKey) {
+        result = await callClaude(anthropicKey, "claude-3-5-sonnet-20241022", history, message);
+      } else {
+        fallbackNotice =
+          "> 💡 *Notice: `ANTHROPIC_API_KEY` is not yet added in Vercel settings. Using Gemini 3.5 Flash for this answer.* \n\n";
+      }
     }
-
-    // Google's active generation models in tested performance & availability order:
-    // 1. gemini-3.5-flash: ~1.6s latency, 200 OK
-    // 2. gemini-3.5-flash-lite: ~1.4s latency, 200 OK
-    // 3. gemini-flash-latest / 3.8-flash: Fallbacks when available
-    const priorityModels = [
-      "gemini-3.5-flash",
-      "gemini-3.5-flash-lite",
-      "gemini-flash-latest",
-      "gemini-3.8-flash",
-    ];
-
-    const formattedContents = [
-      ...history.map((h: ChatMessage) => ({
-        role: h.role === "assistant" ? "model" : "user",
-        parts: [{ text: h.content }],
-      })),
-      {
-        role: "user",
-        parts: [{ text: `(Effort level: ${effort})\n${message}` }],
-      },
-    ];
-
-    let lastError = "";
-    let data: any = null;
-    let successfulModel = "";
-
-    for (const m of priorityModels) {
-      try {
-        const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${apiKey}`;
-        const response = await fetch(endpoint, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            systemInstruction: {
-              parts: [{ text: systemInstruction }],
-            },
-            contents: formattedContents,
-            generationConfig: {
-              temperature: effort === "Max Effort" ? 0.3 : 0.7,
-              maxOutputTokens: effort === "Low" ? 600 : 1800,
-            },
-          }),
-          signal: AbortSignal.timeout(5000),
-        });
-
-        if (response.ok) {
-          data = await response.json();
-          successfulModel = m;
-          break;
-        } else {
-          lastError = await response.text();
-        }
-      } catch (err: any) {
-        lastError = err.message;
+    // 2. OpenAI Request (GPT-4o or GPT-4o Mini)
+    else if (model.includes("GPT")) {
+      if (openaiKey) {
+        const modelId = model.includes("Mini") ? "gpt-4o-mini" : "gpt-4o";
+        result = await callOpenAI(openaiKey, modelId, history, message);
+      } else {
+        fallbackNotice =
+          "> 💡 *Notice: `OPENAI_API_KEY` is not yet added in Vercel settings. Using Gemini 3.5 Flash for this answer.* \n\n";
+      }
+    }
+    // 3. DeepSeek Request (DeepSeek R1)
+    else if (model.includes("DeepSeek")) {
+      if (deepseekKey) {
+        result = await callDeepSeek(deepseekKey, history, message);
+      } else {
+        fallbackNotice =
+          "> 💡 *Notice: `DEEPSEEK_API_KEY` is not yet added in Vercel settings. Using Gemini 3.5 Flash for this answer.* \n\n";
       }
     }
 
-    if (!data) {
-      console.error("Gemini API error across priority models:", lastError);
+    // 4. Gemini or Fallback Provider
+    if (!result && geminiKey) {
+      result = await callGemini(geminiKey, model, history, message, effort);
+    }
+
+    // If still no result (e.g. no Gemini key configured either)
+    if (!result) {
+      if (!geminiKey) {
+        return NextResponse.json({
+          reply: `Hello! I'm **redCoach**, your Digital SAT AI companion on RedBookPrep.
+
+I'm ready to walk you through math problems, grammar rules, transition questions, and pacing strategies!
+
+> **Setup steps:** Please add your API key in **Vercel → Settings → Environment Variables**:
+> - \`GEMINI_API_KEY\` (free at [aistudio.google.com](https://aistudio.google.com))
+> - \`OPENAI_API_KEY\` (from [platform.openai.com](https://platform.openai.com))
+> - \`ANTHROPIC_API_KEY\` (from [console.anthropic.com](https://console.anthropic.com))
+> - \`DEEPSEEK_API_KEY\` (from [platform.deepseek.com](https://platform.deepseek.com))`,
+          model: model || "Gemini 3.5 Flash",
+        });
+      }
+
       return NextResponse.json(
-        { error: "Could not generate response from Gemini.", details: lastError },
+        { error: "Could not generate an AI response. Please try again in a moment." },
         { status: 502 }
       );
     }
 
-    const candidate = data.candidates?.[0];
-    const rawReply =
-      candidate?.content?.parts?.[0]?.text || "I was unable to generate an answer. Please try again.";
+    const cleanedText = fallbackNotice + sanitizeMathResponse(result.text);
 
-    // Clean any stray LaTeX delimiters/commands into readable Unicode plain text
-    const replyText = rawReply
-      .replace(/\$\$/g, "")
-      .replace(/\\\[|\\\]|\\\(|\\\)/g, "")
-      .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, "($1)/($2)")
-      .replace(/\\sqrt\{([^{}]+)\}/g, "√($1)")
-      .replace(/\\neq\b/g, "≠")
-      .replace(/\\leq?\b/g, "≤")
-      .replace(/\\geq?\b/g, "≥")
-      .replace(/\\times\b/g, "×")
-      .replace(/\\div\b/g, "÷")
-      .replace(/\\pm\b/g, "±")
-      .replace(/\\pi\b/g, "π")
-      .replace(/\^2\b/g, "²")
-      .replace(/\^3\b/g, "³")
-      .replace(/\\begin\{cases\}([\s\S]*?)\\end\{cases\}/g, (_: string, body: string) =>
-        body
-          .split("\\\\")
-          .map((s: string) => s.trim())
-          .filter(Boolean)
-          .join("\n")
-      )
-      .replace(/\$([^$\n]+)\$/g, "$1")
-      .replace(/\$/g, "");
-
-    return NextResponse.json({ reply: replyText, model: successfulModel });
+    return NextResponse.json({
+      reply: cleanedText,
+      model: result.model,
+    });
   } catch (error: any) {
     console.error("Error in /api/chat:", error);
-    return NextResponse.json({ error: error?.message || "Internal server error" }, { status: 500 });
+    return NextResponse.json(
+      { error: error?.message || "Internal server error" },
+      { status: 500 }
+    );
   }
 }
