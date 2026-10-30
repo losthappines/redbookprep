@@ -13,6 +13,7 @@ import {
   X,
   Check,
   ChevronDown,
+  Key,
 } from "lucide-react";
 
 interface Attachment {
@@ -32,21 +33,38 @@ interface Message {
   attachments?: Attachment[];
 }
 
+interface SavedApiKeys {
+  groq: string;
+  mistral: string;
+  gemma: string;
+  gemini: string;
+}
+
+interface ServerKeyStatus {
+  gemini: boolean;
+  groq: boolean;
+  mistral: boolean;
+  gemma: boolean;
+}
+
 const STARTER_PROMPTS = [
   {
     title: "Solve linear systems with no solutions",
     category: "Math · Algebra",
-    prompt: "How do I recognize when a system of two linear equations has no solution on the digital SAT?",
+    prompt:
+      "How do I recognize when a system of two linear equations has no solution on the digital SAT?",
   },
   {
     title: "Contrast vs. concession transitions",
     category: "Reading & Writing",
-    prompt: "How do I tell the difference between contrast transitions (like 'in contrast') and concession transitions (like 'nevertheless') on the Digital SAT? Give me short concrete examples and a quick rule.",
+    prompt:
+      "How do I tell the difference between contrast transitions (like 'in contrast') and concession transitions (like 'nevertheless') on the Digital SAT? Give me short concrete examples and a quick rule.",
   },
   {
     title: "Circle equations in (x − 3)² + (y + 2)² = 25",
     category: "Math · Geometry",
-    prompt: "How do I find the center and radius of (x − 3)² + (y + 2)² = 25 on the Digital SAT?",
+    prompt:
+      "How do I find the center and radius of (x − 3)² + (y + 2)² = 25 on the Digital SAT?",
   },
   {
     title: "Desmos graphing calculator tips",
@@ -59,7 +77,8 @@ export interface AIModelOption {
   id: string;
   name: string;
   badge: string;
-  provider: "google" | "anthropic" | "openai" | "deepseek";
+  provider: "gemini" | "groq" | "mistral" | "gemma";
+  envVar: string;
   desc: string;
 }
 
@@ -67,46 +86,55 @@ export const AVAILABLE_MODELS: AIModelOption[] = [
   {
     id: "Gemini 3.5 Flash",
     name: "Gemini 3.5 Flash",
-    badge: "Free & Fast",
-    provider: "google",
-    desc: "Default · Instant math breakdowns & SAT strategies",
+    badge: "Default · Fast",
+    provider: "gemini",
+    envVar: "GEMINI_API_KEY",
+    desc: "Instant SAT math breakdowns & test strategies",
   },
   {
-    id: "Gemini 2.5 Pro",
-    name: "Gemini 2.5 Pro",
-    badge: "Deep Reasoning",
-    provider: "google",
-    desc: "Advanced algebra, tricky geometry & complex figures",
+    id: "Groq · Llama 3.3 70B",
+    name: "Groq · Llama 3.3 70B",
+    badge: "Ultra-Fast LPU",
+    provider: "groq",
+    envVar: "GROQ_API_KEY",
+    desc: "Near-instant step-by-step algebra & grammar checks",
   },
   {
-    id: "Claude 3.5 Sonnet",
-    name: "Claude 3.5 Sonnet",
-    badge: "Top for Reading",
-    provider: "anthropic",
-    desc: "Nuanced transitions, textual evidence & rhetoric",
+    id: "Groq · Llama 4 Maverick",
+    name: "Groq · Llama 4 Maverick",
+    badge: "MoE Reasoning",
+    provider: "groq",
+    envVar: "GROQ_API_KEY",
+    desc: "Nuanced Reading & Writing passage logic on Groq",
   },
   {
-    id: "GPT-4o",
-    name: "GPT-4o",
+    id: "Mistral Large",
+    name: "Mistral Large",
     badge: "Flagship",
-    provider: "openai",
-    desc: "High-precision Digital SAT problem solver",
+    provider: "mistral",
+    envVar: "MISTRAL_API_KEY",
+    desc: "High-precision rhetoric, transitions & multi-step math",
   },
   {
-    id: "GPT-4o Mini",
-    name: "GPT-4o Mini",
-    badge: "Speed & Grammar",
-    provider: "openai",
-    desc: "Fast punctuation & grammar conventions check",
+    id: "Mistral Small",
+    name: "Mistral Small",
+    badge: "Low Latency",
+    provider: "mistral",
+    envVar: "MISTRAL_API_KEY",
+    desc: "Rapid punctuation, conciseness & quick concept drills",
   },
   {
-    id: "DeepSeek R1",
-    name: "DeepSeek R1",
-    badge: "Math Specialist",
-    provider: "deepseek",
-    desc: "Deep step-by-step mathematical reasoning",
+    id: "Gemma 4 (31B)",
+    name: "Gemma 4 (31B)",
+    badge: "Open Weights",
+    provider: "gemma",
+    envVar: "GEMMA_API_KEY",
+    desc: "Google's open Gemma instruction model for SAT tutoring",
   },
 ];
+
+const LOCAL_KEYS_STORAGE = "redbookprep-ai-keys";
+const LOCAL_MODEL_STORAGE = "redbookprep-selected-model";
 
 export function RedCoachChat() {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -116,7 +144,28 @@ export function RedCoachChat() {
   const [attachments, setAttachments] = useState<Attachment[]>([]);
   const [selectedModel, setSelectedModel] = useState("Gemini 3.5 Flash");
   const [showModelMenu, setShowModelMenu] = useState(false);
+  const [showKeyForm, setShowKeyForm] = useState(false);
   const [modelMenuPlacement, setModelMenuPlacement] = useState<"above" | "below">("above");
+
+  const [serverConfigured, setServerConfigured] = useState<ServerKeyStatus>({
+    gemini: false,
+    groq: false,
+    mistral: false,
+    gemma: false,
+  });
+
+  const [localKeys, setLocalKeys] = useState<SavedApiKeys>({
+    groq: "",
+    mistral: "",
+    gemma: "",
+    gemini: "",
+  });
+  const [draftKeys, setDraftKeys] = useState<SavedApiKeys>({
+    groq: "",
+    mistral: "",
+    gemma: "",
+    gemini: "",
+  });
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -126,11 +175,62 @@ export function RedCoachChat() {
 
   const isInitial = messages.length === 0;
 
+  // Load saved model & local API keys, plus check server-configured env vars
+  useEffect(() => {
+    try {
+      const savedModel = localStorage.getItem(LOCAL_MODEL_STORAGE);
+      if (savedModel && AVAILABLE_MODELS.some((m) => m.id === savedModel)) {
+        setSelectedModel(savedModel);
+      }
+      const rawKeys = localStorage.getItem(LOCAL_KEYS_STORAGE);
+      if (rawKeys) {
+        const parsed = JSON.parse(rawKeys);
+        const normalized: SavedApiKeys = {
+          groq: parsed.groq || "",
+          mistral: parsed.mistral || "",
+          gemma: parsed.gemma || "",
+          gemini: parsed.gemini || "",
+        };
+        setLocalKeys(normalized);
+        setDraftKeys(normalized);
+      }
+    } catch {}
+
+    fetch("/api/chat")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (data?.configured) {
+          setServerConfigured({
+            gemini: Boolean(data.configured.gemini),
+            groq: Boolean(data.configured.groq),
+            mistral: Boolean(data.configured.mistral),
+            gemma: Boolean(data.configured.gemma),
+          });
+        }
+      })
+      .catch(() => {});
+  }, []);
+
+  const isProviderReady = useCallback(
+    (provider: AIModelOption["provider"]) => {
+      if (provider === "groq") return Boolean(localKeys.groq.trim() || serverConfigured.groq);
+      if (provider === "mistral")
+        return Boolean(localKeys.mistral.trim() || serverConfigured.mistral);
+      if (provider === "gemma")
+        return Boolean(
+          localKeys.gemma.trim() || localKeys.gemini.trim() || serverConfigured.gemma
+        );
+      return Boolean(localKeys.gemini.trim() || serverConfigured.gemini);
+    },
+    [localKeys, serverConfigured]
+  );
+
   // Close model popover on outside click
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (modelMenuRef.current && !modelMenuRef.current.contains(event.target as Node)) {
         setShowModelMenu(false);
+        setShowKeyForm(false);
       }
     }
     if (showModelMenu) {
@@ -166,6 +266,30 @@ export function RedCoachChat() {
     };
   }, [attachments]);
 
+  const handleSelectModel = (modelId: string) => {
+    setSelectedModel(modelId);
+    setShowModelMenu(false);
+    setShowKeyForm(false);
+    try {
+      localStorage.setItem(LOCAL_MODEL_STORAGE, modelId);
+    } catch {}
+  };
+
+  const handleSaveLocalKeys = (e: React.FormEvent) => {
+    e.preventDefault();
+    const cleaned: SavedApiKeys = {
+      groq: draftKeys.groq.trim(),
+      mistral: draftKeys.mistral.trim(),
+      gemma: draftKeys.gemma.trim(),
+      gemini: draftKeys.gemini.trim(),
+    };
+    setLocalKeys(cleaned);
+    try {
+      localStorage.setItem(LOCAL_KEYS_STORAGE, JSON.stringify(cleaned));
+    } catch {}
+    setShowKeyForm(false);
+  };
+
   const handleSendMessage = useCallback(
     async (textToSend?: string) => {
       const text = (textToSend !== undefined ? textToSend : inputText).trim();
@@ -191,6 +315,12 @@ export function RedCoachChat() {
       }
 
       try {
+        const activeApiKeys: Record<string, string> = {};
+        if (localKeys.groq) activeApiKeys.groq = localKeys.groq;
+        if (localKeys.mistral) activeApiKeys.mistral = localKeys.mistral;
+        if (localKeys.gemma) activeApiKeys.gemma = localKeys.gemma;
+        if (localKeys.gemini) activeApiKeys.gemini = localKeys.gemini;
+
         const res = await fetch("/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -198,6 +328,7 @@ export function RedCoachChat() {
             message: text,
             model: selectedModel,
             history: messages.slice(-6).map((m) => ({ role: m.role, content: m.content })),
+            apiKeys: activeApiKeys,
           }),
         });
 
@@ -216,7 +347,8 @@ export function RedCoachChat() {
           {
             id: crypto.randomUUID(),
             role: "assistant",
-            content: "Network error: Unable to reach the coaching server. Please check your connection.",
+            content:
+              "Network error: Unable to reach the coaching server. Please check your connection.",
             timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
           },
         ]);
@@ -224,7 +356,7 @@ export function RedCoachChat() {
         setLoading(false);
       }
     },
-    [inputText, attachments, loading, messages, selectedModel]
+    [inputText, attachments, loading, messages, selectedModel, localKeys]
   );
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -313,37 +445,119 @@ export function RedCoachChat() {
       className={`redcoach-model-popover ${placement === "below" ? "placement-below" : ""}`}
     >
       <div className="redcoach-model-popover-header">
-        <span className="redcoach-model-popover-title">AI Engine</span>
-        <span className="redcoach-model-popover-badge">Multi-Model</span>
+        <span className="redcoach-model-popover-title">
+          {showKeyForm ? "Configure API Keys" : "Select AI Model"}
+        </span>
+        <button
+          type="button"
+          onClick={() => {
+            setDraftKeys(localKeys);
+            setShowKeyForm((v) => !v);
+          }}
+          className="redcoach-key-toggle-btn"
+        >
+          <Key size={11} />
+          <span>{showKeyForm ? "Back to models" : "API Keys"}</span>
+        </button>
       </div>
-      <div className="flex flex-col gap-1 max-h-[300px] overflow-y-auto">
-        {AVAILABLE_MODELS.map((m) => {
-          const isSelected = selectedModel === m.id;
-          return (
-            <button
-              key={m.id}
-              type="button"
-              onClick={() => {
-                setSelectedModel(m.id);
-                setShowModelMenu(false);
-              }}
-              className={`redcoach-model-opt ${isSelected ? "active" : ""}`}
-            >
-              <div className="redcoach-model-opt-info">
-                <div className="redcoach-model-opt-name">
-                  <span>{m.name}</span>
-                  <span className="redcoach-model-opt-tag">{m.badge}</span>
-                </div>
-                <div className="redcoach-model-opt-desc">{m.desc}</div>
-              </div>
-              {isSelected && <Check size={16} className="redcoach-model-opt-check" />}
+
+      {showKeyForm ? (
+        <form onSubmit={handleSaveLocalKeys} className="redcoach-key-form">
+          <label className="redcoach-key-field">
+            <span>
+              Groq API Key{" "}
+              {serverConfigured.groq && <em className="redcoach-env-ok">Server active</em>}
+            </span>
+            <input
+              type="password"
+              placeholder={serverConfigured.groq ? "Configured in Vercel" : "gsk_..."}
+              value={draftKeys.groq}
+              onChange={(e) => setDraftKeys((p) => ({ ...p, groq: e.target.value }))}
+            />
+          </label>
+          <label className="redcoach-key-field">
+            <span>
+              Mistral API Key{" "}
+              {serverConfigured.mistral && <em className="redcoach-env-ok">Server active</em>}
+            </span>
+            <input
+              type="password"
+              placeholder={serverConfigured.mistral ? "Configured in Vercel" : "Mistral API key..."}
+              value={draftKeys.mistral}
+              onChange={(e) => setDraftKeys((p) => ({ ...p, mistral: e.target.value }))}
+            />
+          </label>
+          <label className="redcoach-key-field">
+            <span>
+              Gemma API Key{" "}
+              {serverConfigured.gemma && <em className="redcoach-env-ok">Server active</em>}
+            </span>
+            <input
+              type="password"
+              placeholder={
+                serverConfigured.gemma ? "Configured via Google key" : "AIza... or gsk_..."
+              }
+              value={draftKeys.gemma}
+              onChange={(e) => setDraftKeys((p) => ({ ...p, gemma: e.target.value }))}
+            />
+          </label>
+          <label className="redcoach-key-field">
+            <span>
+              Gemini API Key{" "}
+              {serverConfigured.gemini && <em className="redcoach-env-ok">Server active</em>}
+            </span>
+            <input
+              type="password"
+              placeholder={serverConfigured.gemini ? "Configured in Vercel" : "AIza..."}
+              value={draftKeys.gemini}
+              onChange={(e) => setDraftKeys((p) => ({ ...p, gemini: e.target.value }))}
+            />
+          </label>
+          <div className="redcoach-key-actions">
+            <button type="submit" className="redcoach-key-save-btn">
+              Save keys in browser
             </button>
-          );
-        })}
-      </div>
-      <div className="redcoach-model-popover-footer">
-        Gemini is free and active. Other providers activate when API keys are added in Vercel settings.
-      </div>
+          </div>
+          <div className="redcoach-model-popover-footer">
+            For site-wide access, add <code>GROQ_API_KEY</code>, <code>MISTRAL_API_KEY</code>, and{" "}
+            <code>GEMMA_API_KEY</code> in Vercel Environment Variables.
+          </div>
+        </form>
+      ) : (
+        <>
+          <div className="flex flex-col gap-1 max-h-[300px] overflow-y-auto">
+            {AVAILABLE_MODELS.map((m) => {
+              const isSelected = selectedModel === m.id;
+              const ready = isProviderReady(m.provider);
+              return (
+                <button
+                  key={m.id}
+                  type="button"
+                  onClick={() => handleSelectModel(m.id)}
+                  className={`redcoach-model-opt ${isSelected ? "active" : ""}`}
+                >
+                  <div className="redcoach-model-opt-info">
+                    <div className="redcoach-model-opt-name">
+                      <span
+                        className={`redcoach-status-dot ${ready ? "is-ready" : "needs-key"}`}
+                        title={ready ? "API key active" : `Set ${m.envVar} or click API Keys`}
+                      />
+                      <span>{m.name}</span>
+                      <span className="redcoach-model-opt-tag">{m.badge}</span>
+                    </div>
+                    <div className="redcoach-model-opt-desc">{m.desc}</div>
+                  </div>
+                  {isSelected && <Check size={16} className="redcoach-model-opt-check" />}
+                </button>
+              );
+            })}
+          </div>
+          <div className="redcoach-model-popover-footer">
+            Green dot = API key active. Click <strong>API Keys</strong> above to test keys right
+            away, or add them in Vercel Settings.
+          </div>
+        </>
+      )}
     </div>
   );
 
@@ -364,11 +578,11 @@ export function RedCoachChat() {
             </div>
             <h1 className="redcoach-initial-title">Ask redCoach</h1>
             <p className="redcoach-initial-subtitle">
-              Your Digital SAT AI companion · Instant math step-by-step breakdowns, grammar rules &amp; test strategies
+              Your Digital SAT AI companion · Powered by Gemini, Groq, Mistral &amp; Gemma
             </p>
           </div>
 
-          {/* Centered AI Chatbox (Matching the exact UI design) */}
+          {/* Centered AI Chatbox */}
           <div className="redcoach-chatbox-card">
             {/* Attachment preview thumbnails */}
             {attachments.length > 0 && (
@@ -395,16 +609,16 @@ export function RedCoachChat() {
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Type your thoughts..."
+              placeholder="Type your SAT question or paste a problem..."
               className="redcoach-textarea"
               rows={1}
             />
 
             {/* Bottom Actions Bar */}
             <div className="redcoach-actions-bar">
-              {/* Left Circular Buttons */}
+              {/* Left Circular Buttons + Model Pill */}
               <div className="redcoach-actions-left">
-                {/* 1. Sparkles Button */}
+                {/* 1. Sparkles Model Selector */}
                 <div className="relative">
                   <button
                     type="button"
@@ -412,11 +626,12 @@ export function RedCoachChat() {
                       setModelMenuPlacement("above");
                       setShowModelMenu((v) => !v);
                     }}
-                    className={`redcoach-circle-btn ${showModelMenu && modelMenuPlacement === "above" ? "active" : ""}`}
-                    title={`AI Model: ${selectedModel} (click to change)`}
-                    aria-label="Switch AI model"
+                    className="redcoach-model-badge-btn"
+                    title="Switch AI model (Gemini, Groq, Mistral, Gemma)"
                   >
-                    <Sparkles size={16} />
+                    <Sparkles size={13} />
+                    <span>{selectedModel}</span>
+                    <ChevronDown size={12} />
                   </button>
                   {showModelMenu && modelMenuPlacement === "above" && renderModelMenu("above")}
                 </div>
@@ -513,7 +728,7 @@ export function RedCoachChat() {
                   </div>
                 </div>
                 <p className="text-xs text-muted-foreground mt-0.5">
-                  Instant plain-text SAT math breakdowns &amp; test strategies
+                  Concise plain-text SAT math breakdowns &amp; test strategies
                 </p>
               </div>
             </div>
@@ -544,7 +759,12 @@ export function RedCoachChat() {
                     {m.attachments && m.attachments.length > 0 && (
                       <div className="redcoach-msg-attachments">
                         {m.attachments.map((att) => (
-                          <img key={att.id} src={att.url} alt={att.name} className="redcoach-msg-img" />
+                          <img
+                            key={att.id}
+                            src={att.url}
+                            alt={att.name}
+                            className="redcoach-msg-img"
+                          />
                         ))}
                       </div>
                     )}
@@ -568,7 +788,9 @@ export function RedCoachChat() {
                 </div>
                 <div className="redcoach-bubble redcoach-thinking-bubble">
                   <span className="redcoach-pulse-dot" />
-                  <span className="font-medium text-sm">redCoach is thinking...</span>
+                  <span className="font-medium text-sm">
+                    redCoach ({selectedModel}) is thinking...
+                  </span>
                 </div>
               </div>
             )}
@@ -576,7 +798,7 @@ export function RedCoachChat() {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Bottom Docked Input Card (Identical layout to the center card) */}
+          {/* Bottom Docked Input Card */}
           <div className="redcoach-bottom-dock">
             <div className="redcoach-chatbox-card">
               {/* Attachment preview thumbnails */}
@@ -604,16 +826,15 @@ export function RedCoachChat() {
                 value={inputText}
                 onChange={(e) => setInputText(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Type your thoughts..."
+                placeholder="Ask a follow-up question..."
                 className="redcoach-textarea"
                 rows={1}
               />
 
               {/* Bottom Actions Bar */}
               <div className="redcoach-actions-bar">
-                {/* Left Circular Buttons */}
+                {/* Left Circular Buttons + Model Pill */}
                 <div className="redcoach-actions-left">
-                  {/* 1. Sparkles Button */}
                   <div className="relative">
                     <button
                       type="button"
@@ -621,11 +842,12 @@ export function RedCoachChat() {
                         setModelMenuPlacement("above");
                         setShowModelMenu((v) => !v);
                       }}
-                      className={`redcoach-circle-btn ${showModelMenu && modelMenuPlacement === "above" ? "active" : ""}`}
+                      className="redcoach-model-badge-btn"
                       title={`AI Model: ${selectedModel} (click to change)`}
-                      aria-label="Switch AI model"
                     >
-                      <Sparkles size={16} />
+                      <Sparkles size={13} />
+                      <span>{selectedModel}</span>
+                      <ChevronDown size={12} />
                     </button>
                     {showModelMenu && modelMenuPlacement === "above" && renderModelMenu("above")}
                   </div>
