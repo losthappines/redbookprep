@@ -1,5 +1,6 @@
 "use client";
 
+import { COACH_MODELS, FAILURE_MESSAGES, resolveModel, type Attempt } from "../../lib/redcoach-models";
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import {
   Sparkles,
@@ -29,6 +30,9 @@ interface Message {
   content: string;
   model?: string;
   effort?: string;
+  notice?: string;
+  modelId?: string;
+  error?: boolean;
   timestamp: string;
   attachments?: Attachment[];
 }
@@ -82,56 +86,7 @@ export interface AIModelOption {
   desc: string;
 }
 
-export const AVAILABLE_MODELS: AIModelOption[] = [
-  {
-    id: "Gemini 3.5 Flash",
-    name: "Gemini 3.5 Flash",
-    badge: "Default · Fast",
-    provider: "gemini",
-    envVar: "GEMINI_API_KEY",
-    desc: "Instant SAT math breakdowns & test strategies",
-  },
-  {
-    id: "Groq · Llama 3.3 70B",
-    name: "Groq · Llama 3.3 70B",
-    badge: "Ultra-Fast LPU",
-    provider: "groq",
-    envVar: "GROQ_API_KEY",
-    desc: "Near-instant step-by-step algebra & grammar checks",
-  },
-  {
-    id: "Groq · Llama 4 Maverick",
-    name: "Groq · Llama 4 Maverick",
-    badge: "MoE Reasoning",
-    provider: "groq",
-    envVar: "GROQ_API_KEY",
-    desc: "Nuanced Reading & Writing passage logic on Groq",
-  },
-  {
-    id: "Mistral Large",
-    name: "Mistral Large",
-    badge: "Flagship",
-    provider: "mistral",
-    envVar: "MISTRAL_API_KEY",
-    desc: "High-precision rhetoric, transitions & multi-step math",
-  },
-  {
-    id: "Mistral Small",
-    name: "Mistral Small",
-    badge: "Low Latency",
-    provider: "mistral",
-    envVar: "MISTRAL_API_KEY",
-    desc: "Rapid punctuation, conciseness & quick concept drills",
-  },
-  {
-    id: "Gemma 3 27B",
-    name: "Gemma 3 27B",
-    badge: "Open Weights",
-    provider: "gemma",
-    envVar: "GEMMA_API_KEY",
-    desc: "Google's open Gemma instruction model for SAT tutoring",
-  },
-];
+export const AVAILABLE_MODELS: readonly AIModelOption[] = COACH_MODELS;
 
 const LOCAL_KEYS_STORAGE = "redbookprep-ai-keys";
 const LOCAL_MODEL_STORAGE = "redbookprep-selected-model";
@@ -142,7 +97,7 @@ export function RedCoachChat() {
   const [loading, setLoading] = useState(false);
   const [isListening, setIsListening] = useState(false);
   const [attachments, setAttachments] = useState<Attachment[]>([]);
-  const [selectedModel, setSelectedModel] = useState("Gemini 3.5 Flash");
+  const [selectedModel, setSelectedModel] = useState<string>(COACH_MODELS[0].id);
   const [showModelMenu, setShowModelMenu] = useState(false);
   const [showKeyForm, setShowKeyForm] = useState(false);
   const [modelMenuPlacement, setModelMenuPlacement] = useState<"above" | "below">("above");
@@ -174,13 +129,15 @@ export function RedCoachChat() {
   const modelMenuRef = useRef<HTMLDivElement>(null);
 
   const isInitial = messages.length === 0;
+  const selectedLabel = resolveModel(selectedModel)?.name || selectedModel;
+  const [modelChecks, setModelChecks] = useState<Record<string, Attempt & { checkedAt: string }>>({});
 
   // Load saved model & local API keys, plus check server-configured env vars
   useEffect(() => {
     try {
       const savedModel = localStorage.getItem(LOCAL_MODEL_STORAGE);
-      if (savedModel && AVAILABLE_MODELS.some((m) => m.id === savedModel)) {
-        setSelectedModel(savedModel);
+      if (savedModel && resolveModel(savedModel)) {
+        setSelectedModel(resolveModel(savedModel)!.id);
       }
       const rawKeys = localStorage.getItem(LOCAL_KEYS_STORAGE);
       if (rawKeys) {
@@ -283,6 +240,7 @@ export function RedCoachChat() {
       gemma: draftKeys.gemma.trim(),
       gemini: draftKeys.gemini.trim(),
     };
+    setModelChecks({});
     setLocalKeys(cleaned);
     try {
       localStorage.setItem(LOCAL_KEYS_STORAGE, JSON.stringify(cleaned));
@@ -300,7 +258,7 @@ export function RedCoachChat() {
         id: crypto.randomUUID(),
         role: "user",
         content: text,
-        model: selectedModel,
+        model: selectedLabel,
         timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
         attachments: [...attachments],
       };
@@ -327,17 +285,27 @@ export function RedCoachChat() {
           body: JSON.stringify({
             message: text,
             model: selectedModel,
-            history: messages.slice(-6).map((m) => ({ role: m.role, content: m.content })),
+            history: messages.filter((m) => !m.error).slice(-6).map((m) => ({ role: m.role, content: m.content })),
             apiKeys: activeApiKeys,
           }),
         });
 
         const data = await res.json();
+        if (Array.isArray(data.checks)) {
+          setModelChecks((prev) => {
+            const next = { ...prev };
+            for (const check of data.checks) next[check.modelId] = check;
+            return next;
+          });
+        }
         const botMsg: Message = {
           id: crypto.randomUUID(),
           role: "assistant",
           content: data.reply || data.error || "Sorry, I had trouble formulating a response.",
-          model: data.model || selectedModel,
+          model: data.model || selectedLabel,
+          modelId: data.modelId,
+          notice: data.notice,
+          error: !res.ok,
           timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
         };
         setMessages((prev) => [...prev, botMsg]);
@@ -349,6 +317,7 @@ export function RedCoachChat() {
             role: "assistant",
             content:
               "Network error: Unable to reach the coaching server. Please check your connection.",
+              error: true,
             timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
           },
         ]);
@@ -356,7 +325,7 @@ export function RedCoachChat() {
         setLoading(false);
       }
     },
-    [inputText, attachments, loading, messages, selectedModel, localKeys]
+    [inputText, attachments, loading, messages, selectedModel, selectedLabel, localKeys]
   );
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -466,7 +435,7 @@ export function RedCoachChat() {
           <label className="redcoach-key-field">
             <span>
               Groq API Key{" "}
-              {serverConfigured.groq && <em className="redcoach-env-ok">Server active</em>}
+              {serverConfigured.groq && <em className="redcoach-env-ok">Key configured</em>}
             </span>
             <input
               type="password"
@@ -478,7 +447,7 @@ export function RedCoachChat() {
           <label className="redcoach-key-field">
             <span>
               Mistral API Key{" "}
-              {serverConfigured.mistral && <em className="redcoach-env-ok">Server active</em>}
+              {serverConfigured.mistral && <em className="redcoach-env-ok">Key configured</em>}
             </span>
             <input
               type="password"
@@ -490,12 +459,12 @@ export function RedCoachChat() {
           <label className="redcoach-key-field">
             <span>
               Gemma API Key{" "}
-              {serverConfigured.gemma && <em className="redcoach-env-ok">Server active</em>}
+              {serverConfigured.gemma && <em className="redcoach-env-ok">Key configured</em>}
             </span>
             <input
               type="password"
               placeholder={
-                serverConfigured.gemma ? "Configured via Google key" : "AIza... or gsk_..."
+                serverConfigured.gemma ? "Google AI Studio key configured" : "Google AI Studio key (AIza...)"
               }
               value={draftKeys.gemma}
               onChange={(e) => setDraftKeys((p) => ({ ...p, gemma: e.target.value }))}
@@ -504,7 +473,7 @@ export function RedCoachChat() {
           <label className="redcoach-key-field">
             <span>
               Gemini API Key{" "}
-              {serverConfigured.gemini && <em className="redcoach-env-ok">Server active</em>}
+              {serverConfigured.gemini && <em className="redcoach-env-ok">Key configured</em>}
             </span>
             <input
               type="password"
@@ -528,7 +497,12 @@ export function RedCoachChat() {
           <div className="flex flex-col gap-1 max-h-[300px] overflow-y-auto">
             {AVAILABLE_MODELS.map((m) => {
               const isSelected = selectedModel === m.id;
-              const ready = isProviderReady(m.provider);
+              const configured = isProviderReady(m.provider);
+              const check = modelChecks[m.id];
+              const ready = check?.status === "ok";
+              const status = check
+                ? check.status === "ok" ? "Last request succeeded" : FAILURE_MESSAGES[check.status]
+                : configured ? "Key configured · not tested" : "Key needed";
               return (
                 <button
                   key={m.id}
@@ -540,12 +514,13 @@ export function RedCoachChat() {
                     <div className="redcoach-model-opt-name">
                       <span
                         className={`redcoach-status-dot ${ready ? "is-ready" : "needs-key"}`}
-                        title={ready ? "API key active" : `Set ${m.envVar} or click API Keys`}
+                        title={check ? `${status} (${new Date(check.checkedAt).toLocaleTimeString()})` : status}
                       />
                       <span>{m.name}</span>
                       <span className="redcoach-model-opt-tag">{m.badge}</span>
                     </div>
                     <div className="redcoach-model-opt-desc">{m.desc}</div>
+                    <div className="redcoach-model-opt-desc">{status}</div>
                   </div>
                   {isSelected && <Check size={16} className="redcoach-model-opt-check" />}
                 </button>
@@ -553,8 +528,8 @@ export function RedCoachChat() {
             })}
           </div>
           <div className="redcoach-model-popover-footer">
-            Green dot = API key active. Click <strong>API Keys</strong> above to test keys right
-            away, or add them in Vercel Settings.
+            Green dot = last request succeeded in this session. Send a question to test a model.
+            A configured key alone does not verify access.
           </div>
         </>
       )}
@@ -630,7 +605,7 @@ export function RedCoachChat() {
                     title="Switch AI model (Gemini, Groq, Mistral, Gemma)"
                   >
                     <Sparkles size={13} />
-                    <span>{selectedModel}</span>
+                    <span>{selectedLabel}</span>
                     <ChevronDown size={12} />
                   </button>
                   {showModelMenu && modelMenuPlacement === "above" && renderModelMenu("above")}
@@ -721,7 +696,7 @@ export function RedCoachChat() {
                       title="Switch AI model"
                     >
                       <Sparkles size={12} />
-                      <span>{selectedModel}</span>
+                      <span>{selectedLabel}</span>
                       <ChevronDown size={12} />
                     </button>
                     {showModelMenu && modelMenuPlacement === "below" && renderModelMenu("below")}
@@ -769,10 +744,11 @@ export function RedCoachChat() {
                       </div>
                     )}
 
-                    <div className="redcoach-bubble-text">{m.content}</div>
+                    {m.notice && <p className="text-sm mb-2" role="status">{m.notice}</p>}
+                    <div className="redcoach-bubble-text" role={m.error ? "alert" : undefined}>{m.content}</div>
 
                     <div className="redcoach-bubble-meta">
-                      {m.model && <span>{m.model}</span>}
+                      {m.model && <span title={m.modelId ? `Provider model: ${m.modelId}` : undefined}>{m.model}{m.modelId ? ` · ${m.modelId}` : ""}</span>}
                       <span>{m.timestamp}</span>
                     </div>
                   </div>
@@ -789,7 +765,7 @@ export function RedCoachChat() {
                 <div className="redcoach-bubble redcoach-thinking-bubble">
                   <span className="redcoach-pulse-dot" />
                   <span className="font-medium text-sm">
-                    redCoach ({selectedModel}) is thinking...
+                    redCoach ({selectedLabel}) is thinking...
                   </span>
                 </div>
               </div>
@@ -843,10 +819,10 @@ export function RedCoachChat() {
                         setShowModelMenu((v) => !v);
                       }}
                       className="redcoach-model-badge-btn"
-                      title={`AI Model: ${selectedModel} (click to change)`}
+                      title={`AI Model: ${selectedLabel} (click to change)`}
                     >
                       <Sparkles size={13} />
-                      <span>{selectedModel}</span>
+                      <span>{selectedLabel}</span>
                       <ChevronDown size={12} />
                     </button>
                     {showModelMenu && modelMenuPlacement === "above" && renderModelMenu("above")}
