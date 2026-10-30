@@ -93,7 +93,7 @@ export async function GET() {
       "Groq · Llama 4 Maverick",
       "Mistral Large",
       "Mistral Small",
-      "Gemma 4 (31B)",
+      "Gemma 3 27B",
     ],
   });
 }
@@ -101,6 +101,22 @@ export async function GET() {
 // -------------------------------------------------------------
 // Provider Callers (with strict deadline budget to avoid 502s)
 // -------------------------------------------------------------
+
+function extractGoogleText(data: any): string {
+  const parts = data?.candidates?.[0]?.content?.parts;
+  if (!Array.isArray(parts)) return "";
+  const visible = parts
+    .filter((p: any) => !p?.thought && typeof p?.text === "string")
+    .map((p: any) => p.text)
+    .join("\n")
+    .trim();
+  if (visible) return visible;
+  return parts
+    .filter((p: any) => typeof p?.text === "string")
+    .map((p: any) => p.text)
+    .join("\n")
+    .trim();
+}
 
 async function callGemini(
   apiKey: string,
@@ -142,15 +158,15 @@ async function callGemini(
           contents: formattedContents,
           generationConfig: {
             temperature: effort === "Max Effort" ? 0.3 : 0.6,
-            maxOutputTokens: 1000,
+            maxOutputTokens: 2048,
           },
         }),
-        signal: AbortSignal.timeout(Math.min(4500, remaining)),
+        signal: AbortSignal.timeout(Math.min(5500, remaining)),
       });
 
       if (res.ok) {
         const data = await res.json();
-        const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+        const text = extractGoogleText(data);
         if (text) return { text, model: displayLabel };
       } else if (res.status === 400 || res.status === 401 || res.status === 403) {
         // Invalid key or malformed request — fail fast
@@ -314,7 +330,7 @@ async function callGemma(
   message: string,
   deadline: number
 ): Promise<{ text: string; model: string } | null> {
-  const displayLabel = requestedLabel.includes("Gemma") ? requestedLabel : "Gemma 4 (31B)";
+  const displayLabel = requestedLabel.includes("Gemma") ? requestedLabel : "Gemma 3 27B";
 
   // 1. OpenAI-compatible Gemma providers (Groq gsk_, OpenRouter sk-or-, HuggingFace hf_)
   if (apiKey.startsWith("gsk_") || apiKey.startsWith("sk-or-") || apiKey.startsWith("hf_")) {
@@ -361,7 +377,7 @@ async function callGemma(
   }
 
   // 2. Google AI Studio / Generative Language API key (AIza...)
-  const gemmaCandidates = ["gemma-4-31b-it", "gemma-3-27b-it", "gemma-3-12b-it"];
+  const gemmaCandidates = ["gemma-3-27b-it", "gemma-4-31b-it", "gemma-3-12b-it"];
 
   const contextStr = history.length
     ? `\n\nRecent conversation:\n${history
@@ -388,15 +404,15 @@ async function callGemma(
           contents,
           generationConfig: {
             temperature: 0.5,
-            maxOutputTokens: 1000,
+            maxOutputTokens: 2048,
           },
         }),
-        signal: AbortSignal.timeout(Math.min(5500, remaining)),
+        signal: AbortSignal.timeout(Math.min(7000, remaining)),
       });
 
       if (res.ok) {
         const data = await res.json();
-        const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+        const text = extractGoogleText(data);
         if (text) return { text, model: displayLabel };
       } else if (res.status === 401 || res.status === 403) {
         break;

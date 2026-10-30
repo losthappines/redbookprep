@@ -124,8 +124,8 @@ export const AVAILABLE_MODELS: AIModelOption[] = [
     desc: "Rapid punctuation, conciseness & quick concept drills",
   },
   {
-    id: "Gemma 4 (31B)",
-    name: "Gemma 4 (31B)",
+    id: "Gemma 3 27B",
+    name: "Gemma 3 27B",
     badge: "Open Weights",
     provider: "gemma",
     envVar: "GEMMA_API_KEY",
