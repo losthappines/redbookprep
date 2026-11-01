@@ -107,12 +107,12 @@ export const AVAILABLE_MODELS: AIModelOption[] = [
     desc: "Rapid punctuation, conciseness & quick concept drills",
   },
   {
-    id: "Gemma 3 27B",
-    name: "Gemma 3 27B",
-    badge: "Open Weights",
+    id: "Gemma 4",
+    name: "Gemma 4",
+    badge: "MoE · 26B-A4B",
     provider: "gemma",
     envVar: "GEMMA_API_KEY",
-    desc: "Google's open Gemma instruction model for SAT tutoring",
+    desc: "Google's open Gemma 4 (gemma-4-26b-a4b-it) model for SAT tutoring",
   },
 ];
 
@@ -158,8 +158,9 @@ export function RedCoachChat() {
   useEffect(() => {
     try {
       const savedModel = localStorage.getItem(LOCAL_MODEL_STORAGE);
-      if (savedModel && AVAILABLE_MODELS.some((m) => m.id === savedModel)) {
-        setSelectedModel(savedModel);
+      const migratedModel = savedModel === "Gemma 3 27B" ? "Gemma 4" : savedModel;
+      if (migratedModel && AVAILABLE_MODELS.some((m) => m.id === migratedModel)) {
+        setSelectedModel(migratedModel);
       }
       const rawKeys = localStorage.getItem(LOCAL_KEYS_STORAGE);
       if (rawKeys) {

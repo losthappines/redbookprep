@@ -93,7 +93,7 @@ export async function GET() {
       "Groq · Llama 4 Maverick",
       "Mistral Large",
       "Mistral Small",
-      "Gemma 3 27B",
+      "Gemma 4",
     ],
   });
 }
@@ -330,7 +330,7 @@ async function callGemma(
   message: string,
   deadline: number
 ): Promise<{ text: string; model: string } | null> {
-  const displayLabel = requestedLabel.includes("Gemma") ? requestedLabel : "Gemma 3 27B";
+  const displayLabel = requestedLabel.includes("Gemma") ? requestedLabel : "Gemma 4";
 
   // 1. OpenAI-compatible Gemma providers (Groq gsk_, OpenRouter sk-or-, HuggingFace hf_)
   if (apiKey.startsWith("gsk_") || apiKey.startsWith("sk-or-") || apiKey.startsWith("hf_")) {
@@ -342,7 +342,7 @@ async function callGemma(
 
     const modelCandidates = apiKey.startsWith("gsk_")
       ? ["gemma2-9b-it", "llama-3.3-70b-versatile"]
-      : ["google/gemma-3-27b-it", "google/gemma-2-27b-it"];
+      : ["google/gemma-4-26b-a4b-it", "google/gemma-3-27b-it"];
 
     for (const m of modelCandidates) {
       const remaining = deadline - Date.now();
@@ -376,8 +376,8 @@ async function callGemma(
     return null;
   }
 
-  // 2. Google AI Studio / Generative Language API key (AIza...)
-  const gemmaCandidates = ["gemma-3-27b-it", "gemma-4-31b-it", "gemma-3-12b-it"];
+  // 2. Google AI Studio / Generative Language API key (AIza...) — Gemma 4 primary
+  const gemmaCandidates = ["gemma-4-26b-a4b-it", "gemma-4-31b-it", "gemma-3-27b-it"];
 
   const contextStr = history.length
     ? `\n\nRecent conversation:\n${history
@@ -407,7 +407,7 @@ async function callGemma(
             maxOutputTokens: 2048,
           },
         }),
-        signal: AbortSignal.timeout(Math.min(7000, remaining)),
+        signal: AbortSignal.timeout(Math.min(9500, remaining)),
       });
 
       if (res.ok) {
@@ -510,7 +510,7 @@ export async function POST(req: NextRequest) {
       result = await callMistral(mistralKey, "Mistral Large", history, message, deadline);
     }
     if (!result && explicitGemmaKey && !model.includes("Gemma")) {
-      result = await callGemma(explicitGemmaKey, "Gemma 4 (31B)", history, message, deadline);
+      result = await callGemma(explicitGemmaKey, "Gemma 4", history, message, deadline);
     }
 
     if (!result) {
