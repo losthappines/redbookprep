@@ -73,3 +73,47 @@ html[data-theme=dark] .rb-entry-form .rb-entry-error{color:#ffa8ba}
 /* The preview panel is already opaque enough; keep its content on one paint layer. */
 .rb-landing .rb-product-preview{backdrop-filter:none;-webkit-backdrop-filter:none}
 .rb-public-brand .rb-brand-logo{width:39px;height:39px;object-fit:contain;display:block;flex-shrink:0}.rb-public-brand .rb-brand-logo.rb-brand-logo-sm{width:26px;height:26px}.rb-public-cta .rb-cta-logo{width:48px;height:48px;object-fit:contain;display:block;margin:0 auto 16px}@media(max-width:720px){.rb-public-brand .rb-brand-logo:not(.rb-brand-logo-sm){width:33px;height:33px}}
+
+/* Animated expanding-pill top navigation for the landing page (BottomNavBar). */
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+.rb-skip-link{position:fixed;top:-80px;left:16px;z-index:60;padding:10px 16px;border-radius:999px;background:#fffdf9;color:#b83e30!important;border:2px solid #b83e30;font-weight:600;font-size:13px;text-decoration:none}
+.rb-skip-link:focus{top:16px}
+.rb-public .site-header{--card:#fffdf9;--border:#e5dfd5;--primary:#b83e30;--muted:#f2eee6;--muted-foreground:#797167;position:fixed;top:28px;left:50%;transform:translateX(-50%);z-index:40;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;display:flex;align-items:center;gap:24px;width:min(1120px,calc(100% - 64px))}
+html[data-theme=dark] .rb-public .site-header,.dark .rb-public .site-header{--card:#292622;--border:#49433d;--primary:#f1aa96;--muted:#38322e;--muted-foreground:#c6bdb3}
+.rb-public .site-header #navigation-root,.rb-public .site-header .rb-nav-root{margin-left:auto}
+.rb-public .site-header .pill-nav{display:flex;align-items:center;margin:0;gap:4px;padding:6px;height:56px;border-radius:9999px;border:1px solid var(--border);background:var(--card);box-shadow:0 7px 24px #493b2812}
+.rb-public .site-header .brand{display:inline-flex;align-items:center;gap:9px;padding:10px 14px;border-radius:30px;background:#faf8f2ee;border:1px solid #e5dfd5;box-shadow:0 6px 24px #604e4610;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);font-weight:700;letter-spacing:-.7px;font-size:20px;line-height:1;color:#292622!important;white-space:nowrap;text-decoration:none}
+html[data-theme=dark] .rb-public .site-header .brand,.dark .rb-public .site-header .brand{background:#292622eb;border-color:#49433d;color:#f5f2eb!important}
+.rb-public .site-header .brand .rb-brand-logo{width:30px;height:30px;border-radius:7px;object-fit:contain;display:block;flex-shrink:0}
+.rb-public .site-header .brand .dot{font-size:10px;align-self:flex-start;margin-left:-5px}
+.rb-public .site-header .pill-link{flex-shrink:0;display:inline-flex;align-items:center;height:44px;min-width:44px;padding:0 12px;border-radius:9999px;font-size:12px;font-weight:500;color:var(--muted-foreground);text-decoration:none;transition:background-color .2s,color .2s}
+.rb-public .site-header .pill-link:hover{background:var(--muted)}
+.rb-public .site-header .pill-link svg{display:block;flex-shrink:0}
+.rb-public .site-header .pill-link[aria-current]{color:var(--primary);background:color-mix(in srgb,var(--primary) 10%,transparent)}
+.rb-public .site-header .pill-link:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+.rb-public .site-header .button.small{display:inline-flex;align-items:center;justify-content:center;gap:15px;border:0;border-radius:28px;background:#b83e30;color:#fff!important;padding:12px 18px;font-size:12px;font-weight:600;line-height:1.4;white-space:nowrap;cursor:pointer;box-shadow:0 3px 1px #77302c12;transition:transform .2s,background .2s;text-decoration:none}
+.rb-public .site-header .button.small:hover{background:#973329;transform:translateY(-2px)}
+.rb-public .site-header .button.small span{font-size:19px;line-height:1}
+.rb-public .site-header .button.small:focus-visible{outline:3px solid #b83e30;outline-offset:4px}
+.rb-landing .rb-hero{padding-top:134px}
+.rb-landing .rb-public-section{scroll-margin-top:110px}
+@media(max-width:850px){
+  .rb-public .site-header{gap:12px;width:calc(100% - 48px)}
+  .rb-public .site-header .brand{font-size:16px;padding:8px 12px}
+  .rb-public .site-header>.button{display:none}
+}
+@media(max-width:600px){
+  .rb-public .site-header{top:22px;flex-wrap:wrap;justify-content:center;gap:10px;width:calc(100% - 32px)}
+  .rb-public .site-header .brand{margin:0 auto;padding:5px 12px;font-size:16px}
+  .rb-public .site-header #navigation-root,.rb-public .site-header .rb-nav-root{width:100%;margin:0;display:flex;justify-content:center}
+  .rb-public .site-header .pill-nav{gap:0;max-width:100%}
+  .rb-public .site-header .pill-link{padding:0 10px}
+  .rb-landing .rb-hero{padding-top:185px}
+  .rb-landing .rb-public-section{scroll-margin-top:165px}
+  html{scroll-padding-top:165px}
+}
+@media(max-width:360px){
+  .rb-public .site-header{width:calc(100% - 16px)}
+  .rb-public .site-header .pill-nav{height:50px;padding:4px}
+  .rb-public .site-header .pill-link{height:40px;min-width:38px;padding:0 8px}
+}
