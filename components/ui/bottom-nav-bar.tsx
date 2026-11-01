@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
-import { Home, BookOpen, PencilLine, CircleHelp, User, type LucideIcon } from 'lucide-react';
+import { Home, BookOpen, PencilLine, CircleHelp, User, Sun, Moon, type LucideIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export type NavItem = { label: string; icon: LucideIcon; href: string };
@@ -24,7 +24,51 @@ export type BottomNavBarProps = {
 // The supplied pill interaction is used at the top; bottom placement remains optional.
 export function BottomNavBar({ className, defaultIndex = 0, stickyBottom = false }: BottomNavBarProps) {
   const [activeIndex, setActiveIndex] = useState(Math.max(0, Math.min(defaultIndex, navItems.length - 1)));
+  const [isDark, setIsDark] = useState(false);
   const reduceMotion = useReducedMotion();
+
+  useEffect(() => {
+    const media = window.matchMedia('(prefers-color-scheme: dark)');
+    const applyTheme = () => {
+      let settings: { theme?: string; reduced?: boolean } = {};
+      try {
+        settings = JSON.parse(localStorage.getItem('redbookprep-settings') || '{}');
+      } catch {}
+      const nextDark =
+        settings.theme === 'dark' || (settings.theme !== 'light' && media.matches);
+      document.documentElement.dataset.theme = nextDark ? 'dark' : 'light';
+      document.documentElement.classList.toggle('dark', nextDark);
+      document.documentElement.style.colorScheme = nextDark ? 'dark' : 'light';
+      document.documentElement.dataset.motion = settings.reduced ? 'reduced' : 'normal';
+      setIsDark(nextDark);
+    };
+    applyTheme();
+    media.addEventListener('change', applyTheme);
+    window.addEventListener('storage', applyTheme);
+    window.addEventListener('redbookprep-theme-change', applyTheme);
+    return () => {
+      media.removeEventListener('change', applyTheme);
+      window.removeEventListener('storage', applyTheme);
+      window.removeEventListener('redbookprep-theme-change', applyTheme);
+    };
+  }, []);
+
+  const toggleTheme = () => {
+    const nextDark = !isDark;
+    setIsDark(nextDark);
+    const nextTheme = nextDark ? 'dark' : 'light';
+    document.documentElement.dataset.theme = nextTheme;
+    document.documentElement.classList.toggle('dark', nextDark);
+    document.documentElement.style.colorScheme = nextTheme;
+    try {
+      const current = JSON.parse(localStorage.getItem('redbookprep-settings') || '{}');
+      localStorage.setItem(
+        'redbookprep-settings',
+        JSON.stringify({ ...current, theme: nextTheme })
+      );
+      window.dispatchEvent(new Event('redbookprep-theme-change'));
+    } catch {}
+  };
 
   useEffect(() => {
     const sections = navItems
@@ -148,6 +192,19 @@ export function BottomNavBar({ className, defaultIndex = 0, stickyBottom = false
           </motion.a>
         );
       })}
+      <button
+        type="button"
+        onClick={toggleTheme}
+        aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+        title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+        className="pill-link pill-theme-btn flex items-center justify-center rounded-full relative h-11 min-w-11 px-3 transition-colors duration-200 text-muted-foreground hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+      >
+        {isDark ? (
+          <Sun size={19} strokeWidth={1.8} aria-hidden="true" className="shrink-0" />
+        ) : (
+          <Moon size={19} strokeWidth={1.8} aria-hidden="true" className="shrink-0" />
+        )}
+      </button>
     </motion.nav>
   );
 }

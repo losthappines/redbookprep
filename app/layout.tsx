@@ -122,7 +122,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "try{var p=JSON.parse(localStorage.getItem('redbookprep-settings')||'{}');var d=p.theme==='dark'||(p.theme!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.dataset.theme=d?'dark':'light';document.documentElement.style.colorScheme=d?'dark':'light';document.documentElement.dataset.motion=p.reduced?'reduced':'normal'}catch(e){}",
+              "try{var p=JSON.parse(localStorage.getItem('redbookprep-settings')||'{}');var d=p.theme==='dark'||(p.theme!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.dataset.theme=d?'dark':'light';document.documentElement.classList.toggle('dark',d);document.documentElement.style.colorScheme=d?'dark':'light';document.documentElement.dataset.motion=p.reduced?'reduced':'normal'}catch(e){}",
           }}
         />
       </head>
