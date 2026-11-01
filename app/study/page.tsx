@@ -10,8 +10,8 @@ import {parseBbplus, type PracticeQuestion} from '@/components/study/bbplus';
 import {StudyDashboard} from '@/components/study/study-dashboard';
 import {getFirebaseAuth,onAuthStateChanged,pullCloudProgress,pushCloudProgress,signOut,GoogleAuthProvider,signInWithPopup,isFirebaseConfigured} from '@/lib/firebase';
 import {StudyBubbleBackground} from '@/components/study/study-bubble-background';
-import {FloatingDock} from '@/components/ui/floating-dock';
-import {AnimatePresence} from 'motion/react';
+import {LiquidNavbar, type NimbusFx} from '@/components/ui/liquid-glass-navbar';
+import {AnimatePresence, motion} from 'motion/react';
 import {Vocabulary} from '@/components/study/vocabulary';
 import {QuestionBank} from '@/components/study/question-bank';
 import {PracticeFolders} from '@/components/study/practice-folders';
@@ -44,17 +44,17 @@ import {
   Info
 } from 'lucide-react';
 
-const navItems = [
-  { key: 'Home', label: 'Dashboard', icon: LayoutDashboard },
-  { key: 'Ask redCoach', label: 'Ask redCoach', icon: Sparkles },
-  { key: 'Practice', label: 'Practice', icon: BookOpen },
-  { key: 'Question bank', label: 'Question bank', icon: FileText },
-  { key: 'Vocabulary', label: 'Vocabulary', icon: BookOpen },
-  { key: 'Mistakes', label: 'Mistakes', icon: AlertCircle },
-  { key: 'Planner', label: 'Planner', icon: Calendar },
-  { key: 'Progress', label: 'Progress', icon: TrendingUp },
-  { key: 'Settings', label: 'Settings', icon: SettingsIcon }
-] as const;
+const navItems: readonly { key: string; label: string; icon: typeof LayoutDashboard; fx: NimbusFx }[] = [
+  { key: 'Home', label: 'Dashboard', icon: LayoutDashboard, fx: 'glow' },
+  { key: 'Ask redCoach', label: 'Ask redCoach', icon: Sparkles, fx: 'plane' },
+  { key: 'Practice', label: 'Practice', icon: BookOpen, fx: 'pop' },
+  { key: 'Question bank', label: 'Question bank', icon: FileText, fx: 'spin' },
+  { key: 'Vocabulary', label: 'Vocabulary', icon: BookOpen, fx: 'wave' },
+  { key: 'Mistakes', label: 'Mistakes', icon: AlertCircle, fx: 'drop' },
+  { key: 'Planner', label: 'Planner', icon: Calendar, fx: 'pop' },
+  { key: 'Progress', label: 'Progress', icon: TrendingUp, fx: 'glow' },
+  { key: 'Settings', label: 'Settings', icon: SettingsIcon, fx: 'spin' }
+];
 
 const domains = [
   'Information and Ideas',
@@ -200,6 +200,7 @@ export default function Page() {
   const [sessionNote, setSessionNote] = useState('');
   const [collapsed, setCollapsed] = useState(false);
   const [theme, setTheme] = useState('light');
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [readingSize, setReadingSize] = useState('standard');
   const [reduced, setReduced] = useState(false);
   const [prefsReady, setPrefsReady] = useState(false);
@@ -263,8 +264,9 @@ export default function Page() {
     try{localStorage.setItem('redbookprep-settings', JSON.stringify({ collapsed, theme, readingSize, reduced,solidGlass,highContrast,accent,focusPractice,readingSplit }));void pushCloudProgress();}catch{setStorageError('Your settings could not be saved.');}
     const mq = window.matchMedia('(prefers-color-scheme: dark)');
     const apply = () => {
-      document.documentElement.dataset.theme =
-        theme === 'system' ? (mq.matches ? 'dark' : 'light') : theme;
+      const nextTheme = theme === 'system' ? (mq.matches ? 'dark' : 'light') : theme;
+      document.documentElement.dataset.theme = nextTheme;
+      setIsDarkTheme(nextTheme === 'dark');
       document.documentElement.dataset.reading = readingSize;
       document.documentElement.dataset.motion = reduced ? 'reduced' : 'normal';
     };
@@ -572,7 +574,7 @@ export default function Page() {
         <div className="rb-toolbar-actions"><button className="rb-icon-button" aria-label="Switch appearance" title="Switch light / dark" onClick={()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark')}><Sun size={18}/></button>{view==='Settings'?<span className="rb-saved"><span className="status-dot"/>{user?.isCloud||user?.uid?'Synced to Google Cloud':'Saved on this device'}</span>:<button className="primary" onClick={()=>{setSearch('');setSection('All sections');switchView('Practice')}}><BookOpen size={17}/> {view==='Practice'?'Browse all skills':'Start practice'}</button>}</div>
       </header>
       {mobileSidebarOpen&&<button className="rb-mobile-scrim" aria-label="Close navigation" onClick={()=>setMobileSidebarOpen(false)}/>}
-      <AnimatePresence>{portraitDock && !(opened && view === 'Practice') && (<div className="rb-floating-dock-wrapper"><FloatingDock items={navItems.map(({ key, label, icon: Icon }) => ({ title: label, icon: <Icon className="h-full w-full" strokeWidth={1.9} />, active: view === key, badge: key === 'Mistakes' && reviewQueue.length > 0 ? reviewQueue.length : undefined, onClick: () => switchView(key) }))} /></div>)}</AnimatePresence>
+      <AnimatePresence>{portraitDock && !(opened && view === 'Practice') && (<motion.div className="rb-floating-dock-wrapper" initial={{ y: 56, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 56, opacity: 0 }} transition={{ type: 'spring', stiffness: 320, damping: 28 }}><LiquidNavbar compact tone={isDarkTheme ? 'dark' : 'light'} reducedMotion={reduced} ariaLabel="Portrait floating dock navigation" active={Math.max(0, navItems.findIndex((n) => n.key === view))} onChange={(idx) => { const target = navItems[idx]; if (target) switchView(target.key); }} items={navItems.map(({ key, label, icon: Icon, fx }) => ({ label, fx, icon: <Icon width={18} height={18} strokeWidth={1.85} />, badge: key === 'Mistakes' && reviewQueue.length > 0 ? reviewQueue.length : undefined }))} /></motion.div>)}</AnimatePresence>
       <aside className="sidebar" inert={portraitDock||smallViewport?!mobileSidebarOpen:collapsed} role={(portraitDock||smallViewport)&&mobileSidebarOpen?"dialog":undefined} aria-modal={(portraitDock||smallViewport)&&mobileSidebarOpen?true:undefined} aria-label="Study navigation">
         <div className="rb-side-brand"><a className="brand" href="/" aria-label="RedBookPrep home"><img src="/icon-192.png" alt="" width={39} height={39} className="brand-mark brand-mark-img"/><div><b>RedBookPrep</b><small>A little practice.<br/>More possibility.</small></div></a><button ref={closeSidebarRef} className="sidebar-toggle rb-icon-button" aria-label="Close sidebar" onClick={toggleSidebar}><PanelLeft size={19}/></button></div>
         <nav aria-label="Main navigation">{navItems.map(({key,label,icon:Icon})=><button key={key} aria-current={view===key?'page':undefined} className={view===key?'primary':''} onClick={()=>switchView(key)}><Icon size={20} strokeWidth={1.8}/><span className="nav-label">{label}</span>{key==='Mistakes'&&reviewQueue.length>0&&<span className="rb-count">{reviewQueue.length}</span>}</button>)}</nav>
