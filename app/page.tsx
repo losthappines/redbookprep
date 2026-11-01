@@ -2,10 +2,9 @@
 import {useState} from 'react';
 import Link from 'next/link';
 import {BottomNavBar} from '@/components/ui/bottom-nav-bar';
-import {GlassBackground} from '@/components/ui/glass-background';
 import {BookOpen,ArrowRight,Play,Check,Clock,CalendarDays,NotebookPen,TrendingUp,ChevronDown,PanelLeft,Flag} from 'lucide-react';
 const answers=['Nevertheless','For example','Similarly','Consequently'];
-export default function LandingPage(){const [selected,setSelected]=useState<number|null>(null);const [checked,setChecked]=useState(false);return <div className="rb-public rb-landing"><GlassBackground />
+export default function LandingPage(){const [selected,setSelected]=useState<number|null>(null);const [checked,setChecked]=useState(false);return <div className="rb-public rb-landing">
 <a className="rb-skip-link" href="#main">Skip to content</a>
 <header className="site-header"><Link className="brand rb-public-brand" href="/"><img src="/icon-192.png" alt="" width={30} height={30} className="rb-brand-logo"/><b>RedBookPrep</b><span className="dot" aria-hidden="true">®</span></Link><div id="navigation-root" className="rb-nav-root"><BottomNavBar /></div><Link className="button small rb-header-cta" href="/study">Start practising <span aria-hidden="true">↗</span></Link></header>
 <main id="main" className="rb-public-body"><section className="rb-hero"><div className="rb-hero-copy"><span className="rb-eyebrow">REDBOOKPREP TEST PREPARATION · DIGITAL SAT</span><h1>Make your SAT<br/>study time count.</h1><p>RedBookPrep is a calm digital SAT test preparation space to practise 410+ questions, understand your mistakes, and plan your next step. Built around the way you learn.</p><div className="rb-public-actions"><Link className="rb-public-button primary" href="/study"><Play size={17}/>Try sample practice</Link><a className="rb-public-button" href="#method">See how it works<ArrowRight size={17}/></a></div><small><Check size={14}/>No account needed. Sync across devices with Google Sign-In.</small></div>
