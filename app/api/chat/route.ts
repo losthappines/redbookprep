@@ -328,6 +328,7 @@ async function callGemma(
   requestedLabel: string,
   history: ChatMessage[],
   message: string,
+  effort: string,
   deadline: number
 ): Promise<{ text: string; model: string } | null> {
   const displayLabel = requestedLabel.includes("Gemma") ? requestedLabel : "Gemma 4";
@@ -346,7 +347,7 @@ async function callGemma(
 
     for (const m of modelCandidates) {
       const remaining = deadline - Date.now();
-      if (remaining < 1500) break;
+      if (remaining < 1200) break;
       try {
         const res = await fetch(endpoint, {
           method: "POST",
@@ -362,13 +363,13 @@ async function callGemma(
             temperature: 0.5,
             max_tokens: 1000,
           }),
-          signal: AbortSignal.timeout(Math.min(6000, remaining)),
+          signal: AbortSignal.timeout(Math.min(5000, remaining)),
         });
         if (res.ok) {
           const json = await res.json();
           const text = json.choices?.[0]?.message?.content;
           if (text) return { text, model: displayLabel };
-        } else if (res.status === 401 || res.status === 403) {
+        } else if (res.status === 400 || res.status === 401 || res.status === 403) {
           break;
         }
       } catch {}
@@ -376,7 +377,7 @@ async function callGemma(
     return null;
   }
 
-  // 2. Google AI Studio / Generative Language API key (AIza...) — Gemma 4 primary
+  // 2. Google AI Studio / Generative Language API key (AIza...) — Gemma 4 (gemma-4-26b-a4b-it) primary
   const gemmaCandidates = ["gemma-4-26b-a4b-it", "gemma-4-31b-it", "gemma-3-27b-it"];
 
   const contextStr = history.length
@@ -394,20 +395,27 @@ async function callGemma(
 
   for (const m of gemmaCandidates) {
     const remaining = deadline - Date.now();
-    if (remaining < 1500) break;
+    if (remaining < 1200) break;
     try {
       const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${apiKey}`;
+      const generationConfig: Record<string, any> = {
+        temperature: 0.5,
+        maxOutputTokens: m.startsWith("gemma-4-") ? 4096 : 2048,
+      };
+      if (m.startsWith("gemma-4-")) {
+        generationConfig.thinkingConfig = {
+          thinkingLevel: effort === "Max Effort" ? "high" : "minimal",
+        };
+      }
+
       const res = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           contents,
-          generationConfig: {
-            temperature: 0.5,
-            maxOutputTokens: 2048,
-          },
+          generationConfig,
         }),
-        signal: AbortSignal.timeout(Math.min(9500, remaining)),
+        signal: AbortSignal.timeout(Math.min(6500, remaining)),
       });
 
       if (res.ok) {
@@ -487,15 +495,17 @@ export async function POST(req: NextRequest) {
     }
     // 3. Gemma Request
     else if (model.includes("Gemma")) {
-      if (gemmaKey) {
-        result = await callGemma(gemmaKey, model, history, message, deadline);
-        if (!result) {
-          fallbackNotice =
-            "Note: Gemma endpoint was unavailable with the current key. Answering with backup coach:\n\n";
-        }
-      } else {
-        fallbackNotice =
-          "Note: Add GEMMA_API_KEY in Vercel Environment Variables (or click 'API Keys' in the model menu) to activate Gemma. Answering with backup coach:\n\n";
+      const gemmaBudget = Math.min(deadline - 4500, Date.now() + 9500);
+      if (explicitGemmaKey) {
+        result = await callGemma(explicitGemmaKey, model, history, message, effort, gemmaBudget);
+      }
+      if (!result && geminiKey && geminiKey !== explicitGemmaKey) {
+        result = await callGemma(geminiKey, model, history, message, effort, gemmaBudget);
+      }
+      if (!result) {
+        fallbackNotice = gemmaKey
+          ? "Note: Gemma 4 endpoint was unavailable with the current key. Answering with backup coach:\n\n"
+          : "Note: Add GEMMA_API_KEY in Vercel Environment Variables (or click 'API Keys' in the model menu) to activate Gemma 4. Answering with backup coach:\n\n";
       }
     }
 
@@ -510,7 +520,7 @@ export async function POST(req: NextRequest) {
       result = await callMistral(mistralKey, "Mistral Large", history, message, deadline);
     }
     if (!result && explicitGemmaKey && !model.includes("Gemma")) {
-      result = await callGemma(explicitGemmaKey, "Gemma 4", history, message, deadline);
+      result = await callGemma(explicitGemmaKey, "Gemma 4", history, message, effort, deadline);
     }
 
     if (!result) {
