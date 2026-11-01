@@ -29,11 +29,11 @@ export default function Privacy() {
       </p>
       <h2>Third-party services and trackers</h2>
       <p>
-        RedBookPrep is hosted on Vercel and uses Google Firebase for optional authentication and cloud progress synchronization. We do not sell student data or display third-party behavioral advertising.
+        RedBookPrep is hosted on Vercel, uses Google Firebase for optional Google authentication and cloud progress synchronization, and embeds the official Desmos® Graphing Calculator API (loaded from desmos.com during Math practice, which collects no student personally identifiable information). Optional AI coaching requests in Ask redCoach are processed statelessly through our configured AI model providers without storing personal conversation history on our servers. We do not sell student data or display third-party behavioral advertising.
       </p>
       <h2>Your controls, data deletion, and trademark notice</h2>
       <p>
-        You can export a complete JSON backup of your attempts, notes, and review dates at any time from Settings. You can clear local browser storage using your browser’s site-data controls, or request complete deletion of your cloud-synced account data by emailing <a href="mailto:support@redbookprep.site">support@redbookprep.site</a>. SAT® is a registered trademark of the College Board, which is not affiliated with and does not endorse RedBookPrep.
+        You can export a complete JSON backup of your attempts, notes, and review dates at any time from Settings. You can clear local browser storage using your browser’s site-data controls, or request complete deletion of your cloud-synced account data by emailing <a href="mailto:support@redbookprep.site">support@redbookprep.site</a>. SAT® is a registered trademark of the College Board, and Desmos® is a registered trademark of Desmos Studio PBC; neither organization is affiliated with or endorses RedBookPrep.
       </p>
       <p>
         <Link className="public-button" href="/study">Return to Study Workspace →</Link>

@@ -25,7 +25,7 @@ export default function About() {
       </p>
       <h2>Learning comes first &amp; Trademark Disclaimer</h2>
       <p>
-        Grading uses verified answer keys and detailed explanations. Accuracy and pacing reflect your practice attempts; they are not official SAT® score predictions. SAT® is a registered trademark of the College Board, which is not affiliated with, and does not endorse, RedBookPrep or this website.
+        Grading uses verified answer keys and detailed explanations. Accuracy and pacing reflect your practice attempts; they are not official SAT® score predictions. SAT® is a registered trademark of the College Board, and Desmos® is a registered trademark of Desmos Studio PBC; neither organization is affiliated with or endorses RedBookPrep or this website.
       </p>
       <p>
         <Link className="public-button" href="/study">Explore the Study Workspace →</Link>

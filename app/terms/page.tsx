@@ -33,7 +33,7 @@ export default function TermsPage() {
 
       <h2>4. No Official Affiliation &amp; Score Disclaimer</h2>
       <p>
-        RedBookPrep is an independent educational project. SAT® is a registered trademark of the College Board, which is not affiliated with, and does not endorse, RedBookPrep. Practice accuracy, timing metrics, and study plans on RedBookPrep are educational estimates and do not guarantee any specific score on an official exam.
+        RedBookPrep is an independent educational project. SAT® is a registered trademark of the College Board, and Desmos® is a registered trademark of Desmos Studio PBC; neither organization is affiliated with or endorses RedBookPrep. Practice accuracy, timing metrics, and study plans on RedBookPrep are educational estimates and do not guarantee any specific score on an official exam.
       </p>
 
       <h2>5. Disclaimer of Warranties (&ldquo;As-Is&rdquo; Service)</h2>
