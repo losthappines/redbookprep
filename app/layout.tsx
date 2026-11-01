@@ -22,6 +22,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.redbookprep.site/',
   },
+  manifest: '/manifest.json',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', type: 'image/png', sizes: '180x180' }],
+  },
   openGraph: {
     type: 'website',
     url: 'https://www.redbookprep.site/',
@@ -55,6 +64,7 @@ const jsonLd = {
       '@id': 'https://www.redbookprep.site/#organization',
       name: 'RedBookPrep',
       url: 'https://www.redbookprep.site',
+      logo: 'https://www.redbookprep.site/icon-512.png',
       description:
         'Independent Digital SAT test preparation platform providing interactive practice modules, mistake analysis, and personalized study planning.',
       sameAs: ['https://www.redbookprep.site'],

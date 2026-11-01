@@ -21,22 +21,12 @@ export default function Image() {
           fontFamily: 'sans-serif',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', fontSize: '32px', fontWeight: 700 }}>
-          <div
-            style={{
-              width: '48px',
-              height: '48px',
-              borderRadius: '12px',
-              background: '#e11d48',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#ffffff',
-              fontSize: '26px',
-            }}
-          >
-            R
-          </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '18px', fontSize: '32px', fontWeight: 700 }}>
+          <svg width="54" height="54" viewBox="0 0 192 192" fill="none">
+            <rect x="6" y="6" width="180" height="180" rx="56" fill="#FA5216" />
+            <rect x="45" y="34" width="102" height="124" rx="18" fill="#FFFFFF" />
+            <path d="M90 45H122V90L106 80L90 90V45Z" fill="#FA5216" />
+          </svg>
           <span>RedBookPrep</span>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>

@@ -3,7 +3,7 @@ import {useState} from 'react';
 import Link from 'next/link';
 import {PublicThemeToggle} from './public-theme-toggle';
 import {useRouter} from 'next/navigation';
-import {BookOpen,UserRound,ShieldCheck,Check,ChevronLeft,Cloud} from 'lucide-react';
+import {UserRound,ShieldCheck,Check,ChevronLeft,Cloud} from 'lucide-react';
 import {
   isFirebaseConfigured,
   getFirebaseAuth,
@@ -70,7 +70,7 @@ export default function AuthPage({mode}:{mode:'login'|'signup'}){
         <div className="rb-gradient-grain"/>
       </div>
       <header className="rb-public-header">
-        <Link className="rb-public-brand" href="/"><span><BookOpen size={22}/></span><b>RedBookPrep</b></Link>
+        <Link className="rb-public-brand" href="/"><img src="/icon-192.png" alt="" width={39} height={39} className="rb-brand-logo"/><b>RedBookPrep</b></Link>
         <div className="rb-public-actions">
           <PublicThemeToggle/>
           <Link className="rb-public-button" href="/"><ChevronLeft size={16}/>Back to website</Link>
