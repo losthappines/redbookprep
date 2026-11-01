@@ -23,6 +23,7 @@ export default function Demo() {
         <PromptInput
           onSubmit={handleSendMessage}
           placeholder="Ask anything..."
+          simulateVoiceFallback
         />
       </div>
     </div>

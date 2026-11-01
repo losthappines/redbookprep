@@ -565,7 +565,7 @@ export default function Page() {
         (opened && view === 'Practice' ? 'player-view' : 'dashboard-view')
       }
     >
-      {!(opened && view === 'Practice') && <StudyBubbleBackground reduced={reduced} highContrast={highContrast}/>}
+      {!(opened && view === 'Practice') && view !== 'Ask redCoach' && <StudyBubbleBackground reduced={reduced} highContrast={highContrast}/>}
       <header className="topbar">
         <span aria-hidden="true" style={{position:'absolute',inset:'0 0 -48px',zIndex:0,pointerEvents:'none',background:'transparent',backdropFilter:'blur(24px)',WebkitBackdropFilter:'blur(24px)',maskImage:'linear-gradient(to bottom,black 0%,black 15%,#000c 40%,#0006 65%,#0002 85%,transparent 100%)',WebkitMaskImage:'linear-gradient(to bottom,black 0%,black 15%,#000c 40%,#0006 65%,#0002 85%,transparent 100%)'}} />
         <div className="rb-toolbar-start"><button ref={openSidebarRef} className="rb-icon-button rb-sidebar-open" aria-label="Open sidebar" aria-expanded={mobileSidebarOpen||!collapsed} onClick={toggleSidebar}><PanelLeft size={19}/></button><h2>{view==='Home'?'Dashboard':view==='Practice'?'Your Library':view}</h2></div>
