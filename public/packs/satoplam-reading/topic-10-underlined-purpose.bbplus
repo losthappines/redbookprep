@@ -1,0 +1,1359 @@
+{
+  "format": "bbplus",
+  "version": 1,
+  "type": "practice",
+  "title": "SAToplam 2.0 — Underlined Purpose",
+  "description": "Official real exam SAT reading practice questions (March 2023 – August 2025) compiled by @satashkent. Domain: Craft and Structure.",
+  "modules": [
+    {
+      "title": "Underlined Purpose — Set 1",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t10-q001",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q1",
+          "passageTitle": "Underlined Purpose — Q1",
+          "passage": "5 sec. (*Exam level)\nThe following text is adapted from Matthew\nArnold's 1869 nonfiction book \"Culture and\nAnarchy\".\n<u>The Times [a British newspaper], replying to\nsome foreign strictures on the dress, looks, and\nbehavior of the English abroad, urges that the\nEnglish ideal is that everyone should be free to\ndo and to look just as he likes. But culture</u>\nindefatigably tries, not to make what each raw\nperson may like the rule by which he fashions\nhimself; but to draw ever nearer to a sense of\nwhat is indeed beautiful, graceful, and\nbecoming, and to get the raw person to like that.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It suggests that opinions regarding culture\nchange over time.",
+            "It asserts that the English are not as well\nknown for their sense of taste as they\nought to be.",
+            "It details an example that supports the\nauthor's primary claim.",
+            "It presents an opinion with which the\nauthor disagrees."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q1). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q002",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q2",
+          "passageTitle": "Underlined Purpose — Q2",
+          "passage": "The following text is Rainer Maria Rilke's 1897\npoem \"Evening\" (translated by Jessie Lamont in\n1918).\nThe bleak fields are asleep,\n<u>My heart alone wakes;</u>\nThe evening in the harbour\nDown his red sails takes.\nNight, guardian of dreams,\nNow wanders through the land;\nThe moon, a lily white,\nBlossoms within her hand.",
+          "prompt": "Which choice best states the function of the\nundeclined portion in the text as a whole?",
+          "options": [
+            "It conveys the speaker's sense that he is\nalone while experiencing the evening.",
+            "It shows that the speaker would rather\nlook at the fields than at the water.",
+            "It indicates the speaker's disappointment\nthat other people dislike rural settings.",
+            "It explains why the speaker has woken up\nfrom sleeping."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q2). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q003",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q3",
+          "passageTitle": "Underlined Purpose — Q3",
+          "passage": "The following text is from Mark Twain's 1881\nnovel, The Prince and the Pauper.\n\"In the ancient city of London, on a certain\nautumn day in the second quarter of the\nsixteenth century, a boy was born to a poor\nfamily of the name of Canty, who did not want\n<u>him. On the same day another English child was\nborn to a rich family of the name of Tudor, who</u>\ndid want him. All England wanted him too.\nEngland had so longed for him, and hoped for\nhim, and prayed God for him, that, now that he\nwas really come, the people went nearly mad for\njoy. Mere acquaintances hugged and kissed each\nother and cried.\"",
+          "prompt": "Which choice best states the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It establishes a contrast with the previous\ncharacter description.",
+            "It introduces a character description\ncontinued in the following sentences.",
+            "It demonstrates the setting that is\nexplored in the rest of the paragraph.",
+            "It expands upon the characterization in\nthe former sentence."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q3). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q004",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q4",
+          "passageTitle": "Underlined Purpose — Q4",
+          "passage": "Known for the albums Quiet Nights and Miles\nAhead, jazz trumpeter Miles Davies collaborated\nseveral times with pianist Gil Evans. Their 1958\nadaptation of George Greshwin's opera Porgy\nand Bliss bears little resemblance to the 1935\noriginal. Davies and Evans felt no desire to\nplease listeners expecting an exact duplication of\nthe opera. They omitted parts, such as the aria\n\"Igot plenty of Nuthin',\"and sometimes made\nonly brief gestures toward Greshwin'smelodies.\nBut Davies and Evans' willingness to recompose\nGreshwin's work led to one of the most enduring\nalbums in Davis's catalog.",
+          "prompt": "Which choice best describes the function of the\nunderlined part?",
+          "options": [
+            "It shows how two artists benefited from\nignoring certain conventions.",
+            "It proposes a reason why one work of art is\nwidely thought to be more successful than\nanother.",
+            "It underlines an assertion made later in\nthe text.",
+            "It presents examples to support a claim\nmade earlier in the text."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q4). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q005",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q5",
+          "passageTitle": "Underlined Purpose — Q5",
+          "passage": "In Hoocąk, an Indigenous language from the\nMid-Atlantic region of what is now the United\nStates, okayeke means \"bad,\" whereas ati\nokayeye'tesel means \"bad houses.\" This\nphenomenon, in which an element of a root\nword is repeated, sometimes with modification,\nwithin another word that is related to the root\nword, is called reduplication.In this case, the\nelement \"ye\" in okayakegets repeated in ati\nokayeye'tesel. There are many examples of this\ntype of reduplication in Hoocąk.",
+          "prompt": "Which choice best describes the function of the\nunderlined part?",
+          "options": [
+            "It elaborates on the description of\nreduplication by exampling how it works\nin the specific Hoocąk word mentioned\nearlier.",
+            "It provides English translation of the\nHoocąk word mentioned earlier.",
+            "It acknowledges that Hoocąk has some\nimportant exceptions to the general\npattern described earlier.",
+            "It emphasizes how frequently reduplication\noccurs in Hoocąk."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q5). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q006",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q6",
+          "passageTitle": "Underlined Purpose — Q6",
+          "passage": "Mexican textile artist Victoria Villasana weaves\nstories of triumph, using her unique method of\napplying colorful yarn to photographs of people.\nIn some works, Villasana focuses on celebrating\ncultural icons who are people of color, as she\ndoes in her depiction of activist Ryu Gwansun.\n<u>However, in other works, Villasana honors\nordinary people, as she does in her captivating\nportrayal of young girl sitting on a sidewalk.</u>\nVillasana sees both of these approaches as ways\nof depicting the power and interconnectedness of\nall people",
+          "prompt": "Which choice best states the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "To emphasize that Villasana prefers to\nfocus on famous figures in her work.",
+            "To offer an overview of Villasana's artistic\nstyle.",
+            "To demonstrate that the Villasana\ncollaborates frequently with other artists.",
+            "To provide an example of an everyday\nindividual whom Villasana has portrayed\nin her work."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q6). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q007",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q7",
+          "passageTitle": "Underlined Purpose — Q7",
+          "passage": "The following text is from Lady Gregory's 1904\nplay Spreading the News. Mrs. Tarpey, Bartley,\nand Mrs. Fallon have been buying and selling\ngoods at the local fair.\nMRS. TARPEY: Good morrow, Bartley Fallon;\ngood morrow, Mrs. Fallon. Well, Bartley, you'll\nfind no cause for complaining to-day; they are\nall saying it was a good fair.\nBARTLEY: (Raising his voice.) It was not a\ngood fair. Mrs. Tarpey. It was a scattered sort\nof a fair. If we didn't expect more, we got less.\nThat's the way with me always; whatever I have\nto sell goes down and whatever I have to buy\ngoes up. If there's ever any misfortune coming\nto this world, it's on myself it pitches,like a\nflock of crows on seed potatoes.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It presents a vivid image to emphasize a\nclaim that Bartley makes.",
+            "It describes an event that Bartley observed\nat the fair.",
+            "It expresses doubt about the truth of a\nclaim that Bartley made.",
+            "It indicates the degree to which Mrs.\nTarpey doubts a certain event will occur."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q7). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q008",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q8",
+          "passageTitle": "Underlined Purpose — Q8",
+          "passage": "When people think of dinosaurs with feathers,\nthey typically think of winged dinosaurs, such as\nthe four-winged Microraptor. However, many\ndinosaurs that didn't have wings also had\nfeathers on their bodies.For instance, research\nindicates that the wingless, speedy\nOrnithomimus likely had feathers.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It points out several weaknesses in the\ntheory presented in the previous sentence.",
+            "It provides a specific example of the\ndinosaurs described in the previous\nsentence.",
+            "It identifies the researchers who made the\ndiscovery mentioned in the previous\nsentence.",
+            "It explains the scientific debate about the\nfinding discussed in the previous sentence."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q8). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q009",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q9",
+          "passageTitle": "Underlined Purpose — Q9",
+          "passage": "The novel \"My Heart Is a Chainsaw\" confirmed\nthat Stephen Graham Jones is one of the most\ntalented writers of horror fiction today.By\nfeaturing main characters who are Blackfeet, like\nJones himself, the novel also helped to ensure\nthat Indigenous people have a place within the\nhorror genre. But Jones is hardly the only\nIndigenous voice in horror: Métis author Cherie\nDimaline has also written in the genre. Her\nacclaimed 2019 novel Empire of Wild is set in a\nMétis community in southern Canada",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence?",
+          "options": [
+            "It highlights the significance of the\nportrayal of Indigenous people in My\nHeart Is a Chainsaw.",
+            "It challenges the widely held view that\nStephen Graham Jones based My Heart Is\na Chainsaw on events in his own life.",
+            "It asks why so many readers who don't\nenjoy the horror genre have purchased My\nHeart Is a Chainsaw.",
+            "It predicts that non-Indigenous authors\nwill include more Indigenous characters in\ntheir work."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q9). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q010",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q10",
+          "passageTitle": "Underlined Purpose — Q10",
+          "passage": "Dubautia waialealae is a species in a family of\n<u>plants known collectively as the silversword\nalliance, all of which grow only on the Hawaiian</u>\nIslands. Members of this alliance exhibit an\nextraordinary range of phenotypes, with some\nspecies maturing into vines and others into\nshrubs and trees. All species in the alliance\ndescended from a single ancestral tarweed plant\nthat arrived on the islands around 5 million\nyears ago. The tarweed's descendants diversified\ninto distinct species as they adapted to live in\nthe wide variety of habitats found on the\nHawaiian Islands.",
+          "prompt": "Which choice best describes the function of the\nunderlined phrase in the text as a whole?",
+          "options": [
+            "It lists species from a family of plants\nfound only on the Hawaiian Islands.",
+            "The sentence explains the unique nature of\nthe researchers' hypothesis.",
+            "The sentence summarizes the debate\npresented in the text.",
+            "The sentence identifies the location of a\nbone in felines."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q10). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q011",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q11",
+          "passageTitle": "Underlined Purpose — Q11",
+          "passage": "The Card Game is a painting by Jacob\nLawrence, dated 1953. It's part of the full\ncollection of the SCAD Museum of Art in\nSavannah, Georgia. A digital image of it can\nalso be found in an online collection. In a paper,\na student claims thatpeople usually spend more\ntime viewing a work of art in a museum than\nthey do online.",
+          "prompt": "Which finding, if true, would most directly\nsupport the underlined claim?",
+          "options": [
+            "Most people spend about three minutes\nviewing The Card Game at the museum\nand only about one minute viewing it\nonline.",
+            "The Card Game isn't the only work of art\nby Jacob Lawrence that has been put\nonline.",
+            "Most people who go to museums in\nSavannah are visiting from other places.",
+            "More than one museum has works of art\nby Jacob Lawrence in its full collection."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q11). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q012",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q12",
+          "passageTitle": "Underlined Purpose — Q12",
+          "passage": "In Hoocak, an Indigenous language from the\nMidwest region of what is now the United\nStates, paras means \"flat,\" whereas paraparać\nmeans \"square.\" This phenomenon, in which an\nelement of a root word is repeated, sometimes\nwith modification, within another word that is\nrelated to the root word, is called reduplication.\nIn this case, the element \"para\" in paras gets\n<u>repeated in paraparać. There are many examples</u>\nof this type of reduplication in Hoocak.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It emphasizes how frequently reduplication\noccurs in Hoocak.",
+            "It acknowledges that Hoocak has some\nimportant exceptions to the general\npattern described earlier.",
+            "It elaborates on the discussion of\nreduplication by explaining how it works\nin the specific Hoocak words introduced\nearlier.",
+            "It provides English translations of the\nHoocak words mentioned earlier."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q12). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q013",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q13",
+          "passageTitle": "Underlined Purpose — Q13",
+          "passage": "In a study by Mika R. Moran, Daniel A.\nRodriguez, and colleagues, residents of Mexico\nCity, Mexico, and Buenos Aires, Argentina, were\nsurveyed about parks in their cities. Of the 562\nrespondents from Mexico City, 77.6% indicated\nthat they use the city's parks, and of the 683\nrespondents from Buenos Aires, 69.9% indicated\nusing city parks. Given that the percentage of\nMexico City respondents who reported living\nwithin a 10-minute walk of a parkwas much\nlower than that of reported by Buenos Aires\nrespondents, greater proximity alone can't\nexplain the difference in park use.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It marks a shift from a discussion of the\nresearchers' conclusion to a discussion of\ntheir methods.",
+            "It identifies the nature of a relationship\nthat is significant to the text's conclusion.",
+            "It provides context to help readers\nunderstand the scope of the researchers'\nsurvey.",
+            "It introduces a counterexample to the\nscenario described earlier in the text."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q13). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q014",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q14",
+          "passageTitle": "Underlined Purpose — Q14",
+          "passage": "The Paul Laurence Dunbar House in Dayton,\nOhio, is the house where Paul Laurence Dunbar\nlived for two years and wrote his later poetry\ncollections. Now the house is a museum\ndedicated to Dunbar'slife and writings, visitors\ntravel to this museum to feel more connected to\nan author they admire. To encourage that sense\nof connection, the museum's curators have set\nup exhibits with furnishings owned by Dunbar.\nSuch exhibits help visitors understand\nday-to-day life in the house where Dunbar felt\ninspired.",
+          "prompt": "Which choice best states the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It states the current purpose of a building\nmentioned in the previous sentence.",
+            "It summarizes the career of an author\nmentioned in the previous sentence.",
+            "It recommends the works of an author\nmentioned in the previous sentence.",
+            "It recounts the history of a place\nmentioned in the previous sentence."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q14). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q015",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q15",
+          "passageTitle": "Underlined Purpose — Q15",
+          "passage": "On painter William H. Johnson's return to the\nUnited States in 1938 after a decade in Europe,\nhis style underwent an abrupt transformation.\nTurning awayfrom landscapes painted in an\nexpressionist style–a style that often involves\nusing fluid, distorted shapes and thick, textured\nbrushstrokes to express the artist'ssubjective\nexperience of reality–Johnson began painting\nportraits of Black Americans in a bold new way.\nEvocative of African sculpture and American\nand Scandinavian folk art, these portraits\nfeature flat, deliberately oversimplified figures in\na vibrant but limited color palette.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It elaborates on the previous sentence's\nstatement about a transitional moment in\nJohnson's artistic career.",
+            "It provides information about Johnson's\ntravels in support of a claim about his\nartistic influences, which is advanced in\nthe following sentence.",
+            "It recounts a moment in Johnson's\npersonal life that enabled the success of his\nsubsequent career, which is summarized in\nthe following sentence.",
+            "It presents evidence that calls into question\nthe previous sentence's characterization of\nJohnson's artistic development."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q15). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q016",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q16",
+          "passageTitle": "Underlined Purpose — Q16",
+          "passage": "When people think of dinosaurs with feathers,\nthey typically think of winged dinosaurs, such as\nthe four-winged Microraptor.However, many\ndinosaurs that didn'thave wings also had\nfeathers on their bodies. For instance, research\nindicates that the wingless, speedy\nOrnithomimus likely had feathers.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It reveals that the dinosaurs mentioned\nearlier in the text used their feathers for\nan important purpose.",
+            "It gives an example of a dinosaur with the\ncharacteristics mentioned earlier in the\ntext.",
+            "It defines a term related to the type of\ndinosaur feathers mentioned earlier in the\ntext.",
+            "It indicates that the dinosaurs mentioned\nearlier in the text weren't the only ones\nthat had feathers."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q16). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q017",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q17",
+          "passageTitle": "Underlined Purpose — Q17",
+          "passage": "The following text is from Annie Dillard's 1987\nautobiographical novel An American Childhood.\nThe narrator is a young girl living in Pittsburgh.\nI walked. My mother had given me the freedom\nof the streets as soon as I could say our\ntelephone number. I walked and memorized the\nneighborhood. I made a mental map and located\nmyself upon it. At night in bed, I rehearsed the\nsmall world's scheme and set challenges:find\nthe store using backyards only; imagine a route\nfrom the school to my friend'shouse.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It describes the narrator trying to\nmemorize her telephone number.",
+            "It provides examples of what the narrator\nthinks about at night.",
+            "It gives directions to the narrator's\nfavorite local store.",
+            "It portrays the narrator's relationship with\nher mother."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q17). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q018",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q18",
+          "passageTitle": "Underlined Purpose — Q18",
+          "passage": "Researchers Narelle Haworth and Amy Schramm\nstudied bicycling behavior in Queensland,\nAustralia. Haworth and Schramm asked adult\nbike riders questions about their level of\nexperience, reasons for riding a bike, and route\npreferences. The researchers claim that\nexperienced riders who mainly bike to work tend\nto prefer routes that reduce their travel time.",
+          "prompt": "Which survey response from a bike rider in\nQueensland would best support the underlined\nclaim?",
+          "options": [
+            "\"I have a bike, but I don't ride it very\noften. When the weather is nice, I\nsometimes use my bike to go into town to\ndo some shopping.\"",
+            "\"I usually bike to work, but I'm taking the\nbus now because my bike has a broken\npart that needs to be fixed.\"",
+            "\"I just got a new bike, and I'm looking\nforward to going on rides with my friends\nsoon.\"",
+            "\"I bike to my job every day. There's a nice\nbike path that goes through a park, but I\nuse the bike lane on the main road because\nit's faster.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q18). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q019",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q19",
+          "passageTitle": "Underlined Purpose — Q19",
+          "passage": "Amsterdam has high pedestrian traffic, but\nsimply replicating a feature of Amsterdam\nassociated with walkability-e.g., its high number\nof relatively short blocks-may be insufficient to\ninduce increased walking in other cities. As\nurbanist Mariela Alfonzo argues, our\nunderstanding of individuals' decision-making\nabout whether to walk is insufficiently robust:\n<u>some studies emphasize the role of climate</u>\nconditions, others the role of recreational\namenities, and so on, but walking decisions are\nmade in complex contexts in which multiple\nconditions and needs inform individuals'choices.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It illustrates a scholarly disagreement\ndescribed earlier in the sentence.",
+            "It summarizes the findings of studies\nwhose methods are discussed earlier in the\nsentence.",
+            "It acknowledges a potential objection to\nthe argument presented earlier in the\nsentence.",
+            "It elaborates on a claim presented earlier\nin the sentence."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q19). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q020",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q20",
+          "passageTitle": "Underlined Purpose — Q20",
+          "passage": "The following text is from Anne Spencer's 1922\npoem \"Translation.\"\nWe trekked into a far country,\nMy friend and I.\nOur deeper content was never spoken,\nBut each knew all the other said.\nHe told me how calm his soul was laid\nBy the lack of anvil and strife.\n\"The wooing kestrel,\" I said, \"mutes his mating-note\nTo please the harmony of this sweet silence.\"",
+          "prompt": "Which choice best describes the function of the\nreference to the \"wooing kestrel\" (a type of\nbird) in the text as a whole?",
+          "options": [
+            "It emphasizes the speaker's belief that her\nfriend is not sharing his true feelings with\nher.",
+            "It suggests that nature has secrets that\nhumans are fundamentally incapable of\ndiscovering.",
+            "It illustrates the assertion that peace is a\nsubjective state rather than an objective\none.",
+            "It presents the natural world as aligning\nwith the experience of the speaker and her\nfriend."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q20). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q021",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q21",
+          "passageTitle": "Underlined Purpose — Q21",
+          "passage": "Why do ocelots purr but jaguars roar?\nResearchers hypothesize that this difference\nbetween the two feline species may be partly due\nto a U-shaped bone in their throats.This bone\nis called the hyoid. Ocelots, which are much\nsmaller than jaguars, have a rigid hyoid that\nrumbles when the cat's larynx vibrates, resulting\nin a purr. By contrast, jaguars have a somewhat\nflexible hyoid, and the bone is attached to the\nskull with a stretchy ligament that ocelots lack.\nThese traits allow jaguars and most other\nspecies of big cats to roar. The same traits may\nalso prevent most big cats from purring.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "The sentence explains the unique nature of\nthe researchers' hypothesis.",
+            "The sentence identifies the location of a\nbone in felines.",
+            "The sentence introduces a term that is\nused in the discussion that follows.",
+            "The sentence summarizes the debate\npresented in the text."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q21). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q022",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q22",
+          "passageTitle": "Underlined Purpose — Q22",
+          "passage": "Humans aren't the only ones who use tools.\nOther animals also find tools helpful.Octopuses\nuse two halves of a seashell to provide protection\nor a place to hide, and despite sometimes being\nthought of as simple, many birds make clever\nuse of tools as well. Striated herons have been\nobserved using breadcrumbs and other lures to\nattract fish to the water's surface, making it\neasier for the herons to catch them.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It explains that humans use tools for many\ndifferent tasks.",
+            "It argues that octopuses use tools more\noften than other animals do.",
+            "It provides one example of tool use in a\nnonhuman animal.",
+            "It emphasizes that octopuses are smarter\nthan birds."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q22). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q023",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q23",
+          "passageTitle": "Underlined Purpose — Q23",
+          "passage": "The food industry has long used thermal\ntechnologies to preserve food in large batches.\nRecent advancements in infrared heating were\nmade through research in Mexico on the\npreservation of bean flour. Infrared heating is\ngenerally considered to be an improvement over\nmore conventional thermal preservation\n<u>methods: whereas conventional methods\ntransfer energy from the surface of a food to its\ninterior, infrared heating uses high-intensity</u>\ninfrared light to generate heat within the food\nitself, thus reducing industrial cooking times.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It emphasizes the simplicity of infrared\nheating technologies.",
+            "It explains why conventional heating\nmethods are popular in commercial\napplications and proposes a shift away\nfrom these methods.",
+            "It suggests that there are possible flaws in\ninfrared heating technologies that have not\nyet been well researched.",
+            "It identifies an advantage that infrared\nheating has over conventional thermal\npreservation methods."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q23). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q024",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q24",
+          "passageTitle": "Underlined Purpose — Q24",
+          "passage": "Historians have argued that a crucial component\nof the Civil Rights Movement's success in the\n1960s was the Southern Christian Leadership\nConference's Citizen Education Program (CEP),\nwhich invited promising activists from across\nthe South to its one-week training sessions in\nDorchester, Georgia. Led by experienced\norganizers such as Dorothy Cotton and Septima\nClark, CEP attendees–more than 7.000 in all–\nparticipated in workshops on topics ranging\nfrom public speaking to legal doctrine before\nreturning home and using their newly acquired\nknowledge to spearhead local civil rights\ninitiatives.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It establishes that criticism of the CEP\nwas limited to a few individuals in the\nSouthern Christian Leadership Conference.",
+            "It underscores the extent of the CEP's\nimpact on the Civil Rights Movement of\nthe 1960s.",
+            "It illustrates the CEP organizers' efforts to\neducate participants on a wide variety of\ntopics.",
+            "It suggests that CEP attendees held a\ndiverse array of opinions about the\nSouthern Christian Leadership\nConference's political philosophy."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q24). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q025",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q25",
+          "passageTitle": "Underlined Purpose — Q25",
+          "passage": "Shedding light on the thermal biology of fungi,\nresearch by Radamés Cordero et al. indicates\nthat certain mushrooms (including Marasmius\ncapillaris and species from the genus Russula)\ncan achieve a hypothermic state through\nevaporative cooling. Effects of this\nthermoregulation were not limited to the fungi's\nfruiting bodies and root-like hyphae:\n<u>temperature reductions were observed in the air\nimmediately surrounding the mushrooms.</u>\nThough slight, the reductions inspired an\nair-cooling device; using approximately 400\ngrams of mushrooms, the team's prototype\nlowered the air temperature in a controlled\nenvironment by 10°C in forty minutes.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It presents a tangential finding about\nthermoregulation in certain fungal species\nthat the experiment described later in the\ntext was designed to explain.",
+            "It provides empirical evidence to bolster\nthe claim made earlier in the text that\ncertain fungal species maintain a\nhypothermic state.",
+            "It identifies an unexpected observation\nthat motivated the study of evaporative\ncooling in fungi that is discussed earlier in\nthe text.",
+            "It establishes a finding central to the text's\ndiscussion of a practical application\nresulting from the team's study of fungal\nthermal biology."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q25). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    },
+    {
+      "title": "Underlined Purpose — Set 2",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t10-q026",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q26",
+          "passageTitle": "Underlined Purpose — Q26",
+          "passage": "The following text is from Virginia Woolf's 1919\nnovel Night and Day. The text describes a\ngathering of young artists and intellectuals.\nOne person after another rose, and, as with an\nill-balanced axe,attempted to hew out his\nconception of art a little more clearly,and sat\ndown with the feeling that, for some reason\nwhich he could not grasp, his strokes had gone\naway. As they sat down they turned almost\ninvariably to the person sitting next them, and\nrectified and continued what they had just said\nin public.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "To reveal individuals' uncertainty about\nthe meaning of a particular artwork.",
+            "To emphasize the extent of individuals'\nstruggles to articulate thoughts on art",
+            "To highlight the physical effort involved in\nindividuals' construction of large-scale\nworks of art",
+            "To draw attention to individuals'\ndiscontent with the group's conversation\nabout art"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q26). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q027",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q27",
+          "passageTitle": "Underlined Purpose — Q27",
+          "passage": "In Egypt, use of solid fuel (e.g., coal, wood) as a\nshare of total household fuel use fell by more\nthan 90 percent between 2000 and 2015; such\nshifts are typically explained by appeal to the\nenergy ladder, a model holding that fuel choice\nis mediated mainly by household income\n(specifically, high-technology fuels displace solid\nfuels as incomes rise). Alemu Mekonnen and\nGunnar Köhlin's study of fuel use in Ethiopia\nshows how reductive this model is, however:\nalthough income of course constrained fuel\nchoice, several circumstances, including the local\navailability of different fuel sources, influenced\ndecisions.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It anticipates a potential objection to the\ndescription of a model that the text\nprovides.",
+            "It admits the superficial plausibility of an\nassumption that the text presents as\nlacking any empirical support.",
+            "It acknowledges the role played by a factor\nwhose importance the text suggests has\nbeen overstated.",
+            "It concedes that a finding may not appear\nto support the main view that the text\nadvances."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q27). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q028",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q28",
+          "passageTitle": "Underlined Purpose — Q28",
+          "passage": "In Nuxalk, an Indigenous language from the\nPacific Northwest region of what are now the\nUnited States and Canada, wats' means \"a\ndog,\" whereas wawats'ii means \"a small or cute\ndog.\" This phenomenon, in which an element of\na root word is repeated, sometimes with\nmodification, within another word that is\nrelated to the root word, is called reduplication.\nIn this case, the element \"wa\" in wats' gets\nrepeated in wawats'ii. There are many examples\nof this type of reduplication in Nuxalk.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It explains where the language discussed in\nthe text is from.",
+            "It provides English translations of the\nNuxalk words discussed in the text.",
+            "It contrasts the language discussed in the\ntext with other languages.",
+            "It provides a general definition of the\nphenomenon discussed in the text."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q28). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q029",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q29",
+          "passageTitle": "Underlined Purpose — Q29",
+          "passage": "Joseph A. Walker's award-winning play The\nRiver Niger was produced in 1972 by the\ngroundbreaking Negro Ensemble Company\n(NEC). NEC cofounder Douglas Turner Ward,\n<u>who worked as an actor, director, and\nplaywright, had met actor and producer Robert</u>\nHooks while they were performing in a 1960\ntouring production of Lorraine Hansberry's play\nA Raisin in the Sun. Together, they envisioned\na theater company that would nurture and\nshowcase the work of Black theater\nprofessionals. Since NEC's founding in 1967, its\nworkshops and performances have given Black\nplaywrights, including Walker, a forum for their\ncompelling stories.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It illustrates the importance of an\norganization mentioned in the text.",
+            "It compares the achievements of two\npeople discussed later in the text.",
+            "It argues against the claim made earlier in\nthe text.",
+            "It provides additional information about a\nperson discussed in the text."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q29). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q030",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q30",
+          "passageTitle": "Underlined Purpose — Q30",
+          "passage": "In 2023 literary scholar Jeremy Douglass\ncautioned technology investors and enthusiasts\nwho predict conventional books' ultimate\ndisplacement by newer forms of media. Douglass\nobserved thatthe concept of an \"interactive\"\ntext is much older than technologists assume,\nextending back to the first time readers\nscratched notes into a text'smargins. In\naddition, newer media, such as video games,\nhaven't replaced older forms of entertainment,\nsuch as comic books, but rather exist alongside\nthem. Douglass believes that rather than\nsupplanting books, technology is simply making\nnew forms of expression possible.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It explains the basis for the claim made by\nthe technologists mentioned in the text.",
+            "It suggests that academics are better\nsuited than investors to see the potential\nuses of contemporary interactive texts.",
+            "It challenges the stance of the investors\nand enthusiasts who are mentioned earlier\nin the text.",
+            "It provides a historical anecdote about the\ntechnological challenges involved in\nreading the earliest interactive texts."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q30). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q031",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q31",
+          "passageTitle": "Underlined Purpose — Q31",
+          "passage": "The following text is from Sarojini Naidu's 1896\npoem \"Alabaster.\"\nLike this alabaster box whose art\nIs frail as a cassia-flower, ismy heart,\nCarven with delicate dreams and wrought\nWith many a subtle and exquisite thought.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "They indicate potential reactions, one\nhoped for and one feared, to a decision the\nspeaker considers throughout the text.",
+            "They provide examples, one literal and one\nfigurative, of a change that the speaker\ndescribes throughout the text.",
+            "They describe the subjects, one physical\nand one abstract, of a comparison that\nextends throughout the text.",
+            "They symbolize two viewpoints, one\ncautious and one impulsive, that are\ncontrasted throughout the text."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q31). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q032",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q32",
+          "passageTitle": "Underlined Purpose — Q32",
+          "passage": "The Reckoning and Resilience (2022) exhibition\nat Duke University's Nasher Museum of Art in\nDurham, North Carolina, is dedicated to the\nwork of thirty North Carolina artists, including\nJuan Logan, Cornell Watson, and Stephen\nHayes. Although the Nasher Museum has\nfocused exhibitions entirely on North Carolina\nartists before, as it did previously in the\nphotography exhibition Across County Lines,\nthe breadth of disciplines in Reckoning and\nResilience sets it apart.",
+          "prompt": "Which finding, if true, would most directly\nsupport the underlined claim?",
+          "options": [
+            "Reckoning and Resilience and Across\nCounty Lines were curated to emphasize\nworks that are not owned by the Nasher\nMuseum.",
+            "The Nasher Museum has a world-class\ncollection of contemporary art that\nincludes many paintings and sculptures\nfrom artists both inside and outside North\nCarolina.",
+            "Logan is a painter, Watson is a\nphotographer, and Hayes is a sculptor.",
+            "Watson is a North Carolina photographer,\nas were all of the artists featured in Across\nCounty Lines."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q32). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q033",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q33",
+          "passageTitle": "Underlined Purpose — Q33",
+          "passage": "When people think of dinosaurs with feathers,\nthey typically think of winged dinosaurs, such as\n<u>the bat-like Yi qi. However, many dinosaurs</u>\nthat didn't have wings also had feathers on their\nbodies. For instance, research indicates that the\nwingless, peacock-sized Caudipteryx likely had\nfeathers.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It gives an example of a dinosaur with the\ncharacteristics mentioned earlier in the\nsentence.",
+            "It states the main argument about\ndinosaurs presented in the text.",
+            "It contrasts the two dinosaurs discussed in\nthe text.",
+            "It describes features of the feathers of the\ndinosaurs mentioned earlier in the sentence"
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q33). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q034",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q34",
+          "passageTitle": "Underlined Purpose — Q34",
+          "passage": "The Last Report on the Miracles at Little No\nHorse is a 2001 novel by Ojibwe writer Louise\nErdrich. It explores how historical events affect\nfamilies on a reservation in rural North Dakota.\nThe Last Report on the Miracles at Little No\nHorse is typical of Erdrich's work. Her writing\nusually focuses on portrayals of everyday life in\nOjibwe communities. Yet some of her novels\nhave fantastical plots and take place outside\nOjibwe communities.Forexample, her 1991\nnovel The Crown of Columbus is essentially\nadventure fiction, and the thrilling events in its\nplot are set largely on a Caribbean island.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It recommends that readers avoid a\nparticular novel by Erdrich.",
+            "It lists the many similarities between two\nnovels by Erdrich.",
+            "It offers an example of a novel that differs\nfrom most of Erdrich's work.",
+            "It discusses what inspired Erdrich to write\none of her novels."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q34). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q035",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q35",
+          "passageTitle": "Underlined Purpose — Q35",
+          "passage": "The Far Side of the World, first published in\n1984, is a novel in Patrick O'Brian's\nAubrey/Maturin series, which includes twenty\nbooks plus an unfinished fragment of a\ntwenty-first. Like the rest of the books in the\nseries, The FarSide of the World has a rather\nabrupt ending, but the following book, The\nReverse of the Medal, picks up neatly where The\nFarSide of the World leaves off. Thus, the\nsudden ending is only an issue if one considers\nthe books as independent texts—the\nAubrey/Maturin series is best thought of as a\nsingle incredibly long work, similar to other\nmultivolume stories, such as John Galsworthy's\nThe Forsyte Saga.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It offers a detail that helps explain why it\nis not necessarily the case that a certain\ncharacteristic of The Far Side of the World\nshould be considered a flaw.",
+            "It presents a reason The Far Side of the\nWorld and The Reverse of the Medal are\nconsidered to be two of O'Brian's most\nengaging novels.",
+            "It argues that the Aubrey/Maturin series\ndeserves the critical renown of works like\nThe Forsyte Saga.",
+            "It demonstrates that those readers who\nmost enjoy reading The Reverse of the\nMedal will be those who have just finished\nreading The Far Side of the World."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q35). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q036",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q36",
+          "passageTitle": "Underlined Purpose — Q36",
+          "passage": "The following text is adapted from Adib\nKhorram's 2018 novel Darius the Great Is Not\nOkay. The narrator, Darius, is a teenager\nvisiting family in Iran. He and his friend Sohrab\nare at the entrance of the ruins of the ancient\ncity of Persepolis.\n\"The Gate of All Nations,\" Sohrab said. He\ngestured to the lamassus [sculptures] and pillars\nsurrounding us. \"That's the name in English.\" It\nwasn't much of a gate anymore, since anyone of\nany nation could have easily stepped around it\ninstead of walking through. But it was still\namazing. Behind the lamassu, more columns\n<u>sprouted from the ground like ancient trees in a\npetrified forest, forty feet tall, spindly but still</u>\nmiraculously upright. Giant stone slabs formed\nthe remains of what must once have been a\nbreathtaking structure.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It presents an image to illustrate what one\npart of the ruins looks like.",
+            "It emphasizes that the narrator already\nknows a lot about the city.",
+            "It suggests that the narrator had expected\nto visit a forest.",
+            "It indicates the specific time in the past\nwhen the buildings became ruins."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q36). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q037",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q37",
+          "passageTitle": "Underlined Purpose — Q37",
+          "passage": "Puerto Rico is an island in the Caribbean Sea.\nIndigenous people there started raising guinea\npigs about 1,700 years ago. Guinea pigs had\noriginally been domesticated much earlier in\nboth Colombia and Peru. So were guinea pigs\nbrought to Puerto Rico from Colombia or from\nPeru? Ancient Caribbean trade routes\nconnected Puerto Rico with Colombia but not\n<u>with Peru. Therefore, guinea pigs in Puerto\nRico probably came from Colombia and</u>\ndescended from Colombian guinea pigs.",
+          "prompt": "Which finding, if true, would most directly\nweaken the underlined claim?",
+          "options": [
+            "Guinea pigs are common in ancient Puerto\nRican art, especially in pottery.",
+            "Ancient guinea pigs in Puerto Rico were\ngenetically less similar to ancient guinea\npigs in Colombia than to ancient guinea\npigs in Peru.",
+            "The guinea pig population of ancient\nColombia was much larger than the guinea\npig population of ancient Peru.",
+            "Modern breeds of guinea pigs don't look\nlike images of guinea pigs in ancient art\nfrom Puerto Rico, Colombia, and Peru."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q37). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q038",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q38",
+          "passageTitle": "Underlined Purpose — Q38",
+          "passage": "Known for the albums Someday My Prince Will\nCome and Milestones, jazz trumpeter Miles\nDavis collaborated several times with pianist Gil\nEvans. Their 1958 adaptation of George\nGershwin's opera Porgy and Bess bears little\nresemblance to the 1935 original. Davis and\nEvans felt no desire to please listeners expecting\nan exact duplication of the opera.They omitted\nparts, such as the aria \"IGot Plenty of Nothin',\"\nand sometimes made only brief gestures toward\nGershwin'smelodies. But Davis and Evans's\nwillingness to recompose Gershwin's work led to\none of the most enduring albums in Davis's\ncatalog.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It presents examples to support a claim\nmade earlier in the text.",
+            "It shows how two artists benefited from\nignoring certain conventions.",
+            "It proposes a reason why one work of art is\nwidely thought to be more successful than\nanother.",
+            "It undermines an assertion made later in\nthe text."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q38). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q039",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q39",
+          "passageTitle": "Underlined Purpose — Q39",
+          "passage": "Zurich has high pedestrian traffic, but simply\nreplicating a feature of Zurich associated with\nwalkability—e.g., its high number of street\ncrossings—may be insufficient to induce\nincreased walking in other cities. As urbanist\nMariela Alfonzo argues, our understanding of\nindividuals' decision-making about whether to\nwalk is insufficiently robust: some studies\nemphasize the role ofdemographic\ncharacteristics, others the role ofneighborhood\ntype, and so on, but walking decisions are made\nin complex contexts in which multiple conditions\nand needs inform individuals' choices.",
+          "prompt": "Which choice best describes the function of the\nreferences to \"demographic characteristic\" and\n\"neighborhood type\" in the text as a whole?",
+          "options": [
+            "They illustrate factors that researchers\nbelieve people consider when making\nwalking decisions in most contexts but\nthat the text argues are unique to walking\ndecisions made by people in Zurich.",
+            "They are examples of factors that studies\nsuggest are important in people's\ndecision-making about walking but that\nthe text claims most people rarely consider\nwhen making walking decisions.",
+            "They represent factors that have been\nidentified as important influences on\nwalking decisions but that the text\nsuggests are merely some of the many\nfactors that may contribute to people's\ndecision-making about walking.",
+            "They identify factors that Alfonzo argues\nhave been overemphasized in studies of\ndecision-making about walking but that\nthe text asserts are relevant to most\npeople's walking decisions."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q39). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q040",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q40",
+          "passageTitle": "Underlined Purpose — Q40",
+          "passage": "Copenhagen has high pedestrian traffic, but\nsimply replicating a feature of Copenhagen\nassociated with walkability—e.g., its\nhuman-scaled architecture—may be insufficient\nto induce increased walking in other cities. As\nurbanist Mariela Alfonzo argues, our\nunderstanding of individuals' decision-making\nabout whether to walk is insufficiently robust;\nsome studies emphasize the role ofpopulation\ndensity, others the role ofaverage commuting\ndistance, and so on, but walking decisions are\nmade in complex contexts in which multiple\nconditions and needs inform individuals' choices.",
+          "prompt": "Which choice best describes the function of the\nreferences to \"population density\" and \"average\ncommuting distance\" in the text as a whole?",
+          "options": [
+            "They identify factors that Alfonzo argues\nhave been overemphasized in studies of\ndecision-making about walking but that\nthe text asserts are relevant to most\npeople's walking decisions.",
+            "They illustrate factors that researchers\nbelieve people consider when making\nwalking decisions in most contexts but\nthat the text argues are unique to walking\ndecisions made by people in Copenhagen.",
+            "They are examples of factors that studies\nsuggest are important in people's\ndecision-making about walking but that\nthe text claims most people rarely consider\nwhen making walking decisions.",
+            "They represent factors that have been\nidentified as important influences on\nwalking decisions but that the text\nsuggests are merely some of the many\nfactors that may contribute to people's\ndecision-making about walking."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q40). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q041",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q41",
+          "passageTitle": "Underlined Purpose — Q41",
+          "passage": "Driven to sell as many paintings as possible,\nAlfred Hair, an influential figure among the\nlandscape artists known as the Florida\nHighwaymen, pioneered \"fast painting,\" a\ntechnique(which in part involved swift\napplications of paint) that many Highwaymen,\nincluding Isaac Knight, adopted.Toconclude\nthat this approach accounts for the ethereal\nqualities now synonymous with the Highwaymen\naesthetic is tempting but inaccurate, as Hair's\nmethods weren'tuniversally practiced by his\naffiliates: Roy McLendon, for example, painted\nwith greater deliberateness but achieved the\nsame effects.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It details evidence that contradicts a claim\nmentioned earlier in the text about a\nlong-standing disagreement within a group\nof artists.",
+            "It explains how an artist mentioned earlier\nin the text developed a distinctive style by\nadapting a particular approach to painting\noriginated by his colleagues.",
+            "It considers and rebuts an interpretation\nof the effect of a painting technique\nmentioned earlier in the text on the\nperception of work by a group of artists.",
+            "It establishes a contrast between the\naesthetic qualities of works by artists who\nwere central to a movement introduced\nearlier in the text and those of an artist\nwho was more peripheral to that\nmovement."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q41). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q042",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q42",
+          "passageTitle": "Underlined Purpose — Q42",
+          "passage": "The following text is from Louise Erdrich's 1986\nnovel The Beet Queen. Narrator discusses her\nrelationship with her young niece, Dot.\nCelestine, the narrator's sister-in-law, is Dot's\nmother.\nDot was as impatient with babyhood as I. She\ntried at once to grow out of it. Celestine never\nsaw that, because she, and only she, took\npleasure in Dot's helpless softness. Only\nCelestine was saddened by her daughter's fierce\nprogress. Day by day, Dot grew stronger.In her\nshopping cart stroller she exercised to\nexhaustion, bouncing for hours to develop her\nleg muscles.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It makes a prediction about how Celestine\nwill change as she grows older.",
+            "It explores some of the narrator's\npsychological characteristics.",
+            "It offers a detail that shows how Dot is\ngrowing stronger.",
+            "It indicates how sad Celestine is by\ndescribing a behavior she engages in."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q42). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q043",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q43",
+          "passageTitle": "Underlined Purpose — Q43",
+          "passage": "Wakako Yamauchi is best known for And the\nSoul Shall Dance, her 1977 play about a\nJapanese American family in Southern\nCalifornia. The play is based on a short story\nVarcauchi had published three years earlier.\nAdapting the story wasn't easy. Theater relies\non dialogue between characters, but the original\nstory features little dialogue and instead\ndescribes its characters' silent thoughts.To\ntransform the story into a play,Yamauchi\ncreated situations where characters reveal their\nthoughts by speaking them aloud during\nconversations with each other.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It describes how Yamauchi chose the\nactors who performed in the play.",
+            "It offers information about how Yamauchi\nadapted her short story into a play.",
+            "It argues that Yamauchi's play influenced\nlater playwrights.",
+            "It explains why Yamauchi's short story is\nbetter known than the play adaptation is"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q43). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q044",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q44",
+          "passageTitle": "Underlined Purpose — Q44",
+          "passage": "The following text is from Jose Rizal's 1891\nnovel The Reign of Greed (translated by Charles\nDerbyshire in 1912).\nA lady accompanied by her husband entered at\nthat moment and took her place in one of the\ntwo vacant boxes. She had the air of a queen\nand gazed disdainfully at the whole house, as if\nto say,\"I'vecome later than all of you, you\ncrowd of upstarts and provincials, I'vecome\nlater than you!\" There are persons who go to\nthe theater like the contestants in a mule-race:\nthe last one in, wins, and we know very sensible\nmen who would ascend the scaffold rather than\nenter a theater before the first act.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It conveys the urgency some theater\npatrons feel to be the first ones to arrive at\na performance.",
+            "It emphasizes a character's desire to be an\nactor.",
+            "It helps explain why some people dislike\nattending theatrical performances.",
+            "It illustrates the lady's contemptuous\nattitude toward the other people in the\ntheater."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q44). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q045",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q45",
+          "passageTitle": "Underlined Purpose — Q45",
+          "passage": "Master and Commander, first published in 1969,\nis a novel in Patrick O'Brian's Aubrey/Maturin\nseries, which includes twenty books plus an\nunfinished fragment of a twenty-first.Like the\nrest of the books in the series, Master and\nCommander has a rather abrupt ending, but the\nfollowing book, Post Captain, picks up neatly\nwhere Master and Commander leaves off. Thus,\nthe sudden ending is only an issue if one\nconsiders the books as independent texts – the\nAubrey/Maturin series is best thought of as a\nsingle incredibly long work, similar to other\nmultivolume stories, such as John Galsworthy's\nThe Forsyte Saga.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It demonstrates that those readers who\nmost enjoy reading Post Captain will be\nthose who have just finished reading\nMaster and Commander.",
+            "It argues that the Aubrey/Maturin series\ndeserves the critical renown of works like\nThe Forsyte Saga.",
+            "It offers a detail that helps explain why it\nis not necessarily the case that a certain\ncharacteristic of Master and Commander\nshould be considered a flaw.",
+            "It presents a reason Master and\nCommander and Post Captain are\nconsidered to be two of O'Brien's most\nengaging novels."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q45). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q046",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q46",
+          "passageTitle": "Underlined Purpose — Q46",
+          "passage": "Mexican architect Luis Barragán's prolific\ncareer, which spanned the 1920s to the 1980s,\nevolved through distinct phases. As epitomized\nby the Aguilar House in Guadalajara, many of\nBarragan's first projects integrated traditional\nMexican building techniques into Mediterranean\n<u>designs. Extensive travels abroad later sparked\nan engagement with modernist and functionalist\naesthetics – styles whose emphasis on utility and</u>\nwhose repudiation of traditional architecture's\nmore ornamental elements are readily apparent\nin Barragán's house in Calle Guadiana.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It presents biographical information that\naccounts for the transition in Barragán's\ncareer that is discussed in the text.",
+            "It notes why the two architectural projects\ndescribed in the text constitute major\ndepartures from Barragán's typical style.",
+            "It lends support to an argument about the\nMediterranean design aesthetic that is\nmade in the previous sentence.",
+            "It explains why the architectural project\ndiscussed later in the sentence was highly\nregarded by Barragán's contemporaries."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q46). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q047",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q47",
+          "passageTitle": "Underlined Purpose — Q47",
+          "passage": "In 2015 Filipa Faleiro and colleagues published a\nstudy concluding that ocean acidification has a\nstrong effect on the behavior of Hippocampus\nguttulatus, a species of fish. However, Faleiro\nand colleagues' study relied on a mean sample\nsize of only 6 fish. In a 2022 review of various\nscientists' conclusions about the impacts of\nocean acidification on fish behavior, Jeff C.\nClements and colleagues caution caution that\nrelying on such a relatively small sample size\ncan increase the potential for biased analysis.\nSuch analysis, in turn, can contribute to reports\nof exaggerated effects.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It summarizes a shift in scientists'\nunderstanding of how Hippocampus\nguttulatus has responded to ocean\nacidification.",
+            "It elaborates on a potential consequence of\nFaleiro and colleagues' reliance on a\nrelatively small sample size.",
+            "It emphasizes the magnitude of the effect\nreported by Faleiro and colleagues of ocean\nacidification on Hippocampus guttulatus.",
+            "It counters the objection of Clements and\ncolleagues to studies that rely on relatively\nsmall sample sizes."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q47). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q048",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q48",
+          "passageTitle": "Underlined Purpose — Q48",
+          "passage": "A microgenre is a specialized genre consisting of\na comparatively small number of stylistically\nsimilar artists. The microgenre of electronic\nmusic known as hyperpop emerged in the 2010s,\nwith American singer Dorian Electra as an early\nexponent. Their combination of lush synthesizer\narrangements and propulsive beats with vocals\nelectronically shifted in pitch below their natural\nrange exemplifies the hyperpop sound. More\nrecently, Japanese-British recording artist Rina\nSawayama has contributed to the microgenre by\nincorporating pop melodies into hyperpop songs.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It anticipates an objection to the text's\nendorsement of hyperpop.",
+            "It notes an exception to the text's\ndescription of hyperpop.",
+            "It defines a term used in the text's\ndiscussion of hyperpop.",
+            "It states that the text's intended audience\nmainly consists of hyperpop fans."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q48). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q049",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q49",
+          "passageTitle": "Underlined Purpose — Q49",
+          "passage": "Cuttlefish and toads see in three dimensions\n(3D) by combining two images in their brains,\none from each eye. This produces a sense of\ndepth, helping the animals judge how close or far\naway an object is. Researchers have investigated\n3D vision in praying mantises as well. In one\nstudy, Vivek Nityananda and his team fitted\nmantises' faces with two different color filters,\none covering each eye,much like the filters in 3D\nglasses once worn at movies. By observing the\nmantises reaction to projected images, the team\nconfirmed that mantises do indeed have 3D\nvision, but it's unlike that of other animals.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It identifies a potential problem that the\nresearchers faced while studying the\npraying mantises.",
+            "It offers a comparison meant to aid\nunderstanding of the praying mantis study.",
+            "It emphasizes a difference between the\nresearch on praying mantis vision and\nresearch on other animals' vision.",
+            "It describes an earlier use of a tool the\nresearchers used in the praying mantis\nstudy"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q49). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q050",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q50",
+          "passageTitle": "Underlined Purpose — Q50",
+          "passage": "Benjamin Prud'homme and colleagues have\nexplored how convergent evolution –a\n<u>phenomenon that occurs when the same trait\nevolves independently in two reproductively\nseparate lineages – can result from a genetic</u>\nmechanism shared by both lineages. KP Johan\nMeanwhile, Patricia J. Wittkopp and colleagues\nhave investigated how convergence occurs\nthrough different genetic mechanisms, but the\nrelative prevalence of convergence through\nshared and different genetic processes is still\npoorly understood. This motivated biologists\nDelbert A. Green II and Cassandra G. Extavour\nto evaluate both types of convergence in a single\nstudy for their 2012 paper.",
+          "prompt": "Which choice best states the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It provides examples of how a phenomenon\nwas studied by scientists in the field before\nGreen and Extavour's study.",
+            "It gives a basic description of a\nphenomenon that is central to the\ndiscussion that follows.",
+            "It clarifies a concept that the author\nImplies was unclear in the studies\nmentioned in the text.",
+            "It introduces a method of scientific\nanalysis that is discussed in greater detail\nlater in the text."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q50). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    },
+    {
+      "title": "Underlined Purpose — Set 3",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t10-q051",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q51",
+          "passageTitle": "Underlined Purpose — Q51",
+          "passage": "Vancouver has high pedestrian traffic, but other\ncities cannot increase their pedestrian traffic\nsimply by replicating a single feature of\nVancouver – e.g., itshigh number of pedestrian\namenities – that is associated with walkability.\nAs urbanist Mariela Alfonzo Johan argues, many\nfactors influence people's decision-making about\nwhether to walk: some studies have shown the\nimportance of demographic characteristics,\nothers have shown the importance of average\ncommuting distance, and so on, and it is clear\nthat none of these factors in isolation fully\nexplains pedestrian habits in a given city.",
+          "prompt": "Based on the text, the author would most likely\nagree with which statement about Vancouver's\n\"high number of pedestrian amenities\"?",
+          "options": [
+            "It may increase walkability in Vancouver\nbut is known to reduce walkability in other\ncities.",
+            "It is better understood as an effect of the\nhigh level of pedestrian traffic in\nVancouver than as a cause of that\npedestrian traffic.",
+            "It affects walking decisions in Vancouver\nless than demographic characteristics and\naverage commuting distance do.",
+            "It should be understood as just one of\nseveral factors that influence pedestrian\nactivity in Vancouver."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q51). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q052",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q52",
+          "passageTitle": "Underlined Purpose — Q52",
+          "passage": "The following text is from Sara Teasdale's 1922\npoem \"Two Songs for Solitude.\"\nMy heart has grown rich with the passing of years,\nI have less need now than when I was young\nTo share myself with every comer,\nOr shape my thoughts into words with my tongue.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It explains speaker's views about proper\nconduct toward new acquaintances.",
+            "It provides examples of behaviors the\nspeaker is less inclined toward than she\nonce was.",
+            "It presents an episode from the speaker's\nyouth that she remembers fondly.",
+            "It emphasizes the social habits the speaker\nhas developed over her lifetime."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q52). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q053",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q53",
+          "passageTitle": "Underlined Purpose — Q53",
+          "passage": "A student is studying how woma pythons,\neastern brown snakes, and rough-scaled death\nadders react to sound. The student knew that\nmany snakes display movement of more than 20\ncm in response to sound traveling through the\nground, but assumed thatsnakes do not detect\nsound traveling through the air until reading a\nstudy by Christina Zdenek, Timothy Staples,\nand their team.",
+          "prompt": "Which finding from Christian Zdenek, Timothy\nStaples, and their team's study, if true, would\nmost directly challenge the underlined\nassumption?",
+          "options": [
+            "Neither eastern brown snakes nor\nrough-scaled death adders display\nmovement of more than 20 cm in response\nto airborne sound.",
+            "Woma pythons have better overall hearing\nthan do rough-scaled death adders.",
+            "Both woma pythons and eastern brown\nsnakes react only to sounds traveling\nthrough the ground.",
+            "Woma pythons, eastern brown snakes, and\nrough-scaled death adders display\nmovement of more than 20 cm in response\nto both ground and airborne sound waves."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q53). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q054",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q54",
+          "passageTitle": "Underlined Purpose — Q54",
+          "passage": "The Hundred Days, first published in 1998, is a\nnovel in Patrick O'Brian's Aubrey/Maturin\nseries, which includes twenty completed books.\nSome critics have found fault with the abrupt\nendings of The Hundred Days and other books\nin the series, saying that they do not finish\nconclusively but arbitrarily stop.But other\ncritics argue that the books should not be\nthought of as discrete texts with traditional\nbeginnings and endings but as a single incredibly\nlong work, similar to other multivolume stories,\nsuch as Marcel Proust'sIn Search of Lost Time.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It presents a reason most critics think the\nAubrey/Maturin series should have the\nliterary renown of similar works like In\nSearch of Lost Time.",
+            "It explains why many critics find the\nAubrey/Maturin novels to be entertaining\ndespite flaws in the novels' structures.",
+            "It argues that the unusual structure that\nO'Brian uses for The Hundred Days makes\nit one of his most entertaining books.",
+            "It summarizes a positive assessment of a\nparticular characteristic of the\nAubrey/Maturin novels."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q54). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q055",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q55",
+          "passageTitle": "Underlined Purpose — Q55",
+          "passage": "In the early days of television in the 1940s,\nmany people thought that US television\nprograms would rely on the financial support of\nad agencies and commercial sponsors, much like\nradio did. But advertisers hesitated to jump into\na new space,particularly at a time when the\nmanufacturing of new television sets was stalled\ndue to the US'sinvolvement in World WarII.\nBroadcasters, like the National Broadcasting\nCompany (NBC), needed to persuade\nadvertisers to support their programming\ndespite not knowing whether there would be a\nrobust television audience to begin with.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It describes how broadcasters attempted to\nconvince advertisers to support television.",
+            "It explains why a type of television\nprogramming was popular at the time.",
+            "It identifies a specific reason behind some\nadvertisers' hesitance to support television.",
+            "It compares the beginnings of radio\nprogramming with the beginnings of\ntelevision programming in the United\nStates."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q55). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q056",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q56",
+          "passageTitle": "Underlined Purpose — Q56",
+          "passage": "Dubautia raillardioides is a species in a family of\n<u>plants known collectively as the silversword\nalliance, all of which grow only on the Hawaiian</u>\nIslands. Members of this alliance exhibit an\nextraordinary range of phenotypes, with some\nspecies maturing into vines and others into\nshrubs and trees. All species in the alliance\ndescended from a single ancestral tarweed plant\nthat arrived on the islands around 5 million\nyears ago. The tarweed's descendants diversified\ninto distinct species as they adapted to live in\nthe wide variety of habitats found on the\nHawaiian Islands.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It lists species from a family of plants\nfound only on the Hawaiian Islands.",
+            "It explains why Dubautia raillardioides is\nunique among members of the silversword\nalliance.",
+            "It supplies the name used to refer to a\ngroup of related plant species.",
+            "It provides the common name for the\nDubautia raillardioides plant."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q56). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q057",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q57",
+          "passageTitle": "Underlined Purpose — Q57",
+          "passage": "Individual elephants and Arctic herbivores such\nas caribou tend to have fixed geographic ranges\nthroughout their lifetimes, which had prompted\nsome researchers to speculate that the Arctic\nwoolly mammoth, an extinct elephantid, might\nhave exhibited similar behavior. Mammoth\ntusks grew in sequential layers, incorporating\ningested minerals and organics, and so each\nivory stratum reflects the ratio of strontium\nisotopes (\"Sr/Sr) in the local environment; thus,\nthe sequence of strata shows where the animal\nroamed during life. Recent analysis of the\nstrontium ratios in the strata of one Arctic\nwoolly mammoth tusk in relation to the\ngeographic distribution of strontium ratios in\nthe environment shows the animal's range begin\nto expand as it reached sexual maturity, only to\ncontract again in its final 1.5 years.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It discusses a characteristic shared by\ncertain animals in order to explain why\nresearchers raised a possibility that turned\nout not to be supported by data described\nlater in the text.",
+            "It illustrates a pattern of behavior among\ncertain animals in order to present a\ntheory about exceptions to that pattern\nthat is weakened by a finding described\nlater in the text.",
+            "It describes a similarity in the behavior of\ncertain animals in order to show why a\nmethod described later in the text did not\nreveal whether another animal also showed\nthat behavior.",
+            "It introduces a trait shared by certain\nanimals in order to contextualize a\nhypothesis about the origin of that trait\nthat is advanced later in the text."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q57). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q058",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q58",
+          "passageTitle": "Underlined Purpose — Q58",
+          "passage": "Chorioactis geaster, a species of mushroom that\nmakes a distinctive hissing sound when it\nreleases its spores, is an elusive fungus that has\nbeen observed only in Texas and Oklahoma in\nthe US and in the Miyazaki and Nara\nPrefectures in Japan. Scientists aren't entirely\nsure whyC. geasteris distributed in this way\n(genetic analysis reveals that the US and\nJapanese strains diverged 19 million years ago),\nbut the mushroom appears to be very selective:\nit is typically found on the decaying stumps and\n<u>roots of only a few tree species that are\nabundant in these areas.</u>",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It provides an explanation for the\nrelationship betweenC. geasterand its\nhabitats.",
+            "It highlights the negative impactC.\ngeaster has on the trees on which it's\nfound.",
+            "It emphasizes the uncertainty aboutC.\ngeaster alluded to earlier in the text.",
+            "It elaborates on a characterization ofC.\ngeaster presented earlier in the text."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q58). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q059",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q59",
+          "passageTitle": "Underlined Purpose — Q59",
+          "passage": "Can tomato plants grow on Mars? Can pea\nplants? You might think the answer to these\n<u>questions is obviously no, but researchers in the</u>\nNetherlands recently showed that the seeds of\nmany common plant species can germinate in\nsoil designed to simulate Martian conditions, as\nlong as water is supplied. In fact, some species\nactually did better in Martian soil than in Earth\nsoil: 90 percent of tomato seeds sprouted when\nplanted in simulated Martian soil, compared\nwith 66 percent that did when planted in soil\nfrom their home planet.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It signals the surprising nature of the\nfindings discussed in the text",
+            "It acknowledges that readers may object to\nthe method used in the experiment\ndiscussed in the text",
+            "It clarifies a potential point of confusion\nabout the hypothesis tested in the study\ndiscussed in the text",
+            "It draws a distinction between the two\nspecies discussed in the text"
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q59). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q060",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q60",
+          "passageTitle": "Underlined Purpose — Q60",
+          "passage": "Julie Dash's lyrical film Daughters of the Dust,\nfirst released in 1991, follows members of a\nGullah family as they depart from their island\nhome near Georgia in 1902.Though an\nimaginative, critically acclaimed film with a\nwide release—and a highly appreciative global\naudience—Dash'swork never received the\nplaudits it deserved within the US film industry.\nInterest in the film reignited, however, with\nBeyonce's release of Lemonade in 2016, due to\nthe visual album's numerous allusions to Dash's\nfilm in the form of stylistic references to its\nscenes, costumes, and celebration of Black life in\nthe US South.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It gives a brief overview of how Dash's film\nwas received at the time of release and\nalludes to the reception of a similar work\nthat is described later in the text.",
+            "It expands on an attribute of Dash's film\nthat is described earlier in the text in\norder to draw distinctions between the film\nand a later work that was influenced by it.",
+            "It presents a discrepancy between the\nvalue of Dash's film and the industry's\nresponse to it that the text goes on to\ndemonstrate was partially rectified by the\nfilm's influence on a later work.",
+            "It introduces the implication that had\nDash's film received more recognition from\nthe US film industry at the time of its\nrelease, it wouldn't have attained such\ninfluence on Beyoncé's Lemonade."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q60). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q061",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q61",
+          "passageTitle": "Underlined Purpose — Q61",
+          "passage": "Benjamin Prud'homme and colleagues have\nexplored how convergent evolution—a\n<u>phenomenon that occurs when the same trait\nevolves independently in two reproductively\nseparate lineages—can result from a genetic</u>\nmechanism shared by both lineages. Meanwhile,\nPatricia J. Wittkopp and colleagues have\ninvestigated how convergence occurs through\ndifferent genetic mechanisms, but the relative\nprevalence of convergence through shared and\ndifferent genetic processes is still poorly\nunderstood. This motivated biologists Delbert\nA. Green Il and Cassandra G. Extavour to\nevaluate both types of convergence in a single\nstudy for their 2012 paper.",
+          "prompt": "Which choice best states the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It provides examples of how a phenomenon\nwas studied by scientists in the field before\nGreen and Extavour's study.",
+            "It gives a basic description of a\nphenomenon that is central to the\ndiscussion that follows.",
+            "It clarifies a concept that the author\nimplies was unclear in the studies\nmentioned in the text.",
+            "It introduces a method of scientific\nanalysis that is discussed in greater detail\nlater in the text."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q61). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q062",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q62",
+          "passageTitle": "Underlined Purpose — Q62",
+          "passage": "Shedding light on the thermal biology of fungi,\nresearch by Radamés Cordero et al. indicates\nthat certain mushrooms (includingCoprinellus\nmicaceus and species from the genus\nCantharellus) can achieve a hypothermic state\nthrough evaporative cooling. Effects of this\nthermoregulation were not limited to the fungi's\nfruiting bodies and root-like hyphae:\n<u>temperature reductions were observed in the air\nimmediately surrounding the mushrooms.</u>\nThough slight, the reductions inspired an\nair-cooling device; using approximately 400\ngrams of mushrooms, the team's prototype\nlowered the air temperature in a controlled\nenvironment by 10°C in forty minutes.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It establishes a finding central to the text's\ndiscussion of a practical application\nresulting from the team's study of fungal\nthermal biology.",
+            "It provides empirical evidence to bolster\nthe claim made earlier in the text that\ncertain fungal species maintain a\nhypothermic state.",
+            "It presents a tangential finding about\nthermoregulation in certain fungal species\nthat the experiment described later in the\ntext was designed to explain.",
+            "It identifies an unexpected observation\nthat motivated the study of evaporative\ncooling in fungi that is discussed earlier in\nthe text."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q62). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q063",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q63",
+          "passageTitle": "Underlined Purpose — Q63",
+          "passage": "In Algeria, use of solid fuel (eg, coal, wood) as a\nshare of total household fuel use fell by\napproximately three-fourths between 2000 and\n2019; such shifts are often explained by appeal\nto the energy ladder, a model holding that fuel\nchoice is mediated mainly by household income\n(specifically, high-technology fuels displace solid\nfuels as incomes rise). Rasmus Heltberg's study\nof fuel use in Ghana shows this model to be\nreductive, however: household fuel use was\nheterogeneous, flexible, and influenced by\nseveral factors, including the stability of the\nlocal electrical grid.",
+          "prompt": "Which choice best describes the function of the\ninformation about Algeria in the text as a\nwhole?",
+          "options": [
+            "It provides an example of a type of change\nthat the text goes on to suggest is poorly\nsuited for evaluating whether the energy\nladder is a viable model.",
+            "It introduces a finding that the text goes\non to suggest can be explained in two\ndifferent ways that are equally compelling.",
+            "It describes a trend that the text goes on\nto suggest has a similar cause as a\nseemingly unrelated trend observed in\nGhana.",
+            "It illustrates the kind of phenomenon that\nthe text goes on to suggest is frequently\nbut inadequately accounted for by the\nenergy ladder."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q63). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q064",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q64",
+          "passageTitle": "Underlined Purpose — Q64",
+          "passage": "In 2011 Stephen D. Simpson and colleagues\npublished a study concluding that ocean\nacidification has a strong effect on the behavior\nof Amphiprion percula, a species of fish.\nHowever, Simpson and colleagues' study relied\non a mean sample size of only about 26 fish. In\na 2022 review of various scientists' conclusions\nabout the impacts of ocean acidification on fish\nbehavior, Timothy D. Clark and colleagues\ncaution that relying on such a relatively small\nsample size can increase the potential for biased\nanalysis. Such analysis, in turn, can contribute\nto reports of exaggerated effects.",
+          "prompt": "Which choice best describes the function of the\nunderlined sentence in the text?",
+          "options": [
+            "It states the conclusion reached by\nSimpson and colleagues in their 2011\nstudy.",
+            "It presents a criticism of the results\nreported by Simpson and colleagues in\ntheir 2011 study.",
+            "It lists several traits ofAmphiprion percula\ndiscovered by Simpson and colleagues\nwhile conducting their 2011 study.",
+            "It emphasizes a detail about where\nSimpson and colleagues conducted their\n2011 study."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q64). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q065",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q65",
+          "passageTitle": "Underlined Purpose — Q65",
+          "passage": "Vertical gene transfer involves the transmission\nof genetic material from a parent to offspring:\nhorizontal gene transfer, on the other hand,\ninvolves the exchange of genetic material\nbetween organisms not in a parent-offspring\nrelationship. While horizontal gene transfer is\ncommon among prokaryotes, single-celled\norganisms such as the bacteriaCarnobacterium\nviridans and Moraxella caviae, it has rarely been\nobserved among eukaryotes (typically\nmulticellular organisms).However, new studies\nsuggest that horizontal gene transfer is more\ncommon in eukaryotes than originally thought.",
+          "prompt": "Which choice best states the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It argues that a particular direction of\nresearch concerning horizontal gene\ntransfer is likely to be fruitless.",
+            "It indicates a distinction between\nhorizontal gene transfer and vertical gene\ntransfer.",
+            "It implies that a common perception of\nhorizontal gene transfer may be inaccurate.",
+            "It compares the frequencies with which\nhorizontal gene transfer has been detected\nin two categories of organisms."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q65). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q066",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q66",
+          "passageTitle": "Underlined Purpose — Q66",
+          "passage": "Vertical gene transfer involves the transmission\nof genetic material from a parent to offspring:\nhorizontal gene transfer, on the other hand,\ninvolves the exchange of genetic material\nbetween organisms not in a parent-offspring\nrelationship. While horizontal gene transfer is\ncommon among prokaryotes-single-celled\norganisms, such as the bacteria Brevundimonas\ndiminuta and Lactobacillus curvatus-it has\nrarely been observed among eukaryotes\n(multicellular organisms). However, new studies\nsuggest that horizontal gene transfer is more\ncommon in eukaryotes than originally thought.",
+          "prompt": "Which choice best states the function of the\nunderlined sentence in the text as a whole?",
+          "options": [
+            "It proposes a direction for future research\ninto a biological phenomenon.",
+            "It explains a biological process by\ncontrasting it with a somewhat similar\nprocess.",
+            "It argues that two biological phenomena\nare more similar than they may initially\nappear to be.",
+            "It explains why a common perception of a\nbiological process is flawed."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q66). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q067",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q67",
+          "passageTitle": "Underlined Purpose — Q67",
+          "passage": "The following text is from Anne Spencer's 1922\npoem \"Translation.\"\nWe trekked into a far country,\nMy friend and I.\nOur deeper content was never spoken,\nBut each knew all the other said.\nHe told me how calm his soul was laid\nBy the lack ofanvil and strife.\n\"The wooing kestrel,\" I said, \"mutes his\nmating-note\nTo please the harmony of this sweet silence.\"",
+          "prompt": "Which choice best describes the function of the\nreference to \"anvil and strife\" in the text as a\nwhole?",
+          "options": [
+            "It symbolizes the speaker's friend's view\nthat meaningful work and social\nengagement are core components of a\nfulfilling life.",
+            "It illustrates how the speaker and her\nfriend can feel a close connection even\nthough they do not talk about their\nfeelings.",
+            "It emphasizes an opposition between\nnature and the relationship of the speaker\nand her friend.",
+            "It represents a strong contrast to the\nspeaker's friend's current experience of\ntranquility."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q67). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q068",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q68",
+          "passageTitle": "Underlined Purpose — Q68",
+          "passage": "The scenario of a dwarf mongoose engaging in\nterritorial conflict with an outgroup dwarf\nmongoose illustrates a major dimension of social\nlife across animal species, from the solitary to\nthose with complex sociality:intraspecific\ncontact with perceived outsiders. Though one\nprominent hypothesis posits that sophisticated\ncognitive adaptations are primarily driven by\nthe demands of various behaviors within\nestablished social groups (e.g., cooperative\nresponse to predation), interactions with\nsame-species outsiders arguably contribute\ncomparably by favoring nuanced analysis (e.g.,\nevaluation of relative physical status).",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It establishes that perceiving an individual\nof the same species as an outsider\nexemplifies the kind of analysis mentioned\nlater in the text.",
+            "It identifies a particular type of social\ninteraction whose relevance to higher\ncognition in animals is the overall focus of\nthe text.",
+            "It narrows the text's focus from the full\ncomplement of social life dimensions across\nspecies to one applicable to only a subset\nof species.",
+            "It defines a scientific term central to the\ntext's discussion of the role of complex\nsociality in driving cognitive adaptations\nin animals."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q68). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q069",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q69",
+          "passageTitle": "Underlined Purpose — Q69",
+          "passage": "The following text is adapted from Akwaeke\nEmezi's 2019 novel Pet. Jam is a teenager who\nlives with her father, Aloe, and her mother,\nBitter, who is a painter.\nBitter finished the painting in the dark morning\nof a day-it was well past midnight when Jam\nheard the studio door creak open. She stared\ninto the velvet black of her room and listened to\nher mother's footsteps walking in her [mother]\nand Aloe's bedroom. There was a weight\nthrumming through the floorboards in a low\nsong, and that was how Jam knew the painting\nwas done.Bitter'sfeet were singing the news.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It adds to the idea that Bitter's footsteps\nreveal something to Jam.",
+            "It indicates that Jam is more interested in\nmusic than in art.",
+            "It indicates that Bitter always sings when\nworking on a painting.",
+            "It describes Aloe's reaction upon seeing\nthe painting for the first time."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q69). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q070",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q70",
+          "passageTitle": "Underlined Purpose — Q70",
+          "passage": "The Museum of Modern Art (MOMA) in New\nYork City has an exhibition of video games that\nincludes Vib-Ribbon from 1999, which museum\nvisitors can play on site, and SimCity 2000 from\n1994, which visitors can see only in a video\npresentation. MOMA claims the video\npresentations are only for games that would be\nimpractical to display in a playable form, but\nvideo games are an inherently interactive\nmedium, a feature that is grossly absent in a\nvideo-only presentation.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It provides MOMA's rationale for a\ndecision that the author critiques.",
+            "It introduces a fact about video games\nthat the author thinks MOMA did not\nappropriately consider when choosing\nwhich video games to exhibit.",
+            "It details a criticism of MOMA that the\nauthor defends against in the remainder of\nthe sentence.",
+            "It presentsamisconception about video\ngames that the author believes is evident\nin MOMA's choice about which video\ngames to exhibit."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 10, Q70). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q071",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q71",
+          "passageTitle": "Underlined Purpose — Q71",
+          "passage": "Several sociologists have observed that the word\n\"culture,\" though commonly used in academic\nliterature, is an ultimately hazy concept-for\nexample, Victoria Bonnell and Lynn Hunt have\nnoted that \"many critics have pointed to the\nvagueness of the concept of culture.\"Does the\nconcept of culture encompass knowledge, or\nlaws, or both these things and others? For\ncasual usage, such haziness is permissible-we\nknow culture when we see it-but for researchers,\na standardization of the term is called for if\nsociology is to truly progress.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It lists two essential components of what is\nreferred to by Bonnell and Hunt as\n\"culture.\"",
+            "It presents a point regarding the definition\nof \"culture\" on which nonspecialists and\nspecialists tend to disagree.",
+            "It describes the questions first raised by\nBonnell and Hunt's inquiry into the\nmeaning of the word \"culture.\"",
+            "It illustrates a difficulty associated with\nthe meaning of \"culture\" that the author\nbelieves holds back an academic field."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 10, Q71). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q072",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q72",
+          "passageTitle": "Underlined Purpose — Q72",
+          "passage": "Scientists discovered a 390-million-year-old\nfossilized forest ofCalamophyton trees in\nmodern-day England. The scientists believe the\nemergence of theseCalamophyton forests\nchanged the land significantly.Forexample, the\ntree roots would have greatly reduced soil\nerosion, and the accumulated twigs the trees\nshed likely created new habitats for animal life.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "It suggests that there are likely fossilized\nCalamophyton forests from before 390\nmillion years ago.",
+            "It provides two competing views of when\nthe Calamophyton forest likely merged.",
+            "It illustrates howCalamophyton forests\nlikely changed conditions on the land.\"",
+            "It indicates how fast theCalamophyton\nforest spread."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q72). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q073",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q73",
+          "passageTitle": "Underlined Purpose — Q73",
+          "passage": "Over the course of the 1900s, more and more\nNative Hawaiians spoke English instead of the\nHawaiian language. To preserve their language,\nNative Hawaiian teachers founded the 'Aha\nPúnana Leo preschool in 1984. They spoke\nHawaiian while teaching, and their Native\nHawaiian students were soon able to understand\nand speak it themselves. The school was a huge\nsuccess. Eventually it opened locations around\nHawai'i and started teaching Hawaiian to\nelementary and high school students too.\nThanks to 'AhaPunana Leo the number of\nyoung people who speak the language has\nincreased.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "Besides Native Hawaiians, tens of\nthousands of people from other Pacific\nIslander communities live in Hawai'i today,\nincluding over 37,000 Samoans.",
+            "Fewer than fifty children could speak\nHawaiian when 'Aha Pûnana Leo was\nfounded, but now more than 2,000\nstudents at 'Aha Pünana Leo speak it",
+            "Hawaiian is very similar to other languages\nthat are spoken on the Polynesian Islands\nof the Pacific Ocean, including Tahitian,\nSamoan, and Maori.",
+            "It illustrates a difficulty associated with\nthe meaning of \"culture\" that the Roughly\n680,000 Native Hawaiian people lived in\nthe United States in 2020, and a little less\nthan half of them lived in Hawai'i"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 10, Q73). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t10-q074",
+          "skill": "Underlined Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Determine the function of the underlined portion in the text as a whole",
+          "source": "SAToplam 2.0 · Topic 10 · Q74",
+          "passageTitle": "Underlined Purpose — Q74",
+          "passage": "The Heege Manuscript (HM) is a collection of\nbooklets of once-unbound paper sheets on which\nRichard Heege copied various texts at his\nfifteenth-century home between Derbyshire and\nNottinghamshire in England.Most other\ncontemporaneous personal manuscripts like the\nFindern Anthology (FA)consist primarily of\npieces by celebrated medieval authors like\nHoccleve and other readings favored by elites,\nwhereas the HM has a distinctive emphasis on\nthe popular, including entertainments like crude\ncomedies, and the practical, with advice about\nmanners.",
+          "prompt": "Which choice best describes the function of the\nunderlined portion in the text as a whole?",
+          "options": [
+            "To suggest that the FA is a poor point of\ncomparison for a collection like the HM",
+            "To emphasize the ubiquity of hand-copied\ncollections like the FA and the HM in\nmedieval England",
+            "To provide context for the text's\nsuggestion that the HM is an outlier\namong collections of its time",
+            "To illustrate how the discussion of the HM\nearlier in the text can improve historians'\nunderstanding of the FA"
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 10, Q74). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    }
+  ]
+}

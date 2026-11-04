@@ -1,0 +1,705 @@
+{
+  "format": "bbplus",
+  "version": 1,
+  "type": "practice",
+  "title": "SAToplam 2.0 — Main Ideas",
+  "description": "Official real exam SAT reading practice questions (March 2023 – August 2025) compiled by @satashkent. Domain: Information and Ideas.",
+  "modules": [
+    {
+      "title": "Main Ideas — Set 1",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t01-q001",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q1",
+          "passageTitle": "Main Ideas — Q1",
+          "passage": "sec. (*Exam level)\nThe following text is adapted from Daniel\nDefoe's 1704 nonfiction book The Storm.\nThe sermon is a sound of words spoken to the\near, and prepared only for present meditation\nand extends no farther than the strength of\nmemory can convey it; a book printed is a\nrecord, remaining in every man's possession,\nalways ready to renew its acquaintance with his\nmemory, and always ready to be produced as an\nauthority or voucher to any reports he makes\nout of it, and conveys its contents for ages to\ncome, to the eternity of mortal time, when the\nauthor is forgotten in his grave.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "People are less likely to forget a message\nwhen they hear it spoken aloud than they\nare when they read it in print.",
+            "Unless a spoken message is delivered by [a\nconfident orator, it may be] ignored.",
+            "Most authors have little hope of being\nremembered well past their lifetimes.",
+            "Words committed to print have a greater\npermeance than messages that are merely\nspoken aloud."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 1, Q1). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q002",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q2",
+          "passageTitle": "Main Ideas — Q2",
+          "passage": "The Far Side of the World, first published in\n1984, is a novel in Patrick O'Brain's\nAubrey/Maturin series, which includes twenty\nbooks plus an unfinished fragment of a\ntwenty-first. Like the rest of the books in the\nseries, The Far Side of the World has a rather\nabrupt ending, but the following book, The\nReverse of the Medal, picks up neatly where The\nFar Side of the World leaves off. Thus, the\nsudden ending is only an issue if one considers\nthe books as independent texts—the\nAubrey/Maturin series is best thought of as a\nsingle incredibly long work, similar to other\nmultivolume stories, such as John Galsworthy's\nThe Forsyte Saga.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "It is unfair that the Aubrey/Maturin series\ndoes not have the critical reputation of\nThe Forsyte Saga, which has a similar\nstructure.",
+            "The Far Side of the World and The\nReverse of the Medal are [two] of the most\ncomplex of Patrick O'Brian's [novels of the\nAubrey/Maturin series] with\nunconventional structures.",
+            "The structure of each of the novels of the\nAubrey/Maturin series suggests that the\nseries should be considered a single\ncontinuous story.",
+            "Many readers find the Aubrey/Maturin\nnovels to be remarkably entertaining\ndespite flaws in novels' structures."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 1, Q2). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q003",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q3",
+          "passageTitle": "Main Ideas — Q3",
+          "passage": "Master and Commander,first published in 1969,\nis a novel in Patrick O'Brian's Aubrey/Maturin\nseries, which includes twenty completed books.\nSome critics have found fault with the abrupt\nendings ofMaster and Commanderand other\nbooks in the series, saying that they do not\nfinish conclusively but arbitrarily stop. Other\ncritics, however, argue that the books should not\nbe thought of as discrete texts with traditional\nbeginnings and endings but as a single incredibly\nlong work, similar to other multivolume stories,\nsuch as John Galsworthy'sThe story of Saga.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "The unusual structure that O'Brian uses\nfor Master and Commandermakes it one\nof his most intricate books.",
+            "Critics have differing views regarding the\nefficacy of the structures of the novels in\nthe Aubrey/Maturin series.",
+            "Some critics think the Aubrey/Maturin\nseries should have the literary form ofThe\nstory of Saga, while others disagree.",
+            "Many critics judge the Aubrey/Maturin\nnovels to be remarkably entertaining\ndespite flaws in the novels' structures."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 1, Q3). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q004",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q4",
+          "passageTitle": "Main Ideas — Q4",
+          "passage": "Horses and barn owls can see in three\ndimensions (3D) which helps them perceive\ndistance and depth. Octopuses and squid are\nthought to lack 3D vision. Many researchers\nonce thought the same about cuttlefish, but\nTrevor Wardell and his team wanted to test\nwhether this assumption was true. The team\nstudied how cuttlefish wearing 3D glasses\nreacted to 3D images of shrimp (a favorite prey)\nprojected on a tank wall. Cuttlefish changed\ntheir striking position to match the 3D images,\nsuggesting that their vision is more like that of\nhorses and barn owls than that of octopuses or\nsquid.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Researchers have long known that horses\nand barn owls can see in 3D.",
+            "Cuttlefish are surprisingly similar in\nstructure to octopuses and squid.",
+            "Contrary to what many researchers had\nassumed, cuttlefish may be able to see in\n3D.",
+            "The ability to see in 3D allows many\nanimals to interact with one another."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 1, Q4). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q005",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q5",
+          "passageTitle": "Main Ideas — Q5",
+          "passage": "Meredith E. Protas and colleagues have explored\nhow convergent evolution—a phenomenon that\noccurs when the same trait evolves\nindependently in two reproductively separate\nlineages—can result from a genetic mechanism\nshared by both lineages. Meanwhile, Bas J.\nZwaan and colleagues have investigated how\nconvergence occurs through different genetic\nmechanisms, but the relative prevalence of\nconvergence through shared and different\ngenetic processes is still poorly understood. This\nmotivated biologist Delbert A. Green II and\nCassandra G. Extavour to evaluate both types\nof convergence in a single study for their 2012\npaper.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Before Green and Extavour's study,\nconvergence evolution was assumed to\nrequire a shared genetic mechanism\nbetween two lineages that shared the trait.",
+            "Green and Extavour's study was\nconducted using data from the studies by\nProtas and colleagues and Zwaan and\ncolleagues.",
+            "Green and Extavour's study addresses\nconvergent evolution more\ncomprehensively than the studies by\nProtas and colleagues and Zwaan and\ncolleagues do.",
+            "Both the study by Protas and colleagues\nand that by Green and Extavour compare\nconvergence through shared genetic\nmechanism to convergence through\ndifferent genetic mechanisms."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 1, Q5). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q006",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q6",
+          "passageTitle": "Main Ideas — Q6",
+          "passage": "The following text is from Frances E.W.\nHarper's 1892 novelJola Leroy. The text\ndescribes Robert Johnson, who has recently\njoined the US Army.\nHe was daring, without being rash; prompt, but\nnot thoughtless; firm without being harsh. Kind\nand devoted to the company he drilled, he soon\nwon the respect of his superior officers and the\nlove of his comrades.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Robert is well suited to his role in the\nmilitary.",
+            "Robert has put great effort into getting\nthe attention of his comrades.",
+            "Robert mainly seeks to help his comrades\neven if his superiors don't appreciate it.",
+            "Robert has made some mistakes out some\ngood qualities."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 1, Q6). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q007",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q7",
+          "passageTitle": "Main Ideas — Q7",
+          "passage": "Animals use many objects as tools to achieve\ngoals more easily. Such goals include grooming,\nfinding food, and protecting themselves. For a\nlong time, people thought tool use was unique to\nprimates. Octopuses and other animals, though,\nhave busted the myth that tool use requires\nhands. Inventively, octopuses use two halves of a\nseashell to provide protection or a place to hide.\nGreater vasa parrots also get creative. They use\ndate pits to grind seashells into calcium powder.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Unlike primates, octopuses are\nexceptionally skillful at using different\ntools.",
+            "There are many myths about tool use that\nresearchers are starting to challenge.",
+            "Animals find it difficult to use objects as\ntools.",
+            "Contrary to long-held beliefs, primates\naren't the only animals to use tools."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 1, Q7). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q008",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q8",
+          "passageTitle": "Main Ideas — Q8",
+          "passage": "The following text is from Guy de Maupassant's\n1884 short story \"A Recollection,\" from the\ncollection Guy de Maupassant Short Stories\n(translated by Albert M. C. McMaster et al. in\n1903). The narrator is on a walk in the\ncountryside outside of Paris, France.\nI walked slowly beneath the young leaves,\ndrinking in the air, fragrant with the odor of\nyoung buds and sap. I sauntered along, forgetful\nof musty papers, of the offices, of my chief, my\ncolleagues, my documents, and thinking of the\ngood things that were sure to come to me, of all\nthe veiled unknown contained in the future. A\nthousand recollections of childhood came over\nme, awakened by these country odors, and I\nwalked along, permeated with the fragrant,\nliving enchantment, the emotional enchantment\nof the woods warmed by the sun of June.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Having decided to leave his current\nemployment, the narrator is returning to\nhis childhood home in the country.",
+            "The narrator's natural surroundings help\nhim escape his work concerns by\nprompting hopes about the future and\nmemories of youth.",
+            "The narrator is using the quiet of the\ncountryside to help him think about how\nprojects at work could be advantageous for\nhis career.",
+            "The narrator forgets to address pressing\nwork issues because the smells of the\ncountryside distract him with thoughts of\nhis youth."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 1, Q8). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q009",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q9",
+          "passageTitle": "Main Ideas — Q9",
+          "passage": "Tanya Tagaq is a writer and musician and a\nmember of the Inuit community of Cambridge\nBay in northern Canada. Critics and fellow\nwriters have praised her work for combining\ntraditional Inuit stories with popular genres of\nliterature, such as fantasy fiction. But Tagaq is\nnot the only Indigenous writer to blend\ntraditional stories with popular literature. In\nthe 2020 novel The Only Good Indians, Stephen\nGraham Jones successfully blended the oral\nstorytelling tradition of his tribe, the Blackfeet\nNation, with horror fiction.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Non-Indigenous authors should consider\nthe expectations of Indigenous readers.",
+            "Several famous Indigenous writers\nincreased their book sales when they\nbegan incorporating traditional stories.",
+            "Recent Indigenous fiction writers are\nmixing traditional stories with popular\nliterary genres.",
+            "The success of Tanya Tagaq has influenced\nnon-Indigenous authors who write in\npopular literary genres."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 1, Q9). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q010",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q10",
+          "passageTitle": "Main Ideas — Q10",
+          "passage": "Mexican textile artist Victoria Villasana weaves\nstories of triumph, using her unique method of\napplying colorful yarn to photographs of people.\nIn some works, Villasana focuses on celebrating\ncultural icons who are people of color, as she\ndoes in her depiction of musician and composer\nPrince. However, in other works, Villasana\nhonors ordinary people, as she does in her\ncaptivating portrayal of a young girl sitting on a\nsidewalk. Villasana sees both of these\napproaches as ways of depicting the power and\ninterconnectedness of all people.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Villasana's portrayal of a young girl sitting\non a sidewalk focuses more on human\nconnection than it does on human\nresilience.",
+            "Villasana began her artistic career by\npainting portraits of famous people and\nthen transitioned to depicting everyday\npeople instead.",
+            "Villasana's works focus on recognizing\nboth famous and everyday examples of\nhuman strength and connection.",
+            "Villasana's depiction of Prince receives\nmore attention from scholars than her\ndepiction of a young girl sitting on a\nsidewalk does."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 1, Q10). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q011",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q11",
+          "passageTitle": "Main Ideas — Q11",
+          "passage": "Horizontal gene transfer involves the exchange of\ngenetic material between organisms not in a\nparent-offspring relationship. It is common\namong prokaryotes (single-celled organisms such\nas the bacteria Brevibacillus borstelensis and\nMassilia timonae). The process can have the\neffect of increasing bacterial resistance to\nantibiotics; as such, an understanding of how to\nprevent horizontal gene transfer might result in\nthe mitigation of dangerous pathogens\n(organisms that cause disease).",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "A common perception of horizontal gene\ntransfer is inaccurate.",
+            "Horizontal gene transfer is more common\nthan was initially thought.",
+            "The results of new research into horizontal\ngene transfer cast doubt on earlier findings.",
+            "The study of horizontal gene transfer may\nyield findings with useful applications."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 1, Q11). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q012",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q12",
+          "passageTitle": "Main Ideas — Q12",
+          "passage": "In 2013 Oona M. Lönnstedt and colleagues\npublished a study concluding that ocean\nacidification has a strong effect on the behavior\nof Pomacentrus amboinensis, a species of fish.\nHowever, Lönnstedt and colleagues' study relied\non a mean sample size of only about 28 fish. In\na 2022 review of various scientists' conclusions\nabout the impacts of ocean acidification on fish\nbehavior, Jeff C. Clements and colleagues\ncaution that relying on such a relatively small\nsample size can increase the potential for biased\nanalysis. Such analysis, in turn, can contribute\nto reports of exaggerated effects.",
+          "prompt": "Which choice best states the main topic of the\ntext?",
+          "options": [
+            "A possible shortcoming of a study\ninvolving Pomacentrus amboinensis.",
+            "A discovery regarding the evolution of\nPomacentrus amboinensis.",
+            "A change in fish behavior first reported in\n2022.",
+            "A newly identified cause of ocean\nacidification."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 1, Q12). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q013",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q13",
+          "passageTitle": "Main Ideas — Q13",
+          "passage": "In a large community science effort, biologist\nAbbigail Merrill and colleagues collaborated\nwith hundreds of students and other amateur\nscience enthusiasts for more than three years to\nstudy how butterfly color and time of day relate\nto butterfly behavior. They found that butterfly\ncolor might influence behavior more than\nbutterfly size does, and that butterflies were\nobserved to feed more often in the morning than\nat any other time of day.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Time of day and butterfly color seem to\nhave less influence on butterfly behavior\nthan the location where the butterflies are\nstudied does.",
+            "A recent study suggested that butterflies'\ncoloring seems to be less relevant to their\nbehavior than time of day.",
+            "Collaboration between professional\nscientists and members of the public is\nespecially useful when studying the\nbehavior of butterflies and other flying\ninsects.",
+            "A large study suggested that butterfly\ncolor and time of day might influence the\nbehavior of certain butterflies."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 1, Q13). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q014",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q14",
+          "passageTitle": "Main Ideas — Q14",
+          "passage": "President Richard Nixon is most famous for his\nparticipation in the 1970s Watergate political\nscandal, a convoluted tale of criminality and\neroded ethics involving a constellation of\nassociates such as political operative Jeb Stuart\nMagruder and Nixon's secretary Rose Mary\nWoods. But Nixon's legacy is complex: he has\nbeen praised for his role in affirming the\nsovereignty of tribal nations, and he once made\nan attempt at reforming United States health\ncare policy that is arguably a precursor to the\nAffordable Care Act, which became law during\nthe Barack Obama administration.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Richard Nixon's reputation is primarily\ndue to the actions of his associates.",
+            "Some of Richard Nixon's policies\ninfluenced the policies of later presidential\nadministrations.",
+            "Jeb Stuart Magruder and Rose Mary\nWoods were significant figures in the\npresidency of Richard Nixon.",
+            "Richard Nixon is commonly linked with an\ninfamous historical event, but this\novershadows some of his notable\nachievements."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 1, Q14). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q015",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q15",
+          "passageTitle": "Main Ideas — Q15",
+          "passage": "Tomato is an example of a loanword—that is, a\nword that originated in one language and was\nlater adopted by another. The word came to\nEnglish indirectly from tomate, the Spanish\nword for the widely cultivated plant. Spanish\nhad borrowed it from Nahuatl, an Indigenous\nlanguage of Central Mexico, in which the word's\noriginal form is tomatl. \"Maize\" also has an\nIndigenous origin and entered English through\nSpanish. But in this case, the original source\nwas Taíno, a language of the Caribbean islands,\nin which the word for the corn plant is mahís.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Many Spanish words with Indigenous\norigins first passed through English before\nentering Spanish.",
+            "When borrowing from Indigenous\nlanguages, Spanish adopted roughly as\nmany words from Nahuatl as from Taíno.",
+            "When non-Indigenous languages borrowed\nfrom Indigenous languages, the words\noften underwent a significant change in\nmeaning.",
+            "The English words \"tomato\" and \"maize\"\nare both examples of loanwords from\nIndigenous languages."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 1, Q15). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q016",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q16",
+          "passageTitle": "Main Ideas — Q16",
+          "passage": "Eighteenth-century economist Adam Smith is\nfamed for his metaphor of the invisible hand,\nwhich he putatively used to illustrate a robust\nmodel of how individuals produce aggregate\nbenefits by pursuing their own economic\ninterests. Note \"putatively\": as Gavin Kennedy\nhas shown, Smith deploys this metaphor only\nonce in his economic writings—to make a\nnarrow point about the then-dominant economic\ntheory of mercantilism—and it was largely\nignored until some twentieth-century economists\neager to secure an intellectual pedigree for their\nviews elevated it to a fully-fledged paradigm.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "The reputation of Smith's metaphor of the\ninvisible hand is not due to the importance\nof the metaphor in Smith's work but rather\nto the promotion of the metaphor by some\nlater economists for their own ends.",
+            "Smith's metaphor of the invisible hand has\nbeen interpreted as a model of how\nindividuals acting in their own interest\nproduce aggregate benefits, but it was\nintended as a subtle critique of the\neconomic theory of mercantilism.",
+            "Some twentieth-century economists gave\nSmith's metaphor of the invisible hand a\nsignificance it does not have in Smith's\nwork, but it is nevertheless a useful model\nof how individuals produce aggregate\nbenefits by pursuing their own economic\ninterests.",
+            "Although Smith is famed for his metaphor\nof the invisible hand, the metaphor was\nlargely ignored until economists in the\ntwentieth century came to realize that the\nmetaphor was a robust model that\nanticipated their own views."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 1, Q16). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q017",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q17",
+          "passageTitle": "Main Ideas — Q17",
+          "passage": "Roy McLendon's Moonlit St. Lucie, a riverscape\nfeaturing the silhouette of a single palm tree\nagainst the backdrop of shimmering water and a\nbrilliant moonlit sky, is typical of paintings by\nthe Florida Highwaymen, an informal collective\nof landscape artists mainly active in the 1950s\nand '60s. Remarkable for anticipating and\namplifying cultural perceptions of Florida that\nbecame pervasive in the public consciousness,\npaintings by the Highwaymen are readily\nidentifiable by the natural iconography—placid\ninland rivers, windswept palm trees—that\nMcLendon and colleagues perpetually revisited.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Although similar in its subject matter to\nmany paintings by the Florida\nHighwaymen, Moonlit St. Lucie is now\nmore highly regarded than other Florida\nHighwaymen paintings are.",
+            "Representative images found across many\npaintings by McLendon and other Florida\nHighwaymen came to be widely associated\nwith Florida in part due to the Florida\nHighwaymen's influence.",
+            "Although paintings by the Florida\nHighwaymen were once celebrated for their\ndepictions of Florida's natural\nenvironments, the popularity of these\npaintings waned after the 1960s.",
+            "The placid inland rivers and windswept\npalm trees that are typical of McLendon's\nworks, which are otherwise\nindistinguishable from other Florida\nHighwaymen paintings, help to\ndifferentiate McLendon's paintings from\nthose of his colleagues."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 1, Q17). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q018",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q18",
+          "passageTitle": "Main Ideas — Q18",
+          "passage": "The following text is adapted from Jerome K.\nJerome's 1889 novelThree Men in a Boat (To\nSay Nothing of the Dog).The narrator is\ntraveling by boat with Harris and another friend.\n[Harris] told us anecdotes of how he had gone\nacross the [English] Channel when it was so\nrough that the passengers had to be tied into\ntheir [beds], and he and the captain were the\nonly two living souls on board who were not ill.\nSometimes it was he and the second mate who\nwere not ill; but it was generally he and one\nother man. If not he and another man, then it\nwas he by himself.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "During a previous boat trip, Harris spent\nmore time with the other passengers than\nwith the captain.",
+            "Harris has a hard time remembering his\nfirst trip across the English Channel when\nhis friends ask about it.",
+            "When Harris speaks of an earlier trip, he\noften changes the details but always brags\nabout his own wellness.",
+            "Harris is worried that he and his friends\nwill encounter rough waters during their\nboat trip."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 1, Q18). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q019",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q19",
+          "passageTitle": "Main Ideas — Q19",
+          "passage": "Spanning the 1920s to the 1980s, Mexican\narchitect Luis Barragan's prolific career evolved\nthrough distinct phases. After traveling to the\nUnited States and Europe in the early 1930s and\nimmersing himself in an international\narchitectural discourse, Barragan began\nincorporating principles derived from\nfunctionalism and modernism in his work, as\nseen in the El Arenal Parish Church, whose\nunadorned geometric forms contrast with the\nhistorically inspired architecture found in the\nhouses for Emiliano Robles Leon, one of\nBarragan's early projects in Guadalajara.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Barragan's designs of the El Arenal Parish\nChurch and the houses for Emiliano\nRobles Leon are considered paragons of a\nfunctionalist and modernist aesthetic.",
+            "Barragan's design of the houses for\nEmiliano Robles Leon is considered more\nexperimental than his design for the El\nArenal Parish Church.",
+            "Barragan's early work shows an initial\ndedication to a modernist aesthetic that he\nlater abandoned.",
+            "A notable shift in Barragan's design\naesthetic reflects the influence of his time\nabroad."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 1, Q19). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    },
+    {
+      "title": "Main Ideas — Set 2",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t01-q020",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q20",
+          "passageTitle": "Main Ideas — Q20",
+          "passage": "Like many other bird species that live only on\nthe Hawaiian archipelago, the Kaua'i 'amakihi\nhas adapted to life in a well-defined habitat,\nresulting in highly specialized physical and\nbehavioral characteristics that aid the species in\nsurvival. However, because the Kaua'i 'amakihi\nis highly specialized, it is especially vulnerable\nto environmental changes that can disrupt the\ndelicately balanced ecosystem in which it lives.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "The Kaua'i 'amakihi is a species of bird\nthat is related to many other Hawaiian\nbirds but does not share a habitat with\nany of them.",
+            "The Kaua'i 'amakihi is an example of a\nhighly specialized bird species found only\non the Hawaiian archipelago and is related\nto several other highly specialized bird\nspecies found there.",
+            "The Kaua'i 'amakihi is an example of a\nspecies unique to the Hawaiian archipelago\nthat is highly specialized and therefore\nparticularly susceptible to habitat\ndisturbance.",
+            "Hawaiian birds display a unique range of\nphysical and behavioral characteristics and\nas a result can only live in habitats unique\nto the Hawaiian archipelago."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 1, Q20). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q021",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q21",
+          "passageTitle": "Main Ideas — Q21",
+          "passage": "The following text is from Jose Rizal's 1891\nnovel The Reign of Greed (translated by Charles\nDerbyshire in 1912).\nIn his solitary retreat on the shore of the sea,\nwhose mobile surface was visible through the\nopen windows, extending outward until it\nmingled with the horizon, Padre Florentino was\nrelieving the monotony by playing on his\nharmonium sad and melancholy tunes, to which\nthe sonorous roar of the surf and the sighing of\nthe treetops of the neighboring wood served as\naccompaniments. Notes long, full, mournful as a\nprayer, yet still vigorous, escaped from the old\ninstrument. Padre Florentino, who was an\naccomplished musician, was improvising, and, as\nhe was alone, gave free rein to the sadness in his\nheart.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "The residence of Padre Florentino is\nespecially isolated.",
+            "Padre Florentino prefers to play music\nrather than listen to other musicians play.",
+            "Padre Florentino has dedicated himself to\nbecoming a skilled musician.",
+            "The sadness of Padre Florentino's music\nreflects his own feelings."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 1, Q21). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q022",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q22",
+          "passageTitle": "Main Ideas — Q22",
+          "passage": "The following text is from Ralph Waldo\nEmerson's 1841 essay \"The Method of Nature.\"\nThe scholars are the priests of that thought\nwhich establishes the foundations of the earth.\nNo matter what is their special work or\nprofession, they stand for the spiritual interest\nof the world, and it is a common calamity if\nthey neglect their post in a country where the\nmaterial interest is so predominant as it is in\nAmerica.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Military experience encourages Americans\nto contemplate aspects of human life that\nthey would not choose to otherwise.",
+            "It is unfortunate that so many intellectuals\nare concerned with material things rather\nthan ideas.",
+            "Many descriptions of the role of scholars in\nsociety unfairly diminish their importance.",
+            "In a country whose citizens are largely\npreoccupied with tangible gains, it is\ncrucial that some people work to foster\nand preserve ideas."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 1, Q22). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q023",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q23",
+          "passageTitle": "Main Ideas — Q23",
+          "passage": "At over a thousand pages across two volumes,\nThe Fifty-Year Mission, compiled by Edward\nGross and Mark A. Altman, is presented as the\n\"complete, uncensored, unauthorized oral\nhistory\" as told by the people behind the media\nfranchise Star Trek. The work aspires to be\ncomprehensive by, for example, including\naccounts from cast and crew members of every\nStar Trek television series and film to date. But\nwhile The Fifty-Year Mission is clearly a unique\nand valuable resource, it has a shortcoming\ncommon among oral histories: it lacks a clear\nauthorial point of view that could otherwise\nunite the various accounts into a cohesive whole.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "The Fifty-Year Mission includes more\naccounts from people involved with Star\nTrek television shows than it does from\npeople involved with Star Trek films.",
+            "The compilers of The Fifty-Year Mission\nhad lofty goals for their oral history of the\nStar Trek franchise, but the published\nwork lacks information about many key\nevents in the franchise's history.",
+            "The large amount of material compiled\ninto The Fifty-Year Mission is surprising\ngiven that many of the people involved in\nthe Star Trek franchise did not participate\nin the oral history project.",
+            "The Fifty-Year Mission represents a\nworthwhile attempt to thoroughly recount\nthe history of the Star Trek franchise, but\nits approach has an important limitation."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 1, Q23). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q024",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q24",
+          "passageTitle": "Main Ideas — Q24",
+          "passage": "Why do black-footed cats purr but leopards\nroar? Researchers hypothesize that this\ndifference between the two feline species may be\npartly due to a U-shaped bone in their throats\ncalled the hyoid. Black-footed cats, which are\nmuch smaller than leopards, have a rigid hyoid\nthat rumbles when the cat's larynx vibrates,\nresulting in a purr. By contrast, leopards have a\nsomewhat flexible hyoid, and the bone is\nattached to the skull with a stretchy ligament\nthat black-footed cats lack. These traits allow\nleopards and most other species of big cats to\nproduce powerful roars. The same traits may\nalso prevent most big cats from purring.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Both black-footed cats and leopards have\nU-shaped hyoid bones, but black-footed\ncats' hyoids are rigid whereas leopards'\nhyoids are flexible.",
+            "Leopards and most other species of big\ncats can roar because they have flexible\nhyoid bones that are attached by stretchy\nligaments to their skulls.",
+            "Researchers are uncertain why relatively\nsmall cats, such black-footed cats, purr but\nrelatively large cats, such as leopards, roar.",
+            "Differences related to the hyoid bone in\nblack-footed cats and leopards may help\nexplain why one species purrs and the\nother roars."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 1, Q24). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q025",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q25",
+          "passageTitle": "Main Ideas — Q25",
+          "passage": "In their meta-analysis of research on advergames\n(video games developed to promote products or\nservices), Zeph M.C. van Berlo et al, confirm\nthat such games, though they can elicit player\ninterest, may not facilitate subsequent recall of\nproduct and brand information. This\nphenomenon can be explained by the finite\nnature of cognitive capacity as it is articulated\nin Annie Lang's limited capacity model of\nmotivated mediated message processing. In this\ncase, players' cognitive resources are directed\nforemost toward the advergame's mechanics,\nleaving little or no capacity for encoding and\nstoring the information the advertiser intends to\nbe salient.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "The limited capacity model of motivated\nmediated message processing developed by\nLang provides a means of explaining the\nfinding by van Berlo et.al. that players\nmay not readily recollect the brand and\nproduct information embedded in\nadvergames.",
+            "The meta-analysis by van Berlo et al.\nreveals that higher engagement in\nadvergame mechanics is linked to lower\neffectiveness in persuading players to\npurchase particular brands and products.",
+            "Although the limited capacity model of\nmotivated mediated message processing\ndeveloped by Lang suggests otherwise,\nadvergames can succeed as marketing\ntools, provided that they achieve a balance\nbetween game mechanics and the\npromotion of a brand or product.",
+            "Research by van Berlo et al. corroborates\nLang's conclusion that because people\npredominantly focus on game mechanics\nwhen playing video games, it is difficult for\nadvergames to communicate brand and\nproduct information in ways that are\nhighly memorable."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 1, Q25). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q026",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q26",
+          "passageTitle": "Main Ideas — Q26",
+          "passage": "Like many other bird species that live only on\nthe Hawaiian archipelago, the 'akeke'e has\nadapted to life in a well-defined habitat,\nresulting in highly specialized physical and\nbehavioral characteristics that aid the species in\nsurvival. However, because the 'akeke'e is highly\nspecialized, it is especially vulnerable to\nenvironmental changes that can disrupt the\ndelicately balanced ecosystem in which it lives.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Hawaiian birds display a unique range of\nphysical and behavioral characteristics and\nas a result can only live in habitats unique\nto the Hawaiian archipelago.",
+            "The 'akeke'e is an example of a species\nunique to the Hawaiian archipelago that is\nhighly specialized and therefore\nparticularly susceptible to habitat\ndisturbances.",
+            "The 'akeke'e is a species of bird that is\nrelated to many other Hawaiian birds but\ndoes not share a habitat with any of them.",
+            "The 'akeke'e is an example of a highly\nspecialized bird species found only on the\nHawaiian archipelago and is related to\nseveral other highly specialized bird\nspecies found there."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 1, Q26). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q027",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q27",
+          "passageTitle": "Main Ideas — Q27",
+          "passage": "Community science involves professional\nscientists collaborating with members of the\npublic to study a topic. This approach to\nresearch can promote community engagement by\noffering insight into the daily life of a scientist.\nIt's also very effective because it greatly\nincreases the amount of data that can be\ncollected, such as when biologist Grace Herzel\nand colleagues studied butterfly color and its\nrelation to behavior and used findings reported\nby hundreds of students and community\nmembers in northwestern Arkansas.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Abbigail Merrill and colleagues used a\ncommunity science approach in their\nbutterfly research and were surprised at\nthe effect this had on public understanding\nof the nature of scientists' work.",
+            "A community science approach can\nincrease public understanding of the\nnature of scientists' work and generate\nlarge amounts of data, benefiting both\ncommunities and researchers.",
+            "A community science approach can benefit\ncommunities by increasing public\nunderstanding of the nature of scientists'\nwork, but it's less likely to help researchers\nobtain accurate data.",
+            "A community science approach allows\nresearchers to collect significantly more\ndata even though it's unlikely to have\nmuch of an effect on public understanding\nof the nature of scientists' work."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 1, Q27). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q028",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q28",
+          "passageTitle": "Main Ideas — Q28",
+          "passage": "Sometimes an animal will encounter another\nmember of its own species that it doesn't have\nany connection with. (For example, African\nlions that aren't in the same pride might meet.)\nWhen that happens, the animals have to make\ndecisions: Will they compete for a mate? Will\nthey help in a fight with a predator? Will there\nbe another outcome? In other words, the\nanimals have to think carefully about possible\nrisks and benefits.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Animal species that do not have any\npredators",
+            "A kind of meeting between animals of the\nsame species",
+            "Animal species that are close to becoming\nextinct",
+            "Different environments that some animal\nspecies live in"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 1, Q28). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q029",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q29",
+          "passageTitle": "Main Ideas — Q29",
+          "passage": "The following text is adapted from Daniel\nDefoe's 1704 nonfiction book The Storm.\nThe sermon is a sound of words spoken to the\near, and prepared only for present meditation,\nand extends no farther than the strength of\nmemory can convey it; a book printed is a\nrecord, remaining in every man's possession,\nalways ready to renew its acquaintances with his\nmemory, and always ready to be produced as an\nauthority or voucher to any reports he makes\nout of it, and conveys its contents for ages to\ncome, to eternity of mortal time, when the\nauthor is forgotten in his grave.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Words committed to print have a greater\npermanence than messages that are merely\nspoken aloud.",
+            "People are less likely to forget a message\nwhen they hear it spoken aloud than they\nare when they read it in print.",
+            "Unless a spoken message is delivered by an\nexpert, it can be safely ignored.",
+            "Most authors have little hope of being\nremembered well past their lifetimes."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 1, Q29). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q030",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q30",
+          "passageTitle": "Main Ideas — Q30",
+          "passage": "In a study by Mika R. Moran, Daniel A.\nRodriguez, and colleagues, residents of Quito,\nEcuador, and Buenos Aires, Argentina, were\nsurveyed about parks in their cities. Of the 618\nrespondents from Quito, 82.9% indicated that\nthey use the city's parks, and of the 683\nrespondents from Buenos Aires, 69.9% indicated\nusing city parks. Given that the percentage of\nQuito respondents who reported having access\nto other desired amenities near parks was much\nlower than that reported by Buenos Aires\nrespondents, the difference in park use can't be\nexplained by Quito residents having more access\nto desired nonpark amenities near parks.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "The study's finding that a greater\nproportion of residents use parks in Quito\nthan in Buenos Aires is partly due to the\ngreater prevalence of parks in Quito.",
+            "The study's findings suggest that an\nincrease in the number of amenities near\ncity parks would likely increase park use in\nQuito but not in Buenos Aires.",
+            "Although the study found that a greater\nproportion of residents use parks in Quito\nthan in Buenos Aires, that difference isn't\ndue to greater access to amenities near\nparks in Quito.",
+            "Even though the study found that parks in\nBuenos Aires are more likely to be close to\nother amenities than parks in Quito are,\nQuito has more amenities overall than\nBuenos Aires does."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 1, Q30). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q031",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q31",
+          "passageTitle": "Main Ideas — Q31",
+          "passage": "The following text is from a translation of María\nDueñas's 2009 novel The Time in Between.\nThe narrator has just rented an apartment and\nis entering it for the first time. Over the years\nthere have been many times when my destiny\nhas delivered me unexpected moments,\nunforeseen twists and turns that l've had to\nhandle on the fly as they appeared. Occasionally\nI was ready for them; very often I wasn't.\nNever, however, was I so aware of entering a\nnew stage as I was that afternoon in October\nwhen I finally dared to cross the threshold and\nmy steps sounded hollowly in the unfurnished\napartment. Behind me was a complicated past,\nand in front of me, like an omen, I could see a\nspace opening out, a great empty space that\ntime would take care of filling up.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "The narrator feels optimistic about the\nfuture success of a new business.",
+            "The narrator recognizes that a particular\nmoment marks a major shift in her life.",
+            "The narrator has always had a plan for\nhow to handle big moments in her life.",
+            "The narrator wants to express her\ngratitude for the people who have helped\nher."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 1, Q31). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q032",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q32",
+          "passageTitle": "Main Ideas — Q32",
+          "passage": "When Kenyan writer Ngugi wa Thiong'o, who\nhad previously published four novels in English,\nbegan writing in his native language, Gikuyu, in\nthe 1970s, several fellow writers and critics\ncautioned that doing so might make his works\ninaccessible outside his own community. Some\nnoted that Kiswahili–widely spoken in Kenya\nand elsewhere in Africa–would be a more\npractical choice. Rejecting their arguments,\nNgugi went on to author dozens of acclaimed\nworks in Gikuyu that have been translated into\na total of more than thirty languages.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Although Ngugi insisted on publishing his\nfirst works in Gîküyü, they have since been\ntranslated into many other languages.",
+            "Although Ngugi's decision to write in\nGîküyü was met with some skepticism, it\ndidn't prevent him from achieving literary\nsuccess.",
+            "The reaction to Ngugi's rejection of\nEnglish illustrates that some literary\nexperts believe that fame is most easily\ngained by writing in a widely understood\nlanguage, such as Gîküyü.",
+            "In the 1970s, Ngugi became convinced that\nliterature ought to be written in authors'\nnative languages, and he proceeded to\npublish many works in Gikuyu."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 1, Q32). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q033",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q33",
+          "passageTitle": "Main Ideas — Q33",
+          "passage": "The following text is adapted from Guy de\nMaupassant's 1884 short story \"A Recollection.\"\nfrom the collection Guy de Maupassant Short\nStories (translated by Albert M.C. McMaster et\nal. in 1903). The narrator is taking a boat down\nthe Seine river from Paris, France, to the\nsurrounding countryside.\nI took up a position in the bows [front of the\nboat], standing up and looking at the quays, the\ntrees, the houses and the bridges disappearing\nbehind us. And suddenly I perceived the great\nviaduct of Point du Jour which blocked the\nriver. It was the end of Paris, the beginning of\nthe country, and behind the double row of\narches the Seine, suddenly spreading out as\nthough it had regained space and liberty,\nbecame all at once the peaceful river which flows\nthrough the plains, alongside the wooded hills,\namid the meadows, along the edge of the forests.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "The narrator is anxious for the trip to the\ncountryside to be over as quickly as\npossible, and is frustrated that it is taking\nso long.",
+            "The narrator perceives a parallel between\nthe shift from the urban environment to\nthe countryside and the changes in the\nfeatures of the river itself.",
+            "The narrator is surprised to see that the\nboat is taking him out of the city but is\nexhilarated by the opportunity to explore\nan unknown place.",
+            "The narrator contrasts his feelings of\napprehension with the apparent\ntranquility of the river as the boat enters\nthe countryside."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 1, Q33). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q034",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q34",
+          "passageTitle": "Main Ideas — Q34",
+          "passage": "The following text is adapted from Guy de\nMaupassant's 1884 short story \"A Recollection,\"\nfrom the collection Guy de Maupassant Short\nStories (translated by Albert M.C. McMaster et\nal. in 1903). The narrator is taking a boat down\nthe Seine river from Paris, France, to the\nsurrounding countryside.\nI took up a position in the bows [front of the\nboat], standing up and looking at the quays, the\ntrees, the houses, and the bridges disappearing\nbehind us. And suddenly I perceived the great\nviaduct of Point du Jour which blocked the\nriver. It was the end of Paris, the beginning of\nthe country, and behind the double row of\narches the Seine, suddenly spreading out as\nthough it had regained space and liberty,\nbecame all at once the peaceful river which flows\nthrough the plains, alongside the wooded hills,\namid the meadows, along the edge of the forests.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Though the Seine is calm during most of\nthe journey, the arches of the Point du\nJour created a small area of heavy current.",
+            "The Seine is similar to Paris in that it is\nbeautiful and slow to change",
+            "As the journey progressed from Paris to\nthe countryside, the waters of the Seine\ngradually cleared.",
+            "The waters of the Seine are more confined\nand rough in Paris than they are in the\ncountryside."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 1, Q34). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q035",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q35",
+          "passageTitle": "Main Ideas — Q35",
+          "passage": "Although notorious for its strict formal\nrequirements, the sonnet is nevertheless\nrepresented by such wide-ranging examples as\nMaggie Anderson's \"Sonnet for Her Labor\" and\nTyehimba Jess's \"Millie and Christine\nMcCoy\"–poems that differ remarkably in\nsubject, rhythm, and structure. It may seem\ncounterintuitive that the sonnet–ostensibly rigid\nand timeworn–could accommodate such variety,\nbut poet Carl Phillips contends that the form\ninvites experimentation: when a genre's\nconventions are as recognizable as those of the\nsonnet, the opportunity to subvert them is\nespecially irresistible.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Although Anderson's and Jess's sonnets\nare both widely celebrated for their\nstriking originality, most modern examples\nof the form are generally regarded as\nconventional.",
+            "As a form, the sonnet encourages a\nsurprising amount of variety, even though\ncertain characteristics associated with it\nsuggest this would be unlikely.",
+            "That the sonnet remains as popular as it is\ntoday is unexpected, given that many of\nthe features associated with the form have\nlong since seemed antiquated to readers.",
+            "Although the sonnet is now recognized for\nthe way it facilitates experimentation,\nthere was a long period in its history in\nwhich very little innovation occurred."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 1, Q35). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q036",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q36",
+          "passageTitle": "Main Ideas — Q36",
+          "passage": "Habitat navigation is a skill that helps animals\nreach food or safety. To test how navigation\nworks in fish, Shachar Givon and colleagues\ntaught goldfish to drive a vehicle–a motorized\nfish tank with wheels–on land. The vehicle was\nprogrammed to move in the same direction that\nthe fish swam in within the tank. In the\nexperiment, the fish were tasked with driving\ntheir tank to a pink board. They received a\ntreat when they succeeded, and they often did.\nBecause the fish could move their tank to the\nboard, Givon concludes that their navigational\nskills aren't specific to an aquatic environment.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Research shows that although they live in\nthe water, fish can navigate on land with a\nlittle mechanical help.",
+            "Fish can navigate only within their natural\naquatic environment in order to find food\nand safety.",
+            "Researchers can train animals to complete\nmany different tasks when they offer the\nanimals treats.",
+            "An animal's navigational skills directly\ndepend on that animal's particular\nenvironment."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 1, Q36). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q037",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q37",
+          "passageTitle": "Main Ideas — Q37",
+          "passage": "Women like Dorothy T. Blum made important\nearly contributions to the history of US\ncryptology, a field concerned with secure data\ncommunication and storage. Blum provided\ncryptological services for the US Army in the\n1940s and then joined the National Security\nAgency (NSA). She was a pioneer in\ntransitioning the NSA to using computers for\ncryptoanalysis. In this way, Blum and others\nlike her helped make it possible for more\nwomen–such as Maureen Baginski, who\ncurrently works in intelligence and supports the\nFBI–to enter the field of cryptology.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Cryptology is a field that focuses primarily\non securely managing data.",
+            "Women such as Dorothy T. Blum and\nMaureen Baginski have contributed to the\nfield of cryptology.",
+            "Dorothy T. Blum and Maureen Baginski\nworked together on an important project\nin the field of cryptology.",
+            "Cryptology should be taught more often in\nschools to encourage more women to enter\nthe field."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 1, Q37). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t01-q038",
+          "skill": "Main Ideas",
+          "domain": "Information and Ideas",
+          "focus": "Determine the central idea or primary theme of a passage",
+          "source": "SAToplam 2.0 · Topic 1 · Q38",
+          "passageTitle": "Main Ideas — Q38",
+          "passage": "Mauricio Drelichman and Hans-Joachim Voth's\nresearch into the debt defaults of Philip II (who\nruled an empire including Spain and much of\nBelgium from 1556 to 1598) relates to other\nwork on European early modern state finance,\nincluding Hoffman and Norberg's research on\nthe relationship between state finance and\npolitical development. But Drelichman and\nVoth's unique contribution to the field is their\nreconstruction of the earliest extant set of\nannual fiscal records for any sovereign state,\ndemonstrating in turn that Philip's defaults\nwere caused by short-term cash shortages, not\nlong-term unsustainable debts.",
+          "prompt": "Which choice best states the main idea of the\ntext?",
+          "options": [
+            "Analysis of the earliest available records of\na sovereign state's finances can be found\nnot in the work of Hoffman and Norberg\nbut in that of Drelichman and Voth.",
+            "Drelichman and Voth advanced the field of\nresearch on European early modern state\nfinance by assembling a novel collection of\nevidence that gave them insight into Philip\nII's debt defaults.",
+            "The research by Drelichman and Voth\nsuggests that the logistics of ruling both\nSpain and much of Belgium led to\nshort-term problems with cash that forced\nPhilip II to default on his debts.",
+            "Drelichman and Voth's research on Philip\nII's debt defaults builds on earlier work by\nHoffman and Norberg, adding nuance to\nthe earlier work's findings."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 1, Q38). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    }
+  ]
+}

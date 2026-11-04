@@ -1,0 +1,795 @@
+{
+  "format": "bbplus",
+  "version": 1,
+  "type": "practice",
+  "title": "SAToplam 2.0 — Main Purpose",
+  "description": "Official real exam SAT reading practice questions (March 2023 – August 2025) compiled by @satashkent. Domain: Craft and Structure.",
+  "modules": [
+    {
+      "title": "Main Purpose — Set 1",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t08-q001",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q1",
+          "passageTitle": "Main Purpose — Q1",
+          "passage": "12.5sec. (*Exam level)\nWhen people think of dinosaurs with feathers,\nthey typically think of winged dinosaurs, such as\nthe bat-like Ambopteryx. However, many\ndinosaurs that didn't have wings also had\nfeathers on their bodies. For instance, research\nindicates that the wingless large Yutyrannus\nlikely had feathers.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To discuss the presence of feathers on\ncertain types of dinosaurs.",
+            "To point out the differences between\ndinosaur feathers and bird feathers.",
+            "To explain why feathered dinosaurs went\nextinct.",
+            "To argue that only one species of dinosaur\nhad feathers."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 8, Q1). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q002",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q2",
+          "passageTitle": "Main Purpose — Q2",
+          "passage": "Smartwatches and fitness trackers currently\navailable to the public claim to be able to\nprovide data on VO2 max, a measurement of an\nindividual's fitness level that indicates heart\ndisease and mortality risk. However, whether or\nnot these measurements are accurate is still\nunproven. Meanwhile, Cambridge developed a\nmodel that can provide more accurate tracking\nof one's heart rate and can also monitor fitness\nchanges leading to better indications of health\nrisks.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To prove that currently available\nsmartwatches are not an accurate\nindicator of overall health.",
+            "To introduce a new fitness tracker model\nthat may provide more accurate data on\nhealth than current products.",
+            "To argue that individuals should not rely\non fitness trackers or smartwatches to\nmonitor their health.",
+            "To summarize the findings of a new fitness\ntracker model that will be available to the\npublic soon."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q2). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q003",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q3",
+          "passageTitle": "Main Purpose — Q3",
+          "passage": "Researchers have found what they believe to be\na cause behind mice being motivated to exercise:\ngut microbes. The specific molecules in these\nmicrobes appear to stimulate the desire in the\nbrain to run and continue running. It has been\npostulated that if this bacteria could be given to\npeople in pill form, they too could experience\nthe same motivation to exercise.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To understand better what makes mice\nmotivated to move.",
+            "To suggest that the findings in mice could\nbe used to increase human activity.",
+            "To explain research in mice that will be\nused to support people.",
+            "To imply that a lack of motivation to work\nout is not controllable."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q3). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q004",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q4",
+          "passageTitle": "Main Purpose — Q4",
+          "passage": "Eden Robinson is a novelist and a member of\nthe Haisia Nation in western Canada. Critics\nand fellow writers have praised her work for\ncombining traditional Haisia stories with\npopular genres of literature, such as fantasy and\nmystery fiction. But Robinson is not the only\nIndigenous writer to blend traditional stories\nwith popular literature. In the 2019 novel\nEmpire of wild, Cherie Dimaline successfully\nblended the oral storytelling tradition of her\npeople, The Metis, with horror fiction.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To discuss two writers who blend\ntraditional indigenous stories with popular\ngenres.",
+            "To urge younger Indigenous authors to\navoid writing in popular genres.",
+            "To argue that traditional Indigenous\nstories are more memorable than most\nnovels are.",
+            "To explain why one indigenous author has\nachieved more success than another has."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 8, Q4). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q005",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q5",
+          "passageTitle": "Main Purpose — Q5",
+          "passage": "Luang Prabang has high pedestrian traffic, but\nsimply replicating a feature of Luang Prabang\nassociated with walkability—e.g., its\nhuman-scaled architecture—may be insufficient\nto induce increased walking in other cities. As\nurbanist Mariela Alfonzo argues, our\nunderstanding of individuals' decision-making\nabout whether to walk is insufficiently robust:\nsome studies emphasize the role of local norms,\nothers the role of demographic characteristics,\nand so on, but walking decisions are made in\ncomplex context in which multiple conditions\nand needs inform individuals' choices.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To describe the effect of human-scaled\narchitecture on any given city's walkability.",
+            "To explain why it is challenging to\ncompare the amount of pedestrian traffic\nin different cities.",
+            "To present a claim about how individuals'\ndecision-making about walking can be\nimproved.",
+            "To discuss the difficulty of identifying a\nreliable way to increase walking in any\ngiven city."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 8, Q5). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q006",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q6",
+          "passageTitle": "Main Purpose — Q6",
+          "passage": "Researchers have long hypothesized that woolly\nmammoths were hunted to extinction in North\nAmerica by humans using spears with grooved\ntips known as Clovis points. One anthropologist\nset out to test this hypothesis. Using a\nmechanical spear-thrower, he launched spears\nwith Clovis points into mounds of\nclay—substitutes for the animals' large bodies.\nThe projectiles generally penetrated only a few\ninches into the clay, an amount insufficient to\nhave harmed most woolly mammoths. This led\nthe anthropologist to conclude that hunters\nusing spears with Clovis points likely weren't\nthe principal drivers of the extinction.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To argue for the significance of new\nfindings amid an ongoing debate among\nresearchers.",
+            "To discuss the advantages and\ndisadvantages of the method used in an\nexperiment.",
+            "To summarize two competing hypotheses\nand a major finding associated with each\none.",
+            "To describe an experiment whose results\ncast doubt on an established hypothesis."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 8, Q6). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q007",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q7",
+          "passageTitle": "Main Purpose — Q7",
+          "passage": "Scholarly interest in literary juvenilia—writings\nby children and teenagers—tends to focus on\nunpublished works by authors who became\nfamous as adults, such as Charles Dickens's\npoem \"The Bill of Fare,\" which he wrote around\nthe ages of 18-20, because they offer insights\ninto their authors' artistic development. But\nsome scholars also argue that recovering\njuvenilia by lesser-known writers is essential to\nunderstanding literary history: Daisy Ashford's\nnovels, which she published as a child, were\nwidely read by contemporaries and are therefore\ndeserving of closer attention.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To describe the challenges famous writers\nencountered when seeking to publish works\nwritten in their childhood.",
+            "To present reasons why literary scholars\nconsider juvenilia to be valuable resources.",
+            "To compare the accomplishments of young\nwriters with those of their adult\ncontemporaries.",
+            "To argue that Ashford's novels have more\nliterary merit than Dickens's juvenilia do."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q7). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q008",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q8",
+          "passageTitle": "Main Purpose — Q8",
+          "passage": "The following text is adapted from Jean\nWebster's 1912 novel Daddy-Long-Legs. The\nnarrator is a young college student writing\nletters detailing her weekly experiences.\n(The college is) organizing the Freshman\nbasketball team and there's just a chance that I\nshall make it. I'm little of course, but terribly\nquick and wiry and tough. While the others are\nhopping about in the air, I can dodge under\ntheir feet and grab the ball.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To compare basketball with other sports.",
+            "To provide details of how to play\nbasketball.",
+            "To state how players will be chosen for the\nbasketball team.",
+            "To explain why the narrator thinks she\nmight make the basketball team."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 8, Q8). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q009",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q9",
+          "passageTitle": "Main Purpose — Q9",
+          "passage": "In the late 1800s, Spanish-language newspapers\nflourished in cities across Texas. San Antonio\nalone produced eleven newspapers in Spanish\nbetween 1890 and 1900. But El Paso surpassed\nall other cities in the state. This city produced\ntwenty-two newspapers in Spanish during that\nperiod. El Paso is located on the border with\nMexico and has always had a large population of\nSpanish speakers. Thus, it is unsurprising that\nthis city became such a rich site for\nSpanish-language journalism.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To compare Spanish-language newspapers\npublished in Texas today with ones\npublished there during the late 1800s.",
+            "To explain that Spanish-language\nnewspapers thrived in Texas and especially\nin El Paso during the late 1800s.",
+            "To argue that Spanish-language\nnewspapers published in El Paso\ninfluenced the ones published in San\nAntonio during the late 1800s.",
+            "To explain why Spanish-language\nnewspapers published in Texas were so\npopular in Mexico during the late 1800s."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q9). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q010",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q10",
+          "passageTitle": "Main Purpose — Q10",
+          "passage": "The following text is from Betty Smith's 1943\nnovel A Tree Grows in Brooklyn. Francie, a\nyoung girl, visits the library often.\nFrancie thought that all the books in the world\nwere in that library and she had a plan about\nreading all the books in the world. She was\nreading a book a day in alphabetical order and\nnot skipping the dry ones. She remembered that\nthe first author had been Abbott. She had been\nreading a book a day for a long time now and\nshe was still in the B's. Already she had read\nabout bees and buffaloes, Bermuda vacations\nand Byzantine architecture. For all her\nenthusiasm, she had to admit that some of the\nB's had been hard going. But Francie was a\nreader.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To illustrate Francie's enjoyment of an\nunusual topic.",
+            "To explain why Francie prefers reading\nover other activities.",
+            "To portray Francie's determination to\nmeet a goal.",
+            "To describe a book that Francie greatly\nadmires."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 8, Q10). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q011",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q11",
+          "passageTitle": "Main Purpose — Q11",
+          "passage": "Gus Edwards's atmospheric play Black Body\nBlues was produced in 1978 by the\ngroundbreaking Negro Ensemble Company\n(NEC). NEC cofounder Douglas Turner Ward,\nwho worked as an actor, director, and\nplaywright, had met actor and producer Robert\nHooks while they were performing in a 1960\ntouring production of Lorraine Hansberry's play\nA Raisin in the Sun. Together, they envisioned\na theater company that would nurture and\nshowcase the work of Black theater\nprofessionals. Since NEC's founding in 1967, its\nworkshops and performances have given Black\nplaywrights, including Edwards, a forum for\ntheir compelling stories.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To show how the play A Raisin in the Sun\ninfluenced Ward and Hooks.",
+            "To bring attention to a work by Gus\nEdwards.",
+            "To describe how Ward and Hooks's\ncreative partnership changed over time.",
+            "To discuss the origin and importance of\nthe NEC."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 8, Q11). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q012",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q12",
+          "passageTitle": "Main Purpose — Q12",
+          "passage": "Today composer Scott Joplin is mainly\ncelebrated for his catchy ragtime pieces \"Maple\nLeaf Rag\" and \"The Entertainer.\" However, by\noverlooking his less famous works, listeners will\nmiss the full range of Joplin's creativity. For\ninstance, his waltz \"Pleasant Moments\" and his\nopera \"Treemonisha\" skillfully blend ragtime\nand classical music. These masterpieces deserve\nas much fame as Joplin's biggest hits.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To argue that more attention should be\ngiven to Joplin's lesser-known works.",
+            "To describe the similarities and differences\nbetween ragtime music and opera.",
+            "To explain how Joplin learned to compose\nand perform ragtime music.",
+            "To encourage music lovers to listen to\nmusic by many different composers."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 8, Q12). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q013",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q13",
+          "passageTitle": "Main Purpose — Q13",
+          "passage": "Desolation Island, first published in 1978, is a\nnovel in Patrick O'Brian's Aubrey/Maturin\nseries, which includes twenty completed books.\nSome critics have found fault with the abrupt\nendings of Desolation Island and other books in\nthe series, saying that they do not finish\nconclusively but arbitrarily stop. But other\ncritics argue that the books should not be\nthought of as discrete texts with traditional\nbeginnings and endings but as a single incredibly\nlong work, similar to other multivolume stories,\nsuch as John Galsworthy's The Forsyte Saga.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To explain why many critics find the\nAubrey/Maturin novels to be remarkably\nentertaining despite flaws in the novels'\nstructures.",
+            "To describe a characteristic of the\nAubrey/Maturin novels and offer two\ndiffering viewpoints on this characteristic.",
+            "To argue that the Aubrey/Maturin series\nshould have the literary renown of The\nForsyte Saga.",
+            "To present a reason the unusual structure\nthat O'Brian uses for Desolation Island\nmakes it one of his most complex books."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q13). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q014",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q14",
+          "passageTitle": "Main Purpose — Q14",
+          "passage": "President Richard Nixon is most famous for his\nparticipation in the 1970s Watergate political\nscandal, a convoluted tale of criminality and\neraded ethics involving a constellation of\nassociates such as Chief of Staff H.R. \"Bob\"\nHaldeman and Nixon's personal friend Charles\n\"Bebe\" Rebozo. But Nixon's legacy is complex:\nhe has been praised for his role in opening\nrelations between the United States and China,\nand he once made an attempt at reforming\nUnited States health care policy that is arguably\na precursor to the Affordable Care Act, which\nbecame law during the Barack Obama\nadministration.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "It catalogs the most notable achievements\nof a historical figure.",
+            "It argues that the seeming prominence of a\nhistorical figure is largely due to the\nactions of others.",
+            "It assesses a historical figure's significance\nby considering both his achievements and\nfailings.",
+            "It explains how a historical figure's\nreputation has improved significantly with\nthe passage of time."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 8, Q14). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q015",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q15",
+          "passageTitle": "Main Purpose — Q15",
+          "passage": "Thermal technologies have been used in the food\nindustry for over 100 years, providing a way of\npreserving food in large batches. Recent\nadvancements in ohmic heating were made\nthrough research in Chile on the preservation of\nstrawberries. Ohmic heating is generally\nconsidered to be an improvement over more\nconventional thermal preservation methods:\nwhereas conventional methods transfer energy\nfrom the surface of a food to its interior, ohmic\nheating passes electric current through food\nproducts to generate heat within the food itself.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "It provides an overview of the research\ninto ohmic heating both globally and in a\nspecific country.",
+            "It introduces ohmic heating as a food\npreservation technology and identifies one\nof its advantages.",
+            "It explains why conventional heating\nmethods are popular in commercial\napplications and proposes a shift away\nfrom these methods.",
+            "It suggests that there are possible flaws in\nohmic heating technologies that have not\nyet been well researched."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q15). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q016",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q16",
+          "passageTitle": "Main Purpose — Q16",
+          "passage": "In 2020, rap artist and professor A.D. Carson\npublished the first peer-reviewed rap album\nabout his experiences with Black masculinity\ncalled \"i used to love to dream.\" Typically in\npeer review, experts evaluate scholarly articles\nprior to publication. For Carson's album,\ndubbed a \"mixtap/e/ssay,\" peer review involved\nboth scholars and rap artists. In combining\nelements of a mixtape album with scholarly\nessays that connect Carson's lyrics to historical\nand contemporary contexts for listeners both\ninside and outside academia, Carson's album\nhelped redefine how scholarship is created and\nshared.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To compare the relative public impact of\nscholarly articles and albums.",
+            "To describe how each step of the peer\nreview process unfolds.",
+            "To capture one scholar's opinion of a new\nrap album.",
+            "To explain why a certain rap album is\nparticularly innovative."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 8, Q16). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q017",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q17",
+          "passageTitle": "Main Purpose — Q17",
+          "passage": "The following text is adapted from Adib\nKhorram's 2018 novel Darius the Great Is Not\nOkay. Darius, a teenager from the United\nStates, is visiting his grandparents, Babou and\nMamou, in Iran. They are preparing for a\nholiday celebration.\nI felt like a tourist. But Babou fussed with my\ncap a little more, even though Mamou had\nalready gotten it settled. He looked me in the\neye from time to time, like he was looking for\nsomething, and thought maybe just maybe I had\nit in me after all. Babou hummed to himself as\nhe smoothed out my shoulder seams and rested\nhis hands on them. \"I am glad you are here to\nsee this, Darioush-jan.\" Maybe I wasn't such a\ntourist.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To demonstrate that Babou and Darius\naren't very interested in going to new\nplaces.",
+            "To emphasize that Darius has been\nlooking forward to an event.",
+            "To suggest that Babou is planning to visit\nDarius in the United States soon.",
+            "To show that Babou affects the way\nDarius thinks of himself."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 8, Q17). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q018",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q18",
+          "passageTitle": "Main Purpose — Q18",
+          "passage": "In 2011 Brynn M. Devine and colleagues\npublished a study concluding that ocean\nacidification has a strong effect on the behavior\nof Cheilodipterus quinquelineatus, a species of\nfish. However, Devine and colleagues' study\nrelied on a mean sample size of only about 25\nfish. In a 2022 review of various scientists'\nconclusions about the impacts of ocean\nacidification on fish behavior, Timothy D. Clark\nand colleagues caution that relying on such a\nrelatively small sample size can increase the\npotential for biased analysis. Such analysis, in\nturn, can contribute to reports of exaggerated\neffects.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To note a potential concern about the\nfindings of a scientific study.",
+            "To discuss an aspect of ocean acidification\nthat is frequently overlooked.",
+            "To present a debate between two research\nteams about a cause of ocean acidification.",
+            "To explain how the behavior of a fish\nspecies has changed over time."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 8, Q18). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q019",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q19",
+          "passageTitle": "Main Purpose — Q19",
+          "passage": "San Francisco has high pedestrian traffic, but\nsimply replicating a feature of San Francisco\nassociated with walkability—e.g. its high\ndensity of storefronts—may be insufficient to\ninduce increased walking in other cities. As\nurbanist Mariela Alfonzo argues, our\nunderstanding of individuals decision-making\nabout whether to walk is insufficiently robust:\nsome studies emphasize the role of demographic\ncharacteristics, others the role of public transit\navailability, and so on, but walking decisions are\nmade in complex contexts in which multiple\nconditions and needs inform individuals' choices.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To discuss the difficulty of identifying a\nreliable way to increase walking in any\ngiven city.",
+            "To explain why it is challenging to\ncompare the amount of pedestrian traffic\nin different cities.",
+            "To describe the effect of a high density of\nstorefronts on any given city's walkability.",
+            "To present a claim about how individual's\ndecision-making about walking can be\nimproved."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 8, Q19). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q020",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q20",
+          "passageTitle": "Main Purpose — Q20",
+          "passage": "Can field mustard plants grow on Mars? Can\npea plants? You might think the answer to\nthese questions is obviously no, but researchers\nin the Netherlands recently showed that the\nseeds of many common plant species can\ngerminate in soil designed to simulate Martian\nconditions, as long as water is supplied. In fact,\nsome species actually did better in Martian soil\nthan in Earth soil: 30 percent of field mustard\nseeds sprouted when planted in simulated\nMartian soil, compared with 4 percent that did\nwhen planted in soil from their home planet.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To answer long-standing questions about\nhow Martian soil conditions can be\nsimulated on Earth.",
+            "To present a surprising finding about\nplants grown in soil intended to be similar\nto Martian soil.",
+            "To discuss an unexpected result about the\nrole of water in plants grown in simulated\nMartian soil.",
+            "To explain an important study of\ndifferences in the composition of Martian\nsoil and the composition of Earth soil."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q20). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q021",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q21",
+          "passageTitle": "Main Purpose — Q21",
+          "passage": "During Rome's republican period, which ended\nin the first century BCE, libraries were\npredominantly owned by wealthy individuals\nwho tightly controlled access to their book\ncollections. The first public library became\navailable in Rome in 28 BCE and was soon\nfollowed by one commissioned by Emperor\nAugustus. As modern scholar Fabio Fernandes\nnotes, however, these two traditions aren't as\ndistinct as they seem, as both the emperor and\nthe private library owners viewed their libraries\nas extensions of their personal patronage, just\non vastly differing scales.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To call into question the notion that\nprivate Roman libraries disappeared\nduring the first century BCE.",
+            "To contend that early imperial leaders in\nRome wielded too much influence over\nlibraries.",
+            "To give a brief overview of public access to\nlibraries throughout Rome's republican\nperiod.",
+            "To assert that private and early public\nlibraries in ancient Rome had an essential\nsimilarity."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 8, Q21). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q022",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q22",
+          "passageTitle": "Main Purpose — Q22",
+          "passage": "The following text is from George Marion\nMcClellan's 1895 poem \"Eternity.\"\nMy spirit swoons, and all my senses cry\nFor Ocean's breast and covering of the sky.\nRock me to sleep, ye waves, and outward bound,\nJust let me drift far out from toil and care,\nWhere lapping of the waves shall be the sound.\nWhich mingled with the winds that gently bear\nMe on between a peaceful sea and sky,\nTo make my soothing slumberous lullaby.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To justify the speaker's qualms about\nbeing transported by the ocean to a quiet\ndestination.",
+            "To contrast the demands of the speaker's\neveryday life with the serenity of being\nrocked to sleep by the ocean.",
+            "To illustrate the increasing intensity of the\nspeaker's desire to escape ongoing\nhardship by gliding on the ocean.",
+            "To convey the speaker's longing for the\nocean to impart a sense of inner\ntranquility."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 8, Q22). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    },
+    {
+      "title": "Main Purpose — Set 2",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t08-q023",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q23",
+          "passageTitle": "Main Purpose — Q23",
+          "passage": "Archaeologists studying the ancient city of\nPompeii in Italy recently discovered a\nwell-preserved food shop known as a\nthermopolium. The site contains food remains,\nartworks, and decorations. These items give\nresearchers a better understanding of what daily\nlife in Pompeii may have been like. For example,\nthe archaeologists found a ceramic jar that they\nbelieve likely contained a meat and seafood stew.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To discuss the political system of Italy",
+            "To present a recent archaeological\ndiscovery",
+            "To describe a region's climate",
+            "To compare ancient artworks with modern\nones"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q23). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q024",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q24",
+          "passageTitle": "Main Purpose — Q24",
+          "passage": "The following text is adapted from Daniel\nDefoe's 1704 nonfiction book The Storm.\nThe sermon is a sound of words spoken to the\near, and prepared only for present meditation,\nand extends no farther than the strength of\nmemory can convey it; a book printed is a\nrecord, remaining in every man's possession,\nalways ready to renew its acquaintances with his\nmemory, and always ready to be produced as an\nauthority or voucher to any reports he makes\nout of it, and conveys its contents for ages to\ncome, to eternity of mortal time, when the\nauthor is forgotten in his grave.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "It recounts why the works of some artists\nare still discussed by critics after the\nartists' deaths while others are not.",
+            "It analyzes the contributions to society of\ntwo different groups of scholars.",
+            "It demonstrates that one form of\ncommunication is more commonly used\nthan another.",
+            "It describes differences in the\ncharacteristics of two kinds of\ncommunication."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 8, Q24). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q025",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q25",
+          "passageTitle": "Main Purpose — Q25",
+          "passage": "The following text is adopted from Pam Munoz\nRyan's 2020 novel Mananaland. In the village\nwhere Max lives, there is an old fortress called\nLa Reina. Children in the village say that the\nfortress is haunted.\nFor as long as he could remember, Max had\nbegged Papa (his father) to take him to see La\nReina and the ruins up close. He'd be a hero\namong his friends if he was the first boy to cross\nthe haunted gates! Just because Papa didn't\nbelieve in ghosts didn't mean they weren't there.\nMaybe this summer Papa would finally take\nhim. He was almost twelve.",
+          "prompt": "Which choice best describes the overall purpose\nof the text?",
+          "options": [
+            "To show how much Max wants to visit La\nReina.",
+            "To portray how proud Max's father is of\nMax.",
+            "To criticize Max for disliking summer.",
+            "To explain why Max doesn't want to grow\nup yet."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 8, Q25). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q026",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q26",
+          "passageTitle": "Main Purpose — Q26",
+          "passage": "Argyroxiphium sandwicense is a species in a\nfamily of plants known collectively as the\nsilversword alliance, all of which grow only on\nthe Hawaiian Islands. Members of this alliance\nexhibit an extraordinary range of phenotypes,\nwith some species maturing into vines and\nothers into shrubs and trees. All species in the\nalliance descended from a single ancestral\ntarweed plant that arrived on the islands around\n5 million years ago. The tarweed's descendants\ndiversified into distinct species as they adapted\nto live in the wide variety of habitats found on\nthe Hawaiian Islands.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To advance the claim that all plants on\nthe Hawaiian Islands are part of the\nsilversword alliance and list possible\nancestors of the plants that make up the\nalliance.",
+            "To indicate the specific tarweed ancestor\nof all plants that grow on the Hawaiian\nIslands and explain why the plants have\nsuch varied physical characteristics.",
+            "To describe the silversword alliance and\nexplain how the plant family became so\nvaried.",
+            "To describe the specific habitat where\nArgyroxiphium sandwicense are found and\nidentify other plants that share a common\nancestor with them."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 8, Q26). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q027",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q27",
+          "passageTitle": "Main Purpose — Q27",
+          "passage": "In 1879, in an effort to determine the longevity\nof certain seeds left in soil, botanist William\nBeal buried 20 glass bottles filled with sand and\nseeds from a variety of plants, including\nVerbascum, Lepidium virginicum, and Stellaria\nmedia. Since then, some of the bottles have\nbeen retrieved in the periodic checks of seed\nviability researchers are conducting. After 60\nyears had elapsed, most of the seeds in those\nbottles stopped germinating, but Verbascum\nseeds have remained viable, including those from\na bottle dug up in 2021 by Margaret Fleming,\nLars Brudvig, and colleagues.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To discuss an ongoing experiment.",
+            "To explain how to get rid of certain plants.",
+            "To compare two experiments addressing\nthe same questions.",
+            "To describe challenges associated with\npreserving seeds."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 8, Q27). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q028",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q28",
+          "passageTitle": "Main Purpose — Q28",
+          "passage": "Karl Polanyi and other historians of capitalism\nrarely discuss domestic capitalism in Africa\nbefore the period of European colonization,\nimplicitly presenting capitalism as external to\nand imposed on Africa. Mariana Candido and\nother Africanist scholars have shown, however,\nthat in parts of Africa, centrally administered\nindustrial production, the legal treatment of\nland as private property, and other features of\ncapitalism predated colonization. One reason for\nthis discrepancy is that historians of capitalism\ntend to focus on longitudinal economic data\ndrawn from archival records, which do not exist\nfor much of precolonial Africa.",
+          "prompt": "Which choice best describes the main purpose of\nthe text?",
+          "options": [
+            "To explain why historians of capitalism\nand Africanist scholars disagree about\nwhich activities are features of capitalism",
+            "To present and account for a potentially\nmisleading characteristic of the work of\nhistorians of capitalism",
+            "To describe and evaluate a method used by\nAfricanist scholars that distinguishes their\nwork from that of historians of capitalism",
+            "To summarize a debate between historians\nof capitalism and Africanist scholars about\nhow to interpret longitudinal economic\ndata from archival records"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q28). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q029",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q29",
+          "passageTitle": "Main Purpose — Q29",
+          "passage": "Roy McLendon'sMoonlit St. Lucie, a riverscape\nfeaturing the silhouette of a single palm tree\nagainst the backdrop of shimmering water and a\nbrilliant moonlit sky, is typical of paintings by\nthe Florida Highwaymen, loosely affiliated\nlandscape artists mainly active in Fort Pierce,\nFlorida, during the 1950s and '60s. Some art\nhistorians suggest that Highwaymen paintings\nplayed a role in shaping popular perceptions of\nthe state that persist today: the natural\niconography that McLendon and colleagues\nconstantly revisited—placid inland rivers,\nwindswept palm trees—is now seen as classically\nFloridian.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To describe the historical circumstances in\nwhich paintings by the Florida\nHighwaymen experienced a resurgence in\npopularity.",
+            "To explain that a particular painting by\nRoy McLendon has had greater influence\non the broader culture of the state of\nFlorida than is generally acknowledged.",
+            "To contrast the public's reaction during\nthe 1950s and '60s to a particular painting\nby Roy McLendon with more recent\nreactions to it.",
+            "To present the argument that paintings by\nthe Florida Highwaymen likely helped to\ncreate a particular widespread impression\nof Florida."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 8, Q29). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q030",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q30",
+          "passageTitle": "Main Purpose — Q30",
+          "passage": "In Egypt, use of solid fuel (e.g., coal, wood) as a\nshare of total household fuel use fell by more\nthan 90 percent between 2000 and 2015; such\nshifts are often explained by appeal to the\nenergy ladder, a model holding that fuel choice\nis mediated mainly by household income\n(specifically, high-technology fuels displace solid\nfuels as incomes rise). Alemu Mekonnen and\nGunnar Köhlin study of fuel use in Ethiopia\nshows this model to be reductive, however:\nhousehold fuel use was heterogeneous, flexible,\nand influenced by several factors, including the\nlocal availability of different fuel sources.",
+          "prompt": "Which choice best describes the main purpose of\nthe text?",
+          "options": [
+            "To contrast patterns in household fuel use\nin two countries.",
+            "To account for the effect of fuel use on\nhousehold income.",
+            "To critique a frequently used model of\nchanges in household fuel prices.",
+            "To challenge a common explanation for\nhouseholds' fuel choices."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 8, Q30). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q031",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q31",
+          "passageTitle": "Main Purpose — Q31",
+          "passage": "Popularized in sixteenth- and\nseventeenth-century England by such poets as\nWilliam Shakespeare and Edmund Spenser, the\nsonnet sequence (a series of fourteen-line poems\nunified by overarching thematic concerns)\nremains a prevalent poetic genre. Although the\nsonnet's intricate, rule-bound structure makes\nwriting even one sonnet—let alone an entire\nseries—intrinsically challenging, more recent\npoets from Gwendolyn Brooks to Marilyn\nNelson have undertaken sonnet sequences, likely\nin part because of the opportunity the genre\npresents for showcasing a poet's virtuosity and\ningenuity.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To describe some of the innovations\nBrooks and Nelson have introduced to the\nsonnet sequence.",
+            "To contrast the more creative sonnet\nsequences of Brooks and Nelson with the\nmore conventional ones of Shakespeare and\nSpenser.",
+            "To enumerate the structural features of\nsonnet sequences that make them\nchallenging to compose.",
+            "To suggest a reason for the enduring\nappeal of the sonnet sequence among\npoets despite its challenging form."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 8, Q31). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q032",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q32",
+          "passageTitle": "Main Purpose — Q32",
+          "passage": "Scholarly interest in literary juvenilia-writings\nby children and teenagers-tends to focus on\nunpublished works by authors who became\nfamous as adults, such as Charles Dickens's\npoem \"The Bill of Fare,\" which he wrote around\nthe ages of 18-20, because they offer insights\ninto their authors' artistic development. But\nsome scholars also argue that recovering\njuvenilia by lesser-known writers is essential to\nunderstanding literary history: Daisy Ashford's\nnovels, which she published as a child, were\nwidely read by contemporaries and are therefore\ndeserving of closer attention.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To describe the challenges famous writers\nencountered when seeking to publish works\nwritten in their childhood",
+            "To present reasons why literary scholars\nconsider juvenilia to be valuable resources",
+            "To compare the accomplishments of young\nwriters with those of their adult\ncontemporaries",
+            "To argue that Ashford's novels have more\nliterary merit than Dickens's juvenilia do"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q32). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q033",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q33",
+          "passageTitle": "Main Purpose — Q33",
+          "passage": "Founded in New York City in 1969, El Museo\ndel Barrio is dedicated to the visual arts and\ncultures of Latin America and of Latino\ncommunities in the United States. Since its\nfounding, it has acquired more than 8,500\nobjects for its permanent collection. More\nrecently founded US-based institutions devoted\nto Latino cultures include the Emma S.\nBarrientos Mexican American Cultural Center.\nLocated in Austin, Texas, it focuses on Mexican\nAmerican art and culture.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To trace the founding of two institutions,\nincluding how they acquired funding to\npurchase artworks",
+            "To trace a historical development that\nencouraged the founding of two\ninstitutions",
+            "To present information about two\ninstitutions, including each institution's\narea of focus",
+            "To draw a contrast between the collection\nsizes of two institutions"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q33). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q034",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q34",
+          "passageTitle": "Main Purpose — Q34",
+          "passage": "The following text is from Bram Stoker's 1911\nnovel The Lair of the White Worm. Adam is\nmeeting his great-uncle Richard at a port.\nThe meeting so auspiciously begun proceeded\nwell. Adam, seeing that the old man was\ninterested in the novelty of the ship, suggested\nthat he should stay the night on board, and that\nhe would himself be ready to start at any hour\nand go anywhere that the other suggested. This\naffectionate willingness to fall in with his own\nplans quite won the old man's heart. He warmly\naccepted the invitation, and at once they\nbecame not only on terms of affectionate\nrelationship, but almost like old friends.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "It showcases how Adam's flexibility and\nconsideration strengthen his relationship\nwith his great-uncle Richard.",
+            "It states the reasons why Adam and his\ngreat-uncle Richard decide to sleep on the\nship rather than finding lodging on land.",
+            "It describes why Adam and his great-uncle\nRichard are excited for their upcoming\njourney on the ship.",
+            "It contrasts great-uncle Richard's wary\nfirst impressions of Adam with his\nultimate affection toward him."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 8, Q34). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q035",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q35",
+          "passageTitle": "Main Purpose — Q35",
+          "passage": "Though John Crowley, author ofEndless\nThings, is perhaps not as well known as the\nmost widely read American writers of the past\nfifty years, influential figures have championed\nhis work, including the poet James Merrill and\nthe literary critic Harold Bloom. In his\nafterword to Crowley's bookLittle, Big,Bloom\npraises the novel's adroit blend of what\nplaywright Friedrich Schiller termed the naive\nand sentimental modes—while Schiller thought\nworks could be classified as either naive (seeking\nto describe reality) or sentimental (seeking to\ndevelop ideas),Little, Big demonstrates that a\nwork can be both.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To explain what inspired an author to\nwrite a particular work.",
+            "To present a reason why a literary critic is\nimpressed by a certain novel.",
+            "To compare the work of a writer with the\nwork of a poet who admired him.",
+            "To argue that all writing must be classified\nas belonging to one of two categories."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q35). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q036",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q36",
+          "passageTitle": "Main Purpose — Q36",
+          "passage": "The following text is adapted from Matthew\nArnold's 1869 nonfiction bookCulture and\nAnarchy.\nThe Times (a British newspaper), replying to\nsome foreign strictures on the dress, looks, and\nbehaviour of the English abroad, urges that the\nEnglish ideal is that every one should be free to\ndo and to look just as he likes. But culture\nindefatigably tries, not to make what each raw\nperson may like, the rule by which he fashions\nhimself; but to draw ever nearer to a sense of\nwhat is indeed beautiful, graceful, and\nbecoming, and to get the raw person to like that.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "It makes a claim about one of the\nprincipal effects of culture.",
+            "It asserts that what is beautiful is a\nmatter of objective truth rather than\nsubjective perception.",
+            "It implies that opinions regarding culture\nevolve over time.",
+            "It explains differences in matters of taste\nbetween the English and others."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q36). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q037",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q37",
+          "passageTitle": "Main Purpose — Q37",
+          "passage": "Founded in Long Beach, California, in 1996, the\nMuseum of Latin American Art is dedicated to\nmodern and contemporary art by Latin\nAmerican artists and Latino artists in the\nUnited States. Since its founding, it has\nacquired more than 1,300 objects for its\npermanent collection. More recently founded\nUS-based institutions devoted to Latino cultures\ninclude the National Hispanic Cultural Center.\nLocated in Albuquerque, it focuses on the\nliterature, art, and cultures of Latin America as\nwell as Latino communities in the United States.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To trace the founding of two institutions,\nincluding how they acquired funding to\npurchase artworks.",
+            "To draw a contrast between the collection\nsizes of two institutions.",
+            "To present information about two\ninstitutions, including each institution's\narea of focus.",
+            "To trace a historical development that\nencouraged the founding of two\ninstitutions."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 8, Q37). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q038",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q38",
+          "passageTitle": "Main Purpose — Q38",
+          "passage": "The following text is adapted from D.A.\nLozano's 1844 poem \"A Remembrance of Puerto\nCabello-The Mangle\" (translated by Agnes\nBlake Poor in 1918). The poem is a dedication\nto Puerto Cabello, a town on the northern coast\nof Venezuela.\nAnd while outside the tempest is raving o'er the\nocean,\nAnd the ship is madly driving on some lone and\ndesert shore;\nThy warm and land-locked waters swell with an\neasy motion,\nAnd gently glides the light pirogue [canoe] at\ndipping of\nthe oar.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "It describes the speaker's attitude towards\nthe day-to-day life in Puerto Cabello.",
+            "It contrasts the tranquility of the waters\nnear Puerto Cabello with the roughness of\nwaters elsewhere.",
+            "It emphasizes the severity of a storm that\nis expected to arrive soon in Puerto\nCabello.",
+            "It compares the appearance of two types of\nboats."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q38). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q039",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q39",
+          "passageTitle": "Main Purpose — Q39",
+          "passage": "The Hundred Days, first published in 1998, is a\nnovel in Patrick O'Brian's Aubrey/Maturin\nseries, which includes twenty completed books.\nSome critics have found fault with the abrupt\nendings ofThe Hundred Daysand other books\nin the series, saying that they do not finish\nconclusively but arbitrarily stop. But other\ncritics argue that the books should not be\nthought of as discrete texts with traditional\nbeginnings and endings but as a single incredibly\nlong work, similar to other multivolume stories,\nsuch as Marcel Proust'sIn Search of Lost Time.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To present a reason the unusual structure\nthat O'Brian uses for The Hundred Days\nmakes it one of his most complex books",
+            "To argue that the Aubrey/Maturin series\nshould have the literary renown of In\nSearch of Lost Time",
+            "To describe a characteristic of the\nAubrey/Maturin novels and offer two\ndiffering viewpoints on this characteristic",
+            "To explain why many critics find the\nAubrey/Maturin novels to be remarkably\nentertaining despite flaws in the novels'\nstructures"
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 8, Q39). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q040",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q40",
+          "passageTitle": "Main Purpose — Q40",
+          "passage": "Founded in New York City in 1904, the Hispanic\nSociety of America is dedicated to the arts and\ncultures of Spanish-speaking and\nPortuguese-speaking regions around the world.\nSince its founding, it has acquired more than\n18,000 objects for its permanent collection.\nMore recently founded US-based institutions\ndevoted to Latino cultures include the Latino\nCultural Center. Located in Dallas, it focuses on\nLatino cultures and art in the United States.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To trace the founding of two institutions,\nincluding how they acquired funding to\npurchase artworks",
+            "To present information about two\ninstitutions, including each institution's\narea of focus",
+            "To trace a historical development that\nencouraged the founding of two\ninstitutions",
+            "To draw a contrast between the collection\nsizes of two institutions"
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 8, Q40). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q041",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q41",
+          "passageTitle": "Main Purpose — Q41",
+          "passage": "The following text is adapted from Matthew\nArnold's 1869 nonfiction bookCulture and\nAnarchy.\nThe Times (a British newspaper), replying to\nsome foreign strictures on the dress, looks, and\nbehaviour of the English abroad, urges that the\nEnglish ideal is that every one should be free to\ndo and to look just as he likes. But culture\nindefatigably tries, not to make what each raw\nperson may like, the rule by which he fashions\nhimself; but to draw ever nearer to a sense of\nwhat is indeed beautiful, graceful, and\nbecoming, and to get the raw person to like that.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "It argues that what is beautiful is a matter\nof fact rather than opinion.",
+            "It analyzes the unique sense of taste of the\nEnglish.",
+            "It indicates that opinion regarding culture\nshift over time.",
+            "It makes a claim about one of the\nprincipal effects of culture."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 8, Q41). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q042",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q42",
+          "passageTitle": "Main Purpose — Q42",
+          "passage": "In 2011 Ingrid L. Cripps and colleagues\npublished a study concluding that ocean\nacidification has a strong effect on the behavior\nof Pseudochromis fuscus, a species of fish.\nHowever, Cripps and colleagues' study relied on\na mean sample size of only about 9 fish. In a\n2022 review of various scientists' conclusions\nabout the impacts of ocean acidification on fish\nbehavior, Josefin Sundin and colleagues caution\nthat relying on such a relatively small sample\nsize can increase the potential for biased\nanalysis. Such analysis, in turn, can contribute\nto reports of exaggerated effects.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To explain how the behavior of a fish\nspecies has changed over time",
+            "To note a potential concern about the\nfindings of a scientific study",
+            "To present a debate between two research\nteams about a cause of ocean acidification",
+            "To discuss an aspect of ocean acidification\nthat is frequently overlooked"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 8, Q42). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t08-q043",
+          "skill": "Main Purpose",
+          "domain": "Craft and Structure",
+          "focus": "Analyze the primary purpose or rhetorical intent of the text as a whole",
+          "source": "SAToplam 2.0 · Topic 8 · Q43",
+          "passageTitle": "Main Purpose — Q43",
+          "passage": "The following text is from Louise Erdrich's 1986\nnovel The Beet Queen. The narrator discusses\nher relationship with her young niece, Dot.\nCelestine, the narrator's sister-in-law, is Dot's\nmother.\nDot and I had a mental connection, I was sure\nof it. I understood things about the baby that\nher mother could not accept. For instance, she\nwas never meant to be a baby. Dot was as\nimpatient with babyhood as I. She tried at once\nto grow out of it. Celestine never saw that,\nbecause she, and only she, took pleasure in\nDot's helpless softness. Only Celestine was\nsaddened by her daughter's fierce progress. Day\nby day, Dot grew stronger. In her shopping-cart\nstroller she exercised to exhaustion, bouncing for\nhours to develop her leg muscles.",
+          "prompt": "Which choice best states the main purpose of\nthe text?",
+          "options": [
+            "To present the narrator's belief that she\nunderstands Dot better than Celestine\ndoes",
+            "To speculate that when Dot is older, her\npersonality will be like Celestine's",
+            "To discuss what the narrator and Celestine\ndo to amuse Dot",
+            "To compare the narrator's physical\nappearance to the physical appearance of\nCelestine"
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 8, Q43). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    }
+  ]
+}

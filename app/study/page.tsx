@@ -91,7 +91,9 @@ export default function Page() {
   const [questions,setQuestions] = useState<PracticeQuestion[]>(sampleQuestions);
   const [activeModule,setActiveModule] = useState<string | null>(null);
   const moduleQuestions = activeModule ? questions.filter(q=>q.moduleId===activeModule) : sampleQuestions;
-  const libraryQuestions = questions.filter((q,i)=>!q.moduleId||questions.findIndex(item=>item.moduleId===q.moduleId)===i);
+  const libraryQuestions = questions
+    .filter((q,i)=>!q.moduleId||questions.findIndex(item=>item.moduleId===q.moduleId)===i)
+    .map(q=>({...q,questionCount:q.moduleId?questions.filter(item=>item.moduleId===q.moduleId).length:1}));
   async function importMaterial(file:File) {
     if (!file.name.toLowerCase().endsWith('.bbplus')) throw Error('Choose a .bbplus file.');
     if (file.size > 5*1024*1024) throw Error('This file exceeds the 5 MB import limit.');
@@ -229,7 +231,42 @@ export default function Page() {
       const records=JSON.parse(localStorage.getItem('redbookprep-imports')||'[]');
       if(!Array.isArray(records))throw Error();
       questions=[...sampleQuestions,...records.flatMap((r:{pack:unknown;key:string})=>parseBbplus(r.pack,r.key))];
-      try { if (Array.isArray(records) && records.some((r: any) => String(r?.pack?.title || '').startsWith('Mathbook 3.0'))) { const filteredRecords = records.filter((r: any) => !String(r?.pack?.title || '').startsWith('Mathbook 3.0')); localStorage.setItem('redbookprep-imports', JSON.stringify(filteredRecords)); questions = [...sampleQuestions, ...filteredRecords.flatMap((r: { pack: unknown; key: string }) => parseBbplus(r.pack, r.key))]; } } catch {} setQuestions(questions);
+      try { if (Array.isArray(records) && records.some((r: any) => String(r?.pack?.title || '').startsWith('Mathbook 3.0'))) { const filteredRecords = records.filter((r: any) => !String(r?.pack?.title || '').startsWith('Mathbook 3.0')); localStorage.setItem('redbookprep-imports', JSON.stringify(filteredRecords)); questions = [...sampleQuestions, ...filteredRecords.flatMap((r: { pack: unknown; key: string }) => parseBbplus(r.pack, r.key))]; } } catch {}
+      setQuestions(questions);
+      void (async () => {
+        const builtInPacks = [
+          { url: '/packs/satoplam-reading/topic-01-main-ideas.bbplus?v=1', key: 'satoplam-main-ideas' },
+          { url: '/packs/satoplam-reading/topic-02-details.bbplus?v=1', key: 'satoplam-details' },
+          { url: '/packs/satoplam-reading/topic-03-inference.bbplus?v=1', key: 'satoplam-inference' },
+          { url: '/packs/satoplam-reading/topic-04-evidence-support.bbplus?v=1', key: 'satoplam-evidence-support' },
+          { url: '/packs/satoplam-reading/topic-05-evidence-weaken.bbplus?v=1', key: 'satoplam-evidence-weaken' },
+          { url: '/packs/satoplam-reading/topic-06-quotation.bbplus?v=1', key: 'satoplam-quotation' },
+          { url: '/packs/satoplam-reading/topic-07-evidence-graphs.bbplus?v=1', key: 'satoplam-evidence-graphs' },
+          { url: '/packs/satoplam-reading/topic-08-main-purpose.bbplus?v=1', key: 'satoplam-main-purpose' },
+          { url: '/packs/satoplam-reading/topic-09-overall-structure.bbplus?v=1', key: 'satoplam-overall-structure' },
+          { url: '/packs/satoplam-reading/topic-10-underlined-purpose.bbplus?v=1', key: 'satoplam-underlined-purpose' },
+          { url: '/packs/satoplam-reading/topic-11-cross-text-connections.bbplus?v=1', key: 'satoplam-cross-text-connections' },
+          { url: '/packs/satoplam-reading/topic-12-words-in-context-gap-filling.bbplus?v=1', key: 'satoplam-words-in-context-gap-filling' },
+          { url: '/packs/satoplam-reading/topic-13-words-in-context-synonyms.bbplus?v=1', key: 'satoplam-words-in-context-synonyms' }
+        ];
+        try {
+          const fetched = await Promise.all(
+            builtInPacks.map(async ({ url, key }) => {
+              const res = await fetch(url);
+              if (!res.ok) return [];
+              const raw = await res.json();
+              return parseBbplus(raw, key);
+            })
+          );
+          const builtInQuestions = fetched.flat();
+          if (builtInQuestions.length) {
+            setQuestions((old) => [
+              ...old.filter((q) => !String(q.materialTitle || '').startsWith('SAToplam') && !String(q.materialTitle || '').startsWith('Mathbook 3.0')),
+              ...builtInQuestions
+            ]);
+          }
+        } catch {}
+      })();
     } catch {setStorageError('Saved imported materials could not be loaded.');}
 
     try {
@@ -245,7 +282,7 @@ export default function Page() {
             .filter(
               (a) =>
                 a &&
-                (questions.some((q) => q.id === a.id) || (typeof a.id === 'string' && a.id.startsWith('bbplus-mathbook3-'))) &&
+                (questions.some((q) => q.id === a.id) || (typeof a.id === 'string' && (a.id.startsWith('bbplus-mathbook3-') || a.id.startsWith('bbplus-satoplam-')))) &&
                 Number.isInteger(a.choice) &&
                 a.choice >= 0 &&
                 a.choice < 4
@@ -750,9 +787,30 @@ export default function Page() {
                                 />
                               )}
                               {!q.passage && <div className="question-prompt-card"><p>{q.prompt}</p>{q.imageDataUrl && <img className="imported-question-image" src={q.imageDataUrl} alt={q.imageAlt || 'Question diagram'} />}</div>}
-                              {q.passage && q.passage.split('\n\n').map((paragraph, pIdx) => (
-                                <p key={pIdx}>{paragraph}</p>
-                              ))}
+                              {Boolean(q.passage) && q.imageDataUrl && q.section !== 'Math' && (
+                                <img
+                                  className="imported-question-image"
+                                  src={q.imageDataUrl}
+                                  alt={q.imageAlt || 'Stimulus data diagram'}
+                                  style={{ marginBottom: '1.25rem' }}
+                                />
+                              )}
+                              {q.passage && q.passage.split('\n\n').map((paragraph, pIdx) => {
+                                if (paragraph.includes('<u>')) {
+                                  const parts = paragraph.split(/(<u>.*?<\/u>)/g);
+                                  return (
+                                    <p key={pIdx}>
+                                      {parts.map((part, partIdx) => {
+                                        if (part.startsWith('<u>') && part.endsWith('</u>')) {
+                                          return <u key={partIdx}>{part.slice(3, -4)}</u>;
+                                        }
+                                        return part;
+                                      })}
+                                    </p>
+                                  );
+                                }
+                                return <p key={pIdx}>{paragraph}</p>;
+                              })}
                             </div>
                           </div>
                         )}
@@ -870,7 +928,7 @@ export default function Page() {
                         {/* Question Prompt */}
                         <div className="question-prompt-card">
                           <h2>{q.passage ? q.prompt : 'Select the correct answer choice:'}</h2>
-                          {Boolean(q.passage) && q.imageDataUrl && <img className="imported-question-image" src={q.imageDataUrl} alt={q.imageAlt || 'Question diagram'} />}
+                          {Boolean(q.passage) && q.imageDataUrl && q.section === 'Math' && <img className="imported-question-image" src={q.imageDataUrl} alt={q.imageAlt || 'Question diagram'} />}
                         </div>
 
                         {/* Options List with Elimination Tool */}

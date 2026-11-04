@@ -1,0 +1,705 @@
+{
+  "format": "bbplus",
+  "version": 1,
+  "type": "practice",
+  "title": "SAToplam 2.0 — Overall Structure",
+  "description": "Official real exam SAT reading practice questions (March 2023 – August 2025) compiled by @satashkent. Domain: Craft and Structure.",
+  "modules": [
+    {
+      "title": "Overall Structure — Set 1",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t09-q001",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q1",
+          "passageTitle": "Overall Structure — Q1",
+          "passage": "(*Exam level)\nHorizontal gene transfer involves the exchange of\ngenetic material between organisms not in a\nparent-offspring relationship. It is common\namong prokaryotes (single-celled organisms,\nsuch as the bacteria Carnobacterium viridans\nand Lactococcus lactis). The process can have\nthe effect of increasing bacterial resistance to\nantibiotics; as such, an understanding of how to\nprevent horizontal gene transfer might result in\nthe mitigation of dangerous pathogens\n(organisms that cause disease).",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It provides a history of research into a\nbiological process and suggests a direction\nfor further investigation.",
+            "It explains why an organism poses a threat\nand then suggests how that threat might\nbe avoided.",
+            "It depicts two organisms and presents their\nsimilarities and differences.",
+            "It describes a biological process and\nexplains why researching it is important."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 9, Q1). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q002",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q2",
+          "passageTitle": "Overall Structure — Q2",
+          "passage": "In what is now Washington state, the Tulalip\nTribes operate the Hibulb Cultural Center.\nRelying on traditional knowledge to guide the\ndesign of exhibits, this institution presents\nTulalip history and culture to the tribes'\ncitizens. The Turtle Mountain Band of\nChippewa, a tribe in North Dakota, employs a\nsimilar strategy in its own cultural center. Both\ncenters contrast with museums that aren't\nIndigenous-led; when displaying Indigenous\nartifacts, such museums tend to anticipate\nmainly non-Indigenous audiences and rely on\nEuro-centric strategies for designing exhibits.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It describes how tribal cultural centers\ndesigned exhibits of a particular set of\nartifacts, then analyzes how\nnon-Indigenous institutions designed\nexhibits of the same artifacts.",
+            "It examines how tribal citizens respond to\nexhibits at tribal cultural centers, then\nspeculates how non-Indigenous audiences\nwould respond to the same exhibits.",
+            "It discusses two cultural centers operated\nby tribes, then compares them with\nnon-Indigenous institutions that present\nIndigenous exhibits.",
+            "It outlines an early strategy for exhibit\ndesign used by one tribal cultural center,\nthen explains a newer strategy used by a\ndifferent tribal cultural center."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 9, Q2). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q003",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q3",
+          "passageTitle": "Overall Structure — Q3",
+          "passage": "Why do rusty-spotted cats purr but jaguars\nroar? Researchers hypothesize that this\ndifference between the two feline species may be\npartly due to a U-shaped bone in their throats\ncalled the hyoid. Rusty-spotted cats, which are\nmuch smaller than jaguars, have a rigid hyoid\nthat rumbles when the cat's larynx vibrates,\nresulting in a purr. By contrast, jaguars have a\nsomewhat flexible hyoid, and the bone is\nattached to the skull with a stretchy ligament\nthat rusty-spotted cats lack. These traits allow\njaguars and most other species of big cats to\nproduce powerful roars. The same traits may\nalso prevent most big cats from purring.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "The text compares the habitats of two\nspecies, then explains how those habitats\nare changing.",
+            "The text presents a theory about two\nspecies, then discusses facts that weaken it.",
+            "The text poses a question about two\nspecies, then presents a possible answer.",
+            "The text describes a behavior shared by\ntwo species, then discusses other behaviors\nshared by them."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 9, Q3). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q004",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q4",
+          "passageTitle": "Overall Structure — Q4",
+          "passage": "Community science, which involves professional\nscientists collaborating with amateur science\nenthusiasts to study a topic, is often an effective\nand engaging way to conduct research. It can\nallow people to assist with conservation efforts,\nspark youth interest in science, and increase the\namount of data researchers can collect. This\napproach was essential to the success of a study\nby biologist Abbigail Merrill and colleagues of\nhow butterfly color relates to flower choice,\nwhich included findings from hundreds of\nstudents and community members in\nnorthwestern Arkansas.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It introduces the topic of a scientific study,\ndescribes the study's importance, and then\npresents the study's results.",
+            "It identifies a particular approach to\nresearch, lists some benefits of that\napproach, and then mentions a study in\nwhich that approach was used.",
+            "It argues for a new approach to scientific\nresearch, comments on the public's opinion\nabout the approach, and then describes\nhow that approach was applied in a\ncertain study.",
+            "It describes the development of a type of\nscientific collaboration, shows how that\ntype of collaboration has been used in a\nparticular field of study, and then suggests\nfuture collaborative projects."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 9, Q4). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q005",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q5",
+          "passageTitle": "Overall Structure — Q5",
+          "passage": "Joel Brown and colleagues showed that high\nmoonlight intensity inhibits the activity of the\nArizona pocket mouse (Perognathus amplus), a\nresult explicable in terms of benefits and costs:\ngreater lunar intensity may not enable the mice\nto increase foraging success enough to offset the\nhigher chance of detection by predatory owls or\nhawks. Most other nocturnal mammals respond\nto lunar intensity variations similarly to Arizona\npocket mice, but Azara's night monkeys (Aotus\nazarae) display the opposite pattern, as their\nheavy reliance on visual foraging results in a\ndifferent balance of reward and risk.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It introduces an observation of a\nbehavioral pattern, presents an\nexplanation for the pattern, and then\ndescribes an exception to the pattern that\ncasts doubt on that explanation.",
+            "It describes and accounts for a finding,\ncharacterizes the finding as representative\nof a general pattern, and then describes\nand accounts for an exception to that\npattern.",
+            "It discusses two different responses to the\nsame natural phenomenon, explains why\none of those responses occurs, and then\nsuggests that the other response still needs\nto be explained.",
+            "It presents and explains a study result,\nindicates that the result is similar to the\nresults of many other studies, and then\nattributes a conflicting study result to a\ndifference in that study's methods."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 9, Q5). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q006",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q6",
+          "passageTitle": "Marshlands\" by Emily Pauline Johnson",
+          "passage": "The following text is from the 1895 poem\n\"Marshlands\" by Emily Pauline Johnson, a\nKanienkahagen (Mohawk) writer also known as\nTekahionwake.\nAmong the wild rice in the still lagoon,\nIn monotone the lizard shrills his tune.\nThe wild goose, homing, seeks a sheltering,\nWhere rushes grow, and oozing lichens cling.\nLate cranes with heavy wing, and lazy flight,\nSail up the silence with the nearing night.\nAnd like a spirit, swathed in some soft veil,\nSteals twilight and its shadows o'er the swale.\nHushed lie the sedges, and the vapours creep,\nThick, grey and humid, while the marshes sleep.",
+          "prompt": "Which choice best describes the overall structure of\nthe text?",
+          "options": [
+            "It identifies a location, then refers to a person\nliving there.",
+            "It sketches a setting by presenting a series of\nimages of nature.",
+            "It makes an extended comparison of nature to\nhuman emotions.",
+            "It names animal species found in a place, then\nnames plant species there."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 9, Q6). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q007",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q7",
+          "passageTitle": "Overall Structure — Q7",
+          "passage": "Founded in Denver in 1991, the Museo de Las\nAmericas is dedicated to art from Latin\nAmerica, including the art of Indigenous\npeoples. Since its founding, it has acquired more\nthan 4,800 objects for its permanent collection.\nMore recently founded US-based institutions\ndevoted to Latino cultures include the Latino\nCultural Center. Located in Dallas, it focuses on\nLatino cultures and art in the United States.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It explains how one cultural institution\nwas founded, then explains its plans to\nexpand further.",
+            "It describes a trend among cultural\ninstitutions in the United States, then\nidentifies an institution that rejects that\ntrend.",
+            "It defines a certain type of cultural\ninstitution, then argues that this type of\ninstitution decisively influences society.",
+            "It discusses one cultural institution, then\ndiscusses a more recently founded cultural\ninstitution."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 9, Q7). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q008",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q8",
+          "passageTitle": "Overall Structure — Q8",
+          "passage": "With a shell that measured 1.7 meters, the\nextinct mollusk Parapuzosia seppenradensis is\nthe largest ammonite in the fossil record. Ever\nsince fossilized remains of this species were\ndiscovered in 1895, scientists have been\nperplexed by its size. After examining 154\nammonite fossils including some of P.\nseppenradensis from Montana and Parapuzosia\nleptophylla (a smaller ammonite species) from\nEngland, paleontologist Christina Ifrim, Andrew\nS. Gale, and colleagues concluded that P.\nseppenradensis may have evolved from P.\nleptophylla and gradually increased in size as\nlarger ammonites were better able to escape\nbeing preyed on by mosasaurs.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It states a long-standing scientific\nassumption and then shows how recent\nresearch has overturned that assumption.",
+            "It describes a scientific mystery and then\ndiscusses a research team's attempt to\nsolve that mystery.",
+            "It compares fossils found in Montana and\nEngland and then points out which of\nthose fossils provides more information.",
+            "It notes the discovery of a new ammonite\nspecies and then remarks on the\nimportance of that discovery."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 9, Q8). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q009",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q9",
+          "passageTitle": "Overall Structure — Q9",
+          "passage": "Like all species of baleen whales, the humpback\nwhale feeds on tiny creatures known as krill by\nfiltering water through bristlelike keratin\nstructures called baleen plates. In this way,\nbaleen whales can eat up to 30 percent of their\ntotal mass per day. And while no one would call\nthe humpback whale small—it can have a mass\nas high as 30,000 kg—it is one of the smaller\nbaleen whales and is much smaller than the\nnorthern right whale, which can weigh a\nwhopping 80,000 kg and consume as much as\n24,000 kg of krill per day.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It describes a characteristic shared by all\nbaleen whales and then illustrates a\ndifference between the humpback whale\nand the northern right whale that is\nrelevant to that characteristic.",
+            "It discusses a unique feature of the\nhumpback whale and how the lack of that\nfeature in the northern right whale\nexplains differences in the two species'\nbehavior.",
+            "It draws a distinction between the sizes of\nthe humpback whale and the northern\nright whale and then presents a feature\nthat they have in common.",
+            "It details a relationship between humpback\nand northern right whales and krill and\nthen discusses an unexpected consequence\nof a change in baleen whale populations."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 9, Q9). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q010",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q10",
+          "passageTitle": "Overall Structure — Q10",
+          "passage": "In 2011 Brynn M. Devine and colleagues\npublished a study concluding that ocean\nacidification has a strong effect on the behavior\nof Cheilodipterus quinquelineatus, a species of\nfish. However, Devine and colleagues' study\nrelied on a mean sample size of only about 25\nfish. In a 2022 review of various scientists'\nconclusions about the impacts of ocean\nacidification on fish behavior, Timothy D. Clark\nand colleagues caution that relying on such a\nrelatively small sample size can increase the\npotential for biased analysis. Such analysis, in\nturn, can contribute to reports of exaggerated\neffects.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It presents the result of a study, then raises\na potential concern related to that result.",
+            "It describes a characteristic of a fish\nspecies, then explains why that\ncharacteristic is noteworthy.",
+            "It states a similarity between two scientific\nstudies, then notes a difference between\nthem.",
+            "It summarizes a problem that scientists\nare investigating, then provides a possible\nsolution to that problem."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 9, Q10). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q011",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q11",
+          "passageTitle": "Overall Structure — Q11",
+          "passage": "The San Pedro is just one of approximately\nthree million known historical shipwrecks spread\nthroughout the world's oceans, and their impact\non sea life and underwater ecosystems is of great\ninterest to researchers. Leila Hamdan and\ncolleagues were particularly curious about the\neffects of wooden shipwrecks on seafloor\nmicrobial communities. The researchers studied\ntwo wooden shipwrecks in the Gulf of Mexico by\nplacing pieces of pine and oak between zero and\n200 meters away from each shipwreck to collect\nsamples of three kinds of microbes: bacteria,\narchaea, and fungi. They found that across the\nthree microbial communities, peak diversity and\nrichness was observed on pine and oak samples\nplaced approximately 125 meters from the\nshipwrecks.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It introduces a study of microbial\ncommunities near shipwrecks that has\nreceived significant scholarly attention,\nsummarizes the results of that study, and\nthen describes a research team's reaction\nto the study.",
+            "It notes a general scientific interest in\nshipwrecks' ecological effects, describes a\nspecific study related to that interest, and\nthen states one of the study's findings.",
+            "It states the number of known shipwrecks,\ndescribes the historical significance of one\nof those shipwrecks, and then comments\non the various microbes found at the\nshipwreck site.",
+            "It names a famous historical shipwreck,\ndescribes the type of wood used to build\nthat ship, and then explains how that\nwood type influences underwater microbial\ncommunities."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 9, Q11). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q012",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q12",
+          "passageTitle": "Overall Structure — Q12",
+          "passage": "The Federalist Papers are a collection of 85\nessays written by Alexander Hamilton, John\nJay, and James Madison. They were published\npseudonymously in the Independent Journal and\nother New York newspapers in 1787–88 and\nargue that New Yorkers should vote to ratify the\nproposed United States Constitution. Though\nthe authorship of most of the individual essays\nis certain, that of a few is in question; for\ninstance, while No. 15, \"The Insufficiency of the\nPresent Confederation to Preserve the Union,\"\nwas surely penned by Hamilton, No. 52, \"The\nHouse of Representatives,\" may have been\nwritten by either Hamilton or Madison.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "The text mentions a collection of essays\nand then points out something about these\nessays that is not completely known.",
+            "The text summarizes an argument made in\na collection of essays and then suggests\nthat the essays' authors didn't\nunanimously agree with the argument.",
+            "The text lists the authors of a collection of\nessays and then notes that some of the\nessays were written by one person, while\nothers were written by two people.",
+            "The text describes why a collection of\nessays is notable and then details its\npublication history."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 9, Q12). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q013",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q13",
+          "passageTitle": "Overall Structure — Q13",
+          "passage": "Community science, which involves professional\nscientists collaborating with amateur science\nenthusiasts to study a topic, is often an effective\nand engaging way to conduct research. It can\noffer insight into the daily life of a scientist,\nspark youth interest in science, and increase the\namount of data researchers can collect. This\napproach was essential to the success of a study\nby biologist Abbigail Merrill and colleagues of\nhow weather relates to a butterfly's flower\nchoice, which included findings from hundreds of\nstudents and community members in\nnorthwestern Arkansas.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It describes the development of a type of\nscientific collaboration, shows how that\ntype of collaboration has been used in a\nparticular field of study, and then suggests\nfuture collaborative projects.",
+            "It introduces the topic of a scientific study,\ndescribes the study's importance, and then\npresents the study's results.",
+            "It identifies a particular approach to\nresearch, lists some benefits of that\napproach, and then mentions a study in\nwhich that approach was used.",
+            "It argues for a new approach to scientific\nresearch, comments on the public's opinion\nabout the approach, and then describes\nhow that approach was applied in a\ncertain study."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 9, Q13). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q014",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q14",
+          "passageTitle": "Overall Structure — Q14",
+          "passage": "Jessica Murray is a researcher who studies\ncanopy soil. Canopy soil is formed in a tree's\nbranches (its canopy) when dead leaves and\nother falling things collect. This material breaks\ndown, becoming canopy soil. Canopy soil helps\npreserve healthy nutrient cycling (how nutrients\nmove through the environment) in rainforests.\nThis benefit is one reason Murray is interested\nin the canopy soils in large bully trees in\nrainforests in Costa Rica.",
+          "prompt": "Which choice describes the text's overall\nstructure?",
+          "options": [
+            "It presents an idea and mentions a\nresearcher who disagrees with that idea.",
+            "It introduces a researcher and gives\ninformation about what she researches.",
+            "It explains a disagreement between\nresearchers and how it was resolved.",
+            "It compares the sizes of two types of trees\nover several years."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 9, Q14). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q015",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q15",
+          "passageTitle": "Overall Structure — Q15",
+          "passage": "President Richard Nixon is most famous for his\nparticipation in the 1970s Watergate political\nscandal, a convoluted tale of criminality and\neroded ethics involving a constellation of\nassociates such as political operative Jeb Stuart\nMagruder and Nixon's secretary Rose Mary\nWoods. But Nixon's legacy is complex: he has\nbeen praised for his role in affirming the\nsovereignty of tribal nations, and he once made\nan attempt at reforming United States health\ncare policy that is arguably a precursor to the\nAffordable Care Act, which became law during\nthe Barack Obama administration.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "An achievement of a historical figure is\ndescribed, and then reasons why that\nachievement is often disregarded by\nhistorians are suggested.",
+            "Information supporting a particular\nperception of a historical figure is\nprovided, and then additional facts are\noffered suggesting that this perception is\nan oversimplification.",
+            "A list of historical figures is presented,\nfollowed by reasons why one should be\nconsidered more significant than the\nothers.",
+            "An assertion about a historical figure is\nmade, and then evidence both for and\nagainst that assertion is presented."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 9, Q15). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q016",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q16",
+          "passageTitle": "Overall Structure — Q16",
+          "passage": "In a study by Mika R. Moran, Daniel A.\nRodriguez, and colleagues, residents of Panama\nCity, Panama, and Caracas, Venezuela, were\nsurveyed about parks in their cities. Of the 318\nrespondents from Panama City, 53.5% indicated\nthat they use the city's parks, and of the 1,043\nrespondents from Caracas, 44.7% indicated\nusing city parks. Given that the percentage of\nPanama City respondents who reported having\naccess to desired nonpark amenities near parks\nwas much lower than that reported by Caracas\nrespondents, the difference in park use can't be\nexplained by Panama City residents having more\naccess to desired nonpark amenities near parks.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "An unexpected finding is described, and\nthen that finding is attributed to the\nmethod used to collect survey data in\nPanama City and Caracas.",
+            "An unresolved question about park\nplanning is described, and then examples\nfrom a study of Panama City and Caracas\nare used to answer that question.",
+            "A study involving surveys in Panama City\nand Caracas is introduced, and then a\npossible explanation for some of the results\nis considered and rejected.",
+            "A study of park use in Panama City is\ndescribed, and then a similar study of park\nuse in Caracas is analyzed to corroborate\nthe findings of the Panama City study."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 9, Q16). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q017",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q17",
+          "passageTitle": "Overall Structure — Q17",
+          "passage": "Catherine L. Cardelús is a researcher who\nstudies canopy soil. Canopy soil is formed in a\ntree's branches (its canopy) when dead leaves\nand other falling things collect. This material\nbreaks down, becoming canopy soil. Canopy soil\nhelps preserve a healthy water cycle (how water\nmoves through the environment) in rainforests.\nThis benefit is one reason Cardelús is interested\nin the canopy soils in large bully trees in\nrainforests in Costa Rica.",
+          "prompt": "Which choice best describes the text's overall\nstructure?",
+          "options": [
+            "It introduces a researcher and gives\ninformation about what she researches.",
+            "It presents an idea and mentions a\nresearcher who disagrees with that idea.",
+            "It compares the sizes of two types of trees\nover several years.",
+            "It explains a disagreement between\nresearchers and how it was resolved."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 9, Q17). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q018",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q18",
+          "passageTitle": "Overall Structure — Q18",
+          "passage": "Mexican textile artist Victoria Villasana weaves\nstories of triumph, using her unique method of\napplying colorful yarn to photographs of people.\nIn some works, Villasana focuses on celebrating\ncultural icons who are people of color, as she\ndoes in her depiction of musician and composer\nPrince. However, in other works, Villasana\nhonors ordinary people, as she does in her\ncaptivating portrayal of a young girl sitting on a\nsidewalk. Villasana sees both of these\napproaches as ways of depicting the power and\ninterconnectedness of all people.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It introduces Villasana's cultural\nbackground, describes how this\nbackground influences her art, and then\noutlines some of her ideas for future\nprojects.",
+            "It compares Villasana to other\ncontemporary artists, indicates how two of\nher works are similar, and then emphasizes\nVillasana's enthusiasm for artistic\ncollaboration.",
+            "It explains how yarn has historically been\nused in art, details how Villasana uses\nyarn in her artworks, and then comments\non the popularity of her work.",
+            "It provides details about Villasana's\nartworks, discusses specific examples of her\nwork, and relates them to one of her\nartistic goals."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 9, Q18). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q019",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q19",
+          "passageTitle": "Overall Structure — Q19",
+          "passage": "Companies are providing consumers with more\nopportunities to purchase customized products\nthan ever before. Whether buying customized\nsneakers, jewelry, or clothing, consumers can\nparticipate in the design of products to meet\ntheir specific needs and tastes. In turn,\ncompanies profit too: studies have shown that\nconsumers are willing to pay more and wait\nlonger for a customized product. Still, it can be\ndifficult for companies to offer customization\nwhile keeping costs low, as the standard\nmethods of mass production may not be able to\naccommodate making a unique product each\ntime.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It discusses several recent innovations in\nproduct manufacturing and then suggests\nsome potential applications of those\ninnovations.",
+            "It describes a company's recent success\nwith new products and then explains\nmultiple factors that may have contributed\nto that success.",
+            "It presents two contrasting\nproduct-marketing techniques and then\nprovides examples of one of those\ntechniques.",
+            "It introduces a trend in consumer products\nand then explains how the trend both\nbenefits and poses a challenge to\ncompanies."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 9, Q19). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    },
+    {
+      "title": "Overall Structure — Set 2",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t09-q020",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q20",
+          "passageTitle": "Overall Structure — Q20",
+          "passage": "Spanning the 1920s to the 1980s, Mexican\narchitect Luis Barragán's prolific career evolved\nthrough distinct phases. As epitomized by the\nhouse in Calle Pedro Loza in Guadalajara, many\nof Barragán's first projects integrated traditional\nMexican building techniques into Mediterranean\ndesigns. Extensive travels abroad later sparked\nan engagement with modernist and functionalist\naesthetics – styles whose emphasis on utility and\nwhose repudiation of traditional architecture's\nmore ornamental elements are readily apparent\nin Barragán's Pizarro Suárez House.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It presents a general claim about a\nparticular architect's career, describes a\ndesign approach that typified the early\nstages of that career, and then explains a\nlater shift in that career.",
+            "It names a famous architect, outlines the\nprimary aesthetic model evident in his\nwork, and then offers examples illustrating\nhis commitment to that model.",
+            "It provides famous examples of an\narchitect's projects, describes the original\ninspiration for those projects, and then\nsuggests that lesser-known projects by\nthat architect arose from other sources of\ninspiration.",
+            "It summarizes the career of a particular\narchitect, states how that architect's\nheritage influenced his career choice, and\nthen emphasizes the impact of that\narchitect's career."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 9, Q20). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q021",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q21",
+          "passageTitle": "Overall Structure — Q21",
+          "passage": "In Ojibwe, an Indigenous language from the\nGreat Lakes region of what are now the United\nStates and Canada, wása means \"far,\" whereas\nwa-wasa means \"far apart.\" This phenomenon,\nin which an element of a root word is repeated,\nsometimes with modification, within another\nword that is related to the root word, is called\nreduplication. In this case, the element \"wa\" in\nwása gets repeated in wa-wasa. There are many\nexamples of this type of reduplication in Ojibwe.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It describes the relationship between\nOjibwe and several other languages, raises\na question about the nature of that\nrelationship, and then answers that\nquestion.",
+            "It identifies the most frequently occurring\nwords in Ojibwe, explains why it is\ndifficult to translate those words into\nEnglish, and then provides examples of\nlanguages other than English into which\nthose words can be translated.",
+            "It presents some specific words in Ojibwe,\ndescribes the general linguistic\nphenomenon exemplified by those words,\nand then states that this phenomenon\noccurs frequently in Ojibwe.",
+            "It explains the phenomenon of\nreduplication, discusses why reduplication\nhas been controversial among scholars, and\nthen argues that an analysis of Ojibwe\ncould help resolve that controversy."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 9, Q21). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q022",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q22",
+          "passageTitle": "Overall Structure — Q22",
+          "passage": "The following text is adapted from George\nEliot's 1857 short story \"The Sad Fortunes of\nthe Rev. Amos Barton. \" Mr. Ely is a\nclergyman in the town of Milby.\nBy the laity of Milby and its neighbourhood\n[Mr. Ely] was regarded as a man of quite\nremarkable powers and learning, who must make\na considerable sensation in London pulpits and\ndrawing-rooms on his occasional visit to the\nmetropolis; and by his brother clergy he was\nregarded as a discreet and agreeable fellow. Mr.\nEly never got into a warm discussion; he\nsuggested what might be thought, but rarely\nsaid what he thought himself; he never let either\nmen or women see that he was laughing at\nthem, and he never gave any one an opportunity\nof laughing at him.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It relates how Mr. Ely had initially earned\nthe respect of his colleagues and then\nrecounts the circumstances under which\ntheir views of him began to change.",
+            "It implies that Mr. Ely's neighbors are\nmore naïve in their estimation of him than\npeople in London are and then explains\nwhy his neighbors have been so easily\nmisled.",
+            "It presents the favorable opinion of Mr.\nEly that other people hold and then\ndescribes the behaviors of Mr. Ely that\nenable him to maintain that favorable\nopinion.",
+            "It highlights the disparity between Mr.\nEly's public and private behavior and then\nconveys why he labors to obscure his true\nself from other people."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 9, Q22). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q023",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q23",
+          "passageTitle": "Overall Structure — Q23",
+          "passage": "Mexican architect Luis Barragán's prolific\ncareer, which spanned the 1920s to the 1980s,\nevolved through distinct phases. After traveling\nto the United States and Europe in the early\n1930s and immersing himself in a broader\narchitectural discourse, Barragán shifted his\nstyle to incorporate principles of modernism, as\nseen in the Pizarro Suárez House. The project's\nunadorned geometric forms, typical of the\nmodernist aesthetic, contrasted with the\nhistorically inspired architecture seen in his\nearlier projects in Guadalajara, such as the\nhouse in Calle Pedro Loza.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It summarizes the career of a particular\narchitect, states how a journey influenced\nthat architect's career, and then\nemphasizes how influential that architect's\ncareer has been.",
+            "It presents a general claim about a\nparticular architect's career, describes the\nearly stages of the architect's career, and\nthen explains a later shift in that career.",
+            "It explains the design aesthetic of a\nparticular architect, acknowledges the\nsources of those design choices, and then\ncontrasts that aesthetic with the designs of\nearlier architects.",
+            "It provides a general statement about the\ncareer of a particular architect, highlights\na transition in that career, and then\nexpounds on the ways that transition is\nevident in the architect's work."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 9, Q23). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q024",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q24",
+          "passageTitle": "Overall Structure — Q24",
+          "passage": "Researchers César A. Hidalgo, Elisa Castañer,\nand Andres Sevtsuk created a computer model\nto predict the mix of hotels, bicycle stores, and\nother businesses found in a given neighborhood.\nHow we define a neighborhood and its\nboundaries is subjective, so the team used a\nclustering algorithm to locate dense groupings of\namenities that represent human-identified\nneighborhoods like Boston's North End. The\npredictive model, which incorporates this\nalgorithm, is sure to be invaluable in\ndetermining the optimal mix of a city's\namenities.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It describes how an algorithm can predict\nthe success of certain businesses, discusses\nan example of a use of that algorithm, and\nsuggests potential uses of the algorithm in\nother fields.",
+            "It explains why urban planners are\ninterested in understanding the locations\nof certain businesses, details a study that\nhas addressed this question, and identifies\none key finding.",
+            "It summarizes trends in recent urban\ndevelopment, describes a potential\nproblem for urban planners, and suggests\na computational tool that can be used to\nsolve that problem.",
+            "It introduces a research team's study of\nurban neighborhoods, describes an aspect\nof the study's methodology, and suggests a\npotential application of the team's\nresearch."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 9, Q24). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q025",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q25",
+          "passageTitle": "Overall Structure — Q25",
+          "passage": "Elio Sucena and colleagues have explored how\nconvergent evolution—a phenomenon that\noccurs when the same trait evolves\nindependently in two reproductively separate\nlineages—can result from a genetic mechanism\nshared by both lineages. Meanwhile, Patricia J.\nWittkopp and colleagues have investigated how\nconvergence occurs through different genetic\nmechanisms, but the relative prevalence of\nconvergence through shared and different\ngenetic processes is still poorly understood. This\nmotivated biologists Delbert A.Green II and\nCassandra G. Extavour to evaluate both types\nof convergence in a single study for their 2012\npaper.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It explains a widespread assumption about\na phenomenon, describes two studies that\nare based on that assumption, and\nexplains why the assumption is unfounded.",
+            "It discusses a particular study of a\nphenomenon, elaborates on how two other\nstudies have approached this phenomenon\nin the past, and critiques the first study's\napproach.",
+            "It details the development of a field of\nscientific inquiry, gives examples of three\nstudies that were important to this\ndevelopment, and speculates on how future\nstudies can develop these ideas.",
+            "It describes a phenomenon, provides\nexamples of two studies of that\nphenomenon, and mentions a third study\nof that phenomenon."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 9, Q25). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q026",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q26",
+          "passageTitle": "Overall Structure — Q26",
+          "passage": "Paintings by the Florida Highwaymen—an\ninformal collective of prolific landscape artists\nactive in Florida during the 1950s and '60s–are\nrecognizable by their reiteration of the same\ngeneral compositional structures and subjects:\nbreaking waves and backcountry pines, to name\ntwo. But there was room for individuation: Sam\nNewton's Tangerine Sky, for example, may\nresemble other Highwaymen paintings at first\nglance, but his works stand out for their more\nrealistic and less impressionistic qualities.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It describes an aesthetic framework shared\nby a particular group of artists and then\nmakes and illustrates the claim that\nindividuals introduced variations within\nthat framework.",
+            "It describes the common perception that a\nparticular group of artists' works are\nderivative and then provides a specific\npiece of evidence that reinforces that\nperception.",
+            "It offers historical context that accounts\nfor a particular group of artists' shared\nstyle and then indicates the circumstances\nunder which several members of that\ngroup began exploring more\nunconventional themes.",
+            "It explains how a particular group of\nartists began collaborating and then\nrecounts how one member of that group\nbecame especially influential among them."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 9, Q26). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q027",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q27",
+          "passageTitle": "Overall Structure — Q27",
+          "passage": "Spoken in Northern California, Karuk is an\nisolate, or a language that has no demonstrated\nrelationship to other documented languages.\nThe Haida language in Alaska is an isolate as\nwell. However, most Native languages belong to\nlanguage families, or groups of languages whose\nsimilarities can be attributed to shared descent\nfrom a single language spoken thousands of\nyears ago. Curiously, isolates are more prevalent\nin regions where numerous nonisolates are also\nspoken. Thus, the geographical circumstances\nthat favor the development of isolates may also\ndrive diversification within language families.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It provides examples of isolates,\ndistinguishes isolates from most other\nNative languages, then discusses a point of\ncorrespondence between isolates and\nnonisolates.",
+            "It compares two isolates, sketches the\nprocess by which nonisolates evolve from\nisolates, then discusses how geography\naffects the development of isolates and\nnonisolates alike",
+            "It defines the concepts of isolate languages\nand nonisolate languages, distinguishes\nbetween the regions where isolates and\nnonisolates are found, then accounts for\nthis geographical distribution.",
+            "It names several isolates and nonisolates,\nproposes a similarity between the two\ncategories of languages, then identifies the\nrespective regions where languages\nbelonging to each category are likely to be\nfound."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 9, Q27). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q028",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q28",
+          "passageTitle": "Overall Structure — Q28",
+          "passage": "A team of researchers discovered that Matabele\nants can identify an infected wound in a member\nof the colony and then treat the infection by\ncovering the wound with antimicrobial\nsecretions that the ants produce. The team\nfound that the mortality rate for Matabele ants\nwith infected injuries was reduced by 90% with\nthis treatment, and they are hopeful that this\ndiscovery could aid in the development of new\nantibiotics for human use.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It identifies an issue concerning Matabele\nants and then proposes a solution to\naddress the issue.",
+            "It describes unique properties of Matabele\nants and then speculates on how those\nproperties evolved.",
+            "It summarizes research findings on\nMatabele ants and then identifies an area\nfor further research.",
+            "It introduces a study of Matabele ants and\nthen explains the research methods used in\nthe study."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 9, Q28). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q029",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q29",
+          "passageTitle": "Overall Structure — Q29",
+          "passage": "In what is now Washington state, the Tulalip\nTribes operate the Hibulb Cultural Center:\nrelying on traditional knowledge to guide the\ndesign of exhibits, this institution presents\nTulalip history and culture to the tribes'\ncitizens. The Turtle Mountain Band of\nChippewa, a tribe in North Dakota, employs a\nsimilar strategy in its own cultural center. Both\ncenters contrast with museums that aren't\nIndigenous-led; when displaying Indigenous\nartifacts, such museums tend to anticipate\nmainly non-Indigenous audiences and rely on\nEurocentric strategies for designing exhibits.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It describes how tribal cultural centers\ndesigned exhibits of a particular set of\nartifacts, then analyzes how\nnon-Indigenous institutions designed\nexhibits of the same artifacts.",
+            "It examines how tribal citizens respond to\nexhibits at tribal cultural centers, then\nspeculates how non-Indigenous audiences\nwould respond to the same exhibits.",
+            "It discusses two cultural centers operated\nby tribes, then compares them with\nnon-Indigenous institutions that present\nIndigenous exhibits.",
+            "It outlines an early strategy for exhibit\ndesign used by one tribal cultural center,\nthen explains a newer strategy used by a\ndifferent tribal cultural center."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 9, Q29). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q030",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q30",
+          "passageTitle": "Overall Structure — Q30",
+          "passage": "Why do rusty-spotted cats purr but jaguars\nroar? Researchers hypothesize that this\ndifference between the two feline species may be\npartly due to a U-shaped bone in their throats\ncalled the hyoid. Rusty-spotted cats, which are\nmuch smaller than jaguars, have a rigid hyoid\nthat rumbles when the cat's larynx vibrates,\nresulting in a purr. By contrast, jaguars have a\nsomewhat flexible hyoid, and the bone is\nattached to the skull with a stretchy ligament\nthat rusty-spotted cats lack. These traits allow\njaguars and most other species of big cats to\nproduce powerful roars. The same traits may\nalso prevent most big cats from purring.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "The text compares the habitats of two\nspecies, then explains how those habitats\nare changing.",
+            "The text presents a theory about two\nspecies, then discusses facts that weaken it.",
+            "The text poses a question about two\nspecies, then presents a possible answer.",
+            "The text describes a behavior shared by\ntwo species, then discusses other behaviors\nshared by them."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 9, Q30). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q031",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q31",
+          "passageTitle": "Overall Structure — Q31",
+          "passage": "The Lartington is just one of approximately\nthree million known historical shipwrecks spread\nthroughout the world's oceans, and their impact\non sea life and underwater ecosystems is of great\ninterest to researchers. Rachel Mugge and\ncolleagues were particularly curious about the\neffects of wooden shipwrecks on seafloor\nmicrobial communities. The researchers studied\ntwo wooden shipwrecks in the Gulf of Mexico by\nplacing pieces of pine and oak between zero and\n200 meters away from each shipwreck to collect\nsamples of three kinds of microbes: bacteria,\narchaea, and fungi. They found that across the\nthree microbial communities, peak diversity and\nrichness was observed on pine and oak samples\nplaced approximately 125 meters from the\nshipwrecks.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It notes a general scientific interest in\nshipwrecks' ecological effects, describes a\nspecific study related to that interest, and\nthen states one of the study's findings.",
+            "It states the number of known shipwrecks,\ndescribes the historical significance of one\nof those shipwrecks, and then comments\non the various microbes found at the\nshipwreck site.",
+            "It names a famous historical shipwreck,\ndescribes the type of wood used to build\nthat ship, and then explains how that\nwood type influences underwater microbial\ncommunities.",
+            "It introduces a study of microbial\ncommunities near shipwrecks that has\nreceived significant scholarly attention,\nsummarizes the results of that study, and\nthen describes a research team's reaction\nto the study."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 9, Q31). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q032",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q32",
+          "passageTitle": "Overall Structure — Q32",
+          "passage": "Community science, which involves professional\nscientists collaborating with amateur science\nenthusiasts to study a topic, is often an effective\nand engaging way to conduct research. It can\nallow people to assist with conservation efforts,\nspark youth interest in science, and increase the\namount of data researchers can collect. This\napproach was essential to the success of a study\nby biologist Abbigail Merrill and colleagues of\nhow butterfly color relates to flower choice,\nwhich included findings from hundreds of\nstudents and community members in\nnorthwestern Arkansas.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It introduces the topic of a scientific study,\ndescribes the study's importance, and then\npresents the study's results.",
+            "It identifies a particular approach to\nresearch, lists some benefits of that\napproach, and then mentions a study in\nwhich that approach was used.",
+            "It argues for a new approach to scientific\nresearch, comments on the public's opinion\nabout the approach, and then describes\nhow that approach was applied in a\ncertain study.",
+            "It describes the development of a type of\nscientific collaboration, shows how that\ntype of collaboration has been used in a\nparticular field of study, and then suggests\nfuture collaborative projects."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 9, Q32). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q033",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q33",
+          "passageTitle": "Overall Structure — Q33",
+          "passage": "With its combination of country and pop\ninfluences, \"Here You Come Again\" is typical of\nDolly Parton's recordings in the late 1970s and\nfirst half of the 1980s. Through songs bridging\nthese two genres, she achieved her greatest\ncommercial successes. A decade earlier, however,\nDolly had first established herself as a\nsongwriter steeped in the traditional folk music\nof the Blue Ridge Mountains, where she was\nborn and raised. The influence of the ballads of\nthis region can be heard in the word choice and\nsubject matter of the lyrics to \"Jolene,\" one of\nher best songs from this period.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It explores Dolly's lifelong interest in folk\nmusic, then debates whether pop music\ninfluenced \"Jolene.\"",
+            "It discusses a particular period in Dolly's\nrecording career, then considers the music\nin an earlier period of her career",
+            "It enthusiastically recommends Dolly's\nearliest recordings, then expresses\ndisappointment with her later recordings",
+            "It praises \"Here You Come Again,\" then\nnotes how remarkably similar that song is\nto a song that Dolly recorded earlier in her\ncareer"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 9, Q33). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q034",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q34",
+          "passageTitle": "Overall Structure — Q34",
+          "passage": "In a study by Mika R. Moran, Daniel A.\nRodriguez, and colleagues, residents of Bogotá,\nColombia, and Fortaleza, Brazil, were surveyed\nabout parks in their cities. Of the 1,121\nrespondents from Bogotá, 71.9% indicated that\nthey use the city's parks, and of the 938\nrespondents from Fortaleza, 35.7% indicated\nusing city parks. Given that the percentage of\nBogotá respondents who reported having access\nto desired nonpark amenities near parks was\nmuch lower than that reported by Fortaleza\nrespondents, the difference in park use can't be\nexplained by Bogotá residents having more\naccess to desired nonpark amenities near parks.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "A study of park use in Bogotá is\ndescribed, and then a similar study of park\nuse in Fortaleza is analyzed to corroborate\nthe findings of the Bogotá study.",
+            "A study involving surveys in Bogotá and\nFortaleza is introduced, and then a\npossible explanation for some of the results\nis considered and rejected.",
+            "An unexpected finding is described, and\nthen that finding is attributed to the\nmethod used to collect survey data in\nBogotá and Fortaleza.",
+            "An unresolved question about park\nplanning is described, and then examples\nfrom a study of Bogotá and Fortaleza are\nused to answer that question."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 9, Q34). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q035",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q35",
+          "passageTitle": "Overall Structure — Q35",
+          "passage": "Some researchers posit that the species\ninhabiting the South Pacific island of Grande\nTerre belong to clades that predate the island's\nsplit from remnants of the former\nsupercontinent Gondwana around 80 million\nyears ago. A study conducted by Michael A.\nSundue et al. found, however, that the crown\nage (the age of the most recent common\nancestor of all living and extinct species in the\nclade) of the clade of Grammitis ferns on\nGrande Terre is 8.5 million years; Sundue et al.\nfurther found that the crown age of the clade of\nGrammitis ferns in the South Pacific generally is\napproximately 10.0 million years.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It presents a possibility that some\nresearchers have raised, then describes a\nstudy that clarifies their reasons for doing\nso.",
+            "It explains a view some researchers have\nadvanced, then discusses study results that\nled them to reconsider that view.",
+            "It identifies a discrepancy between a\nhypothesis some researchers have proposed\nand related research findings, then\nexplains that discrepancy.",
+            "It describes an idea that some researchers\nhave put forward, then presents study\nresults that are incompatible with that\nidea."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 9, Q35). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q036",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q36",
+          "passageTitle": "Overall Structure — Q36",
+          "passage": "Adelaide is one of many cities that have\ninstalled pontoons or other hardening structures\nto protect their shorelines against coastal\nhazards. To assess how birds respond to\nshoreline hardening and other landscape\nalterations, Diann Prosser et al. used a tool\nknown as the Index of Waterbird Community\nIntegrity to survey bird communities consisting\nof sixty-four species, including the tundra swan\nand the great blue heron, in the Chesapeake\nBay on the US East Coast. The researchers\nconcluded that shoreline hardening more\nnegatively affects birds than does land\ndevelopment for uses such as housing.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It introduces a certain technique, mentions\nthe hypothesis of a study into an\necological consequence of that technique,\nand presents evidence in support of that\nstudy's hypothesis.",
+            "It provides an example of a location that\nhas adopted a particular approach,\nexplains the methodology of a study into\nan ecological effect of that approach, and\ndescribes a finding of that study.",
+            "It makes a claim about the use of a specific\nstrategy, describes field observations of a\nconsequence of that strategy in a\nparticular ecosystem, and makes a\nsupposition based on those observations.",
+            "It presents a solution to a commonly\noccurring problem, summarizes the\nprocedures used by a group of researchers\nstudying the environmental impact of that\nsolution, and notes the significance of the\nresearchers' findings."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 9, Q36). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q037",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q37",
+          "passageTitle": "Overall Structure — Q37",
+          "passage": "The Reckoning and Resilience(2022) exhibition\nat Duke University's Nasher Museum of Art in\nDurham, North Carolina, was curated to feature\nthe work of thirty North Carolina artists. The\nincluded artists represent a wide variety of\nartistic disciplines, from painters such as Juan\nLogan to the sculptor Stephen Hayes. In its\ninclusion of many borrowed works, the\nexhibition is atypical for the Nasher Museum,\nwhich tends to curate its exhibitions around the\npermanent collection of contemporary art that it\nowns.",
+          "prompt": "Which choice best describes the overall structure\nof the text?",
+          "options": [
+            "It explains how an art exhibition differs\nfrom many other exhibitions, then\nanalyzes the significance of that difference.",
+            "It presents the unusual goals curators had\nfor an art exhibition, then evaluates\nwhether the curators achieved those goals.",
+            "It provides an overview of an art\nexhibition, then explains what makes the\nexhibition unusual for the institution that\norganized it.",
+            "It discusses the wide range of disciplines\nrepresented in an art exhibition, then\nexplains why curators included works in\nthose disciplines."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 9, Q37). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t09-q038",
+          "skill": "Overall Structure",
+          "domain": "Craft and Structure",
+          "focus": "Describe the overall organization and structural progression of the text",
+          "source": "SAToplam 2.0 · Topic 9 · Q38",
+          "passageTitle": "Overall Structure — Q38",
+          "passage": "The following text is adapted from William\nShakespeare's 1597 playThe Tragedy of King\nRichard III.Richard is reflecting on the recent\narrest of his brother, the Duke of Clarence, on\nsuspicion of treason against King Edward IV.\nDerby, Hastings, Buckingham, Rivers, Dorset,\nand Grey are also members of the English\nnobility.\nRICHARD: I do the wrong, and first begin to\nbrawl.\nThe secret mischiefs that I set [flowing]\nI lay unto the grievous charge of others.\nClarence, whom I indeed have cast in darkness,\nI do beweep to many simple [gullible people],\nNamely, to Derby, Hastings, Buckingham;\nAnd tell them 'tis the Queen and her allies\nThat stir the King against the Duke my brother.\nNow they believe it, and withal whet me\nTo be revenged on Rivers, Dorset, Grey.",
+          "prompt": "Which choice best describes what happens in\nthe text?",
+          "options": [
+            "Richard attributes Clarence's troubles to\nboth his own secret plotting and the\ndistrust of Clarence that the queen and her\nallies Derby, Hastings, and Buckingham\nhave planted in the king's mind.",
+            "Richard describes having wept as he\ninformed Derby, Hastings, and\nBuckingham that the queen and her allies\nconvinced the king to act against Clarence,\nand says that the earnestness of his grief\ncaused them to accept his version of\nevents.",
+            "Richard acknowledges that his mischievous\nnature has spurred him to commit\nmisdeeds in the past, including instigating\nenmity between the king and Clarence,\nbut he reports that he has hitherto not\nlost the trust of the queen and her allies.",
+            "Richard indicates that he has pretended to\nbe aggrieved about Clarence's situation\nand has proclaimed it to be the fault of\nthe queen and her allies, but in reality, he\nhas caused the hostility the king feels\ntoward Clarence."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 9, Q38). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    }
+  ]
+}

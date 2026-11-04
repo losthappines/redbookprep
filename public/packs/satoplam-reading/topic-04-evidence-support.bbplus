@@ -1,0 +1,1071 @@
+{
+  "format": "bbplus",
+  "version": 1,
+  "type": "practice",
+  "title": "SAToplam 2.0 — Command of Evidence - Support",
+  "description": "Official real exam SAT reading practice questions (March 2023 – August 2025) compiled by @satashkent. Domain: Information and Ideas.",
+  "modules": [
+    {
+      "title": "Command of Evidence - Support — Set 1",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t04-q001",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q1",
+          "passageTitle": "Command of Evidence - Support — Q1",
+          "passage": "17.5 sec. (*Exam level)\nThe bird species Myiobius barbatus (the\nbearded flycatcher), which forages in relatively\ndense vegetation, and Platyrinchus saturatus\n(the cinnamon-crested spadebill), which forages\nin open areas or low-density vegetation, share\nterritory in French Guiana with Thainnomanes\ncaesius (the cinereous antshrike), which emits a\nloud alarm call when it detects predators.\nBiologist Ari Martinez and colleagues, who\nstudied the ecological community the species\nshare, hypothesized that there is an inverse\nrelationship between birds' field of vision while\nforaging and their sensitivity to alarm calls from\nneighboring species.",
+          "prompt": "Which finding, if true, would most directly\nsupport Martinez and colleagues' hypothesis?",
+          "options": [
+            "When Martinez and colleagues played T.\ncaesius alarm calls, M. barbatus and P.\nsaturatus displayed no reaction, whereas\nT. caesius displayed predator-avoidance\nbehavior.",
+            "Many local bird species with similar\nforaging habits to those of M. barbatus\ndisplayed no reaction when Martinez and\ncolleagues played T. caesius alarm calls,\nwhereas M. barbatus displayed\npredator-avoidance behavior.",
+            "Some individuals of P. saturatus displayed\npredator-avoidance behavior when\nMartinez and colleagues played T. caesius\nalarm calls, whereas nearly all did when\nM. barbatus alarm calls were played.",
+            "P. saturatus displayed no reaction when\nMartinez land colleagues played T. caesius\nalarm calls, whereas M. barbatus displayed\npredator avoidance behavior in response to\nthe calls."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 4, Q1). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q002",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q2",
+          "passageTitle": "Command of Evidence - Support — Q2",
+          "passage": "New research suggests that coffee could have a\npositive effect on cardiovascular health.\nAlthough caffeine is coffee's most well-known\nconstituent, the beverage contains more than\n100 biologically active components. In a study\nled by Jiyoung Kim, researchers at Seoul\nNational University concluded that\nnon-caffeinated compounds likely play a role in\nthe positive relationship between coffee\nconsumption and health.",
+          "prompt": "Which finding, if true, would most directly\nsupport the researchers' conclusion?",
+          "options": [
+            "Whereas regular coffee contains from\n70-140 mg of caffeine per cup, decaf\ncontains approximately 0-7mg.",
+            "Decaffeinated coffee causes cells to\nproduce NQO1, an enzyme that has\nneuroprotective benefits.",
+            "Extracts from caffeinated coffee have been\nshown to aid weight loss more than a\nplacebo.",
+            "People who drink several cups of coffee\nevery day are less vulnerable to certain\ndiseases."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q2). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q003",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q3",
+          "passageTitle": "Command of Evidence - Support — Q3",
+          "passage": "It was only when Alma Thomas turned away\nfrom figurative art and toward abstraction that\nshe rose to acclaim as an artist. When the\nsolidity of her line gave way to broken, vibrant\ncolors, the beauty she had long seen emerged.",
+          "prompt": "Which choice, if true, would most effectively\nsupport the writer's claim?",
+          "options": [
+            "Her painting Starry Night and the\nAstronauts (1972) includes a small\nkaleidoscope of red, orange, and yellow\nthat suggests the spaceship Apollo 10.",
+            "Thomas was fascinated by the natural\nworld, incorporating everything from the\nflowers in her garden to the stars in the\nnight sky into her paintings.",
+            "Her Still Life with Vases and Flowers\n(1964), which contains realistic images,\nfeels labored, whereas Lunar Surface\n(1970) glows with rich splashes of purple\nand blue.",
+            "Although Thomas's own works focused on\nnature, she believed that art could also\nevoke the energy of airplanes, cars,\nskyscrapers, and electric signals."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q3). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q004",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q4",
+          "passageTitle": "Command of Evidence - Support — Q4",
+          "passage": "Biologist Rosanna Alegato believes that we\nmight learn how multicellular organisms\ndeveloped from single celled ones if we\nunderstand why the single celled organism\nSalpingoeca rosetta, the oldest living relative of\nanimals, sometimes forms colonies of cells.\nAlegato and colleagues reviewed data from\nmany studies of how S. rosetta responds when\nexposed to another type of single-celled\norganism, bacteria, including lohn P. Bowman's\nwork with Algoriphagus ratkowsky bacteria and\nIftikhar Ahmed's work with Algoriphagus\nboritolerans bacteria. Alegato and colleagues\nconcluded that both A. ratkowsky and A.\nboritaterans might have played a role in the\ndevelopment of multicellular organisms.",
+          "prompt": "Which finding, if true, would most directly\nsupport Alegato and colleagues' conclusion?",
+          "options": [
+            "Bowman and Ahmed found that S rosetta\ntended to form colonies after bacterial\nexposure.",
+            "Bowman found that S, rosetta tended to\nform colonies after bacterial exposure, but\nAhmed did not.",
+            "Ahmed found that s. rosetta tended to\nform colonies after bacterial exposure, but\nBowman did not.",
+            "Neither Bowman nor Ahmed found that S\nrosetta tended to form colonies after\nbacterial exposure."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q4). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q005",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q5",
+          "passageTitle": "Command of Evidence - Support — Q5",
+          "passage": "Veronice L. Bura, Akito Y. Kawahara, and\nJayne E. Yack investigated the evolution and\nfunction of sound production in silk moth and\nhawk moth caterpillars. They found that during\nharmless simulated attacks on isolated\ncaterpillars, 33% of the tested species produced\nsound, which ranged from clicks in Manduca\npellenia to whistles in Rhodinia fugax. Although\nsome insects use sound to communicate with\nmembers of the same species, the researchers\nclaim that the caterpillar sounds recorded in\ntheir study are directed primarily at predators.",
+          "prompt": "Which finding, if true, would most directly\nsupport Bura and colleagues' claim?",
+          "options": [
+            "In most case, the sound that caterpillar\nspecies produced during simulated attacks\nwas not produced by other caterpillar\nspecies during simulated attacks.",
+            "Chickens and yellow warblers, two\npredators of caterpillars, have been\nobserved to stop their attacks in response\nto caterpillars sounds.",
+            "Caterpillar clicks were emitted in a\nfrequency of detectable by birds that prey\non caterpillar, but caterpillar whistles were\nnot.",
+            "Each caterpillar species tended to produce\none sound during simulated attacks,\nalthough individuals occasionally made a\nvariety of other sounds during simulated\nattacks as well."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q5). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q006",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q6",
+          "passageTitle": "Command of Evidence - Support — Q6",
+          "passage": "Psychologists Gregory Bryant, Dorsa Amir, and\ncolleagues investigated cross-cultural perceptions\nof spontaneous (real) laughter and volitional\n(fake or forced) laughter. Study participants\nfrom 21 societies, including those in Austria and\nTurkey, listened to randomized recordings of 18\nspontaneous laughs taken from natural\nconversations between pairs of women and 18\nvolitional laughs produced separately by 18\ndifferent women in response to an instruction to\nlaugh. Analysis of the participants' evaluations\nof the laughs prompted the team to conclude\nthat the ability to distinguish between\nspontaneous and volitional laughter appears to\nbe universal across cultures.",
+          "prompt": "Which potential finding from another study, if\ntrue, would most directly strengthen the team's\nconclusion?",
+          "options": [
+            "Acoustic features of spontaneous laughter,\nsuch as pitch and intensity, have\nmeasurable variations both within and\nacross societies.",
+            "There is some evidence of correlation\nbetween the average size of communities in\na society and judgments of spontaneous\nand volitional laughter by listeners in that\nsociety.",
+            "Listeners from both Austria and Turkey\ntend to be able to determine how well two\npeople know each other based on\nrecordings of their conversation.",
+            "Spontaneous laughter typically has a\nrecognizably higher pitch than volitional\nlaughter, regardless of what society the\nspeakers in a conversation are from."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 4, Q6). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q007",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q7",
+          "passageTitle": "Command of Evidence - Support — Q7",
+          "passage": "The Arapaho language of the Plains region in\nthe United States has 16 vowel and consonant\nsounds. In contrast, the Hadza language of\neastern Africa has 70. Why would languages\ndiffer in this way? One researcher has\nhypothesized that when modern humans arose\nin Africa, they spoke a single language, but as\nhumans gradually spread throughout Africa and\nthen around the globe, that language developed\ninto new languages. Those developed into still\nmore languages as small bands of humans spread\neven farther, with each new language retaining\nfewer sounds from humanity's original language.",
+          "prompt": "Which finding, if true, would best support the\nresearcher's hypothesis?",
+          "options": [
+            "Languages that emerged in northwestern\nNorth America tend to have more sounds\nthan languages that emerged in East Asia\ndo, even though northwestern North\nAmerica is farther away from Africa than\nEast Asia is.",
+            "Languages that emerged in Eastern\nEurope tend to have more sounds than\nlanguages that emerged in East Asia do,\nand Eastern Europe is closer to Africa\nthan East Asia is.",
+            "Languages that emerged in Western\nEurope tend to have fewer sounds than\nlanguages that emerged in East Asia do,\nand Western Europe is closer to Africa\nthan East Asia is.",
+            "Languages that emerged in Southeast Asia\ntend to have more sounds than languages\nthat emerged in East Asia do, even though\nthe two regions are roughly the same\ndistance from Africa."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q7). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q008",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q8",
+          "passageTitle": "Command of Evidence - Support — Q8",
+          "passage": "Biologist Rosanna Alegado believes that we\nmight learn how multicellular organisms\ndeveloped from single-celled ones if we\nunderstand why the single-celled organism\nSalpingoeca rosetta, the oldest living relative of\nanimals, sometimes forms colonies of cells.\nAlegado and colleagues reviewed data from\nmany studies of how S rosetta responds when\nexposed to another type of single-celled\norganism, bacteria, including Eric W. Triplett's\nwork with Dyadobacter fermentans bacteria and\nJung-Hoon Yoon's work with Algoriphagus\nmarincola bacteria. Alegado and colleagues\nconcluded that both D. fermentans and A.\nmarincola might have played a role in the\ndevelopment of multicellular organisms.",
+          "prompt": "Which finding, if true, would most directly\nsupport Alegado and colleagues' conclusion?",
+          "options": [
+            "S. rosetta tended to form colonies when\nexposed to A. marincola but not when\nexposed to D. fermentans.",
+            "Although several studies involving other\nbacteria species found that S. rosetta\ntended to form colonies after bacteria\nexposure, only the studies using D.\nfermentans and A. marincola tested\nwhether the amount of bacteria exposure\naffected the rate of colony formation.",
+            "S. rosetta tended to form colonies when\nexposed to D. fermentans but not when\nexposed to A. marincola.",
+            "S. rosetta tended to form colonies when\nexposed to D. fermentans and when\nexposed to A. marincola."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 4, Q8). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q009",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q9",
+          "passageTitle": "Command of Evidence - Support — Q9",
+          "passage": "External shopping cues are a type of marketing\nthat uses obvious messaging-a display featuring\na new product, for example, or a \"buy one, get\none free\" offer to entice consumers to make\nspontaneous purchases. In a study, data scientist\nSam K. Hui and colleagues found that this effect\ncan also be achieved with a less obvious cue:\nrearranging a store's layout. The researchers\nexplain that trying to find items in new\nlocations causes shoppers to move through more\nof the store, exposing them to more products\nand increasing the likelihood that they'll buy an\nitem they hadn't planned on purchasing.",
+          "prompt": "Which response from a survey given to shoppers\nwho made a purchase at a retail store best\nsupports the researchers' explanation?",
+          "options": [
+            "I needed to buy some cleaning supplies,\nbut they weren't in their regular place.\nWhile I was looking for them, I saw this\ninteresting notebook and decided to buy\nit, too.",
+            "I didn't buy everything on my shopping\nlist today. I couldn't find a couple of the\nitems in the store, even though I looked all\nover for them.",
+            "The store sent me a coupon for a new\nbrand of soup, so I came here to find out\nwhat kinds of soup that brand offers. I\ndecided to buy a few cans because I had\nthe coupon.",
+            "This store is larger than one that's closer\nto where I live, and it carries more\nproducts. I came here to buy some things\nthat the other store doesn't always have."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q9). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q010",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q10",
+          "passageTitle": "Command of Evidence - Support — Q10",
+          "passage": "A number of artists associated with hyperpop, a\nmovement in electronic music that emerged in\nthe 2010s, aggressively manipulate their\nrecorded voice. The singer Dorian Electra, for\nexample, shifts the pitch of their vocals to be\nmuch deeper than that of Electra's natural\nrange. And even the hyperpop artists who don't\nrely on pitch-shifting, such as Rina Sawayama,\noften distort their vocals using digital tools. By\npersistently modifying the voice, hyperpop\ninvites the listener to reflect on the extent to\nwhich digital technology mediates the human\nexperience today.",
+          "prompt": "Which description of vocal manipulation in\nhyperpop is best supported by the text?",
+          "options": [
+            "It serves as an example of digital\ntechnology's negative influence on daily\nlife.",
+            "It represents the continuity of human\nexperience despite social and historical\nchange.",
+            "It functions as a commentary on\ncontemporary social conditions.",
+            "It symbolizes the power of contemporary\nmusic to influence listeners' sense of self."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q10). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q011",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q11",
+          "passageTitle": "Command of Evidence - Support — Q11",
+          "passage": "The phrase usa-don sonda is a future-oriented\nexpression used by members of the Yupno, an\nIndigenous group in Papua New Guinea, that\ntranslates to \"next week.\" Rafael Núñez and\ncolleagues recorded Yupno speakers explaining\nseveral of these temporal-related words and\nphrases and coded each speaker's manual\ngestures. Previous research has found evidence\nof Spanish speakers referring to the left/right\naxis to describe events in time, and many\nresearchers believe that this tendency to make\ntemporal distinctions along imagined linear axes\nis universal. However, Núñez and colleagues\nclaim that this tendency is not in fact\nubiquitous.",
+          "prompt": "Which finding, if true, would most directly\nsupport Núñez and colleagues claim?",
+          "options": [
+            "Yupno speakers were observed making\ntemporal gestures both indoors and\noutdoors, though with greater frequency\nwhen indoors.",
+            "When outdoors and referring to the future,\nYupno speakers facing uphill gesture in\nfront of themselves, whereas those facing\ndownhill gesture behind themselves.",
+            "Yupno speakers typically use their left\nhand to make temporal gestures regardless\nof whether the gestures are past oriented\nor future oriented.",
+            "Some Yupno grammatical structures used\nwhen talking about time are also used in\nSpanish."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q11). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q012",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q12",
+          "passageTitle": "Command of Evidence - Support — Q12",
+          "passage": "Periods of subfreezing temperatures in Alaska\nhave been growing shorter in response to climate\nwarming, potentially enabling increased carbon\ndioxide (CO 2) absorption through greater\nproductivity of creeping dogwood (Cornus\ncanadensis) plants and other vegetation, but\nalso potentially enabling increasedCO 2 output\nthrough greater heterotrophic respiration (CO 2\ngenerated by the activity of soil\nmicroorganisms). Hydrologist Yonghong Yi and\nher colleagues developed a model incorporating\nnumerous inputs—years of solar radiation and\nsnow cover data among them—to evaluate the\neffects of warming on theCO 2 balance in\nAlaska, concluding that netCO 2 is likely to\nincrease if warming hastens spring snow melt.",
+          "prompt": "Which finding, if true, would most directly\nsupport the researchers' conclusion?",
+          "options": [
+            "Early snow melt reduces the amount of\nsoil moisture available for the growth of\nplant species such as C. canadensis, and it\nraises the rate of heterotrophic respiration.",
+            "Early snow melt extends the period in\nwhich plant species such as C. canadensis\ncan absorb CO 2, but has no effect on the\nrate of heterotrophic respiration.",
+            "Early snow melt slows the growth of plant\nspecies such as C. canadensis by reducing\nsoil insulation, and it suppresses\nheterotrophic respiration.",
+            "Early snow melt amplifies the effect of\nsolar radiation on the growth of plant\nspecies such as C. canadensis and on the\nrate of heterotrophic respiration."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q12). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q013",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q13",
+          "passageTitle": "Command of Evidence - Support — Q13",
+          "passage": "Neurobiologists Laura Cuaya, Raúl\nHernández-Pérez, and colleagues investigated\nthe language detection abilities of eighteen dogs.\nThe researchers monitored the brain activity of\nBran (a border collie), Alma (a mixed breed),\nand other dogs while the animals listened to\nthree recordings: one of The Little Prince being\nread in Spanish, the second in Hungarian, and a\nthird made up of short, randomly selected\nfragments of the first two, scrambled so that\nthey didn't resemble human speech. Each dog\nwas familiar with either Spanish or Hungarian,\nbut not both. The team concluded that\ndifferences in dogs' anatomical features may\naffect their ability to distinguish speech from\nnonspeech.",
+          "prompt": "Which finding from the study, if true, would\nmost directly support the team's conclusion?",
+          "options": [
+            "The pattern of brain activity that\nlong-headed dogs showed when hearing the\nscrambled recording was different from the\npattern of brain activity that short-headed\ndogs showed when hearing the language\nthey were accustomed to.",
+            "Long-headed dogs accustomed to hearing\nSpanish tended to show more brain\nactivity when hearing Spanish than\nlong-headed dogs accustomed to hearing\nHungarian showed when hearing\nHungarian.",
+            "Compared with longer-headed dogs,\nshorter-headed dogs showed less difference\nin brain activity when hearing either\nSpanish or Hungarian than when hearing\nthe scrambled recording.",
+            "Compared with longer-headed dogs,\nshorter-headed dogs showed a greater\ndifference in brain activity when hearing\nthe language they were accustomed to\nthan when hearing the other language."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q13). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q014",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q14",
+          "passageTitle": "Command of Evidence - Support — Q14",
+          "passage": "The onsets of growing seasons in Alaska have\nbeen shifting earlier, potentially enabling\nincreased carbon dioxide(CO 2) absorption\nthrough greater productivity of mooseberry\n(Viburnum edule) plants and other vegetation,\nbut also potentially enabling increasedCO 2\noutput through greater heterotrophic respiration\n(CO 2 generated by the activity of soil\nmicroorganisms). Hydrologist Yonghong Yi and\nher colleagues modeled seasonal changes in net\nCO 2 in Alaska in a landscape grid of 1 square\nkilometer (km2) cells and again in a grid of 10\nkm2 cells, which are finer resolutions than most\nmodels of netCO 2 have achieved. The\nresearchers concluded that variations in the\nlandscape affect netCO 2 in ways that most\nmodels are too coarse to capture.",
+          "prompt": "Which finding from the researchers' study, if\ntrue, would most directly support the\nresearchers' conclusion?",
+          "options": [
+            "Higher average heterotrophic respiration\nrates were found for summer months than\nfor winter months when modeled using\neither a grid of 1km2 cells or a grid of 10\nkm2 cells.",
+            "No correlations between seasonal\nvariations in average heterotrophic\nrespiration and CO 2 absorption by V.\nedule and other plant species were found\nwhen modeled using either a grid of 1km2\ncells or a grid of 10km2 cells.",
+            "Lower average heterotrophic respiration\nrates were found for autumn months when\nmodeled using a grid of 1km2 cells than\nwhen modeled using a grid of 10km2 cells.",
+            "When seasonal fluxes in averageCO 2\nabsorption and heterotrophic respiration\nwere modeled using a grid of 1km2 cells,\nmuch more data were generated than when\nseasonal fluxes were modeled using a grid\nof 10km2 cells, though the two models\nreported identical netCO 2."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q14). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q015",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q15",
+          "passageTitle": "Command of Evidence - Support — Q15",
+          "passage": "Fernand Braudel and other historians of\ncapitalism rarely discuss domestic capitalism in\nAfrica before the period of European\ncolonization, implicitly presenting capitalism as\nexternal to and imposed on Africa. John Iliffe\nand other Africanist scholars have shown,\nhowever, that in parts of Africa, institutionally\nprotected private land ownership, the existence\nof salaried labor, and other features of\ncapitalism predated colonization. One reason for\nthis discrepancy is that historians of capitalism\ntend to focus on longitudinal economic data\ndrawn from archival records, which do not exist\nfor much of precolonial Africa.",
+          "prompt": "Which statement about Iliffe and other\nAfricanist scholars is best supported by\ninformation in the text?",
+          "options": [
+            "They likely make use of different types of\nevidence than historians of capitalism\ntypically rely on.",
+            "They likely have a different view about\nwhich activities should be considered\ncapitalist in nature than historians of\ncapitalism do.",
+            "They likely differ from historians of\ncapitalism in the methods they use to\nderive longitudinal economic data from\narchival records.",
+            "They likely view capitalism as having been\nmore beneficial for Africa than historians\nof capitalism do."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q15). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q016",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q16",
+          "passageTitle": "Command of Evidence - Support — Q16",
+          "passage": "Veronica L. Bura, Akito Y. Kawahara, and\nJayne E. Yack investigated the evolution and\nfunction of sound production in silk moth and\nhawk moth caterpillars. They found that during\nharmless simulated attacks on isolated\ncaterpillars, 33% of the tested species produced\nsound, which ranged from clicks in Manduca\npellenia to vocalizations in Sphecodina abbottii.\nAlthough some insects use sound to\ncommunicate with members of the same species,\nthe researchers claim that the caterpillar sounds\nrecorded in their study are directed primarily at\npredators.",
+          "prompt": "Which finding, if true, would most directly\nsupport Bura and colleagues' claim?",
+          "options": [
+            "None of the species that emitted sounds\ndid so before the simulated attacks, and\nnearly all stopped emitting sounds within\nten seconds after the attacks.",
+            "In most cases, the sound that a caterpillar\nspecies produced during simulated attacks\nwas not produced by other caterpillar\nspecies during simulated attacks.",
+            "Caterpillar clicks were emitted in a\nfrequency detectable by birds that prey on\ncaterpillars, but caterpillar vocalizations\nwere not.",
+            "Each caterpillar species tended to produce\none sound during simulated attacks,\nalthough individuals occasionally made a\nvariety of other sounds during simulated\nattacks as well."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q16). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q017",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q17",
+          "passageTitle": "Command of Evidence - Support — Q17",
+          "passage": "Thomas Piketty and other historians of\ncapitalism rarely discuss domestic capitalism in\nAfrica before the period of European\ncolonization, implicitly presenting capitalism as\nexternal to and imposed on Africa. Crislayne\nAlfagali and other Africanist scholars have\nshown, however, that in parts of Africa,\nexport-oriented manufacturing, the existence of\nsalaried labor, and other features of capitalism\npredated colonization. One reason for this\ndiscrepancy is that historians of capitalism tend\nto focus on longitudinal economic data drawn\nfrom archival records, which do not exist for\nmuch of precolonial Africa.",
+          "prompt": "Which statement about Alfagali and other\nAfricanist scholars is best supported by\ninformation in the text?",
+          "options": [
+            "They likely view capitalism as having been\nmore beneficial for Africa than historians\nof capitalism do.",
+            "They likely have a different view about\nwhich activities should be considered\ncapitalist in nature than historians of\ncapitalism do.",
+            "They likely make use of different types of\nevidence than historians of capitalism\ntypically rely on.",
+            "They likely differ from historians of\ncapitalism in the methods they use to\nderive longitudinal economic data from\narchival records."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q17). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q018",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q18",
+          "passageTitle": "Command of Evidence - Support — Q18",
+          "passage": "Past research suggests that pollination by\nhoneybees is responsible for up to 10 percent of\ntotal Chinese cabbage crop production. Now\nresearchers are trying to determine how\ndependent cucumber crop production is on\nhoneybees. The first phase of their study\ninvolved shielding some cucumber plants to\nprevent insects from pollinating them, resulting\nin those plants having 40 to 90 percent lower\ncrop production than plants that were pollinated\nnormally. However, the researchers claim that\nthe first-phase experiment alone didn't tell them\nhow much of that difference in crop production\nis due specifically to excluding honeybees.",
+          "prompt": "Which finding, if true, would most directly\nsupport the researchers' claim?",
+          "options": [
+            "The shielding used in the first phase of the\nstudy did not affect the amount of sunlight\nthe cucumber plants received.",
+            "Other insects like solitary bees also\npollinate Chinese cabbage plants, and\nsome studies have allowed them to\npollinate normally while excluding\nhoneybees.",
+            "Other insects like squash bees also\npollinate cucumber plants, and the\nshielding in the first phase of the study\nblocked them as well.",
+            "Honeybees are more commonly used to\npollinate cucumber plants than Chinese\ncabbage plants."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q18). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q019",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q19",
+          "passageTitle": "Command of Evidence - Support — Q19",
+          "passage": "A film studies student is researching early\n20th-century film serials, which consisted of\nindividual episodes of a single long story that\nwere shown weekly in theaters. Clancy of the\nMounted is a 1933 serial that, over its 12\nepisodes, kept its audience interested with the\nsuspense and drama that are typical of the\nnorthern adventure genre. The student,\nhowever, claims that ultimately audiences of the\ntime preferred resolution and closure over\nongoing tension.",
+          "prompt": "Which finding, if true, would most directly\nsupport the student's claim?",
+          "options": [
+            "The 12th episode of Clancy of the\nMounted was the most expensive episode\nof the series to produce.",
+            "The 12th episode of Clancy of the\nMounted was viewed by more people than\nwas any previous episode in the series.",
+            "Modern critics generally regard the first\nepisode as the best installment of Clancy\nof the Mounted.",
+            "Audiences of the time considered Clancy\nof the Mounted to belong to a genre other\nthan the northern adventure genre."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q19). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q020",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q20",
+          "passageTitle": "Command of Evidence - Support — Q20",
+          "passage": "Water flowing around an obstruction creates\nvortices (patterns of swirls) of varying size; by\ndetecting the vortices, fish can determine the\nsize and position of the obstruction. Testing by\nYuzo R. Yanagisuru, Otar Akanyeti, and James\nC. Liao using models of three head\nshapes—narrow (low ratio of width to length),\nintermediate, and wide (high ratio of width to\nlength)—showed that for large vortices, fish with\nintermediate heads would be better able than\nwide-headed fish to distinguish between vortices\nand general turbulence in the water. A second\nresearch team has therefore hypothesized that in\nlow-visibility conditions, intermediate-headed\nfish will be more likely than wide-headed fish to\ndetect obstructions that create large vortices.",
+          "prompt": "Which finding, if true, would most directly\nsupport the second research team's hypothesis?",
+          "options": [
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that the intermediate-headed black\nsea bass (Centropristis striates) bumped\ninto the obstructions just as often as the\nwide-headed Synodontis macropunctata\ndid.",
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that the wide-headed Synodontis\nmacropunctata bumped into obstructions\nmore often than the intermediate-headed\nblack sea bass (Centropristis striates) did.",
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that some specimens of the\nintermediate-headed black sea bass\n(Centropristis striates) bumped into the\nobstructions more often than other\nspecimens of the same fish did.",
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that the Synodontis macropunctata,\nwhich has a relatively wide head, bumped\ninto more than half of the obstructions."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q20). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    },
+    {
+      "title": "Command of Evidence - Support — Set 2",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t04-q021",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q21",
+          "passageTitle": "Command of Evidence - Support — Q21",
+          "passage": "Some toothpastes contain titanium dioxide\nnanoparticles (T iO2-NPs), which can leach into\nwaterways and soils via wastewater. In a 2015\nstudy, Adeline Bourgeault and colleagues found\nthat T iO2-NPs can accumulate in the bodies of\nzebra mussels (Dreissena polymorpha). While\nbioaccumulation of manufactured nanoparticles\nmay be inherently worrisome, it has been\nhypothesized that T iO2-NP bioaccumulation in\ninvertebrates like D. polymorpha could serve a\nvaluable proxy role, obviating the need for\nmanufacturers to conduct costly and intrusive\nsampling of vertebrate species—such as common\ncarp (Cyprinus carpio), commonly used in\nregulatory compliance testing—for nanoparticle\nbioaccumulation, as environmental protection\nlaws currently require.",
+          "prompt": "Which finding, if true, would most directly\nsupport the hypothesis presented in the text?",
+          "options": [
+            "In comparable environments, D.\npolymorpha and C. carpio display\ncomparable rates ofT iO2-NP uptake.",
+            "Compared with C. carpio, D. polymorpha\ncan tolerate significantly higherT iO2-NP\nconcentrations without displaying any\nnegative effects.",
+            "It is easier to detect low and harmless\nconcentrations of T iO2-NPs in D.\npolymorpha than it is to detect high and\nharmful concentrations ofT iO2-NPs in C.\ncarpio.",
+            "T iO2-NP concentrations in D. polymorpha\ntend to vary more from individual to\nindividual than doT iO2-NP\nconcentrations in C. carpio when the\nspecies are exposed to similar levels of\nT iO2-NPs."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q21). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q022",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q22",
+          "passageTitle": "Command of Evidence - Support — Q22",
+          "passage": "Almost all works of fiction contain references to\nthe progression of time, including the time of\nday when events in a story take place. In a 2020\nstudy, Allen Kim, Charuta Pethe, and Steven\nSkiena claim that an observable pattern in such\nreferences reflects a shift in human behavior\nprompted by the spread of electric lighting in\nthe late nineteenth century. The researchers\ndrew this conclusion from an analysis of more\nthan 50,000 novels spanning many centuries and\ncultures, using software to recognize and tally\nboth specific time references—that is, clock\nphrases, such as 7 a.m. or 2:30 p.m.—and\nimplied ones, such as mentions of meals typically\nassociated with a particular time of day.",
+          "prompt": "Which finding from the study, if true, would\nmost directly support the researchers'\nconclusion?",
+          "options": [
+            "Novels published after the year 1800\ninclude the clock phrase 10 a.m. less often\nthan novels published before the year 1800\ndo.",
+            "Among novels published in the nineteenth\ncentury, implied time references become\nsteadily more common than clock phrases\nas publication dates approach 1900.",
+            "The time references of noon (12 p.m.) and\nmidnight (12 a.m.) are used with roughly\nthe same frequency in the novels.",
+            "Novels published after 1880 contain\nsignificantly more references to activities\noccurring after 10 p.m. than do novels\nfrom earlier periods."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 4, Q22). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q023",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q23",
+          "passageTitle": "Command of Evidence - Support — Q23",
+          "passage": "Early Earth is thought to have been\ncharacterized by a stagnant lid tectonic regime\nin which the upper lithosphere (the outer rocky\nlayer) was essentially immobile and there was no\ninteraction between the lithosphere and the\nunderlying mantle. Researchers investigated the\ntiming of the transition from a stagnant lid\nregime to a tectonic plate regime, in which the\nlithosphere is fractured into dynamic plates that\nin turn allow lithospheric and mantle material to\nmix. Examining chemical data from lithospheric\nand mantle-derived rocks ranging from 285\nmillion to 3.8 billion years old, the researchers\ndated the transition to 3.2 billion years ago.",
+          "prompt": "Which finding, if true, would most directly\nsupport the researchers' conclusion?",
+          "options": [
+            "Mantle-derived rocks older than 3.2 billion\nyears show significantly more\ncompositional diversity than lithospheric\nrocks older than 3.2 billion years do.",
+            "There is a positive correlation between the\nage of lithospheric rocks and their chemical\nsimilarity to mantle-derived rocks, and\nthat correlation increases significantly in\nstrength at around 3.2 billion years old.",
+            "Among rocks known to be older than 3.2\nbillion years, significantly more are mantle\nderived than lithospheric, but the opposite\nis true for the rocks younger than 3.2\nbillion years.",
+            "Mantle-derived rocks younger than 3.2\nbillion years contain some material that is\nnot found in older mantle-derived rocks\nbut is found in older and contemporaneous\nlithospheric rocks."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 4, Q23). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q024",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q24",
+          "passageTitle": "Command of Evidence - Support — Q24",
+          "passage": "Honda's introduction of a walk-behind\nlawnmower in 1978 is an instance of brand\nextension—the company leveraged its brand\nrecognition as an automobile manufacturer to\nenter a product category where it had not\npreviously competed. To determine if perceived\ncategory similarity predicts consumers'\nlikelihood of purchasing brand extensions, Alicia\nGrasby et al. identified 30 extended-brand pairs\n(e.g., the same brand of hand lotion and\nmouthwash) in 52 weeks of purchases by\napproximately 60,000 households; for each pair,\nGrasby et al. had consumers rate the similarity\nof the product categories and calculated the\nchange in probability of a brand in one category\nbeing purchased if the same brand was\npurchased in the other category.",
+          "prompt": "Which finding, if true, would provide evidence\nthat the possibility Grasby et al. investigated\ndoes occur?",
+          "options": [
+            "Consumers' ratings and the changes in\nprobability calculated by the researchers\nwere both affected by level of brand\nrecognition.",
+            "There was a strong positive correlation\nbetween consumers' ratings and the\nchanges in probability calculated by the\nresearchers.",
+            "Consumers' ratings varied substantially by\ncategory pair, whereas the changes in\nprobability calculated by the researchers\nwere broadly similar for each pair.",
+            "Consumers tended to purchase more\nproducts in categories in which\nextended-brand pairs are found than in\ncategories in which extended-brand pairs\nare not found."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q24). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q025",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q25",
+          "passageTitle": "Command of Evidence - Support — Q25",
+          "passage": "Microsoft's introduction of the Xbox console in\n2001 is an instance of brand extension—the\ncompany leveraged its brand recognition as a\nsoftware producer to enter a product category\nwhere it had not previously competed. To\ndetermine if perceived category similarity\npredicts consumers' likelihood of purchasing\nbrand extensions, Alicia Grasby et al. identified\n30 extended-brand pairs (e.g., the same brand of\nmobile phone and headphones) in 52 weeks of\npurchases by approximately 60,000 households;\nfor each pair, Grasby et al. had consumers rate\nthe similarity of the product categories and\ncalculated the change in probability of a brand\nin one category being purchased if the same\nbrand was purchased in the other category.",
+          "prompt": "Which finding, if true, would provide evidence\nthat the possibility Grasby et al. investigated\ndoes occur?",
+          "options": [
+            "Consumers' ratings varied substantially by\ncategory pair, whereas the changes in\nprobability calculated by the researchers\nwere broadly similar for each pair.",
+            "Consumers tended to purchase more\nproducts in categories in which\nextended-brand pairs are found than in\ncategories in which extended-brand pairs\nare not found.",
+            "There was a strong positive correlation\nbetween consumers' ratings and the\nchanges in probability calculated by the\nresearchers.",
+            "Consumers' ratings and the changes in\nprobability calculated by the researchers\nwere both affected by level of brand\nrecognition."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q25). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q026",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q26",
+          "passageTitle": "Command of Evidence - Support — Q26",
+          "passage": "The utilization of deceptive antipredator\ndisplays is well documented in the little ringed\nplover (Charadrius dubius) and other species of\nthe avian order Charadriiformes. An extensive\nliterature review conducted by Léna de Framond\net al. revealed that this trait has evolved across\na surprisingly large phylogenetic distribution of\n13 Aves orders, including Caprimulgiformes and\nGruiformes. Subsequent investigation of\npotential selection mechanisms prompted the\nresearchers to conclude that independent of\navian order, the prevalence of the trait is\nmediated by environmental variations associated\nwith the absolute latitude of brooding sites.",
+          "prompt": "Which finding, if true, would most strongly\nsupport the researchers' conclusion?",
+          "options": [
+            "Across the orders in the study,\napproximately 54% of the bird species\nbrood in ranges from 50° to 80° absolute\nlatitude, but most of the birds that are\nknown to use deceptive antipredator\ndisplays brood between 0° and 30°\nabsolute latitude.",
+            "Deceptive antipredator displays are\ndocumented in Charadriiformes species\nacross the entire range of absolute\nlatitudes of brooding sites within that\norder, but in species from other orders,\ndeceptive antipredator displays are\ndocumented only when brooding sites are\nat absolute latitudes 10°–20° higher than\nwhat is typical for those species.",
+            "The use of deceptive antipredator displays\nis widespread among Charadriiformes\nspecies independent of the absolute\nlatitude of their breeding sites, but its\nprevalence in other avian orders is limited\nto species with brooding sites located in\nabsolute latitudes of 0°–30°.",
+            "Across the orders in the study, deceptive\nantipredator displays are observed in\napproximately 34% of species with\nbrooding ranges of 0°–30° absolute latitude\nand approximately 60% of species with\nbrooding ranges of 50°–80° absolute\nlatitude."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 4, Q26). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q027",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q27",
+          "passageTitle": "Command of Evidence - Support — Q27",
+          "passage": "Neurobiologists Laura Cuaya, Raúl\nHernández-Pérez, and colleagues investigated\nthe language detection abilities of eighteen dogs\nraised in similar settings. The researchers\nmonitored the brain activity of Barney (a golden\nretriever), Bingo (a mixed breed), and other\ndogs while the animals listened to three\nrecordings: one of The Little Prince being read\nin Spanish, the second in Hungarian, and a third\nmade up of short, randomly selected fragments\nof the first two, scrambled so that they didn't\nresemble human speech. Each dog was familiar\nwith either Spanish or Hungarian, but not both.\nThe team concluded that the amount of\nprevious language exposure a dog has received\nmay influence its ability to distinguish familiar\nlanguages from unfamiliar ones.",
+          "prompt": "Which finding from the study, if true, would\nmost directly support the team's conclusions?",
+          "options": [
+            "Dogs showed a different pattern of brain\nactivity when hearing the language they\nwere accustomed to than when hearing the\nscrambled recording and the difference in\nbrain activity increased with the age of the\ndog scanned.",
+            "Although the dog's general hearing\nsensitivity declined with age, dogs of all\nages showed more brain activity in\nresponse to hearing the language they were\naccustomed to than in response to hearing\nthe other language.",
+            "The similarity between the pattern of\nbrain activity a dog showed in response to\nhearing the scrambled recording and the\npattern of brain activity it showed in\nresponse to hearing the language it was\nnot accustomed to was greatest among\nolder dogs.",
+            "The difference between the pattern of\nbrain activity a dog showed when hearing\nthe language it was accustomed to and the\npattern of brain activity it showed when\nhearing the language it was not\naccustomed to was greatest among older\ndogs."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 4, Q27). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q028",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q28",
+          "passageTitle": "Command of Evidence - Support — Q28",
+          "passage": "Cardiff, Wales, has installed engineered\nstructures – mainly breakwalls – along 87% of\nits shoreline to protect infrastructure from storm\nsurges and other hazards, a practice known as\nshoreline hardening. Investigating the impact of\nsuch structures on waterbird communities at\nvarious sites in the Chesapeake Bay on the US\nEast Coast, Diann Prosser et al. hypothesized\nthat shoreline hardening more negatively affects\nwaterbirds than does land development for uses\nsuch as housing or agriculture. To evaluate the\nresponses of local waterbird species, including\nthe osprey, to landscape alterations, the\nresearchers utilized the Index of Waterbird\nCommunity Integrity (IWCI), on which a low\nscore corresponds to low community integrity.",
+          "prompt": "Which finding, if true, would most directly\nsupport the researchers' hypothesis?",
+          "options": [
+            "Waterbird communities at Back River, a\nsite with a relatively high percentage of\ndeveloped land and a relatively low\npercentage of hardened shoreline, had\nhigher average IWCI scores than did\nwaterbird communities at Margothy, a site\nwith a lower percentage of developed land\nbut a higher percentage of hardened\nshoreline.",
+            "Waterbird communities at Langford, a site\nwith a relatively high percentage of\ndeveloped land and a relatively low\npercentage of hardened shoreline, had\nlower average IWCI scores than did\nwaterbird communities at Mill, a site with\na lower percentage of developed land but a\nhigher percentage of hardened shoreline.",
+            "Waterbird communities at Stony and\nCurtis, two sites with relatively high\npercentages of developed land and\nhardened shoreline, had similar IWCI\nscores, whereas waterbird communities at\nWare and Honga, two sites with relatively\nlow percentage of developed land and\nhardened shoreline, had widely differing\nIWCI scores.",
+            "Waterbird communities at Old Road, a\nsite with a relatively high percentage of\ndeveloped land and hardened shoreline,\nhad lower average IWCI scores than did\nwaterbird communities at Onancock, a site\nwith a relatively low percentage of\ndeveloped land and hardened shoreline."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q28). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q029",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q29",
+          "passageTitle": "Command of Evidence - Support — Q29",
+          "passage": "The bird species Schistocichla leucostigma (the\nspot-winged antbird) shares some territory in\nFrench Guiana with Thamnomanes caesius (the\ncinereous antshrike), which emits a loud alarm\ncall when it detects predators. Biologist Ari\nMartinez and colleagues recorded T. caesius\nalarm calls and played them in the vicinity of\nwild S. leucostigma. Finding that the birds\noften froze in place or scattered into vegetation\nupon hearing the calls, they concluded that S.\nleucostigma associates T. caesius alarm calls\nwith danger.",
+          "prompt": "Which finding, if true, would most directly\nsupport Martinez and colleagues' conclusion?",
+          "options": [
+            "In some instances, S. leucostigma froze in\nplace or scattered into vegetation when\nMartinez and colleagues approached but\nnot before they began playing sounds.",
+            "When Martinez and colleagues played\ncontrol sounds of random noise in the\nvicinity of S. leucostigma, the birds\ndisplayed no reaction.",
+            "Other bird species than S. leucostigma also\nshowed a tendency to freeze in place or\nscatter into vegetation when Martinez and\ncolleagues played T. caesius alarm calls.",
+            "Martínez and colleagues played alarm calls\nfrom different T. caesius individuals and\nobserved no significant variation in the\nresponses of S. leucostigma."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q29). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q030",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q30",
+          "passageTitle": "Command of Evidence - Support — Q30",
+          "passage": "Mooseberry (Viburnum edule) plants are native\nto Alaska, where harsh conditions have\nhistorically impeded potential invasive species.\nAs the boreal climate has warmed in recent\ndecades, however, common knotgrass\n(Polygonum aviculare) plants have established\nthemselves in Alaska. It has been suggested that\nwarming-induced delays in the onset of\nsubfreezing temperatures in autumn can benefit\ninvasives more than native species; to evaluate\nthis possibility, biologists Christa Mulder and\nKatie Spellman tracked V. edule and P.\naviculare, along with other native and invasive\nspecies, over several years, concluding that\ninvasives are advantaged by delays in\nsubfreezing temperature onset in Alaska.",
+          "prompt": "Which finding, if true, would most directly\nsupport Mulder and Spellman's conclusion?",
+          "options": [
+            "Although V. edule and P. aviculare both\ntended to produce leaves later into autumn\nin years with late subfreezing temperature\nonset, the extension was much greater for\nP. aviculare than for V. edule.",
+            "Although significant interannual variations\nin subfreezing temperature onset were\nobserved during the study, neither P.\naviculare nor V. edule showed any\nsignificant interannual variation in the\ncessation of leaf production.",
+            "Although V. edule and P. aviculare tended\nto stop producing leaves at about the same\ntime in years with historically typical\ntemperature patterns, P. aviculare stopped\nproducing leaves sooner than V. edule did\nin years with late subfreezing temperature\nonset.",
+            "Although V. edule and P. aviculare both\ntended to produce more leaves overall in\nyears with late subfreezing temperature\nonset than they did in years with\nhistorically typical temperature patterns,\nthe years with late subfreezing\ntemperature onset also had early growing\nseason onset in spring."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q30). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q031",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q31",
+          "passageTitle": "Command of Evidence - Support — Q31",
+          "passage": "Water flowing around an obstruction creates\nvortices (patterns of swirls) of varying size; by\ndetecting the vortices, fish can determine the\nsize and position of the obstruction. Testing by\nYuzo R. Yanagisuru, Otar Akanyeti, and James\nC. Liao using models of three head shapes –\nnarrow (low ratio of width to length),\nintermediate, and wide (high ratio of width to\nlength) – showed that for large vortices, fish with\nintermediate heads would be better able than\nwide-headed fish to distinguish between vortices\nand general turbulence in the water. A second\nresearch team has therefore hypothesized that in\nlow-visibility conditions, intermediate-headed\nfish will be more likely than wide-headed fish to\ndetect obstructions that create large vortices.",
+          "prompt": "Which finding, if true, would most directly\nsupport the second research team's hypothesis?",
+          "options": [
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that the devil catfish (Bagarius\nbagarius), which has a relatively wide\nhead, bumped into more than half of the\nobstructions.",
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that the wide-headed devil catfish\n(Bagarius bagarius) bumped into\nobstructions more often than the\nintermediate-headed rainbow trout\n(Oncorhynchus mykiss) did.",
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that the intermediate-headed\nrainbow trout (Oncorhynchus mykiss)\nbumped into the obstructions just as often\nas the wide-headed devil catfish (Bagarius\nbagarius) did.",
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that some specimens of the\nintermediate-headed rainbow trout\n(Oncorhynchus mykiss) bumped into the\nobstructions more often than other\nspecimens of the same fish did."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q31). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q032",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q32",
+          "passageTitle": "Command of Evidence - Support — Q32",
+          "passage": "The bird species Myiobius barbatus (the\nbearded flycatcher) shares some territory in\nFrench Guiana with Thamnomanes caesius (the\ncinereous antshrike), which emits a loud alarm\ncall when it detects predators. Biologist Ari\nMartinez and colleagues recorded T. caesius\nalarm calls and played them in the vicinity of\nwild M. barbatus. Finding that the birds often\nfroze in place or scattered into vegetation upon\nhearing the calls, they concluded that M.\nbarbatus associates T. caesius alarm calls with\ndanger.",
+          "prompt": "Which finding, if true, would most directly\nsupport Martinez and colleagues' conclusion?",
+          "options": [
+            "Other bird species than M. barbatus also\nshowed a tendency to freeze in place or\nscatter into vegetation when Martinez and\ncolleagues played T. caesius alarm calls.",
+            "Martinez and colleagues played alarm calls\nfrom different T. caesius individuals and\nobserved no significant variation in the\nresponses of M. barbatus.",
+            "In some instances, M. barbatus froze or\nscattered into vegetation when Martinez\nand colleagues approached but not before\nthey began playing sounds.",
+            "When Martinez and colleagues played\ncontrol sounds of random noise in the\nvicinity of M. barbatus, the birds\ndisplayed no reaction."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 4, Q32). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q033",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q33",
+          "passageTitle": "Command of Evidence - Support — Q33",
+          "passage": "The linguistic niche hypothesis (LNH) posits\nthat the exotericity of languages (how prevalent\nnon-native speakers are) and grammatical\ncomplexity are inversely related, which the LNH\nascribes to attrition of complex grammatical\nrules as more non-native speakers adopt the\nlanguage but fail to acquire those rules.\nFocusing on two characteristics that are positive\nindices of grammatical complexity, fusion (when\nnew phonemes arise from the merger of\npreviously distinct ones) and informativity\n(languages' capacity for meaningful variation),\nOlena Shcherbakova and colleagues conducted a\nquantitative analysis for more than 1,300\nlanguages and claim the outcome is inconsistent\nwith the LNH.",
+          "prompt": "Which finding, if true, would most directly\nsupport Shcherbakova and colleagues' claim?",
+          "options": [
+            "Shcherbakova and colleagues' analysis\nshowed a slightly positive correlation\nbetween grammatical complexity and\nfusion.",
+            "Shcherbakova and colleagues' analysis\nshowed a slightly negative correlation\nbetween grammatical complexity and\nexotericity.",
+            "Shcherbakova and colleagues' analysis\nshowed a slightly positive correlation\nbetween fusion and exotericity and\nbetween informativity and exotericity.",
+            "Shcherbakova and colleagues' analysis\nshowed a slightly negative correlation\nbetween grammatical complexity and\nfusion and between grammatical\ncomplexity and informativity."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q33). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q034",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q34",
+          "passageTitle": "Command of Evidence - Support — Q34",
+          "passage": "Among the most visited art museums in the\nworld, the Museo Reina Sofía in Madrid had\napproximately 4.4 million visitors in 2019. The\nMuseo Reina Sofía also offers virtual tours that\nart lovers can view online for free. Although\nthere were initial concerns that people who\nviewed the virtual tours would then consider an\nin-person visit unnecessary, museum\nadministrators claim that their surveys of\nin-person visitors show that those concerns were\nunjustified.",
+          "prompt": "Which statement, if true, would most directly\nsupport the administrators' claim?",
+          "options": [
+            "Most surveyed visitors to the Museo Reina\nSofía indicated that they lived somewhere\nother than Madrid.",
+            "Many surveyed visitors to the Museo Reina\nSofía indicated that the virtual tours\nconvinced them to plan an in-person visit.",
+            "Many surveyed visitors to the Museo\nReina Sofía indicated that they would\nlikely view the virtual tours in order to\nreminisce about their in-person visit.",
+            "Most surveyed visitors to the Museo Reina\nSofía indicated that they were unaware of\nthe virtual tours before their first\nin-person visit."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q34). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q035",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q35",
+          "passageTitle": "Command of Evidence - Support — Q35",
+          "passage": "Growing seasons in Alaska have been extending\nfurther into the year in response to climate\nwarming, potentially enabling increased carbon\ndioxide (CO 2) absorption through greater\nproductivity of marsh cinquefoil (Comarum\npalustre) plants and other vegetation, but also\npotentially enabling increasedCO 2 output\nthrough greater heterotrophic respiration (CO 2\ngenerated by the activity of soil\nmicroorganisms). Hydrologist Yonghong Yi and\nher colleagues developed a model incorporating\nnumerous inputs – years of solar radiation and\nsnow cover data among them – to evaluate the\neffects of warming on theCO 2 balance in\nAlaska, concluding that netCO 2 is likely to\nincrease if warming hastens spring snow melt.",
+          "prompt": "Which finding, if true, would most directly\nsupport the researchers' conclusion?",
+          "options": [
+            "Early snow melt extends the period in\nwhich plant species such as C. palustre can\nabsorb CO 2 but has no effect on the rate\nof heterotrophic respiration.",
+            "Early snow melt slows the growth of plant\nspecies such as C. palustre by reducing soil\ninsulation, and it suppresses heterotrophic\nrespiration.",
+            "Early snow melt reduces the amount of\nsoil moisture available for the growth of\nplant species such as C. palustre, and it\nraises the rate of heterotrophic respiration.",
+            "Early snow melt amplifies the effect of\nsolar radiation on the growth of plant\nspecies such as C. palustre and on the rate\nof heterotrophic respiration."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q35). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q036",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q36",
+          "passageTitle": "Command of Evidence - Support — Q36",
+          "passage": "A team of public transportation experts in\nDetroit is creating a new streetcar stop for the\nWoodward Avenue Streetcar system that will\nservice a neighborhood in which a stop does not\ncurrently exist. To decide where to place the\nstop, the team is using a survey from ten years\nago that asked how far neighborhood residents\nwould be willing to walk to a streetcar stop.\nThe team also looked at studies showing that\npeople's willingness to walk to public transit is\ninfluenced by factors like weather and the\npresence of paved sidewalks and available\ncrosswalks. A researcher has argued that the\nsurvey does not accurately reflect the feelings of\ntoday's residents of this neighborhood.",
+          "prompt": "Which finding, if true, would most directly\nsupport the researcher's claim?",
+          "options": [
+            "The number of sidewalks and crosswalks in\nthe neighborhood that the streetcar stop\nwill service has increased substantially in\nthe last ten years.",
+            "Residents of Detroit are much less likely to\nuse public transit on rainy days than on\nclear days.",
+            "There has been a sharp increase in the last\nten years in cyclists who use the roads in\nthe neighborhood that the streetcar stop\nwill service.",
+            "Current users of the Woodward Avenue\nStreetcar are satisfied with the number of\nstops along the line."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q36). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q037",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q37",
+          "passageTitle": "Command of Evidence - Support — Q37",
+          "passage": "Some food packaging contains silver\nnanoparticles (Ag-NPs), which can leach into\nwaterways and soils via wastewater. In a 2015\nstudy, Tina Ramskov and colleagues found that\nAg-NPs can accumulate in the bodies of marine\nannelid worms (Capitella teleta). While\nbioaccumulation of manufactured nanoparticles\nmay be inherently worrisome, it has been\nhypothesized that Ag-NP bioaccumulation in\ninvertebrates like C. teleta could serve a\nvaluable proxy role, obviating the need for\nmanufacturers to conduct costly and intrusive\nsampling of vertebrate species – such as Atlantic\nsalmon (Salmo salar), commonly used in\nregulatory compliance testing – for nanoparticle\nbioaccumulation, as environmental protection\nlaws currently require.",
+          "prompt": "Which finding, if true, would most directly\nsupport the hypothesis presented in the text?",
+          "options": [
+            "When C. teleta and S. salar are exposed to\nsimilar levels of Ag-NPs, individuals of the\ntwo species tend to accumulate similar\namounts of Ag-NPs, adjusted for body\nsize.",
+            "Ag-NP concentrations in C. teleta\ncorrelate strongly with Ag-NP levels in the\nenvironment, whereas Ag-NP\nconcentrations in S. salar are fairly stable\nregardless of environment.",
+            "Compared with S. salar, C. teleta can\ntolerate significantly higher Ag-NP\nconcentrations without displaying any\nnegative effects.",
+            "It is easier to detect low and harmless\nconcentrations of Ag-NPs in C. teleta than\nit is to detect high and harmful\nconcentrations of Ag-NPs in S. salar."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q37). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q038",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q38",
+          "passageTitle": "Command of Evidence - Support — Q38",
+          "passage": "Mooseberry (Viburnum edule) plants are native\nto Alaska, where harsh conditions have\nhistorically impeded potential invasive species.\nAs the boreal climate has warmed in recent\ndecades, however, common knotgrass\n(Polygonum aviculare) plants have established\nJohann themselves in Alaska. It has been\nsuggested that warming-induced delays in the\nonset of subfreezing temperatures in autumn\ncan benefit invasives more than native species;\nto evaluate this possibility, biologists Christa\nMulder and Katie Spellman tracked V. edule\nand P. aviculare, along with other native and\ninvasive species, over several years, concluding\nthat invasives are advantaged by delays in\nsubfreezing temperature onset in Alaska.",
+          "prompt": "Which finding, if true, would most directly\nsupport Mulder and Spellman's conclusion?",
+          "options": [
+            "Although V. edule and P. aviculare both\ntended to produce leaves later into autumn\nin years with late subfreezing temperature\nonset, the extension was much greater for\nP. aviculare than for V. edule.",
+            "Although significant interannual variations\nin subfreezing temperature onset were\nobserved during the study, neither P.\naviculare nor V. edule showed any\nsignificant interannual variation in the\ncessation of leaf production.",
+            "Although V. edule and P. aviculare tended\nto stop producing leaves at about the same\ntime in years with historically typical\ntemperature patterns, P. aviculare stopped\nproducing leaves sooner than V. edule did\nin years with late subfreezing temperature\nonset.",
+            "Although V. edule and P. aviculare both\ntended to produce more leaves overall in\nyears with late subfreezing temperature\nonset than they did in years with\nhistorically typical temperature patterns,\nthe years with late subfreezing\ntemperature onset also had early growing\nseason onset in spring."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q38). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q039",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q39",
+          "passageTitle": "Command of Evidence - Support — Q39",
+          "passage": "The bird species Hylophilus ochraceiceps (the\ntawny-crowned greenlet) shares some territory\nin French Guiana with Thamnomanes caesius\n(the cinereous antshrike), which emits a loud\nalarm call when it detects predators. Biologist\nAri Martinez and colleagues recorded T. caesius\nalarm calls and played them in the vicinity of\nwild H. ochraceiceps. Finding that the birds\noften froze in place or scattered into vegetation\nupon hearing the calls, they concluded that H.\nochraceiceps associates T. caesias alarm calls\nwith danger.",
+          "prompt": "Which finding, if true, would most directly\nsupport Martinez and colleagues' conclusion?",
+          "options": [
+            "When Martínez and colleagues played\ncontrol sounds of random noise in the\nvicinity of H. ochraceiceps, the birds\ndisplayed no reaction.",
+            "Other bird species than H. ochraceiceps\nalso showed a tendency to freeze in place\nor scatter into vegetation when Martinez\nand colleagues played T. caesius alarm\ncalls.",
+            "Martinez and colleagues played alarm calls\nfrom different T. caesius individuals and\nobserved no significant variation in the\nresponses of H. ochraceiceps.",
+            "In some instances, H. ochraceiceps froze in\nplace or scattered into vegetation when\nMartinez and colleagues approached but\nbefore they began playing sounds."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q39). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q040",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q40",
+          "passageTitle": "Command of Evidence - Support — Q40",
+          "passage": "Apple's introduction of the iPhone in 2007 is a\nquintessential instance of brand extension—the\ncompany leveraged its brand recognition as a\ncomputer manufacturer to enter a product\ncategory where it had not previously competed.\nAn outstanding question is whether perceived\ncategory similarity predicts consumers'\nlikelihood of purchasing brand extensions. To\nanswer this question, Alicia Grasby et al.\nidentified 30 extended-brand pairs (e.g., the\nsame brand of laundry detergent and air\nfreshener) in 52 weeks of purchases by\napproximately 60,000 households and, for each\npair, calculated the change in probability of a\nbrand in one category being purchased if the\nsame brand was purchased in the other category.",
+          "prompt": "Based on the text, which potential study design\nwould be most likely to produce evidence that\nwould enable Grasby et al. to answer their\nresearch question?",
+          "options": [
+            "Have a representative sample of the\nhouseholds rate the similarity of the\nproduct categories in each extended-brand\npair, then determine how, if at all, those\nratings correlate with the change in\nprobability that the team calculated for\neach pair.",
+            "Have a representative sample of the\nhouseholds rate the similarity of one\nproduct in each extended-brand pair to\nother products in the same category, then\ndetermine how, if at all, those ratings\ncorrelate with the change in probability\nthat the team calculated for each pair.",
+            "Poll a representative sample of the\nhouseholds to determine the degree of\nbrand recognition for each brand in the\nextended-brand pairs, then determine how,\nif at all, the degree of brand recognition\ncorrelates with the frequency with which a\ndifferent group of households purchased at\nleast one product of that brand.",
+            "Poll a representative sample of the\nhouseholds to determine the degree of\nbrand recognition of each brand in the\nextended-brand pairs, then determine how,\nif at all, the degree of brand recognition\ncorrelates with the average cost of each\nproduct in the pairs."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q40). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    },
+    {
+      "title": "Command of Evidence - Support — Set 3",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t04-q041",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q41",
+          "passageTitle": "Command of Evidence - Support — Q41",
+          "passage": "Veronica L. Bura, Akito Y. Kawahara, and\nJayne E. Yack investigated the evolution and\nfunction of sound production in silk moth and\nhawk moth caterpillars. They found that during\nharmless simulated attacks on isolated\ncaterpillars, 33% of the tested species produced\nsound, which ranged from clicks in Manduca\npellenia to whistles in Rhodinia fugax. Although\nsome insects use sound to communicate with\nmembers of the same species, the researchers\nclaim that the caterpillar sounds recorded in\ntheir study are directed primarily at predators.",
+          "prompt": "Which finding, if true, would most directly\nsupport Bura and colleagues' claim?",
+          "options": [
+            "In most cases, the sound that caterpillar\nspecies produced during simulated attacks\nwas not produced by other caterpillar\nspecies during simulated attacks.",
+            "Chickens and yellow warblers, two\npredators of caterpillars, have been\nobserved to stop their attacks in response\nto caterpillar sounds.",
+            "Caterpillar clicks were emitted in a\nfrequency detectable by birds that prey on\ncaterpillars, but caterpillar whistles were\nnot.",
+            "Each caterpillar species tended to produce\none sound during simulated attacks,\nalthough individuals occasionally made a\nvariety of other sounds during simulated\nattacks as well."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q41). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q042",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q42",
+          "passageTitle": "Command of Evidence - Support — Q42",
+          "passage": "Neurobiologists Laura Cuaya, Raúl\nHernández-Pérez, and colleagues investigated\nthe language detection abilities of eighteen dogs\nraised in similar settings. The researchers\nmonitored the brain activity of Grog (a border\ncollie), Alma (a mixed breed), and other dogs\nwhile the animals listened to three recordings:\none of The Little Prince being read in Spanish,\nthe second in Hungarian, and a third made up\nof short, randomly selected fragments of the first\ntwo, scrambled so that they didn't resemble\nhuman speech. Each dog was familiar with\neither Spanish or Hungarian, but not both. The\nteam concluded that the amount of previous\nlanguage exposure a dog has received may\ninfluence its ability to distinguish familiar\nlanguages from unfamiliar ones.",
+          "prompt": "Which finding from the study, if true, would\nmost directly support the team's conclusion?",
+          "options": [
+            "Although the dogs' general hearing\nsensitivity declined with age, dogs of all\nages showed more brain activity in\nresponse to hearing the language they were\naccustomed to than in response to hearing\nthe other language.",
+            "The difference between the pattern of\nbrain activity a dog showed when hearing\nthe language it was accustomed to and the\npattern of brain activity it showed when\nhearing the language it was not\naccustomed to was greatest among older\ndogs.",
+            "The similarity between the pattern of\nbrain activity a dog showed in response to\nhearing the scrambled recording and the\npattern of brain activity it showed in\nresponse to hearing the language it was\nnot accustomed to was greatest among\nolder dogs.",
+            "Dogs showed a different pattern of brain\nactivity when hearing the language they\nwere accustomed to than when hearing the\nscrambled recording, and the difference in\nbrain activity increased with the age of the\ndog scanned."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q42). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q043",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q43",
+          "passageTitle": "Command of Evidence - Support — Q43",
+          "passage": "Water flowing around an obstruction creates\nvortices (patterns of swirls) of varying size; by\ndetecting the vortices, fish can determine the\nsize and position of the obstruction. Testing by\nYuzo R. Yanagisuru, Otar Akanyeti, and James\nC. Liao using models of three head\nshapes—narrow (low ratio of width to length),\nintermediate, and wide (high ratlo of width to\nlength)—showed that for medium-sized vortices,\nfish with wide heads would be least able to\ndistinguish between vortices and general\nturbulence in the water. A second research team\nhas therefore hypothesized that in low-visibility\nconditions, wider-headed fish will be less likely\nthan narrower-headed fish to detect\nobstructions.",
+          "prompt": "Which finding, if true, would most directly\nsupport the second research team's hypothesis?",
+          "options": [
+            "A study using obstructions that created\nmedium-sized vortices in low-visibility\nconditions found that the anglerfish\n(Lophiodes monodi), which has a\nrelatively wide head, bumped into more\nthan half of the obstructions.",
+            "A study using obstructions that created\nmedium-sized vortices in low-visibility\nconditions found that the narrower-headed\ndusky smooth-hound (Mustelus canis)\nbumped into the obstructions just as often\nas the wider-headed anglerfish (Lophiodes\nmonodi) did.",
+            "A study using obstructions that created\nmedium-sized vortices in low-visibility\nconditions found that the wider-headed\nanglerfish (Lophiodes monodi) bumped\ninto obstructions more often than the\nnarrower-headed dusky smooth-hound\n(Mustelus canis) did.",
+            "A study using obstructions that created\nmedium-sized vortices in low-visibility\nconditions found that some specimens of\ndusky smooth-hound (Mustelus canis),\nwhich has a relatively narrow head,\nbumped into the obstructions more often\nthan other specimens of the same fish did."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q43). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q044",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q44",
+          "passageTitle": "Command of Evidence - Support — Q44",
+          "passage": "Although Eastern North Pacific (ENP) gray\nwhales generally migrate between their\nwintering waters along the coast of Mexico and\ntheir foraging waters in the Arctic, a subset of\nthis population—known as the Pacific Coast\nFeeding Group (PCFG)—forages along the\ncoastlines of Northern California (USA) and\nBritish Columbia (Canada) instead.\nInterestingly, individuals in this subset reach\nsmaller maximum sizes than other ENP whales\ndo, despite having similar pre-maximum growth\nrates. Researchers hypothesize that this\ndifference may be an adaptation to distinct\nresource opportunities in the PCFG foraging\nrange.",
+          "prompt": "Which finding, if true, would most directly\nsupport the researchers' claim regarding the size\nof PCFG whales?",
+          "options": [
+            "When foraging along the coasts of\nNorthern California and British Columbia,\nPCFG whales are in closer proximity to\nmajor ports and urban populations than\nENP whales in the main group are when\nforaging in Arctic waters.",
+            "When present along the coasts of Northern\nCalifornia and British Columbia, PCFG\nwhales tend to forage in rocky kelp beds at\nshallow depths inaccessible to whales as\nlarge as those in the ENP main group.",
+            "Certain crustacean prey species available\nalong the coasts of Northern California\nand British Columbia where PCFG whales\ntend to forage are not available in the\nArctic waters where ENP whales in the\nmain group forage.",
+            "The average body size of PCFG whales\nobserved along the coasts of Northern\nCalifornia and British Columbia has\nremained relatively steady in recent\ndecades, while the average body size of\nENP whales in the main group has slightly\ndecreased."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q44). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q045",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q45",
+          "passageTitle": "Command of Evidence - Support — Q45",
+          "passage": "Piezoelectric harvesters convert kinetic energy\n(resonance) to electrical energy, precluding the\nneed for external electrical sources. The\nvibration of a spacecraft, for example, can\nprovide sufficient energy to power many of its\nsensors piezoelectrically. A newly designed\npiezoelectric harvester incorporating a highly\nconductive carbon-fiber-reinforced polymer\n(CFRP) electrode has been shown to provide\nsteady energy loads during resonance, an\nabsolute prerequisite for wireless communication\ndevices to be powered piezoelectrically.",
+          "prompt": "Which finding, if true, would most directly\nsupport the text's claim about wireless\ncommunication devices?",
+          "options": [
+            "The near-constant kinetic vibration of a\nspacecraft makes it possible to power its\nwireless communication devices using only\nnon-CFRP piezoelectric harvesters.",
+            "Intermittent or unpredictable electrical\nsupply undermines the efficacy of wireless\ncommunication devices.",
+            "The CFRP electrode is incompatible with\nmost wireless communication devices.",
+            "The high conductivity of the CFRP is\nwhat makes the energy output from a\npiezoelectric harvester sufficient for\nwireless communication devices."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q45). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q046",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q46",
+          "passageTitle": "Command of Evidence - Support — Q46",
+          "passage": "Ningyo joruri is a form of theater that was\npopular in eighteenth-century Japan and that\nunites puppetry with playing of the shamisen, a\nstringed musical instrument. The popularity of\nningyo joruri was due to a puppetry method\ncalled sannin zukai, in which three puppeteers\noperated a single puppet that was large,\ndetailed, and capable of extensive movement\nand nuanced emotional expression.Over the\nensuing centuries, audience interest in ningvo\njoruri began to decline and saunin zukal became\nprohibitively expensive to mount so that sannin\nzukai puppeteers could no longer make the\nprofession a full-time career. Eventually, ningyo\nforurt productions resorted to cheaper forms of\npuppetry, such as kuruma ningyo, which\nInvolves only one puppeteer",
+          "prompt": "Which statement, if true, would most strongly\nsupport the claim in the underlined sentence?",
+          "options": [
+            "The kuruma ningyo puppeteering method\nis not easy: it requires fewer puppeteers to\nmanipulate puppets that are as large as\nthose used in sannin zukai, but each\npuppeteer's work is more complex.",
+            "The costs of building sannin zukai puppets\nwere very high until the advent of\nmachine-based production methods in the\nnineteenth century made them comparable\nto the costs of building kuruma ningyo\npuppets.",
+            "In 1872, Japanese puppeteer Nishikawa\nKoryu developed a technique called\nkuruma ningyo, or cart puppetry, in which\npuppets have wooden pegs on their feet\nthat the puppeteer can manipulate by\nmoving his own feet.",
+            "The few remaining theatrical companies\nwith sannin zukai performers in the\npresent day are mostly amateur troupes,\nin which members have other forms of\nemployment that serve as their primary\nsource of income."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 4, Q46). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q047",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q47",
+          "passageTitle": "Command of Evidence - Support — Q47",
+          "passage": "Adelaide, Australia, has installed engineered\nstructures along 53% of its shoreline to protect\ninfrastructure from wave erosion and other\nhazards, a practice known as shoreline\nhardening. To evaluate the responses of\nwaterbirds to two types of hardening\nstructures—riprap and bulkheads—Diann\nProsser et al. surveyed waterbird communities\nconsisting of the brown pelican, the red knot,\nand 62 other species at different sites in the\nChesapeake Bay on the US East Coast.\nUtilizing the Index of Waterbird Community\nIntegrity (IWCI), on which a high score\ncorresponds to high community Integrity, the\nresearchers found that bulkheads are more\nstrongly negatively correlated with waterbird\ncommunity integrity than is riprap.",
+          "prompt": "Which finding, if true, would most directly\nsupport researchers' finding?",
+          "options": [
+            "The difference in average IWCI scores for\nwaterbird communities at Stony and Old\nRoad, two sites with a higher percentage\nof shoreline consisting of bulkheads than of\nriprap, was statistically insignificant.",
+            "Waterbird communities at Curtis, a site\nwith equal percentages of shoreline\nconsisting of bulkheads and riprap, had\nhigher average IWCI scores than did\nwaterbird communities at Miles, a site\nwith different percentages of shoreline\nconsisting of bulkheads and riprap.",
+            "Waterbird communities at Old Road, a\nsite with a relatively high percentage of\nshoreline consisting of bulkheads, had\nlower average IWCI scores than did\nwaterbird communities at Miles, a site\nwith a relatively high percentage of\nshoreline consisting of riprap.",
+            "Waterbird communities at Curtis, a site\nwith a high percentage of shoreline\nconsisting of bulkheads and riprap, had\nlower average IWCI scores than did\nwaterbird communities at Onancock, a site\nwith a low percentage of shoreline\nconsisting of bulkheads and riprap."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q47). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q048",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q48",
+          "passageTitle": "Command of Evidence - Support — Q48",
+          "passage": "Piezoelectric harvesters convert kinetic energy\n(resonance) to electrical energy, precluding the\nneed for external electrical sources. The\nvibration of a spacecraft, for example, can\nprovide sufficient energy to power many of its\nsensors piezoelectrically. A newly designed\npiezoelectric harvester incorporating a highly\nconductive carbon fiber reinforced polymer\n(CFRP) electrode has been shown to provide\nsteady energy loads during resonance, an\nabsolute prerequisite for wireless communication\ndevices to be powered piezoelectrically.",
+          "prompt": "Which finding, if true, would most directly\nsupport the text's claim about wireless\ncommunication devices?",
+          "options": [
+            "The near-constant kinetic vibration of a\nspacecraft makes it possible to power its\nwireless communication devices using only\nnon-CFRP piezoelectric harvesters.",
+            "Intermittent or unpredictable electrical\nsupply undermines the efficacy of wireless\ncommunication devices.",
+            "The CFRP electrode is incompatible with\nmost wireless communication devices.",
+            "The high conductivity of the CFRP is\nwhat makes the energy output from a\npiezoelectric harvester sufficient for\nwireless communication devices."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q48). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q049",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q49",
+          "passageTitle": "Command of Evidence - Support — Q49",
+          "passage": "To help combat the growing rate of microplastic\npollution, a team of researchers developed a\nsynthetic sponge that can soak up microplastic\nparticles from liquid. The sponge, composed\nmainly of starch and gelatin, does this by\ntrapping the tiny particles within its pores.\nGuoqing Wang, one of the researchers, says that\nthe formula for the sponge can be adjusted to\nbest suit the size of particle the sponge is\nintended to trap, making it versatile in its\npotential applications. Chemist Christian\nAdlhart, however, claims that this sponge would\nbe difficult to massproduce.",
+          "prompt": "Which finding, if true, would most directly\nsupport Adlhart's claim?",
+          "options": [
+            "Textiles are one of the largest sources of\nmicroplastic pollution in our oceans.",
+            "The sponge created by Wang and his team\nhas a relatively light weight for its volume,\nmaking it potentially easy to ship to\ndifferent locations.",
+            "The absorption capabilities of the sponge\ncreated by Wang and his team varied\ndepending on the liquid solution used in\nthe team's experiments.",
+            "The worldwide supply of starch and\ngelatin is in high demand from the food\nindustry, so those substances would be\ndifficult to source in significant quantities."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 4, Q49). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q050",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q50",
+          "passageTitle": "Command of Evidence - Support — Q50",
+          "passage": "Born in Chile in 1917, artist and\nethnomusicologist Violeta Parra was a pioneer in\nthe nueva canción chilena (Chilean New Song)\nmovement that emerged in the late 1950s and\nthen spread throughout Latin America,\nPortugal, and Spain as nueva canción. Parra\ntraveled all over Chile compiling extensive\nrecords of authentic folk music as well as\nrecipes, proverbs, and other facets of cultural\nhistory. These records formed the foundation for\nthe early movement's revival of traditional\nChilean folk forms in new songs that represented\nmodern realities of the working class and\nstrongly advocated for social change.As the\nmovementspread beyond Chile, the breadth of\nmusical traditions incorporated into its\nfoundation also expanded.",
+          "prompt": "Which detail about songs associated with nueva\ncanción, if true, would best illustrate the\nunderlined claim?",
+          "options": [
+            "Many feature political commentary\naddressing contemporary issues that\nstemmed from shared experiences of\nEuropean colonization in Latin American\ncountries.",
+            "Many demonstrate the stylistic influence of\ncorrido, a genre of narrative songs from\nMexico that had come to be characterized\nby political themes in the early 1800s.",
+            "Many were written with parts meant to be\nplayed on the quena, a traditional flute\nused across Andean countries, including\nChile.",
+            "Many were produced by Argentinian\nartists in the late 1950s, with others by\nartists in additional Latin American\ncountries first emerging soon after."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q50). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q051",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q51",
+          "passageTitle": "Command of Evidence - Support — Q51",
+          "passage": "Norfolk, Virginia, has installed engineered\nstructures along 56% of its shoreline to protect\ninfrastructure from wave erosion and other\nhazards, a practice known as shoreline\nhardening. To evaluate the responses of\nwaterbirds to two types of hardening\nstructures—riprap and bulkheads—Diann\nProsser et al surveyed waterbird communities\nconsisting of the osprey, the common tern, and\n62 other species at different sites in the\nChesapeake Bay on the US East Coast.\nUtilizing the Index of Waterbird Community\nIntegrity (IWCI), on which a high score\ncorresponds to high community Integrity, the\nresearchers found that bulkheads are more\nstrongly negatively correlated with waterbird\ncommunity integrity than is riprap.",
+          "prompt": "Which finding, if true, would most directly\nillustrate the researchers' finding?",
+          "options": [
+            "Waterbird communities at Curtis, a site\nwith a high percentage of shoreline\nconsisting of bulkheads and riprap, had\nlower average IWCI scores than did\nwaterbird communities at Onancock, a site\nwith a low percentage of shoreline\nconsisting of bulkheads and riprap.",
+            "Waterbird communities at Old Road, a\nsite with a relatively high percentage of\nshoreline consisting of bulkheads, had\nlower average IWCI scores than did\nwaterbird communities at Miles, a site\nwith a relatively high percentage of\nshoreline consisting of riprap.",
+            "Waterbird communities at Curtis, a site\nwith equal percentages of shoreline\nconsisting of bulkheads and riprap, had\nhigher average IWCI scores than did\nwaterbird communities at Miles, a site\nwith different percentages of shoreline\nconsisting of bulkheads and riprap.",
+            "The difference in average IWCI scores for\nwaterbird communities at Stony and Old\nRoad, two sites with a higher percentage\nof shoreline consisting of bulkheads than of\nriprap, was statistically insignificant."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q51). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q052",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q52",
+          "passageTitle": "Command of Evidence - Support — Q52",
+          "passage": "The bird species Malacoptilafusca (the\nwhite-chested puffbird) practices a foraging\nstrategy known as sallying (catching insects in\nflight and returning to a perch to eat them),\nenabling it to scan for prey and predators\nsimultaneously. Conversely, Myrmotherula\nguttata (the rufous-bellled antwren), with which\nM. fusca shares territory in French Guiana,\npractices foliage gleaning (picking insects off\nleaves), substantially limiting the bird's field of\nvision while foraging. Biologist Ari Martínez\nand colleagues hypothesized that the greater\nvulnerability inherent in the latter strategy is\nreflected in greater sensitivity to predator\nwarning signals from neighboring species.",
+          "prompt": "Which finding, if true, would most directly\nsupport Martínez and colleagues' hypothesis?",
+          "options": [
+            "When Martinez and colleagues played\ncontrol sounds of random noise, only M.\nguttata displayed predator-avoidance\nbehavior, whereas both M. guttata and M.\nfusca displayed such behavior when alarm\ncalls from another local bird species were\nplayed.",
+            "When Martinez and colleagues played\nalarm calls from a species that does not\nshare territory with M. fusca and M.\nguttata, M. fusca displayed predator\navoidance behavior, whereas M. guttata\ndid not display any behavioral change.",
+            "When Martinez and colleagues played\nalarm calls from another local bird species,\nM. guttata displayed predator avoidance\nbehavior, whereas M. fusca did not display\nany behavioral change.",
+            "When Martunez and colleagues played M.\nfusca alarm calls, only M. fusca displayed\npredator-avoidance behavior, whereas both\nM. fusca and M. guttata displayed such\nbehavior when M. guttata alarm calls were\nplayed"
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q52). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q053",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q53",
+          "passageTitle": "Command of Evidence - Support — Q53",
+          "passage": "In medieval England, singers and minstrels\nmade livings as traveling performers, but the\npieces they performed have been a mystery,\nthought to be lost or never committed to paper\nat all. Recently, however, James Wade has\nargued that a manuscript collection compiled in\nthe fifteenth century by Richard Heege contains\nthree pieces likely copied from a repertoire book\nbelonging to a minstrel working in the area\naround Heege's home. Wade cites features of the\ntexts indicative of live performance, such as\nchastising the audience, extensive use of simple\nstructures (allowing for easy memorization), and\nrequests for tips (payment) from listeners.",
+          "prompt": "Which statement, if true, would most strongly\nsupport Wade's argument?",
+          "options": [
+            "Heege's collection contains the earliest\nexamples of the three pieces in question,\nbut each of those pieces occurs in other\nmanuscript collections compiled after\nHeege's.",
+            "The three pieces in question contain\nreferences that presume that the audience\nis familiar with Brackonwet and other\nsmall villages near where Heege lived.",
+            "Features like simple structures also occur\nin other texts from the period that were\nwidely read but are not known to have\nbeen performed for live audiences.",
+            "Traveling minstrels are thought to have\nperformed mainly for elite audiences, and\nother parts of Heege's collection reflect his\ninterest in works with popular appeal"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q53). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q054",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q54",
+          "passageTitle": "Command of Evidence - Support — Q54",
+          "passage": "Psychologists Gregory Bryant, Dorsa Amir, and\ncolleagues investigated cross-cultural perceptions\nof spontaneous (real) laughter and volitional\n(fake or forced) laughter. Study participants\nfrom 21 societies, including those in Austria and\nSamoa, listened to randomized recordings of 18\nspontaneous laughs taken from natural\nconversations between pairs of women and 18\nvolitional laughs produced separately by 18\ndifferent women in response to an instruction to\nlaugh. Analysis of the participants' evaluations\nof the laughs prompted the team to conclude\nthat the ability to distinguish between\nspontaneous and volitional laughter appears to\nbe universal across cultures.",
+          "prompt": "Which potential finding from the team's study,\nif true, would most directly support the team's\nconclusion?",
+          "options": [
+            "An assessment of the effect of demographic\nvariables on judgements of laughter type\nin Austria, Samoa, and the other societies\nin the study revealed that participants'\nevaluations were correlated with the\neconomic conditions of the societies in\nwhich participants live.",
+            "The overall rate of correct judgments by\nparticipants was 64%, substantially better\nthan chance, and spontaneous and\nvolitional laughs were recognized at similar\nrates in Austria, Samoa, and the other\nsocieties in the study.",
+            "Acoustic features of spontaneous laughter,\nsuch as pitch and intensity, have\nmeasurable variations both within and\nacross societies.",
+            "A variety of people from Austria and\nSamoa evaluated the recordings in the\nstudy, and no significant differences in\nlisteners' judgments of laughter types were\nfound."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q54). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q055",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q55",
+          "passageTitle": "Command of Evidence - Support — Q55",
+          "passage": "Water flowing around an obstruction creates\nvortices (swirls) that vary in size with the\nobstruction's size and position, and fish sense\nthese vortices to navigate around the\nobstructions. Using models of three fish-head\nshapes—narrow (low ratio of width to length),\nintermediate, and wide (high ratio of width to\nlength)— Yuzo R. Yanagisuru, Otar Akanyeti,\nand James C. Liao showed that as vortex size\nincreases, pressure fluctuations at the snout\nincrease for narrow-headed fish but remain low\nfor wide-headed fish. A second research team\nhas therefore hypothesized that in low visibility,\na fish will be more likely to avoid an obstruction\nwhen the associated pressure fluctuations at the\nfish's snout are greater.",
+          "prompt": "Which finding, if true, would most directly\nsupport the second research team's hypothesis?",
+          "options": [
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that some specimens of the\nnarrow-headed flat needlefish (Ablennes\nhians) bumped into the obstructions more\noften than other specimens of the same\nfish did.",
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that the narrow-headed flat\nneedlefish (Ablennes hians) bumped into\nthe obstructions just as often as the\nwide-headed devil catfish (Bagarius\nbagarius) did.",
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that the wide-headed devil catfish\n(Bagarius bagarius) bumped into\nobstructions more often than the\nnarrow-headed flat needlefish (Ablennes\nhians) did.",
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that the devil catfish (Bagarius\nbagarius), which has a relatively wide\nhead, bumped into more than half of the\nobstructions."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 4, Q55). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q056",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q56",
+          "passageTitle": "Command of Evidence - Support — Q56",
+          "passage": "In medieval England, jugglers and minstrels\nmade livings as traveling performers, but the\npieces they performed have been a mystery,\nthought to be lost or never committed to paper\nat all. Recently, however, James Wade has\nargued that a manuscript collection compiled in\nthe fifteenth century by Richard Heege contains\nthree pieces likely copied froma repertoire book\nbelonging to a minstrel working in the area\naround Heege's home. Wade cites features of the\ntexts indicative of live performance, such as\npolitely addressing the audience, extensive use\nof simple rhyming (allowing for easy\nmemorization), and requests for tips (payment)\nfrom listeners.",
+          "prompt": "Which statement, if true, would most strongly\nsupport Wade's argument?",
+          "options": [
+            "The three pieces in question contain\nreferences that presume that the audience\nis familiar with Brackonwet and other\nsmall villages near where Heege lived.",
+            "Features like simple rhyming also occur in\nother texts from the period that were\nwidely read but are not known to have\nbeen performed for live audiences.",
+            "Heege's collection contains the earliest\nexamples of the three pieces in question,\nbut each of those pieces occurs in other\nmanuscript collections compiled after\nHeege's.",
+            "Traveling minstrels are thought to have\nperformed mainly for elite audiences, and\nother parts of Heege's collection reflect his\ninterest in works with popular appeal."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q56). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q057",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q57",
+          "passageTitle": "Command of Evidence - Support — Q57",
+          "passage": "Radamés Cordero et al. have confirmed that\ntwenty mushroom species (including Coprinellus\nmicaceus and species from the genus Russula)\nmaintain subambient temperatures in both their\nfruited bodies and their mycelium (the root-like\nhyphae from which the fruited bodies grow),\nthough the benefits of this hypothermic\nbehavior are unclear. Noting that relative\ncoldness was more pronounced in fruiting than\nin nonfruiting sites of the mycelium—a\ndifference that persisted even after fruited\nbodies were detached—the researchers speculate\nthat thermoregulation in the mycelium may\ninfluence reproductive success.",
+          "prompt": "Which statement about the mycelium of the\ntwenty mushroom species is best supported by\nthe text?",
+          "options": [
+            "Variation in thermoregulation across the\nmycelium may occur independent of the\npresence or absence of fruited bodies.",
+            "The correlation between higher mycelium\ntemperature and greater fruit productivity\nindicates that successful reproduction may\nbe dependent on thermoregulation in the\nmycelium.",
+            "Temperatures in the fruiting areas of the\nmycelium are lower than in the nonfruiting\nareas due to differences in the depth and\nspread of the mycelium within soil or other\norganic matter.",
+            "The mycelium generally maintains\ntemperatures lower than those of the\nfruited bodies even when considering\ntemperature variations between fruiting\nand nonfruiting sites."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 4, Q57). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t04-q058",
+          "skill": "Command of Evidence - Support",
+          "domain": "Information and Ideas",
+          "focus": "Identify textual evidence that supports a claim or hypothesis",
+          "source": "SAToplam 2.0 · Topic 4 · Q58",
+          "passageTitle": "Command of Evidence - Support — Q58",
+          "passage": "Over the course of the 1900s, more and more\nNative Hawaiians spoke English instead of the\nHawaiian language. To preserve their language,\nNative Hawaiian teachers founded the 'Aha\nPünana Leo preschool in 1984. They spoke\nHawaiian while teaching, and their Native\nHawaiian students were soon able to understand\nand speak it themselves. The school was a huge\nsuccess. Eventually it opened locations around\nHawai'i and started teaching Hawaiian to\nelementary and high school students too.\nThanks to 'AhaPunana Leo, the number of\nyoung people who speak the language has\nincreased.",
+          "prompt": "Which statement, if true, would most directly\nsupport the underlined claim?",
+          "options": [
+            "Besides Native Hawaiians, tens of\nthousands of people from other Pacific\nIslander communities live in Hawai'i today,\nincluding over 37,000 Samoans.",
+            "Fewer than fifty children could speak\nHawaiian when 'Aha Pünana Leo was\nfounded, but now more than 2,000\nstudents at 'Aha Pünana Leo speak it",
+            "Hawaiian is very similar to other languages\nthat are spoken on the Polynesian Islands\nof the Pacific Ocean, including Tahitian,\nSamoan, and Maori.",
+            "Roughly 680,000 Native Hawaiian people\nlived in the United States in 2020, and a\nlittle less than half of them lived in\nHawai'i."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 4, Q58). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    }
+  ]
+}

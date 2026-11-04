@@ -1,3 +1,5 @@
+import {formatSkillTitle} from '@/lib/format-skill';
+
 export type PracticeQuestion = {
  id:string;skill:string;section:string;domain:string;focus:string;source:string;
  passageTitle:string;passage:string;prompt:string;options:{text:string;letter:string}[];answer:number;explanation:string;
@@ -20,7 +22,8 @@ export function parseBbplus(input:unknown,key:string):PracticeQuestion[]{
  pack.modules.forEach((raw,mi)=>{
   if(!raw||typeof raw!=='object')throw Error(`Module ${mi+1} is invalid.`);
   const m=raw as Record<string,unknown>;
-  const moduleTitle=text(m.title,`Module ${mi+1} title`)||`Module ${mi+1}`;
+  const rawModuleTitle=text(m.title,`Module ${mi+1} title`)||`Module ${mi+1}`;
+  const moduleTitle=formatSkillTitle(rawModuleTitle);
   if(m.section!=='reading'&&m.section!=='math')throw Error(`Module ${mi+1}: section must be reading or math.`);
   if(!Array.isArray(m.questions)||!m.questions.length)throw Error(`Module ${mi+1} has no questions.`);
   m.questions.forEach((rawQ,qi)=>{
@@ -30,13 +33,18 @@ export function parseBbplus(input:unknown,key:string):PracticeQuestion[]{
    if(!Number.isInteger(q.answer)||Number(q.answer)<0||Number(q.answer)>3)throw Error(`${label}: answer must be an index from 0 to 3.`);
    let imageDataUrl:string|undefined;
    if(q.imageDataUrl){
-    if(typeof q.imageDataUrl!=='string'||q.imageDataUrl.length>1400000||!/^data:image\/(png|jpeg);base64,[A-Za-z0-9+/]+=*$/.test(q.imageDataUrl))throw Error(`${label}: image must be an embedded PNG or JPEG.`);
-    let bytes:string;
-    try{bytes=atob(q.imageDataUrl.split(',')[1])}catch{throw Error(`${label}: invalid image encoding.`);}
-    if(!(q.imageDataUrl.startsWith('data:image/png;')&&bytes.startsWith('\x89PNG\r\n\x1a\n'))&&!(q.imageDataUrl.startsWith('data:image/jpeg;')&&bytes.startsWith('\xff\xd8\xff')))throw Error(`${label}: invalid image data.`);
-    imageDataUrl=q.imageDataUrl;
+    if(typeof q.imageDataUrl==='string'&&(q.imageDataUrl.startsWith('/')||q.imageDataUrl.startsWith('http'))){
+     imageDataUrl=q.imageDataUrl;
+    }else{
+     if(typeof q.imageDataUrl!=='string'||q.imageDataUrl.length>1400000||!/^data:image\/(png|jpeg);base64,[A-Za-z0-9+/]+=*$/.test(q.imageDataUrl))throw Error(`${label}: image must be an embedded PNG or JPEG.`);
+     let bytes:string;
+     try{bytes=atob(q.imageDataUrl.split(',')[1])}catch{throw Error(`${label}: invalid image encoding.`);}
+     if(!(q.imageDataUrl.startsWith('data:image/png;')&&bytes.startsWith('\x89PNG\r\n\x1a\n'))&&!(q.imageDataUrl.startsWith('data:image/jpeg;')&&bytes.startsWith('\xff\xd8\xff')))throw Error(`${label}: invalid image data.`);
+     imageDataUrl=q.imageDataUrl;
+    }
    }
-   result.push({imageDataUrl,imageAlt:text(q.imageAlt,'Image description'),id:`bbplus-${key}-${mi}-${qi}`,moduleId:`bbplus-${key}-${mi}`,materialTitle:title,moduleTitle,skill:text(q.skill,'Skill')||moduleTitle,domain:text(q.domain,'Domain')||title.replace(/^.*—\s*/,'')||'Unclassified',focus:text(q.focus,'Focus')||moduleTitle,source:`Imported · ${title}`,section:m.section==='math'?'Math':'Reading and Writing',passageTitle:text(q.passageTitle,'Passage title')||moduleTitle,passage:text(q.passage,'Passage'),prompt:text(q.prompt,`${label} prompt`,true),options:q.options.map((v,i)=>({text:text(v,`${label} choice`,true),letter:'ABCD'[i]})),answer:Number(q.answer),explanation:text(q.explanation,'Explanation')||'No explanation was provided in this material.'});
+   const skill=formatSkillTitle(text(q.skill,'Skill')||rawModuleTitle);
+   result.push({imageDataUrl,imageAlt:text(q.imageAlt,'Image description'),id:`bbplus-${key}-${mi}-${qi}`,moduleId:`bbplus-${key}-${mi}`,materialTitle:title,moduleTitle,skill,domain:text(q.domain,'Domain')||title.replace(/^.*—\s*/,'')||'Unclassified',focus:text(q.focus,'Focus')||moduleTitle,source:text(q.source,'Source')||`Imported · ${title}`,section:m.section==='math'?'Math':'Reading and Writing',passageTitle:text(q.passageTitle,'Passage title')||moduleTitle,passage:text(q.passage,'Passage'),prompt:text(q.prompt,`${label} prompt`,true),options:q.options.map((v,i)=>({text:text(v,`${label} choice`,true),letter:'ABCD'[i]})),answer:Number(q.answer),explanation:text(q.explanation,'Explanation')||'No explanation was provided in this material.'});
    if(result.length>1000)throw Error('A material can contain at most 1,000 questions.');
   });
  });

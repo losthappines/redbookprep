@@ -1,0 +1,687 @@
+{
+  "format": "bbplus",
+  "version": 1,
+  "type": "practice",
+  "title": "SAToplam 2.0 — Cross-Text Connections",
+  "description": "Official real exam SAT reading practice questions (March 2023 – August 2025) compiled by @satashkent. Domain: Craft and Structure.",
+  "modules": [
+    {
+      "title": "Cross-Text Connections — Set 1",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t11-q001",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q1",
+          "passageTitle": "Cross-Text Connections — Q1",
+          "passage": "(*Exam level)\nText 1:\nOdaham farmers in Sonoran desert of the\nsouthwestern US and Northern Mexico plant\ndifferent species in the same plot of land to help\nprotect against the effect of drought. For\nexample, while organ pipe cacti can tolerate\nextended periods of low moisture in the upper\nsoil, Chia flowers cannot. So, planting both\nspecies helps ensure that even in growing\nseasons too dry for Chia flowers, a farmer might\nstill be able to harvest a pipe organ fruit.\nText 2:\nChia flowers are well adapted to growing in the\ndesert but are highly dependent on having\nsufficient moisture in the upper soil. Inspired by\nOdaham farmers, who often plant some crop\nspecies in the shade of more drought-tolerant\nspecies such as organ pipe cacti to help prevent\nthe sun from drying the upper soil, Gray and\ncolleagues planted Chia flowers in the shade of\nsolar panels in Sonoran Desert and found that\nthe chia flowers grew well.",
+          "prompt": "Based on the texts, the author of text 1 and the\nauthor of text 2 most likely agree on what point?",
+          "options": [
+            "Gray's team's method could be refined to\nprevent soil moisture more actively from\nevaporating.",
+            "Organ pipe and solar panels both provide\nadequate shade to help protect the\nmoisture in the upper soil.",
+            "The Odaham approach has an advantage\nover Gray's team's approach in that is\ncapable of producing chia seeds.",
+            "Chia flowers require more moisture in the\nupper soil than organ pipe cacti do."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 11, Q1). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q002",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q2",
+          "passageTitle": "Cross-Text Connections — Q2",
+          "passage": "Text 1:\nFor decades, ornithologists assumed that if they\nsaw a singing Bell's vireo–a bird species found in\ntemperate North American–they must be\nobserving a male. That's because birdsong has\nlong been considered a male trait; researchers\nhave argued that males to attract mates and\nclaim territory.\nText 2:\nRecent evidence shows that a female Bell's vireo\nis as capable of song as a male is. In fact, Karan\nJ. Odom and colleagues found evidence of\nfemale song in 71% of the 323 species they\nexamined. They claim that the historical\nmischaracterization of birdsong as a male trait is\nlargely the result of bias: much of the research\nornithologists have carried out has been near\nuniversities in the temperate northern\nhemisphere, where female birdsong is less\ncommon than it is in the tropics.",
+          "prompt": "Based on the text, how would Odom and\ncolleagues (Text 2) most likely respond to the\nview of birdsong presented in Text 1?",
+          "options": [
+            "They would suggest that it reflects a\ntendency to study male birds rather than\nfemale birds.",
+            "They would claim that other factors than\nmate attraction and territorial defense\nhave driven that evolution of singing in\nmale birds.",
+            "They would underscore that male\nsongbirds in temperature zones are likely\nusing their songs for different purposes\nthan are male songbirds in the tropics.",
+            "They would argue that it was influenced\nby the kinds of study sites researchers\ntended to select."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 11, Q2). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q003",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q3",
+          "passageTitle": "Cross-Text Connections — Q3",
+          "passage": "Text 1:\nAccording to a study by a conservation group\nrepresenting 11 tribal nations in the Great Lakes\nregion, the northern pike (ginoozhe in the\nOjibwe language) will have significantly worse\noutcomes over the next 50 years if temperatures\nincrease as much as some models suggest. By\ncontrast, the white-tailed deer (waawaashkeshi\nin Ojibwe) should be able to withstand the\nhighest predicted warming without much harm\nand so likely won't require the conservation\nefforts that the northern wild pike will.\nText 2:\nUS government agencies involved in conservation\nare unfortunately not able to address every\npossible threat to natural resources. They must\nuse the best information available to decide\nwhich species are most threatened and therefore\nmost in need of conservation efforts.",
+          "prompt": "Based on the texts, both authors would most\nlikely agree with which statement?",
+          "options": [
+            "A collaborative approach is necessary to\nkeep temperatures in the Great Lakes\nregion from increasing to the highest\npredicted levels.",
+            "Agencies involved in natural-resource\nmanagement in the Great Lakes region\nshould focus their conservation efforts\nmore on the northern pike than on the\nwhite-tailed deer.",
+            "Conservation efforts focused on the\nnorthern pike are more likely to be\nsuccessful if they incorporate state and\nfederal agency resources with the\nknowledge of tribal groups in those efforts.",
+            "State, federal, and tribal groups involved\nin natural resource management in the\nGreat Lakes region should immediately\nbegin conservation programs for both the\nnorthern pike and white-tailed deer."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 11, Q3). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q004",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q4",
+          "passageTitle": "Cross-Text Connections — Q4",
+          "passage": "Text 1:\nIn 2019 Arequipa, Peru, was named a City of\nGastronomy by UNESCO in recognition of the\ncity's unique food culture. The honor is well\nknown among both residents of the city and\ntourists who visit. Simply by selecting Arequipa,\nUNESCO has helped bring awareness to local\nrecipes, cooking practices, and chefs and has\nprovided a significant boost to the city's tourism\nindustry.\nText 2:\nMany people in Arequipa's restaurant industry\nhoped that food tourism would increase after\nthe city was chosen as a City of Gastronomy in\n2019. However, as researcher Eerang Park and\ncolleagues argue, cities must still create effective\nmarketing strategies to benefit fully from being\nnamed a City of Gastronomy. Without the\nintentional effort that was made to promote the\ncity's food scene, many current and potential\nvisitors to Arequipa would not even be aware\nthat it's home to uniquely delicious food.",
+          "prompt": "Which choice best describes a difference in how\nthe authors of the texts view the benefits of\nbeing named a City of Gastronomy?",
+          "options": [
+            "The author of Text 1 considers the effects\nof Arequipa's City of Gastronomy status\nto be less permanent than the author of\nText 2 considers them to be.",
+            "The author of Text 1 states that the\nbenefits are automatic, while the author of\nText 2 states that effort is required to fully\nachieve the benefits.",
+            "The author of Text 1 views Arequipa's\nstatus as a City of Gastronomy as having\nbeen beneficial for the city, but the author\nof Text 2 questions whether there's been a\nbenefit.",
+            "The author of Text 1 assumes that a city's\nrestaurant owners and chefs are most\nlikely to benefit from a city being named a\nCity of Gastronomy, but the author of\nText 2 states that the honor most affects\ntour guides and tour operators."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 11, Q4). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q005",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q5",
+          "passageTitle": "Cross-Text Connections — Q5",
+          "passage": "Text 1:\nScholarship today overrepresents formal\nexperimentation, such as William Carlos\nWilliams's use of minimalistic, image-based\nstructures, well beyond the degree to which it\nactually influenced US poetry during the\nmodernist period (roughly 1900-1945).\nMeanwhile, the work of Countee Cullen, who\nrelied on conventional poetic forms associated\nwith previous literary periods, attracts woefully\nlittle attention from scholars of modernism.\nText 2:\nDistant reading, or computer-assisted\nquantitative analysis of massive collections of\ndigitized texts, can reveal stylistic elements that\nhave heretofore escaped notice, despite being\nshared by numerous texts from the modernist\nperiod. For too long, scholars have focused on\nexperimental versus conventional poetic forms,\ninhibiting inquiry into other points of stylistic\ncorrespondence among poems that would enrich\nour understanding of the modernist canon.",
+          "prompt": "Based on the texts, how would the author of\nText 2 most likely regard the emphasis that\nText 1 places on poetic form during the\nmodernist period?",
+          "options": [
+            "As having the effect of forestalling\nconsideration of the full stylistic\ndimensions of poetry written in the period.",
+            "As overestimating the impact that poetic\nform, whether experimental or\nconventional, has on the reading\nexperience.",
+            "As being founded on a misconception\nabout modernist poetry that has been\ncalled into question by distant reading.",
+            "As complementing the study of other\nstylistic features that distinguish the\nmodernist period."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 11, Q5). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q006",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q6",
+          "passageTitle": "Cross-Text Connections — Q6",
+          "passage": "Text 1:\nAttempts to automate classification of music\ninto genres have not been very successful. It is\nalso unclear whether categorizing music by genre\nis useful, since genre categories are ambiguous,\nsubjective, and simplistic. As Jin Ha Lee and\nAnh Thu Nguyen argue in their study of the\nSouth Korean band BTS, relationships between\npieces of music may be best understood with\nconcepts other than genre.\nText 2:\nForró is a genre of music originally from Brazil\nthat shares some harmonic and rhythmic\nsimilarities with the bolero genre. Automated\ngenre classification systems typically struggle to\ndraw distinctions in situations like this, but\nYandre Costa and colleagues solved that\nproblem by converting sound to images and\nhaving computers compare features of those\nimages. Their approach could improve genre\nclassification, which could have many benefits\nfor users.",
+          "prompt": "Based on the texts, how would the author of\nText 1 most likely respond to the claim about\nthe potential benefits of Costa and colleagues'\nresearch in Text 2?",
+          "options": [
+            "By suggesting that future research may\nprovide substantial advancements in the\nfield of automated genre classification.",
+            "By asserting that genre classifications may\nnot be the most helpful way to think\nabout music.",
+            "By arguing that some genres are more\neasily recognized by classification systems\nthan others.",
+            "By emphasizing that humans do not\nnecessarily enjoy every recording in a\ngenre they claim to prefer."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 11, Q6). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q007",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q7",
+          "passageTitle": "Cross-Text Connections — Q7",
+          "passage": "Text 1:\nToni Morrison's 1973 novel Sula, a tale of two\nwomen's lives set in small-town Ohio from the\n1910s to the 1960s, has been described as\nhistorical fiction. While it's inarguable that\nMorrison's book takes place in the past rather\nthan in her own time, Sula is much richer and\nmore complicated than the mere re-creation of\nthe past suggested by the term \"historical\nfiction.\"\nText 2:\nSome literary critics dismiss historical fiction as\na shallow genre in which writers show off their\nknowledge of period details rather than tell\nmeaningful stories. But historical fiction can be\nused to explore profound themes and complex\ncharacters. In fact, many writers find that\nwriting about the past gives them a creative\nfreedom they'd lack if they wrote about the\npresent.",
+          "prompt": "Based on the texts, how would the author of\nText 2 most likely respond to the claim about\nSula advanced by the author of Text 1?",
+          "options": [
+            "By arguing that Morrison displays a\nthorough knowledge of historical details in\nSula.",
+            "By asserting that dissatisfaction with\ndescribing Sula as historical fiction reflects\na misunderstanding of the genre.",
+            "By conceding that the genre of historical\nfiction contains many works that are less\nsophisticated than Sula is.",
+            "By claiming that the author of Text 1 has\nunderestimated the richness and\ncomplexity of Sula"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 11, Q7). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q008",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q8",
+          "passageTitle": "Cross-Text Connections — Q8",
+          "passage": "Text 1:\nIn southern and central Georgia, many buildings\nand other structures rest on soil that is\nexpansive, meaning that it swells or shrinks as\nits moisture level changes. Civil engineer Jay X.\nWang has noted that the effects of expansive soil\nappear slowly in the form of gradually growing\ncracks in foundations, walls, and pavements.\nBecause these effects are incremental and can\ngenerally be repaired (though at some cost),\nstructures in southern and central Georgia are\ntypically not built to resist them.\nText 2:\nIn a 2021 study, Rubayet Bin Mostafiz and\ncolleagues calculated that in the state of\nLouisiana alone, the annual cost of damage\ncaused by expansive soils reaches nearly $90\nmillion. But they note that this damage can be\nmitigated: building vapor barriers between\nstructural foundations and the soil can\nsignificantly reduce the effects of soil swelling\nand shrinking.",
+          "prompt": "Based on the texts, how would Rubayet Bin\nMostafiz and colleagues (Text 2) most likely\nrespond to the information presented in Text 1?",
+          "options": [
+            "They would encourage engineers in\nsouthern and central Georgia to insert\nvapor barriers between new structures'\nfoundations and the surrounding soil.",
+            "They would argue that engineers in\nsouthern and central Georgia have\nmisjudged the effectiveness of the\ntechniques they use to reduce the effects of\nexpansive soil.",
+            "They would suggest that engineers in\nsouthern and central Georgia consider the\ncost of reinforcing the vapor barriers\nbetween existing structural foundations\nand the soil.",
+            "They would recommend that engineers in\nsouthern and central Georgia measure the\nmoisture level in the soil beneath proposed\nstructures before beginning construction."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 11, Q8). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q009",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q9",
+          "passageTitle": "Cross-Text Connections — Q9",
+          "passage": "Text 1:\nIsaac Asimov, author of Robots and Empire and\nI, Robot, is highly regarded despite his mediocre\nwriting style. His prose is workmanlike; his\ncharacters are flat and discuss ideas rather than\nemotions. That his work is enjoyable despite\nthis is a testament to his prodigious imagination\neven if people read his books only for the ideas,\nthey will have plenty to consider.\nText 2:\nAsimov is critiqued for his style, but it is wrong\nto fault a writer for failing to do what he never\nintended to do. For example, although most of\nhis novel Foundation consists of people\ndiscussing science and politics and we find out\nlittle about his characters' lives, Asimov wanted\nto convey the vast sweep of human history over\ncenturies, and one of his points is that at such a\ntimescale, individuals don't matter. Thus his\nlack of characterization is central to his thematic\naims.",
+          "prompt": "Based on the texts, how would the author of\nText 2 most likely respond to the description of\nAsimov's characters in the underlined portion of\nText 1?",
+          "options": [
+            "The flatness of Asimov's characters is a\nfeature of Robots and Empire and I,\nRobot but not of Foundation.",
+            "Asimov's characterizations would have\nbeen more believable if his writing had\ndiscussed fewer ideas.",
+            "Asimov's characterizations would have\nbeen richer if he had possessed a deeper\nunderstanding of history.",
+            "The flatness of Asimov's characters should\nnot necessarily be considered a flaw in his\nwriting."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 11, Q9). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q010",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q10",
+          "passageTitle": "Cross-Text Connections — Q10",
+          "passage": "Text 1:\nIn northern and western Nebraska, many\nbuildings and other structures rest on soil that\nis expansive, meaning that it swells or shrinks as\nits moisture level changes. Civil engineer Jay X.\nWang has noted that the effects of expansive soil\nappear slowly in the form of gradually growing\ncracks in foundations, walls, and pavements.\nBecause these effects are incremental and can\ngenerally be repaired (though at some cost),\nstructures in northern and western Nebraska are\ntypically not built to resist them.\nText 2:\nIn a 2021 study, Rubayet Bin Mostafiz and\ncolleagues calculated that in the state of\nLouisiana alone, the annual cost of damage\ncaused by expansive soils reaches nearly $90\nmillion. But they note that this damage can be\nmitigated: building structures on pile supports\ncan significantly reduce the effects of soil\nswelling and shrinking.",
+          "prompt": "Based on the texts, how would Rubayet Bin\nMostafiz and colleagues (Text 2) most likely\nrespond to the information presented in Text 1?",
+          "options": [
+            "They would recommend that engineers in\nnorthern and western Nebraska measure\nthe moisture level in the soil beneath\nproposed structures before beginning\nconstruction.",
+            "They would argue that engineers in\nnorthern and western Nebraska have\nmisjudged the effectiveness of the\ntechniques they use to reduce the effects of\nexpansive soil.",
+            "They would encourage engineers in\nnorthern and western Nebraska to use pile\nsupports when building new structures.",
+            "They would suggest that engineers in\nnorthern and western Nebraska consider\nthe cost of replacing the pile supports on\nwhich existing structures rest."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 11, Q10). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q011",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q11",
+          "passageTitle": "Cross-Text Connections — Q11",
+          "passage": "Text 1:\nA conservation group representing 11 tribal\nnations in the Great Lakes region reported to\nvarious state and federal natural resources\nagencies operating in the region that the firefly\n(waawaatesi in the Ojibwe language) will likely\nfare significantly worse than the black bear\n(makwa in Ojibwe) due to rising temperatures\nover the next 50 years. This collaborative\napproach has helped build trust between\ngovernment and tribal groups, which will likely\nimprove the quality of any joint conservation\nprojects.\nText 2:\nState and federal natural resources agencies are\nincreasingly incorporating traditional ecological\nknowledge from tribal groups in the agencies'\nplans to address threats to natural resources due\nto increasing temperatures. This approach has\nhelped build positive relationships between\ntribal groups and these agencies and furthermore\ntends to lead to better conservation outcomes.",
+          "prompt": "Based on the texts, both authors would most\nlikely agree with which statement?",
+          "options": [
+            "Natural resources conservation projects are\nlikely to benefit from collaboration\nbetween tribal and government groups.",
+            "A collaborative approach to conservation\nis likely to help reduce the predicted\ntemperature increases in the Great Lakes\nregion.",
+            "In the Great Lakes region, it is more\nimportant to focus conservation efforts on\nthe firefly than it is to focus on the black\nbear.",
+            "In the Great Lakes region, conservation\nefforts focused on the firefly are likely to\nbe more effective than those focused on\nthe black bear."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 11, Q11). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q012",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q12",
+          "passageTitle": "Cross-Text Connections — Q12",
+          "passage": "Text 1:\nWhen the 50-second-long film Arrival of the\nTrain—which depicts what its title says, a train\npulling into a station—was first shown publicly\nin 1896, spectators, naïve to the new medium of\nfilm and seeing a train appearing to come\ndirectly at them, leaped from their seats and\nfled the room. This moment marks a major\ncultural shift: a new way of representing and\nseeing the world had arrived with that train,\nand nothing would ever be the same.\nText 2:\nThe fact that there is no contemporary evidence\nthat the first audience of Arrival of the Train\nwas alarmed has not stopped the story from\nbecoming canonical, even among film historians.\nBut that phenomenon itself is highly revealing.\nOur belief that the coming of film was\ntransformative is so strong that we invented and\nkeep retelling a founding myth that divides\ncultural history into a (naïve) \"before\" and\n(sophisticated) \"after.\"",
+          "prompt": "Based on the texts, the author of Text 2 would\nmost likely agree with which statement about\nthe description of the first showing of Arrival of\nthe Train in Text 1?",
+          "options": [
+            "It is not based on evidence and reflects\nfilm historians' belief that they are more\nsophisticated than today's audiences.",
+            "It expresses a view about the\ntransformative nature of film that film\nhistorians tend to regard as naïve.",
+            "It is more motivated by a perception of the\nsignificance of the invention of film than\nby facts.",
+            "It reflects a misconception that is widely\nbelieved because it captures early film\naudiences' sense that the new medium was\nalarming."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 11, Q12). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q013",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q13",
+          "passageTitle": "Cross-Text Connections — Q13",
+          "passage": "Text 1:\nAccording to a study by a conservation group\nrepresenting 11 tribal nations in the Great Lakes\nregion, the lake trout (namegos in the Ojibwe\nlanguage) will have significantly worse outcomes\nover the next 50 years if temperatures increase\nas much as some models suggest. By contrast,\nthe bald eagle (migizi in Ojibwe) should be able\nto withstand the highest predicted warming\nwithout much harm and so likely won't require\nthe conservation efforts that the lake trout will.\nText 2:\nUS government agencies involved in conservation\nare unfortunately not able to address every\npossible threat to natural resources. They must\nuse the best information available to decide\nwhich species are most threatened and therefore\nmost in need of conservation efforts.",
+          "prompt": "Based on the texts, both authors would most\nlikely agree with which statement?",
+          "options": [
+            "A collaborative approach is necessary to\nkeep temperatures in the Great Lakes\nregion from increasing to the highest\npredicted levels.",
+            "Agencies involved in natural-resource\nmanagement in the Great Lakes region\nshould focus their conservation efforts\nmore on the lake trout than on the bald\neagle.",
+            "State, federal, and tribal groups involved\nin natural-resource management in the\nGreat Lakes region should immediately\nbegin conservation programs for both the\nlake trout and bald eagle.",
+            "Conservation efforts focused on the lake\ntrout are more likely to be successful if\nthey incorporate state and federal agency\nresources with the knowledge of tribal\ngroups in those efforts."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 11, Q13). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q014",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q14",
+          "passageTitle": "Cross-Text Connections — Q14",
+          "passage": "Text 1:\nIn separate studies, Stephen Meding and Robert\nJ. Zasoski and Xinhua He and colleagues\nexamined whether plants transfer nutrients to\none another using a common mycorrhizal\nnetwork (CMN)—a lattice of fungal strands in\nthe soil. Meding and Zasoski excluded all\npathways other than the CMN by using barriers\nto keep the plants' root systems separate while\nallowing mycorrhizal strands through—a crucial\nstep He and colleagues' study did not take.\nText 2:\nMeding and Zasoski took the necessary\nprecaution of separating the plants' root systems\n(thereby excluding root-to-root transmission).\nHowever, any barrier used must allow the\nthread-like hyphae of a CMN to pass through,\nand this permeability would also allow liquids\nthrough. Thus, the researchers' experimental\ndesign cannot ensure that any nutrient transfer\nobserved can be attributed to a CMN and not to\nsome other pathway.",
+          "prompt": "Based on the texts, which choice best describes\na point on which the author of Text 1 and the\nauthor of Text 2 would most likely agree?",
+          "options": [
+            "Meding and Zasoski's study effectively\nexcluded any explanation for nutrient\ntransfer other than via a CMN.",
+            "Excluding root-to-root transfer of\nnutrients between plants is sufficient to\nensure that any observed nutrient transfer\nmust involve a CMN.",
+            "He and colleagues' study was not designed\nin a way that would allow it to produce\ncompelling evidence that nutrient transfer\noccurred via a CMN.",
+            "A barrier that is impervious to both roots\nand fungal strands is necessary to evaluate\nnutrient transfer via a CMN."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 11, Q14). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q015",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q15",
+          "passageTitle": "Cross-Text Connections — Q15",
+          "passage": "Text 1:\nIn parts of New Zealand, the stoat is a major\npredator of the house mouse. Researcher G.L.\nBlackwell and colleagues found that when this\npredation pressure on house mice was\ntemporarily reduced, their numbers significantly\nincreased. This finding illustrates a foundational\necological principle: predators control prey\npopulation numbers.\nText 2:\nWilliam D. Gulsby and colleagues found that\nexcluding coyotes from a site in the state of\nGeorgia where they typically prey on\nwhite-tailed deer had no significant effect on\nwhite-tailed deer abundance. Many other\npredation relief studies show an increase in prey\nabundance, but those studies often focus on\nsmall, rapidly reproducing prey, like birds, mice,\nand frogs, rather than large, slowly reproducing\nprey, like white-tailed deer, which could account\nfor the difference between those results and\nGulsby and colleagues' results.",
+          "prompt": "Based on the texts, the author of Text 2 would\nmost likely agree with which statement about\nthe \"principle\" mentioned in Text 1?",
+          "options": [
+            "It is plausible, but many of the studies\nthat support it have methodological flaws.",
+            "It has been challenged by some studies,\nbut the findings of those studies have not\nbeen widely accepted.",
+            "It may be true for some predators but only\nbecause those predators share certain\nphysical characteristics.",
+            "It has some evidential support, but it\nshould not be regarded as universally\napplicable."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 11, Q15). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q016",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q16",
+          "passageTitle": "Cross-Text Connections — Q16",
+          "passage": "Text 1:\nIn parts of Australia, the feral cat is a major\npredator of the ash-grey mouse. Researcher\nDanielle A. Risbey and colleagues found that\nwhen this predation pressure on ash-grey mice\nwas temporarily reduced, their numbers\nsignificantly increased. This finding illustrates a\nfoundational ecological principle: predators\ncontrol prey population numbers.\nText 2:\nMichel Crête and Hélène Jolicoeur found that\nexcluding wolves from a site in Quebec, Canada,\nwhere they typically prey on moose had no\nsignificant effect on moose abundance. Many\nother predation relief studies show an increase in\nprey abundance, but those studies often focus\non small, rapidly reproducing prey, like birds,\nmice, and rabbits, rather than large, slowly\nreproducing prey, like moose, which could\naccount for the difference between those results\nand Crête and Jolicoeur's results.",
+          "prompt": "Based on the texts, the author of Text 2 would\nmost likely agree with which statement about\nRisbey and colleagues' findings (Text 1)?",
+          "options": [
+            "They may be partially attributable to\nphysical characteristics of ash-grey mice\nthat are not shared by moose.",
+            "They may have been different if the ratio\nof the body size of feral cats to that of\nash-grey mice was greater than it is.",
+            "They may be partially explained by the\nfact that feral cats are smaller and\nreproduce more rapidly than wolves.",
+            "They may reflect a response that does not\ntend to be observed in prey species other\nthan ash-grey mice."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 11, Q16). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q017",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q17",
+          "passageTitle": "Cross-Text Connections — Q17",
+          "passage": "Text 1:\nIn parts of Yukon, Canada, the lynx is a major\npredator of the arctic ground squirrel.\nResearcher Andrea E. Byrom and colleagues\nfound that when this predation pressure on\narctic ground squirrels was temporarily reduced,\ntheir numbers significantly increased. This\nfinding illustrates a foundational ecological\nprinciple: predators control prey population\nnumbers.\nText 2:\nMark A. Hurley and colleagues found that\nexcluding coyotes from a site in the state of\nIdaho where they typically prey on mule deer\nhad no significant effect on mule deer\nabundance. Many other predation relief studies\nshow an increase in prey abundance, but those\nstudies often focus on small, rapidly reproducing\nprey, like birds, squirrels, and rabbits, rather\nthan large, slowly reproducing prey like mule\ndeer, which could account for the difference\nbetween those results and Hurley and\ncolleagues' results.",
+          "prompt": "Based on the texts, the author of Text 2 would\nmost likely agree with which statement about\nByrom and colleagues' findings (Text 1)?",
+          "options": [
+            "They may be partially explained by the\nfact that lynxes are smaller and reproduce\nmore rapidly than coyotes.",
+            "They may have been different if the ratio\nof the body size of lynxes to that of arctic\nground squirrels was greater than it is.",
+            "They may reflect a response that does not\ntend to be observed in prey species other\nthan arctic ground squirrels.",
+            "They may be partially attributable to\nphysical characteristics of arctic ground\nsquirrels that are not shared by mule deer."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 11, Q17). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q018",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q18",
+          "passageTitle": "Cross-Text Connections — Q18",
+          "passage": "Text 1:\nFor thousands of years, O'odham farmers in the\nSonoran desert of the southwestern US and\nnorthern Mexico have cultivated elderberries\nand chia seeds, sometimes planting these species\ntogether so that the elderberry bushes provide\nshade for chia flowers. Doing so helps protect\nchia flowers from the harshest heat and light\nand thereby helps prevent soil moisture from\nevaporating.\nText 2:\nChia flowers are well adapted to growing in the\ndesert but grow best when shaded. Inspired by\nO'odham farmers, who often strategically plant\nchia flowers in the shade of sun-hardy species\nlike elderberry bushes for protection from the\nsun and heat, Gary Nabhan and colleagues\nplanted chia flowers in the shade of solar panels\nin the Sonoran desert and found that the plants\ngrew well, suggesting to Nabhan and colleagues\nthat the panels provide a benefit similar to that\nprovided by elderberry bushes.",
+          "prompt": "Based on the texts, the author of Text 1 and the\nauthor of Text 2 would most likely agree on\nwhich point?",
+          "options": [
+            "Elderberry bushes can provide shade that\nprotects chia flowers from high-intensity\nheat and light.",
+            "Nabhan's team's method could be refined\nto more actively prevent soil moisture from\nevaporating.",
+            "Compared with Nabhan's approach, the\nO'odham approach has the advantage of\nproducing chia seeds.",
+            "Elderberry bushes grow best when planted\nin shaded areas, while chia flowers do not\nrequire shade to thrive."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 11, Q18). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q019",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q19",
+          "passageTitle": "Cross-Text Connections — Q19",
+          "passage": "Text 1:\nThe poet Audre Lorde once claimed that poetry\nis the most inexpensive of art forms to practice.\nWhile people who pursue other art forms –\npainting, architecture, theater – require large\nblocks of uninterrupted time as well as money to\ncomplete their work, poets can write, as Lorde\nsaid, \"between shifts, in the hospital pantry, on\nthe subway, and on scraps of surplus paper.\" So\npoets can practice their art even if they must\nearn their living in another way.\nText 2:\nAny assessment of the state of contemporary\npoetry must reckon with the professionalization\nof the field. While it is possible in theory for\nanyone to publish in Virginia Quarterly Review,\nKenyon Review, or a similar major poetry\noutlet, many people who do so have professional\ntraining in poetry and extensive practice writing\nit, which requires time not often available to\nthose who must also work full-time jobs. Thus,\nfinancial security indirectly affects which people\nbecome poets.",
+          "prompt": "Based on the texts, Lorde (Text 1) and the\nauthor of Text 2 would most likely disagree\nabout the answer to which of the following\nquestions?",
+          "options": [
+            "Do other art forms than poetry require\nsubstantial investments of time and\nmoney?",
+            "Should poets try to gain experience\nworking in nonartistic fields as a way of\nimproving their poetry?",
+            "Does professional training in poetry affect\nthe quality of poet's work?",
+            "Is working a full-time job a major\nimpediment to practicing the art of\npoetry?"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 11, Q19). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    },
+    {
+      "title": "Cross-Text Connections — Set 2",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t11-q020",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q20",
+          "passageTitle": "Cross-Text Connections — Q20",
+          "passage": "Text 1:\nOne challenge faced by researchers studying\nglobal urbanization is that countries may define\nurban settlements differently. Many countries\ndefine urban settlements based on the number of\npeople living in them. However, countries do not\nall use the same number; for example,\nGreenland uses a minimum population of 200,\nwhile the Netherlands uses 20,000. Other\ncountries use a combination of population and\nother factors. This variation makes it difficult\nfor researchers to compare aspects of\nurbanization in different countries.\nText 2:\nRecently, a group of six international\norganizations developed global definitions of\ncommon types of settlements. The group\ndeveloped a new measure called the \"degree of\nurbanization.\" This new measure establishes\nglobal criteria used to define three types of\nsettlements (cities, towns, and rural areas) and\nallows researchers to better understand global\nurbanization rates.",
+          "prompt": "Based on the text, how would the author of\nText 2 most likely respond to the problem\npresented in Text 1?",
+          "options": [
+            "By suggesting that researchers focus on\ntopics besides urbanization.",
+            "By noting that a possible solution to the\nproblem is available.",
+            "By recommending that a specific\ninstitution should further investigate the\nproblem.",
+            "By supplying additional ways in which\nurbanization research is difficult."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 11, Q20). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q021",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q21",
+          "passageTitle": "Cross-Text Connections — Q21",
+          "passage": "Text 1:\nThe island of Grande Terre split from the former\nsupercontinent Gondwana around 80 million\nyears ago, carrying Gondwanan species from a\nvariety of clades with it. The island was\nperiodically submerged until 37 million years\nago, but some researchers suggest that its\ncurrent biota includes species from clades\npredating the split that took refuge on islands\nnear Grande Terre during submergence events\nand then returned.\nText 2:\nThomas R. Buckley et al. found that the crown\nage – the age of the most recent common\nancestor of all species in the clade (i.e., the\nclade's founder) – of Grande Terre's clade of\nstick insects is 41.1 million years, which is\namong the oldest clade crown ages of species\ninhabiting the island today. Nearly all of\nGrande Terre's living species belong to clades\nthat originated much more recently: for\nexample, the crown age of the island's clade of\nGoodeniaceae plants is 2.0 million years.",
+          "prompt": "Based on the texts, the author of Text 2 would\nmost likely agree with which statement about\nthe \"Gondwanan species\" discussed in Text 1?",
+          "options": [
+            "Most of them began recolonizing Grande\nTerre from nearby islands around 2.0\nmillion years ago.",
+            "Clades to which they belong originated no\nearlier than 41.1 million years ago.",
+            "Few if any of them were members of a\nclade that includes species currently\ninhabiting Grande Terre.",
+            "Although most of them have living\ndescendants on Grande Terre, the stick\ninsects and Goodeniaceae plants do not."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 11, Q21). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q022",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q22",
+          "passageTitle": "Cross-Text Connections — Q22",
+          "passage": "Text 1:\nAccording to a study by a conservation group\nrepresenting 11 tribal nations in the Great Lakes\nregion, the northern wild rice (manoomin in the\nOjibwe language) will have significantly worse\noutcomes over the next 50 years if temperatures\nincrease as much as some models suggest. By\ncontrast, the white-tailed deer (waawaashkeshi\nin Ojibwe) should be able to withstand the\nhighest predicted warming without much harm\nand so likely won't require the conservation\nefforts that the northern wild rice will.\nText 2:\nUS government agencies involved in conservation\nare unfortunately not able to address every\npossible threat to natural resources. They must\nuse the best information available to decide\nwhich species are most threatened and therefore\nmost in need of conservation efforts.",
+          "prompt": "Based on the texts, both authors would most\nlikely agree with which statement?",
+          "options": [
+            "State, federal, and tribal groups involved\nin natural-resource management in the\nGreat Lakes region should immediately\nbegin conservation programs for both the\nnorthern wild rice and white-tailed deer.",
+            "Agencies involved in natural-resource\nmanagement in the Great Lakes region\nshould focus their conservation efforts\nmore on the northern wild rice than on the\nwhite-tailed deer.",
+            "A collaborative approach is necessary to\nkeep temperatures in the Great Lakes\nregion from increasing to the highest\npredicted levels.",
+            "Conservation efforts focused on the\nnorthern wild rice are more likely to be\nsuccessful if they incorporate state and\nfederal agency resources with the\nknowledge of tribal groups in those efforts."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 11, Q22). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q023",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q23",
+          "passageTitle": "Cross-Text Connections — Q23",
+          "passage": "Text 1:\nUisdean Nicholson and his team have discovered\nevidence in seismic data of a 40-kilometer-wide\nsubsurface crater beneath nearly a kilometer of\nwater off the coast of West Africa that is\nconsistent with a 400-meter wide asteroid\nstriking the seafloor. This structure, which the\nteam named Nadir, exhibits all the telltale signs\nof a high-velocity impact crater: an elevated\nrim, a circular shape, a terraced floor, and a\npronounced area of uplift at its center.\nText 2:\nBoth carbonate dissolution and subsurface salt\nwithdrawal can cause craterlike depressions\nwithout the need for a high-velocity impact.\nHowever, carbonate dissolution is very unlikely\nto have occurred in the vicinity of Nadir, and\nalthough subsurface salt withdrawal could have\nplausibly occurred in this area and would result\nin a depression with a terraced floor or a circular\nshape, it would not exhibit the area of central\nuplift seen at Nadir.",
+          "prompt": "Which choice best describes a difference between\nthe approach of Text 1 and the approach of Text\n2?",
+          "options": [
+            "Text 1 dispassionately describes Nicholson\nand colleagues' findings and conclusions,\nwhereas Text 2 attempts to convey the\nresearchers' excitement on discovering\nNadir.",
+            "Text 1 focuses on features Nadir lacks,\nwhereas Text 2 indicates features it shares\nwith other geological depressions.",
+            "Text 1 discusses a single plausible cause of\nNadir, whereas Text 2 evaluates two\npossible causes.",
+            "Text 1 emphasizes the evidence supporting\nan asteroid impact as the cause of Nadir,\nwhereas Text 2 argues against that\nexplanation."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 11, Q23). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q024",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q24",
+          "passageTitle": "Cross-Text Connections — Q24",
+          "passage": "Text 1:\nIn 2015 Rasht, Iran, was named a City of\nGastronomy by UNESCO in recognition of the\ncity's unique food culture. The honor is well\nknown among residents of the city as well as\ntourists who visit. It's obvious that the selection\nof Rasht by UNESCO has brought awareness to\nlocal recipes, cooking practices, and chefs and\nhas provided a boost to the city's tourism\nindustry.\nText 2:\nMany people in Rasht's restaurant industry\nhoped that food tourism would increase after\nthe city was chosen as a City of Gastronomy in\n2015. However, as researcher Eerang Park and\ncolleagues argue, cities must still create effective\nmarketing strategies to benefit fully from being\nnamed a City of Gastronomy. Without an\nintentional effort to promote the city's food\nscene, many current and potential visitors to\nRasht may not even be aware that it's home to\nuniquely delicious food.",
+          "prompt": "Based on the texts, both authors would most\nlikely agree with which statement?",
+          "options": [
+            "The benefits of Rasht having been named\na City of Gastronomy extend well beyond\nincreased tourism.",
+            "Increased tourism isn't guaranteed after a\ncity has been named a City of Gastronomy.",
+            "A city's food scene can benefit from the\ncity being named a City of Gastronomy.",
+            "A significant number of visitors to Rasht\nmay not know that it was named a City of\nGastronomy."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 11, Q24). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q025",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q25",
+          "passageTitle": "Cross-Text Connections — Q25",
+          "passage": "Text 1:\nIn separate studies, Stephen Meding and Robert\nJ. Zasoski and Xinhua He and colleagues\nexamined whether plants transfer nutrients to\none another using a common mycorrhizal\nnetwork (CMN) – a lattice of fungal strands in\nthe soil. Meding and Zasoski excluded all\npathways other than the CMN by using barriers\nto keep the plants' root systems separate while\nallowing mycorrhizal strands through – a crucial\nstep He and colleagues' study did not take.\nText 2:\nMeding and Zasoski took the necessary\nprecaution of separating the plants' root systems\n(thereby excluding root-to-root transmission).\nHowever, any barrier used must allow the\nthread-like hyphae of a CMN to pass through,\nand this permeability would also allow liquids\nthrough. Thus, the researchers' experimental\ndesign cannot ensure that any nutrient transfer\nobserved can be attributed to a CMN and not to\nsome other pathway.",
+          "prompt": "Based on the texts, the author of Text 1 and the\nauthor of Text 2 would most likely agree with\nwhich statement?",
+          "options": [
+            "The barriers used in Meding and Zasoski's\nstudy effectively excluded root-to-root\ntransmission of nutrients.",
+            "A barrier that is impervious to both roots\nand fungal strands is necessary to evaluate\nnutrient transfer via a CMN.",
+            "Excluding root-to-root transfer of\nnutrients between plants is sufficient to\nensure that any observed nutrient transfer\nmust involve a CMN.",
+            "He and colleagues' study did not find\nconvincing evidence of nutrient transfer\nbetween individual plants."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 11, Q25). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q026",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q26",
+          "passageTitle": "Cross-Text Connections — Q26",
+          "passage": "Text 1:\nFrench Impressionist artist Edgar Degas insisted\nthat his paintings be kept in their original\nframes after they were sold. Like many\nImpressionist painters, Degas used painted\nframes that stood in contrast to the gold frames\nfrequently seen at the Paris Salon, a prestigious\nart exhibition that was sponsored by the French\ngovernment and promoted traditional painting\nstyles. Impressionist painters likely chose these\ncolorful frames to distinguish themselves from\nwhat was considered conventional at the time.\nText 2:\nImpressionist painters often focused on the\ninterplay of color and light in their works. As\nsuch, those Impressionists who placed their\nworks in painted frames instead of the more\ntraditional gold ones did so for aesthetic reasons:\na frame's color was likely chosen because it\nwould harmonize with the colors or subjects in a\npainting. Gold, conversely, could distract from\nthe subtleties in a painted scene.",
+          "prompt": "Based on the texts, both authors would most\nlikely agree with which statement?",
+          "options": [
+            "Many Impressionist painters were\nintentional about the frames they selected\nfor their works.",
+            "Degas's preferred framing style was\ndifferent from that of most Impressionist\npainters.",
+            "The colors in an Impressionist painting\nwere often chosen to complement the\ncolors of the frame it would be placed in.",
+            "Gold frames were considered especially\ndesirable by those who purchased works\nfrom Impressionist painters."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 11, Q26). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q027",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q27",
+          "passageTitle": "Cross-Text Connections — Q27",
+          "passage": "Text 1\nIn 2019 Belo Horizonte, Brazil, was named a\nCity of Gastronomy by UNESCO in recognition\nof the city's unique food culture. The honor is\nwell known among residents of the city as well\nas tourists who visit.It'sobvious that the\nselection of Belo Horizonte by UNESCO has\nbrought awareness to local recipes, cooking\npractices, and chefs and has provided a boost to\nthe city'stourism industry.\nText 2\nMany people in Belo Horizonte's restaurant\nindustry hoped that food tourism would increase\nafter the city was chosen as a City of\nGastronomy in 2019. However, as researcher\nEerang Park and colleagues argue, cities must\nstill create effective marketing strategies to\nbenefit fully from being named a City of\nGastronomy. Without an intentional effort to\npromote the city's food scene, many current and\npotential visitors to Belo Horizonte may not\neven be aware that it's home to uniquely\ndelicious food.",
+          "prompt": "Based on the texts, what would the author of\nText 2 most likely say in response to the\nunderlined claim in Text 1?",
+          "options": [
+            "Many people worked together to help Belo\nHorizonte be recognized by UNESCO, but\nchefs deserve the most credit for Belo\nHorizonte's selection as a City of\nGastronomy.",
+            "Belo Horizonte may have benefited from\nbeing selected by UNESCO, but tourism\ncan likely be further increased by making\nmore potential visitors aware of the city's\nstatus as a City of Gastronomy.",
+            "The naming of Belo Horizonte as a City of\nGastronomy was long overdue, given the\ncity's unique and delicious food.",
+            "The benefits of being named a City of\nGastronomy extend well beyond tourism."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 11, Q27). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q028",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q28",
+          "passageTitle": "Cross-Text Connections — Q28",
+          "passage": "Text 1\nUisdean Nicholson and his team have discovered\nevidence in seismic data of a 40 kilometer-wide\nsubsurface crater beneath nearly a kilometer of\nwater off the coast of West Africa that is\nconsistent with a 400 meter wide asteroid\nstriking the seafloor. This structure, which the\nteam named Nadir, exhibits all the telltale signs\nof a high-velocity impact crater: an elevated\nrim, a circular shape, a terraced floor, and a\npronounced area of uplift at its center\nText 2\nBoth carbonate dissolution and subsurface salt\nwithdrawal can cause craterlike depressions\nwithout the need for a high-velocity impact.\nHowever, carbonate dissolution is very unlikely\nto have occurred in the vicinity of Nadir, and\nalthough subsurface salt withdrawal could have\nplausibly occurred in this area and would result\nin a depression with a terraced floor or a circular\nshape, it would not exhibit the area of central\nuplift seen at Nadir",
+          "prompt": "Which choice best describes a difference between\nthe approach of Text 1 and the approach of Text\n2?",
+          "options": [
+            "Text 1 dispassionately describes Nicholson\nand colleagues findings and conclusions,\nwhereas Text 2 attempts to convey\nresearchers' excitement on discovering\nNadir",
+            "Text 1 focuses on features Nadir lacks,\nText 2 indicates features it shares with\nother geological depressions.",
+            "Text 1 discusses a single plausible cause of\nNadir, whereas Text 2 evaluates two\npossible causes.",
+            "Text 1 emphasizes the evidence supporting\nan asteroid impact as the cause of Nadir,\nwhereas Text 2 argues against that\nexplanation."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 11, Q28). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q029",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q29",
+          "passageTitle": "Cross-Text Connections — Q29",
+          "passage": "Text 1\nChemically analyzing bulk rock-core samples\nfrom Australia's Mount McRae Shale, Ariel\nAnbar et al. found a transient but significant\nincrease in molybdenum (Mo) at a point\ncorresponding to roughly 2.5 billion years ago\n(Ga). On Earth, Mo is released mainly through\noxidative weathering of minerals; Anbar et al.\ntherefore concluded that atmospheric oxygen\nbriefly increased 2.5 Ga, then returned to its\nearlier negligible level.\nText 2\nSarah Slotznick et al. reexamined the Mount\nMcRae Shale core. Since chemically analyzing\nbulk samples can occlude contextual details,\nSlotznick et al. also employed high-resolution\nmicroscopy, which revealed volcanic debris—a\nknown Mo host—around 2.5 Ga and\nmicrofractures in the surrounding matrix. The\nresearchers assert that fluid could have reached\nthe debris through the microfractures and\ninitiated oxidative weathering long after debris\ndeposition.",
+          "prompt": "Based on the texts, Anbar et al. (Text 1) and\nSlotznick et al. (Text 2) would most likely\ndisagree about the answer to which question\nabout the portion of the Mount McRae Shale\nrock-core corresponding to 2.5 Ga?",
+          "options": [
+            "Is the increase in Mo in that portion\nattributable to oxidative weathering of the\nmaterial found in that portion?",
+            "Is the increase in Mo in that portion\nindicative of an increase in atmospheric\noxygen dating to the same time?",
+            "Did chemically analyzing bulk samples\nlead to a false impression that there is an\nincrease in Mo in that portion?",
+            "Is the increase in Mo in that portion\nsuggest that atmospheric oxygen levels\nwere not negligible before 2.5 Ga?"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 11, Q29). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q030",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q30",
+          "passageTitle": "Cross-Text Connections — Q30",
+          "passage": "Text 1\nHycean planets are a class of exoplanets (planets\noutside our solar system) with oceans of liquid\nwater—critical to supporting life and\natmospheres rich in hydrogen. Computer models\nhave determined that for potential hycean\nplanets, the range of the habitable zone (HZ),\nthe distance from a star that allows a planet to\nretain liquid water on its surface, begins at\nabout 1 astronomical unit (AU). In 2021, Nikku\nMadhusudhan et al. identified K2-18b as a\nhycean candidate, noting that the planet is\nlocated right on the inner edge of the HZ.\nText 2\nIn a 2023 paper, Shang-Min Tsai et al. claimed\nthat the hydrogen-rich atmospheres of K2-18b\nand other hycean candidates admit wavelengths\nof light that cause elevated surface temperatures\nand increased water evaporation. Unlike earlier\nassessments, Tsai et al.'s calculations therefore\nplaced the inner edge for these planets' HZ as\nfar out as 3.85 AU.",
+          "prompt": "Based on the texts, how would Tsai et al. (Text\n2) most likely respond to Madhusudhan et al.'s\nresearch, as presented in Text 1?",
+          "options": [
+            "By arguing that K2-18 b and other hycean\ncandidates are unlikely to support life\nbecause these planets are located too far\nfrom the stars they orbit.",
+            "By stating that the chemical composition\nof the atmosphere of the hycean candidate\nMadhusudhan et al. identified suggests\nthat this planet's surface is unlikely to\nharbor liquid water.",
+            "By maintaining that Madhusudhan et al.\nrelied on a model whose estimates of\nsurface temperatures on hycean candidates\nare likely too high.",
+            "By observing that unlike the hycean\ncandidate Madhusudhan et al. discovered,\nmost other types of planets with\nhydrogen-rich atmospheres are likely\nlocated within the HZ."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 11, Q30). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q031",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q31",
+          "passageTitle": "Cross-Text Connections — Q31",
+          "passage": "Text 1\nStudies contributing to the body of evidence\nthat people generally enjoy socializing have\nroutinely focused on interactions in ongoing\nrelationships (from spouses to classmates), but\npsychologist Selin Salman-Engin and colleagues\nhave demonstrated the benefit of making\nconnections with strangers. Greater positive\naffect was reported by participants in their\nstudy who warmly thanked a shuttle driver than\nby those who didn't speak to the driver.\nText 2\nSocial relations research commonly draws on a\nmodel that centers an individual within three\nconcentric circles. The innermost circle holds\none's strongest ties (e.g., a treasured friend), the\nnext holds close but less important ties (e.g., a\nteammate), and the outermost holds weak ties\n(those more distant but important enough to be\ncounted as part of one's social network).",
+          "prompt": "Based on the texts, what would Salman-Engin\nand colleagues (Text 1) most likely say about\nthe discussion of the model in Text 2?",
+          "options": [
+            "It underscores that most research on social\ninteractions fails to capture a category of\nconnection that has the capacity to\ncontribute positively to individuals' sense\nof well-being.",
+            "It reflects an overemphasis on relationship\nlongevity in researchers' evaluations of the\nrelative importance of various connections\nin an individual's social network.",
+            "It explains researchers' observations that\nindividuals typically expect interactions\nwith familiar people to be more positive\nthan their interactions with unfamiliar\npeople would be.",
+            "It emphasizes distinctions among types of\nclose connections that aren't adequately\nrepresented in social relations research,\nsince most studies categorize relationships\nas either close or casual."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 11, Q31). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q032",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q32",
+          "passageTitle": "Cross-Text Connections — Q32",
+          "passage": "Text 1\nIn a seminal 1979 study, Daniel Kahneman and\nAmos Tversky presented students and college\nfaculty from Israel, Sweden, and the United\nStates with hypothetical questions involving\nfinancial decisions. Finding that participants'\nresponses indicated that losses have a greater\npsychological impact than equivalent gains do,\nthe researchers formulated the concept of loss\naversion, which has since informed research in\nfields ranging from marketing to law.\nText 2\nDana Zeif and Eldad Yechiam conducted an\nexperiment in which study participants from five\ncountries were exposed to financial choices that\ninvolved potential losses of either relatively\nminor sums of money, such as 20 US dollars (low\nstakes contexts), or more substantial sums, such\nas 100 US dollars (high-stakes contexts). The\nresearchers concluded that only the latter\ncontexts were associated with loss aversion.",
+          "prompt": "Based on the texts, how would Zeif and Yechiam\n(Text 2) most likely respond to Kahneman and\nTversky's finding (Text 1)7",
+          "options": [
+            "By contending that the attitude toward\nfinancial losses that Kahneman and\nTversky observed is contingent on the\nmagnitude of outcomes",
+            "By agreeing that experimental results\nsupport the idea that some people tend to\nbe more cognizant of financial losses than\nof gains",
+            "By observing that ability to assess feelings\nabout financial decisions is contingent on\ngathering adequate data about gains and\nlosses",
+            "By disputing Kahneman and Tversky's\nclaim that a tendency to place excessive\nemphasis on financial losses accounts for\nthe loss aversion observed in fields such as\nmarketing and law"
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 11, Q32). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q033",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q33",
+          "passageTitle": "Cross-Text Connections — Q33",
+          "passage": "Text 1\nFrom the extinct greater Haitian ground sloth to\nthe living Hoffmann's two-toed sloth, sloths are\namong the most appealing animals native to the\nAmericas. But scientists still have a lot to learn\nabout them. Unlike their ancient\nground-dwelling relations, today's sloths spend\nmost of their time high up in trees. The sloths'\ninaccessibility has made it hard for scientists to\nstudy them. Text 2\nBy using a hat-like monitor, biologist Bryson\nVoirin and colleagues can at last discover the\npreviously hidden activities of sloths. Such\nmonitors can provide information to correct\nmisconceptions. It was long believed that sloths\nsleep all day. But, in fact, in the wild sloths\nsleep about nine hours a day.",
+          "prompt": "The author of Text 1 and the author of Text 2\nboth discuss which topic?",
+          "options": [
+            "How extinct sloths compare with living\nsloths",
+            "Scientists' efforts to understand sloths",
+            "The benefits of putting monitoring devices\non sloths",
+            "Changes in sloths' habitats"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 11, Q33). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q034",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q34",
+          "passageTitle": "Cross-Text Connections — Q34",
+          "passage": "Text 1\nIn separate studies, Marine Fernandez and\ncolleagues and Xinhua He and colleagues\nexamined whether plants transfer nutrients to\none another using a common mycorrhizal\nnetwork (CMN)—a lattice of fungal strands in\nthe soil. Fernandez and colleagues excluded all\npathways other than the CMN by using barriers\nto keep the plants' root systems separate while\nallowing mycorrhizal strands through—a crucial\nstep He and colleagues' study did not take.\nText 2\nFernandez and colleagues took the necessary\nprecaution of separating the plants' root systems\n(thereby excluding root-to-root transmission).\nHowever, any barrier used must allow the\nthread-like hyphae of a CMN to pass through,\nand this permeability would also allow liquids\nthrough. Thus, the researchers' experimental\ndesign cannot ensure that any nutrient transfer\nobserved can be attributed to a CMN and not to\nsome other pathway.",
+          "prompt": "Based on the texts, which choice best describes\na similarity in the points of view presented in\nText 1 and Text 2?",
+          "options": [
+            "Each text attempts to dispel a common\nmisunderstanding about the likelihood of\nplant-to-plant nutrient transfer.",
+            "Each text assumes that most nutrient\ntransfer between plants is via a CMN.",
+            "Each text analyzes methods for studying\nCMN nutrient transfer in order to propose\nan alternative method of study.",
+            "Each text critiques the methodology of a\nstudy about nutrient transfer via a CMN."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 11, Q34). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q035",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q35",
+          "passageTitle": "Cross-Text Connections — Q35",
+          "passage": "Text 1\nFor decades, ornithologists assumed that if they\nsaw a singing white-eyed vireo-a bird species\nfound in temperate North America-they must be\nobserving a male. That's because birdsong has\nlong been considered a male trait; researchers\nhave argued that singing enables males to\nattract mates and claim territory.\nText 2\nRecent evidence shows that a female white-eyed\nvireo is as capable of song as a male is. In fact,\nKaran J. Odom and colleagues found evidence of\nfemale song in 71% of the 323 species they\nexamined. They claim that the historical\nmischaracterization of birdsong as a male trait is\nlargely the result of bias: much of the research\nornithologists have carried out has been near\nuniversities in the temperate northern\nhemisphere, where female birdsong is less\ncommon than it is in the tropics.",
+          "prompt": "Based on the texts, how would Odom and\ncolleagues (Text 2) most likely respond to the\nview of birdsong presented in Text 1?",
+          "options": [
+            "They would claim that other factors than\nmate attraction and territorial defense\nhave driven the evolution of singing in\nmale birds.",
+            "They would underscore that male\nsongbirds in temperate zones are likely\nusing their songs for different purposes\nthan are male songbirds in the tropics.",
+            "They would argue that it was influenced\nby the kinds of study sites researchers\ntended to select.",
+            "They would suggest that it reflects a\ntendency to study male birds rather than\nfemale birds."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 11, Q35). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q036",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q36",
+          "passageTitle": "Cross-Text Connections — Q36",
+          "passage": "Text 1\nThe land that became Grande Terre island split\nfrom remnants of the former supercontinent\nGondwana approximately 80 million years ago,\ncarrying Gondwanan biota with it, and\nexperienced periodic submersion until 37 million\nyears ago. Some researchers posit that the\nisland's current biota includes members of\nGondwanan clades (i.e., clades predating the\nsplit) that persisted by seeking temporary refuge\non nearby islands during submergence events.\nText 2\nIn a recent study, Prashant Sharma and\nGonzalo Giribet found that the crown age -the\nage of the most recent common ancestor of all\nspecies in the clade (i.e., the clade's founder)-is\n48.9 million years for Grande Terre's clade of\nharvest spiders. Most of the island's extant\nbiota belong to clades with younger crown ages,\nhowever: Jérôme Murienne et al. found that the\ncrown age of Grande Terre's clade of\ncockroaches is 2.7 million years, for example.",
+          "prompt": "Taken together, Text 1 and Text 2 best support\nwhich statement about the clades of harvest\nspiders and cockroaches on Grande Terre?",
+          "options": [
+            "The clade of harvest spiders must have\noriginated on Gondwana, but the clade of\ncockroaches may or may not have.",
+            "Both the clade of harvest spiders and the\nclade of cockroaches originated elsewhere\nand colonized Grande Terre.",
+            "Neither the clade of harvest spiders nor\nthe clade of cockroaches originated on\nGondwana.",
+            "The clade of harvest spiders originated\nbefore Grande Terre split from Gondwana,\nwhereas the clade of cockroaches\noriginated after the split but before the\nperiodic submergence events began."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 11, Q36). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t11-q037",
+          "skill": "Cross-Text Connections",
+          "domain": "Craft and Structure",
+          "focus": "Synthesize and evaluate relationships between paired passages",
+          "source": "SAToplam 2.0 · Topic 11 · Q37",
+          "passageTitle": "Cross-Text Connections — Q37",
+          "passage": "Text 1 is T.L. Hulme's 1912 poem \"Above the\nDock.\" Text 2 is from Amy Lowell's 1912 poem\n\"The Crescent Moon.\"\nText 1\nAbove the quiet dock in mid night,\nTangled in the tall mast's corded height,\nHangs the moon. What seemed so far away\nIs but a child's balloon, forgotten after play.\nText 1\nSlipping softly through the sky\nLittle horned, happy moon,\nCan you hear me up so high?\nWill you come down soon?",
+          "prompt": "Which choice best describes a notable difference\nin how the speaker of Text 1 and the speaker of\nText 2 portray the moon?",
+          "options": [
+            "While both speakers characterize the\nmoon as an entrapped figure, only the\nspeaker of Text 2 describes the moon as\nbeing content with this fate.",
+            "While both speakers present the moon as a\ntangible object, only the speaker of Text 1\naddresses the moon's beauty.",
+            "While the speaker of Text 1 presents the\nmoon as an object of play, the speaker of\nText 2 presents the moon as an object of\nserious study.",
+            "While the speaker of Text 1 presents the\nmoon as seeming to be very close, the\nspeaker of Text 2 emphasizes the moon's\ndistance from the speaker."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 11, Q37). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    }
+  ]
+}

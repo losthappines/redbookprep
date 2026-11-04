@@ -1,0 +1,1143 @@
+{
+  "format": "bbplus",
+  "version": 1,
+  "type": "practice",
+  "title": "SAToplam 2.0 — Details Question",
+  "description": "Official real exam SAT reading practice questions (March 2023 – August 2025) compiled by @satashkent. Domain: Information and Ideas.",
+  "modules": [
+    {
+      "title": "Details Question — Set 1",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t02-q001",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q1",
+          "passageTitle": "Details Question — Q1",
+          "passage": "sec. (*Exam level)\nIn a study by Mika R. Moran, Daniel A.\nRodriguez, and colleagues, residents of Panama\nCity, Panama, and Fortaleza, Brazil, were\nsurveyed about parks in their cities. Of the 318\nrespondents from Panama City, 53.5% indicated\nthat they use the city's parks, and of 938\nrespondents from Fortaleza, 35.7% indicated\nusing city parks. Given that the percentage of\nPanama City respondents who reported living\nwithin a 10-minute walk of a park was much\nlower than that reported by Fortaleza\nrespondents, greater proximity alone can't\nexplain the difference in park use.",
+          "prompt": "The text makes which point about the difference\nbetween the proportions of Panama City\nresidents and Fortaleza residents using parks?",
+          "options": [
+            "It was much larger than the researchers\nconducting the study expected.",
+            "It could be due to inaccuracies in the\nsurvey results.",
+            "It was calculated using sources that\npredate the survey.",
+            "It is caused by something other than the\nparks' proximity to the residents."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q1). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q002",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q2",
+          "passageTitle": "Details Question — Q2",
+          "passage": "Like all species of baleen whales, the common\nminkle whale feeds on tiny creatures known as\nKrill by filtering water through bristlelike\nkeratin structures called baleen plates. In this\nway, baleen whales can eat up to 30% of their\ntotal mass per day. And while no one would call\nthe common minkle whale small-it can have a\nmass as high as 4000 kg-it is one of the smaller\nbaleen whales and it is much smaller than the\nfin whale, which can weigh a whopping 80000 kg\nand consume as much as 24000 kg of krill per\nday.",
+          "prompt": "Based on the text, what can most reasonably be\nconcluded about krill consumption among\ncommon minkle and fin whales?",
+          "options": [
+            "Both of them can eat as much as 24000 kg\nof krill per day.",
+            "The quantities of krill consumed by fin\nwhales has made it difficult for minkle\nwhales to find sufficient food.",
+            "The fin whale is able to eat more krill per\nday than the minkle whale.",
+            "Most baleen whales include krill in their\ndiets, but the minkle whale is less likely\nthan the fin whale to do so."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 2, Q2). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q003",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q3",
+          "passageTitle": "Details Question — Q3",
+          "passage": "The following text is adapted from Armando's\nshort story \"The Love of Clotide,\" originally\npublished in Spanish in 1884.\nIt was said that in {Don's} youth he once wrote\na play which won him nothing but hisses and\nfree entry for life behind the scenes of theaters.\nWhether resigned or not to the verdict of the\npublic, he ceased to write plays and assumed\ninstead the nobler role of a patron to\nunrecognized authors and artist and to ruined\nmanagers. Any youth from the province who\narrived in Madrid with a drama in his pocket\ncould take no surer road to seeing it produced\nthan that which led to the home of Don. One\nand all, he received them with open arms, the\ngood and the bad alike.",
+          "prompt": "According to the text, what change coincided\nwith Don becoming a patron of the theater?",
+          "options": [
+            "He achieved public recognition for an essay\nhe had written earlier.",
+            "He stopped writing plays.",
+            "He accepted a new job as a critic.",
+            "He moved to a town outside Madrid."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q3). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q004",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q4",
+          "passageTitle": "Details Question — Q4",
+          "passage": "Researchers Ceasr, Elisa, and Andres created a\ncomputer model to predict the mix of movie\ntheaters, gyms, and other businesses found in a\ngiven neighborhood. How we define a\nneighborhood and its boundaries is subjective,\nso the team used a clustering algorithm to\nlocate dense groupings of amenities that\nrepresent human-identified neighborhoods like\nBoston's Harvard square. The predictive model,\nwhich incorporates this algorithm, is sure to be\ninvaluable in determining the optimal mix of a\ncity's amenities.",
+          "prompt": "According to the text, why did the team employ\na clustering algorithm?",
+          "options": [
+            "It could be used to evaluate the reasons for\na business closing.",
+            "It provided insights into how consumers\nare made aware of new movie theaters and\ngyms.",
+            "It could predict which types of businesses\nwould be successful in a given\nneighborhood.",
+            "It gave them an objective way to identify\nneighborhood."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q4). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q005",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q5",
+          "passageTitle": "Details Question — Q5",
+          "passage": "In O'odham, an Indigenous language from the\nSouthwest region of what is now the United\nStates, gogs means \"a dog\" whereas gogogs is\nused to refer to several dogs. This phenomenon,\nin which an element of a root word is repeated,\nsometimes with modification, within another\nword that is related to the root word is called\nreduplication. In this case, the element \"go\" in\ngogs gets repeated in gogogs. There are many\nexamples of this type of reduplication in\nO'odham.",
+          "prompt": "The text makes which point about the O'odham\nword gogogs?",
+          "options": [
+            "It contains a repetition of the element \"go\"\nin gogs.",
+            "It doesn't have a clear equivalent in\nEnglish.",
+            "It is the only word in O'odham that uses\nreduplication.",
+            "It is identical in meaning to several other\nwords in O'odham."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q5). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q006",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q6",
+          "passageTitle": "Details Question — Q6",
+          "passage": "The following text is adapted from Adib\nKhorrams 2018 novelDarius the Great Is Not\nOkay. Darius, a teenager from the United\nStates, is visiting his family members in Iran.\nI dozed and floated on the clouds of Farsi that\nblew my way from the front seat of Day (Uncle)\nJamsheed's SUV. It reminded me of when I was\nlittle, and Mom chanted to me in Farsi every\nnight before bedtime. It's hard to describe Farsi\nchanting the way Mom drew her voice out like\nthe notes of a cello as she recited poems by\nRumi or Hafez. I didn't know what they meant,\nbut that didn't matter. It was quiet and\nsoothing.",
+          "prompt": "Based on the text, what does the narrator\nmainly remember about the times when his\nmother chanted to him?",
+          "options": [
+            "That he liked the characters in the stories\nhis mother made up while chanting.",
+            "That his mother had music playing in the\nbackground while she chanted.",
+            "That his mother didn't usually chant at\nnight.",
+            "That he found the sound of his mother's\nchanting to be calming."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q6). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q007",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q7",
+          "passageTitle": "Details Question — Q7",
+          "passage": "Researcher César A. Hidalgo, Elisa Castañer,\nand Andres Sevtsuk created a computer model\nto predict the mix of businesses and places of\ninterest found in a given neighborhood. The\nteam used data from the Google Places, API\nservice to help identify furniture stores, florists,\nand other businesses and map their locations.\nThis approach has some limits-data from Places\nAPI tend to be restricted to places that the\ncustomer facing-but the data set nonetheless\nprovides an extremely reliable source to study\ncolocation patterns of neighborhood amenities.",
+          "prompt": "According to the text, what is one potential\ndrawback of Hidalgo and colleagues' method?",
+          "options": [
+            "It depends upon data that are likely to be\noutdated.",
+            "It is based on recent advancements from\nother fields that have yet to be applied\noutside of those contexts.",
+            "It is likely to contribute to inaccurate\nidentifications of the boundaries of specific\nneighborhoods.",
+            "It may lead to conclusions that are not\nreflective of all the amenities in a given\nneighborhood."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q7). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q008",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q8",
+          "passageTitle": "Details Question — Q8",
+          "passage": "The groundbreaking Negro Ensemble Company\n(NEC), founded in 1967, produced Paul Carter\nHarrison's award-winning play The Great\nMacDaddy in 1974. The company was\ncofounded by Robert Hooks, an actor, producer,\nand activist, and actor and playwright Douglas\nTurner Ward, who had met while performing in\na 1960 touring production of Lorraine\nHansberry's play A Raisin in the Sun. They\nshared a vision of a theater company that would\nnurture and showcase the work of Black theater\nprofessionals. Since its beginning, NEC has\nprovided a forum for the voices of Harrison and\nother Black playwrights through workshops and\nperformances.",
+          "prompt": "According to the text, how did Hooks and Ward\ninitially meet?",
+          "options": [
+            "Hooks and Ward participated in the same\nworkshop at NEC.",
+            "Harrison introduced Hooks to Ward at a\nperformance of The Great MacDaddy.",
+            "Hooks and Ward attended the same\nperformance of The Great MacDaddy.",
+            "Hooks and Ward were both actors in a\nproduction of A Raisin in the Sun."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q8). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q009",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q9",
+          "passageTitle": "Details Question — Q9",
+          "passage": "Like all species of baleen whales, the Antarctic\nminke whale feeds on tiny creatures known as\nkrill by filtering water through bristlelike keratin\nstructures called baleen plates. In this way,\nbaleen whales can eat up to 30 percent of their\ntotal mass per day. And while no one would call\nthe Antarctic minke whale small-it can have a\nmass as high as 10,000 kg-it is one of the smaller\nwhales and is much smaller than the bowhead\nwhale, which can weigh a whopping 66,000 kg\nand consume as much as 19,800 kg of krill per\nday.",
+          "prompt": "Based on the text, what can most reasonably be\nconcluded about krill consumption among\nAntarctic minke and bowhead whale?",
+          "options": [
+            "The bowhead whale is able to eat more\nkrill per day than the Antarctic minke\nwhale is.",
+            "Both the Antarctic minke whale and the\nbowhead whale can eat as much as 19,800\nkg of krill per day.",
+            "The quantities of krill consumed by\nbowhead whale has made it difficult for\nAntarctic minke whales to find sufficient\nfood.",
+            "Most baleen whales included krill in their\ndiary, but the Antarctic minke whale is less\nlikely than the bowhead whale to do so."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q9). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q010",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q10",
+          "passageTitle": "Details Question — Q10",
+          "passage": "Researchers César A. Hidalgo, Elisa Castañer,\nand Andres Sevtsuk created a computer model\nto predict the mix of gyms, beauty salons, and\nother businesses found in a given neighborhood.\nHow we define a neighborhood and its\nboundaries is subjective, so the team used a\nclustering algorithm to locate dense groupings of\namenities that represent human-identified\nneighborhoods like Boston's Central Square.\nThe predictive model, which incorporates this\nalgorithm, is sure to be invaluable in\ndetermining the optimal mix of a city's\namenities.",
+          "prompt": "According to the text, why did the team employ\na clustering algorithm?",
+          "options": [
+            "The algorithm provided insight into how\ncustomers are made aware of new gyms\nand beauty salons.",
+            "The algorithm gave them an objective way\nto identify neighborhoods.",
+            "The algorithm could be used to evaluate\nthe reasons for a business's closing.",
+            "The algorithm could predict which types\nof businesses would be successful in a\ngiven neighborhood."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q10). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q011",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q11",
+          "passageTitle": "Details Question — Q11",
+          "passage": "Known for the albums Quiet Nights and\nMilestones, jazz trumpeter Miles Davis\ncollaborated several times with pianist Gil\nEvans. Their 1958 adaptation of George\nGershwin's opera Porgy and Bess bears little\nresemblance to the 1935 original. Davis and\nEvans felt no desire to please listeners expecting\nan exact duplication of the opera. They omitted\nparts, such as the aria \"I Got Plenty of\nNuthin',\" and sometimes made only brief\ngestures toward Gershwin's melodies. But Davis\nand Evans's willingness to recompose\nGershwin's work led to one of the most enduring\nalbums in Davis's catalog.",
+          "prompt": "According to the text, what is true about the\naria \"I Got Plenty of Nuthin'\"?",
+          "options": [
+            "It appears in the Gershwin opera Porgy\nand Bessan adaptation by Davis and\nEvans.",
+            "A brief quotation from it appears in Davis\nand Evans's adaptation of Porgy and Bess.",
+            "Listeners familiar with Gershwin's body of\nwork generally disliked it.",
+            "It was adapted by Davis in a recording\nthat appears on his album Milestones."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q11). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q012",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q12",
+          "passageTitle": "Details Question — Q12",
+          "passage": "Baleen whales eat up to 30 percent of their total\nbody mass in krill (tiny shrimplike creatures)\nper day. So, in one day, an Antarctic minke\nwhale weighing 10,000 kg could eat 3,000 kg,\nwhile a southern right whale weighing 80,000 kg\ncould ingest a whopping 24,000 kg. Over the\nlast century, baleen whale populations have\ndeclined, and contrary to some scientists'\nexpectations, so have krill populations.\nMatthew S. Savoca and colleagues resolve this\napparent discrepancy by pointing out that\nbaleen whales cycle iron in the ocean, helping\nsupport phytoplankton populations, which, in\nturn, sustain krill populations.",
+          "prompt": "Based on the text, what can most reasonably be\nconcluded about Antarctic minke and southern\nright whales?",
+          "options": [
+            "Populations of both Antarctic minke and\nsouthern right whales have declined\nsignificantly over the last century due to\ndecreasing levels of iron in the ocean.",
+            "As krill consumption by Antarctic minke\nwhales has decreased, the krill\nconsumption of southern right whales has\nincreased.",
+            "The southern right whale is able to eat\nmore krill per day than the Antarctic\nminke whale is.",
+            "Both Antarctic minke and southern right\nwhales can eat krill, but of the two only\nthe Antarctic minke whale can also subsist\non phytoplankton."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 2, Q12). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q013",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q13",
+          "passageTitle": "Details Question — Q13",
+          "passage": "Cocoa is an example of a loanword-that is, a\nword that originated in one language and was\nlater adopted by another. The word came to\nEnglish indirectly from cacao, the Spanish word\nfor the plant that chocolate is made from.\nSpanish had borrowed it from Nahuatl, an\nIndigenous language of Central Mexico, in which\nthe word's original form is cacahuatl. \"Puma\" is\nalso Indigenous in origin and entered English\nthrough Spanish. But in this case, the original\nsource was Quechua, a language of South\nAmerica, in which the word for the mountain\nlion is also puma.",
+          "prompt": "The author makes which point about the\nSpanish language?",
+          "options": [
+            "It has served as a medium through which\nIndigenous languages have influenced\nEnglish.",
+            "Its contribution to English vocabulary\nroughly equals the collective contribution\nby Indigenous languages.",
+            "It adopted Nahuatl and Quechua words in\napproximately equal numbers.",
+            "It has borrowed words from Indigenous\nlanguages and contributed words to them."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q13). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q014",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q14",
+          "passageTitle": "Details Question — Q14",
+          "passage": "In Bolivia, use of solid fuel (e.g., coal, wood) as\na share of total household fuel use fell by more\nthan half between 2000 and 2015; such shifts are\ntypically explained by appeal to the energy\nladder, a model holding that fuel choice is\nmediated mainly by household income\n(specifically, high-technology fuels displace solid\nfuels as incomes rise). Richard Hosier and\nJeffrey Dowd's study of fuel use in Zimbabwe\nshows how reductive this model is, however:\nalthough income of course constrained fuel\nchoice, several factors, including the difficulty of\nacquiring fuel sources, influenced decisions.",
+          "prompt": "Based on the text, the author would most likely\nagree with which statement about household\nincome?",
+          "options": [
+            "It can explain some but not all of the\ndifferences in fuel choice across households.",
+            "It is often said to influence household fuel\nchoice but actually does not.",
+            "It affects household fuel choice but not for\nthe reasons assumed by the energy ladder\nmodel.",
+            "It constrains the amount of fuel households\nuse but not the type of fuel they use."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q14). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q015",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q15",
+          "passageTitle": "Details Question — Q15",
+          "passage": "To understand how temperature change affects\nmicroorganism-mediated cycling of soil nutrients\nin alpine ecosystems, Eva Kaštovská et al.\ncollected plant-soil cores in the Tatra Mountains\nat elevations around 2,100 meters and\ntransplanted them to elevations of 1,700-1,800\nmeters, where the mean air temperature was\nwarmer by 2°C. Microorganism-mediated\nnutrient cycling was accelerated in the\ntransplanted cores; crucially, microorganism\ncommunity composition was unchanged,\nallowing Kaštovská et al. to attribute the\nacceleration to temperature-induced increases in\nmicroorganism activity.",
+          "prompt": "It can most reasonably be inferred from the text\nthat the finding about the microorganism\ncommunity composition was important for\nwhich reason?",
+          "options": [
+            "It provided preliminary evidence that\nmicroorganism-mediated nutrient cycling\nwas accelerated in the transplanted cores.",
+            "It suggested that temperature-induced\nchanges in microorganism activity may be\noccurring at increasingly high elevations.",
+            "It ruled out a potential alternative\nexplanation for the acceleration in\nmicroorganism-mediated nutrient cycling.",
+            "It clarified that microorganism activity\nlevels in the plant-soil cores varied\ndepending on which microorganisms\ncomprised the community."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 2, Q15). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q016",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q16",
+          "passageTitle": "Details Question — Q16",
+          "passage": "Michael G. Campana and colleagues relied on\nhistorical DNA (hDNA)—genomic data\nincidentally preserved in specimens housed in\nnatural history collections—to investigate the\nevolutionary origins of a fungal pathogen\naffecting bats. Although this approach offers\nunique benefits, such as access to genomic data\nfrom extirpated populations, it remains a\nrelatively underutilized resource because hDNA\nis often to some extent degraded, a situation not\neasily remediable under current methodological\nparadigms and with extant DNA extraction and\nanalysis technologies.",
+          "prompt": "Information in the text best supports which\nstatement about hDNA?",
+          "options": [
+            "It may yield insights that other types of\ngenomic data cannot.",
+            "It has thus far proved valuable mainly to\nresearchers studying pathogens.",
+            "It may be underused because of its\ncontroversial status among scientists.",
+            "It tends to be much more degraded than\nother types of DNA of comparable age."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q16). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q017",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q17",
+          "passageTitle": "Details Question — Q17",
+          "passage": "The ancient writing system used in the Maya\nkingdoms of southern Mexico and Central\nAmerica had a symbol for the number zero. The\nearliest known example of the symbol dates to\nmore than 2,000 years ago. At that time, almost\nnone of the writing systems elsewhere in the\nworld possessed a zero symbol. And the use of\nzero in Mexico and Central America may be\neven more ancient. Some historians suggest that\nMaya mathematicians inherited it from the\nOlmec civilization, which flourished in the\nregion 2,400-3,600 years ago.",
+          "prompt": "According to the text, what do some historians\nsuggest about Maya civilization?",
+          "options": [
+            "Maya civilization acquired the use of zero\nfrom the Olmec civilization.",
+            "Maya civilization respected its historians\nmore than it respected its mathematicians.",
+            "Maya civilization was highly secretive\nabout its intellectual achievements.",
+            "Maya civilization tried to introduce its\nwriting system to other civilizations."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q17). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q018",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q18",
+          "passageTitle": "Details Question — Q18",
+          "passage": "In Costa Rica, use of solid fuel (e.g., coal, wood)\nas a share of total household fuel use fell by\napproximately 60 percent between 2000 and\n2019; such shifts are typically explained by\nappeal to the energy ladder, a model holding\nthat fuel choice is mediated mainly by household\nincome (specifically, high-technology fuels\ndisplace solid fuels as incomes rise). Rasmus\nHeltberg's study of fuel use in Guatemala shows\nhow reductive this model is, however: household\nfuel use was heterogeneous, flexible, and\ninfluenced by several factors, including local\nprice of different sources.",
+          "prompt": "Based on the text, which choice best explains\nwhy the author characterizes the energy ladder\nas \"reductive\"?",
+          "options": [
+            "The energy ladder asserts that households\nonly consider one aspect of fuel when\nmaking fuel choices, but Heltberg's study\nshowed that households ignore that\ncharacteristic of fuel and evaluate several\nother factors instead.",
+            "The energy ladder holds that the adoption\nof one type of fuel means that another\ntype of fuel must be displaced, but\nHeltberg's study showed that several\ndifferent fuel types are typically used in\nequal proportion.",
+            "The energy ladder assumes that the same\nfactor influences household fuel choice in\nall locations, but Heltberg's study showed\nthat fuel choice in Guatemala is influenced\nby different factors than is fuel choice in\nCosta Rica.",
+            "The energy ladder attributes household\nfuel choice primarily to a single\ncharacteristic of households, but Heltberg's\nstudy showed that multiple circumstances\ncan affect household fuel choice."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q18). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q019",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q19",
+          "passageTitle": "Details Question — Q19",
+          "passage": "The groundbreaking Negro Ensemble Company\n(NEC), founded in 1967, produced Paul Cater\nHarrison's award-winning play The Great\nMacDaddy in 1974. The company was\ncofounded by Robert Hooks, an actor, producer,\nand activist, and actor and playwright Douglas\nTurner Ward, who had met while performing in\na 1960 touring production of Lorraine\nHansberry's play A Raisin in the Sun. They\nshared a vision of a theater company that would\nnurture and showcase the work of Black theater\nprofessionals. Since its beginning, NEC has\nprovided a forum for the voices of Harrison and\nother Black playwrights through workshops and\nperformances.",
+          "prompt": "According to the text, how did Hooks and Ward\ninitially meet?",
+          "options": [
+            "Harrison introduced Hooks to Ward at a\nperformance of The Great MacDaddy.",
+            "Hooks and Ward attended the same\nperformance of The Great MacDaddy.",
+            "Hooks and Ward participated in the same\nworkshop at NEC.",
+            "Hooks and Ward were both actors in a\nproduction of A Raisin in the Sun."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q19). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q020",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q20",
+          "passageTitle": "Details Question — Q20",
+          "passage": "Marrakech has high pedestrian traffic, but\nsimply replicating a feature of Marrakech\nassociated with walkability - e.g., its highly\nvaried streetscape - may be insufficient to induce\nincreased walking in other cities. As urbanist\nMariela Alfonzo argues, our understanding of\nindividuals' decision - making about whether to\nwalk is insufficiently robust: some studies\nemphasize the role of demographic\ncharacteristics, others the role of public transit\navailability, and so on, but walking decisions are\nmade in complex contexts in which multiple\nconditions and needs inform individuals' choices.",
+          "prompt": "Based on the text, Alfonzo would most likely\nagree with which statement about studies of\ndecision-making about walking?",
+          "options": [
+            "They would be improved by efforts to\nidentify the features that cities with high\npedestrian traffic have in common.",
+            "They are unlikely to find convincing\nevidence that any single factor consistently\npredicts walking decisions.",
+            "They have overstated the extent to which\npeople differ in their decision-making\nprocesses regarding walking.",
+            "They tend to be misleading because they\nignore the most important factor\ninfluencing walking decisions."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q20). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q021",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q21",
+          "passageTitle": "Details Question — Q21",
+          "passage": "Researchers César A. Hidalgo, Elisa Castañer,\nand Andres Sevtsuk created a computer model\nto predict the mix of businesses and places of\ninterest found in a given neighborhood. The\nteam used data from the Google Places API\nservice to help identify movie theaters, gyms,\nand other businesses and map their locations.\nThis approach has some limits—data from\nPlaces API tend to be restricted to places that\nare customer facing—but the data set\nnonetheless provides an extremely reliable\nsource to study colocation patterns of\nneighborhood amenities.",
+          "prompt": "According to the text, what is one potential\ndrawback of Hidalgo and colleagues' method?",
+          "options": [
+            "It may lead to conclusions that are not\nreflective of all the amenities in a given\nneighborhood.",
+            "It is likely to contribute to inaccurate\nidentifications of the boundaries of specific\nneighborhoods.",
+            "It is based on recent advancements from\nother fields that have yet to be applied\noutside of those contexts.",
+            "It depends upon data that are likely to be\noutdated."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q21). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    },
+    {
+      "title": "Details Question — Set 2",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t02-q022",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q22",
+          "passageTitle": "Details Question — Q22",
+          "passage": "Vadamalai Elangovan and Ganapathi\nMarimuthu showed that high moonlight\nintensity inhibits the activity of the greater\nshort-nosed fruit bat (Cynopterus sphinx), a\nfinding explicable in terms of benefits and costs:\ngreater lunar intensity may not enable the bats\nto increase foraging success enough to offset the\nhigher chance of detection by predatory owls or\nhawks. Though many other nocturnal mammals\nrespond to lunar intensity variations similarly to\ngreater short-nosed fruit bats, mongoose lemurs\n(Eulemur mongoz) display the opposite pattern,\nas their heavy reliance on visual foraging results\nin a different balance of reward and risk.",
+          "prompt": "According to the text, what did Elangovan and\nMarimuthu find and why does that occur?",
+          "options": [
+            "Greater short-nosed fruit bats tend to be\nmore active during periods of high lunar\nintensity than at other times because such\nconditions allow them to increase their\nforaging success without making them\neasier to detect.",
+            "Greater short-nosed fruit bats reduce their\nactivity during periods of high lunar\nintensity because predators can more\neasily spot the bats in brighter conditions,\nand such conditions do not benefit the\nbats enough to justify that risk.",
+            "During periods of high lunar intensity,\ngreater short-nosed fruit bats reduce their\nactivity because it is easier for predators\nto detect the bats in relatively bright\nconditions than it is for predators to detect\nmongoose lemurs in such conditions.",
+            "During periods of high lunar intensity,\nmongoose lemurs show a different\nbehavioral response than greater\nshort-nosed fruit bats and many other\nnocturnal mammals do because the risks\nto mongoose lemurs under such conditions\nare greater."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q22). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q023",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q23",
+          "passageTitle": "Details Question — Q23",
+          "passage": "A number of artists associated with hyperpop, a\nmovement in electronic music that emerged in\nthe 2010s, aggressively manipulate their\nrecorded voice. The duo 100 gecs, for example,\nshifts the pitch of lead singer Laura Les's vocals\nto be much higher than that of her natural\nrange. And even the hyperpop artists who don't\nrely on pitch-shifting, such as Shygirl, often\ndistort their vocals using digital tools. Rather\nthan being an arbitrary stylistic choice,\nhyperpop's persistent modification of the voice\nfunctions as a commentary on how digital\ntechnology mediates human experience today.",
+          "prompt": "Based on the text, the author would be most\nlikely to disagree with which statement about\nvocal manipulation in hyperpop?",
+          "options": [
+            "It is an aesthetic feature that has little or\nno social import.",
+            "It confirms hyperpop's ability to offset\ncertain negative effects of digital\ntechnology.",
+            "It is a symbol of the influence that\nhyperpop exerts on listeners' sense of self.",
+            "It represents changes to human experience\nbrought about by technology."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q23). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q024",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q24",
+          "passageTitle": "Details Question — Q24",
+          "passage": "In a study by Mika R. Moran, Daniel A.\nRodriguez, and colleagues, residents of Mexico\nCity, Mexico, and La Paz, Bolivia, were\nsurveyed about parks in their cities. Of the 562\nrespondents from Mexico City, 77.6% indicated\nthat they use the city's parks, and of the 528\nrespondents from La Paz, 67.5% indicated using\ncity parks. Given that the percentage of Mexico\nCity respondents who reported living within a\n10-minute walk of a park was much lower than\nthat reported by La Paz respondents, greater\nproximity alone can't explain the difference in\npark use.",
+          "prompt": "The text makes which point about the difference\nbetween the proportions of Mexico City\nresidents and La Paz residents using parks?",
+          "options": [
+            "It could be due to inaccuracies in the\nsurvey results.",
+            "It was calculated using sources that\npredate the survey.",
+            "It was much larger than the researchers\nconducting the study expected.",
+            "It is caused by something other than the\nparks' proximity to city residents."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q24). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q025",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q25",
+          "passageTitle": "Details Question — Q25",
+          "passage": "External shopping cues are a type of marketing\nthat uses obvious messaging—a display featuring\na new product, for example, or a \"buy one, get\none free\" offer to entice consumers to make\nspontaneous purchases. In a study, data scientist\nSam K. Hui and colleagues found that this effect\ncan also be achieved with a less obvious cue:\nrearranging a store's layout. The researchers\nexplain that trying to find items in new\nlocations causes shoppers to move through more\nof the store, exposing them to more products\nand increasing the likelihood that they'll buy an\nitem they hadn't planned on purchasing.",
+          "prompt": "Which response from a survey given to shoppers\nwho made a purchase at a retail store best\nsupports the researchers' explanation?",
+          "options": [
+            "\"I needed to buy some cleaning supplies,\nbut they weren't in their regular place.\nWhile I was looking for them, I saw this\ninteresting notebook and decided to buy\nit, too.\"",
+            "\"I didn't buy everything on my shopping\nlist today. I couldn't find a couple of the\nitems in the store, even though I looked all\nover for them.\"",
+            "\"The store sent me a coupon for a new\nbrand of soup, so I came here to find out\nwhat kinds of soup that brand offers. I\ndecided to buy a few cans because I had\nthe coupon.\"",
+            "\"This store is larger than one that's closer\nto where I live, and it carries more\nproducts. I came here to buy some things\nthat the other store doesn't always have.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q25). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q026",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q26",
+          "passageTitle": "Details Question — Q26",
+          "passage": "Like all species of baleen whales, the sei whale\nfeeds on tiny creatures known as krill by filtering\nwater through bristlelike keratin structures\ncalled baleen plates. In this way, baleen whales\ncan eat up to 30 percent of their total mass per\nday. And while no one would call the sei whale\nsmall—it can have a mass as high as 25,000\nkg—it is one of the smaller baleen whales and is\nmuch smaller than the bowhead whale, which\ncan weigh a whopping 66,000 kg and consume as\nmuch as 19,800 kg of krill per day.",
+          "prompt": "Based on the text, what can most reasonably be\nconcluded about krill consumption among sei\nand bowhead whales?",
+          "options": [
+            "The quantities of krill consumed by\nbowhead whales has made it difficult for\nsei whales to find sufficient food.",
+            "Both the sei whale and the bowhead whale\ncan eat as much as 19,800 kg of krill per\nday.",
+            "Most baleen whales include krill in their\ndiets, but the sei whale is less likely than\nthe bowhead whale to do so.",
+            "The bowhead whale is able to eat more\nkrill per day than the sei whale is."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q26). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q027",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q27",
+          "passageTitle": "Details Question — Q27",
+          "passage": "The food industry has long used thermal\ntechnologies to preserve food in large batches.\nRecent advancements in infrared heating were\nmade through research in Mexico on the\npreservation of bean flour. Infrared heating is\ngenerally considered to be an improvement over\nmore conventional thermal preservation\nmethods: whereas conventional methods\ntransfer energy from the surface of a food to its\ninterior, infrared heating uses high-intensity\ninfrared light to generate heat within the food\nitself, thus reducing industrial cooking times.",
+          "prompt": "Based on the text, what is one disadvantage of\nsome conventional thermal methods?",
+          "options": [
+            "They are especially vulnerable to\ntechnological breakdowns.",
+            "They are only effective in heating foods\nthat are lightweight and small in size.",
+            "Their cooking times are longer than those\nof other methods.",
+            "They require more energy than other\nmethods do."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 2, Q27). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q028",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q28",
+          "passageTitle": "Details Question — Q28",
+          "passage": "Cocoa is an example of a loanword—that is, a\nword that originated in one language and was\nlater adopted by another. The word came to\nEnglish indirectly from cacao, the Spanish word\nfor the plant that chocolate is made from.\nSpanish had borrowed it from Nahuatl, an\nIndigenous language of Central Mexico, in which\nthe word's original form is cacahuatl. \"Iguana\"\nis also Indigenous in origin and entered English\nthrough Spanish. But in this case, the original\nsource was Taino, a language of the Caribbean\nislands, in which the word for the group of\nrelated lizard species is iwana.",
+          "prompt": "The author makes which point about the\nSpanish language?",
+          "options": [
+            "It has served as a medium through which\nIndigenous languages have influenced\nEnglish.",
+            "Its contribution to English vocabulary\nroughly equals the collective contribution\nby Indigenous languages.",
+            "It has borrowed words from Indigenous\nlanguages and contributed words to them.",
+            "It adopted Nahuatl and Taino words in\napproximately equal numbers."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q28). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q029",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q29",
+          "passageTitle": "Details Question — Q29",
+          "passage": "Reyjane P. Oliveira and colleagues relied on\nhistorical DNA (hDNA)—genomic data\nincidentally preserved in specimens housed in\nnatural history collections to investigate the\nevolutionary trajectory of the Malagasy grass\ngenus Chasechloa. Although this approach offers\nunique benefits, such as the ability to ascertain\nthe biogeographical origins of organisms, it\nremains a relatively underutilized resource\nbecause hDNA is often to some extent degraded,\na situation not easily remediable under current\nmethodological paradigms and with extant DNA\nextraction and analysis technologies.",
+          "prompt": "Information in the text best supports which\nstatement about hDNA?",
+          "options": [
+            "It may yield insights that other types of\ngenomic data cannot.",
+            "It may be underused because of its\ncontroversial status among scientists.",
+            "It has thus far proved valuable mainly to\nresearchers studying flora.",
+            "It tends to be much more degraded than\nother types of DNA of comparable age."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q29). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q030",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q30",
+          "passageTitle": "Details Question — Q30",
+          "passage": "In Armenia, use of solid fuel (e.g., coal, wood)\nas a share of total household fuel use fell by\napproximately 90 percent between 2000 and\n2018; such shifts are typically explained by\nappeal to the energy ladder, a model holding\nthat fuel choice is mediated mainly by household\nincome (specifically, high-technology fuels\ndisplace solid fuels as incomes rise). Boukary\nOuedraogo's study of fuel use in Burkina Faso\nshows how reductive this model is, however:\nalthough income of course constrained fuel\nchoice, several factors, including the frequency\nwith which certain dishes are cooked, influenced\ndecisions.",
+          "prompt": "Based on the text, the author would most likely\nagree with which statement about household\nincome?",
+          "options": [
+            "It constrains the amount of fuel households\nuse but not the type of fuel they use.",
+            "It affects household fuel choice but not for\nthe reasons assumed by the energy ladder\nmodel.",
+            "It can explain some but not all of the\ndifferences in fuel choice across households.",
+            "It is often said to influence household fuel\nchoice but actually does not."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 2, Q30). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q031",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q31",
+          "passageTitle": "Details Question — Q31",
+          "passage": "The following text is from Yung Wing's 1909\nmemoir My Life in China and America.\nWe landed in New York on the 12th of April,\n1847, after a passage of ninety-eight days of\nunprecedented fair weather. The New York of\n1847 was altogether a different city from the\nNew York of 1909. It was a city of only 250,000\nor 300,000 inhabitants; now it is a metropolis\nrivaling London in population, wealth and\ncommerce. The whole of Manhattan Island is\nturned into a city of skyscrapers, churches and\npalatial residences.",
+          "prompt": "Based on the passage, how does Yung perceive\nNew York to have changed between 1847 and\n1909?",
+          "options": [
+            "The city has become more developed and\npopulated.",
+            "The architecture of the city has become\nmore practical and less appealing.",
+            "The city's residents have become more\npolitically active.",
+            "The city's population has become much\nmore diverse than London's."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q31). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q032",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q32",
+          "passageTitle": "Details Question — Q32",
+          "passage": "The following text is from Julia Alvarez's 2000\nnovel In the Name of Salomé. Salomé, a poet, is\nhosting guests in the front parlor of her family\nhome, and Ramona is her sister.\nA salon is a social gathering for the exploration\nof intellectual ideas. It was evening when the\ntwo men got up to leave. Tia Ana had already\ncome into the room several times to see if these\nguests had departed yet. The front parlor had\nalways been her special province, as she used it\nfor her little school. Now, every evening, it\nturned into Salomé's salon, as Ramona called it,\nand it was never in order for its transformation\nback to a classroom the following morning.",
+          "prompt": "Based on the text, what most likely motivates\nTia Ana's behavior during Salome's salon?",
+          "options": [
+            "She considers the guests to be\nuninteresting and is trying to convince\nthem to leave.",
+            "She is anxious for the gathering to disperse\nso that she can ready the space for her\nown needs.",
+            "She is impatient to share her plans to start\na new school with the guests and hopes\nthey will support her.",
+            "She is frustrated because she needs\nassistance elsewhere in the house, but\nSalomé is unavailable while entertaining\nthe guests."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q32). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q033",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q33",
+          "passageTitle": "Details Question — Q33",
+          "passage": "In her 1998 book Blues Legacies and Black\nFeminism, Angela Y. Davis bases her analysis in\npart on recordings of songs sung in the 1920s by\nGertrude \"Ma\" Rainey and Bessie Smith. Davis\nfocuses on how Rainey and Smith improvised\nthe lyrics—replacing the original lines with\nmischievous jokes and wordplay. Davis's work\nwas particularly labor intensive because in order\nto transcribe, or write down, the lyrics as\nRainey and Smith sang them, Davis had to\nlisten repeatedly to the vinyl recordings, which\nweren't very clear.",
+          "prompt": "What does the text most strongly suggest about\nthe songs sung by Rainey and Smith?",
+          "options": [
+            "The songs have grown in popularity since\nRainey and Smith first sang them.",
+            "According to Davis, the songs sung by\nRainey were more musically innovative\nthan those sung by Smith typically were.",
+            "There were more recordings made of\nRainey's songs than there were of Smith's.",
+            "There were few, if any, reliable\ntranscriptions of Smith's and Rainey's\nimprovised lyrics when Davis began her\nresearch."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q33). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q034",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q34",
+          "passageTitle": "Details Question — Q34",
+          "passage": "Historians point to the rule of the Piast dynasty\nas crucial to the formation of the Polish state.\nHowever, some differentiate between members of\nthe dynasty like Władysław I Herman, who\nruled as duke from 1079 to 1102 CE, and less\nwell-documented figures like Lestek, who is said\nto have ruled in the 9th and 10th centuries but\nwhose historical actuality is disputed. Lestek\nappears in the Gesta principum Polonorum, a\nchronicle of medieval Polish history written\nbetween 1112 and 1118. However, the\nchronicle's documentation of Lestek relies on\noral tradition, unlike its records of later rulers.",
+          "prompt": "According to the text, what is a difference\nbetween how historians view Lestek and how\nthey view Władysław I Herman?",
+          "options": [
+            "Historians believe that the Gesta\nprincipum Polonorum provides more\nevidence for Lestek's existence than it does\nfor Władysław I Herman's existence.",
+            "Historians agree that Władysław I\nHerman existed, but disagree about\nwhether Lestek existed.",
+            "Historians agree that Lestek ruled Poland\nmuch later than Władysław I Herman.",
+            "Historians find the orally transmitted\nstories affirming the existence of\nWładysław I Herman to be more\nconvincing than similar stories about\nLestek."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q34). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q035",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q35",
+          "passageTitle": "Details Question — Q35",
+          "passage": "The following text is adapted from Lady\nGregory's 1904 play Spreading the News. Jack\nSmith and Bartley Fallon have encountered each\nother at the local fair.\nJACK: It isn't to the fair I came myself, but up\nto the Five Acre Meadow I'm going where I have\na contract for the hay. We'll get a share of it\ninto tramps [drying stacks] today.\nBARTLEY: You will not get it into tramps\ntoday. The rain will be down on it by evening,\nand on myself too. It's seldom I ever started on\na journey but the rain would come down on me\nbefore I'd find any place of shelter.\nJACK: If it didn't itself, Bartley, it is my belief\nyou would carry a leaky pail on your head in\nplace of a hat, that way you'd not be without\nsome cause of complaining.",
+          "prompt": "Based on the text, what does Jack most likely\nbelieve about Bartley?",
+          "options": [
+            "Bartley will be able to help Jack with\ncutting the hay.",
+            "Bartley is concerned that Jack hasn't\nprepared for the weather.",
+            "Bartley is a poor judge of the weather.",
+            "Bartley will find fault with any situation."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q35). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q036",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q36",
+          "passageTitle": "Details Question — Q36",
+          "passage": "Fernand Braudel and other historians of\ncapitalism rarely discuss domestic capitalism in\nAfrica before the period of European\ncolonization, implicitly presenting capitalism as\nexternal to and imposed on Africa. John Iliffe\nand other Africanist scholars have shown,\nhowever, that in parts of Africa, institutionally\nprotected private land ownership, the existence\nof salaried labor, and other features of\ncapitalism predated colonization. One reason for\nthis discrepancy is that historians of capitalism\ntend to focus on longitudinal economic data\ndrawn from archival records, which do not exist\nfor much of precolonial Africa.",
+          "prompt": "Which statement about Iliffe and other\nAfricanist scholars is best supported by\ninformation in the text?",
+          "options": [
+            "They likely make use of different types of\nevidence than historians of capitalism\ntypically rely on.",
+            "They likely have a different view about\nwhich activities should be considered\ncapitalist in nature than historians of\ncapitalism do.",
+            "They likely differ from historians of\ncapitalism in the methods they use to\nderive longitudinal economic data from\narchival records.",
+            "They likely view capitalism as having been\nmore beneficial for Africa than historians\nof capitalism do."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q36). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q037",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q37",
+          "passageTitle": "Details Question — Q37",
+          "passage": "In 2016 Marta S. Pimentel and colleagues\npublished a study concluding that ocean\nacidification has a strong effect on the behavior\nof Sparus aurata, a species of fish. However,\nPimentel and colleagues' study relied on a mean\nsample size of only 12 fish. In a 2022 review of\nvarious scientists' conclusions about the impacts\nof ocean acidification on fish behavior, Timothy\nD. Clark and colleagues caution that relying on\nsuch a relatively small sample size can increase\nthe potential for biased analysis. Such analysis,\nin turn, can contribute to reports of exaggerated\neffects.",
+          "prompt": "What does the text most directly suggest about\nPimentel and colleagues' conclusion?",
+          "options": [
+            "It was based on the same mean sample size\nused in many earlier studies of fish species.",
+            "It likely has broad implications for other\nspecies of fish besides Sparus aurata.",
+            "None of the above",
+            "It has been largely invalidated by results\nobtained from similar studies."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 2, Q37). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q038",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q38",
+          "passageTitle": "Details Question — Q38",
+          "passage": "Goujun He and colleagues studied a\nfood-delivery phone app that is popular in\nChina. The researchers found that having \"no\ncutlery\" automatically selected influences\nwhether customers request disposable plastic\nutensils with their food orders. Based on their\nresults, the researchers concluded that this and\nother small changes to the app could reduce\nplastic waste in China by as much as 3.26\nmillion metric tons per year.",
+          "prompt": "According to the text, which choice best\ndescribes a conclusion He and colleagues drew\nfrom their study?",
+          "options": [
+            "Production of plastic waste in China is\nlikely to increase in the near future.",
+            "Food-delivery apps that prevent customers\nfrom requesting cutlery are becoming more\npopular.",
+            "Customers who understand how\nfood-delivery apps work make more\nenvironmentally friendly choices.",
+            "Small changes to how a food-delivery app\nworks can greatly lower plastic waste."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q38). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q039",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q39",
+          "passageTitle": "Details Question — Q39",
+          "passage": "Can field mustard plants grow on Mars? Can\npea plants? You might think the answer to\nthese questions is obviously no, but researchers\nin the Netherlands recently showed that the\nseeds of many common plant species can\ngerminate in soil designed to simulate Martian\nconditions, as long as water is supplied. In fact,\nsome species actually did better in Martian soil\nthan in Earth soil: 30 percent of field mustard\nseeds sprouted when planted in simulated\nMartian soil, compared with 4 percent that did\nwhen planted in soil from their home planet.",
+          "prompt": "According to the text, what percentage of field\nmustard seeds planted in Martian soil sprouted?",
+          "options": [
+            "18 percent",
+            "30 percent",
+            "100 percent",
+            "5 percent"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q39). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q040",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q40",
+          "passageTitle": "Details Question — Q40",
+          "passage": "Superlubricity, the state of virtually no friction\nbetween materials, has desirable applications in\nmany industries. For example, it can make\naircraft engines more efficient. To produce a\ncoating that achieves superlubricity, Chanaka\nKumar and colleagues broke down carbon\nnanotubes into fragments of graphene to fully\ncover two surfaces that would rub together.\nFriction between pieces of graphene is generally\nextremely low, and when the researchers added\na drop of oil as lubrication, that friction nearly\nvanished. This new coating may drastically\nlower friction-related energy costs.",
+          "prompt": "According to the text, what happened when the\nresearchers added oil to the surfaces covered in\ngraphene fragments?",
+          "options": [
+            "All the pieces of graphene collected on just\none of the two surfaces.",
+            "The low amount of friction between the\nsurfaces became even lower.",
+            "Carbon nanotubes on the surfaces\nfractured into smaller pieces.",
+            "Friction between the surfaces did not\nnoticeably change right away."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q40). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q041",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q41",
+          "passageTitle": "Details Question — Q41",
+          "passage": "Companies involved in petroleum extraction\ninclude drilling equipment among their assets.\nBut petroleum extraction is a very\ncarbon-intensive industry, so as social attitudes\nincreasingly favor using less carbon intensive\nsources of energy, demand for petroleum falls\nand the drilling equipment will eventually, or\neven suddenly, become a liability as reduced\npetroleum prices make it more difficult to\nrecover the expense of maintaining such\nequipment.",
+          "prompt": "What claim does the text make about the\ndemand for petroleum?",
+          "options": [
+            "Companies involved in petroleum\nextraction are not affected by the demand\nfor petroleum.",
+            "The societal preference for low-carbon\nenergy sources is a factor in the demand\nfor petroleum.",
+            "The demand for petroleum follows a\npredictable annual cycle.",
+            "Companies involved in petroleum\nextraction can benefit from a decline in\nthe demand for petroleum."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q41). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q042",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q42",
+          "passageTitle": "Details Question — Q42",
+          "passage": "Why do flat-headed cats purr but jaguars roar?\nResearchers hypothesize that this difference\nbetween the two feline species may be partly\ndue to a U-shaped bone in their throats called\nthe hyoid. Flat-headed cats, which are much\nsmaller than jaguars, have a rigid hyoid that\nrumbles when the cat's larynx vibrates, resulting\nin a purr. By contrast, jaguars have a somewhat\nflexible hyoid, and the bone is attached to the\nskull with a stretchy ligament that flat-headed\ncats lack. These traits allow jaguars and most\nother species of big cats to produce powerful\nroars. The same traits may also prevent most\nbig cats from purring.",
+          "prompt": "According to the text, which trait do researchers\nthink may contribute to a flat-headed cat's\nability to purr?",
+          "options": [
+            "The shape of the flat-headed cat's larynx",
+            "The ligament attaching the hyoid bone to\nthe flat-headed cat's skull",
+            "The flat-headed cat's rigid hyoid bone",
+            "The relative size of the flat-headed cat's\nbody and throat"
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 2, Q42). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    },
+    {
+      "title": "Details Question — Set 3",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t02-q043",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q43",
+          "passageTitle": "Details Question — Q43",
+          "passage": "Biologist Grace Herzel and colleagues conducted\na study of how butterfly color and weather\nconditions relate to butterfly behavior, which\nwouldn't have been possible without data\ngathered by students and other amateur science\nenthusiasts in the community. Considering over\nthree years worth of data, the researchers found\nthat white butterflies were observed on green\nflowers more often than any other butterflies\nwere, and that butterflies were observed to feed\nmore often on cloudy days than on other days.",
+          "prompt": "According to the text, which factors seemed to\nbe linked to the behavior of butterflies in Grace\nHerzel and colleagues' study?",
+          "options": [
+            "Weather conditions but not butterfly color",
+            "Butterfly color but not weather conditions",
+            "Neither butterfly color nor weather\nconditions",
+            "Both butterfly color and weather\nconditions"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q43). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q044",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q44",
+          "passageTitle": "Details Question — Q44",
+          "passage": "\"Coyote\" is an example of a loanword—that is, a\nword that originated in one language and was\nlater adopted by another. The word came to\nEnglish indirectly from coyote, the Spanish word\nfor the wild canine species. Spanish had\nborrowed it from Nahuatl, an Indigenous\nlanguage of Central Mexico, in which the word's\noriginal form is coyotl. \"Condor\" is also\nIndigenous in origin and entered English\nthrough Spanish. But in this case, the original\nsource was Quechua, a language of South\nAmerica, in which the word for the large vulture\nspecies is kuntur.",
+          "prompt": "The author makes which point about the\nSpanish language?",
+          "options": [
+            "It has served as a medium through which\nIndigenous languages have influenced\nEnglish.",
+            "Its contribution to English vocabulary\nroughly equals the collective contribution\nby Indigenous languages.",
+            "It has borrowed words from Indigenous\nlanguages and contributed words to them.",
+            "It adopted Nahuatl and Quechua words in\napproximately equal numbers."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q44). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q045",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q45",
+          "passageTitle": "Details Question — Q45",
+          "passage": "Ke Bi and colleagues relied on historical DNA\n(hDNA)—genomic data incidentally preserved\nin specimens housed in natural history\ncollections—to investigate the evolutionary\ntrajectory of the alpine chipmunk (Tamias\nalpinus). Although this approach offers unique\nbenefits, such as the ability to contrast historical\ngenomic data with present-day data, it remains\nrelatively underutilized because archival\nspecimens are sometimes stored in ways that\ncompromise DNA quality, a situation not easily\nremediable under current methodological\nparadigms and with extant DNA extraction and\nanalysis technologies.",
+          "prompt": "What does the text most strongly suggest about\nspecimens from natural history collections?",
+          "options": [
+            "While they may contain valuable genomic\ndata, not all of them can yield usable\nhDNA.",
+            "They are primarily used as sources of\ngenomic data by scientists studying\norganisms that have undergone major\nevolutionary change.",
+            "Because of their often deteriorated\ncondition, they tend to yield genomic data\nthat are time-consuming to extract and\ninterpret.",
+            "While they were used in a study that\nmade an important scientific discovery,\nthey are generally of marginal value as\nsources of genomic data."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q45). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q046",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q46",
+          "passageTitle": "Details Question — Q46",
+          "passage": "In the 1960s, Gloria Richardson led a movement\nto promote racial equality. Her involvement in\nthis effort was inspired by her daughter, Donna\nRichardson. In 1961, Donna joined protests\norganized by the Student Nonviolent\nCoordinating Committee in Cambridge,\nMaryland. Following her daughter, Gloria joined\nthese protests too. Gloria soon became the\ncochair of the Cambridge Nonviolent Action\nCommittee. She was also the leader of what\nbecame known as the Cambridge movement.",
+          "prompt": "According to the text, what did Gloria\nRichardson lead?",
+          "options": [
+            "A new business in Cambridge, Maryland",
+            "The Cambridge movement",
+            "Protests to support environmental\nprotections",
+            "Her daughter Donna's high school"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q46). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q047",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q47",
+          "passageTitle": "Details Question — Q47",
+          "passage": "Mexican textile artist Victoria Villasana weaves\nstories triumph, using her unique method of\napplying colorful yarn to photographs of people.\nIn some works, Villasana focuses on celebrating\ncultural icons who are people of color, as she\ndoes in her depiction of artist Yayoi Kusama.\nHowever, in other works, Villasana honors\nordinary people, as she does in her captivating\nportrayal of a woman making tortillas. Villasana\nsees both of these approaches as ways of\ndepicting the power and interconnectedness of\nall people.",
+          "prompt": "According to the text, what kind of material\ndoes Villasana use in her artworks?",
+          "options": [
+            "Stone",
+            "Chalk",
+            "Paint",
+            "Yarn"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q47). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q048",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q48",
+          "passageTitle": "Details Question — Q48",
+          "passage": "Mauricio Drelichman and Hans-Joachim Voth's\nresearch on the fiscal vulnerability of Philip II\n(who ruled not only Spain but other regions\nincluding Milan from 1556 to 1598) builds on\nother studies of European early modern state\nfinance, including Hoffman and Norberg's work\non the relationship between state finance and\npolitical development. But Drelichman and\nVoth's unique contribution is their\nreconstruction of the earliest extant set of\nannual fiscal records for any sovereign state,\nwhich demonstrate that Philip's defaults were\ncaused by short-term liquidity crises, not\nlong-term unsustainable debts.",
+          "prompt": "What does the text most strongly suggest about\nthe value of Drelichman and Voth's research to\ntheir discipline?",
+          "options": [
+            "Drelichman and Voth's research uses\nnewly compiled evidence to eliminate one\npossible reason Philip II defaulted on his\ndebts and to affirm another.",
+            "Drelichman and Voth's research revealed\nthe role of Philip II's debt defaults in\nexacerbating short-term liquidity crises.",
+            "Drelichman and Voth's research builds on\nearlier work about a particular aspect of\nEuropean early modern state finance By\nHoffman and Norberg and corrects errors\nin that earlier work.",
+            "Drelichman and Voth's research presented\na novel body of evidence supporting\nHoffman and Norberg's hypothesis\nregarding why Philip II default on several\nloans."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q48). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q049",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q49",
+          "passageTitle": "Details Question — Q49",
+          "passage": "Google's introduction of the Chrome web\nbrowser in 2008 is a quintessential instance of\nbrand extension the company leveraged its\nbrand recognition as an internet search provider\nto enter a product category where it had not\npreviously competed. An outstanding question\nis whether perceived category similarity predicts\nconsumers likelihood of purchasing brand\nextensions. To answer this question, Alicia\nGrasby et al. identified 30 extended-brand pairs\n(e.g., the same brand of shoes and gloves) in 52\nweeks of purchases by approximately 60,000\nhouseholds and, for each pair, calculated the\nchange in probability of a brand in one category\nbeing purchased if the same brand was\npurchased in the other category.",
+          "prompt": "Based on the text, which potential study design\nwould most likely to produce evidence that\nwould enable Grasby et al. to answer their\nresearch question?",
+          "options": [
+            "Have a representative sample of the\nhouseholds rate the similarity of the\nproduct categories in each extended-brand\npair, then determine how, if at all, those\nratings correlate with the change in\nprobability that the team calculated for\neach pair.",
+            "Poll a representative sample of the\nhouseholds to determine the degree of\nbrand recognition of each brand in the\nextended-brand pairs, then determine how,\nif at all, the degree of brand recognition\ncorrelates with the average cost of each\nproduct in the pairs.",
+            "Have a representative sample of the\nhouseholds rate the similarity of one\nproduct in each extended-brand pair to\nother products in the same category, then\ndetermine how, if at all, those ratings\ncorrelate with the change in probability\nthat the team calculated for each pair.",
+            "Poll a representative sample of the\nhouseholds to determine the degree of\nbrand recognition for each brand in the\nextended-brand pairs, then determine how,\nif at all, the degree of brand recognition\ncorrelates with the frequency with which a\ndifferent group of households purchased at\nleast once product of that brand."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q49). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q050",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q50",
+          "passageTitle": "Details Question — Q50",
+          "passage": "In Costa Rica, use of solid fuel (e.g, coal, wood)\nas a share of total household fuel use fell by\napproximately 60 percent between 2000 and\n2019; such shifts are typically explained by\nappeal to the energy ladder, a model holding\nthat fuel choice is mediated mainly by household\nincome (specifically, high-technology fuels\ndisplace solid fuels as incomes rise). Rasmus\nHeltberg's study of fuel use in Guatemala shows\nhow reductive this model is, however: household\nfuel use was heterogeneous, flexible, and\ninfluenced by several factors, including local\nprice of different sources.",
+          "prompt": "Based on the text, which choice best explains\nwhy the author characterizes the energy ladder\nas \"reductive\"?",
+          "options": [
+            "The energy ladder asserts that households\nonly consider one aspect of fuel when\nmaking fuel choices, but Heltberg's study\nshowed that households ignore that\ncharacteristic of fuel and evaluate several\nother factors instead.",
+            "The energy ladder holds that the adoption\nof one type of fuel means that another\ntype of fuel must be displaced, but\nHeltberg's study showed that several\ndifferent fuel types are typically used in\nequal proportion.",
+            "The energy ladder assumes that the same\nfactor influences household fuel choice in\nall locations, but Heltberg's study showed\nthat fuel choice in Guatemala is influenced\nby different factors than is fuel choice in\nCosta Rica.",
+            "The energy ladder attributes household\nfuel choice primarily to a single\ncharacteristic of households, but Heltberg's\nstudy showed that multiple circumstances\ncan affect household fuel choice."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q50). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q051",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q51",
+          "passageTitle": "Details Question — Q51",
+          "passage": "The groundbreaking Negro Ensemble Company\n(NEC), founded in 1967, produced Paul Cater\nHarrison's award-winning play The Great\nMacDaddy in 1974. The company was\ncofounded by Robert Hooks, an actor, producer,\nand activist, and actor and playwright Douglas\nTurner Ward, who had met while performing in\na 1960 touring production of Lorraine\nHansberry's play A Raisin in the Sun. They\nshared a vision of a theater company that would\nnurture and showcase the work of Black theater\nprofessionals. Since its beginning, NEC has\nprovided a forum for the voices of Harrison and\nother Black playwrights through workshops and\nperformances.",
+          "prompt": "According to the text, how did Hooks and Ward\ninitially meet?",
+          "options": [
+            "Harrison introduced Hooks to Ward at a\nperformance of The Great MacDaddy.",
+            "Hooks and Ward attended the same\nperformance of The Great MacDaddy.",
+            "Hooks and Ward participated in the same\nworkshop at NEC.",
+            "Hooks and Ward were both actors in a\nproduction of A Raisin in the Sun."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q51). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q052",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q52",
+          "passageTitle": "Details Question — Q52",
+          "passage": "The following text is from Julia Alvarez's 2000\nnovel In the Name of Salome. The narrator and\nher sister, daughters of a famous poet, are being\ntutored by Alejandro Román.\nOur tutor, Alejandro Román, brought his\nyounger brother, Miguel, to class one day. By\nnow I was eighteen and had learned everything\nAlejandro had to teach me, so I was glad for a\nnew face. Miguel was an aspiring poet, and he\nhad heard from his brother that the Ureña girls\nwere none other than the daughters of Nicolás\nUreña, and they were smart as clockwork.\nMiguel was hoping not only to meet us but to\nmake the acquaintance of the poet himself at\nMama's house.",
+          "prompt": "Based on the text, why does Miguel accompany\nhis brother to the sisters' house one day?",
+          "options": [
+            "Miguel has learned all his brother can\nteach him and now desires to be tutored\nby the sisters.",
+            "Miguel has not received formal instruction\nin poetry and wants to ask the sisters'\nfamous father to be his mentor.",
+            "Miguel wants to recite his poems to the\nsisters and inquire about their perspectives\non his work.",
+            "Miguel anticipates having the opportunity\nto be introduced to both the sisters and\ntheir father."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 2, Q52). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q053",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q53",
+          "passageTitle": "Details Question — Q53",
+          "passage": "In 2004, Andrew Rogers created Ancient\nLanguage. In this work, Rogers created an\n80-meter-long geoglyph out of rocks in the\nAtacama Desert. Rogers's work is part of the\nland art movement, in which artists reject the\nconfinement and commercialization of art\ngalleries. These artists usually install large-scale\npieces outdoors, often in surprising locations.",
+          "prompt": "Based on the text, what can be inferred about\nAncient Language?",
+          "options": [
+            "Its location may be considered surprising.",
+            "It marked a shift in the popularity of the\nland art movement.",
+            "It may have had more commercial success\nin a different outdoor location.",
+            "It was created early in Rogers's career."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q53). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q054",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q54",
+          "passageTitle": "Details Question — Q54",
+          "passage": "Optimal foraging theory (OFT) holds that\nanimals' foraging behaviors reflect cost-benefit\ntrade-offs that vary by species and with dynamic\necological circumstances. One such circumstance\nis lunar intensity, which Joel Brown and\ncolleagues found to be negatively associated\nwith foraging by Arizona pocket mice but\nDeborah J. Curtis and colleagues found to be\npositively associated with foraging by mongoose\nlemurs. This discrepancy is explicable in terms\nof OFT: the lemurs' greater reliance on vision\nmeans that higher lunar intensity benefits them\nmore than it benefits the mice.",
+          "prompt": "Which choice best describes the finding made by\nCurtis and colleagues, as presented in the text?",
+          "options": [
+            "Increased lunar intensity is more beneficial\nfor mongoose lemurs than it is for Arizona\npocket mice.",
+            "As lunar intensity increases, mongoose\nlemurs increase their foraging activity.",
+            "During periods of high lunar intensity,\nmongoose lemurs increase their reliance on\nvision.",
+            "As lunar intensity increases, Arizona\npocket mice reduce their foraging activity."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q54). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q055",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q55",
+          "passageTitle": "Details Question — Q55",
+          "passage": "The following text is from Thomas Mann's 1924\nnovel The Magic Mountain, translated by John\nE. Woods in 1995.\nThe story of Hans Castorp that we intend to tell\nhere—not for his sake (for the reader will come\nto know him as a perfectly ordinary, if engaging\nyoung man), but for the sake of the story itself,\nwhich seems to us to be very much worth telling\n(although in Hans Castorp's favor it should be\nnoted that it is his story, and that not every\nstory happens to everybody)—is a story that\ntook place long ago, and is, so to speak, covered\nwith the patina of history and must necessarily\nbe told with verbs whose tense is that of the\ndeepest past.",
+          "prompt": "What does the text most strongly suggest about\nthe story of Hans Catrop?",
+          "options": [
+            "Though it is true that stories of even the\nmost uninteresting people are themselves\ninteresting because all people are unique,\nthe reason this story is interesting is\nnonetheless difficult to understand because\nof the passage of time.",
+            "Even though it is a story of a person of no\nparticular importance, its age and the\nmanner in which it therefore must be told\nare both indicators that the story itself is\nimportant.",
+            "It is a remarkable story that happened to\nan unremarkable person, though one could\nplausibly argue that because the story is\nvaluable, some of its value accrues to the\nperson at its center.",
+            "Like all stories about the lives of\ninconsequential people, this story must\nnecessarily be related in a particular way if\nthe reason the story is consequential is to\nbe made evident to the audience."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 2, Q55). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q056",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q56",
+          "passageTitle": "Details Question — Q56",
+          "passage": "The Lego Group's introduction of the Legoland\ntheme park in 1968 is a quintessential instance\nof brand extension—the company leveraged its\nbrand recognition as a toy manufacturer to enter\na product category where it had not previously\ncompeted. An outstanding question is whether\nperceived category similarity predicts\nconsumers' likelihood of purchasing brand\nextensions. To answer this question, Alicia\nGrasby et al. identified 30 extended-brand pairs\n(e.g., the same brand of wristwatch and necktie)\nin 52 weeks of purchases by approximately\n60,000 households and, for each pair, calculated\nthe change in probability of a brand in one\ncategory being purchased if the same brand was\npurchased in the other category.",
+          "prompt": "Based on the text, which potential study design\nwould be most likely to produce evidence that\nwould enable Grasby et al. to answer their\nresearch question?",
+          "options": [
+            "Have a representative sample of the\nhouseholds rate the similarity of the\nproduct categories in each extended-brand\npair, then determine how, if at all, those\nratings correlate with the change in\nprobability that the team calculated for\neach pair.",
+            "Poll a representative sample of the\nhouseholds to determine the degree of\nbrand recognition for each brand in the\nextended-brand pairs, then determine how,\nif at all, the degree of brand recognition\ncorrelates with the frequency with which a\ndifferent group of households purchased at\nleast one product of that brand.",
+            "Poll a representative sample of the\nhouseholds to determine the degree of\nbrand recognition of each brand in the\npairs, then determine how, if at all, the\ndegree of brand recognition correlates with\nthe average cost of each product in the\npairs.",
+            "Have a representative sample of the\nhouseholds rate the similarity of one\nproduct in each extended-brand pair to\nother products in the same category, then\ndetermine how, if at all, those ratings\ncorrelate with the change in probability\nthat the team calculated for each pair."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q56). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q057",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q57",
+          "passageTitle": "Details Question — Q57",
+          "passage": "Tracks is a 1988 novel by Ojibwe writer Louise\nErdrich. It explores how historical events affect\nfamilies on a reservation in rural North Dakota.\nTracks is typical of Erdrich's work. Her writing\nusually focuses on portrayals of everyday life in\nOjibwe communities. Yet some of her novels\nhave fantastical plots and take place outside\nOjibwe communities. For example, her 1991\nnovel The Crown of Columbus is essentially\nadventure fiction, and the thrilling events in its\nplot are set largely on a Caribbean island.",
+          "prompt": "According to the text, what is one way that The\nCrown of Columbus differs from most of\nErdrich's work?",
+          "options": [
+            "It has been adapted into a movie.",
+            "It isn't set in a rural Ojibwe community.",
+            "It contains very little dialogue.",
+            "Its main characters are Ojibwe."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q57). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q058",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q58",
+          "passageTitle": "Details Question — Q58",
+          "passage": "The following text is adapted from Rupa\nBajwa's 2004 novel The Sari Shop. Ramchand\nworks as an assistant in a shop in Amritsar,\nIndia.\nEven at ten in the morning, the bazaar was\nthrobbing with activity. The halwai [baker] was\nalready installed in front of the Mishthaan\nSweet Shop, pressing jalebi batter into squiggly\nshapes that floated and simmered in the oil in a\nbig iron cauldron. All the shops had opened for\nthe day and, Ramchand noted guiltily, all the\nshop assistants were already in place, trying to\nsell things with fixed, attentive smiles on their\nshiny, bathed faces.",
+          "prompt": "Based on the text, what can most reasonably be\ninferred about Ramchand?",
+          "options": [
+            "Ramchand is remorseful about arriving to\nwork later than other shop assistants he\nsees.",
+            "Ramchand is mesmerized by frying jalebi\nbatter while walking to work as a shop\nassistant.",
+            "Ramchand is overwhelmed by a bazaar\nafter seeing the chaos of other shop\nassistants selling goods.",
+            "Ramchand is happy about being at work\nafter seeing shop assistants who are\nsatisfied with their jobs."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q58). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q059",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q59",
+          "passageTitle": "Details Question — Q59",
+          "passage": "Economist Gabriel Zucman finds that 8% of\nworldwide household wealth is held in tax\nhavens (territories such as Singapore with low\ntax rates for investors who reside outside those\nterritories). Zucman also finds that use of tax\nhavens differs between countries—they are\nrarely used by investors living in Japan, while\nmany investors who utilize tax havens reside in\nSaudi Arabia or Greece. Philosopher Ingrid\nRobeyns disapproves of the use of tax havens as\na method of tax avoidance that, though legally\npermissible, nonetheless helps investors to\nsidestep payment toward government upkeep.",
+          "prompt": "Based on the text, what does Zucman's research\nsuggest about investors residing in Japan?",
+          "options": [
+            "They are engaging in investment practices\nthat Robeyns would acknowledge as\nbeneficial because they are legally\npermissible.",
+            "They are less likely than investors residing\nin Saudi Arabia to store wealth in\nSingapore.",
+            "They are more likely than residents of\nSingapore to utilize investment strategies\nthat might yield greater returns but that\nmight also result in greater losses.",
+            "They are more likely than residents of\nGreece to engage in tax avoidance."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q59). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q060",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q60",
+          "passageTitle": "Details Question — Q60",
+          "passage": "Radamés Cordero et al. have confirmed that\ntwenty mushroom species (including Coprinellus\nmicaceus and species from the genus Russula)\nmaintain subambient temperatures in both their\nfruited bodies and their mycelium (the root-like\nhyphae from which the fruited bodies grow),\nthough the benefits of this hypothermic\nbehavior are unclear. Noting that relative\ncoldness was more pronounced in fruiting than\nin nonfruiting sites of the mycelium—a\ndifference that persisted even after fruited\nbodies were detached—the researchers speculate\nthat thermoregulation in the mycelium may\ninfluence reproductive success.",
+          "prompt": "Which statement about the mycelium of the\ntwenty mushroom species is best supported by\nthe text?",
+          "options": [
+            "Variation in thermoregulation across the\nmycelium may occur independent of the\npresence or absence of fruited bodies.",
+            "The correlation between higher mycelium\ntemperature and greater fruit productivity\nindicates that successful reproduction may\nbe dependent on thermoregulation in the\nmycelium.",
+            "Temperatures in the fruiting areas of the\nmycelium are lower than in the nonfruiting\nareas due to differences in the depth and\nspread of the mycelium within soil or other\norganic matter.",
+            "The mycelium generally maintains\ntemperatures lower than those of the\nfruited bodies even when considering\ntemperature variations between fruiting\nand nonfruiting sites."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 2, Q60). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q061",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q61",
+          "passageTitle": "Details Question — Q61",
+          "passage": "High-reward flowers that produce nectar with\nrelatively high sugar concentrations are thought\nto be especially attractive to stripe-throated\nhermits and other hummingbird species. But\nwhen María A. Maglianesi and team monitored\nhummingbird visits to flowering plants, including\nPalicourea tomentosa, at Los Cusingos Bird\nSanctuary and other sites in Costa Rica, they\nfound that visit frequencies weren't influenced\nby nectar traits. Rather, physical compatibility\nof flower corollas (collections of petals) and\nhummingbird bills more strongly predicted\nhummingbird-plant interaction patterns.",
+          "prompt": "Which statement about hummingbird\npreferences is most strongly supported by the\ntext?",
+          "options": [
+            "Hummingbirds consistently prefer plant\nspecies whose flowers have physical traits\nthat are compatible with their bills but\noffer relatively low nectar rewards.",
+            "The floral traits that most strongly\ninfluence which plant species\nhummingbirds prefer may result in certain\nhummingbird species visiting flowers with\nrelatively low nectar rewards over those\nwith higher nectar rewards.",
+            "Hummingbirds' preferences are primarily\ndriven by trait-matching between their\nbills and flower corollas, though nectar\nqualities are a secondary factor driving\ntheir preferences.",
+            "Physical compatibility between flower\ncorollas and hummingbird bills becomes an\nimportant factor that influences\nhummingbird preferences when\nhummingbirds are uncertain about which\nplants produce highreward nectar."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 2, Q61). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t02-q062",
+          "skill": "Details Question",
+          "domain": "Information and Ideas",
+          "focus": "Locate and interpret specific details explicitly stated in the text",
+          "source": "SAToplam 2.0 · Topic 2 · Q62",
+          "passageTitle": "Details Question — Q62",
+          "passage": "Researchers who examined data from\nradio-tagged southern sea otters(Enhydra lutris\nnereis) identified fitness benefits gained by otters\nthat used tools. By using fixed stones as anvils,\ntool-using otters gained access to high-quality,\nhard-shelled prey (e.g., mussels and clams) that\nthey could usually not access through biting\nalone. Non-tool-using otters foraged abundant,\nenergy-poor, easily extractable prey instead\n(e.g., snails). Even when easily processed prey\nwere depleted, tool-using otters that processed\nmussels and clams were thus able to obtain their\nneeded energy resources and to do so without\nincurring tooth damage.",
+          "prompt": "What does the text most strongly suggest about\nsouthern sea otters in environments where\nsnails, mussels, and clams are present?",
+          "options": [
+            "Those otters whose diet consists mainly of\nsnails will likely exhibit less tooth damage\nthan will those otters that use tools to\nconsume mussels and clams.",
+            "Those otters that do not use tools will\nlikely have more robust health than those\notters that do use tools.",
+            "Those otters that do not use tools will\nlikely need to process larger amounts of\nprey to meet their energy requirements\nthan will those otters that use tools.",
+            "Those otters that consume mussels and\nclams without the use of tools will likely\nspend less time foraging than will those\notters that use tools to access the same\nprey resources."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 2, Q62). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,483 @@
+{
+  "format": "bbplus",
+  "version": 1,
+  "type": "practice",
+  "title": "SAToplam 2.0 — Words in Context - Synonyms",
+  "description": "Official real exam SAT reading practice questions (March 2023 – August 2025) compiled by @satashkent. Domain: Craft and Structure.",
+  "modules": [
+    {
+      "title": "Words in Context - Synonyms",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t13-q001",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q1",
+          "passageTitle": "Words in Context - Synonyms — Q1",
+          "passage": "(*Exam level)\nThe following text is adapted from Anton\nChekhov's 1904 playThe Cherry Orchard\n(translated by Julius West in 1916).\nTROFIMOV: Believe me, Anya, believe me! I'm\nnot thirty yet, I'm young, I'm still a student, but\nI haveundergone a great deal! I'm as hungry as\nthe winter, I'm ill, I'm shaken..and where\nhaven't I been- -fate has tossed me everywhere!",
+          "prompt": "As used in the text, what does the word\n\"undergone\" most nearly mean?",
+          "options": [
+            "Neglected",
+            "Enjoyed",
+            "Conveyed",
+            "Endured"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 13, Q1). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q002",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q2",
+          "passageTitle": "Words in Context - Synonyms — Q2",
+          "passage": "The following text is adapted from John\nMatheus's 1926 short story, \"Mr. Bradford\nTeaches Sunday School.\" Mr. Bradford is\ndriving through the countryside in Florida.\nThe moss in the towering water oaks had\nbecome enlivened with a verdant sheen of silver\nand hung like festoons of carnival or like funeral\ndecorations for the mourning of the dead. The\npine cones were pungent, the pine green was\nresplendent. The bald cypresses spread\nthemselves along the water courses while the\nwillows wept as they always did. Mr. Bradford\nwas conscious of this gorgeousdisplay of nature.",
+          "prompt": "As used in the text, what does the word\n\"display\" most nearly mean?",
+          "options": [
+            "Spectacle",
+            "Reproduction",
+            "Pretentiousness",
+            "Disguise"
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 13, Q2). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q003",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q3",
+          "passageTitle": "Words in Context - Synonyms — Q3",
+          "passage": "The following text is adapted from Kenneth\nGrahame's 1908 novelThe Wind in the Willows.\nThe Mole is dazed after briefly meeting a\nstranger while traveling with a friend.\n(The) Mole stood still a moment, held in\nthought. As one wakenedsuddenly from a\nbeautiful dream, who struggles to recall it, and\ncan re-capture nothing but a dim sense of the\nbeauty of it, the beauty! Till that, too, fades\naway in its turn.",
+          "prompt": "As used in the text, what does the word\n\"suddenly\" most nearly mean?",
+          "options": [
+            "Abruptly",
+            "Repeatedly",
+            "Voluntarily",
+            "Tenderly"
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 13, Q3). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q004",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q4",
+          "passageTitle": "Words in Context - Synonyms — Q4",
+          "passage": "The following text is from Mark Twain's 1876\nnovel The Adventures of Tom Sawyer. Tom, a\nchild, has been told by his aunt to paint their\nhouse's fence.\nTom appeared on the sidewalk with a bucket of\nwhitewash and a long-handled brush. He\nsurveyed the fence, and all gladness left him and\na deep melancholy settled down upon his spirit.\nThirty yards of board fence nine feet high.",
+          "prompt": "As used in the text, what does the word\n\"surveyed\" most nearly mean?",
+          "options": [
+            "Complimented",
+            "Examined",
+            "Converted",
+            "Organized"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 13, Q4). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q005",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q5",
+          "passageTitle": "Words in Context - Synonyms — Q5",
+          "passage": "The following text is from Lilliam Rivera's 2020\nnovel Never Look Back. The text describes the\nnarrator looking around his father's apartment.\nPops's pride and joy is his wall of towering\nbookshelves. He once said you cantell a man's\nworth by the number of books he owns. I guess\nthis means Pops is overflowing with riches\nbecause ever since I can remember I was never\nwithout a book within reach.",
+          "prompt": "As used in the text, what does the word \"tell'\nmost nearly mean?",
+          "options": [
+            "Judge",
+            "Urge",
+            "Adore",
+            "Teach"
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 13, Q5). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q006",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q6",
+          "passageTitle": "Words in Context - Synonyms — Q6",
+          "passage": "The following text is from Virginia Woolf's 1919\nnovel Night and Day. The text describes a\ngathering of aspiring young artists and\nintellectuals.\nOne person after another rose, and, as with an\nill-balanced axe, attempted tohew out his\nconception of art a little more clearly, and sat\ndown with the feeling that, for some reason\nwhich he could not grasp, his strokes had gone\nawry. As they sat down they turned almost\ninvariably to the person sitting next them, and\nrectified and continued what they had just said\nin public.",
+          "prompt": "As used in the text, what does the figurative\nphrase \"hew out\" most nearly mean?",
+          "options": [
+            "Visualize",
+            "Emulate",
+            "Vacate",
+            "Define"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 13, Q6). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q007",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q7",
+          "passageTitle": "Words in Context - Synonyms — Q7",
+          "passage": "The following text is from Rudolfo Anaya's 1972\nnovel Bless Me, Ultima.The young narrator is\neating breakfast with his two sisters in their\nhome in rural New Mexico.\nI sat across the table from Deborah and Teresa\nand ate my atole and the hot tortilla with\nbutter. I said very little. I usually spoke very\nlittle to my two sisters. They were older than I\nand they were very close. They usually spent\nthe entire day in the attic, playing dolls and\ngiggling. I did notconcern myself with those\nthings.",
+          "prompt": "As used in the text, what does the phrase\n\"concern myself with\" most nearly mean?",
+          "options": [
+            "craft",
+            "get angry about",
+            "care about",
+            "earn"
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 13, Q7). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q008",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q8",
+          "passageTitle": "Words in Context - Synonyms — Q8",
+          "passage": "The following text is adapted from Willa\nCather's 1912 novel Alexander's Bridge.\nFor the next few days Alexander was very busy.\nHe took a desk in the office of a [Scottish]\nengineering firm on Henrietta Street, and was at\nwork almostconstantly. He avoided the clubs\nand usually dined alone at his hotel.",
+          "prompt": "As used in the text, what does the word\n\"constantly\" most nearly mean?",
+          "options": [
+            "Hastily",
+            "Carefully",
+            "Nonstop",
+            "Enough"
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 13, Q8). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q009",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q9",
+          "passageTitle": "Words in Context - Synonyms — Q9",
+          "passage": "The following text is from Mark Oshiro's 2018\nnovel Anger Is a Gift.In the novel, Moss and\nhis friends are on a subway train in Northern\nCalifornia.\nLights from the outside world then filled the\ntrain car as it rose out of the ground and\nclimbed the elevated track. As long as Moss had\nlived in West Oakland, he'd never tired of this\nspecific view, so he pointed toward the windows.\n\"Check it,\" he said, and the Port of Oakland\nbegan to pass by them.",
+          "prompt": "As used in the text, what does the word\n'specific' most nearly mean?",
+          "options": [
+            "Imaginary",
+            "Correct",
+            "Energetic",
+            "Particular"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 13, Q9). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q010",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q10",
+          "passageTitle": "Words in Context - Synonyms — Q10",
+          "passage": "The following text is adapted from John\nMatheus's 1925 short story \"Fog.\"\nThe fog extended its tentacles over city and\nriver, gradually obliterating traces of familiar\nlandscapes. At five-thirty the old Panhandle\nbridge, supported by massive sandstone pillars,\nstalwart, as when erected fifty years before to\nserve a generation now passed behind the\nportals of life, had become a spectral outline\nagainst the sky.",
+          "prompt": "As used in the text, what does the word\n\"supported\" most nearly mean?",
+          "options": [
+            "Cherished",
+            "Defended",
+            "Held up",
+            "Improved on"
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 13, Q10). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q011",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q11",
+          "passageTitle": "Words in Context - Synonyms — Q11",
+          "passage": "The following text is from Charles Chesnutt's\n1905 novel The Colonel's Dream.\nMr. French and Mr. Kirby work together. Mr.\nFrench, the senior partner, who sat opposite\nKirby, was an older man–a safe guess would\nhave placed him somewhere in the debatable\nground between forty and fifty; of a good height,\nas could be seen even from the seated figure, the\nupper part of which was held erect with the\nunconscious ease which one associates with\nmilitary training.",
+          "prompt": "As used in the text, what does the word\n\"placed\" most nearly mean?",
+          "options": [
+            "Estimated",
+            "Modified",
+            "Contracted",
+            "Arranged"
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 13, Q11). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q012",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q12",
+          "passageTitle": "Words in Context - Synonyms — Q12",
+          "passage": "The following text is from Jhumpa Lahiri's 2003\nnovel The Namesake. Gogol, a child, is at a\nbeach in Massachusetts with his father.\nHe watches his fatherraise a kite within minutes\ninto the wind, so high that Gogol must tip his\nhead back in order to see, a rippling speck\nagainst the sky. The wind whips around their\nears, turning their faces cold.",
+          "prompt": "As used in the text, what does the word \"raise\"\nmost nearly mean?",
+          "options": [
+            "Create",
+            "Congratulate",
+            "Strengthen",
+            "Lift"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 13, Q12). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q013",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q13",
+          "passageTitle": "Words in Context - Synonyms — Q13",
+          "passage": "The following text is adapted from Mary\nSeacole's 1857 autobiographyWonderful\nAdventures of Mrs. Seacole in Many Lands.\nThat journey across the Isthmus [of Panama],\ninsignificant in distance as it was, was by no\nmeans an easy one. It seemed as if nature had\ndetermined to throw everyconceivable obstacle\nin the way of those who should seek to join the\ntwo great oceans of the world.",
+          "prompt": "As used in the text, what does the word\n\"conceivable\" most nearly mean?",
+          "options": [
+            "Visible",
+            "Steady",
+            "Easy",
+            "Possible"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 13, Q13). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q014",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q14",
+          "passageTitle": "Words in Context - Synonyms — Q14",
+          "passage": "The following text is adapted from Kenneth\nGrahame's 1908 novelThe Wind in the Willows.\nThe Mole has been found by a friend after\ngetting lost in the woods.\nIt is beginning to snow. The Mole saw the wood\nthat had been so dreadful to him in quite a\nchanged aspect. Holes, hollows, pools, pitfalls,\nand other menaces to the wayfarer were\nvanishing fast, and a gleaming carpet was\nspringing up everywhere, that looked too\ndelicate to be trodden upon by rough feet.",
+          "prompt": "As used in the text, what does \"delicate\" most\nnearly mean?",
+          "options": [
+            "Generous",
+            "Fragile",
+            "Accurate",
+            "Empty"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 13, Q14). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q015",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q15",
+          "passageTitle": "Words in Context - Synonyms — Q15",
+          "passage": "The following text is adapted from Virginia\nWoolf's 1919 novelNight and Day.Katharine is\nthe granddaughter of a celebrated poet.\n[Katharine's] descent from [a celebrated poet]\nwas no surprise to her, but matter for\nsatisfaction, until, as the years wore on, certain\ndrawbacks made themselves verymanifest.\nPerhaps it is a little depressing to inherit not\nlands but an example of intellectual virtue;\nperhaps the conclusiveness of a great ancestor is\na little discouraging to those who run the risk of\ncomparison with him.",
+          "prompt": "As used in the text, what does the word\n\"manifest\" most nearly mean?",
+          "options": [
+            "Anticipated",
+            "Particular",
+            "Complex",
+            "Evident"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 13, Q15). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q016",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q16",
+          "passageTitle": "Words in Context - Synonyms — Q16",
+          "passage": "The following text is from Kenneth Grahame's\n1908 novelThe Wind in the Willows.The Mole\nis returning home after a visit to Mr. Badger's\nhouse.\nAs he hurried along, eagerlyanticipating the\nmoment when he would be at home again\namong the things he knew and liked, the Mole\nsaw Clearly that he was an animal of tiled field\nand hedge-row, linked to the ploughed furrow,\nthe frequented pasture, the lane of evening\nlingerings, the cultivated garden-plot.",
+          "prompt": "As used in the text, what does the word\n\"anticipating\" most nearly mean?",
+          "options": [
+            "Managing",
+            "Getting ahead of",
+            "Revealing",
+            "Looking forward to"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 13, Q16). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q017",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q17",
+          "passageTitle": "Words in Context - Synonyms — Q17",
+          "passage": "The following text is adapted from John\nMatheus's 1925 short story \"Fog.\" A train has\nstopped at a station, where heavy fog has set in.\nThe little conductor stood on tiptoe in an effort\nto keep one hand on the signal rope, craning his\nneck in a vain and dissatisfied endeavor to pierce\nthe miasma of the fog. The motorman chafed in\nhis box, thinking of the drudging lot of the\nlaboring man. Heregistered discontent.",
+          "prompt": "As used in the text, what does the word\n\"registered\" most nearly mean?",
+          "options": [
+            "Bypassed",
+            "Enrolled",
+            "Valued",
+            "Displayed"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 13, Q17). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q018",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q18",
+          "passageTitle": "Words in Context - Synonyms — Q18",
+          "passage": "The following text is adapted from Yone\nNoguchi's 1914 memoirThe Story of Yone\nNoguchi. Noguchi is returning home after eleven\nyears abroad.\nI reached Tsushima, my native town, at evening.\nI frightened my old father at the station, who\nwas actually trying tofind me among some other\npeople. There is no wonder that he could not\nrecognise me; I must have changed a great deal.",
+          "prompt": "As used in the text, what does the word \"find\"\nmost nearly mean?",
+          "options": [
+            "Reveal",
+            "Persuade",
+            "Judge",
+            "Locate"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 13, Q18). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q019",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q19",
+          "passageTitle": "Words in Context - Synonyms — Q19",
+          "passage": "The following text is from Charles Chesnutt' s\n1905 novelThe Colonel' s Dream. Mr. French\nand Mr. Kirby work together.\nMr. French, the senior partner, who sat opposite\nKirby, was an older man-a safe guess would have\nplaced him somewhere in the debatable ground\nbetween forty and fifty; of agood height, as\ncould be seen even from the seated figure, the\nupper part of which was held erect with the\nunconscious ease which one associates with\nmilitary training.",
+          "prompt": "As used in the text, what does the word \"good\"\nmost nearly mean?",
+          "options": [
+            "Well-behaved",
+            "Considerable",
+            "Capable",
+            "Reliable"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 13, Q19). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q020",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q20",
+          "passageTitle": "Words in Context - Synonyms — Q20",
+          "passage": "The following text is from Meredith Nicholson's\n1910 short story \"The Girl with the Red\nFeather.\"\nMrs. Webster G. Burgess always maintains that\nnothing her husband may do can shock her.\nWhen her husband had notappeared at seven\nshe explained to her guest that he had been\ndetained by an unexpected meeting of a\nclearing-house committee.",
+          "prompt": "As used in the text, what does the word\n\"appeared\" most nearly mean?",
+          "options": [
+            "Pretended",
+            "Developed",
+            "Responded",
+            "Arrived"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 13, Q20). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q021",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q21",
+          "passageTitle": "Words in Context - Synonyms — Q21",
+          "passage": "The following text is from Jhumpa Lahiri's 2003\nnovel The Namesake. Gogol, a child, is at a\nbeach in Massachusetts with his father.\nHe watches his father raise a kite within minutes\ninto the wind, so high that Gogol musttip his\nhead back in order to see a rippling speck\nagainst the sky. The wind whips around their\nears, turning their faces cold.",
+          "prompt": "As used in the text, what does the word \"tip\"\nmost nearly mean?",
+          "options": [
+            "Lean",
+            "Inform",
+            "Pay",
+            "Produce"
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 13, Q21). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q022",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q22",
+          "passageTitle": "Words in Context - Synonyms — Q22",
+          "passage": "The following text is adapted from Jhumpa\nLahirl's 2003 novelThe Namesake. Gogol is an\nelementary school student in Massachusetts.\nIn art class, his favorite hour of the week, he\ncarves his name with paper clips into the\nbottoms of clay cups and bowls. He pastes\nuncooked pasta to cardboard, andleaves his\nsignature in fat brush strokes below paintings.",
+          "prompt": "As used in the text, what do the words \"carves\"\nand \"leaves\" most nearly mean?",
+          "options": [
+            "Marks",
+            "Passes",
+            "Turns",
+            "Follows"
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 13, Q22). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q023",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q23",
+          "passageTitle": "Words in Context - Synonyms — Q23",
+          "passage": "The following text is from Kenneth Grahame's\n1908 novelThe Wind in the Willows. The Mole\nis returning home after a visit to Mr. Badger's\nhouse.\nAs he hurried along, eagerlyanticipating the\nmoment when he would be at home again\namong the things he knew and liked, the Mole\nsaw clearly that he was an animal of tilled field\nand hedgerow, linked to the ploughed furrow,\nthe frequented pasture, the lane of evening\nlingerings, the cultivated garden-plot.",
+          "prompt": "As used in the text, what does the word\n\"anticipating\" most nearly mean?",
+          "options": [
+            "Describing",
+            "Getting ahead of",
+            "Looking forward to",
+            "Instructing"
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 13, Q23). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q024",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q24",
+          "passageTitle": "The Joy Luck Club",
+          "passage": "The following text is from Amy Tan's 1989 novel\nThe Joy Luck Club. The narrator describes\npracticing the piano when she was a child.\nFor the talent show, I was to play a piece called\n\"Pleading Child\" from Schumann'sScenes from\nChildhood. It was a simple, moody piece that\nsounded more difficult than it was. I was\nsupposed to memorize the whole thing, playing\nthe repeat parts twice to make the piece sound\nlonger. But I dawdled over it, playing a few bars\nand thencheating, looking up to see what notes\nfollowed. I never really listened to what I was\nplaying. I daydreamed about being somewhere\nelse, about being someone else.",
+          "prompt": "Based on the text, when the narrator describes\nherself as \"cheating,\" what does she most likely\nmean?",
+          "options": [
+            "She was violating an expectation about\nhow to perform the piece.",
+            "She was deceiving her plano teacher.",
+            "She was gaining an unfair advantage over\nother contestants in the talent show:",
+            "She was lying to herself about her musical\nability"
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 13, Q24). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q025",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q25",
+          "passageTitle": "Words in Context - Synonyms — Q25",
+          "passage": "The following text is from Lilliam Rivera's 2020\nnovel Never Look Back. The text describes the\nnarrator's friend Pheus, a young musician, after\nfinishing a performance during a church service.\nPheus pulls a handkerchief from his back pocket\nand wipes his forehead. I mime a quiet clap for\nhim. He does a slight bow and flashes his\ndimples. This is where Pheustruly shines.\nWhen Pheus is in front of an audience, it's as if\nhe becomes another person, a more heightened\nversion of himself.",
+          "prompt": "As used in the text, what does the word \"truly\"\nmost nearly mean?",
+          "options": [
+            "Obediently",
+            "Scarcely",
+            "Impolitely",
+            "Really"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 13, Q25). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t13-q026",
+          "skill": "Words in Context - Synonyms",
+          "domain": "Craft and Structure",
+          "focus": "Determine the precise contextual meaning of a specific word or phrase",
+          "source": "SAToplam 2.0 · Topic 13 · Q26",
+          "passageTitle": "Words in Context - Synonyms — Q26",
+          "passage": "The following text is from Alice Wong's 2022\nmemoir Year of the Tiger: An Activist's Life.\nWong has just described her tendency to\nprocrastinate when she has a writing deadline.\nIn the middle of these distractions, a vibe will\nemerge, a point I want to make, a phrase, a\nhook, a title for a story, an image. A connection\nor epiphany can happen while watching or\nreading something brilliant. By doing \"nothing\"\nand daydreaming, I am actuallycomposing,\neven if words don't immediately materialize.",
+          "prompt": "Based on the text, what does Wong most likely\nmean when she states that she is \"composing\"?",
+          "options": [
+            "She is deceiving herself about her true\nfeelings about a subject.",
+            "She is engaging in an important part of\nher writing process.",
+            "She is gathering sources of information to\nuse in her writing.",
+            "She is being soothed by immersing herself\nin creative works by other people."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 13, Q26). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    }
+  ]
+}

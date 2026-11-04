@@ -1,0 +1,1323 @@
+{
+  "format": "bbplus",
+  "version": 1,
+  "type": "practice",
+  "title": "SAToplam 2.0 — Quotation",
+  "description": "Official real exam SAT reading practice questions (March 2023 – August 2025) compiled by @satashkent. Domain: Information and Ideas.",
+  "modules": [
+    {
+      "title": "Quotation — Set 1",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t06-q001",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q1",
+          "passageTitle": "Quotation — Q1",
+          "passage": "7.5 sec. (*Exam level)\nLife Among the Paiutes is an 1882\nautobiographical narrative by Sarah\nWinnemucca Hopkins. In the work,\nWinnemucca directly addresses the reader to\nestablish her authority and credibility,\nwriting______________",
+          "prompt": "Which quotation from Life Among the Paiutes\nmost effectively illustrates the claim?",
+          "options": [
+            "My dear reader, I have not lived in this\nworld for over thirty or forty years for\nnothing, and I know what I am talking\nabout.",
+            "I was born somewhere near 1844, but am\nnot sure of the precise time.",
+            "Oh, dear readers, these soldiers had gone\nonly sixty miles away to Muddy Lake,\nwhere my people were then living and\nfishing.",
+            "But how can I describe the scene that\nfollowed? Some of you, dear readers, can\nimagine."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q1). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q002",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q2",
+          "passageTitle": "Quotation — Q2",
+          "passage": "The Underdogs is a 1915 novel by Mariano\nAzuela, originally written in Spanish. In the\nnovel, the town of Juchipila is depicted as a\nstriking sight for a group of soldiers as they view\nit from afar:____________",
+          "prompt": "Which quotation from a translation of The\nUnderdogs most effectively illustrates the claim?",
+          "options": [
+            "All day long [the soldiers] rode through\nthe canyon, up and down the steep, round\nhills, dirty and bald as a man's head, hill\nafter hill in endless succession.",
+            "The soldiers entered the streets of\nJuchipila as the church bells rang, loud\nand joyfully, with that peculiar tone that\nthrills every mountaineer.",
+            "Juchipila rose in the distance, white,\nbathed in sunlight, shining in the midst of\na thick forest at the foot of a proud, lofty\nmountain.",
+            "The sierra is clad in gala colors. Over its\ninaccessible peaks the opalescent fog\nsettles like a snowy veil on the forehead of\na bride."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q2). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q003",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q3",
+          "passageTitle": "Quotation — Q3",
+          "passage": "Frederick Douglass is an 1895 poem by Paul\nLaurence Dunbar. In the poem, Dunbar praises\nDouglass for his honesty and refusal to be\nintimidated, writing ______________ .",
+          "prompt": "Which quotation from \"Frederick Douglass\"\neffectively illustrates the claim?",
+          "options": [
+            "No miser in the good he held was he,– His\nkindness followed his horizon's rim",
+            "A hush is over all the teeming lists, And\nthere is pause, a breath-space in the strife;",
+            "And he was no soft-tongued apologist; He\nspoke straightforward, fearlessly uncowed;",
+            "He was her champion thro' direful years,\nAnd held her weal all other ends above"
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q3). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q004",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q4",
+          "passageTitle": "Quotation — Q4",
+          "passage": "I Know Why the Caged Bird Sings is a 1969\nnovel written by Maya Angelou. In the novel,\nthe main character struggles to accept her\nAfrican American race while growing up in the\nSouthern United States.",
+          "prompt": "Which quotation from I Know Why the Caged\nBird Sings most effectively supports this claim?",
+          "options": [
+            "\"The dress I wore was light purple. As I'd\nwatched Momma make it, putting fancy\nstitching on the waist, I knew that when I\nput it on, I'd look like one of the sweet\nlittle white girls who were everyone's\ndream of what was right with the world.\"",
+            "\"When people saw me wearing it, they\nwere going to run up to me and say,\n'Marguerite [sometimes it was 'dear\nMarguerite'], forgive us, please, we didn't\nknow who you were,' and I would answer\ngenerously, 'No, you couldn't have known.\nOf course I forgive you.\"",
+            "\"Wouldn't they be surprised when one day\nI woke out of my black ugly dream, and\nmy real hair, which was long and blonde,\nwould take the place of the kinky mass\nthat Momma wouldn't let me straighten?\"",
+            "\"If growing up is painful for the Southern\nBlack girl, being aware of her difference is\nworse. It is an unnecessary insult.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q4). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q005",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q5",
+          "passageTitle": "Quotation — Q5",
+          "passage": "In her essay entitled, \"Slouching Towards\nBethlehem,\" Joan Didion describes her\nexperiences in California during the 1960s and\n1970s while proving a darker side of this period\nexisted even though it is often admired for its\nclaimed pursuit of peace and love.",
+          "prompt": "Which quotation from \"Slouching Towards\nBethlehem\" most effectively supports the claim?",
+          "options": [
+            "\"It was a country of bankruptcy notices\nand public–auction announcements and\ncommonplace reports of casual killings and\nmisplaced children and abandoned homes\nand vandals who misplaced even the\nfour–letter words they scrawled.\"",
+            "\"It was the United States of America in\nthe cold late spring of 1967, and the\nmarket was steady and the G.N.P. high\nand a great many articulate people seemed\nto have a sense of high social purpose and\nit might have been a spring of brave hopes\nand national promise, but it was not, and\nmore and more people had the uneasy\napprehension that it was not.\"",
+            "\"San Francisco was where the missing\nchildren were gathering and calling\nthemselves 'hippies.' When I first went to\nSan Francisco in that cold late spring of\n1967, I did not even know what I wanted\nto find out, and so I just stayed around\nawhile, and made a few friends.\"",
+            "\"Adolescents drifted from city to torn city,\nsloughing off both the past and the future\nas snakes shed their skins, children who\nwere never taught and would never now\nlearn the games that had held the society\ntogether.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q5). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q006",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q6",
+          "passageTitle": "Quotation — Q6",
+          "passage": "Cane is a 1932 novel by Jean. In one portion of\nthe novel, Jean establishes a contrast between\nthe narrator's attitude towards life and the\nattitude of the narrator's love interest, Avy,\nwriting __________",
+          "prompt": "Which quotation most effectively supports this\nclaim?",
+          "options": [
+            "\"I saw the dawn steel over Washington.\nThe capitol dome looked like a gray ghost\ndrifting in from sea.\"",
+            "\"Avey was as silent as those great trees\nwhose tops we looked down upon. She has\nalways been like that. At least, to me.\"",
+            "\"Avey slipped her hand in mine. Pillowed\nher head at best she could upon my arm.\nKissed the hand that she was holding and\nlistened, or so I thought, to what I had to\nsay.\"",
+            "\"As time went on, Avey's indifference to\nthings began to pique me; I was ambitious.\nI left out small hometown earlier than she\ndid.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q6). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q007",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q7",
+          "passageTitle": "Quotation — Q7",
+          "passage": "The Monster is an 1898 story by Stephen Crane.\nIn the story, the character of Jim, a young boy,\naccidentally damages a peony (a flower) in the\nyard while his father is tending to the lawn.\nCrane depicts the dedication and care with\nwhich his father typically cares for his lawn,\nwriting ________________.",
+          "prompt": "Which quotation from \"The Monster\" most\neffectively illustrates that claim?",
+          "options": [
+            "After some trouble (Jim's father) found\nthe subject of the incident, the broken\nflower. Turning then, he saw the child\nlurking at the rear and scanning his\ncountenance,",
+            "\"(Jim's father) was shaving this lawn as if\nit were a priest's chin. All during the\nseason he had worked at it in the coolness\nand peace of the evenings after supper.\nEven in the shadow of the cherry trees the\ngrass was strong and healthy.\"",
+            "(Jim's father) paused, and with the howl\nof the machine no longer occupying the\nsense, one could hear the robins in the\ncherry trees arranging their affairs.",
+            "\"(Jim) went on to the lawn, very slowly\nand kicking wretchedly at the furt.\nPresently his father came along with the\nwhirring machine, whale the sweet, new\ngrass blades spun from the knives.\""
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 6, Q7). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q008",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q8",
+          "passageTitle": "Quotation — Q8",
+          "passage": "The 2000 production of The Green Bird was the\nfirst Broadway show for which Constance\nHoffman was credited as a costume designer.\nHottman was among the Broadway costume\ndesigners interviewed by Sara Jabion-Roberts\nand Eulanda A Sanders for their study of\nhistorical accuracy in costume design for shows\nwith a historical setting. They found that even\ndesigners who value historical accuracy will\noften include contemporary design elements that\ndon't fit with the historical period. In a research\npaper about theatrical costume design, a student\nargues that costume designers for modern\nproductions of Shakespeare's A Midsummer\nNight's Dream (set in ancient Greece)\nsometimes include such elements unintentionally.",
+          "prompt": "Which quotation from an interview with a\ncostume designer would most effectively support\nthe student's claim?",
+          "options": [
+            "I tend to pay careful attention to a\ncharacter's accessories like gloves, hats,\nand jackets, These elements help\ncommunicate information about how this\nperson would have fit into society at the\ntime.",
+            "I aim to create a clear sense of the\ncharacter and the world they inhabit.\nSometimes this means adhering to the\nhistorical period's style, but frequently, as\nin stagings of A Midsummer Nights\nDream, some flexibility is required to\ncommunicate an idea to the audience.",
+            "\"Costumes must always reflect the correct\nhistorical period. Too often, I've seen\ncostumes that borrow from a wide span of\nperiods, resulting in a production with a\nconfusing visual style.\"",
+            "In the 1980s I was costuming for a\nproduction of A Midsummer Night's\nDream. Even though I focused on using\nthe correct materials and techniques for\nthe plays period in history, when looking\nback I can clearly see the influence of\n1980s fashion in my designs."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q8). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q009",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q9",
+          "passageTitle": "Quotation — Q9",
+          "passage": "The Underdogs is a 1915 novel by Mariano\nAzuela, originally written in Spanish. In the\nnovel, a group of soldiers travel through a\ncanyon, where their collective mood becomes\nstrongly affected by the strenuous conditions of\ntheir journey: ________________.",
+          "prompt": "Which quotation from \"The Underdogs\" most\neffectively illustrates that claim?",
+          "options": [
+            "The sierra is clad in gold colors. Over its\ninaccessible peaks the opalescent fog\nsettles like a snowy veil on the forehead of\na bride.\"",
+            "\"Then, hurriedly, the soldiers took the\nJuchipila canyon northward, without\nhalting to rest until nightfall.\"",
+            "\"The sun, beating down upon (the\nsoldiers), dulled their minds and bodies\nand presently they were silent,\"",
+            "All day long (the soldiers) rode through\nthe canyon, up and down the steep, round\nhills, dirty and bald as a man's head, hill\nafter hill in in endless succession.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q9). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q010",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q10",
+          "passageTitle": "Quotation — Q10",
+          "passage": "Poems is an 1895 collection of poetry by Frances\nE.W. Harper. In one of Harper's poems, the\nspeaker criticizes activists who champion\nhumanitarian causes in other countries while\noverlooking local concerns,\nsaying______________",
+          "prompt": "Which quotation from Poems most effectively\nillustrates the claim?",
+          "options": [
+            "God bless our native land, / Her homes\nand children bless, / Oh may she ever\nstand / For truth and righteousness. (from\n\"God Bless Our Native Land\")",
+            "Men may tread down the poor and lowly /\nMay crush them in anger and hate / But\nsurely the mills of God's justice / Will\ngrind out the grist of their fate. (from \"An\nAppeal to My Countrywomen\")",
+            "Say not the age is hard and cold-/ I think\nit brave and grand / When men of diverse\nsects and creeds / Are clasping hand in\nhand. (from \"The Present Age\")",
+            "When ye plead for the wrecked and fallen,\n/ The exile from far-distant shores, /\nRemember that men are still wasting /\nLife's crimson around your own doors.\n(from \"An Appeal to My Countrywomen\")"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q10). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q011",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q11",
+          "passageTitle": "Quotation — Q11",
+          "passage": "In a paper for an art history class, a student\nclaims that Gwen John's circa 1915 painting\nMère Poussepinmarks a significant change in\nJohn's artistic development.",
+          "prompt": "Which quotation from an art history textbook\nwould most effectively support the student's\nclaim?",
+          "options": [
+            "Mère Poussepinhas been analyzed\nextensively since it was first exhibited, as\nno two viewers seem to agree about\nexactly what the painting means.",
+            "Of all John's paintings, none so clearly\nrepresents her abilities and ideas asMère\nPoussepin.",
+            "The paintings that John produced before\nMère Poussepincan be thought of as\nbelonging to her earlier style, to which she\nnever returned.",
+            "Although John was clearly influenced by\nother artists of her time, she was also an\nartist ahead of her time, asMère\nPoussepin demonstrates."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q11). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q012",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q12",
+          "passageTitle": "Quotation — Q12",
+          "passage": "Cane is a 1923 novel by Jean Toomer. In one\nportion of the novel, Toomer uses figurative\nlanguage to connect the narrator's urban\nenvironment of Washington, DC, and the rural\nSouth of the narrator's past, writing,\n______________",
+          "prompt": "Which quotation from Cane most effectively\nillustrates the claim?",
+          "options": [
+            "And when the wind is from the South, soil\nof my homeland falls like a fertile shower\nupon the lean streets of [Washington, DC].",
+            "The young trees had not outgrown their\n[planter] boxes then. V Street [in\nWashington, DC] was lined with them.",
+            "The Capitol dome looked like a gray ghost\nship drifting in from sea.",
+            "The [train] engines of this valley have a\nwhistle, the echoes of which sound like\niterated gasps and sobs. I always think of\nthem as crude music."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q12). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q013",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q13",
+          "passageTitle": "Quotation — Q13",
+          "passage": "In a paper for an art history class, a student\nclaims that Rosa Bonheur's 1855 paintingThe\nHorse Fairmarks a significant change in\nBonheur's artistic development.",
+          "prompt": "Which quotation from an art history textbook\nwould most effectively support the student's\nclaim?",
+          "options": [
+            "The paintings that Bonheur produced\nbefore The Horse Faircan be thought of\nas belonging to her earlier style, to which\nshe never returned.",
+            "Of all Bonheur's paintings, none so clearly\nrepresents her abilities and ideas asThe\nHorse Fair.",
+            "The Horse Fairhas been analyzed\nextensively since it was first exhibited, as\nno two viewers seem to agree about\nexactly what the painting means.",
+            "Although Bonheur was clearly influenced\nby other artists of her time, she was also\nan artist ahead of her time, asThe Horse\nFair demonstrates."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q13). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q014",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q14",
+          "passageTitle": "Quotation — Q14",
+          "passage": "Poetry is a 1919 poem by Marianne Moore. The\npoem highlights an ambivalence toward poetry\nas the speaker acknowledges its merits while also\nexpressing a sense of displeasure, writing\n__________",
+          "prompt": "Which quotation from \"Poetry\" most effectively\nillustrates the claim?",
+          "options": [
+            "nor is it valid / to discriminate against\n'business documents and /school-books';\nall these phenomena are important.",
+            "One must make a distinction / however:\nwhen dragged into prominence by half\npoets, the result is not / poetry",
+            "when [poems] become so derivative as to\nbecome unintelligible, the / same thing\nmay be said for all of us—that we / do not\nadmire what / we cannot understand.",
+            "Reading [poetry], however, with a perfect\ncontempt for it, one discovers that there is\nin / it after all, a place for the genuine."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q14). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q015",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q15",
+          "passageTitle": "Quotation — Q15",
+          "passage": "\"The Bet\" is an 1889 short story by Anton\nChekhov. In the story, a banker is described as\nbeing very upset about something:\n________",
+          "prompt": "Which quotation from \"The Bet\" most\neffectively illustrates the claim?",
+          "options": [
+            "\"Then the banker cautiously broke the\nseals off the door and put the key in the\nkeyhole.\"",
+            "\"It struck three o'clock, the banker\nlistened; everyone was asleep in the house\nand nothing could be heard outside but\nthe rustling of the chilled trees.\"",
+            "\"The banker, spoilt and frivolous, with\nmillions beyond his reckoning, was\ndelighted at the bet.\"",
+            "\"When [the banker] got home he lay on his\nbed, but his tears and emotion kept him\nfor hours from sleeping.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q15). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q016",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q16",
+          "passageTitle": "Quotation — Q16",
+          "passage": "Lines Written in Early Spring is a 1798 poem by\nWilliam Wordsworth. In the poem, the speaker\ndescribes having contradictory feelings while\nexperiencing the sights and sounds of a spring\nday:",
+          "prompt": "Which quotation from \"Lines Written in Early\nSpring\" most effectively illustrates the claim?",
+          "options": [
+            "Through primrose-tufts, in that sweet\nbower, /The periwinkle trail'd its\nwreathes; /And 'tis my faith that every\nflower /Enjoys the air it breathes.",
+            "The budding twigs spread out their fan,\n/To catch the breezy air; /And I must\nthink, do all I can, /That there was\npleasure there.",
+            "The birds around me hopp'd and play'd: /\nTheir thoughts I cannot measure, / But\nthe least motion which they made, / It\nseem'd a thrill of pleasure.",
+            "I heard a thousand blended notes, / While\nin a grove I [sat] reclined. / In that sweet\nmood when pleasant thoughts /Bring sad\nthoughts to the mind."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q16). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q017",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q17",
+          "passageTitle": "Quotation — Q17",
+          "passage": "The Yellow Wallpaper is an 1892 short story by\nCharlotte Perkins Gilman. In the story, the\nnarrator expresses mixed feelings about her\nsurroundings: __________",
+          "prompt": "Which quotation from \"The Yellow Wallpaper\"\nmost effectively illustrates the claim?",
+          "options": [
+            "This wallpaper has a kind of sub-pattern\nin a different shade, a particularly\nirritating one, for you can only see it in\ncertain lights, and not clearly then.",
+            "By moonlight—the moon shines in all\nnight when there is a moon—I wouldn't\nknow it was the same paper.",
+            "I'm really getting quite fond of the big\nroom, all but that horrid [wall]paper.",
+            "The color is repellant, almost revolting; a\nsmouldering, unclean yellow, strangely\nfaded by the slow-turning sunlight."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q17). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q018",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q18",
+          "passageTitle": "Quotation — Q18",
+          "passage": "In a paper for an art history class, a student\nclaims that Agnes Martin's 1957 painting\nHarbor Number 1marks a significant change in\nMartin's artistic development.",
+          "prompt": "Which quotation from an art history textbook\nwould most effectively support the student's\nclaim?",
+          "options": [
+            "\"Harbor Number 1has been analyzed\nextensively since it was first exhibited, as\nno two viewers seem to agree about\nexactly what the painting means.\"",
+            "\"Although Martin was clearly influenced\nby other artists of her time, she was also\nan artist ahead of her time, asHarbor\nNumber 1 demonstrates.\"",
+            "\"The paintings that Martin produced\nbefore Harbor Number 1can be thought of\nas belonging to her earlier style, to which\nshe never returned.\"",
+            "\"Of all Martin's paintings, none so clearly\nrepresents her abilities and ideas asHarbor\nNumber 1.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q18). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q019",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q19",
+          "passageTitle": "Quotation — Q19",
+          "passage": "A Pair of Silk Stockings is an 1897 short story\nwritten by Kate Chopin. In the story, Chopin\nsuggests that the protagonist, Mrs. Sommers,\nexperiences a shift in her sense of self as a result\nof putting on certain articles of clothing,\nwriting, __________.",
+          "prompt": "Which quotation from \"A Pair of Silk\nStockings\" most effectively illustrates the claim?",
+          "options": [
+            "\"Mrs. Sommers was one who knew the\nvalue of bargains; who could stand for\nhours making her way inch by inch toward\nthe desired object that was selling below\ncost.\"",
+            "\"She held back her skirts and turned her\nfeet one way and her head another way as\nshe glanced down at the polished\npointed-tipped boots.\"",
+            "\"She would buy so and so many yards of\npercale for new shirt waists for the boys\nand Janie and Mag.\"",
+            "\"Her stockings and boots and well-fitting\ngloves had worked marvels in her bearing\nhad given her a feeling of assurance, a\nsense of belonging to the well-dressed\nmultitude.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q19). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q020",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q20",
+          "passageTitle": "Quotation — Q20",
+          "passage": "Uncle Vanya: Scenes from Country Life in Four\nActs is an 1898 play by Anton Chekhov.\nOriginally written in Russian. In the play,\nProfessor Serebrakoff and his wife Helena have\ncome to stay at their country estate, which\nVanya manages with the help of Sonia, the\nprofessor's daughter from a previous marriage.\nChekhov portrays Helena as trying to ease\ntensions between Vanya and the professor, as is\nevident when __________",
+          "prompt": "Which quotation from a translation of Uncle\nVanya most effectively illustrates the claim?",
+          "options": [
+            "Helena says to Vanya, \"I am absolutely\nexhausted by [Professor Serebrakoff], and\ncan hardly stand.\"",
+            "Helena says to Vanya, \"You all abuse my\nhusband and look on me with compassion:\nyou think, 'Poor woman, she is married to\nan old man.' How well I understand your\ncompassion!\"",
+            "Helena says to Vanya, \"You are cultured\nand intelligent, [Vanya, and you surely\nunderstand that the world is not destroyed\nby villains and conflagrations, but by hate\nand malice and all this spiteful tattling. It\nis your duty to make peace [with Professor\nSerebrakoff], and not to growl at\neverything.\"",
+            "Helena says to Sonia, \"When you come to\nthink of it, Sonia, I am really very, very\nunhappy.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q20). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q021",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q21",
+          "passageTitle": "Quotation — Q21",
+          "passage": "Uncle Vanya: Scenes from Country Life in Four\nActs is an 1898 play by Anton Chekhov,\noriginally written in Russian. In the play,\nProfessor Serebrakoff and his wife Helena have\ncome to stay at their country estate, which\nVanya manages with the help of Sonia, the\nprofessor's daughter from a previous marriage.\nChekhov depicts Vanya's opinion of Professor\nSerebrakoff as having changed significantly, as is\nevident when __________",
+          "prompt": "Which quotation from a translation of Uncle\nVanya most effectively illustrates the claim?",
+          "options": [
+            "Vanya says to Professor Serebrakoff, \"For\ntwenty-five years I have managed [the\ncountry estate], and have sent you the\nreturns from it like the most honest of\nservants, and you have never given me one\nsingle word of thanks for my work, not\none-neither in my youth nor now.\"",
+            "Professor Serebrakoff says to Helena, \"It is\nfunny that everybody listens to [Vanya]\nand his old idiot of a mother, but the\nmoment I open my lips you all begin to\nfeel ill-treated.\"",
+            "Vanya says to Professor Serebrakoff, \"This\nplace [the country estate] could never have\nbeen bought had I not renounced my\ninheritance in favor of my sister [the\nprofessor's late wife], whom I deeply loved\nand what is more, I worked for ten years\nlike an ox, and paid off the debt.\"",
+            "Vanya says to himself, \"I was proud of\n[Professor Serebrakoff] and of his learning;\nI received all his words and writings as\ninspired and now? Now he has retired, and\nwhat is the total of his life? A blank! He is\nabsolutely unknown, and his fame has\nburst like a soap-bubble. I have been\ndeceived; I see that now, basely deceived.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q21). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q022",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q22",
+          "passageTitle": "Quotation — Q22",
+          "passage": "Life Among the Paiutesis an 1882\nautobiographical narrative by Sarah\nWinnemucca Hopkins. In the work,\nWinnemucca creates suspense by emphasizing\nher physical response to an event, writing\n____________",
+          "prompt": "Which quotation fromLife Among the Paiutes\nmost effectively illustrates the claim?",
+          "options": [
+            "A. \"Oh, how my heart jumped when I\nheard a noise close by. It was a horse\nrunning towards us. We had to lie down\nclose to the ground. It came close to us\nand stopped. Oh, how my heart beat! I\nthought whoever it was would hear my\nheart beat.\"",
+            "\"Oh, how happy everybody was! One\ncould hear laughter everywhere, and songs\nwere sung by happy women and children.\"",
+            "\"Late in that fall, there came news that\nmy grandfather was on his way home.\nThen my father took a great many of his\nmen and went to meet his father, and\nthere came back a runner, saying, that all\nour people must come together.\"",
+            "\"That same fall, after my grandfather\ncame home, he told my father to take\ncharge of his people and hold the tribe, as\nhe was going back to California with as\nmany of his people as he could get to go\nwith him.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q22). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q023",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q23",
+          "passageTitle": "Quotation — Q23",
+          "passage": "A student is writing an essay on the subject of\ncultured meat, which is grown in a laboratory\nand is intended to help reduce the number of\nlivestock harvested for food. The student wishes\nto make the case that people have mixed feelings\nabout cultured meat that may be a barrier to its\nworldwide adoption.",
+          "prompt": "Which quotation from a publication by a\nresearcher would most effectively support the\nstudent's claim?",
+          "options": [
+            "\"Many consumers who were surveyed\nbelieved that cultured meat would be good\nfor the environment if widely available, but\nfew of those same consumers were willing\nto try eating cultured meat themselves.\"",
+            "\"Consumers tend to believe that using less\npackaging when selling meat products in\nstores would have a significant effect on\nthe environment.\"",
+            "\"Advocates of lab-grown meat claim that\nit's safer than conventional meat because\nthe means of its production can be tightly\ncontrolled.\"",
+            "\"The flavor of meat from livestock differs\nacross species (from pig to chicken to cow),\nand is also influenced by farming\nconditions and the breeds and genders of\nanimals.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q23). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q024",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q24",
+          "passageTitle": "Quotation — Q24",
+          "passage": "A student is writing a research paper on the\nhistory of irrigation in the United States,\nsituating the development of Hume Lake\n(created in Fresno County, California, in 1908)\nin a larger historical context. The student\nclaims that California's climate renders\nirrigation an essential component of agriculture\nin some parts of the state but not in others.",
+          "prompt": "Which quotation from a study of California\nagriculture best supports the student's claim?",
+          "options": [
+            "\"The usefulness of irrigation infrastructure\nin California today cannot be overstated,\nsince it is the most common means of\nconveying water for agricultural purposes.\"",
+            "\"Natural humidity, which renders\nirrigation unnecessary or reduces its\nimportance in the northern reaches of\nCalifornia, gradually decreases toward the\nsun-scorched but nonetheless fertile valleys\nof the southern part of the state.\"",
+            "\"Sprinkler irrigation systems are a\ncontemporary way of irrigating that\nrequires machinery to spray water in all\ndirections. These are currently used\nthroughout the United States and are\nespecially prevalent in California.\"",
+            "\"The irrigation system developed by the\nHohokam people in the 7th century CE in\nwhat is now Arizona was simple, but this\nsystem applied hydraulic engineering\ndesign features that are in use today\nthroughout California.\""
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 6, Q24). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    },
+    {
+      "title": "Quotation — Set 2",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t06-q025",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q25",
+          "passageTitle": "Quotation — Q25",
+          "passage": "Treasure Island is an 1883 novel by Robert\nLouis Stevenson. When the narrator was a child\nhis father ran a hotel. A mysterious sailor came\nto stay at the hotel. The narrator was\nfrightened of the sailor, as can be seen when the\nnarrator says,________",
+          "prompt": "Which quotation from Treasure Island most\neffectively illustrates the claim?",
+          "options": [
+            "\"How [the sailor] haunted my dreams, I\nneed scarcely tell you. On stormy nights,\nwhen the wind shook the four corners of\nthe house and the surf roared along the\ncove and up the cliffs, I would see him in a\nthousand forms, and with a thousand\ndiabolical expressions.\"",
+            "\"I remember [the sailor] as if it were\nyesterday, as he came plodding to the inn\ndoor, his sea-chest following behind him in\na hand-barrow.\"",
+            "\"[The sailor] was a very silent man by\ncustom. All day he hung round the cove or\nupon the cliffs with a brass telescope.\"",
+            "\"All the time he lived with us [the sailor]\nmade no change whatever in his dress but\nto buy some stockings from a hawker. One\nof the (corners) of his hat having fallen\ndown, he let it hang from that day forth,\nthough it was a great annoyance when it\nblew.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q25). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q026",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q26",
+          "passageTitle": "Quotation — Q26",
+          "passage": "Poems is an 1895 collection of poetry by Frances\nE.W. Harper. In one of Harper's poems, the\nspeaker declares her intention to create art that\nhas a universal appeal across generations,\nsaying, __________.",
+          "prompt": "Which quotation from Poems most effectively\nillustrates the claim?",
+          "options": [
+            "\"Our world, so worn and weary, / Needs\nmusic, pure and strong, / To hush the\njangle and discords / Of sorrow, pain, and\nwrong.\" (from Songs for the People)",
+            "\"Let me make the songs for the people, /\nSongs for the old and young; / Songs to\nstir like a battle-cry / Wherever they are\nsung.\" (from Songs for the People)",
+            "\"God bless our native land, / Land of the\nnewly free, / Oh may she ever stand / For\ntruth and liberty.\" (from God Bless Our\nNative Land)",
+            "\"My mother's kiss, my mother's kiss, / I\nfeel its impress now; / As in the bright and\nhappy days / She pressed it on my brow.\"\n(from My Mother's Kiss)"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 6, Q26). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q027",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q27",
+          "passageTitle": "Quotation — Q27",
+          "passage": "The Underdogs is a 1915 novel by Mariano\nAzuela, originally written in Spanish. In the\nnovel, Azuela depicts a traveling group of\nsoldiers as having a renewed sense of agency and\nauthority as they set off on a new stage of their\njourney: __________.",
+          "prompt": "Which quotation from a translation of The\nUnderdogs most effectively illustrates the claim?",
+          "options": [
+            "\"The sonorous, joyful bells rang again.\nFrom within the church, the honeyed\nvoices of a female chorus rose melancholy\nand grave.\"",
+            "\"All day long [the soldiers] rode through\nthe canyon, up and down the steep, round\nhills, dirty and bald as a man's head, hill\nafter hill in endless succession. At last,\nlate in the afternoon, they descried several\nstone church towers in the heart of a\nbluish ridge, and, beyond, the white road\nwith its curling spirals of dust and its gray\ntelegraph poles.\"",
+            "\"The men threw out their chests as if to\nbreathe the widening horizon, the\nimmensity of the sky, the blue from the\nmountains and the fresh air, redolent with\nthe various odors of the sierra. They\nspurred their horses to a gallop as if in\nthat mad race they laid claims of\npossession to the earth.\"",
+            "\"Before Juchipila was lost from sight,\nValderrama got off his horse, bent down,\nkneeled, and gravely kissed the ground.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q27). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q028",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q28",
+          "passageTitle": "Quotation — Q28",
+          "passage": "The Age of Innocence is a 1920 novel by Edith\nWharton set in New York City in the 1870s. In\nthe novel, Newland Archer attends an opera; in\nthe audience is May Welland, with whom he is\nromantically involved. Newland visualizes the\ndetails of a future with May:\n____________",
+          "prompt": "Which quotation from The Age of Innocence\nbest illustrates the claim?",
+          "options": [
+            "\"[May] dropped her eyes to the immense\nbouquet of lilies-of-the-valley on her knee,\nand Newland Archer saw her white-gloved\nfinger-tips touch the flowers softly.\"",
+            "\"Newland Archer, leaning against the wall\nat the back of the club box [where his seat\nwas], turned his eyes from the stage and\nscanned the opposite side of the house.\"",
+            "\"Though there was already talk...of a new\nOpera House which should compete in\ncostliness and splendour with those of the\ngreat European capitals, the world of\nfashion was still content to reassemble\nevery winter in the shabby red and gold\nboxes of the sociable old Academy [of\nMusic],\"",
+            "\"Already [Newland's] imagination, leaping\nahead of the engagement ring, the\nbetrothal kiss and the [wedding] march\nfrom Lohengrin, pictured [May] at his\nside.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q28). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q029",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q29",
+          "passageTitle": "Quotation — Q29",
+          "passage": "Cane is a 1923 novel by Jean Toomer. In the\nnovel, Toomer mentions a road in rural Georgia\ncalled Dixie Pike and describes it as having a\ndeep connection to faraway place,\nwriting______",
+          "prompt": "Which quotation from Cane most effectively\nillustrates the claim?",
+          "options": [
+            "\"And when the wind is from the South,\nsoil of my homeland falls like a fertile\nshower upon the lean streets of\nWashington, DC.\"",
+            "\"From down the railroad track, the\nchug-chug of a gas engine announces that\nthe repair gang is coming home.\"",
+            "\"The Dixie Pike has grown from a goat\npath in Africa.\"",
+            "\"Dixie Pike is what they call it.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q29). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q030",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q30",
+          "passageTitle": "Quotation — Q30",
+          "passage": "The Age of Innocence is a 1920 novel by Edith\nWharton set in New York City in the 1870s. In\nthe novel, Newland Archer arrives late to an\nopera performance, which the narrator\nattributes to Newland's enjoyment of\nanticipation:______________",
+          "prompt": "Which quotation from The Age of Innocence\nbest illustrates the claim?",
+          "options": [
+            "\"To come to the Opera in a [carriage for\nhire] was almost as honourable a way of\narriving as in one's own carriage.\"",
+            "\"[T]hinking over a pleasure to come often\ngave [Newland] a subtler satisfaction than\nits realisation.\"",
+            "\"When Newland Archer opened the door\nat the back of the club box the curtain had\njust gone up on the garden scene. There\nwas no reason why the young man should\nnot have come earlier, for he had dined at\nseven, alone with his mother and sister.\"",
+            "\"No expense had been spared on the\nsetting, which was acknowledged to be\nvery beautiful even by people who shared\n[Newland's] acquaintance with the Opera\nhouses of Paris and Vienna.\""
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 6, Q30). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q031",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q31",
+          "passageTitle": "Quotation — Q31",
+          "passage": "\"The Bet\" is an 1889 short story by Anton\nChekhov. In the story, a banker is described as\nbeing very upset about something:\n________",
+          "prompt": "Which quotation from \"The Bet\" most\neffectively illustrates the claim?",
+          "options": [
+            "\"Then the banker cautiously broke the\nseals off the door and put the key in the\nkeyhole.\"",
+            "\"It struck three o'clock, the banker\nlistened; everyone was asleep in the house\nand nothing could be heard outside but\nthe rustling of the chilled trees.\"",
+            "\"The banker, spoilt and frivolous, with\nmillions beyond his reckoning, was\ndelighted at the bet.\"",
+            "\"When [the banker] got home he lay on his\nbed, but his tears and emotion kept him\nfor hours from sleeping.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q31). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q032",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q32",
+          "passageTitle": "Quotation — Q32",
+          "passage": "A Pair of Silk Stockings is an 1897 short story\nwritten by Kate Chopin. In the story, Mrs.\nSommers becomes engrossed in the decision of\nhow she should spend a recently obtained sum\nof money:__________",
+          "prompt": "Which quotation from \"A Pair of Silk\nStockings\" most effectively illustrates the claim?",
+          "options": [
+            "\"The question of investment was one that\noccupied her greatly. For a day or two she\nwalked about apparently in a dreamy\nstate, but really absorbed in speculation\nand calculation.\"",
+            "\"She had learned to clutch a piece of goods\nand hold it and stick to it with persistence\nand determination till her turn came to be\nserved, no matter when it came.\"",
+            "\"A young girl who stood behind the\ncounter asked her if she wished to examine\ntheir line of silk hosiery. She smiled, just\nas if she had been asked to inspect a tiara\nof diamonds with the ultimate view of\npurchasing it.\"",
+            "\"It seemed to her a very large amount of\nmoney, and the way in which it stuffed and\nbulged her worn old porte-monnaie [small\npurse] gave her a feeling of importance\nsuch as she had not enjoyed for years.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q32). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q033",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q33",
+          "passageTitle": "Quotation — Q33",
+          "passage": "The Clouds is a 423 BCE play by Aristophanes,\noriginally written in ancient Greek. At the time,\nprofessional intellectuals called sophists taught\ncustomers rhetorical techniques to use in public\nspeaking, along with providing instruction in\nother subjects. In the play, Aristophanes\nsatirizes sophists as teaching people to speak\ndishonestly, as seen when the\ncharacter__________",
+          "prompt": "Which choice most effectively uses a quotation\nfrom a translation of The Clouds to illustrate\nthe claim?",
+          "options": [
+            "Strepsiades encourages his son to learn to\nbe a sophist, saying, \"If you have any\nconcern for your father's patrimony,\nbecome one of them.\"",
+            "Pheidippides says, after taking lessons\nfrom a sophist, \"How pleasant it is to be\nacquainted with new and clever things,\nand to be able to despise the established\nlaws!\"",
+            "Strepsiades, taking lessons from a sophist,\nsays he wants to become \"a fabricator of\nfalsehoods, inventive of words, a practiced\nknave in lawsuits..... a fox, a sharper, a\nslippery knave, a dissembler, a slippery\nfellow, an impostor.\"",
+            "Socrates, a sophist, says to a potential\ncustomer, \"I wish to briefly learn from you\nif you are possessed of a good memory.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q33). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q034",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q34",
+          "passageTitle": "Quotation — Q34",
+          "passage": "Memoirs of Elleanor Eldridge is an 1838\nhistorical account by Elleanor Eldridge and\nFrances Harriet Whipple Green. In the book,\nthe authors assert that all people naturally have\nan emotional attachment to where they live,\nwriting,",
+          "prompt": "Which quotation from Memoirs of Elleanor\nEldridge most effectively illustrates the claim?",
+          "options": [
+            "\"This little book is published for the\nexpress purpose of giving a helping hand\nto suffering and persecuted merit.\"",
+            "\"To give some idea of the high esteem in\nwhich the subject of the following\nnarrative is held, and the strong interest\nher misfortunes have excited, a few, from\nthe great number of recommendations in\nher possession, are selected.\"",
+            "\"Blessed are the slumbers of the innocent!\nThey are kindlier than balm, and they\nrefresh and gladden the spirit of childhood,\nlike ministerings from a better world.\"",
+            "\"Home is home, to the lowly as well as the\ngreat: and no rank, or color, destroys its\nsacred character, its power over the mind,\nand the affections.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q34). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q035",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q35",
+          "passageTitle": "Quotation — Q35",
+          "passage": "Many music streaming services also function as\nsocial media platforms: by giving users the\noption to follow friends and share curated\nplaylists or information about their listening\nhistory, these platforms allow people to convey\ntheir music preferences and listening activities\ndirectly to their social networks. In a 2023\nstudy, researcher Michael James Walsh\ninterviewed frequent users of a popular music\nstreaming platform to investigate how its social\nmedia dimensions shape their listening habits.\nWalsh found that these dimensions tended to\nmake study participants feel more mindful of\nhow their listening activities may be perceived,\nwhich in turn influenced how they managed\nthose activities.",
+          "prompt": "Which quotation from a music streaming\nplatform user would best illustrate Walsh's\nfinding?",
+          "options": [
+            "\"Listening to music through a streaming\nplatform feels a lot more passive, since I\ndon't need to make any deliberate choices\nabout what music I'm going to consume,\nlike I do when buying digital downloads or\nrecords and CDs.\"",
+            "\"When I create playlists or choose songs to\nlisten to, I often pick songs that I think\nthe friends who are following me might be\ninterested in listening to, rather than what\nI might actually prefer listening to in that\nmoment.\"",
+            "\"Because the predictions the platform\nmakes about what new songs I might like\ndepend on my past listening habits, at\ntimes its recommendations can feel overly\nrepetitive and unvarying.\"",
+            "\"The social aspects of music streaming\nmake it really easy to create a sense of a\nshared listening experience with my\nfriends, even if we aren't in the same\nroom.\""
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 6, Q35). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q036",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q36",
+          "passageTitle": "Quotation — Q36",
+          "passage": "A student is writing a research paper on the\nhistory of irrigation in the southwestern United\nStates, situating the development of Searsville\nLake (a man-made body of water created in San\nMateo County, California, in 1890) in a larger\nhistorical context. The student claims that some\nmodern-day irrigation methods used in\nsouthwestern states, such as California, Arizona,\nand New Mexico, have a lineage that long\npredates the completion of Searsville Lake.",
+          "prompt": "Which quotation from a historian best supports\nthe student's claim?",
+          "options": [
+            "\"The irrigation system developed by the\nHohokam people in what is now central\nArizona in the 7th century CE was simple\nbut made use of hydraulic engineering\ndesign principles that are still utilized by\ntoday's engineers.\"",
+            "\"The importance of the development of\nirrigation infrastructure in the American\nSouthwest today cannot be overstated,\nsince it is the most common means of\nconveying water for food production.\"",
+            "\"In the decades following the Second\nWorld War, irrigation of arid areas for\nagriculture increased to such a degree that\nit now accounts for roughly 70% of the\nworld' s water usage.\"",
+            "\"Sprinkler irrigation systems, which were\ndeveloped in the late 20th century, are a\nconvenient technique of irrigating that\nmakes use of machinery in order to spray\nwater in all directions. Many areas of the\nSouthwestern United States are currently\nirrigated by this method.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q36). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q037",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q37",
+          "passageTitle": "Quotation — Q37",
+          "passage": "The Clouds is a 423 BCE play by Aristophanes,\noriginally written in ancient Greek. At the time,\nprofessional intellectuals called sophists taught\ncustomers rhetorical techniques to use in public\nspeaking, along with providing instruction in\nother subjects. In the play, Aristophanes\nsatirizes sophists as having an exaggerated sense\nof their own wisdom, as seen when the character.",
+          "prompt": "Which choice most effectively uses a quotation\nfrom a translation of The Clouds to illustrate\nthe claim?",
+          "options": [
+            "Socrates, a sophist, says to a customer,\n\"You talk nonsense. Begone; I can't teach\nyou any longer.\"",
+            "Strepsiades says of a sophist business,\n\"There dwell men who in speaking of the\nheavens persuade people that it is an oven,\nand that it encompasses us, and that we\nare the embers. These men teach, if one\ngive them money, to conquer in speaking,\nright or wrong.\"",
+            "\"Because the predictions the platform\nmakes about what new songs I might like\ndepend on my past listening habits, at\ntimes its recommendations can feel overly\nrepetitive and unvarying.\"",
+            "Socrates, a sophist, says to a new\ncustomer, \"Come, then, take care that,\nwhenever I propound any clever dogma\nabout abstruse matters, you [seize]\nimmediately.\""
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 6, Q37). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q038",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q38",
+          "passageTitle": "Quotation — Q38",
+          "passage": "A student is writing a paper about classical\ncomposer Florence Beatrice Price for a music\nclass. In the paper, the student claims that\nPrice used African instruments in one of her\ncompositions.",
+          "prompt": "Which quotation from a work by a music\nhistorian would most directly support the\nunderlined claim?",
+          "options": [
+            "\"After moving to Chicago in 1927, Price\ncontinued her music studies.\"",
+            "\"In 2009, dozens of Price's compositions,\nincluding her Symphony no. 4, were found\nin an abandoned house outside of St.\nAnne, Illinois.\"",
+            "\"In her composition Symphony no. 1,\nPrice included African drums.\"",
+            "\"Price's success as a composer was notable\nin part because before her, no African\nAmerican woman had had a work\nperformed by a major US orchestra.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q38). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q039",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q39",
+          "passageTitle": "Quotation — Q39",
+          "passage": "\"The Monster\" is an 1898 story by Stephen\nCrane. In the story, the character of Jim, a\nyoung boy, is playing in his yard while his father\nmows the lawn; while Jim is pulling a cart\nbehind him, he accidentally damages a peony (a\nflower). Crane depicts Jim's initial belief that\nthe damage might be repaired or concealed:",
+          "prompt": "Which quotation from \"The Monster\" most\neffectively illustrates the claim?",
+          "options": [
+            "\"Finally [Jim] went to the peony and tried\nto stand it on its pins, resuscitated, but\nthe spine of it was hurt, and it could only\nhang limply from his hand.\"",
+            "\"Together [Jim and his father] crossed the\nlawn towards the flower-bed. At some\nyards from the broken peony Jimmie\nbegan to lag, 'There!' The word came\n[from Jim] almost breathlessly.\"",
+            "\"Little Jim was, for the time, engine\nNumber 36, and he was making the run\nbetween Syracuse and Rochester. He was\nfourteen minutes behind time, and the\nthrottle was wide open.\"",
+            "\"[Jim's father] had his back to the\naccident, and he continued to pace slowly\nto and fro, pushing the mower.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q39). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q040",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q40",
+          "passageTitle": "Quotation — Q40",
+          "passage": "\"No, Thank You, John\" is an 1862 poem by\nChristina Rossetti. In the poem, Rossetti\ndepicts a female speaker's rejection of the\nromantic advances of a man named John. The\nspeaker encourages John to pursue another\nrelationship rather than wait for her to change\nher mind, saying",
+          "prompt": "Which quotation from \"No, Thank You, John\"\nmost effectively illustrates the claim?",
+          "options": [
+            "\"I never said I loved you, John: / Why\nwill you teaze me day by day, / And wax a\nweariness to think upon / With always\n'do' and 'pray'?\"",
+            "\"I dare say Meg or Moll would take / Pity\nupon you, if you'd ask. / And pray don't\nremain single for my sake / Who can't\nperform that task.\"",
+            "\"Here's friendship for you if you like; but\nlove— / No, thank you, John.\"",
+            "\"Let's strike hands as hearty friends; / No\nmore, no less; and friendship's good: /\nOnly don't keep in view ulterior ends /\nAnd points not understood.\""
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 6, Q40). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q041",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q41",
+          "passageTitle": "Quotation — Q41",
+          "passage": "A student is writing an essay on the subject of\ncultured meat, which is grown in a laboratory\nand is intended to help reduce the number of\nlivestock harvested for food. The student wants\nto make the case that cultured meat production\nmay be useful in responding to an expected\nwidespread change in the public's behavior .",
+          "prompt": "Which quotation from a publication by a\nresearcher would most effectively support the\nstudent's claim?",
+          "options": [
+            "\"Researchers who advocate for the\ndevelopment of lab-grown meat claim that\nit's better for the environment than\nconventional meat because it requires less\nwater consumption.\"",
+            "\"The flavor of meat from livestock differs\nacross species (from pig to chicken to cow),\nand is also influenced by farming\nconditions and the breeds and genders of\nanimals.\"",
+            "\"A growing population that is including\nsignificantly more meat in its diet will\ncontribute to an increasing demand for\nmeat products in the 21st century.\"",
+            "\"Consumers tend to believe that using less\npackaging when selling meat products in\nstores would have a significant effect on\nthe environment.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q41). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q042",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q42",
+          "passageTitle": "Quotation — Q42",
+          "passage": "Poems is an 1895 collection of poetry by Frances\nE.W. Harper. In one of Harper's poems, the\nspeaker criticizes activists who champion\nhumanitarian causes in other countries while\noverlooking local concerns, saying",
+          "prompt": "Which quotation from Poems most effectively\nillustrates the claim?",
+          "options": [
+            "\"Men may tread down the poor and lowly,\n/ May crush them in anger and hate, /\nBut surely the mills of God's justice / Will\ngrind out the grist of their fate.\" (from\n\"An Appeal to My Countrywomen\")",
+            "\"When ye plead for the wrecked and fallen.\n/ The exile from far-distant shores./\nRemember that men are still wasting /\nLife's crimson around your own doors.\"\n(from \"An Appeal to My Countrywomen*)",
+            "\"God bless our native land, / Land of the\nnewly free,? Oh may she ever stand / For\ntruth and liberty.\" (from \"God Bless Our\nNative Land\")",
+            "\"Let me make the songs for the people. /\nSongs for the old and young: / Songs to\nstir like a battle-cry / Wherever they are\nsung.\" (from \"Songs for the People\")"
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 6, Q42). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q043",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q43",
+          "passageTitle": "Quotation — Q43",
+          "passage": "In a paper for an art history class, a student\nclaims that Rosa Bonheur's 1855 painting The\nHorse Fair marks a significant change in\nBonheur's artistic development.",
+          "prompt": "Which quotation from an art history textbook\nwould most effectively support the student's\nclaim?",
+          "options": [
+            "\"The paintings that Bonheur produced\nbefore The Horse Fair can be thought of as\nbelonging to her earlier style, to which she\nnever returned.\"",
+            "\"Of all Bonheur's paintings, none so\nclearly represents her abilities and ideas as\nThe Horse Fair.\"",
+            "\"The Horse Fair has been analyzed\nextensively since it was first exhibited, as\nno two viewers seem to agree about\nexactly what the painting means.\"",
+            "\"Although Bonheur was clearly influenced\nby other artists of her time, she was also\nan artist ahead of her time, as The Horse\nFair demonstrates.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q43). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q044",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q44",
+          "passageTitle": "Quotation — Q44",
+          "passage": "\"Poetry\" is a 1919 poem by Marianne Moore.\nThe poem highlights an ambivalence toward\npoetry as the speaker acknowledges its merits\nwhile also expressing a sense of displeasure,\nwriting",
+          "prompt": "Which quotation from \"Poetry\" most effectively\nillustrates the claim?",
+          "options": [
+            "\"nor is it valid / to discriminate against\nbusiness documents and / school-books';\nall these phenomena are important.\"",
+            "\"One must make a distinction / however:\nwhen dragged into prominence by half\npoets, the result is not / poetry \"",
+            "\"when [poems] become so derivative as to\nbecome unintelligible, the / same thing\nmay be said for all of us that we / do not\nadmire what / we cannot understand.\"",
+            "\"Reading [poetry], however, with a perfect\ncontempt for it, one discovers that there is\nin /it after all, a place for the genuine.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q44). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q045",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q45",
+          "passageTitle": "Quotation — Q45",
+          "passage": "Cane is a 1923 novel by Jean Toomer. In one\nportion of the novel, Toomer uses figurative\nlanguage to connect the narrator's urban\nenvironment of Washington, DC, and the rural\nSouth of the narrator's past, writing,",
+          "prompt": "Which quotation from Cane most effectively\nillustrates the claim?",
+          "options": [
+            "\"The [train] engines of this valley have a\nwhistle, the echoes of which sound like\niterated gasps and sobs. I always think of\nthem as crude music.\"",
+            "\"I sang, with a strange quiver in my voice,\na promise-song.\"",
+            "\"The young trees had not outgrown their\n[planter] boxes then. V Street lin\nWashington, DC] was lined with them.\"",
+            "\"And when the wind is from the South,\nsoil of my homeland falls like a fertile\nshower upon the lean streets of\n[Washington, DC].\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q45). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q046",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q46",
+          "passageTitle": "Quotation — Q46",
+          "passage": "\"The Monster\" is an 1898 story by Stephen\nCrane. In the story, whenever Jimmie, a young\nboy, has been scolded by his father for\nmisbehavior, he seeks comfort from Henry\nJohnson, the man responsible for the care of\nJimmie's father's horses. However, Henry does\nnot always provide such comfort; Crane suggests\nthis by writing",
+          "prompt": "Which quotation from The Monster most\neffectively illustrates the claim?",
+          "options": [
+            "\"For one thing, Jimmie was invariably\novercome with reverence when he was told\nhow beautifully a harness was polished or\na horse groomed.\"",
+            "\"Henry... could usually provide a sin to\nplace himself on a footing with the\ndisgraced one. Perhaps he would\nremember that he had forgotten to put the\nhitching-strap in the back of the buggy on\nsome recent occasion, and had been\nreprimanded by [Jimmie's father].\"",
+            "\"Henry would sometimes choose to\nabsolutely repudiate [Jimmie's behavior],\nand when Jimmie appeared in his shame\nwould bully him most virtuously,\npreaching with assurance the precepts of\n[Jimmie's father's] creed, and pointing out\nto Jimmie all of his abominations.\"",
+            "\"Whenever Henry dwelt for a time in\nsackcloth [a symbol of guilt over\nwrongdoing], Jimmie did not patronize\nhim at all.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q46). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q047",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q47",
+          "passageTitle": "Quotation — Q47",
+          "passage": "Life Among the Paiutes is an 1882\nautobiographical narrative by Sarah\nWinnemucca Hopkins, a Northern Paiute\nauthor, educator, and activist. In the work,\nWinnemucca directly addresses the reader to\nexplain certain customs, writing\n.",
+          "prompt": "Which quotation from Life Among the Paiutes\nmost effectively illustrates the claim?",
+          "options": [
+            "\"Now, my dear reader, there is no word so\nendearing as the word father, and that is\nwhy [my people] call all good people father\nor mother. \"",
+            "\"We would all go in company to see if the\nflowers we were named for were yet in\nbloom, for almost all the girls are named\nfor flowers.\"",
+            "\"During the time my grandfather was\naway in California, where he [stayed] till\nafter the Mexican war, there was a\ngirl-baby born in our family.\"",
+            "\"But how can I describe the scene that\nfollowed? Some of you, dear readers, can\nimagine. \""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q47). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q048",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q48",
+          "passageTitle": "Quotation — Q48",
+          "passage": "The Wonderful Wizard of Oz is a 1900 novel by\nL. Frank Baum. In the novel, the narrator\ndescribes a character's house as having become\nvery faded in appearance over time:",
+          "prompt": "Which quotation from The Wonderful Wizard of\nOz most effectively illustrates the claim?",
+          "options": [
+            "\"Once more [Dorothy and her companions]\ncould see fences built beside the road; but\nthese were painted green, and when they\ncame to a small house, in which a farmer\nevidently lived, that also was painted\ngreen. \"",
+            "\"Then [Dorothy] went back to the house,\nand having helped herself and Toto to a\ngood drink of the cool, clear water, she set\nabout making ready for the journey to the\nCity of Emeralds. \"",
+            "\"Once the house had been painted, but\nthe sun blistered the paint and the rains\nwashed it away, and now the house was as\ndull and gray as everything else. \"",
+            "\"When Dorothy stood in the doorway and\nlooked around, she could see nothing but\nthe great gray prairie on every side. Not a\ntree nor a house broke the broad sweep of\nflat country.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q48). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    },
+    {
+      "title": "Quotation — Set 3",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t06-q049",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q49",
+          "passageTitle": "Quotation — Q49",
+          "passage": "Life Among the Paiutes is an 1882\nautobiographical narrative by Sarah\nWinnemucca Hopkins, a Northern Paiute\nauthor, educator, and activist. In the work,\nWinnemucca directly addresses the reader to\nexplain certain customs, writing\n.",
+          "prompt": "Which quotation from Life Among the Paiutes\nmost effectively illustrates the claim?",
+          "options": [
+            "\"Now, my dear reader, there is no word so\nendearing as the word father, and that is\nwhy [my people] call all good people father\nor mother. \"",
+            "\"We would all go in company to see if the\nflowers we were named for were yet in\nbloom, for almost all the girls are named\nfor flowers. \"",
+            "\"During the time my grandfather was\naway in California, where he [stayed] till\nafter the Mexican war, there was a\ngirl-baby born in our family. \"",
+            "\"But how can I describe the scene that\nfollowed? Some of you, dear readers, can\nimagine. \""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q49). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q050",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q50",
+          "passageTitle": "Quotation — Q50",
+          "passage": "\"Aunt Sue's Stories\" is a 1926 poem by\nLangston Hughes. In the poem, the speaker\nindicates that the stories Aunt Sue tells are\nbased on Aunt Sue's personal experiences,\nsaying that",
+          "prompt": "Which choice most effectively uses a quotation\nfrom \"Aunt Sue's Stories\" to illustrate the claim",
+          "options": [
+            "a listening child \"knows that Aunt Sue /\nNever got her stories out of any book at\nall. / But that they came / Right out of\nher own life.\"",
+            "the people in the stories \"Mingle\nthemselves softly / In the flow of old Aunt\nSue's voice. / Mingle themselves softly.\"",
+            "dark shadows \"cross and recross / Aunt\nSue's stories.\"",
+            "the stories are told during \"Summer nights\non the front porch.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q50). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q051",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q51",
+          "passageTitle": "Quotation — Q51",
+          "passage": "A student is writing a research paper on the\nhistory of irrigation in the United States,\nsituating the development of the Bear River\nReservoir (created in Amador County,\nCalifornia, in 1900) in a large historical context.\nThe student claims that innovation in irrigation\npractices throughout the United States has led\nto designs with increased efficiency.",
+          "prompt": "Which quotation from a study of irrigation best\nsupports the student's claim?",
+          "options": [
+            "\"While the low humidity of Southern\nCalifornia's desert areas makes irrigation a\nrequirement if agriculture is to be a\nsuccess there, the relatively high humidity\nin the northern parts of the state makes\nsuch practices less necessary.\"",
+            "\"The importance of irrigation\ninfrastructure in the United States today\ncannot be overstated, since it is the most\nwidely utilized means of conveying water\nfor food production. Accordingly, any\nincrease in the efficiency of irrigation,\nhowever small, would be of significant\neconomic and social value.\"",
+            "\"The irrigation system developed by the\nHohokam people in the 7th century CE in\nwhat is now Arizona was simple but\napplied hydraulic engineering design\nfeatures that are still in use today.\"",
+            "\"Competition for water as a scarce\neconomic resource inspired the\ndevelopment of sprinkler irrigation\nsystems, which have contributed to the\nreduction of water used for irrigation in\nthe United States to 45% of the total\nwater usage of its population.\nComparatively, 70% of the world's water\nusage is dedicated to irrigation.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q51). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q052",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q52",
+          "passageTitle": "Quotation — Q52",
+          "passage": "Uncle Vanya: Scenes from Country Life in Four\nActs is an 1898 play by Anton Chekhov,\noriginally written in Russian. In the play,\nProfessor Serebrakoff and his wife Helena have\ncome to stay at their country estate, which\nVanya manages with the help of Sonia, the\nprofessor's daughter from a previous marriage.\nChekhov portrays the relationship between\nVanya and Professor Serebrakoff as being much\nmore strained than it once was, as is evident\nwhen",
+          "prompt": "Which quotation from a translation of Uncle\nVanya most effectively illustrates the claim?",
+          "options": [
+            "Professor Serebrakoff asks Vanya to leave\nthe room, saying, \"For the sake of our\nformer friendship do not protest against\ngoing. We will talk some other time.\"",
+            "Vanya says to Professor Serebrakoff, \"For\ntwenty-five years I have managed [the\ncountry estate], and have sent you the\nreturns from it like the most honest of\nservants, and you have never given me one\nsingle word of thanks for my work, not or\nneither in my youth nor now.\"",
+            "Vanya says of Professor Serebrakoff. \"He is\neverlastingly whining about his hard lot,\nthough, as a matter of fact, he is\nextraordinarily lucky.\"",
+            "Professor Serebrakoff says to Helena, \"It is\nfunny that everybody listens to [Vanya]\nand his old idiot of a mother, but the\nmoment I open my lips you all begin to\nfeel ill-treated.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q52). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q053",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q53",
+          "passageTitle": "Quotation — Q53",
+          "passage": "Memoirs of Elleanor Eldridge is an 1838\nhistorical account by Elleanor Eldridge and\nFrances Harriet Whipple Green. In the book,\nthe authors assert that all people naturally have\nan emotional attachment to where they live,\nwriting,",
+          "prompt": "Which quotation from Memoirs of Elleanor\nEldridge most effectively illustrates the claim?",
+          "options": [
+            "\"Having thus so comfortably established\nourselves, with no evil-minded\neaves-dropper to make us afraid, bend\nnow, dear reader, thy most earnest and\ndelicately adjusted ear; for I am going to\ntell thee a secret.\"",
+            "\"Home is home, to the lowly as well as the\ngreat; and no rank, or color, destroys its\nsacred character, its power over the mind,\nand the affections.\"",
+            "\"Blessed are the slumbers of the innocent!\nThey are kindlier than balm, and they\nrefresh and gladden the spirit of childhood,\nlike ministerings from a better world.\"",
+            "\"To give some idea of the high esteem in\nwhich the subject of the following\nnarrative is held, and the strong interest\nher misfortunes have excited, a few, from\nthe great number of recommendations in\nher possession, are selected.\""
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 6, Q53). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q054",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q54",
+          "passageTitle": "Quotation — Q54",
+          "passage": "Many music streaming services also function as\nsocial media platforms: by giving users the\noption to follow friends and share curated\nplaylists or information about their listening\nhistory, these platforms allow people to convey\ntheir music preferences and listening activities\ndirectly to their social networks. In a 2023\nstudy, researcher Michael James Walsh\ninterviewed frequent users of a popular music\nstreaming platform to investigate how its social\nmedia dimensions shape their listening habits.\nWalsh found that these dimensions tended to\nmake study participants feel more mindful of\nhow their listening activities may be perceived,\nwhich in turn influenced how they managed\nthose activities.",
+          "prompt": "Which quotation from a music streaming\nplatform user would best illustrate Walsh's\nfinding?",
+          "options": [
+            "\"Because the predictions the platform\nmakes about what new songs I might like\ndepend on my past listening habits, at\ntimes its recommendations can feel overly\nrepetitive and unvarying.\"",
+            "\"Listening to music through a streaming\nplatform feels a lot more passive, since I\ndon't need to make any deliberate choices\nabout what music I'm going to consume,\nlike I do when buying digital downloads or\nrecords and CDs.\"",
+            "\"The social aspects of music streaming\nmake it really easy to create a sense of a\nshared listening experience with my\nfriends, even if we aren't in the same\nroom.\"",
+            "\"When I create playlists or choose songs to\nlisten to, I often pick songs that I think\nthe friends who are following me might be\ninterested in listening to, rather than what\nI might actually prefer listening to in that\nmoment.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q54). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q055",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q55",
+          "passageTitle": "Quotation — Q55",
+          "passage": "A student is writing a research paper on the\nhistory of irrigation in the southwestern United\nStates, situating the development of Searsville\nLake (a man-made body of water created in San\nMateo County, California, in 1890) in a larger\nhistorical context. The student claims that some\nmodern-day irrigation methods used in\nsouthwestern states, such as California, Arizona,\nand New Mexico, have a lineage that long\npredates the completion of Searsville Lake.",
+          "prompt": "Which quotation from a historian best supports\nthe student's claim?",
+          "options": [
+            "\"Sprinkler irrigation systems, which were\ndeveloped in the late 20th century, are a\nconvenient technique of irrigating that\nmakes use of machinery in order to spray\nwater in all directions. Many areas of the\nSouthwestern United States are currently\nirrigated by this method.\"",
+            "\"The irrigation system developed by the\nHohokam people in what is now central\nArizona in the 7th century CE was simple\nbut made use of hydraulic engineering\ndesign principles that are still utilized by\ntoday's engineers.\"",
+            "\"The importance of the development of\nirrigation infrastructure in the American\nSouthwest today cannot be overstated,\nsince it is the most common means of\nconveying water for food production.\"",
+            "\"In the decades following the Second\nWorld War, irrigation of arid areas for\nagriculture increased to such a degree that\nit now accounts for roughly 70% of the\nworld's water usage.\""
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 6, Q55). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q056",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q56",
+          "passageTitle": "Quotation — Q56",
+          "passage": "The Clouds is a 423 BCE play by Aristophanes,\noriginally written in ancient Greek. At the time,\nprofessional intellectuals called sophists taught\ncustomers rhetorical techniques to use in public\nspeaking, along with providing instruction in\nother subjects. In the play, Aristophanes\nsatirizes sophists as having an exaggerated sense\nof their own wisdom, as seen when the character",
+          "prompt": "Which choice most effectively uses a quotation\nfrom a translation of The Clouds to illustrate\nthe claim?",
+          "options": [
+            "Socrates, a sophist, says to a new\ncustomer, \"Come, then, take care that,\nwhenever I propound any clever dogma\nabout abstruse matters, you [seize]\nimmediately.\"",
+            "Strepsiades says of a sophist business,\n\"There dwell men who in speaking of the\nheavens persuade people that it is an oven,\nand that it encompasses us, and that we\nare the embers. These men teach, if one\ngive them money, to conquer in speaking,\nright or wrong.\"",
+            "Socrates, a sophist, says to a potential\ncustomer, \"Is the power of speaking, pray,\nimplanted in your nature?\"",
+            "Strepsiades encourages his son to learn to\nbe a sophist, saying, \"Reform your habits\nas quickly as possible, and go and learn\nwhat I advise."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 6, Q56). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q057",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q57",
+          "passageTitle": "Quotation — Q57",
+          "passage": "A student is writing a paper about classical\ncomposer Florence Beatrice Price for a music\nclass. In the paper, the student claims that\nPrice used African instruments in one of her\ncompositions.",
+          "prompt": "Which quotation from a work by a music\nhistorian would most directly support the\nunderlined claim?",
+          "options": [
+            "\"After moving to Chicago in 1927, Price\ncontinued her music studies.\"",
+            "\"In 2009, dozens of Price's compositions,\nincluding her Symphony no. 4, were found\nin an abandoned house outside of St.\nAnne, Illinois.\"",
+            "\"In her composition Symphony no. 1,\nPrice included African drums.\"",
+            "\"Price's success as a composer was notable\nin part because before her, no African\nAmerican woman had had a work\nperformed by a major US orchestra.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q57). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q058",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q58",
+          "passageTitle": "Quotation — Q58",
+          "passage": "\"The Monster\" is an 1898 story by Stephen\nCrane. In the story, the character of Jim, a\nyoung boy, is playing in his yard while his father\nmows the lawn; while playing, Jim accidentally\ndamages a peony (a flower). Crane emphasizes\nJim's energy and his distracted absorption in his\nplay by writing,",
+          "prompt": "Which quotation from The Monster most\neffectively illustrates the claim?",
+          "options": [
+            "\"Finally [Jim] went to the peony and tried\nto stand it on its pins, resuscitated, but\nthe spine of it was hurt, and it could only\nhang limply from his hand.\"",
+            "\"Together [Jim and his father] crossed the\nlawn towards the flower-bed. At some\nyards from the broken peony Jimmie\nbegan to lag. 'There!' The word came\n[from Jim] almost breathlessly.\"",
+            "\"Little Jim was, for the time, engine\nNumber 36, and he was making the run\nbetween Syracuse and Rochester. He was\nfourteen minutes behind time, and the\nthrottle was wide open.\"",
+            "\"[Jim's father] had his back to the\naccident, and he continued to pace slowly\nto and fro, pushing the mower.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q58). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q059",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q59",
+          "passageTitle": "Quotation — Q59",
+          "passage": "\"'No, Thank You, John'\" is an 1862 poem by\nChristina Rossetti. In the poem, Rossetti\ndepicts a female speaker's rejection of the\nromantic advances of a man named John. The\nspeaker encourages John to pursue another\nrelationship rather than wait for her to change\nher mind, saying",
+          "prompt": "Which quotation from \"'No, Thank You, John'\"\nmost effectively illustrates the claim?",
+          "options": [
+            "\"I never said I loved you, John: / Why will\nyou teaze me day by day, / And wax a\nweariness to think upon / With always\n'do' and 'pray'?\"",
+            "\"I dare say Meg or Moll would take / Pity\nupon you, if you'd ask. / And pray don't\nremain single for my sake / Who can't\nperform that task.\"",
+            "\"Here's friendship for you if you like; but\nlove— / No, thank you, John.\"",
+            "\"Let's strike hands as hearty friends; / No\nmore, no less; and friendship's good: /\nOnly don't keep in view ulterior ends /\nand points not understood.\""
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 6, Q59). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q060",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q60",
+          "passageTitle": "Quotation — Q60",
+          "passage": "A student is writing an essay on the subject of\ncultured meat, which is grown in a laboratory\nand is intended to help reduce the number of\nlivestock harvested for food. The student wants\nto make the case that cultured meat production\nmay be useful in responding to an expected\nwidespread change in the public's behavior.",
+          "prompt": "Which quotation from a publication by a\nresearcher would most effectively support the\nstudent's claim?",
+          "options": [
+            "\"Researchers who advocate for the\ndevelopment of lab-grown meat claim that\nit's better for the environment than\nconventional meat because it requires less\nwater consumption.\"",
+            "\"The flavor of meat from livestock differs\nacross species (from pig to chicken to cow),\nand is also influenced by farming\nconditions and the breeds and genders of\nanimals.\"",
+            "\"A growing population that is including\nsignificantly more meat in its diet will\ncontribute to an increasing demand for\nmeat products in the 21st century.\"",
+            "\"Consumers tend to believe that using less\npackaging when selling meat products in\nstores would have a significant effect on\nthe environment.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q60). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q061",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q61",
+          "passageTitle": "Quotation — Q61",
+          "passage": "Poems is an 1895 collection of poetry by Frances\nE.W. Harper. In one of Harper's poems, the\nspeaker criticizes activists who champion\nhumanitarian causes in other countries while\noverlooking local concerns, saying",
+          "prompt": "Which quotation from a publication by a\nresearcher would most effectively support the\nstudent's claim?",
+          "options": [
+            "\"God bless our native land, / Her homes\nand children bless, / Oh may she ever\nstand / For truth and righteousness.\"\n(from \"God Bless Our Native Land\")",
+            "\"Men may tread down the poor and lowly\n/ May crush them in anger and hate / But\nsurely the mills of God's justice / Will\ngrind out the grist of their fate.\" (from\n\"An Appeal to My Countrywomen\")",
+            "\"Say not the age is hard and cold-/ I think\nit brave and grand / When men of diverse\nsects and creeds / Are clasping hand in\nhand.\" (from \"The Present Age\")",
+            "\"When ye plead for the wrecked and\nfallen, / The exile from far-distant shores,\n/ Remember that men are still wasting /\nLife's crimson around your own doors.\"\n(from \"An Appeal to My Countrywomen\")"
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q61). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q062",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q62",
+          "passageTitle": "Quotation — Q62",
+          "passage": "In a paper for an art history class, a student\nclaims that Rosa Bonheur's 1855 painting The\nHorse Fair marks a significant change in\nBonheur's artistic development.",
+          "prompt": "Which quotation from an art history textbook\nwould most effectively support the student's\nclaim?",
+          "options": [
+            "\"The paintings that Bonheur produced\nbefore The Horse Fair can be thought of as\nbelonging to her earlier style, to which she\nnever returned.\"",
+            "\"Of all Bonheur's paintings, none so\nclearly represents her abilities and ideas as\nThe Horse Fair.\"",
+            "\"The Horse Fair has been analyzed\nextensively since it was first exhibited, as\nno two viewers seem to agree about\nexactly what the painting means.\"",
+            "\"Although Bonheur was clearly influenced\nby other artists of her time, she was also\nan artist ahead of her time, as The Horse\nFair demonstrates.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q62). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q063",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q63",
+          "passageTitle": "Quotation — Q63",
+          "passage": "\"Poetry\" is a 1919 poem by Marianne Moore.\nThe poem highlights an ambivalence toward\npoetry as the speaker acknowledges its merits\nwhile also expressing a sense of displeasure,\nwriting",
+          "prompt": "Which quotation from \"Poetry\" most effectively\nillustrates the claim?",
+          "options": [
+            "\"nor is it valid / to discriminate against\n'business documents and /school-books';\nall these phenomena are important.\"",
+            "\"One must make a distinction / however:\nwhen dragged into prominence by half\npoets, the result is not / poetry\"",
+            "\"when [poems] become so derivative as to\nbecome unintelligible, the / same thing\nmay be said for all of us that we / do not\nadmire what / we cannot understand.\"",
+            "\"Reading [poetry], however, with a perfect\ncontempt for it, one discovers that there is\nin/ it after all, a place for the genuine.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q63). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q064",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q64",
+          "passageTitle": "Quotation — Q64",
+          "passage": "Cane is a 1923 novel by Jean Toomer. In one\nportion of the novel, Toomer uses figurative\nlanguage to connect the narrator's urban\nenvironment of Washington, DC, and the rural\nSouth of the narrator's past, writing,",
+          "prompt": "Which quotation from Cane most effectively\nillustrates the claim?",
+          "options": [
+            "\"The [train] engines of this valley have a\nwhistle, the echoes of which sound like\niterated gasps and sobs. I always think of\nthem as crude music.\"",
+            "\"I sang, with a strange quiver in my voice,\na promise-song.\"",
+            "\"The young trees had not outgrown their\n[planter] boxes then. V Street [in\nWashington, DC] was lined with them.\"",
+            "\"And when the wind is from the South,\nsoil of my homeland falls like a fertile\nshower upon the lean streets of\n[Washington, DC].\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q64). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q065",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q65",
+          "passageTitle": "Quotation — Q65",
+          "passage": "Life Among the Paiutes is an 1882\nautobiographical narrative by Sarah\nWinnemucca Hopkins, a Northern Paiute\nauthor, educator, and activist. In the work,\nWinnemucca directly addresses the reader to\nexplain certain customs, writing",
+          "prompt": "Which quotation from Life Among the Paiutes\nmost effectively illustrates the claim?",
+          "options": [
+            "\"Now, my dear reader, there is no word so\nendearing as the word father, and that is\nwhy [my people] call all good people father\nor mother. \"",
+            "\"We would all go in company to see if the\nflowers we were named for were yet in\nbloom, for almost all the girls are named\nfor flowers. \"",
+            "\"During the time my grandfather was\naway in California, where he [stayed] till\nafter the Mexican war, there was a\ngirl-baby born in our family. \"",
+            "\"But how can I describe the scene that\nfollowed? Some of you, dear readers, can\nimagine. \""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q65). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q066",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q66",
+          "passageTitle": "Quotation — Q66",
+          "passage": "The Wonderful Wizard of Oz is a 1900 novel by\nL. Frank Baum. In the novel, the narrator\ndescribes a character's house as having become\nvery faded in appearance over time:",
+          "prompt": "Which quotation from The Wonderful Wizard of\nOz most effectively illustrates the claim?",
+          "options": [
+            "\"Once more [Dorothy and her companions]\ncould see fences built beside the road; but\nthese were painted green, and when they\ncame to a small house, in which a farmer\nevidently lived, that also was painted\ngreen. \"",
+            "\"Then [Dorothy] went back to the house,\nand having helped herself and Toto to a\ngood drink of the cool, clear water, she set\nabout making ready for the journey to the\nCity of Emeralds. \"",
+            "\"Once the house had been painted, but\nthe sun blistered the paint and the rains\nwashed it away, and now the house was as\ndull and gray as everything else. \"",
+            "\"When Dorothy stood in the doorway and\nlooked around, she could see nothing but\nthe great gray prairie on every side. Not a\ntree nor a house broke the broad sweep of\nflat country.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q66). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q067",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q67",
+          "passageTitle": "Quotation — Q67",
+          "passage": "\"The Monster\" is an 1898 story by Stephen\nCrane. In the story, whenever Jimmie, a young\nboy, has been scolded by his father for\nmisbehavior, he seeks comfort from Henry\nJohnson, the man responsible for the care of\nJimmie's father's horses. However, Henry does\nnot always provide such comfort; Crane suggests\nthis by writing,",
+          "prompt": "Which quotation from \"The Monster\" most\neffectively illustrates the claim?",
+          "options": [
+            "\"For one thing, Jimmie was invariably\novercome with reverence when he was told\nhow beautifully a harness was polished or\na horse groomed.\"",
+            "\"Henry... could usually provide a sin to\nplace himself on a footing with the\ndisgraced one. Perhaps he would\nremember that he had forgotten to put the\nhitching-strap in the back of the buggy on\nsome recent occasion, and had been\nreprimanded by [Jimmie's father].\"",
+            "\"Henry would sometimes choose to\nabsolutely repudiate [Jimmie's behavior],\nand when Jimmie appeared in his shame\nwould bully him most virtuously,\npreaching with assurance the precepts of\n[Jimmie's father's] creed, and pointing out\nto Jimmie all of his abominations.\"",
+            "\"Whenever Henry dwelt for a time in\nsackcloth [a symbol of guilt over\nwrongdoing], Jimmie did not patronize\nhim at all.\""
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 6, Q67). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q068",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q68",
+          "passageTitle": "Quotation — Q68",
+          "passage": "\"Aunt Sue's Stories\" is a 1926 poem by\nLangston Hughes. In the poem, the speaker\nindicates that the stories Aunt Sue tells are\nbased on Aunt Sue's personal experiences,\nsaying that",
+          "prompt": "Which choice most effectively uses aquotation\nfrom \"Aunt Sue's Stories\" to illustrate the\nclaim?",
+          "options": [
+            "a listening child \"knows that Aunt Sue /\nNever got her stories out of any book at\nall./But that they came / Right out of her\nown life.\"",
+            "the people in the stories \"Mingle\nthemselves softly/ In the flow of old Aunt\nSue's voice./Mingle themselves softly.\"",
+            "dark shadows \"cross and recross/Aunt\nSue's stories.\"",
+            "the stories are told during \"Summer nights\non the front porch.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q68). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q069",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q69",
+          "passageTitle": "Quotation — Q69",
+          "passage": "A student is writing a research paper on the\nhistory of Irrigation in the United States.\nsituating the development of the Bear River\nReservoir (created in Amador County,\nCalifornia, in 1900) in a larger historical context.\nThe student claims that innovation in Irrigation\npractices throughout the United States has led\nto designs with increased efficiency.",
+          "prompt": "Which quotation from a study of irrigation best\nsupports the student's claim?",
+          "options": [
+            "\"While the low humidity of Southern\nCalifornia's desert areas makes irrigation a\nrequirement if agriculture is to be a\nsuccess there, the relatively high humidity\nin the northern parts of the state makes\nsuch practices less necessary.\"",
+            "\"The importance of irrigation\ninfrastructure in the United States today\ncannot be overstated, since it is the most\nwidely utilized means of conveying water\nfor food production. Accordingly, any\nincrease in the efficiency of irrigation,\nhowever small, would be of significant\neconomic and social value.\"",
+            "\"The irrigation system developed by the\nHohokam people in the 7th century CE in\nwhat is now Arizona was simple but\napplied hydraulic engineering design\nfeatures that are still in use today.\"",
+            "\"Competition for water as a scarce\neconomic resource inspired the\ndevelopment of sprinkler irrigation\nsystems, which have contributed to the\nreduction of water used for irrigation in\nthe United States to 45% of the total\nwater usage of its population.\nComparatively, 70% of the world's water\nusage is dedicated to irrigation.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q69). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q070",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q70",
+          "passageTitle": "Quotation — Q70",
+          "passage": "Uncle Vanya: Scenes from Country Life in Four\nActs is an 1898 play by Anton Chekhov,\noriginally written in Russian. In the play,\nProfessor Serebrakoff and his wife Helena have\ncome to stay at their country estate, which\nVanya manages with the help of Sonia, the\nprofessor's daughter from a previous marriage.\nChekhov portrays the relationship between\nVanya and Professor Serebrakoff as being much\nmore strained than it once was, as is evident\nwhen",
+          "prompt": "Which quotation from a translation of Uncle\nVanya most effectively illustrates the claim?",
+          "options": [
+            "Professor Serebrakoff asks Vanya to leave\nthe room, saying, \"For the sake of our\nformer friendship do not protest against\ngoing. We will talk some other time.\"",
+            "Vanya says to Professor Serebrakoff, \"For\ntwenty-five years I have managed [the\ncountry estate], and have sent you the\nreturns from it like the most honest of\nservants, and you have never given me one\nsingle word of thanks for my work, not\none—neither in my youth nor now.\"",
+            "Vanya says of Professor Serebrakoff, \"He is\neverlastingly whining about his hard lot,\nthough, as a matter of fact, he is\nextraordinarily lucky.\"",
+            "Professor Serebrakoff says to Helena, \"It is\nfunny that everybody listens to [Vanya]\nand his old idiot of a mother, but the\nmoment I open my lips you all begin to\nfeel ill-treated.\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q70). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q071",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q71",
+          "passageTitle": "Quotation — Q71",
+          "passage": "The Wonderful Wizard of Ozis a 1900 novel by\nL. Frank Baum. In the novel, Dorothy lives in\nKansas with her aunt and uncle, but she later\nfinds herself in a land called Oz. The narrator\nindicates that her aunt and uncle's house in\nKansas is remote and solitary, writing that",
+          "prompt": "Which quotation fromThe Wonderful Wizard of\nOz most effectively illustrates the claim?",
+          "options": [
+            "in Oz, \"Dorothy [and her companions]\npassed through the rest of the forest in\nsafety, and when they came out from its\ngloom saw before them a steep hill,\ncovered from top to bottom with great\npieces of rock.\"",
+            "in Oz, \"Dorothy fell asleep only once, and\nthen she dreamed she was in Kansas,\nwhere Aunt Em was telling her how glad\nshe was to have her little girl at home\nagain.\"",
+            "in Kansas, \"Dorothy lived in the midst of\nthe great Kansas prairies, with Uncle\nHenry, who was a farmer, and Aunt Em,\nwho was the farmer's wife.\"",
+            "in Kansas, \"When Dorothy stood in the\ndoorway and looked around, she could see\nnothing but the great gray prairie on every\nside. Not a tree nor a house broke the\nbroad sweep of flat country.\""
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 6, Q71). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t06-q072",
+          "skill": "Quotation",
+          "domain": "Information and Ideas",
+          "focus": "Select the quotation that most effectively illustrates or supports the claim",
+          "source": "SAToplam 2.0 · Topic 6 · Q72",
+          "passageTitle": "Quotation — Q72",
+          "passage": "Uncle Vanya: Scenes from Country Life in Four\nActs is an 1898 play by Anton Chekhov,\noriginally written in Russian. In the play,\nProfessor Serebrakoff and his wife Helena have\ncome to stay at their country estate, which\nVanya manages with the help of Sonia, the\nprofessor's daughter from a previous marriage.\nChekhov portrays Vanya as feeling\nunderappreciated by the professor, as is evident\nwhen",
+          "prompt": "Which quotation from a translation of Uncle\nVanya most effectively illustrates the claim?",
+          "options": [
+            "Vanya says to Professor Serebrakoff, \"For\ntwenty-five years I have managed this\nplace [the estate], and have sent you the\nreturns from it like the most honest of\nservants, and you have never given me one\nsingle word of thanks for my work, not\none—neither in my youth nor now.\"",
+            "Professor Serebrakoff says to Helena, \"Of\ncourse I see that it is foolish for me to live\nso long, but wait! I shall soon set you all\nfree. My life cannot drag on much longer.\"",
+            "Vanya says to Professor Serebrakoff, \"We\nused to think of you as almost\nsuperhuman, but now the scales have\nfallen from my eyes and I see you as you\nare! You write an art without knowing\nanything about it. Those books of yours\nwhich I used to admire are not worth one\ncopper kopeck. You are a hoax!\"",
+            "Vanya says to himself, \"I was proud of\n[Professor Serebrakoff] and of his learning;\nI received all his words and writings as\ninspired and now? Now he has retired, and\nwhat is the total of his life? A blank!\""
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 6, Q72). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    }
+  ]
+}

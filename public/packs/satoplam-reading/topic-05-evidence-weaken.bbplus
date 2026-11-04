@@ -1,0 +1,339 @@
+{
+  "format": "bbplus",
+  "version": 1,
+  "type": "practice",
+  "title": "SAToplam 2.0 — Command of Evidence - Weaken",
+  "description": "Official real exam SAT reading practice questions (March 2023 – August 2025) compiled by @satashkent. Domain: Information and Ideas.",
+  "modules": [
+    {
+      "title": "Command of Evidence - Weaken",
+      "section": "reading",
+      "questions": [
+        {
+          "id": "satoplam-t05-q001",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q1",
+          "passageTitle": "Command of Evidence - Weaken — Q1",
+          "passage": "17.5 sec. (*Exam level)\nHypothesizing that lullabies, characterized by\ntheir slow tempos, are universally calming to\ninfants, Constance M. Bainbridge and colleagues\nplayed a lullaby sung in the Scottish Gaelic\nlanguage and a non-lullaby sung in the Seri\nlanguage to a group of infants. The team found\nthat the infants' heart rates decreased more\nduring the lullaby than during the non-lullaby.\nSince a decrease in heart rate is associated with\nrelaxation, the team concluded that the lullaby\nrelaxed the infants. Noting that reduced heart\nrate can also be associated with increased\nattention, one critic argues that instead, the\nlullaby simply attracted the infants' attention.\nBainbridge and colleagues also measured pupil\nsize, as pupils typically become larger when a\nstimulus captures a person's attention.",
+          "prompt": "Which finding, if true, would most directly\nweaken critic's claim?",
+          "options": [
+            "Blinking, which indicates attention, was\nequally frequent whether infants were\nlistening to the song in Scottish Gaelic or\nsong in Seri.",
+            "Neither the Scottish Gaelic language nor\nthe melody of the traditional Scots lullaby\nwas familiar to infants in the study.",
+            "The infants' pupils were smaller when the\ninfants were listening to lullabies than\nwhen they were listening to non-lullabies.",
+            "Parents of infants in the study chose the\nlullaby over the non-lullaby when asked\nwhich song they would use to calm their\nchild."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 5, Q1). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q002",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q2",
+          "passageTitle": "Command of Evidence - Weaken — Q2",
+          "passage": "Dinosaurs, with the exception of the ancestors of\nbirds, disappeared during a mass extinction 65\nmillion years ago when an asteroid struck the\nEarth. Because a high metabolic rate has\ngenerally been suggested as one of the key\nadvantages when it comes to surviving mass\nextinctions, some genetic palaeontologists have\nproposed that birds survived while non-avian\ndinosaurs did not because of the birds' increased\nmetabolic capacity.",
+          "prompt": "Which finding, if true, would undermine the\ngenetic paleontologists' proposal?",
+          "options": [
+            "The metabolisms of non-avian dinosaurs\nmay have decreased over time.",
+            "Because some non-avian dinosaurs moved\nquickly, they likely had high metabolic\nrates.",
+            "Birds have some of the highest metabolism\nrates of any creatures on Earth.",
+            "Many dinosaurs with very high metabolic\nrates went extinct 65 million years ago."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 5, Q2). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q003",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q3",
+          "passageTitle": "Command of Evidence - Weaken — Q3",
+          "passage": "Hypothesizing that lullabies, characterized by\ntheir lower melodic complexity, are universally\ncalming to infants, Constance and colleagues\nplayed a lullaby sung in the Luk Saami language\nand a non-lullaby sung in the Tundra language\nto a group of infants. The team found that the\ninfants' heart rates and pupil size both\ndecreased more during the lullaby than during\nthe non-lullaby. Since a decrease in heart rate is\nassociated with relaxation, the team concluded\nthat the lullaby relaxed the infants. However,\nnoting that reduced heart rate can also be\nassociated with increased attention, one critic\nargues that instead, the lullaby simply attracted\nthe infants' attention.",
+          "prompt": "Which finding, if true, would most weaken the\ncritic's claim?",
+          "options": [
+            "More frequent blinking has also been found\nto be a reliable indication of attention.",
+            "Parents of infants in the study preferred\nthe Luk Saami lullaby over the other.",
+            "Increased attention to a stimulus is usually\naccompanied by an increase in pupil size.",
+            "Infants of the study had no familiarity\nwith either of them."
+          ],
+          "answer": 2,
+          "explanation": "Correct answer is C (Answer Key: Topic 5, Q3). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q004",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q4",
+          "passageTitle": "Command of Evidence - Weaken — Q4",
+          "passage": "Callie W Babbitt, Hema Madaka, and colleagues\nassembled a database of materials used in\nconsumer electronics by studying products in\nthe lab and by gathering data from similar\nproduct studies. The team gave each of these\nstudies a rating for level of traceability (with a\nhigher rating for clearer description of\nprocedures) and for category consistency (with a\nhigher rating for using materials categories more\nclosely aligned with the categories in the team's\ndatabase). Based on these ratings, a second\nresearch team concluded that the methodology\nwas better explained in a study by Jaco\nHuisman and colleagues than it was in a study\nby Oguchi Masahiro and colleagues.",
+          "prompt": "Which finding, if true, would most directly\nchallenges the second research team's\nconclusion?",
+          "options": [
+            "The study by Huisman and colleagues had\na lower traceability rating than the study\nby Oguchi and colleagues did.",
+            "The study by Huisman and colleagues had\na high consistency rating and a high\ntraceability rating.",
+            "The study by Huisman and colleagues had\na lower consistency rating than the study\nby Oguchi and colleagues did.",
+            "The study by Oguchi and colleagues had a\nlow consistency rating and a low\ntraceability rating."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 5, Q4). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q005",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q5",
+          "passageTitle": "Command of Evidence - Weaken — Q5",
+          "passage": "Rafael Nunez and colleagues studied how\nmembers of the Yupno, an Indigenous group in\nPapua New Guinea, conceptualize time. The\nresearchers recorded Yupno speakers explaining\ncertain temporal words and phrases, such as\nkalip bishap, a past-oriented expression that\ntranslates to \"past times,\" and coded each\nspeaker's manual gestures. Previous research\nhas found a tendency in many cultures to make\ntemporal distinctions using spatial concepts and\ngestures, particularly along egocentric axes (i.e.,\nrelative to the orientation of the speaker): for\ninstance, Spanish speakers often refer to the\nleft/right axis to describe events in time. In an\nanthropology paper, a student claims that the\ntendency toward ego-based conceptualizations of\ntime is universal.",
+          "prompt": "Which finding, if true, would most directly\nweaken the student's claim?",
+          "options": [
+            "A Yupno speaker points in opposite\ndirections when indicating a past event\nversus a future event.",
+            "Some Yupno grammatical structures used\nwhen talking about time are also used in\nSpanish.",
+            "Although Yupno speakers and Spanish\nspeakers both use gestures to indicate\norientation in time, Yupno speakers tend\nto use fewer gestures overall when\nspeaking than Spanish speakers do.",
+            "When Yupno speakers who are outdoors\nuse gestures to refer to the future, they\npoint uphill from their current location\nregardless of which way they are facing."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 5, Q5). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q006",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q6",
+          "passageTitle": "Command of Evidence - Weaken — Q6",
+          "passage": "Callie W. Babbitt, Hema Madaka, and\ncolleagues assembled a database of materials\nused in consumer electronics by studying\nproducts in the lab and by gathering data from\nsimilar product studies. The team gave each of\nthese studies a rating for level of traceability\n(with a higher rating for clearer descriptions of\nprocedures) and for category consistency (with a\nhigher rating for using materials categories more\nclosely aligned with the categories in the team's\ndatabase). Based on these ratings, a second\nresearch team concluded that the methodology\nwas better explained in a study by Greg L.\nKozak and Gregory A. Keoleian than it was in a\nstudy by Martin Streicher-Porte and colleagues.",
+          "prompt": "Which finding, if true, would most directly\nchallenge the second research team's conclusion?",
+          "options": [
+            "The study by Kozak and Keoleian had a\nlower consistency rating than the study by\nStreicher-Porte and colleagues did.",
+            "The study by Kozak and Keoleian had a\nhigh consistency rating and a high\ntraceability rating.",
+            "The study by Streicher-Porte and\ncolleagues had a medium consistency\nrating and a medium traceability rating.",
+            "The study by Kozak and Keoleian had a\nlower traceability rating than the study by\nStreicher-Porte and colleagues did."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 5, Q6). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q007",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q7",
+          "passageTitle": "Command of Evidence - Weaken — Q7",
+          "passage": "Rafael Núñez and colleagues studied how\nmembers of the Yupno, an Indigenous group in\nPapua New Guinea, conceptualize time. The\nresearchers recorded Yupno speakers explaining\ncertain temporal words and phrases, such as\nabjuk, a present-oriented expression that\ntranslates to \"now,\" and coded each speaker's\nmanual gestures. Previous research has found a\ntendency in many cultures to make temporal\ndistinctions using spatial concepts and gestures,\nparticularly along egocentric axes (i.e., relative\nto the orientation of the speaker): for instance,\nEnglish speakers often refer to the front/back\naxis to describe events in time. In an\nanthropology paper, a student claims that the\ntendency toward ego-based conceptualizations of\ntime is universal.",
+          "prompt": "Which finding, if true, would most directly\nweaken the student's claim?",
+          "options": [
+            "Some Yupno grammatical structures used\nwhen talking about time are also used in\nEnglish.",
+            "When Yupno speakers who are outdoors\nuse gestures to refer to the past, they\npoint downhill from their current location\nregardless of which way they are facing.",
+            "A Yupno speaker points in opposite\ndirections when indicating a past event\nversus a future event.",
+            "Although Yupno speakers and English\nspeakers both use gestures to indicate\norientation in time, Yupno speakers tend\nto use fewer gestures overall when\nspeaking than English speakers do."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 5, Q7). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q008",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q8",
+          "passageTitle": "Command of Evidence - Weaken — Q8",
+          "passage": "Geneticist Elaine Ostrander led an international\ncollaboration in which Norbert Benecke and\nother researchers investigated the evolutionary\nhistory of size variation in modern dogs. The\nresearchers identified multiple versions of the\ngene regulating the production of IGF-1\n(insulin-like growth factor 1) in dogs and found\nthat dogs of the same breed consistently share\nthe same version of the gene. In a discussion of\nthe study, a student hypothesizes that small\nbreeds of dogs (for example, Havaneses) must\nshare a version that represses IGF-1 production\nthat would otherwise confer larger body size.",
+          "prompt": "Which finding, if true, would most directly\nweaken the student's claim?",
+          "options": [
+            "The majority of the most prevalent dog\nbreeds have limited activity in the gene\nthat regulates IGF-1 production.",
+            "The gene that regulates IGF-1 production\nis not the only gene that influences body\nsize in dogs but is the only such gene that\nshows within-breed version consistency.",
+            "The degree of size variation among dogs is\ngreater than that of any other land-based\nmammal.",
+            "Some breeds with small body sizes and low\nIGF-1 concentrations have a different\nversion of the gene regulating IGF-1\nproduction than do toy poodles."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 5, Q8). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q009",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q9",
+          "passageTitle": "Command of Evidence - Weaken — Q9",
+          "passage": "Students in a biology class investigated why\nindividual house mice (Mus musculus) can differ\nfrom one another in their susceptibility to\ncataracts in old age. The students compared\nwild-type mice and knockout mice, which are\nmice with specific genes deactivated, when mice\nof each type were raised in similar naturalistic\nenvironments and periodically tested for\ncataracts. Finding that knockout mice with the\ngene Aasdh deactivated tended to develop\ncataracts more frequently than did wild-type\nmice, the students concluded that differences in\ncataract frequency among house mice in nature\nare solely attributable to variations in the level\nof expression of Aasdh.",
+          "prompt": "Which finding, if true, would most directly\nweaken the students' conclusion?",
+          "options": [
+            "Some wild-type mice were very similar to\nthe knockout mice with regard to cataract\nfrequency but showed a wide variety of\nexpression of Aasdh.",
+            "The level of expression of Aasdh does\nappear to affect the functioning of any\nother genes in house mice.",
+            "A sampling of house mice captured in\nnatural settings shows that individual\nmice can differ from one another in the\nlevel of expression Aasdh.",
+            "The mice with Aasdh deactivated were\nidentical to the wild-type mice except with\nregard to cataract frequency."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 5, Q9). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q010",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q10",
+          "passageTitle": "Command of Evidence - Weaken — Q10",
+          "passage": "Rafael Núñez and colleagues studied how\nmembers of the Yupno, an Indigenous group in\nPapua New Guinea, conceptualize time. The\nresearchers recorded Yupno speakers explaining\ncertain temporal words and phrases, such as\nkalip si ngan, a past-oriented expression that\ntranslates to \"a long time ago,\" and coded each\nspeaker's manual gestures. Previous research\nhas found a tendency in many cultures to make\ntemporal distinctions using spatial concepts and\ngestures, particularly along egocentric axes (i.e.,\nrelative to the orientation of the speaker): for\ninstance, English speakers often refer to the\nfront/back axis to describe events in time. In an\nanthropology paper, a student claims that the\ntendency toward ego-based conceptualizations of\ntime is universal.",
+          "prompt": "Which finding, if true, would most directly\nweaken the student's claim?",
+          "options": [
+            "Some Yupno grammatical structures used\nwhen talking about time are also used in\nEnglish.",
+            "When Yupno speakers who are outdoors\nuse gestures to refer to the future, they\npoint uphill from their current location\nregardless of which way they are facing.",
+            "A Yupno speaker points in opposite\ndirections when indicating a past event\nversus a future event.",
+            "Although Yupno speakers and English\nspeakers both use gestures to indicate\norientation in time, Yupno speakers tend\nto use fewer gestures overall when\nspeaking than English speakers do."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 5, Q10). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q011",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q11",
+          "passageTitle": "Command of Evidence - Weaken — Q11",
+          "passage": "Elaine Ostrander led an international\ncollaboration with Greger Larson and other\nresearchers to study the evolutionary history of\nsize differences in modern dogs, including very\nsmall breeds such as Pomeranians. The\nresearchers determined that among dogs as\nwhole, there are many different variations of the\ngene that regulates the production of IGF-1\n(insulin growth factor 1), a hormone that\npromotes growth. After reviewing the study, a\nstudent concludes that these variations must\naccount for the observed variance in body size\namong dog breeds.",
+          "prompt": "Which quotation from a scientist not involved in\nthe study would most directly undermine the\nstudent's conclusion?",
+          "options": [
+            "The researcher's conclusions regarding the\nIGF-1 gene may not apply to other species\ngiven that dogs vary in size more than any\nother group of land mammals does.",
+            "The gene that regulates IGF-1 production\nis one of multiple genes known to affect\nthe size of dogs.",
+            "In fact, only one third of the most\nprevalent dog breeds carry the same\nvariant of the gene regulating IGF-1\nproduction.",
+            "Variations of the IGF-1 gene result in\nsubstantial body size variance among dog\nbreeds and may influence additional\ncharacteristics as well."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 5, Q11). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q012",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q12",
+          "passageTitle": "Command of Evidence - Weaken — Q12",
+          "passage": "Water flowing around an obstruction creates\nvortices (swirls) that vary in size with the\nobstruction's size and position, and fish sense\nthese vortices in order to navigate around the\nobstructions. Using models of three fish-head\nshapes – narrow (low ratio of width to length),\nintermediate, and wide (high ratio of width to\nlength) – Yuzo R. Yanagisuru, Otar Akanyeti,\nand James C. Liao showed that as vortex size\nincreases, pressure fluctuations at the snout\nincrease for narrow-headed and\nintermediate-headed fish but remain low for\nwide-headed fish. A second research team has\ntherefore hypothesized that in low visibility\nconditions, a fish will be more likely to avoid an\nobstruction when the associated pressure\nfluctuations at the fish's snout are greater.",
+          "prompt": "Which finding, if true, would most directly\nchallenge the second research team's hypothesis?",
+          "options": [
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that the Synodontis macropunctata,\nwhich has a relatively wide head, bumped\ninto less than half of the obstructions.",
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that the intermediate-headed dusky\nsmooth-hound (Mustelus canis) bumped\ninto the obstructions just as often as the\nwide-headed Synodontis macropunctata\ndid.",
+            "A study using obstructions that created\nlarge vortices in low-visibility conditions\nfound that the wide-headed Synodontis\nmacropunctata bumped into obstructions\nmore often than the intermediate headed\ndusky smooth-hound (Mustelus canis) did.",
+            "A study using obstructions that created\nlarge vortices in low visibility conditions\nfound that some specimens of the\nintermediate-headed dusky smooth-hound\n(Mustelus canis) bumped into the\nobstructions more often than others did."
+          ],
+          "answer": 1,
+          "explanation": "Correct answer is B (Answer Key: Topic 5, Q12). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q013",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q13",
+          "passageTitle": "Command of Evidence - Weaken — Q13",
+          "passage": "Veronica L. Bura, Akito Y. Kawahara, and\nJayne E. Yack investigated the evolution and\nfunction of sound production in silk moth and\nhawk moth caterpillars. They found that during\nharmless simulated attacks on caterpillars, 33%\nof the tested species produced sound, which\nranged from clicks in Antheraea pernyi to\nwhistles in Phyllosphingia dissimilis. A second\nresearch team has claimed that caterpillars use\nthese sounds primarily to communicate with\nother members of their species.",
+          "prompt": "Which finding, if true, would most directly\nchallenge the second team's claim?",
+          "options": [
+            "Among the caterpillar species that\nproduced sound in response to simulated\nattacks, no individuals produced sound in\nthe minute before the attacks, but the vast\nmajority of individuals produced sound\nonce the simulated attacks began.",
+            "Most of the caterpillar species that were\nfound to not produce sound in response to\nsimulated attacks have been observed\nproducing sound during encounters with\nother members of their species.",
+            "Caterpillars that were found to produce\nsounds in response to simulated attacks\nare typically solitary and were tested in\nisolation.",
+            "The sounds caterpillars produced in\nresponse to the simulated attacks lacked\nacoustic characteristics that would make\nthem audible to bats, lizards, or birds,\nsome of the most frequent predators of\ncaterpillars."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 5, Q13). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q014",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q14",
+          "passageTitle": "Command of Evidence - Weaken — Q14",
+          "passage": "Elaine Ostrander led an international\ncollaboration with Victor F. Zaibert and other\nresearchers to study the evolutionary history of\nsize differences in modern dogs, including very\nsmall breeds such as chihuahuas. The\nresearchers determined that among dogs as a\nwhole, there are many different variations of the\ngene that regulates the production of IGF-1\n(insulin growth factor 1), a hormone that\npromotes growth. After reviewing the study, a\nstudent concludes that these variations must\naccount for the observed variance in body size\namong dog breeds.",
+          "prompt": "Which quotation from a scientist not involved in\nthe study would most directly undermine the\nstudent's conclusion?",
+          "options": [
+            "In fact, only one-third of the most\nprevalent dog breeds carry the same\nvariant of the gene regulating IGF-1\nproduction.",
+            "The researchers' conclusions regarding the\nIGF-1 gene may not apply to other species\ngiven that dogs vary in size more than any\nother group of land mammals does.",
+            "Variations of the IGF-1 gene result in\nsubstantial body size variance among dog\nbreeds and may influence additional\ncharacteristics as well.",
+            "The gene that regulates IGF-1 production\nis one of multiple genes known to affect\nthe size of dogs."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 5, Q14). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q015",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q15",
+          "passageTitle": "Command of Evidence - Weaken — Q15",
+          "passage": "Hypothesizing that lullabies, characterized by\ntheir slow tempos, are universally calming to\ninfants, Constance M. Bainbridge and colleagues\nplayed a lullaby sung in the Western Nahuatl\nlanguage and a non-lullaby sung in the Serbian\nlanguage to a group of infants. The team found\nthat the infants' heart rates and pupil size both\ndecreased more during the lullaby than during\nthe non-lullaby. Since a decrease in heart rate is\nassociated with relaxation, the team concluded\nthat the lullaby relaxed the infants. However,\nnoting that reduced heart rate can also be\nassociated with increased attention, one critic\nargues that instead, the lullaby simply attracted\nthe infants' attention.",
+          "prompt": "Which finding, if true, would most directly\nweaken the critic's claim?",
+          "options": [
+            "Parents of infants in the study preferred\nthe Western Nahuatl lullaby over the\nSerbian non-lullaby.",
+            "Infants in the study had never heard the\nWestern Nahuatl lullaby before.",
+            "More frequent blinking has also been found\nto be a reliable indication of attention.",
+            "Pupil size typically increases when a\nstimulus captures a person's attention."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 5, Q15). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q016",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q16",
+          "passageTitle": "Command of Evidence - Weaken — Q16",
+          "passage": "In what is now southern Florida, the Calusa\npeople (circa 1000-1600 CE) supported their\nrelatively large population's dietary needs with\nhydrological engineering rather than terrestrial\nfarming methods. They constructed watercourts\n(gated coastal enclosures) out of shells and\nsediments to trap a variety of fish as waters rose\nand fell with tides and seasonal sea-level shifts;\nwatercourt pools then held the fish for later\nconsumption. Archaeologist Theresa Schober\nhas posited an additional purpose of these\nenclosures, suggesting that they were intended\nto foster conch. She ties this hypothesis to the\nhigh value the sea snails would have had for the\nCalusa, both nutritionally and as a building\nmaterial (conch shells are highly durable).",
+          "prompt": "Which finding, if true, would most directly\nweaken the Schober's claim?",
+          "options": [
+            "Samples of animal remains collected at\nCalusa sites reflect a greater diversity of\nmarine species, particularly among sea\nsnails, within the perimeter of watercourts\nthan in locations known to have been\ndevoted to the preparation and\nconsumption of food.",
+            "Historical population-size estimates\nsuggest that the sea snails and fish most\ncommon in the Calusa diet were plentiful\nin open coastal waters when the\nwatercourts were constructed but\ndecreased in abundance in the years\nimmediately after construction.",
+            "Sediment layers excavated from Calusa\nwatercourt sites contain heterogeneous\nmixtures of scales from multiple species of\nfish and fragments of shells from various\ntypes of sea snails, but conch shells do not\nconstitute the majority of the mixture in\nmost of those layers.",
+            "Radar surveys of Calusa sites reveal\nwatercourt dimensions suitable for\nsustaining fish of many local species but\nnot conducive for maintaining the shallow\nenvironments with ample seagrasses that\nallow sea snails to thrive."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 5, Q16). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q017",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q17",
+          "passageTitle": "Command of Evidence - Weaken — Q17",
+          "passage": "Paleontologist Amane Tajika and colleagues\nanalyzed the shells of two marine mollusks\ncalled nautilids that were collected from waters\nnear New Caledonia. Sample M25 and other\nshell sections formed during adulthood suggest\nthat mature New Caledonian nautilids live at\nthe same depths as mature Fijian nautilids.\nHowever, sample F02, which formed while the\nnautilid was still in its egg, had a chemical\nsignature suggesting the egg had been laid in\nwater 140 meters deep, while Fijian nautilids\ntypically lay eggs at depths of at least 170\nmeters. Because water temperature decreases as\ndepth increases, a biology student hypothesized\nthat the New Caledonian nautilids lay their eggs\nin warmer water than Fijian nautilids do.",
+          "prompt": "Which finding, if true, would most directly\nweaken the student's hypothesis?",
+          "options": [
+            "New Caledonia nautilids tend to migrate\nupward to warmer water immediately after\nhatching, whereas Fijian nautilids do not.",
+            "There aren't enough suitable hatching\nareas at a depth of at least 170 meters in\nNew Caledonia for nautilids to lay their\neggs at that depth.",
+            "The water temperature at a given depth\ntends to be lower in waters near Fiji than\nit is at that depth in waters near New\nCaledonia.",
+            "The water temperature at a given depth\ntends to be higher in waters near Fiji than\nit is at that depth in waters near New\nCaledonia."
+          ],
+          "answer": 3,
+          "explanation": "Correct answer is D (Answer Key: Topic 5, Q17). Verified from SAToplam 2.0 Reading real exam compilation."
+        },
+        {
+          "id": "satoplam-t05-q018",
+          "skill": "Command of Evidence - Weaken",
+          "domain": "Information and Ideas",
+          "focus": "Identify evidence that weakens or undermines an argument or finding",
+          "source": "SAToplam 2.0 · Topic 5 · Q18",
+          "passageTitle": "Command of Evidence - Weaken — Q18",
+          "passage": "Some metals contain tungsten carbide\nnanoparticles (WC-NPs), which can leach into\nwaterways and soils via wastewater. In a 2018\nstudy, Mikael T. Ekvall and colleagues found\nthat WC-NPs can accumulate in the bodies of\nwater lice (Asellus aquaticus). While\nbioaccumulation of manufactured nanoparticles\nmay be inherently worrisome, it has been\nhypothesized that WC-NP bioaccumulation in\ninvertebrates like A. aquaticus could serve a\nvaluable proxy role, obviating the need for\nmanufacturers to conduct costly and intrusive\nsampling of vertebrate species—such as Perez's\nfrogs (Pelophylax perezi), commonly used in\nregulatory compliance testing—for nanoparticle\nbioaccumulation, as environmental protection\nlaws currently require.",
+          "prompt": "Which finding, if true, would most directly\nweaken the hypothesis presented in the text?",
+          "options": [
+            "Compared with P. perezi, A. aquaticus can\naccumulate detectable WC-NP\nconcentrations with significantly fewer\nnegative effects.",
+            "The rate of WC-NP uptake in A.\naquaticus differs from the rate of WC-NP\nuptake in P. perezi in a way that is not yet\nwell understood by researchers.",
+            "A. aquaticus has been shown to\naccumulate several other types of\nmanufactured nanoparticles in addition to\nWC-NPs, whereas P. perezi has been\nshown to accumulate only WC-NPs.",
+            "When A. aquaticus and P. perezi are\nexposed to similar levels of WC-NPs,\nconcentrations of WC-NPs in animals of\nboth species show little variation from\nindividual to individual."
+          ],
+          "answer": 0,
+          "explanation": "Correct answer is A (Answer Key: Topic 5, Q18). Verified from SAToplam 2.0 Reading real exam compilation."
+        }
+      ]
+    }
+  ]
+}

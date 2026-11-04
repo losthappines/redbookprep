@@ -3,7 +3,7 @@
  */
 export function formatSkillTitle(skill?: string | null): string {
   if (!skill || typeof skill !== 'string') return '';
-  const trimmed = skill.trim();
+  const trimmed = skill.replace(/&/g, ' & ').replace(/\s+/g, ' ').trim();
   if (!trimmed) return '';
 
   const minorWords = new Set([
@@ -24,6 +24,7 @@ export function formatSkillTitle(skill?: string | null): string {
     'in',
     'of',
     'with',
+    '&',
   ]);
 
   return trimmed
@@ -33,7 +34,7 @@ export function formatSkillTitle(skill?: string | null): string {
       // Strip punctuation for minor-word check
       const alphaWord = lower.replace(/[^a-z0-9]/gi, '');
       if (index > 0 && minorWords.has(alphaWord)) {
-        return lower;
+        return lower === '&' ? '&' : lower;
       }
       return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     })
