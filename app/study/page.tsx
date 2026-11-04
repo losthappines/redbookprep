@@ -67,68 +67,7 @@ const domains = [
   'Geometry and Trigonometry'
 ];
 
-const sampleQuestions: PracticeQuestion[] = [
-  {
-    id: 'transitions',
-    skill: 'Transitions',
-    section: 'Reading and Writing',
-    domain: 'Expression of Ideas',
-    focus: 'Identify a logical contrast between statements',
-    source: 'Skills Insight · Table 8 · p. 19',
-    passageTitle: 'Composite Materials in Aerospace Engineering',
-    passage: `During field trials conducted under sub-zero conditions in northern Alberta, researchers monitored the structural resilience of a newly synthesized titanium-graphene alloy. Because initial computational simulations had predicted stress fractures under cyclic thermal loads, the design team expected the prototype to fail under peak strain.\n\n[ _____ ], the revised molecular lattice sustained every mechanical shock test without detectable micro-fissures, demonstrating superior tensile elasticity across fluctuating temperatures.`,
-    prompt: 'Which choice completes the text with the most logical transition?',
-    options: [
-      { text: 'Nevertheless', letter: 'A' },
-      { text: 'For example', letter: 'B' },
-      { text: 'Similarly', letter: 'C' },
-      { text: 'Consequently', letter: 'D' }
-    ],
-    answer: 0,
-    explanation:
-      '"Nevertheless" signals the necessary contrast between the team\'s expectation of simulated failure and the prototype\'s actual mechanical resilience.'
-  },
-  {
-    id: 'linear',
-    skill: 'Linear Equations in One Variable',
-    section: 'Math',
-    domain: 'Algebra',
-    focus: 'Solve a linear equation in one variable',
-    source: 'Skills Insight · Table 11 · p. 29',
-    passageTitle: 'Courier Pricing Model & Route Formulation',
-    passage: `A regional logistics drone service calculates the total delivery charge in dollars using the linear function:\n\nC(x) = 3x + 7\n\nwhere C represents the total invoice cost in dollars, 3 is the rate charged per mile, and 7 represents a fixed dispatch fee. A customer placing an expedited order was charged a total of $22 for their delivery.`,
-    prompt: 'If 3x + 7 = 22, what is the delivery distance x in miles?',
-    options: [
-      { text: '3', letter: 'A' },
-      { text: '5', letter: 'B' },
-      { text: '7', letter: 'C' },
-      { text: '15', letter: 'D' }
-    ],
-    answer: 1,
-    explanation:
-      'Step 1: Subtract the fixed fee of 7 from both sides: 3x = 22 - 7 = 15.\nStep 2: Divide both sides by 3: x = 15 / 3 = 5 miles.'
-  },
-  {
-    id: 'evidence',
-    skill: 'Reading Evidence',
-    section: 'Reading and Writing',
-    domain: 'Information and Ideas',
-    focus: 'Identify evidence supporting an inference',
-    source: 'Skills Insight · Reading Evidence · Table 5',
-    passageTitle: 'Urban Planning and Transit-Oriented Development',
-    passage: `In an effort to revitalize municipal engagement, the town council authorized the construction of a public reading library directly adjacent to the western platform of the regional railway station.\n\nAccording to post-occupancy commuter surveys, the facility\'s central location made it exceptionally convenient for suburban residents to visit and borrow materials on their evening return journeys, precipitating a 42% surge in weekly circulation.`,
-    prompt: 'Which statement is best supported by the passage?',
-    options: [
-      { text: 'The library’s location was convenient for residents and commuters.', letter: 'A' },
-      { text: 'The library replaced the existing railway station building.', letter: 'B' },
-      { text: 'All residents of the town commuted exclusively by train.', letter: 'C' },
-      { text: 'The town had no books prior to the library opening.', letter: 'D' }
-    ],
-    answer: 0,
-    explanation:
-      'The passage directly confirms that the facility\'s location adjacent to the railway station made visits easy and convenient for residents returning home.'
-  }
-];
+const sampleQuestions: PracticeQuestion[] = [];
 
 type Attempt = {
   id: string;
@@ -229,13 +168,13 @@ export default function Page() {
 
   // Auto switch left tab based on section
   useEffect(() => {
-    if (q.section === 'Math') {
+    if (q?.section === 'Math') {
       // In math, if student opens question, default to passage or reference
       setLeftTab('passage');
     } else {
       setLeftTab('passage');
     }
-  }, [index, q.section]);
+  }, [index, q?.section]);
 
   // Timer
   useEffect(() => {
@@ -290,7 +229,7 @@ export default function Page() {
       const records=JSON.parse(localStorage.getItem('redbookprep-imports')||'[]');
       if(!Array.isArray(records))throw Error();
       questions=[...sampleQuestions,...records.flatMap((r:{pack:unknown;key:string})=>parseBbplus(r.pack,r.key))];
-      setQuestions(questions); void (async () => { try { const saved = JSON.parse(localStorage.getItem('redbookprep-imports') || '[]'); if (Array.isArray(saved) && saved.some((r: any) => String(r?.pack?.title || '').startsWith('Mathbook 3.0'))) { localStorage.setItem('redbookprep-imports', JSON.stringify(saved.filter((r: any) => !String(r?.pack?.title || '').startsWith('Mathbook 3.0')))); } } catch {} const builtInPacks = [{ url: '/packs/mathbook-3/algebra.bbplus?v=2', key: 'mathbook3-algebra' }, { url: '/packs/mathbook-3/advanced-math.bbplus?v=2', key: 'mathbook3-advanced-math' }, { url: '/packs/mathbook-3/problem-solving.bbplus?v=2', key: 'mathbook3-problem-solving' }, { url: '/packs/mathbook-3/geometry-trigonometry.bbplus?v=2', key: 'mathbook3-geometry-trigonometry' }]; try { const fetched = await Promise.all(builtInPacks.map(async ({ url, key }) => { const res = await fetch(url); if (!res.ok) return []; const raw = await res.json(); return parseBbplus(raw, key); })); const builtInQuestions = fetched.flat(); if (builtInQuestions.length) { setQuestions((old) => [...old.filter((q) => !String(q.materialTitle || '').startsWith('Mathbook 3.0')), ...builtInQuestions]); } } catch {} })();
+      try { if (Array.isArray(records) && records.some((r: any) => String(r?.pack?.title || '').startsWith('Mathbook 3.0'))) { const filteredRecords = records.filter((r: any) => !String(r?.pack?.title || '').startsWith('Mathbook 3.0')); localStorage.setItem('redbookprep-imports', JSON.stringify(filteredRecords)); questions = [...sampleQuestions, ...filteredRecords.flatMap((r: { pack: unknown; key: string }) => parseBbplus(r.pack, r.key))]; } } catch {} setQuestions(questions);
     } catch {setStorageError('Saved imported materials could not be loaded.');}
 
     try {
@@ -361,7 +300,7 @@ export default function Page() {
           setOpened(false);
         } else if (t === 'practice') {
           setView('Practice');
-          if (params.get('solve') === 'true') {
+          if (params.get('solve') === 'true' && questions.length > 0) {
             setOpened(true);
           } else {
             setOpened(false);
@@ -485,12 +424,12 @@ export default function Page() {
   }
 
   function nextQuestion() {
-    const position=moduleQuestions.findIndex(item=>item.id===q.id);
+    const position=q?moduleQuestions.findIndex(item=>item.id===q.id):-1;
     if (position === moduleQuestions.length - 1) reviewModule();
     else navigateQuestion(questions.findIndex(item=>item.id===moduleQuestions[position+1]?.id));
   }
 
-  const modulePosition=moduleQuestions.findIndex(item=>item.id===q.id);
+  const modulePosition=q?moduleQuestions.findIndex(item=>item.id===q.id):0;
   const moduleAnswers = moduleQuestions.map((item) => {const i=questions.findIndex(q=>q.id===item.id);return ({
     question: item,
     draft: i === index ? {choice, submitted, started, note: sessionNote} : questionDrafts.current[i],
@@ -517,7 +456,7 @@ export default function Page() {
   }
 
   function submit() {
-    if (choice === null || submitted || moduleFinished.current) return;
+    if (!q || choice === null || submitted || moduleFinished.current) return;
     setAttempts((a) => [
       ...a,
       {
@@ -540,7 +479,7 @@ export default function Page() {
   // Toggle Elimination for an answer choice
   function toggleEliminate(optIndex: number, e: React.MouseEvent) {
     e.stopPropagation();
-    const currentList = eliminated[q.id] || [];
+    if (!q) return; const currentList = eliminated[q.id] || [];
     if (currentList.includes(optIndex)) {
       setEliminated({ ...eliminated, [q.id]: currentList.filter((idx) => idx !== optIndex) });
     } else {
@@ -564,17 +503,17 @@ export default function Page() {
       className={
         "redbook-app "+(mobileSidebarOpen?"mobile-sidebar-open ":"")+(portraitDock?"portrait-dock-mode ":"")+
         (collapsed ? 'sidebar-folded ' : '') +
-        (opened && view === 'Practice' ? 'player-view' : 'dashboard-view')
+        (opened && Boolean(q) && view === 'Practice' ? 'player-view' : 'dashboard-view')
       }
     >
-      {!(opened && view === 'Practice') && view !== 'Ask redCoach' && <StudyBubbleBackground reduced={reduced} highContrast={highContrast}/>}
+      {!(opened && Boolean(q) && view === 'Practice') && view !== 'Ask redCoach' && <StudyBubbleBackground reduced={reduced} highContrast={highContrast}/>}
       <header className="topbar">
         <span aria-hidden="true" style={{position:'absolute',inset:'0 0 -48px',zIndex:0,pointerEvents:'none',background:'transparent',backdropFilter:'blur(24px)',WebkitBackdropFilter:'blur(24px)',maskImage:'linear-gradient(to bottom,black 0%,black 15%,#000c 40%,#0006 65%,#0002 85%,transparent 100%)',WebkitMaskImage:'linear-gradient(to bottom,black 0%,black 15%,#000c 40%,#0006 65%,#0002 85%,transparent 100%)'}} />
         <div className="rb-toolbar-start"><button ref={openSidebarRef} className="rb-icon-button rb-sidebar-open" aria-label="Open sidebar" aria-expanded={mobileSidebarOpen||!collapsed} onClick={toggleSidebar}><PanelLeft size={19}/></button><h2>{view==='Home'?'Dashboard':view==='Practice'?'Your Library':view}</h2></div>
         <div className="rb-toolbar-actions"><button className="rb-icon-button" aria-label={isDarkTheme?'Switch to light mode':'Switch to dark mode'} title={isDarkTheme?'Switch to light mode':'Switch to dark mode'} onClick={()=>setTheme(isDarkTheme?'light':'dark')}>{isDarkTheme?<Sun size={18}/>:<Moon size={18}/>}</button>{view==='Settings'?<span className="rb-saved"><span className="status-dot"/>{user?.isCloud||user?.uid?'Synced to Google Cloud':'Saved on this device'}</span>:<button className="primary" onClick={()=>{setSearch('');setSection('All sections');switchView('Practice')}}><BookOpen size={17}/> {view==='Practice'?'Browse all skills':'Start practice'}</button>}</div>
       </header>
       {mobileSidebarOpen&&<button className="rb-mobile-scrim" aria-label="Close navigation" onClick={()=>setMobileSidebarOpen(false)}/>}
-      <AnimatePresence>{portraitDock && !(opened && view === 'Practice') && (<motion.div className="rb-floating-dock-wrapper" initial={{ y: 56, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 56, opacity: 0 }} transition={{ type: 'spring', stiffness: 320, damping: 28 }}><LiquidNavbar compact tone={isDarkTheme ? 'dark' : 'light'} reducedMotion={reduced} ariaLabel="Portrait floating dock navigation" active={Math.max(0, navItems.findIndex((n) => n.key === view))} onChange={(idx) => { const target = navItems[idx]; if (target) switchView(target.key); }} items={navItems.map(({ key, label, icon: Icon, fx }) => ({ label, fx, icon: <Icon width={18} height={18} strokeWidth={1.85} />, badge: key === 'Mistakes' && reviewQueue.length > 0 ? reviewQueue.length : undefined }))} /></motion.div>)}</AnimatePresence>
+      <AnimatePresence>{portraitDock && !(opened && Boolean(q) && view === 'Practice') && (<motion.div className="rb-floating-dock-wrapper" initial={{ y: 56, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 56, opacity: 0 }} transition={{ type: 'spring', stiffness: 320, damping: 28 }}><LiquidNavbar compact tone={isDarkTheme ? 'dark' : 'light'} reducedMotion={reduced} ariaLabel="Portrait floating dock navigation" active={Math.max(0, navItems.findIndex((n) => n.key === view))} onChange={(idx) => { const target = navItems[idx]; if (target) switchView(target.key); }} items={navItems.map(({ key, label, icon: Icon, fx }) => ({ label, fx, icon: <Icon width={18} height={18} strokeWidth={1.85} />, badge: key === 'Mistakes' && reviewQueue.length > 0 ? reviewQueue.length : undefined }))} /></motion.div>)}</AnimatePresence>
       <aside className="sidebar" inert={portraitDock||smallViewport?!mobileSidebarOpen:collapsed} role={(portraitDock||smallViewport)&&mobileSidebarOpen?"dialog":undefined} aria-modal={(portraitDock||smallViewport)&&mobileSidebarOpen?true:undefined} aria-label="Study navigation">
         <div className="rb-side-brand"><a className="brand" href="/" aria-label="RedBookPrep home"><img src="/icon-192.png" alt="" width={39} height={39} className="brand-mark brand-mark-img"/><div><b>RedBookPrep</b><small>A little practice.<br/>More possibility.</small></div></a><button ref={closeSidebarRef} className="sidebar-toggle rb-icon-button" aria-label="Close sidebar" onClick={toggleSidebar}><PanelLeft size={19}/></button></div>
         <nav aria-label="Main navigation">{navItems.map(({key,label,icon:Icon})=><button key={key} aria-current={view===key?'page':undefined} className={view===key?'primary':''} onClick={()=>switchView(key)}><Icon size={20} strokeWidth={1.8}/><span className="nav-label">{label}</span>{key==='Mistakes'&&reviewQueue.length>0&&<span className="rb-count">{reviewQueue.length}</span>}</button>)}</nav>
@@ -604,12 +543,12 @@ export default function Page() {
           {/* ============================================================== */}
           {view === 'Practice' && (
             <>
-              {!opened ? (
+              {!opened || !q ? (
                 /* --- PRACTICE LIBRARY (COVERS) --- */
                 <>
                   <div className="rb-page-heading"><div><span className="eyebrow">PRACTICE, AT YOUR PACE</span><h1>Your Library</h1><p>Pick up where you left off, or discover something new.</p></div><small>{libraryQuestions.length} practice modules</small></div>
                   {(() => {
-                    const qCompleted = attempts.filter((a) => a.id === q.id).length;
+                    if (!q) return null; const qCompleted = attempts.filter((a) => a.id === q.id).length;
                     const hasStarted = qCompleted > 0;
                     return (
                       <section className="resume-card">
@@ -1543,7 +1482,7 @@ export default function Page() {
         </div>
       )}
 
-      <GraphCalculator open={showCalculator && opened && view === 'Practice' && q.section === 'Math'} onClose={() => setShowCalculator(false)} />
+      <GraphCalculator open={showCalculator && opened && view === 'Practice' && q?.section === 'Math'} onClose={() => setShowCalculator(false)} />
 
       <footer className="rb-app-footer">
         <p>RedBookPrep · Independent SAT preparation. Sample content is not official test material.</p>
