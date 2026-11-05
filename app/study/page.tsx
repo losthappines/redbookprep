@@ -247,7 +247,11 @@ export default function Page() {
           { url: '/packs/satoplam-reading/topic-10-underlined-purpose.bbplus?v=1', key: 'satoplam-underlined-purpose' },
           { url: '/packs/satoplam-reading/topic-11-cross-text-connections.bbplus?v=1', key: 'satoplam-cross-text-connections' },
           { url: '/packs/satoplam-reading/topic-12-words-in-context-gap-filling.bbplus?v=1', key: 'satoplam-words-in-context-gap-filling' },
-          { url: '/packs/satoplam-reading/topic-13-words-in-context-synonyms.bbplus?v=1', key: 'satoplam-words-in-context-synonyms' }
+          { url: '/packs/satoplam-reading/topic-13-words-in-context-synonyms.bbplus?v=1', key: 'satoplam-words-in-context-synonyms' },
+          { url: '/packs/satoplam-writing/topic-01-boundaries.bbplus?v=1', key: 'satoplam-writing-boundaries' },
+          { url: '/packs/satoplam-writing/topic-02-form-structure-and-sense.bbplus?v=1', key: 'satoplam-writing-form-structure-and-sense' },
+          { url: '/packs/satoplam-writing/topic-03-transitions.bbplus?v=1', key: 'satoplam-writing-transitions' },
+          { url: '/packs/satoplam-writing/topic-04-rhetorical-synthesis.bbplus?v=1', key: 'satoplam-writing-rhetorical-synthesis' }
         ];
         try {
           const fetched = await Promise.all(
