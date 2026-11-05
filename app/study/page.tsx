@@ -251,7 +251,11 @@ export default function Page() {
           { url: '/packs/satoplam-writing/topic-01-boundaries.bbplus?v=1', key: 'satoplam-writing-boundaries' },
           { url: '/packs/satoplam-writing/topic-02-form-structure-and-sense.bbplus?v=1', key: 'satoplam-writing-form-structure-and-sense' },
           { url: '/packs/satoplam-writing/topic-03-transitions.bbplus?v=1', key: 'satoplam-writing-transitions' },
-          { url: '/packs/satoplam-writing/topic-04-rhetorical-synthesis.bbplus?v=1', key: 'satoplam-writing-rhetorical-synthesis' }
+          { url: '/packs/satoplam-writing/topic-04-rhetorical-synthesis.bbplus?v=1', key: 'satoplam-writing-rhetorical-synthesis' },
+          { url: '/packs/mathbook-3/algebra.bbplus?v=2', key: 'mathbook3-algebra' },
+          { url: '/packs/mathbook-3/advanced-math.bbplus?v=2', key: 'mathbook3-advanced-math' },
+          { url: '/packs/mathbook-3/problem-solving.bbplus?v=2', key: 'mathbook3-problem-solving' },
+          { url: '/packs/mathbook-3/geometry-trigonometry.bbplus?v=2', key: 'mathbook3-geometry-trigonometry' }
         ];
         try {
           const fetched = await Promise.all(
