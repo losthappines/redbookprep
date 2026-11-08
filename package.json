@@ -10,7 +10,6 @@
     "release:html": "node standalone/build.cjs"
   },
   "dependencies": {
-    "@tabler/icons-react": "^3.31.0",
     "clsx": "^2.1.1",
     "firebase": "^11.4.0",
     "lucide-react": "^1.61.0",
