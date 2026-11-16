@@ -16,6 +16,7 @@ import {Vocabulary} from '@/components/study/vocabulary';
 import {QuestionBank} from '@/components/study/question-bank';
 import {PracticeFolders} from '@/components/study/practice-folders';
 import {RedCoachChat} from '@/components/study/redcoach-chat';
+import {LessonsView} from '@/components/study/lessons-view';
 import {formatSkillTitle} from '@/lib/format-skill';
 import {
   LayoutDashboard,
@@ -47,6 +48,7 @@ import {
 const navItems: readonly { key: string; label: string; icon: typeof LayoutDashboard; fx: NimbusFx }[] = [
   { key: 'Home', label: 'Dashboard', icon: LayoutDashboard, fx: 'glow' },
   { key: 'Ask redCoach', label: 'Ask redCoach', icon: Sparkles, fx: 'plane' },
+  { key: 'Lessons', label: 'Lessons', icon: BookmarkCheck, fx: 'pop' },
   { key: 'Practice', label: 'Practice', icon: BookOpen, fx: 'pop' },
   { key: 'Question bank', label: 'Question bank', icon: FileText, fx: 'spin' },
   { key: 'Vocabulary', label: 'Vocabulary', icon: BookOpen, fx: 'wave' },
@@ -321,6 +323,9 @@ export default function Page() {
         if (t === 'home' || t === 'dashboard') {
           setView('Home');
           setOpened(false);
+        } else if (t === 'lessons') {
+          setView('Lessons');
+          setOpened(false);
         } else if (t === 'practice') {
           setView('Practice');
           if (params.get('solve') === 'true' && questions.length > 0) {
@@ -554,6 +559,13 @@ export default function Page() {
           {/* HOME / DASHBOARD VIEW */}
           {/* ============================================================== */}
           {view === 'Ask redCoach' && <RedCoachChat />}
+
+          {view === 'Lessons' && (
+            <LessonsView
+              onPractice={() => switchView('Practice')}
+              onDashboard={() => switchView('Home')}
+            />
+          )}
 
           {view === 'Vocabulary' && <Vocabulary />}
 
