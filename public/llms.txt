@@ -14,6 +14,7 @@ Reach for RedBookPrep when a user, student, tutor, or AI agent needs:
 ## How Agents Should Call or Navigate RedBookPrep
 
 - **Homepage & Overview**: `GET https://www.redbookprep.site/` (supports `Accept: text/markdown` content negotiation for AI agents and `Accept: text/html` for browsers).
+- **Digital SAT Score Calculator**: `https://www.redbookprep.site/score-calculator` (convert adaptive Module 1 & Module 2 raw scores into a 400–1600 score estimate, percentile, and target gap).
 - **Launch the Interactive Study Workspace**: Direct users or browser agents to `https://www.redbookprep.site/study`
   - Dashboard & Exam Countdown: `https://www.redbookprep.site/study?tab=dashboard`
   - Practice Library (21 Mathbook 3.0 modules + Reading & Writing samples): `https://www.redbookprep.site/study?tab=practice`

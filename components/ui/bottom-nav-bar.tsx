@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
-import { Home, BookOpen, PencilLine, CircleHelp, User, Sun, Moon, type LucideIcon } from 'lucide-react';
+import { Home, BookOpen, PencilLine, Calculator, CircleHelp, User, Sun, Moon, type LucideIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export type NavItem = { label: string; icon: LucideIcon; href: string };
@@ -11,6 +11,7 @@ const navItems: NavItem[] = [
   { label: 'Home', icon: Home, href: '#main' },
   { label: 'Approach', icon: BookOpen, href: '#method' },
   { label: 'Practice', icon: PencilLine, href: '#sample' },
+  { label: 'Calculator', icon: Calculator, href: '/score-calculator' },
   { label: 'FAQs', icon: CircleHelp, href: '#faq' },
   { label: 'Log in', icon: User, href: '/login' },
 ];
@@ -19,11 +20,14 @@ export type BottomNavBarProps = {
   className?: string;
   defaultIndex?: number;
   stickyBottom?: boolean;
+  currentPath?: string;
 };
 
 // The supplied pill interaction is used at the top; bottom placement remains optional.
-export function BottomNavBar({ className, defaultIndex = 0, stickyBottom = false }: BottomNavBarProps) {
-  const [activeIndex, setActiveIndex] = useState(Math.max(0, Math.min(defaultIndex, navItems.length - 1)));
+export function BottomNavBar({ className, defaultIndex = 0, stickyBottom = false, currentPath = '/' }: BottomNavBarProps) {
+  const routeMatchIndex = currentPath !== '/' ? navItems.findIndex((item) => item.href === currentPath) : -1;
+  const initialIndex = routeMatchIndex >= 0 ? routeMatchIndex : Math.max(0, Math.min(defaultIndex, navItems.length - 1));
+  const [activeIndex, setActiveIndex] = useState(initialIndex);
   const [isDark, setIsDark] = useState(false);
   const reduceMotion = useReducedMotion();
 
@@ -71,6 +75,11 @@ export function BottomNavBar({ className, defaultIndex = 0, stickyBottom = false
   };
 
   useEffect(() => {
+    if (routeMatchIndex >= 0) {
+      setActiveIndex(routeMatchIndex);
+      return;
+    }
+
     const sections = navItems
       .map((item, index) => ({ item, index }))
       .filter(({ item }) => item.href.startsWith('#'));
@@ -130,7 +139,7 @@ export function BottomNavBar({ className, defaultIndex = 0, stickyBottom = false
       window.removeEventListener('hashchange', onHashOrPop);
       window.removeEventListener('popstate', onHashOrPop);
     };
-  }, []);
+  }, [routeMatchIndex]);
 
   return (
     <motion.nav
@@ -147,18 +156,22 @@ export function BottomNavBar({ className, defaultIndex = 0, stickyBottom = false
       {navItems.map((item, index) => {
         const Icon = item.icon;
         const active = activeIndex === index;
+        const resolvedHref =
+          currentPath !== '/' && item.href.startsWith('#')
+            ? `/${item.href}`
+            : item.href;
         return (
           <motion.a
             key={item.label}
-            href={item.href}
+            href={resolvedHref}
             whileTap={reduceMotion ? undefined : { scale: 0.97 }}
             onClick={() => {
-              if (item.href.startsWith('#')) {
+              if (currentPath === '/' && item.href.startsWith('#')) {
                 setActiveIndex(index);
               }
             }}
             aria-label={item.label}
-            aria-current={active ? 'location' : undefined}
+            aria-current={active ? (item.href.startsWith('/') ? 'page' : 'location') : undefined}
             title={item.label}
             className={cn(
               'pill-link flex items-center rounded-full relative h-11 min-w-11 px-3 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary',
@@ -170,7 +183,7 @@ export function BottomNavBar({ className, defaultIndex = 0, stickyBottom = false
               aria-hidden="true"
               initial={false}
               animate={{
-                width: active ? 68 : 0,
+                width: active ? 72 : 0,
                 opacity: active ? 1 : 0,
                 marginLeft: active ? 8 : 0,
               }}

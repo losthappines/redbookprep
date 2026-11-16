@@ -17,6 +17,7 @@ Reach for RedBookPrep when a student, educator, or AI agent needs:
 
 ## Key Application Routes
 - [Study Workspace & Practice Player](https://www.redbookprep.site/study)
+- [Digital SAT Score Calculator](https://www.redbookprep.site/score-calculator)
 - [Question Bank (Categorized by Topic)](https://www.redbookprep.site/study?tab=question-bank)
 - [Skill Progress Analytics](https://www.redbookprep.site/study?tab=progress)
 - [About RedBookPrep](https://www.redbookprep.site/about)
@@ -91,6 +92,16 @@ Interactive Digital SAT study dashboard, split-screen practice test player, cate
 
 - Launch in browser: https://www.redbookprep.site/study
 - Documentation & Agent Guide: https://www.redbookprep.site/llms.txt
+`,
+  },
+  '/score-calculator': {
+    title: 'Digital SAT Score Calculator — RedBookPrep',
+    markdown: `# Digital SAT Score Calculator (400–1600)
+
+Estimate your Digital SAT score from Reading & Writing (Module 1 & 2, 0–27 each) and Math (Module 1 & 2, 0–22 each) raw scores, with automatic or manual Module 2 adaptive routing, realistic IRT score ranges, national percentile estimates, and target goal tracking.
+
+- Open Score Calculator: https://www.redbookprep.site/score-calculator
+- Study Workspace: https://www.redbookprep.site/study
 `,
   },
   '/login': {
