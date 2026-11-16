@@ -94,22 +94,6 @@ export default function Page() {
   const libraryQuestions = questions
     .filter((q,i)=>!q.moduleId||questions.findIndex(item=>item.moduleId===q.moduleId)===i)
     .map(q=>({...q,questionCount:q.moduleId?questions.filter(item=>item.moduleId===q.moduleId).length:1}));
-  async function importMaterial(file:File) {
-    if (!file.name.toLowerCase().endsWith('.bbplus')) throw Error('Choose a .bbplus file.');
-    if (file.size > 5*1024*1024) throw Error('This file exceeds the 5 MB import limit.');
-    const content=await file.text();
-    let raw:unknown;
-    try{raw=JSON.parse(content.replace(/^\uFEFF/,''));}catch{throw Error('This .bbplus file does not contain valid JSON.');}
-    const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(content)))).map(n=>n.toString(16).padStart(2,'0')).join('');
-    const imported=parseBbplus(raw,hash);
-    const records=JSON.parse(localStorage.getItem('redbookprep-imports')||'[]');
-    if (!Array.isArray(records)) throw Error('Saved imports could not be read.');
-    if (!records.some((r:{key:string})=>r.key===hash)) {
-      try{localStorage.setItem('redbookprep-imports',JSON.stringify([...records,{key:hash,pack:raw}]))}catch{throw Error('Not enough browser storage to save this material.');}
-    }
-    setQuestions(old=>[...old,...imported.filter(q=>!old.some(item=>item.id===q.id))]);
-    return imported.filter((q,i)=>imported.findIndex(item=>item.moduleId===q.moduleId)===i).map(q=>({...q,skill:`${q.materialTitle} · ${q.moduleTitle}`}));
-  }
 
   const shellRef=useRef<HTMLElement>(null);
   const openSidebarRef=useRef<HTMLButtonElement>(null);
@@ -226,56 +210,50 @@ export default function Page() {
 
   // Initial load
   useEffect(() => {
-    let questions=sampleQuestions;
-    try {
-      const records=JSON.parse(localStorage.getItem('redbookprep-imports')||'[]');
-      if(!Array.isArray(records))throw Error();
-      questions=[...sampleQuestions,...records.flatMap((r:{pack:unknown;key:string})=>parseBbplus(r.pack,r.key))];
-      try { if (Array.isArray(records) && records.some((r: any) => String(r?.pack?.title || '').startsWith('Mathbook 3.0'))) { const filteredRecords = records.filter((r: any) => !String(r?.pack?.title || '').startsWith('Mathbook 3.0')); localStorage.setItem('redbookprep-imports', JSON.stringify(filteredRecords)); questions = [...sampleQuestions, ...filteredRecords.flatMap((r: { pack: unknown; key: string }) => parseBbplus(r.pack, r.key))]; } } catch {}
-      setQuestions(questions);
-      void (async () => {
-        const builtInPacks = [
-          { url: '/packs/satoplam-reading/topic-01-main-ideas.bbplus?v=1', key: 'satoplam-main-ideas' },
-          { url: '/packs/satoplam-reading/topic-02-details.bbplus?v=1', key: 'satoplam-details' },
-          { url: '/packs/satoplam-reading/topic-03-inference.bbplus?v=1', key: 'satoplam-inference' },
-          { url: '/packs/satoplam-reading/topic-04-evidence-support.bbplus?v=1', key: 'satoplam-evidence-support' },
-          { url: '/packs/satoplam-reading/topic-05-evidence-weaken.bbplus?v=1', key: 'satoplam-evidence-weaken' },
-          { url: '/packs/satoplam-reading/topic-06-quotation.bbplus?v=1', key: 'satoplam-quotation' },
-          { url: '/packs/satoplam-reading/topic-07-evidence-graphs.bbplus?v=1', key: 'satoplam-evidence-graphs' },
-          { url: '/packs/satoplam-reading/topic-08-main-purpose.bbplus?v=1', key: 'satoplam-main-purpose' },
-          { url: '/packs/satoplam-reading/topic-09-overall-structure.bbplus?v=1', key: 'satoplam-overall-structure' },
-          { url: '/packs/satoplam-reading/topic-10-underlined-purpose.bbplus?v=1', key: 'satoplam-underlined-purpose' },
-          { url: '/packs/satoplam-reading/topic-11-cross-text-connections.bbplus?v=1', key: 'satoplam-cross-text-connections' },
-          { url: '/packs/satoplam-reading/topic-12-words-in-context-gap-filling.bbplus?v=1', key: 'satoplam-words-in-context-gap-filling' },
-          { url: '/packs/satoplam-reading/topic-13-words-in-context-synonyms.bbplus?v=1', key: 'satoplam-words-in-context-synonyms' },
-          { url: '/packs/satoplam-writing/topic-01-boundaries.bbplus?v=1', key: 'satoplam-writing-boundaries' },
-          { url: '/packs/satoplam-writing/topic-02-form-structure-and-sense.bbplus?v=1', key: 'satoplam-writing-form-structure-and-sense' },
-          { url: '/packs/satoplam-writing/topic-03-transitions.bbplus?v=1', key: 'satoplam-writing-transitions' },
-          { url: '/packs/satoplam-writing/topic-04-rhetorical-synthesis.bbplus?v=1', key: 'satoplam-writing-rhetorical-synthesis' },
-          { url: '/packs/mathbook-3/algebra.bbplus?v=2', key: 'mathbook3-algebra' },
-          { url: '/packs/mathbook-3/advanced-math.bbplus?v=2', key: 'mathbook3-advanced-math' },
-          { url: '/packs/mathbook-3/problem-solving.bbplus?v=2', key: 'mathbook3-problem-solving' },
-          { url: '/packs/mathbook-3/geometry-trigonometry.bbplus?v=2', key: 'mathbook3-geometry-trigonometry' }
-        ];
-        try {
-          const fetched = await Promise.all(
-            builtInPacks.map(async ({ url, key }) => {
-              const res = await fetch(url);
-              if (!res.ok) return [];
-              const raw = await res.json();
-              return parseBbplus(raw, key);
-            })
-          );
-          const builtInQuestions = fetched.flat();
-          if (builtInQuestions.length) {
-            setQuestions((old) => [
-              ...old.filter((q) => !String(q.materialTitle || '').startsWith('SAToplam') && !String(q.materialTitle || '').startsWith('Mathbook 3.0')),
-              ...builtInQuestions
-            ]);
-          }
-        } catch {}
-      })();
-    } catch {setStorageError('Saved imported materials could not be loaded.');}
+    const questions = sampleQuestions;
+    setQuestions(questions);
+    void (async () => {
+      const builtInPacks = [
+        { url: '/packs/satoplam-reading/topic-01-main-ideas.bbplus?v=1', key: 'satoplam-main-ideas' },
+        { url: '/packs/satoplam-reading/topic-02-details.bbplus?v=1', key: 'satoplam-details' },
+        { url: '/packs/satoplam-reading/topic-03-inference.bbplus?v=1', key: 'satoplam-inference' },
+        { url: '/packs/satoplam-reading/topic-04-evidence-support.bbplus?v=1', key: 'satoplam-evidence-support' },
+        { url: '/packs/satoplam-reading/topic-05-evidence-weaken.bbplus?v=1', key: 'satoplam-evidence-weaken' },
+        { url: '/packs/satoplam-reading/topic-06-quotation.bbplus?v=1', key: 'satoplam-quotation' },
+        { url: '/packs/satoplam-reading/topic-07-evidence-graphs.bbplus?v=1', key: 'satoplam-evidence-graphs' },
+        { url: '/packs/satoplam-reading/topic-08-main-purpose.bbplus?v=1', key: 'satoplam-main-purpose' },
+        { url: '/packs/satoplam-reading/topic-09-overall-structure.bbplus?v=1', key: 'satoplam-overall-structure' },
+        { url: '/packs/satoplam-reading/topic-10-underlined-purpose.bbplus?v=1', key: 'satoplam-underlined-purpose' },
+        { url: '/packs/satoplam-reading/topic-11-cross-text-connections.bbplus?v=1', key: 'satoplam-cross-text-connections' },
+        { url: '/packs/satoplam-reading/topic-12-words-in-context-gap-filling.bbplus?v=1', key: 'satoplam-words-in-context-gap-filling' },
+        { url: '/packs/satoplam-reading/topic-13-words-in-context-synonyms.bbplus?v=1', key: 'satoplam-words-in-context-synonyms' },
+        { url: '/packs/satoplam-writing/topic-01-boundaries.bbplus?v=1', key: 'satoplam-writing-boundaries' },
+        { url: '/packs/satoplam-writing/topic-02-form-structure-and-sense.bbplus?v=1', key: 'satoplam-writing-form-structure-and-sense' },
+        { url: '/packs/satoplam-writing/topic-03-transitions.bbplus?v=1', key: 'satoplam-writing-transitions' },
+        { url: '/packs/satoplam-writing/topic-04-rhetorical-synthesis.bbplus?v=1', key: 'satoplam-writing-rhetorical-synthesis' },
+        { url: '/packs/mathbook-3/algebra.bbplus?v=2', key: 'mathbook3-algebra' },
+        { url: '/packs/mathbook-3/advanced-math.bbplus?v=2', key: 'mathbook3-advanced-math' },
+        { url: '/packs/mathbook-3/problem-solving.bbplus?v=2', key: 'mathbook3-problem-solving' },
+        { url: '/packs/mathbook-3/geometry-trigonometry.bbplus?v=2', key: 'mathbook3-geometry-trigonometry' }
+      ];
+      try {
+        const fetched = await Promise.all(
+          builtInPacks.map(async ({ url, key }) => {
+            const res = await fetch(url);
+            if (!res.ok) return [];
+            const raw = await res.json();
+            return parseBbplus(raw, key);
+          })
+        );
+        const builtInQuestions = fetched.flat();
+        if (builtInQuestions.length) {
+          setQuestions((old) => [
+            ...old.filter((q) => !String(q.materialTitle || '').startsWith('SAToplam') && !String(q.materialTitle || '').startsWith('Mathbook 3.0')),
+            ...builtInQuestions
+          ]);
+        }
+      } catch {}
+    })();
 
     try {
       const u = JSON.parse(localStorage.getItem('redbookprep-user') || 'null');
@@ -619,7 +597,7 @@ export default function Page() {
                     );
                   })()}
 
-                  <PracticeFolders questions={libraryQuestions} search={search} section={section} theme={theme} onStart={i=>start(questions.findIndex(q=>q.id===libraryQuestions[i]?.id))} onImport={importMaterial} onSearch={setSearch} onSection={setSection} />
+                  <PracticeFolders questions={libraryQuestions} search={search} section={section} theme={theme} onStart={i=>start(questions.findIndex(q=>q.id===libraryQuestions[i]?.id))} onSearch={setSearch} onSection={setSection} />
 
                 </>
               ) : (
