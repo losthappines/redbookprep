@@ -23,9 +23,16 @@ export default function Image() {
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '18px', fontSize: '32px', fontWeight: 700 }}>
           <svg width="54" height="54" viewBox="0 0 192 192" fill="none">
-            <rect x="6" y="6" width="180" height="180" rx="56" fill="#FA5216" />
-            <rect x="45" y="34" width="102" height="124" rx="18" fill="#FFFFFF" />
-            <path d="M90 45H122V90L106 80L90 90V45Z" fill="#FA5216" />
+            <defs>
+              <linearGradient id="rbOgGrad" x1="0" y1="192" x2="192" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stopColor="#76121A" />
+                <stop offset="55%" stopColor="#B83E30" />
+                <stop offset="100%" stopColor="#E08E45" />
+              </linearGradient>
+            </defs>
+            <rect x="6" y="6" width="180" height="180" rx="44" fill="url(#rbOgGrad)" />
+            <rect x="34" y="54" width="124" height="84" rx="12" fill="#FFFFFF" fillOpacity="0.92" />
+            <circle cx="96" cy="96" r="38" fill="#181816" fillOpacity="0.82" stroke="#FFFFFF" strokeWidth="8" />
           </svg>
           <span>RedBookPrep</span>
         </div>

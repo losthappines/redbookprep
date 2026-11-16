@@ -89,7 +89,7 @@ html[data-theme=dark] .rb-public .site-header,.dark .rb-public .site-header{--ca
 .rb-public .site-header .pill-nav{display:flex;align-items:center;margin:0;gap:4px;padding:6px;height:56px;border-radius:9999px;border:1px solid var(--border);background:var(--card);box-shadow:0 7px 24px #493b2812}
 .rb-public .site-header .brand{display:inline-flex;align-items:center;gap:9px;padding:10px 14px;border-radius:30px;background:#faf8f2ee;border:1px solid #e5dfd5;box-shadow:0 6px 24px #604e4610;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);font-weight:700;letter-spacing:-.7px;font-size:20px;line-height:1;color:#292622!important;white-space:nowrap;text-decoration:none}
 html[data-theme=dark] .rb-public .site-header .brand,.dark .rb-public .site-header .brand{background:#292622eb;border-color:#49433d;color:#f5f2eb!important}
-.rb-public .site-header .brand .rb-brand-logo{width:30px;height:30px;border-radius:7px;object-fit:contain;display:block;flex-shrink:0}
+.rb-public .site-header .brand .rb-brand-logo{width:30px;height:30px;object-fit:contain;display:block;flex-shrink:0}
 .rb-public .site-header .brand .dot{font-size:10px;align-self:flex-start;margin-left:-5px}
 .rb-public .site-header .pill-link{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;height:44px;min-width:44px;padding:0 12px;border:0;background:transparent;box-shadow:none;border-radius:9999px;font-size:12px;font-weight:500;color:var(--muted-foreground);text-decoration:none;cursor:pointer;transition:background-color .2s,color .2s}
 .rb-public .site-header .pill-link:hover{background:var(--muted);filter:none}
