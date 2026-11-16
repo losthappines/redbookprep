@@ -993,3 +993,515 @@ html[data-theme="dark"] button.redcoach-modal-save {
     display: none;
   }
 }
+
+/* ========================================================================= */
+/* INTERACTIVE DASHBOARD: INK-ORBIT CRAFT, BIDIRECTIONAL REVEAL & LIVE CHARTS */
+/* ========================================================================= */
+
+.redbook-app .rb-ib-frame {
+  --rb-bracket: color-mix(in srgb, var(--rb-ink) 22%, transparent);
+  position: relative;
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.65s cubic-bezier(0.2, 0.75, 0.2, 1) var(--reveal-delay, 0ms),
+    transform 0.65s cubic-bezier(0.2, 0.75, 0.2, 1) var(--reveal-delay, 0ms);
+}
+
+.redbook-app .rb-ib-frame[data-in="false"][data-dir="down"] {
+  opacity: 0;
+  transform: translateY(22px);
+}
+
+.redbook-app .rb-ib-frame[data-in="false"][data-dir="up"] {
+  opacity: 0;
+  transform: translateY(-18px);
+}
+
+.redbook-app .rb-ib-frame[data-in="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+.redbook-app .rb-ib-c {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-color: var(--rb-bracket);
+  border-style: solid;
+  border-width: 0;
+  pointer-events: none;
+  z-index: 3;
+  transition:
+    border-color 0.25s ease,
+    transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.redbook-app .rb-ib-c-tl { top: -5px; left: -5px; border-top-width: 1.5px; border-left-width: 1.5px; }
+.redbook-app .rb-ib-c-tr { top: -5px; right: -5px; border-top-width: 1.5px; border-right-width: 1.5px; }
+.redbook-app .rb-ib-c-bl { bottom: -5px; left: -5px; border-bottom-width: 1.5px; border-left-width: 1.5px; }
+.redbook-app .rb-ib-c-br { bottom: -5px; right: -5px; border-bottom-width: 1.5px; border-right-width: 1.5px; }
+
+.redbook-app .rb-ib-frame-hover:hover > .rb-ib-c,
+.redbook-app .rb-ib-frame-hover:focus-within > .rb-ib-c,
+.redbook-app .rb-ib-frame[data-pulse="true"] > .rb-ib-c {
+  border-color: var(--rb-accent);
+}
+
+.redbook-app .rb-ib-frame-hover:hover > .rb-ib-c-tl,
+.redbook-app .rb-ib-frame[data-pulse="true"] > .rb-ib-c-tl { transform: translate(-3px, -3px); }
+.redbook-app .rb-ib-frame-hover:hover > .rb-ib-c-tr,
+.redbook-app .rb-ib-frame[data-pulse="true"] > .rb-ib-c-tr { transform: translate(3px, -3px); }
+.redbook-app .rb-ib-frame-hover:hover > .rb-ib-c-bl,
+.redbook-app .rb-ib-frame[data-pulse="true"] > .rb-ib-c-bl { transform: translate(-3px, 3px); }
+.redbook-app .rb-ib-frame-hover:hover > .rb-ib-c-br,
+.redbook-app .rb-ib-frame[data-pulse="true"] > .rb-ib-c-br { transform: translate(3px, 3px); }
+
+.redbook-app .rb-dash-hero-frame > .rb-ib-c {
+  display: none;
+}
+
+.redbook-app .rb-ib-frame > .card {
+  margin: 0 !important;
+}
+
+.redbook-app .rb-dash-surface,
+.redbook-app .rb-ib-card {
+  position: relative;
+  overflow: hidden;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.3s ease,
+    transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.redbook-app .rb-dash-surface::after,
+.redbook-app .rb-ib-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    280px circle at var(--mx, -999px) var(--my, -999px),
+    color-mix(in srgb, var(--rb-accent) 13%, transparent),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.redbook-app .rb-ib-frame-hover:hover .rb-dash-surface::after,
+.redbook-app .rb-ib-frame-hover:hover .rb-ib-card::after {
+  opacity: 1;
+}
+
+.redbook-app .rb-ib-frame-hover:hover .rb-dash-surface,
+.redbook-app .rb-ib-frame-hover:hover .rb-ib-card {
+  border-color: color-mix(in srgb, var(--rb-accent) 38%, var(--rb-line));
+  box-shadow: 0 12px 32px -14px var(--rb-shadow);
+}
+
+/* Interactive Metric Buttons */
+.redbook-app .dashboard-metrics > .rb-ib-frame {
+  display: flex;
+}
+
+.redbook-app button.rb-dash-metric-btn {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: space-between !important;
+  gap: 14px !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 20px !important;
+  border-radius: 1rem !important;
+  background: var(--rb-panel) !important;
+  border: 1px solid var(--rb-line) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  text-align: left !important;
+  cursor: pointer;
+}
+
+.redbook-app button.rb-dash-metric-btn:hover {
+  transform: translateY(-2px);
+}
+
+.redbook-app button.rb-dash-metric-btn:active {
+  transform: scale(0.985) !important;
+}
+
+.redbook-app .rb-dash-metric-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.redbook-app .rb-dash-metric-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--rb-muted);
+  opacity: 0.78;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.redbook-app button.rb-dash-metric-btn:hover .rb-dash-metric-hint {
+  color: var(--rb-accent);
+  opacity: 1;
+}
+
+.redbook-app .rb-dash-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rb-accent);
+  flex-shrink: 0;
+}
+
+.redbook-app .rb-dash-live-dot.animate {
+  animation: rb-ib-pulse 2.2s ease-in-out infinite;
+}
+
+.redbook-app .rb-dash-metric-body {
+  display: grid;
+  gap: 4px;
+}
+
+.redbook-app .rb-dash-metric-bar {
+  height: 4px;
+  border-radius: 999px;
+  background: var(--rb-line);
+  overflow: hidden;
+}
+
+.redbook-app .rb-dash-metric-bar > span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--rb-accent), color-mix(in srgb, var(--rb-accent) 60%, #fff));
+  transition: width 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Bento Live Diagrams inside Practice Analytics */
+.redbook-app .rb-ib-bento {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.redbook-app .rb-ib-wide {
+  grid-column: 1 / -1;
+}
+
+.redbook-app .rb-ib-card {
+  background: var(--rb-panel);
+  border: 1px solid var(--rb-line);
+  border-radius: 1rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 100%;
+}
+
+.redbook-app .rb-ib-flow-card {
+  padding: 0;
+}
+
+.redbook-app .rb-ib-card-tagrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.redbook-app .rb-ib-card-tagrow .eyebrow {
+  margin: 0;
+}
+
+.redbook-app .rb-ib-pill {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--rb-soft);
+  color: var(--rb-accent);
+  white-space: nowrap;
+}
+
+.redbook-app .rb-ib-diagram {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  display: block;
+}
+
+.redbook-app .rb-ib-wide-copy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 0 22px 20px;
+}
+
+.redbook-app button.rb-ib-copy-action {
+  display: grid !important;
+  width: 100%;
+  justify-items: start !important;
+  text-align: left !important;
+  gap: 4px !important;
+  padding: 12px 14px !important;
+  min-height: 0 !important;
+  border-radius: 12px !important;
+  background: color-mix(in srgb, var(--rb-bg) 55%, transparent) !important;
+  border: 1px solid var(--rb-line) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  transition: border-color 0.2s ease, background-color 0.2s ease !important;
+}
+
+.redbook-app button.rb-ib-copy-action:hover {
+  border-color: var(--rb-accent) !important;
+  background: var(--rb-soft) !important;
+}
+
+.redbook-app button.rb-ib-copy-action h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 !important;
+  font-size: 0.9rem !important;
+  font-weight: 650;
+  color: var(--rb-ink);
+}
+
+.redbook-app button.rb-ib-copy-action p {
+  margin: 0 !important;
+  font-size: 0.8rem !important;
+  line-height: 1.5 !important;
+  color: var(--rb-muted);
+}
+
+.redbook-app .rb-ib-card-foot {
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.redbook-app .rb-ib-card-foot h3 {
+  margin: 0 0 4px !important;
+  font-size: 0.95rem !important;
+  color: var(--rb-ink);
+}
+
+.redbook-app .rb-ib-card-foot p {
+  margin: 0 !important;
+  font-size: 0.8rem !important;
+  line-height: 1.5 !important;
+}
+
+.redbook-app button.rb-ib-mini-btn {
+  flex-shrink: 0;
+  min-height: 32px !important;
+  padding: 5px 12px !important;
+  font-size: 0.76rem !important;
+  border-radius: 999px !important;
+}
+
+/* SVG Animations & Interactivity */
+.redbook-app .rb-ib-flow {
+  stroke: color-mix(in srgb, var(--rb-ink) 24%, transparent);
+  fill: none;
+  stroke-width: 1.3;
+  transition: stroke 0.3s ease;
+}
+
+.redbook-app .rb-ib-flow-on {
+  stroke: var(--rb-accent);
+}
+
+.redbook-app .rb-ib-dash {
+  stroke-dasharray: 3 4;
+  animation: rb-ib-dash 1.2s linear infinite;
+}
+
+.redbook-app .rb-ib-pkt {
+  fill: var(--rb-accent);
+}
+
+.redbook-app .rb-ib-node {
+  fill: var(--rb-bg);
+  stroke: color-mix(in srgb, var(--rb-ink) 22%, transparent);
+  transition: stroke 0.25s ease, fill 0.25s ease;
+}
+
+.redbook-app .rb-ib-sheet-bg {
+  fill: var(--rb-bg);
+  stroke: color-mix(in srgb, var(--rb-ink) 22%, transparent);
+}
+
+.redbook-app .rb-ib-av {
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.redbook-app .rb-ib-av:hover,
+.redbook-app .rb-ib-av:focus-visible {
+  transform: scale(1.18);
+  outline: none;
+}
+
+.redbook-app .rb-ib-av-tip {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.redbook-app .rb-ib-av:hover .rb-ib-av-tip,
+.redbook-app .rb-ib-av:focus-visible .rb-ib-av-tip {
+  opacity: 1;
+}
+
+.redbook-app .rb-ib-presence {
+  animation: rb-ib-pulse 2.2s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.redbook-app .rb-ib-sheet-new {
+  animation: rb-ib-sheet-in 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.redbook-app .rb-ib-tool {
+  cursor: pointer;
+  transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.redbook-app .rb-ib-tool:hover,
+.redbook-app .rb-ib-tool-on {
+  transform: translateY(-2.5px);
+  outline: none;
+}
+
+.redbook-app .rb-ib-tool-on rect.rb-ib-node {
+  stroke: var(--rb-accent);
+  fill: var(--rb-soft);
+}
+
+.redbook-app .rb-ib-chart {
+  cursor: crosshair;
+}
+
+.redbook-app .rb-ib-line-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 1.5s cubic-bezier(0.4, 0.1, 0.2, 1);
+}
+
+.redbook-app .rb-ib-frame[data-in="true"] .rb-ib-line-draw {
+  stroke-dashoffset: 0;
+}
+
+.redbook-app .rb-ib-glow {
+  animation: rb-ib-pulse 2s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.redbook-app .dashboard-task {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.redbook-app .dashboard-task.is-done strong {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+
+@keyframes rb-ib-dash {
+  to {
+    stroke-dashoffset: -14;
+  }
+}
+
+@keyframes rb-ib-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.35);
+  }
+}
+
+@keyframes rb-ib-sheet-in {
+  from {
+    opacity: 0;
+    transform: translate(12px, -8px) rotate(3deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .redbook-app .rb-ib-bento,
+  .redbook-app .rb-ib-wide-copy {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .redbook-app .rb-ib-frame,
+  .redbook-app .rb-ib-frame[data-in="false"][data-dir="down"],
+  .redbook-app .rb-ib-frame[data-in="false"][data-dir="up"] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .redbook-app .rb-ib-dash,
+  .redbook-app .rb-ib-presence,
+  .redbook-app .rb-ib-glow,
+  .redbook-app .rb-ib-sheet-new,
+  .redbook-app .rb-dash-live-dot.animate {
+    animation: none;
+  }
+  .redbook-app .rb-ib-line-draw {
+    transition: none;
+    stroke-dashoffset: 0;
+  }
+}
+
+html[data-motion="reduced"] .redbook-app .rb-ib-frame,
+html[data-motion="reduced"] .redbook-app .rb-ib-frame[data-in="false"][data-dir="down"],
+html[data-motion="reduced"] .redbook-app .rb-ib-frame[data-in="false"][data-dir="up"] {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+html[data-motion="reduced"] .redbook-app .rb-ib-dash,
+html[data-motion="reduced"] .redbook-app .rb-ib-presence,
+html[data-motion="reduced"] .redbook-app .rb-ib-glow,
+html[data-motion="reduced"] .redbook-app .rb-ib-sheet-new,
+html[data-motion="reduced"] .redbook-app .rb-dash-live-dot.animate {
+  animation: none;
+}
+
+html[data-motion="reduced"] .redbook-app .rb-ib-line-draw {
+  transition: none;
+  stroke-dashoffset: 0;
+}
