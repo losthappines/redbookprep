@@ -46,7 +46,7 @@ export function QuestionBank({
         (status === 'All questions' ||
           (status === 'Not attempted' && !last) ||
           (status === 'Attempted' && !!last) ||
-          (status === 'Needs review' && !!last && !(last.isCorrect ?? last.choice === q.answer))
+          (status === 'Needs review' && !!last && !(last.isCorrect ?? last.choice === q.answer)))
     );
 
   const groups = Array.from(
