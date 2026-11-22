@@ -6,12 +6,12 @@ const KNOWN_ROUTES: Record<string, { title: string; markdown: string }> = {
     markdown: `# RedBookPrep — Digital SAT Test Preparation & Practice Platform
 
 **Make your SAT study time count.**
-RedBookPrep (https://www.redbookprep.site) is a calm, interactive Digital SAT test preparation workspace built to help students practise 410+ categorized questions, understand their mistakes, and plan a consistent weekly study schedule.
+RedBookPrep (https://www.redbookprep.site) is a calm, interactive Digital SAT test preparation workspace built to help students practise 2,231+ categorized questions, understand their mistakes, and plan a consistent weekly study schedule.
 
 ## When to Use RedBookPrep
 Reach for RedBookPrep when a student, educator, or AI agent needs:
 - **Digital SAT Test Preparation**: Realistic split-screen practice modeled on the digital SAT Reading & Writing and Math interface.
-- **410+ Mathbook 3.0 Practice Questions**: 21 structured modules across Algebra, Advanced Math, Problem-Solving and Data Analysis, and Geometry & Trigonometry, categorized by skill.
+- **2,231+ Categorized Practice Questions**: 100 structured modules across 38 skills in Reading & Writing and Math (Algebra, Advanced Math, Problem-Solving and Data Analysis, and Geometry & Trigonometry).
 - **Mistake Notebook & Spaced Repetition**: Track missed questions, log error causes, write personal notes, and schedule review dates.
 - **Cloud-Synced Study Planner**: Start immediately in the browser with no account required, or sign in with Google to synchronize attempts, score goals, and weekly study plans across devices.
 
@@ -38,7 +38,7 @@ Reach for RedBookPrep when a student, educator, or AI agent needs:
 
 RedBookPrep is an independent Digital SAT test preparation platform inspired by RedBook+. Our aim is to make the next useful study step easy to find: choose a skill, practise in a realistic split-screen environment, understand mistakes, schedule a review, and track real progress over time.
 
-- **410+ Practice Questions**: 21 Mathbook 3.0 modules covering Algebra, Advanced Math, Problem-Solving and Data Analysis, and Geometry & Trigonometry, plus Reading & Writing sample passages.
+- **2,231+ Practice Questions**: 100 modules covering all 8 Digital SAT domains across Reading & Writing and Math.
 - **Local-First + Google Cloud Sync**: Start immediately without an account, or sign in with Google to sync progress across devices.
 
 Links: [Home](https://www.redbookprep.site/) | [Study Workspace](https://www.redbookprep.site/study) | [Contact](https://www.redbookprep.site/contact) | [Privacy](https://www.redbookprep.site/privacy) | [llms.txt](https://www.redbookprep.site/llms.txt)
@@ -65,7 +65,7 @@ Links: [Home](https://www.redbookprep.site/) | [About](https://www.redbookprep.s
 Updated October 25, 2026.
 
 - **Local Storage**: Guest practice answers, timing, mistake notes, review dates, and preferences are stored locally in your browser.
-- **Google Cloud Sync**: When signed in via Firebase Authentication (Google OAuth or Email/Password), your study progress, goals, and weekly plan are synced to your isolated user document in Google Cloud Firestore.
+- **Cloud Sync**: When signed in via Supabase Authentication (Google OAuth or passwordless Email OTP / Magic Link), your study progress, goals, and weekly plan sync to PostgreSQL with Row-Level Security.
 - **Data Control**: Export your full study history as JSON in Settings or request account deletion at support@redbookprep.site.
 
 Links: [Home](https://www.redbookprep.site/) | [About](https://www.redbookprep.site/about) | [Contact](https://www.redbookprep.site/contact)

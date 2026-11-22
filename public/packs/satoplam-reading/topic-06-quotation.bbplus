@@ -16,7 +16,7 @@
           "focus": "Select the quotation that most effectively illustrates or supports the claim",
           "source": "SAToplam 2.0 · Topic 6 · Q1",
           "passageTitle": "Quotation — Q1",
-          "passage": "7.5 sec. (*Exam level)\nLife Among the Paiutes is an 1882\nautobiographical narrative by Sarah\nWinnemucca Hopkins. In the work,\nWinnemucca directly addresses the reader to\nestablish her authority and credibility,\nwriting______________",
+          "passage": "Life Among the Paiutes is an 1882\nautobiographical narrative by Sarah\nWinnemucca Hopkins. In the work,\nWinnemucca directly addresses the reader to\nestablish her authority and credibility,\nwriting______________",
           "prompt": "Which quotation from Life Among the Paiutes\nmost effectively illustrates the claim?",
           "options": [
             "My dear reader, I have not lived in this\nworld for over thirty or forty years for\nnothing, and I know what I am talking\nabout.",

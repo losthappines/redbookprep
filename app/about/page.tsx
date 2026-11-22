@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'About Us — RedBookPrep Digital SAT Test Preparation',
-  description: 'Learn how RedBookPrep helps students prepare for the Digital SAT with 410+ practice questions, a split-screen practice player, mistake tracking, and study planning.',
+  description: 'Learn how RedBookPrep helps students prepare for the Digital SAT with 2,231+ practice questions, a split-screen practice player, mistake tracking, and study planning.',
   alternates: { canonical: 'https://www.redbookprep.site/about' },
 };
 
@@ -17,11 +17,11 @@ export default function About() {
       </p>
       <h2>What you can use today</h2>
       <p>
-        RedBookPrep includes over 410 Mathbook 3.0 practice questions across 21 modules covering Algebra, Advanced Math, Problem-Solving and Data Analysis, and Geometry &amp; Trigonometry, alongside Reading and Writing practice passages, step-by-step explanations, a mistake notebook, personal notes, review dates, a weekly study planner, and topic-level progress analytics.
+        RedBookPrep includes over 2,231 Digital SAT Math and Reading &amp; Writing practice questions across 100 modules covering all 8 SAT domains and 38 tested skills, step-by-step explanations, a mistake notebook, personal notes, review dates, a weekly study planner, and topic-level progress analytics.
       </p>
-      <h2>Local-first speed with Google Cloud sync</h2>
+      <h2>Local-first speed with Cloud sync</h2>
       <p>
-        You can start practising immediately in your browser without creating an account. When you want to back up your progress or switch between your laptop and tablet, students aged 13 and older can sign in with Google or an email account to automatically synchronize attempts, mistake notes, score goals, and weekly study schedules across devices.
+        You can start practising immediately in your browser without creating an account. When you want to back up your progress or switch between your laptop and tablet, students aged 13 and older can sign in with Google or an email code/magic link to automatically synchronize attempts, mistake notes, score goals, and weekly study schedules across devices.
       </p>
       <h2>Learning comes first &amp; Trademark Disclaimer</h2>
       <p>

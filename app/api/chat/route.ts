@@ -7,11 +7,29 @@ interface ChatMessage {
   content: string;
 }
 
-interface ClientApiKeys {
-  gemini?: string;
-  groq?: string;
-  mistral?: string;
-  gemma?: string;
+const FREE_WEEKLY_SPARKS = 10;
+
+function getCurrentIsoWeek(): string {
+  const now = new Date();
+  const utc = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  const day = utc.getUTCDay() || 7;
+  utc.setUTCDate(utc.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(utc.getUTCFullYear(), 0, 1));
+  const weekNo = Math.ceil(((utc.getTime() - yearStart.getTime()) / 86400000 + 1) / 7);
+  return `${utc.getUTCFullYear()}-W${String(weekNo).padStart(2, "0")}`;
+}
+
+function readSparksCookie(req: NextRequest): { week: string; used: number } {
+  const currentWeek = getCurrentIsoWeek();
+  try {
+    const raw = req.cookies.get("rb_sparks_v1")?.value;
+    if (!raw) return { week: currentWeek, used: 0 };
+    const parsed = JSON.parse(raw);
+    if (parsed && parsed.week === currentWeek && Number.isFinite(parsed.used)) {
+      return { week: currentWeek, used: Math.max(0, Math.floor(parsed.used)) };
+    }
+  } catch {}
+  return { week: currentWeek, used: 0 };
 }
 
 function cleanKey(val?: string | null): string {
@@ -70,7 +88,7 @@ CRITICAL FORMATTING RULES:
 - Write fractions as (numerator)/(denominator).
 - Put equations on their own lines.`;
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   const geminiKey = cleanKey(
     process.env.GEMINI_API_KEY ||
       process.env.NEXT_PUBLIC_GEMINI_API_KEY ||
@@ -79,13 +97,22 @@ export async function GET() {
   const groqKey = cleanKey(process.env.GROQ_API_KEY);
   const mistralKey = cleanKey(process.env.MISTRAL_API_KEY);
   const gemmaKey = cleanKey(process.env.GEMMA_API_KEY);
+  const sparks = readSparksCookie(req);
+  const sparksRemaining = Math.max(0, FREE_WEEKLY_SPARKS - sparks.used);
 
   return NextResponse.json({
+    mode: "managed",
     configured: {
       gemini: Boolean(geminiKey),
       groq: Boolean(groqKey),
       mistral: Boolean(mistralKey),
       gemma: Boolean(gemmaKey || geminiKey),
+    },
+    sparks: {
+      remaining: sparksRemaining,
+      limit: FREE_WEEKLY_SPARKS,
+      used: sparks.used,
+      week: sparks.week,
     },
     supportedModels: [
       "Gemini 3.5 Flash",
@@ -446,22 +473,50 @@ export async function POST(req: NextRequest) {
       effort = "Medium",
       history = [],
       model = "Gemini 3.5 Flash",
-      apiKeys = {} as ClientApiKeys,
+      persona = "direct",
+      memorySummary = "",
     } = body;
 
     if (!message || typeof message !== "string") {
       return NextResponse.json({ error: "Message is required." }, { status: 400 });
     }
 
+    const personaNotes: Record<string, string> = {
+      socratic: "Coach Persona: Socratic — ask one guiding hint question before giving away the final step unless the student asks for the direct solution.",
+      direct: "Coach Persona: Direct — clear, efficient step-by-step explanation.",
+      eli5: "Coach Persona: Intuitive Beginner — explain in super simple everyday analogies.",
+      speedrun: "Coach Persona: 15-Second Speedrun — fastest SAT shortcut / Desmos trick first.",
+    };
+    const contextPrefix = [
+      personaNotes[String(persona)] || "",
+      typeof memorySummary === "string" && memorySummary.trim()
+        ? `Student Study Memory: ${memorySummary.trim().slice(0, 400)}`
+        : "",
+    ]
+      .filter(Boolean)
+      .join("\n");
+    const effectiveMessage = contextPrefix ? `${contextPrefix}\n\n${message}` : message;
+
+    const sparks = readSparksCookie(req);
+    if (sparks.used >= FREE_WEEKLY_SPARKS) {
+      return NextResponse.json(
+        {
+          error:
+            "You have used all 10 Free weekly Sparks. Keep a 7-day study streak to reset early, or upgrade to Plus/Pro for higher Sparks.",
+          sparks: { remaining: 0, limit: FREE_WEEKLY_SPARKS, used: sparks.used, week: sparks.week },
+        },
+        { status: 429 }
+      );
+    }
+
     const geminiKey = cleanKey(
-      apiKeys.gemini ||
-        process.env.GEMINI_API_KEY ||
+      process.env.GEMINI_API_KEY ||
         process.env.NEXT_PUBLIC_GEMINI_API_KEY ||
         process.env.GOOGLE_AI_API_KEY
     );
-    const groqKey = cleanKey(apiKeys.groq || process.env.GROQ_API_KEY);
-    const mistralKey = cleanKey(apiKeys.mistral || process.env.MISTRAL_API_KEY);
-    const explicitGemmaKey = cleanKey(apiKeys.gemma || process.env.GEMMA_API_KEY);
+    const groqKey = cleanKey(process.env.GROQ_API_KEY);
+    const mistralKey = cleanKey(process.env.MISTRAL_API_KEY);
+    const explicitGemmaKey = cleanKey(process.env.GEMMA_API_KEY);
     const gemmaKey = explicitGemmaKey || geminiKey;
 
     let result: { text: string; model: string } | null = null;
@@ -470,86 +525,108 @@ export async function POST(req: NextRequest) {
     // 1. Groq Request
     if (model.includes("Groq") || model.includes("Llama")) {
       if (groqKey) {
-        result = await callGroq(groqKey, model, history, message, deadline);
+        result = await callGroq(groqKey, model, history, effectiveMessage, deadline);
         if (!result) {
           fallbackNotice =
-            "Note: Groq could not complete this request right now (verify GROQ_API_KEY). Answering with backup coach:\n\n";
+            "Note: Groq could not complete this request right now. Answering with backup coach:\n\n";
         }
       } else {
         fallbackNotice =
-          "Note: Add GROQ_API_KEY in Vercel Environment Variables (or click 'API Keys' in the model menu) to activate Groq. Answering with backup coach:\n\n";
+          "Note: Groq is temporarily offline on the server. Answering with backup coach:\n\n";
       }
     }
     // 2. Mistral Request
     else if (model.includes("Mistral")) {
       if (mistralKey) {
-        result = await callMistral(mistralKey, model, history, message, deadline);
+        result = await callMistral(mistralKey, model, history, effectiveMessage, deadline);
         if (!result) {
           fallbackNotice =
-            "Note: Mistral could not complete this request right now (verify MISTRAL_API_KEY). Answering with backup coach:\n\n";
+            "Note: Mistral could not complete this request right now. Answering with backup coach:\n\n";
         }
       } else {
         fallbackNotice =
-          "Note: Add MISTRAL_API_KEY in Vercel Environment Variables (or click 'API Keys' in the model menu) to activate Mistral. Answering with backup coach:\n\n";
+          "Note: Mistral is temporarily offline on the server. Answering with backup coach:\n\n";
       }
     }
     // 3. Gemma Request
     else if (model.includes("Gemma")) {
       const gemmaBudget = Math.min(deadline - 4500, Date.now() + 9500);
       if (explicitGemmaKey) {
-        result = await callGemma(explicitGemmaKey, model, history, message, effort, gemmaBudget);
+        result = await callGemma(explicitGemmaKey, model, history, effectiveMessage, effort, gemmaBudget);
       }
       if (!result && geminiKey && geminiKey !== explicitGemmaKey) {
-        result = await callGemma(geminiKey, model, history, message, effort, gemmaBudget);
+        result = await callGemma(geminiKey, model, history, effectiveMessage, effort, gemmaBudget);
       }
       if (!result) {
-        fallbackNotice = gemmaKey
-          ? "Note: Gemma 4 endpoint was unavailable with the current key. Answering with backup coach:\n\n"
-          : "Note: Add GEMMA_API_KEY in Vercel Environment Variables (or click 'API Keys' in the model menu) to activate Gemma 4. Answering with backup coach:\n\n";
+        fallbackNotice =
+          "Note: Gemma 4 is temporarily unavailable. Answering with backup coach:\n\n";
       }
     }
 
     // 4. Primary Gemini or Automatic Cross-Provider Failover
     if (!result && geminiKey) {
-      result = await callGemini(geminiKey, model, history, message, effort, deadline);
+      result = await callGemini(geminiKey, model, history, effectiveMessage, effort, deadline);
     }
     if (!result && groqKey && !model.includes("Groq")) {
-      result = await callGroq(groqKey, "Groq · Llama 3.3 70B", history, message, deadline);
+      result = await callGroq(groqKey, "Groq · Llama 3.3 70B", history, effectiveMessage, deadline);
     }
     if (!result && mistralKey && !model.includes("Mistral")) {
-      result = await callMistral(mistralKey, "Mistral Large", history, message, deadline);
+      result = await callMistral(mistralKey, "Mistral Large", history, effectiveMessage, deadline);
     }
     if (!result && explicitGemmaKey && !model.includes("Gemma")) {
-      result = await callGemma(explicitGemmaKey, "Gemma 4", history, message, effort, deadline);
+      result = await callGemma(explicitGemmaKey, "Gemma 4", history, effectiveMessage, effort, deadline);
     }
 
     if (!result) {
       if (!geminiKey && !groqKey && !mistralKey && !explicitGemmaKey) {
         return NextResponse.json({
-          reply: `Hello! I'm redCoach, your Digital SAT AI companion on RedBookPrep.
-
-To activate your models, add your keys in Vercel -> Settings -> Environment Variables (or paste them under 'API Keys' in the Sparkles model menu):
-- GROQ_API_KEY (Groq LPU)
-- MISTRAL_API_KEY (Mistral AI)
-- GEMMA_API_KEY (Google AI Studio / Gemma)
-- GEMINI_API_KEY (Google Gemini)`,
-          model: model || "redCoach Setup",
+          reply:
+            "redCoach AI is being configured on this server (managed service). No personal API key is needed — try again once server credentials are configured in Vercel Environment Variables.",
+          model: model || "redCoach Managed",
+          sparks: {
+            remaining: Math.max(0, FREE_WEEKLY_SPARKS - sparks.used),
+            limit: FREE_WEEKLY_SPARKS,
+            used: sparks.used,
+            week: sparks.week,
+          },
         });
       }
 
       return NextResponse.json({
         reply:
-          "The selected AI provider is momentarily rate-limited or unreachable. Try switching to Groq, Mistral, Gemma, or Gemini in the Sparkles model menu, or verify your API key!",
+          "The selected AI provider is momentarily rate-limited or unreachable. Try switching models in the menu or trying again shortly.",
         model: model || "redCoach",
+        sparks: {
+          remaining: Math.max(0, FREE_WEEKLY_SPARKS - sparks.used),
+          limit: FREE_WEEKLY_SPARKS,
+          used: sparks.used,
+          week: sparks.week,
+        },
       });
     }
 
     const cleanedText = fallbackNotice + sanitizeMathResponse(result.text);
+    const nextUsed = sparks.used + 1;
+    const nextRemaining = Math.max(0, FREE_WEEKLY_SPARKS - nextUsed);
 
-    return NextResponse.json({
+    const response = NextResponse.json({
       reply: cleanedText,
       model: result.model,
+      sparks: {
+        remaining: nextRemaining,
+        limit: FREE_WEEKLY_SPARKS,
+        used: nextUsed,
+        week: sparks.week,
+      },
     });
+    response.cookies.set("rb_sparks_v1", JSON.stringify({ week: sparks.week, used: nextUsed }), {
+      httpOnly: true,
+      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production",
+      path: "/",
+      maxAge: 60 * 60 * 24 * 14,
+    });
+    return response;
   } catch (error: any) {
     console.error("Error in /api/chat:", error);
     return NextResponse.json(

@@ -589,7 +589,7 @@ export function SatScoreCalculator() {
                   Practise in Study Workspace
                 </Link>
                 <Link className="rb-public-button" href="/study?tab=question-bank">
-                  Browse 410+ Question Bank
+                  Browse 2,231+ Question Bank
                   <ArrowRight size={16} />
                 </Link>
               </div>

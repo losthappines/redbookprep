@@ -41,7 +41,7 @@ export default function Image() {
             Digital SAT Test Preparation &amp; Practice Platform
           </div>
           <div style={{ fontSize: '28px', color: '#cbd5e1', maxWidth: '960px', lineHeight: 1.4 }}>
-            410+ Mathbook 3.0 practice questions, split-screen Bluebook-style player, mistake notebook, and cloud study planner.
+            2,231+ Digital SAT Math and R&amp;W questions, split-screen Bluebook-style player, mistake notebook, and cloud study planner.
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '22px', color: '#94a3b8' }}>

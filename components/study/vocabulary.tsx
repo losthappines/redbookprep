@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect, useRef, useMemo } from 'react';
-import { BookOpen, Upload, ArrowLeft, RotateCcw, Check, RefreshCw } from 'lucide-react';
+import { BookOpen, Upload, ArrowLeft, RotateCcw, Check, RefreshCw, Volume2, Sparkles, Grid, Layers } from 'lucide-react';
 import {
   parseFlashDeck,
   starterDeck,
@@ -10,6 +10,7 @@ import {
   type WordSession,
 } from './flashcards';
 import { satVocabDecks } from './sat-vocab-decks';
+import { VocabLearnMode, VocabMatchMode, VocabSentenceAndCustomMode } from './vocab-modes';
 
 type SavedDeck = FlashDeck & { id: string; session?: WordSession };
 const storageKey = 'redbookprep-vocabulary';
@@ -37,6 +38,7 @@ function isValidSession(s: WordSession | undefined, deck: FlashDeck): s is WordS
 export function Vocabulary() {
   const [decks, setDecks] = useState<SavedDeck[]>(builtInDecks);
   const [selected, setSelected] = useState<string | null>(null);
+  const [studyMode, setStudyMode] = useState<'flashcards' | 'learn' | 'match' | 'sentence'>('flashcards');
   const [search, setSearch] = useState('');
   const [error, setError] = useState('');
   const [notice, setNotice] = useState('');
@@ -298,57 +300,117 @@ export function Vocabulary() {
           ) : (
             card && (
               <>
-                <article className="card vocab-flashcard" aria-live="polite">
-                  <span className="eyebrow">
-                    {session.revealed ? 'MEANING / BACK' : 'WORD / FRONT'}
-                  </span>
-                  <div
-                    className="vocab-card-content"
-                    key={card.id + (session.revealed ? 'back' : 'front')}
-                  >
-                    <h2>{session.revealed ? card.back : card.front}</h2>
-                    {(session.revealed ? card.backImage : card.frontImage) && (
-                      <img
-                        src={session.revealed ? card.backImage : card.frontImage}
-                        alt={
-                          (session.revealed ? card.backAlt : card.frontAlt) ||
-                          'Flashcard illustration'
-                        }
-                      />
-                    )}
-                  </div>
-                  {!session.revealed ? (
-                    <p>Try recalling the meaning before revealing it.</p>
-                  ) : (
-                    <button onClick={() => change((s) => ({ ...s, revealed: false }))}>
-                      Show word again
-                    </button>
-                  )}
-                </article>
-                <div className="vocab-rating">
-                  {!session.revealed ? (
+                <div className="segmented" style={{ marginBottom: '18px' }} aria-label="Vocab Studio modes">
+                  {(
+                    [
+                      { id: 'flashcards', label: 'Flashcards', Icon: Layers },
+                      { id: 'learn', label: 'Learn', Icon: BookOpen },
+                      { id: 'match', label: 'Match', Icon: Grid },
+                      { id: 'sentence', label: 'Sentence & Custom', Icon: Sparkles },
+                    ] as const
+                  ).map(({ id, label, Icon }) => (
                     <button
-                      className="primary"
-                      onClick={() => change((s) => ({ ...s, revealed: true }))}
+                      key={id}
+                      type="button"
+                      aria-pressed={studyMode === id}
+                      onClick={() => setStudyMode(id)}
                     >
-                      Reveal meaning
+                      <Icon size={14} /> {label}
                     </button>
-                  ) : (
-                    <>
-                      <button onClick={() => change((s) => rateWord(s, false))}>
-                        <RefreshCw size={16} />
-                        Still learning
-                      </button>
-                      <button
-                        className="primary"
-                        onClick={() => change((s) => rateWord(s, true))}
-                      >
-                        <Check size={16} />
-                        I know this
-                      </button>
-                    </>
-                  )}
+                  ))}
                 </div>
+
+                {studyMode === 'learn' ? (
+                  <VocabLearnMode
+                    cards={deck.cards}
+                    onMarkWord={(_, known) => change((s) => rateWord(s, known))}
+                  />
+                ) : studyMode === 'match' ? (
+                  <VocabMatchMode cards={deck.cards} />
+                ) : studyMode === 'sentence' ? (
+                  <VocabSentenceAndCustomMode
+                    activeCard={card}
+                    onImportCustomDeck={(title, pairs) => {
+                      const newDeck: SavedDeck = {
+                        id: `custom-${Date.now()}`,
+                        title,
+                        description: 'Custom Quizlet / pasted vocabulary deck',
+                        cards: pairs.map((p, idx) => ({ id: `c-${Date.now()}-${idx}`, front: p.front, back: p.back })),
+                      };
+                      persist([...store.current, newDeck], null);
+                      setNotice(`Added custom deck “${title}” (${pairs.length} words).`);
+                    }}
+                  />
+                ) : (
+                  <>
+                    <div
+                      className={`rb-flip-scene ${session.revealed ? 'is-flipped' : ''}`}
+                      onClick={() => change((s) => ({ ...s, revealed: !s.revealed }))}
+                    >
+                      <div className="rb-flip-inner">
+                        <article className="card vocab-flashcard rb-flip-face rb-flip-front" aria-live="polite">
+                          <span className="eyebrow">WORD / FRONT · TAP TO FLIP</span>
+                          <div className="vocab-card-content">
+                            <h2>{card.front}</h2>
+                            {card.frontImage && (
+                              <img src={card.frontImage} alt={card.frontAlt || 'Flashcard front'} />
+                            )}
+                          </div>
+                          <button
+                            type="button"
+                            className="header-tool-btn"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+                                window.speechSynthesis.cancel();
+                                const utt = new SpeechSynthesisUtterance(card.front);
+                                utt.lang = 'en-US';
+                                window.speechSynthesis.speak(utt);
+                              }
+                            }}
+                          >
+                            <Volume2 size={14} /> Listen
+                          </button>
+                        </article>
+
+                        <article className="card vocab-flashcard rb-flip-face rb-flip-back">
+                          <span className="eyebrow">MEANING &amp; EXAMPLE</span>
+                          <div className="vocab-card-content">
+                            <h2>{card.back}</h2>
+                            {card.backImage && (
+                              <img src={card.backImage} alt={card.backAlt || 'Flashcard back'} />
+                            )}
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+
+                    <div className="vocab-rating">
+                      {!session.revealed ? (
+                        <button
+                          className="primary"
+                          onClick={() => change((s) => ({ ...s, revealed: true }))}
+                        >
+                          Reveal meaning
+                        </button>
+                      ) : (
+                        <>
+                          <button onClick={() => change((s) => rateWord(s, false))}>
+                            <RefreshCw size={16} />
+                            Still learning
+                          </button>
+                          <button
+                            className="primary"
+                            onClick={() => change((s) => rateWord(s, true))}
+                          >
+                            <Check size={16} />
+                            I know this
+                          </button>
+                        </>
+                      )}
+                    </div>
+                  </>
+                )}
               </>
             )
           )}

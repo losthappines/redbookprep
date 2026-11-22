@@ -16,7 +16,7 @@
           "focus": "Analyze quantitative data in tables and graphs to complete or evaluate a claim",
           "source": "SAToplam 2.0 · Topic 7 · Q1",
           "passageTitle": "Command of Evidence - Graphs — Q1",
-          "passage": "(*Exam level)\nPyramids in Egypt and the Americas\nPyramid Country Height (meters) Age (years before present)\nThe Pyramid of Khafre Egypt 143.5 4,500 to 4,600\nLa Danta Guatemala 72 1,900 to 2,300\nThe Tikal Temple IV Guatemala 70 1300\nThe Pyramid of Amenemhet IEgypt 55 3,800 to 4,000\nOne student is writing an essay about four\npyramids for a history class and wants to\nindicate how long ago each pyramid was built.\nConsulting the table, the student finds that the\nTikal Temple IV was built _______",
+          "passage": "Pyramids in Egypt and the Americas\nPyramid Country Height (meters) Age (years before present)\nThe Pyramid of Khafre Egypt 143.5 4,500 to 4,600\nLa Danta Guatemala 72 1,900 to 2,300\nThe Tikal Temple IV Guatemala 70 1300\nThe Pyramid of Amenemhet IEgypt 55 3,800 to 4,000\nOne student is writing an essay about four\npyramids for a history class and wants to\nindicate how long ago each pyramid was built.\nConsulting the table, the student finds that the\nTikal Temple IV was built _______",
           "prompt": "Which choice most effectively uses data from the\ntable to complete the text?",
           "options": [
             "1,900 to 2,300 years ago.",

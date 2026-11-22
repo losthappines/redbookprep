@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: '%s | RedBookPrep',
   },
   description:
-    'RedBookPrep test preparation for the Digital SAT: practise 410+ Mathbook 3.0 questions and Reading & Writing skills in a split-screen workspace, track mistakes, and sync your study plan across devices.',
+    'RedBookPrep test preparation for the Digital SAT: practise 2,231+ Digital SAT Math and Reading & Writing questions in a split-screen workspace, track mistakes, and sync your study plan across devices.',
   keywords: [
     'RedBookPrep',
     'RedBookPrep test preparation',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: 'RedBookPrep',
     title: 'RedBookPrep — Digital SAT Test Preparation & Practice Platform',
     description:
-      'RedBookPrep test preparation for the Digital SAT: 410+ categorized practice questions, split-screen test player, mistake notebook, and weekly study planner.',
+      'RedBookPrep test preparation for the Digital SAT: 2,231+ categorized practice questions, split-screen test player, mistake notebook, and weekly study planner.',
     images: [
       {
         url: 'https://www.redbookprep.site/opengraph-image',
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'RedBookPrep — Digital SAT Test Preparation & Practice Platform',
     description:
-      'Practice with purpose on RedBookPrep: Digital SAT test preparation, 410+ Mathbook 3.0 questions, mistake notebook, and cloud-synced study planner.',
+      'Practice with purpose on RedBookPrep: Digital SAT test preparation, 2,231+ Math & Reading and Writing questions, mistake notebook, and cloud-synced study planner.',
     images: ['https://www.redbookprep.site/opengraph-image'],
   },
 };
@@ -95,7 +95,7 @@ const jsonLd = {
       operatingSystem: 'Web',
       url: 'https://www.redbookprep.site',
       description:
-        'RedBookPrep test preparation web application for the Digital SAT with 410+ practice questions across 21 modules, split-screen question solver, built-in graphing calculator, mistake notebook, and Google Cloud progress sync.',
+        'RedBookPrep test preparation web application for the Digital SAT with 2,231+ practice questions across 100 modules and 38 skills, split-screen question solver, built-in graphing calculator, mistake notebook, and cloud progress sync.',
       author: {
         '@id': 'https://www.redbookprep.site/#organization',
       },

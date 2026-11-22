@@ -16,7 +16,7 @@
           "focus": "Determine the function of the underlined portion in the text as a whole",
           "source": "SAToplam 2.0 · Topic 10 · Q1",
           "passageTitle": "Underlined Purpose — Q1",
-          "passage": "5 sec. (*Exam level)\nThe following text is adapted from Matthew\nArnold's 1869 nonfiction book \"Culture and\nAnarchy\".\n<u>The Times [a British newspaper], replying to\nsome foreign strictures on the dress, looks, and\nbehavior of the English abroad, urges that the\nEnglish ideal is that everyone should be free to\ndo and to look just as he likes. But culture</u>\nindefatigably tries, not to make what each raw\nperson may like the rule by which he fashions\nhimself; but to draw ever nearer to a sense of\nwhat is indeed beautiful, graceful, and\nbecoming, and to get the raw person to like that.",
+          "passage": "The following text is adapted from Matthew\nArnold's 1869 nonfiction book \"Culture and\nAnarchy\".\n<u>The Times [a British newspaper], replying to\nsome foreign strictures on the dress, looks, and\nbehavior of the English abroad, urges that the\nEnglish ideal is that everyone should be free to\ndo and to look just as he likes. But culture</u>\nindefatigably tries, not to make what each raw\nperson may like the rule by which he fashions\nhimself; but to draw ever nearer to a sense of\nwhat is indeed beautiful, graceful, and\nbecoming, and to get the raw person to like that.",
           "prompt": "Which choice best describes the function of the\nunderlined sentence in the text as a whole?",
           "options": [
             "It suggests that opinions regarding culture\nchange over time.",

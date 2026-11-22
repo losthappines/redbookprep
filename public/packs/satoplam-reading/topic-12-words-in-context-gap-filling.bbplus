@@ -16,7 +16,7 @@
           "focus": "Select the most logical and precise word or phrase to complete the context",
           "source": "SAToplam 2.0 · Topic 12 · Q1",
           "passageTitle": "Words in Context - Gap Filling — Q1",
-          "passage": "(*Exam level)\nThe Lascaux Cave paintings-detailed paintings\nof animals found in what is now France and\ndating from around 17,000 years ago-are\nsometimes said to be emotionally powerful\ndespite their age, but in fact the paintings are\n______________ precisely because of\ntheir age. It is the link of shared humanity with\nthe artists across so many centuries that gives\nthe Lascaux Cave paintings such resonance.",
+          "passage": "The Lascaux Cave paintings-detailed paintings\nof animals found in what is now France and\ndating from around 17,000 years ago-are\nsometimes said to be emotionally powerful\ndespite their age, but in fact the paintings are\n______________ precisely because of\ntheir age. It is the link of shared humanity with\nthe artists across so many centuries that gives\nthe Lascaux Cave paintings such resonance.",
           "prompt": "Which choice completes the text with the most\nlogical and precise word or phrase?",
           "options": [
             "ingenious",

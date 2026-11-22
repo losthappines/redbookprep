@@ -16,7 +16,7 @@
           "focus": "Draw logical deductions, extensions, or implications based on text",
           "source": "SAToplam 2.0 · Topic 3 · Q1",
           "passageTitle": "Inference — Q1",
-          "passage": "22.5 sec. (*Exam level)\nThe Study on Global Ageing and Adult Health\n(SAGE) seeks to discover long-term trends\nrelated to aging by compiling and analyzing\nevidence from approximately 66,000 participants\nin multiple countries. As with most longitudinal\nstudies, extensive funding support is needed for\nSAGE to collect the relevant data over\ntimescales and at intervals that will support\nrobust conclusions. But the quality of a more\nconstrained investigation, such as a sociology\nstudy seeking only to yield the average age at\nwhich people in a given city first become\nparents, is much less dependent on high levels of\nfunding because",
+          "passage": "The Study on Global Ageing and Adult Health\n(SAGE) seeks to discover long-term trends\nrelated to aging by compiling and analyzing\nevidence from approximately 66,000 participants\nin multiple countries. As with most longitudinal\nstudies, extensive funding support is needed for\nSAGE to collect the relevant data over\ntimescales and at intervals that will support\nrobust conclusions. But the quality of a more\nconstrained investigation, such as a sociology\nstudy seeking only to yield the average age at\nwhich people in a given city first become\nparents, is much less dependent on high levels of\nfunding because",
           "prompt": "Which choice most logically completes the text?",
           "options": [
             "such studies are likely to be a lower\npriority for funding than SAGE.",

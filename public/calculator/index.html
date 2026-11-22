@@ -4,8 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Graphing Calculator — Digital SAT Practice</title>
-  <!-- Step 1: include Desmos secure javascript file -->
-  <script src="https://www.desmos.com/api/v1.12/calculator.js?apiKey=6e5041f13f114d1681b08e3296532395"></script>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var rawKey = params.get('apiKey') || '';
+      var safeKey = /^[A-Za-z0-9_-]{12,128}$/.test(rawKey)
+        ? rawKey
+        : '6e5041f13f114d1681b08e3296532395';
+      document.write(
+        '<script src="https://www.desmos.com/api/v1.12/calculator.js?apiKey=' +
+          encodeURIComponent(safeKey) +
+          '"><\/script>'
+      );
+    })();
+  </script>
   <style>
     html, body {
       margin: 0;
@@ -101,28 +113,34 @@
     (function () {
       var params = new URLSearchParams(window.location.search);
       var initialDark = params.get('theme') === 'dark';
+      var calcMode = params.get('mode') === 'scientific' ? 'scientific' : 'graphing';
       document.documentElement.dataset.theme = initialDark ? 'dark' : 'light';
 
       var elt = document.getElementById('calculator');
       var fallback = document.getElementById('fallback');
 
-      if (typeof window.Desmos === 'undefined' || !window.Desmos.GraphingCalculator) {
+      var hasDesmos = typeof window.Desmos !== 'undefined' &&
+        (calcMode === 'scientific' ? window.Desmos.ScientificCalculator : window.Desmos.GraphingCalculator);
+
+      if (!hasDesmos) {
         if (elt) elt.style.display = 'none';
         if (fallback) fallback.setAttribute('data-visible', 'true');
         return;
       }
 
-      var calculator = window.Desmos.GraphingCalculator(elt, {
-        images: false,
-        folders: false,
-        notes: false,
-        qwertyKeyboard: true,
-        border: false,
-        invertedColors: initialDark
-      });
+      var calculator = calcMode === 'scientific'
+        ? window.Desmos.ScientificCalculator(elt, { invertedColors: initialDark })
+        : window.Desmos.GraphingCalculator(elt, {
+            images: false,
+            folders: false,
+            notes: false,
+            qwertyKeyboard: true,
+            border: false,
+            invertedColors: initialDark
+          });
 
       window.addEventListener('resize', function () {
-        calculator.resize();
+        if (calculator && typeof calculator.resize === 'function') calculator.resize();
       });
 
       window.addEventListener('message', function (event) {
@@ -130,9 +148,18 @@
         if (event.data && event.data.type === 'redbook-graph-theme') {
           var isDark = event.data.theme === 'dark';
           document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
-          calculator.updateSettings({ invertedColors: isDark });
+          if (typeof calculator.updateSettings === 'function') {
+            calculator.updateSettings({ invertedColors: isDark });
+          }
         } else if (event.data && event.data.type === 'redbook-graph-resize') {
-          calculator.resize();
+          if (typeof calculator.resize === 'function') calculator.resize();
+        } else if (event.data && event.data.type === 'redbook-graph-set-expressions' && Array.isArray(event.data.expressions)) {
+          if (typeof calculator.setExpressions === 'function') {
+            if (event.data.replace && typeof calculator.setBlank === 'function') {
+              calculator.setBlank();
+            }
+            calculator.setExpressions(event.data.expressions);
+          }
         }
       });
 

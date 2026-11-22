@@ -1,19 +1,36 @@
 'use client';
 
-import {useEffect, useRef, useState} from 'react';
-import {Maximize2, Minimize2, X} from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { Maximize2, Minimize2, X, Sparkles } from 'lucide-react';
 
-export function GraphCalculator({open, onClose}: {open: boolean; onClose: () => void}) {
+export function GraphCalculator({
+  open,
+  onClose,
+  expressions,
+}: {
+  open: boolean;
+  onClose: () => void;
+  expressions?: string[];
+}) {
   const panel = useRef<HTMLDialogElement>(null);
   const frame = useRef<HTMLIFrameElement>(null);
   const trigger = useRef<HTMLElement | null>(null);
   const close = useRef(onClose);
   const [wide, setWide] = useState(false);
   const [dragging, setDragging] = useState(false);
+  const [mode, setMode] = useState<'graphing' | 'scientific'>('graphing');
+  const lastInjectedRef = useRef<string>('');
 
   useEffect(() => {
     close.current = onClose;
   }, [onClose]);
+
+  function buildSrc(calcMode: 'graphing' | 'scientific') {
+    const initialTheme = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+    const apiKey = process.env.NEXT_PUBLIC_DESMOS_API_KEY?.trim();
+    const keyParam = apiKey ? `&apiKey=${encodeURIComponent(apiKey)}` : '';
+    return `/calculator/index.html?theme=${initialTheme}&mode=${calcMode}${keyParam}`;
+  }
 
   function sendTheme() {
     frame.current?.contentWindow?.postMessage(
@@ -26,7 +43,19 @@ export function GraphCalculator({open, onClose}: {open: boolean; onClose: () => 
   }
 
   function sendResize() {
-    frame.current?.contentWindow?.postMessage({type: 'redbook-graph-resize'}, location.origin);
+    frame.current?.contentWindow?.postMessage({ type: 'redbook-graph-resize' }, location.origin);
+  }
+
+  function pushExpressions(exprs: string[], replace = false) {
+    if (!exprs.length) return;
+    frame.current?.contentWindow?.postMessage(
+      {
+        type: 'redbook-graph-set-expressions',
+        replace,
+        expressions: exprs.map((latex, idx) => ({ id: `rb-expr-${idx + 1}`, latex })),
+      },
+      location.origin
+    );
   }
 
   useEffect(() => {
@@ -34,10 +63,8 @@ export function GraphCalculator({open, onClose}: {open: boolean; onClose: () => 
     if (!dialog) return;
     if (open && !dialog.open) {
       trigger.current = document.activeElement as HTMLElement;
-      // Load Desmos host once, retaining expressions while closed or moving across questions.
       if (frame.current && !frame.current.getAttribute('src')) {
-        const initialTheme = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
-        frame.current.src = `/calculator/index.html?theme=${initialTheme}`;
+        frame.current.src = buildSrc(mode);
       }
       dialog.show();
       sendTheme();
@@ -47,11 +74,20 @@ export function GraphCalculator({open, onClose}: {open: boolean; onClose: () => 
       dialog.close();
       if (trigger.current?.isConnected) trigger.current.focus();
     }
-  }, [open]);
+  }, [open, mode]);
+
+  useEffect(() => {
+    if (!open || !expressions?.length) return;
+    const key = expressions.join('|');
+    if (key !== lastInjectedRef.current && mode === 'graphing') {
+      lastInjectedRef.current = key;
+      pushExpressions(expressions, false);
+    }
+  }, [open, expressions, mode]);
 
   useEffect(() => {
     const observer = new MutationObserver(sendTheme);
-    observer.observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
     function receive(event: MessageEvent) {
       if (
         event.source === frame.current?.contentWindow &&
@@ -71,13 +107,24 @@ export function GraphCalculator({open, onClose}: {open: boolean; onClose: () => 
     };
   }, []);
 
+  function switchMode(next: 'graphing' | 'scientific') {
+    if (next === mode) return;
+    setMode(next);
+    if (frame.current) {
+      frame.current.src = buildSrc(next);
+    }
+  }
+
   function toggleWide() {
     const dialog = panel.current;
     if (dialog) {
       dialog.style.width = '';
       dialog.style.height = '';
       if (!wide) {
-        dialog.style.left = `${Math.max(12, Math.round((window.innerWidth - Math.min(1040, window.innerWidth - 24)) / 2))}px`;
+        dialog.style.left = `${Math.max(
+          12,
+          Math.round((window.innerWidth - Math.min(1040, window.innerWidth - 24)) / 2)
+        )}px`;
       } else {
         dialog.style.left = '';
       }
@@ -93,7 +140,7 @@ export function GraphCalculator({open, onClose}: {open: boolean; onClose: () => 
       className="redbookprep-graph-calculator"
       data-wide={wide ? 'true' : 'false'}
       data-dragging={dragging ? 'true' : 'false'}
-      aria-label="Desmos graphing calculator"
+      aria-label="Desmos calculator"
       onCancel={(event) => {
         event.preventDefault();
         close.current();
@@ -118,8 +165,14 @@ export function GraphCalculator({open, onClose}: {open: boolean; onClose: () => 
           bar.setPointerCapture(event.pointerId);
           setDragging(true);
           const move = (pointer: PointerEvent) => {
-            dialog.style.left = `${Math.max(0, Math.min(window.innerWidth - dialog.offsetWidth, pointer.clientX - dx))}px`;
-            dialog.style.top = `${Math.max(0, Math.min(window.innerHeight - 48, pointer.clientY - dy))}px`;
+            dialog.style.left = `${Math.max(
+              0,
+              Math.min(window.innerWidth - dialog.offsetWidth, pointer.clientX - dx)
+            )}px`;
+            dialog.style.top = `${Math.max(
+              0,
+              Math.min(window.innerHeight - 48, pointer.clientY - dy)
+            )}px`;
           };
           const end = () => {
             setDragging(false);
@@ -133,10 +186,35 @@ export function GraphCalculator({open, onClose}: {open: boolean; onClose: () => 
         }}
       >
         <div className="redbookprep-graph-bar-title">
-          <strong>Graphing Calculator</strong>
-          <span>Digital SAT Mode</span>
+          <strong>Desmos</strong>
+          <div style={{ display: 'inline-flex', gap: '4px' }}>
+            <button
+              type="button"
+              className={mode === 'graphing' ? 'primary' : ''}
+              onClick={() => switchMode('graphing')}
+            >
+              Graphing
+            </button>
+            <button
+              type="button"
+              className={mode === 'scientific' ? 'primary' : ''}
+              onClick={() => switchMode('scientific')}
+            >
+              Scientific
+            </button>
+          </div>
         </div>
         <div className="redbookprep-graph-bar-actions">
+          {expressions && expressions.length > 0 && mode === 'graphing' && (
+            <button
+              type="button"
+              title="Load question equations into Desmos"
+              onClick={() => pushExpressions(expressions, true)}
+            >
+              <Sparkles size={13} />
+              <span>Plot equations</span>
+            </button>
+          )}
           <button
             type="button"
             aria-label={wide ? 'Collapse calculator width' : 'Expand calculator width'}
@@ -154,10 +232,13 @@ export function GraphCalculator({open, onClose}: {open: boolean; onClose: () => 
       </div>
       <iframe
         ref={frame}
-        title="Desmos Graphing Calculator"
+        title="Desmos Calculator"
         onLoad={() => {
           sendTheme();
           sendResize();
+          if (expressions?.length && mode === 'graphing') {
+            pushExpressions(expressions, false);
+          }
         }}
       />
     </dialog>

@@ -23,13 +23,13 @@ export default function Privacy() {
       <p>
         When you use RedBookPrep without signing in, your practice answers, question timing, mistake causes, personal notes, review dates, unfinished practice sessions, and appearance preferences are stored in your browser’s local storage on this website’s origin. Other people using the same browser profile on the same device can access that local data.
       </p>
-      <h2>Google Sign-In and Cloud Synchronization</h2>
+      <h2>Google Sign-In, Email OTP, and Cloud Synchronization</h2>
       <p>
-        If you choose to sign in with Google or create an email/password account via Firebase Authentication, RedBookPrep stores your profile identifier, display name, email address, practice attempts, mistake notes, score goals, and weekly study plan in Google Cloud Firestore so your progress can be restored across devices. Each student’s cloud document is isolated to their authenticated user ID.
+        If you choose to sign in with Google or via a one-time email code / magic link (powered by Supabase), RedBookPrep stores your profile identifier, display name, email address, practice attempts, mistake notes, score goals, and weekly study plan in PostgreSQL with Row-Level Security so your progress can be restored across devices. Each student’s cloud records are isolated to their authenticated user ID, and any guest progress made before signing in is merged automatically.
       </p>
       <h2>Third-party services and trackers</h2>
       <p>
-        RedBookPrep is hosted on Vercel, uses Google Firebase for optional Google authentication and cloud progress synchronization, and embeds the official Desmos® Graphing Calculator API (loaded from desmos.com during Math practice, which collects no student personally identifiable information). Optional AI coaching requests in Ask redCoach are processed statelessly through our configured AI model providers without storing personal conversation history on our servers. We do not sell student data or display third-party behavioral advertising.
+        RedBookPrep is hosted on Vercel, uses Supabase for authentication, Row-Level Security PostgreSQL storage, and file storage, and embeds the official Desmos® Graphing Calculator API (loaded from desmos.com during Math practice, which collects no student personally identifiable information). Requests in Ask redCoach are processed through server-managed AI providers. We do not sell student data or display third-party behavioral advertising.
       </p>
       <h2>Your controls, data deletion, and trademark notice</h2>
       <p>

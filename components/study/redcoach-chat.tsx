@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect, useCallback } from "react";
-import { Sparkles, RotateCcw, User, Key, X, Check } from "lucide-react";
+import { Sparkles, RotateCcw, User, Zap, Bookmark, Brain, Shuffle } from "lucide-react";
 import { PromptInput } from "@/components/ui/ai-chat-input";
 
 interface MessageAttachment {
@@ -20,18 +20,16 @@ interface Message {
   attachments?: MessageAttachment[];
 }
 
-interface SavedApiKeys {
-  groq: string;
-  mistral: string;
-  gemma: string;
-  gemini: string;
-}
-
 interface ServerKeyStatus {
   gemini: boolean;
   groq: boolean;
   mistral: boolean;
   gemma: boolean;
+}
+
+interface SparksQuota {
+  remaining: number;
+  limit: number;
 }
 
 const STARTER_PROMPTS = [
@@ -119,35 +117,43 @@ export const AVAILABLE_MODELS: AIModelOption[] = [
 const MODEL_NAMES = AVAILABLE_MODELS.map((m) => m.id);
 const EFFORT_LEVELS = ["Low", "Medium", "Max Effort"];
 
-const LOCAL_KEYS_STORAGE = "redbookprep-ai-keys";
 const LOCAL_MODEL_STORAGE = "redbookprep-selected-model";
+const LOCAL_MEMORY_STORAGE = "redbookprep-student-memory-v1";
+const LOCAL_THREADS_STORAGE = "redbookprep-ai-threads-v1";
+
+const PERSONAS = [
+  { id: "direct", label: "Direct Coach" },
+  { id: "socratic", label: "Socratic" },
+  { id: "eli5", label: "Explain Like I'm 5" },
+  { id: "speedrun", label: "15s Speedrun" },
+] as const;
+
+type PersonaId = (typeof PERSONAS)[number]["id"];
+
+interface SavedThread {
+  id: string;
+  title: string;
+  bookmarked: boolean;
+  updatedAt: string;
+  messages: Message[];
+}
 
 export function RedCoachChat() {
   const [messages, setMessages] = useState<Message[]>([]);
+  const [threadId, setThreadId] = useState<string>(() => crypto.randomUUID());
+  const [threads, setThreads] = useState<SavedThread[]>([]);
+  const [persona, setPersona] = useState<PersonaId>("direct");
+  const [memoryNote, setMemoryNote] = useState("");
+  const [showMemoryDrawer, setShowMemoryDrawer] = useState(false);
   const [loading, setLoading] = useState(false);
   const [selectedModel, setSelectedModel] = useState<string>("Gemini 3.5 Flash");
-  const [showKeysModal, setShowKeysModal] = useState(false);
-  const [keysSavedBanner, setKeysSavedBanner] = useState(false);
+  const [sparks, setSparks] = useState<SparksQuota>({ remaining: 10, limit: 10 });
 
   const [serverConfigured, setServerConfigured] = useState<ServerKeyStatus>({
     gemini: false,
     groq: false,
     mistral: false,
     gemma: false,
-  });
-
-  const [localKeys, setLocalKeys] = useState<SavedApiKeys>({
-    groq: "",
-    mistral: "",
-    gemma: "",
-    gemini: "",
-  });
-
-  const [draftKeys, setDraftKeys] = useState<SavedApiKeys>({
-    groq: "",
-    mistral: "",
-    gemma: "",
-    gemini: "",
   });
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -162,18 +168,11 @@ export function RedCoachChat() {
       if (migratedModel && AVAILABLE_MODELS.some((m) => m.id === migratedModel)) {
         setSelectedModel(migratedModel);
       }
-      const rawKeys = localStorage.getItem(LOCAL_KEYS_STORAGE);
-      if (rawKeys) {
-        const parsed = JSON.parse(rawKeys);
-        const normalized: SavedApiKeys = {
-          groq: parsed.groq || "",
-          mistral: parsed.mistral || "",
-          gemma: parsed.gemma || "",
-          gemini: parsed.gemini || "",
-        };
-        setLocalKeys(normalized);
-        setDraftKeys(normalized);
-      }
+      const savedMem = localStorage.getItem(LOCAL_MEMORY_STORAGE);
+      if (savedMem) setMemoryNote(savedMem);
+      const savedThreads = JSON.parse(localStorage.getItem(LOCAL_THREADS_STORAGE) || "[]");
+      if (Array.isArray(savedThreads)) setThreads(savedThreads);
+      localStorage.removeItem("redbookprep-ai-keys");
     } catch {}
 
     fetch("/api/chat")
@@ -185,6 +184,12 @@ export function RedCoachChat() {
             groq: Boolean(data.configured.groq),
             mistral: Boolean(data.configured.mistral),
             gemma: Boolean(data.configured.gemma),
+          });
+        }
+        if (data?.sparks && typeof data.sparks.remaining === "number") {
+          setSparks({
+            remaining: data.sparks.remaining,
+            limit: data.sparks.limit || 10,
           });
         }
       })
@@ -210,25 +215,6 @@ export function RedCoachChat() {
       localStorage.setItem(LOCAL_MODEL_STORAGE, modelId);
     } catch {}
   }, []);
-
-  const handleSaveLocalKeys = (e: React.FormEvent) => {
-    e.preventDefault();
-    const cleaned: SavedApiKeys = {
-      groq: draftKeys.groq.trim(),
-      mistral: draftKeys.mistral.trim(),
-      gemma: draftKeys.gemma.trim(),
-      gemini: draftKeys.gemini.trim(),
-    };
-    setLocalKeys(cleaned);
-    try {
-      localStorage.setItem(LOCAL_KEYS_STORAGE, JSON.stringify(cleaned));
-    } catch {}
-    setKeysSavedBanner(true);
-    setTimeout(() => {
-      setKeysSavedBanner(false);
-      setShowKeysModal(false);
-    }, 650);
-  };
 
   const sendPrompt = useCallback(
     async (
@@ -278,12 +264,6 @@ export function RedCoachChat() {
       setLoading(true);
 
       try {
-        const activeApiKeys: Record<string, string> = {};
-        if (localKeys.groq) activeApiKeys.groq = localKeys.groq;
-        if (localKeys.mistral) activeApiKeys.mistral = localKeys.mistral;
-        if (localKeys.gemma) activeApiKeys.gemma = localKeys.gemma;
-        if (localKeys.gemini) activeApiKeys.gemini = localKeys.gemini;
-
         const res = await fetch("/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -291,12 +271,19 @@ export function RedCoachChat() {
             message: effectivePrompt,
             model: chosenModel,
             effort: chosenEffort,
+            persona,
+            memorySummary: memoryNote,
             history: historySnapshot,
-            apiKeys: activeApiKeys,
           }),
         });
 
         const data = await res.json();
+        if (data?.sparks && typeof data.sparks.remaining === "number") {
+          setSparks({
+            remaining: data.sparks.remaining,
+            limit: data.sparks.limit || 10,
+          });
+        }
         const botMsg: Message = {
           id: crypto.randomUUID(),
           role: "assistant",
@@ -305,7 +292,26 @@ export function RedCoachChat() {
           effort: chosenEffort,
           timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
         };
-        setMessages((prev) => [...prev, botMsg]);
+        setMessages((prev) => {
+          const nextMsgs = [...prev, botMsg];
+          try {
+            const firstTitle = (nextMsgs[0]?.content || "SAT Coaching Thread").slice(0, 48);
+            setThreads((oldThreads) => {
+              const existing = oldThreads.find((t) => t.id === threadId);
+              const updated: SavedThread = {
+                id: threadId,
+                title: existing?.title || firstTitle,
+                bookmarked: existing?.bookmarked || false,
+                updatedAt: new Date().toISOString(),
+                messages: nextMsgs,
+              };
+              const merged = [updated, ...oldThreads.filter((t) => t.id !== threadId)].slice(0, 25);
+              localStorage.setItem(LOCAL_THREADS_STORAGE, JSON.stringify(merged));
+              return merged;
+            });
+          } catch {}
+          return nextMsgs;
+        });
       } catch {
         setMessages((prev) => [
           ...prev,
@@ -321,20 +327,31 @@ export function RedCoachChat() {
         setLoading(false);
       }
     },
-    [handleModelChange, loading, localKeys, messages, selectedModel]
+    [handleModelChange, loading, messages, selectedModel]
   );
 
   const handleResetChat = () => {
     createdUrlsRef.current.forEach((url) => URL.revokeObjectURL(url));
     createdUrlsRef.current = [];
     setMessages([]);
+    setThreadId(crypto.randomUUID());
+  };
+
+  const toggleBookmarkThread = () => {
+    setThreads((old) => {
+      const next = old.map((t) => (t.id === threadId ? { ...t, bookmarked: !t.bookmarked } : t));
+      try {
+        localStorage.setItem(LOCAL_THREADS_STORAGE, JSON.stringify(next));
+      } catch {}
+      return next;
+    });
   };
 
   const activeProviderCount = [
-    Boolean(localKeys.gemini.trim() || serverConfigured.gemini),
-    Boolean(localKeys.groq.trim() || serverConfigured.groq),
-    Boolean(localKeys.mistral.trim() || serverConfigured.mistral),
-    Boolean(localKeys.gemma.trim() || localKeys.gemini.trim() || serverConfigured.gemma),
+    serverConfigured.gemini,
+    serverConfigured.groq,
+    serverConfigured.mistral,
+    serverConfigured.gemma,
   ].filter(Boolean).length;
 
   return (
@@ -384,19 +401,67 @@ export function RedCoachChat() {
             ))}
           </div>
 
-          <div className="redcoach-hero-foot">
-            <button
-              type="button"
-              className="redcoach-keys-trigger"
-              onClick={() => {
-                setDraftKeys(localKeys);
-                setShowKeysModal(true);
-              }}
-            >
-              <Key size={12} />
-              <span>API Keys</span>
-              <span className="redcoach-keys-count">{activeProviderCount}/4 active</span>
-            </button>
+          <div className="redcoach-hero-foot" style={{ display: "grid", gap: "10px", justifyItems: "center" }}>
+            <div style={{ display: "flex", gap: "6px", flexWrap: "wrap", justifyContent: "center" }}>
+              {PERSONAS.map((p) => (
+                <button
+                  key={p.id}
+                  type="button"
+                  className={`redcoach-glass-pill ${persona === p.id ? "is-active-persona" : ""}`}
+                  aria-pressed={persona === p.id}
+                  onClick={() => setPersona(p.id)}
+                >
+                  {p.label}
+                </button>
+              ))}
+              <button
+                type="button"
+                className="redcoach-glass-pill"
+                onClick={() => setShowMemoryDrawer((v) => !v)}
+              >
+                <Brain size={12} /> Study Memory
+              </button>
+            </div>
+            {showMemoryDrawer && (
+              <div className="rb-coach-memory-box">
+                <textarea
+                  rows={2}
+                  placeholder="Tell redCoach what to always remember (e.g. 'I miss discriminant questions & semicolon clauses')..."
+                  value={memoryNote}
+                  onChange={(e) => {
+                    setMemoryNote(e.target.value);
+                    try {
+                      localStorage.setItem(LOCAL_MEMORY_STORAGE, e.target.value);
+                    } catch {}
+                  }}
+                />
+              </div>
+            )}
+            {threads.length > 0 && (
+              <div style={{ display: "flex", gap: "6px", flexWrap: "wrap", justifyContent: "center" }}>
+                {threads.slice(0, 3).map((t) => (
+                  <button
+                    key={t.id}
+                    type="button"
+                    className="redcoach-keys-trigger"
+                    onClick={() => {
+                      setThreadId(t.id);
+                      setMessages(t.messages);
+                    }}
+                  >
+                    {t.bookmarked && <Bookmark size={11} className="fill-current" />}
+                    <span>Resume: {t.title}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+            <span className="redcoach-keys-trigger" aria-label="Weekly AI Sparks allowance">
+              <Zap size={12} />
+              <span>{sparks.remaining}/{sparks.limit} Sparks this week</span>
+              {activeProviderCount > 0 && (
+                <span className="redcoach-keys-count">{activeProviderCount} models live</span>
+              )}
+            </span>
           </div>
         </div>
       ) : (
@@ -413,17 +478,30 @@ export function RedCoachChat() {
               <small>{selectedModel}</small>
             </div>
             <div className="redcoach-FloatingBar-actions">
+              <select
+                aria-label="Coaching persona"
+                className="redcoach-action-pill"
+                value={persona}
+                onChange={(e) => setPersona(e.target.value as PersonaId)}
+              >
+                {PERSONAS.map((p) => (
+                  <option key={p.id} value={p.id}>
+                    {p.label}
+                  </option>
+                ))}
+              </select>
               <button
                 type="button"
                 className="redcoach-action-pill"
-                onClick={() => {
-                  setDraftKeys(localKeys);
-                  setShowKeysModal(true);
-                }}
+                onClick={toggleBookmarkThread}
+                title="Bookmark this conversation"
               >
-                <Key size={13} />
-                <span>API Keys</span>
+                <Bookmark size={13} className={threads.find((t) => t.id === threadId)?.bookmarked ? "fill-current" : ""} />
               </button>
+              <span className="redcoach-action-pill" aria-label="Remaining weekly Sparks">
+                <Zap size={13} />
+                <span>{sparks.remaining}/{sparks.limit} Sparks</span>
+              </span>
               <button
                 type="button"
                 className="redcoach-action-pill"
@@ -462,6 +540,20 @@ export function RedCoachChat() {
                     {msg.model && <span>{msg.model}</span>}
                     {msg.effort && <span>· {msg.effort}</span>}
                     <span>· {msg.timestamp}</span>
+                    {msg.role === "assistant" && (
+                      <button
+                        type="button"
+                        className="rb-remix-btn"
+                        onClick={() =>
+                          sendPrompt(
+                            "Create one brand-new original Digital SAT remix problem testing this exact same concept, with 4 choices A-D (do not reveal the answer until I reply).",
+                            { model: selectedModel, effort: "Medium" }
+                          )
+                        }
+                      >
+                        <Shuffle size={11} /> Remix similar question
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
@@ -494,118 +586,6 @@ export function RedCoachChat() {
               disabled={loading}
               onSubmit={(val, meta) => sendPrompt(val, meta)}
             />
-          </div>
-        </div>
-      )}
-
-      {/* ============================================================== */}
-      {/* API KEYS CONFIGURATION MODAL                                   */}
-      {/* ============================================================== */}
-      {showKeysModal && (
-        <div
-          className="redcoach-modal-backdrop"
-          onClick={() => setShowKeysModal(false)}
-          role="dialog"
-          aria-modal="true"
-          aria-label="Configure AI Provider API Keys"
-        >
-          <div className="redcoach-modal-card" onClick={(e) => e.stopPropagation()}>
-            <div className="redcoach-modal-head">
-              <div>
-                <h3>AI Provider API Keys</h3>
-                <p> Stored locally in your browser or via Vercel Environment Variables.</p>
-              </div>
-              <button
-                type="button"
-                className="redcoach-modal-close"
-                aria-label="Close API Keys dialog"
-                onClick={() => setShowKeysModal(false)}
-              >
-                <X size={16} />
-              </button>
-            </div>
-
-            <form onSubmit={handleSaveLocalKeys} className="redcoach-modal-form">
-              <label className="redcoach-modal-field">
-                <span>
-                  Groq API Key
-                  {Boolean(localKeys.groq.trim() || serverConfigured.groq) && (
-                    <em className="redcoach-key-ready">Active</em>
-                  )}
-                </span>
-                <input
-                  type="password"
-                  placeholder={serverConfigured.groq ? "Configured on server" : "gsk_..."}
-                  value={draftKeys.groq}
-                  onChange={(e) => setDraftKeys((p) => ({ ...p, groq: e.target.value }))}
-                />
-              </label>
-
-              <label className="redcoach-modal-field">
-                <span>
-                  Mistral API Key
-                  {Boolean(localKeys.mistral.trim() || serverConfigured.mistral) && (
-                    <em className="redcoach-key-ready">Active</em>
-                  )}
-                </span>
-                <input
-                  type="password"
-                  placeholder={
-                    serverConfigured.mistral ? "Configured on server" : "Mistral API key..."
-                  }
-                  value={draftKeys.mistral}
-                  onChange={(e) => setDraftKeys((p) => ({ ...p, mistral: e.target.value }))}
-                />
-              </label>
-
-              <label className="redcoach-modal-field">
-                <span>
-                  Gemma API Key
-                  {Boolean(
-                    localKeys.gemma.trim() || localKeys.gemini.trim() || serverConfigured.gemma
-                  ) && <em className="redcoach-key-ready">Active</em>}
-                </span>
-                <input
-                  type="password"
-                  placeholder={
-                    serverConfigured.gemma ? "Configured via Google key" : "AIza... or gsk_..."
-                  }
-                  value={draftKeys.gemma}
-                  onChange={(e) => setDraftKeys((p) => ({ ...p, gemma: e.target.value }))}
-                />
-              </label>
-
-              <label className="redcoach-modal-field">
-                <span>
-                  Gemini API Key
-                  {Boolean(localKeys.gemini.trim() || serverConfigured.gemini) && (
-                    <em className="redcoach-key-ready">Active</em>
-                  )}
-                </span>
-                <input
-                  type="password"
-                  placeholder={serverConfigured.gemini ? "Configured on server" : "AIza..."}
-                  value={draftKeys.gemini}
-                  onChange={(e) => setDraftKeys((p) => ({ ...p, gemini: e.target.value }))}
-                />
-              </label>
-
-              <div className="redcoach-modal-foot">
-                <small>
-                  Vercel env vars: <code>GROQ_API_KEY</code>, <code>MISTRAL_API_KEY</code>,{" "}
-                  <code>GEMMA_API_KEY</code>, <code>GEMINI_API_KEY</code>
-                </small>
-                <button type="submit" className="redcoach-modal-save">
-                  {keysSavedBanner ? (
-                    <>
-                      <Check size={14} /> Saved
-                    </>
-                  ) : (
-                    "Save keys"
-                  )}
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       )}

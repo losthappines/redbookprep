@@ -16,7 +16,7 @@
           "focus": "Locate and interpret specific details explicitly stated in the text",
           "source": "SAToplam 2.0 · Topic 2 · Q1",
           "passageTitle": "Details Question — Q1",
-          "passage": "sec. (*Exam level)\nIn a study by Mika R. Moran, Daniel A.\nRodriguez, and colleagues, residents of Panama\nCity, Panama, and Fortaleza, Brazil, were\nsurveyed about parks in their cities. Of the 318\nrespondents from Panama City, 53.5% indicated\nthat they use the city's parks, and of 938\nrespondents from Fortaleza, 35.7% indicated\nusing city parks. Given that the percentage of\nPanama City respondents who reported living\nwithin a 10-minute walk of a park was much\nlower than that reported by Fortaleza\nrespondents, greater proximity alone can't\nexplain the difference in park use.",
+          "passage": "sec. In a study by Mika R. Moran, Daniel A.\nRodriguez, and colleagues, residents of Panama\nCity, Panama, and Fortaleza, Brazil, were\nsurveyed about parks in their cities. Of the 318\nrespondents from Panama City, 53.5% indicated\nthat they use the city's parks, and of 938\nrespondents from Fortaleza, 35.7% indicated\nusing city parks. Given that the percentage of\nPanama City respondents who reported living\nwithin a 10-minute walk of a park was much\nlower than that reported by Fortaleza\nrespondents, greater proximity alone can't\nexplain the difference in park use.",
           "prompt": "The text makes which point about the difference\nbetween the proportions of Panama City\nresidents and Fortaleza residents using parks?",
           "options": [
             "It was much larger than the researchers\nconducting the study expected.",

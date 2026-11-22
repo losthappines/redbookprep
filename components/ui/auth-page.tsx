@@ -3,15 +3,15 @@ import {useState} from 'react';
 import Link from 'next/link';
 import {PublicThemeToggle} from './public-theme-toggle';
 import {useRouter} from 'next/navigation';
-import {UserRound,ShieldCheck,Check,ChevronLeft,Cloud} from 'lucide-react';
+import {UserRound,ShieldCheck,Check,ChevronLeft,Cloud,Mail,ArrowRight} from 'lucide-react';
 import {
-  isFirebaseConfigured,
-  getFirebaseAuth,
-  GoogleAuthProvider,
-  signInWithPopup,
-  pullCloudProgress,
-  pushCloudProgress,
-} from '@/lib/firebase';
+  isCloudConfigured,
+  isSupabaseConfigured,
+  signInWithGoogle,
+  sendEmailOtp,
+  verifyEmailOtp,
+  syncGuestAndCloudState,
+} from '@/lib/supabase';
 
 const GoogleMark = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" aria-hidden="true">
@@ -25,39 +25,62 @@ const GoogleMark = () => (
 export default function AuthPage({mode}:{mode:'login'|'signup'}){
   const router=useRouter();
   const [error,setError]=useState('');
+  const [status,setStatus]=useState('');
   const [busy,setBusy]=useState(false);
+  const [email,setEmail]=useState('');
+  const [otpSent,setOtpSent]=useState(false);
+  const [otpCode,setOtpCode]=useState('');
 
   const handleGoogleSignIn=async()=>{
     setError('');
-    const auth=getFirebaseAuth();
-    if(!auth){
-      setError('Google Cloud sign-in is currently unavailable. Please check Firebase configuration.');
+    setStatus('');
+    if(!isCloudConfigured){
+      setError('Cloud sign-in is currently unavailable. Please configure Supabase authentication keys.');
       return;
     }
     setBusy(true);
     try{
-      const provider=new GoogleAuthProvider();
-      provider.setCustomParameters({prompt:'select_account'});
-      const cred=await signInWithPopup(auth,provider);
-      const u=cred.user;
-      const existing=await pullCloudProgress(u);
-      const profile={
-        uid:u.uid,
-        name:existing?.profile?.name||u.displayName||u.email?.split('@')[0]||'Student',
-        email:u.email||'',
-        targetScore:existing?.profile?.targetScore,
-        avatar:u.photoURL||existing?.profile?.avatar,
-        isCloud:true,
-      };
-      localStorage.setItem('redbookprep-user',JSON.stringify(profile));
-      await pushCloudProgress({profile});
-      router.push('/study');
+      const result=await signInWithGoogle('/study');
+      if(!result.redirected){
+        router.push('/study');
+      }
     }catch(err:any){
       const code=err?.code||'';
       if(code==='auth/popup-closed-by-user')setError('Google sign-in window was closed before finishing.');
-      else if(code==='auth/unauthorized-domain')setError('Add redbookprep.site to Firebase Console → Authentication → Settings → Authorized domains.');
+      else if(code==='auth/unauthorized-domain')setError('Add redbookprep.site to your authorized authentication domains.');
       else setError(err?.message||'Could not sign in with Google.');
+      setBusy(false);
+    }
+  };
+
+  const handleSendOtp=async(e:React.FormEvent)=>{
+    e.preventDefault();
+    setError('');
+    setStatus('');
+    if(!email.trim())return;
+    setBusy(true);
+    try{
+      await sendEmailOtp(email,'/study');
+      setOtpSent(true);
+      setStatus('We sent a 6-digit code and sign-in link to your email.');
+    }catch(err:any){
+      setError(err?.message||'Could not send sign-in code.');
     }finally{
+      setBusy(false);
+    }
+  };
+
+  const handleVerifyOtp=async(e:React.FormEvent)=>{
+    e.preventDefault();
+    setError('');
+    if(!otpCode.trim())return;
+    setBusy(true);
+    try{
+      const session=await verifyEmailOtp(email,otpCode);
+      await syncGuestAndCloudState(session);
+      router.push('/study');
+    }catch(err:any){
+      setError(err?.message||'Invalid or expired verification code.');
       setBusy(false);
     }
   };
@@ -80,18 +103,18 @@ export default function AuthPage({mode}:{mode:'login'|'signup'}){
         <section className="rb-entry-intro">
           <span className="rb-eyebrow">A LITTLE PRACTICE. MORE POSSIBILITY.</span>
           <h1>{mode==='signup'?'A space for your next step.':'Pick up where you left off.'}</h1>
-          <p>Focused practice, a place for your thinking, and automatic cloud sync across every device you study on.</p>
+          <p>Focused practice, a place for your thinking, and automatic cloud sync that merges your guest progress across every device.</p>
           <ul>
-            <li><Check size={17}/>410+ Mathbook 3.0 practice questions & explanations</li>
-            <li><Check size={17}/>Cloud-synced mistake notebook and personal notes</li>
-            <li><Check size={17}/>Sign in with Google to restore progress anywhere</li>
+            <li><Check size={17}/>2,231+ Digital SAT Math &amp; Reading and Writing questions</li>
+            <li><Check size={17}/>Cloud-synced mistake notebook, notes, and vocabulary SRS</li>
+            <li><Check size={17}/>Passwordless sign in with Google or Email code / Magic Link</li>
           </ul>
           <div className="rb-entry-note">
-            {isFirebaseConfigured ? <Cloud size={20}/> : <ShieldCheck size={20}/>}
+            {isCloudConfigured ? <Cloud size={20}/> : <ShieldCheck size={20}/>}
             <p>
-              {isFirebaseConfigured
-                ? 'Cloud sync is active. Sign in with Google to back up and restore your progress on any device.'
-                : 'Sign in with Google to connect your study space and sync your progress to the cloud.'}
+              {isCloudConfigured
+                ? 'Cloud sync is active. Guest answers and notes on this browser merge cleanly into your account when you sign in.'
+                : 'Sign in with Google or an email code once cloud environment keys are connected to back up and restore progress across devices.'}
             </p>
           </div>
         </section>
@@ -100,11 +123,11 @@ export default function AuthPage({mode}:{mode:'login'|'signup'}){
             <UserRound size={21}/>
             <h2>{mode==='signup'?'Create your RedBookPrep account':'Sign in to RedBookPrep'}</h2>
           </div>
-          <div style={{display:'grid',gap:'20px',padding:'28px 27px'}}>
+          <div style={{display:'grid',gap:'18px',padding:'28px 27px'}}>
             <p style={{fontSize:'.92rem',margin:0,lineHeight:1.6}}>
               {mode==='signup'
-                ? 'Continue with your Google account to create your study profile and automatically sync your SAT practice across devices.'
-                : 'Continue with your Google account to restore your saved SAT practice, mistake notebook, and study plan.'}
+                ? 'Continue with Google or passwordless email to create your study profile and sync local practice across devices.'
+                : 'Continue with Google or a one-time email code to restore your saved SAT practice, mistake notebook, and study plan.'}
             </p>
             <button
               type="button"
@@ -116,6 +139,66 @@ export default function AuthPage({mode}:{mode:'login'|'signup'}){
               <GoogleMark/>
               <span>{busy?'Connecting…':'Continue with Google'}</span>
             </button>
+
+            {isSupabaseConfigured && (
+              <div style={{display:'grid',gap:'12px',paddingTop:'6px',borderTop:'1px solid var(--line, rgba(128,128,128,.2))'}}>
+                {!otpSent ? (
+                  <form onSubmit={handleSendOtp} style={{display:'grid',gap:'10px'}}>
+                    <label htmlFor="auth-otp-email" style={{fontSize:'.82rem',fontWeight:600,opacity:.85}}>
+                      Or sign in with email code / magic link
+                    </label>
+                    <div style={{display:'flex',gap:'8px',flexWrap:'wrap'}}>
+                      <input
+                        id="auth-otp-email"
+                        type="email"
+                        required
+                        autoComplete="email"
+                        placeholder="you@example.com"
+                        value={email}
+                        onChange={(e)=>setEmail(e.target.value)}
+                        style={{flex:'1 1 190px',minHeight:'44px',padding:'0 14px',borderRadius:'12px',border:'1px solid rgba(128,128,128,.28)',background:'transparent',color:'inherit'}}
+                      />
+                      <button type="submit" className="rb-public-button primary" disabled={busy||!email.trim()} style={{minHeight:'44px',padding:'0 16px'}}>
+                        <Mail size={15}/>
+                        <span>Send code</span>
+                      </button>
+                    </div>
+                  </form>
+                ) : (
+                  <form onSubmit={handleVerifyOtp} style={{display:'grid',gap:'10px'}}>
+                    <label htmlFor="auth-otp-code" style={{fontSize:'.82rem',fontWeight:600,opacity:.85}}>
+                      Enter 6-digit code sent to {email}
+                    </label>
+                    <div style={{display:'flex',gap:'8px',flexWrap:'wrap'}}>
+                      <input
+                        id="auth-otp-code"
+                        type="text"
+                        inputMode="numeric"
+                        autoComplete="one-time-code"
+                        required
+                        placeholder="123456"
+                        value={otpCode}
+                        onChange={(e)=>setOtpCode(e.target.value)}
+                        style={{flex:'1 1 140px',minHeight:'44px',padding:'0 14px',borderRadius:'12px',border:'1px solid rgba(128,128,128,.28)',background:'transparent',color:'inherit',letterSpacing:'0.18em'}}
+                      />
+                      <button type="submit" className="rb-public-button primary" disabled={busy||!otpCode.trim()} style={{minHeight:'44px',padding:'0 16px'}}>
+                        <span>Verify</span>
+                        <ArrowRight size={15}/>
+                      </button>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={()=>{setOtpSent(false);setOtpCode('');setStatus('');}}
+                      style={{background:'none',border:0,padding:0,textAlign:'left',fontSize:'.8rem',opacity:.75,cursor:'pointer',color:'inherit'}}
+                    >
+                      Use a different email
+                    </button>
+                  </form>
+                )}
+              </div>
+            )}
+
+            {status&&<p role="status" style={{fontSize:'.85rem',margin:0,color:'#10b981'}}>{status}</p>}
             {error&&<p className="rb-entry-error" role="alert">{error}</p>}
             <p className="rb-entry-form-small">
               {mode==='signup'?(
